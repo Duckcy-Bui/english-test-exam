@@ -490,7 +490,9 @@ export function ReadingQuestions({
             id={`reading-tab-${tab.id}`}
             role="tab"
             aria-selected={activePart === tab.id}
-            aria-controls={`reading-panel-${tab.id}`}
+            aria-controls={
+              activePart === tab.id ? `reading-panel-${tab.id}` : undefined
+            }
             tabIndex={activePart === tab.id ? 0 : -1}
             className={activePart === tab.id ? "active" : ""}
             onClick={() => setActivePart(tab.id)}
