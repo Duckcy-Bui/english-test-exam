@@ -1,0 +1,1070 @@
+{
+  "schemaVersion": 1,
+  "unit": 3,
+  "unitTitle": "Data communications",
+  "testId": "C",
+  "source": "ai",
+  "functions": [
+    "Solving browser problems (Internet browsing)",
+    "Explaining network concepts (Networks)",
+    "Describing the benefits of mobile devices (Mobile computing)",
+    "Finding information in an email (Email)"
+  ],
+  "grammarFocus": [
+    "Present simple and present continuous; state verbs (know, understand, want, need, belong) are not usually used in the continuous form",
+    "Relative clauses with which, that, who",
+    "Zero conditional (If + present simple, present simple) for things that are always true; first conditional (If + present simple, will + verb) for likely future results",
+    "Articles a, an, the"
+  ],
+  "sourceNotes": [
+    "Đề C Unit 3, AI soạn mới theo khung đề và quy tắc 1–15; không lặp bài đọc, lời thoại, tình huống, câu dịch, đề email và đề nói của đề A và đề B.",
+    "R1–R5: thuật ngữ và định nghĩa lấy gần nguyên văn Workbook Unit 3 Part 1 (3A, 3B, 3C, 3D); định nghĩa thừa (wired) lấy từ Workbook 3D. Không trùng thuật ngữ câu nối với đề A, đề B.",
+    "R13–R20: từ vựng lấy từ Workbook Unit 3 Part 1 (3A, 3B, 3C).",
+    "Bài đọc R21–R25 (nông trại dùng điện thoại và cảm biến) và R26–R30 (email thông báo bảo trì mạng, chức năng Email: tìm thông tin trong email) viết mới; không dùng thuật ngữ câu nối và không diễn đạt lại định nghĩa của chúng.",
+    "Listening A: quản lý và kỹ sư mạng bàn về mạng cho văn phòng mới (Networks). Listening B: giới thiệu cổng thông tin sinh viên (Internet browsing). Không chép Audio script.",
+    "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại.",
+    "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
+    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng."
+  ],
+  "listening": {
+    "parts": [
+      {
+        "id": "A",
+        "instructions": "Listen to the conversation and choose the best answer A, B, C or D (Questions L1–L5).",
+        "context": "Sarah, an office manager, talks to Hassan, a network engineer, about the network for a new office.",
+        "speakers": [
+          {
+            "name": "Sarah",
+            "voice": "female"
+          },
+          {
+            "name": "Hassan",
+            "voice": "male"
+          }
+        ],
+        "script": [
+          {
+            "speaker": "Sarah",
+            "text": "Hassan, thanks for coming. As you know, we're opening a small office in Hai Phong next month. What kind of network do we need there?"
+          },
+          {
+            "speaker": "Hassan",
+            "text": "It's a small office with eight people, so a simple LAN is fine. I'd suggest wired connections for the desks, because they're faster and more reliable, and wi-fi for the meeting room."
+          },
+          {
+            "speaker": "Sarah",
+            "text": "Do they need their own server?"
+          },
+          {
+            "speaker": "Hassan",
+            "text": "No. A server is expensive to look after. They can use the server which we have here in Hanoi. They'll connect to it through a VPN."
+          },
+          {
+            "speaker": "Sarah",
+            "text": "Is that secure?"
+          },
+          {
+            "speaker": "Hassan",
+            "text": "Yes. A VPN encrypts all the data that goes between the two offices. If someone steals the data, they won't be able to read it."
+          },
+          {
+            "speaker": "Sarah",
+            "text": "Good. And what about printers?"
+          },
+          {
+            "speaker": "Hassan",
+            "text": "One network printer is enough. If everyone connects to it, we won't need a separate printer on each desk."
+          },
+          {
+            "speaker": "Sarah",
+            "text": "How long will the installation take?"
+          },
+          {
+            "speaker": "Hassan",
+            "text": "About three days. I'm finishing a job in Vinh this week, so I can start on the fifteenth."
+          },
+          {
+            "speaker": "Sarah",
+            "text": "Great. Can you send me a price by Friday?"
+          },
+          {
+            "speaker": "Hassan",
+            "text": "Sure, no problem."
+          }
+        ],
+        "questions": [
+          {
+            "id": "L1",
+            "kind": "mcq",
+            "stem": "Why does the company need a new network?",
+            "options": [
+              {
+                "id": "A",
+                "text": "It is opening a new office in Hai Phong."
+              },
+              {
+                "id": "B",
+                "text": "The old network in Hanoi is too slow."
+              },
+              {
+                "id": "C",
+                "text": "Eight new people are joining the Hanoi office."
+              },
+              {
+                "id": "D",
+                "text": "The company's server is broken."
+              }
+            ],
+            "answerKey": "A",
+            "explanation": "Sarah: \"we're opening a small office in Hai Phong next month. What kind of network do we need there?\""
+          },
+          {
+            "id": "L2",
+            "kind": "mcq",
+            "stem": "What does Hassan suggest for the desks?",
+            "options": [
+              {
+                "id": "A",
+                "text": "Wi-fi"
+              },
+              {
+                "id": "B",
+                "text": "Wired connections"
+              },
+              {
+                "id": "C",
+                "text": "A separate printer for each desk"
+              },
+              {
+                "id": "D",
+                "text": "A new server"
+              }
+            ],
+            "answerKey": "B",
+            "explanation": "Hassan: \"I'd suggest wired connections for the desks, because they're faster and more reliable, and wi-fi for the meeting room.\""
+          },
+          {
+            "id": "L3",
+            "kind": "mcq",
+            "stem": "How will the staff in Hai Phong use a server?",
+            "options": [
+              {
+                "id": "A",
+                "text": "They will buy their own server."
+              },
+              {
+                "id": "B",
+                "text": "They will not use a server at all."
+              },
+              {
+                "id": "C",
+                "text": "They will connect to the Hanoi server through a VPN."
+              },
+              {
+                "id": "D",
+                "text": "They will share a server with another company."
+              }
+            ],
+            "answerKey": "C",
+            "explanation": "Hassan: \"They can use the server which we have here in Hanoi. They'll connect to it through a VPN.\""
+          },
+          {
+            "id": "L4",
+            "kind": "mcq",
+            "stem": "According to Hassan, why is the VPN secure?",
+            "options": [
+              {
+                "id": "A",
+                "text": "It only works in the meeting room."
+              },
+              {
+                "id": "B",
+                "text": "It uses wired connections."
+              },
+              {
+                "id": "C",
+                "text": "It changes the password every day."
+              },
+              {
+                "id": "D",
+                "text": "It encrypts the data between the two offices."
+              }
+            ],
+            "answerKey": "D",
+            "explanation": "Hassan: \"A VPN encrypts all the data that goes between the two offices. If someone steals the data, they won't be able to read it.\""
+          },
+          {
+            "id": "L5",
+            "kind": "mcq",
+            "stem": "When can Hassan start the installation?",
+            "options": [
+              {
+                "id": "A",
+                "text": "This week"
+              },
+              {
+                "id": "B",
+                "text": "On the fifteenth"
+              },
+              {
+                "id": "C",
+                "text": "On Friday"
+              },
+              {
+                "id": "D",
+                "text": "In three days"
+              }
+            ],
+            "answerKey": "B",
+            "explanation": "Hassan đang làm việc ở Vinh tuần này \"so I can start on the fifteenth\". Thứ Sáu là hạn gửi báo giá; ba ngày là thời gian lắp đặt."
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "instructions": "Listen to the talk and answer the questions. Write NO MORE THAN THREE WORDS for each answer (Questions L6–L10).",
+        "context": "Owen from IT Services explains the student portal to new university students.",
+        "speakers": [
+          {
+            "name": "Owen",
+            "voice": "male"
+          }
+        ],
+        "script": [
+          {
+            "speaker": "Owen",
+            "text": "Good afternoon. I'm Owen from IT Services, and I'm going to tell you how to use the student portal, which is the website where you'll find your timetable, your grades and your course materials. You'll use it every day, so save the address in your browser."
+          },
+          {
+            "speaker": "Owen",
+            "text": "To log in, use your student number, which is on your student card, and the password that we sent you by text message. The first time you log in, the portal asks you to choose a new password. It must have at least ten characters."
+          },
+          {
+            "speaker": "Owen",
+            "text": "The portal works best in Chrome or Firefox. If a page looks strange or doesn't load, clear your browser history and try again. If that doesn't help, contact us through the help page."
+          },
+          {
+            "speaker": "Owen",
+            "text": "One more thing: the portal closes for maintenance every Tuesday from six to seven in the morning. And please always log out when you use a computer in the library, so that nobody else can see your grades."
+          }
+        ],
+        "questions": [
+          {
+            "id": "L6",
+            "kind": "short",
+            "stem": "Where can students find their student number?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "student card",
+              "the student card",
+              "on student card",
+              "their student card",
+              "on the card"
+            ],
+            "explanation": "\"use your student number, which is on your student card\"."
+          },
+          {
+            "id": "L7",
+            "kind": "short",
+            "stem": "How did the university send students their first password?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "by text message",
+              "text message",
+              "a text message",
+              "by text",
+              "by sms"
+            ],
+            "explanation": "\"the password that we sent you by text message\"."
+          },
+          {
+            "id": "L8",
+            "kind": "short",
+            "stem": "What is the minimum number of characters for the new password?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "ten",
+              "10",
+              "ten characters",
+              "10 characters",
+              "at least ten",
+              "at least 10"
+            ],
+            "explanation": "\"It must have at least ten characters.\""
+          },
+          {
+            "id": "L9",
+            "kind": "short",
+            "stem": "What should students clear if a page does not load?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "browser history",
+              "their browser history",
+              "the browser history",
+              "history",
+              "the history",
+              "their history"
+            ],
+            "explanation": "\"If a page looks strange or doesn't load, clear your browser history and try again.\""
+          },
+          {
+            "id": "L10",
+            "kind": "short",
+            "stem": "On which day does the portal close for maintenance?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "tuesday",
+              "on tuesday",
+              "every tuesday",
+              "tuesdays",
+              "on tuesdays",
+              "tuesday morning"
+            ],
+            "explanation": "\"the portal closes for maintenance every Tuesday from six to seven in the morning\"."
+          }
+        ]
+      }
+    ]
+  },
+  "reading": {
+    "matching": {
+      "instructions": "Match the terms (1–5) with the correct definitions (A–F). There is one extra definition that you do not need (Questions 1–5).",
+      "definitions": [
+        {
+          "id": "A",
+          "text": "A copy of something presented in a form that can be read on a computer."
+        },
+        {
+          "id": "B",
+          "text": "A rule or instruction about the best way to do something."
+        },
+        {
+          "id": "C",
+          "text": "Connected together using pieces of thin metal in the form of threads."
+        },
+        {
+          "id": "D",
+          "text": "To attach a computer code to a word, phrase, image, etc. in order to arrange the data in a particular way."
+        },
+        {
+          "id": "E",
+          "text": "A circuit that connects the main parts of a computer so that signals can be sent from one part to another."
+        },
+        {
+          "id": "F",
+          "text": "A small area on a web browser that you click on in order to go to the previous page."
+        }
+      ],
+      "items": [
+        {
+          "id": "R1",
+          "term": "Guideline",
+          "answerKey": "B",
+          "explanation": "Guideline (hướng dẫn, nguyên tắc chỉ dẫn) là quy tắc hay chỉ dẫn về cách tốt nhất để làm việc gì."
+        },
+        {
+          "id": "R2",
+          "term": "Tag",
+          "answerKey": "D",
+          "explanation": "Tag (gắn thẻ) là gắn một mã máy tính vào từ, cụm từ, hình ảnh… để sắp xếp dữ liệu theo một cách nhất định."
+        },
+        {
+          "id": "R3",
+          "term": "Bus",
+          "answerKey": "E",
+          "explanation": "Bus (bus, đường truyền) là mạch nối các bộ phận chính của máy tính để tín hiệu đi từ bộ phận này sang bộ phận khác."
+        },
+        {
+          "id": "R4",
+          "term": "Back button",
+          "answerKey": "F",
+          "explanation": "Back button (nút quay lại) là nút trên trình duyệt để trở về trang trước."
+        },
+        {
+          "id": "R5",
+          "term": "Electronic version",
+          "answerKey": "A",
+          "explanation": "Electronic version (bản điện tử) là bản sao ở dạng đọc được trên máy tính. Định nghĩa C là của wired (có dây), không có trong danh sách thuật ngữ."
+        }
+      ]
+    },
+    "grammar": [
+      {
+        "id": "R6",
+        "kind": "mcq",
+        "stem": "Look! The printer ______ the same page again and again.",
+        "options": [
+          {
+            "id": "A",
+            "text": "print"
+          },
+          {
+            "id": "B",
+            "text": "are printing"
+          },
+          {
+            "id": "C",
+            "text": "is printing"
+          },
+          {
+            "id": "D",
+            "text": "printing"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "\"Look!\" cho thấy việc đang xảy ra ngay lúc nói: hiện tại tiếp diễn. Chủ ngữ số ít (The printer) nên \"is printing\"."
+      },
+      {
+        "id": "R7",
+        "kind": "mcq",
+        "stem": "This laptop ______ to the sales department, not to us.",
+        "options": [
+          {
+            "id": "A",
+            "text": "belongs"
+          },
+          {
+            "id": "B",
+            "text": "is belonging"
+          },
+          {
+            "id": "C",
+            "text": "belong"
+          },
+          {
+            "id": "D",
+            "text": "belonging"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "\"belong\" là động từ trạng thái, không dùng ở thì tiếp diễn. Chủ ngữ số ít nên \"belongs\"."
+      },
+      {
+        "id": "R8",
+        "kind": "mcq",
+        "stem": "The laptop ______ I bought last month is already too slow.",
+        "options": [
+          {
+            "id": "A",
+            "text": "who"
+          },
+          {
+            "id": "B",
+            "text": "what"
+          },
+          {
+            "id": "C",
+            "text": "where"
+          },
+          {
+            "id": "D",
+            "text": "which"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Mệnh đề quan hệ bổ nghĩa cho vật (The laptop): dùng \"which\" (hoặc that). \"who\" chỉ dùng cho người."
+      },
+      {
+        "id": "R9",
+        "kind": "mcq",
+        "stem": "Staff ______ work from home need to use the VPN.",
+        "options": [
+          {
+            "id": "A",
+            "text": "which"
+          },
+          {
+            "id": "B",
+            "text": "what"
+          },
+          {
+            "id": "C",
+            "text": "who"
+          },
+          {
+            "id": "D",
+            "text": "whose"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "Mệnh đề quan hệ bổ nghĩa cho người (Staff) làm chủ ngữ của \"work\": dùng \"who\"."
+      },
+      {
+        "id": "R10",
+        "kind": "mcq",
+        "stem": "If you press Ctrl and Z, the computer ______ your last action.",
+        "options": [
+          {
+            "id": "A",
+            "text": "undid"
+          },
+          {
+            "id": "B",
+            "text": "undoes"
+          },
+          {
+            "id": "C",
+            "text": "undoing"
+          },
+          {
+            "id": "D",
+            "text": "will undoing"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Câu điều kiện loại 0 cho điều luôn đúng: If + hiện tại đơn, hiện tại đơn (undoes)."
+      },
+      {
+        "id": "R11",
+        "kind": "mcq",
+        "stem": "If the new laptops ______ on Friday, we will set them up next week.",
+        "options": [
+          {
+            "id": "A",
+            "text": "will arrive"
+          },
+          {
+            "id": "B",
+            "text": "arrived"
+          },
+          {
+            "id": "C",
+            "text": "arriving"
+          },
+          {
+            "id": "D",
+            "text": "arrive"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Câu điều kiện loại 1: mệnh đề If dùng hiện tại đơn (arrive), không dùng \"will\"; mệnh đề chính dùng will + động từ."
+      },
+      {
+        "id": "R12",
+        "kind": "mcq",
+        "stem": "There is ______ USB port on the left side of the laptop.",
+        "options": [
+          {
+            "id": "A",
+            "text": "an"
+          },
+          {
+            "id": "B",
+            "text": "a"
+          },
+          {
+            "id": "C",
+            "text": "any"
+          },
+          {
+            "id": "D",
+            "text": "much"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "USB đọc bắt đầu bằng âm /juː/ (phụ âm) nên dùng \"a\", không dùng \"an\". any / much không đi với danh từ đếm được số ít trong câu khẳng định này."
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "R13",
+        "kind": "mcq",
+        "stem": "If the page doesn't show the latest news, click the ______ button.",
+        "options": [
+          {
+            "id": "A",
+            "text": "refresh"
+          },
+          {
+            "id": "B",
+            "text": "delete"
+          },
+          {
+            "id": "C",
+            "text": "sign"
+          },
+          {
+            "id": "D",
+            "text": "post"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "Refresh (làm mới) là cho màn hình hiển thị thông tin mới nhất kể từ khi bạn mở trang."
+      },
+      {
+        "id": "R14",
+        "kind": "mcq",
+        "stem": "Please ______ the delivery form to show that you have received the parcel.",
+        "options": [
+          {
+            "id": "A",
+            "text": "refresh"
+          },
+          {
+            "id": "B",
+            "text": "sign"
+          },
+          {
+            "id": "C",
+            "text": "delete"
+          },
+          {
+            "id": "D",
+            "text": "follow"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Sign (ký) là viết chữ ký lên giấy tờ để xác nhận."
+      },
+      {
+        "id": "R15",
+        "kind": "mcq",
+        "stem": "I left my ______ at home, so I can't charge my phone today.",
+        "options": [
+          {
+            "id": "A",
+            "text": "flowchart"
+          },
+          {
+            "id": "B",
+            "text": "invoice"
+          },
+          {
+            "id": "C",
+            "text": "recharger"
+          },
+          {
+            "id": "D",
+            "text": "attachment"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "Recharger (bộ sạc) là thiết bị nạp điện lại cho pin."
+      },
+      {
+        "id": "R16",
+        "kind": "mcq",
+        "stem": "We scanned the old paper documents and used ______ software to change them into text that we can edit.",
+        "options": [
+          {
+            "id": "A",
+            "text": "GPS"
+          },
+          {
+            "id": "B",
+            "text": "LAN"
+          },
+          {
+            "id": "C",
+            "text": "VPN"
+          },
+          {
+            "id": "D",
+            "text": "OCR"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "OCR (nhận dạng ký tự quang học) là phần mềm nhận ra chữ và số trên giấy để đưa tài liệu giấy vào máy tính."
+      },
+      {
+        "id": "R17",
+        "kind": "mcq",
+        "stem": "The calculator app has all the basic ______, such as adding, subtracting and multiplying.",
+        "options": [
+          {
+            "id": "A",
+            "text": "functions"
+          },
+          {
+            "id": "B",
+            "text": "signatures"
+          },
+          {
+            "id": "C",
+            "text": "recipients"
+          },
+          {
+            "id": "D",
+            "text": "invoices"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "Function (chức năng) là một thao tác cơ bản máy tính thực hiện, ví dụ cộng, trừ, nhân."
+      },
+      {
+        "id": "R18",
+        "kind": "mcq",
+        "stem": "Our technicians can fix most software problems ______, so they don't need to visit your office.",
+        "options": [
+          {
+            "id": "A",
+            "text": "exactly"
+          },
+          {
+            "id": "B",
+            "text": "remotely"
+          },
+          {
+            "id": "C",
+            "text": "carefully"
+          },
+          {
+            "id": "D",
+            "text": "early"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Remotely (từ xa): kỹ thuật viên sửa lỗi từ xa nên không cần đến văn phòng."
+      },
+      {
+        "id": "R19",
+        "kind": "mcq",
+        "stem": "All the team leaders will ______ in a discussion about the new network next Monday.",
+        "options": [
+          {
+            "id": "A",
+            "text": "sign"
+          },
+          {
+            "id": "B",
+            "text": "post"
+          },
+          {
+            "id": "C",
+            "text": "take part"
+          },
+          {
+            "id": "D",
+            "text": "report"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "Take part in (tham gia) một hoạt động cùng người khác."
+      },
+      {
+        "id": "R20",
+        "kind": "mcq",
+        "stem": "The clinic keeps a ______ of every patient visit on the computer.",
+        "options": [
+          {
+            "id": "A",
+            "text": "feature"
+          },
+          {
+            "id": "B",
+            "text": "location"
+          },
+          {
+            "id": "C",
+            "text": "flowchart"
+          },
+          {
+            "id": "D",
+            "text": "record"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Record (hồ sơ, bản ghi) là thông tin được ghi lại hoặc lưu trên máy tính để xem sau này."
+      }
+    ],
+    "passageMcq": {
+      "instructions": "Read the passage and choose the best answer A, B, C or D (Questions 21–25).",
+      "passage": {
+        "title": "Smartphones on the Farm",
+        "paragraphs": [
+          "Gareth Jones has a dairy farm with 150 cows in north Wales. Five years ago, he did all his paperwork at the kitchen table in the evening. Today, he does most of it on his smartphone while he is working in the fields.",
+          "Each cow wears a small sensor on its collar. The sensor measures how much the cow moves and sends the information to an app on Gareth's phone. If a cow moves much less than usual, it is often ill, so the app warns him immediately. 'I'm finding problems two or three days earlier than before,' Gareth says. 'If I find a problem early, the vet's bill is much smaller.'",
+          "The farm also has sensors in the fields which measure how wet the soil is. Every morning, Gareth checks these readings before he decides where the cows will go that day. When he needs animal food, he orders it with another app, which shows him the prices of three different companies.",
+          "There are still some problems. The mobile signal on parts of the farm is weak, so the sensors cannot always send their data. Gareth is solving this by putting a small wi-fi mast on the roof of his barn. 'Farming is still hard work,' he says, 'but my phone saves me about ten hours a week. If I'm not doing paperwork in the evening, I can spend more time with my family.'"
+        ]
+      },
+      "questions": [
+        {
+          "id": "R21",
+          "kind": "mcq",
+          "stem": "Where did Gareth do his paperwork five years ago?",
+          "options": [
+            {
+              "id": "A",
+              "text": "At the kitchen table"
+            },
+            {
+              "id": "B",
+              "text": "In the fields"
+            },
+            {
+              "id": "C",
+              "text": "In the barn"
+            },
+            {
+              "id": "D",
+              "text": "At the vet's office"
+            }
+          ],
+          "answerKey": "A",
+          "explanation": "Đoạn 1: \"Five years ago, he did all his paperwork at the kitchen table in the evening.\""
+        },
+        {
+          "id": "R22",
+          "kind": "mcq",
+          "stem": "What does the sensor on each cow's collar measure?",
+          "options": [
+            {
+              "id": "A",
+              "text": "The cow's temperature"
+            },
+            {
+              "id": "B",
+              "text": "How much milk the cow gives"
+            },
+            {
+              "id": "C",
+              "text": "How much the cow moves"
+            },
+            {
+              "id": "D",
+              "text": "How wet the soil is"
+            }
+          ],
+          "answerKey": "C",
+          "explanation": "Đoạn 2: \"The sensor measures how much the cow moves\". Độ ẩm của đất do cảm biến ngoài đồng đo."
+        },
+        {
+          "id": "R23",
+          "kind": "mcq",
+          "stem": "What happens if a cow moves much less than usual?",
+          "options": [
+            {
+              "id": "A",
+              "text": "The app warns Gareth immediately."
+            },
+            {
+              "id": "B",
+              "text": "The vet comes to the farm automatically."
+            },
+            {
+              "id": "C",
+              "text": "The sensor stops working."
+            },
+            {
+              "id": "D",
+              "text": "The cow goes to another field."
+            }
+          ],
+          "answerKey": "A",
+          "explanation": "Đoạn 2: \"If a cow moves much less than usual, it is often ill, so the app warns him immediately.\""
+        },
+        {
+          "id": "R24",
+          "kind": "mcq",
+          "stem": "Why does Gareth check the readings from the field sensors every morning?",
+          "options": [
+            {
+              "id": "A",
+              "text": "To order animal food"
+            },
+            {
+              "id": "B",
+              "text": "To find ill cows"
+            },
+            {
+              "id": "C",
+              "text": "To compare prices"
+            },
+            {
+              "id": "D",
+              "text": "To decide where the cows will go that day"
+            }
+          ],
+          "answerKey": "D",
+          "explanation": "Đoạn 3: \"Gareth checks these readings before he decides where the cows will go that day.\""
+        },
+        {
+          "id": "R25",
+          "kind": "mcq",
+          "stem": "How is Gareth solving the problem with the weak mobile signal?",
+          "options": [
+            {
+              "id": "A",
+              "text": "He is buying a new phone."
+            },
+            {
+              "id": "B",
+              "text": "He is putting a wi-fi mast on the roof of his barn."
+            },
+            {
+              "id": "C",
+              "text": "He is moving the sensors closer to the house."
+            },
+            {
+              "id": "D",
+              "text": "He is doing the paperwork in the evening again."
+            }
+          ],
+          "answerKey": "B",
+          "explanation": "Đoạn 4: \"Gareth is solving this by putting a small wi-fi mast on the roof of his barn.\""
+        }
+      ]
+    },
+    "passageTrueFalse": {
+      "instructions": "Read the email and write T (True) or F (False) (Questions 26–30).",
+      "passage": {
+        "title": "Network maintenance this Saturday",
+        "paragraphs": [
+          "Hi everyone,",
+          "Our network provider is upgrading the equipment in the server room this Saturday, 14th June, from 8 a.m. to 2 p.m. During this time, the internet, email and the shared drives will not be available. We chose Saturday because very few people work at the weekend.",
+          "If you need to work at the weekend, please download the files that you need before you leave on Friday. The VPN will also be offline, so you won't be able to connect from home.",
+          "The phone system uses a separate line, so it will work as normal. Customers can still call the helpdesk, but technicians won't be able to open customer accounts until the work is finished. If there is an urgent problem on Saturday, please call my mobile.",
+          "Please switch off your computer before you leave on Friday, but don't unplug it. If a computer is still on, the update restarts it automatically, and you may lose any work that you haven't saved.",
+          "Thanks for your help,",
+          "Kevin Moore, IT Manager"
+        ]
+      },
+      "questions": [
+        {
+          "id": "R26",
+          "kind": "tf",
+          "statement": "The maintenance work will finish at 2 p.m. on Saturday.",
+          "answerKey": "T",
+          "explanation": "Đoạn 2: công việc diễn ra thứ Bảy \"from 8 a.m. to 2 p.m.\"."
+        },
+        {
+          "id": "R27",
+          "kind": "tf",
+          "statement": "Staff will be able to use the VPN from home during the maintenance.",
+          "answerKey": "F",
+          "explanation": "Đoạn 3: \"The VPN will also be offline, so you won't be able to connect from home.\""
+        },
+        {
+          "id": "R28",
+          "kind": "tf",
+          "statement": "The phone system will not work during the maintenance.",
+          "answerKey": "F",
+          "explanation": "Đoạn 4: \"The phone system uses a separate line, so it will work as normal.\""
+        },
+        {
+          "id": "R29",
+          "kind": "tf",
+          "statement": "Staff should unplug their computers before they leave on Friday.",
+          "answerKey": "F",
+          "explanation": "Đoạn 5: \"Please switch off your computer before you leave on Friday, but don't unplug it.\""
+        },
+        {
+          "id": "R30",
+          "kind": "tf",
+          "statement": "If a computer is still on, the update restarts it automatically.",
+          "answerKey": "T",
+          "explanation": "Đoạn 5: \"If a computer is still on, the update restarts it automatically\"."
+        }
+      ]
+    }
+  },
+  "writing": {
+    "translation": {
+      "instructions": "Translate these sentences into Vietnamese (Questions 31–35).",
+      "items": [
+        {
+          "id": "W31",
+          "source": "This week, the IT team is moving all the company's files to a new server.",
+          "referenceTranslation": "Tuần này, nhóm IT đang chuyển tất cả các tệp của công ty sang một máy chủ mới."
+        },
+        {
+          "id": "W32",
+          "source": "We need a printer that can print on both sides of the paper.",
+          "referenceTranslation": "Chúng tôi cần một máy in có thể in được cả hai mặt giấy."
+        },
+        {
+          "id": "W33",
+          "source": "If you lose your phone, we will lock it remotely so that nobody can read your data.",
+          "referenceTranslation": "Nếu bạn làm mất điện thoại, chúng tôi sẽ khoá nó từ xa để không ai có thể đọc dữ liệu của bạn."
+        },
+        {
+          "id": "W34",
+          "source": "If you scan a paper invoice, the app saves an electronic version automatically.",
+          "referenceTranslation": "Nếu bạn quét một hoá đơn giấy, ứng dụng sẽ tự động lưu một bản điện tử."
+        },
+        {
+          "id": "W35",
+          "source": "Please send me the report as an attachment, not in the body of the email.",
+          "referenceTranslation": "Vui lòng gửi cho tôi bản báo cáo dưới dạng tệp đính kèm, không phải trong phần nội dung của email."
+        }
+      ]
+    },
+    "email": {
+      "id": "W-EMAIL",
+      "recipient": "Olivia",
+      "task": "You are an IT officer. A lot of staff are taking their summer holidays this month. Olivia, a new accountant, has asked how to set up an automatic reply for her emails while she is away. Write an email to Olivia explaining the steps, using the notes below. In your email you must use:\n- the present continuous at least once for something that is happening now or around now (Lots of staff are taking…);\n- at least one relative clause with which, that or who;\n- at least one zero or first conditional sentence (If + present simple, present simple / will + verb).\nFollow the standard layout for an email giving instructions: From / To / Date / Subject, a greeting, It should be quite easy to …, the steps with First / Then / Next / After that / Finally, a reminder (Don't forget to … when you've finished.), then Best wishes and your name, position and department.\nWrite 80–100 words (do not count the From, To, Date and Subject lines).",
+      "bullets": [
+        "this month: lots of staff / take their summer holidays",
+        "open your email program / click 'File', then 'Automatic Replies'",
+        "select 'Send automatic replies'",
+        "type a short message (give the date when you'll be back)",
+        "add the name of a colleague (this person can help while you're away)",
+        "only reply to people in the company? tick 'Inside my organisation only'",
+        "reminder: click 'OK' when you've finished"
+      ],
+      "wordRange": [
+        80,
+        100
+      ],
+      "targetGrammar": [
+        "Present continuous for something happening now or around now: Lots of staff are taking their holidays this month",
+        "Relative clauses with which, that or who: a message which gives…, a colleague who can help…",
+        "Zero or first conditional: If you only want to reply to…, tick… / If someone writes to you, they will…",
+        "Imperatives with sequence words for the steps"
+      ],
+      "modelAnswer": "From: Hoang Minh Chau\nTo: Olivia\nDate: 2nd July\nSubject: Automatic replies\n\nHi Olivia,\n\nMany staff are taking holidays this month.\nIt should be quite easy to set up an automatic reply.\nFirst, open your email program and click 'File', then 'Automatic Replies'.\nThen, select 'Send automatic replies'.\nNext, type a short message which gives the date when you'll be back.\nAfter that, add the name of a colleague who can help while you're away.\nFinally, if you only want to reply to people in the company, just tick 'Inside my organisation only'.\nDon't forget to click 'OK' when you've finished.\n\nBest wishes,\nHoang Minh Chau\nIT Officer\nIT Department"
+    }
+  },
+  "speaking": {
+    "parts": [
+      {
+        "id": "S1",
+        "kind": "questions",
+        "instructions": "Answer the three questions. Speak for 30–45 seconds for each question.",
+        "questions": [
+          "What device do you use most, and what are you using it for most this week? Use the present simple for things you usually do and the present continuous for things you are doing now or this week.",
+          "What happens if you leave a phone in the hot sun or drop it in water? Use zero conditional sentences (If you…, the phone…).",
+          "What kinds of messages and files do you usually send to your teachers or friends? Use relative clauses with which, that or who (I send photos which…, I write to friends who…)."
+        ],
+        "secondsPerQuestion": 45
+      },
+      {
+        "id": "S2",
+        "kind": "explain",
+        "instructions": "Explain the parts of a web browser. Speak for 1–1.5 minutes.",
+        "prompt": "Your uncle has just started using the internet. Explain what each part of a web browser in the cues is and what it does. Use relative clauses with which, that or who (The address bar is the box which…, A tab is something that…).",
+        "cues": [
+          "address bar",
+          "back button",
+          "refresh button",
+          "bookmark",
+          "tab"
+        ],
+        "requiredGrammar": [
+          "Relative clauses with which, that or who: The address bar is the box which…, A tab is something that…"
+        ],
+        "seconds": 90,
+        "sampleAnswer": "Let me show you the main parts of the browser. At the top, there's the address bar, which is the long box where you type the address of a website. Next to it, there's the back button. It's the arrow that takes you to the page which you were looking at before. The round arrow is the refresh button. It's the button which loads the page again, so you can see the latest news. A bookmark is a way of saving a website that you visit often, so you don't have to type the address every time. Finally, tabs are the small boxes at the top which let you open several websites in the same window. For example, you can read the news in one tab and check the weather in another."
+      },
+      {
+        "id": "S3",
+        "kind": "situation",
+        "instructions": "Deal with the situation. Speak for 1–1.5 minutes.",
+        "prompt": "A friend owns a small café and is not sure whether to offer free wi-fi to customers. Explain the benefits and the risks, and give your advice. Use first conditional sentences (If you offer…, customers will…) and at least one zero conditional sentence (If many people stream videos, the network…).",
+        "cues": [
+          "customers stay longer / buy more drinks and food",
+          "students and people who work online choose your café",
+          "risk: if many people stream videos, the connection gets slow",
+          "advice: a separate guest network keeps the café's computer safe / change the password every week"
+        ],
+        "requiredGrammar": [
+          "First conditional: If you offer free wi-fi, customers will…",
+          "Zero conditional: If many people stream videos, the connection gets slow"
+        ],
+        "seconds": 90,
+        "sampleAnswer": "I think free wi-fi is a good idea for your café. If you offer free wi-fi, customers will stay longer, and if they stay longer, they'll probably buy more drinks and food. Also, if students and people who work online know about it, they'll choose your café instead of the one across the road. But there are some risks. If a lot of people stream videos at the same time, the connection gets very slow, and then customers complain. So my advice is to set up a separate guest network. If customers use the guest network, they can't see your till or your office computer, so your data stays safe. And please change the password every week. If you do that, people outside the café won't use your connection all day."
+      }
+    ]
+  }
+}
