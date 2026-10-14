@@ -33,7 +33,7 @@
       {
         "id": "A",
         "instructions": "Listen to the conversation and choose the best answer A, B, C or D (Questions L1–L5).",
-        "context": "Leah and Sam, two IT technicians at a college, talk about a projector that keeps switching itself off.",
+        "context": "Leah and Sam, two IT technicians at a college, talk about a problem with a projector in one of the classrooms.",
         "speakers": [
           { "name": "Leah", "voice": "female" },
           { "name": "Sam", "voice": "male" }
