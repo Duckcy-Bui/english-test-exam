@@ -1,0 +1,630 @@
+{
+  "schemaVersion": 1,
+  "unit": 5,
+  "unitTitle": "Choice",
+  "testId": "B",
+  "source": "ai",
+  "functions": [
+    "Comparing products (Web hosting)",
+    "Discussing IT costs (IT costs)",
+    "Researching products (Product research)",
+    "Recommending products (Making recommendations)"
+  ],
+  "grammarFocus": [
+    "Comparatives and superlatives: -er than, more/less … than, fewer … than; as … as; the same (as); the -est, the most/least",
+    "Talking about money: cost, come to, be when the item is the subject; spend, pay when a person or company is the subject; saying prices and large numbers",
+    "Indirect questions to be polite: Could you tell me what…?, Do you know whether/if…? (statement word order after the question word)",
+    "Recommendations: I think (that) we should + verb; it's a good idea / it's best + to-infinitive; I recommend + -ing / that we + verb / noun phrase"
+  ],
+  "sourceNotes": [
+    "Đề B do AI soạn mới (Giai đoạn 5), cùng khung với đề A nhưng khác toàn bộ bài đọc, lời thoại, câu dịch, đề email và đề nói.",
+    "R1–R5: năm thuật ngữ khác hẳn đề A. Định nghĩa viết gần Workbook Unit 5: data centre, control panel (5D, tr. 49), trial period, traditional pricing (5C, tr. 48), capability (5B, tr. 47). Định nghĩa thừa lấy từ user guide (5B, tr. 48); từ này không dùng ở phần khác của đề.",
+    "R6–R12: so sánh (R6–R8), động từ nói về tiền (R9), câu hỏi gián tiếp (R10–R11), khuyến nghị (R12). Phương án nhiễu cùng một gốc từ hoặc cùng loại cấu trúc để chỉ một phương án đúng.",
+    "R13–R20: từ Workbook Unit 5 Part 1: charger (5A), minor (5C), analyse (5A), forum (5B), conclusion (5B), unlimited (5D), set (5C), service (5A). Không trùng từ được hỏi ở R13–R20 đề A.",
+    "Bài đọc R21–R25 (máy tính tiền POS cho quán cà phê) và R26–R30 (nâng cấp hay thay máy tính thư viện) viết mới. Không nhắc dùng thử, trung tâm dữ liệu, bảng điều khiển hay cách tính giá truyền thống để không diễn đạt lại định nghĩa câu nối.",
+    "Listening A (máy chiếu cho trường ngoại ngữ, hội chợ công nghệ) theo bài Product research; Listening B (chi phí IT của phòng khám nha khoa) theo bài IT costs. Viết mới, không chép Audio script.",
+    "Listening B: acceptedAnswers có biến thể cách viết số và mạo từ; một số biến thể không có nguyên văn trong lời thoại.",
+    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng."
+  ],
+  "listening": {
+    "parts": [
+      {
+        "id": "A",
+        "instructions": "Listen to the conversation and choose the best answer A, B, C or D (Questions L1–L5).",
+        "context": "At a technology fair, Mai, who works in the IT office of a language school, talks to Daniel, a salesperson at a projector company.",
+        "speakers": [
+          { "name": "Daniel", "voice": "male" },
+          { "name": "Mai", "voice": "female" }
+        ],
+        "script": [
+          { "speaker": "Daniel", "text": "Good morning. Welcome to the ProVision stand. Can I help you?" },
+          { "speaker": "Mai", "text": "Yes, please. I'm Mai, and I work in the IT office at a language school. We need new projectors for four classrooms, and I'd like some information." },
+          { "speaker": "Daniel", "text": "Of course. These are our two most popular models, the Lumo 300 and the Lumo 500." },
+          { "speaker": "Mai", "text": "Could you tell me how much they cost?" },
+          { "speaker": "Daniel", "text": "Sure. The Lumo 300 costs four hundred and twenty pounds, and the Lumo 500 is five hundred and sixty." },
+          { "speaker": "Mai", "text": "And do you know what the main difference is?" },
+          { "speaker": "Daniel", "text": "The 500 is brighter, so it's better for rooms with big windows. Both models come with a remote control and built-in speakers, but only the 500 can connect to laptops wirelessly." },
+          { "speaker": "Mai", "text": "I see. Two of our classrooms are very bright, but the other two are quite small and dark." },
+          { "speaker": "Daniel", "text": "Then you don't need the brightest model in every room." },
+          { "speaker": "Mai", "text": "That's true. Four Lumo 500s would come to two thousand two hundred and forty pounds, and our budget is only two thousand." },
+          { "speaker": "Daniel", "text": "In that case, I recommend buying two of each model. That comes to one thousand nine hundred and sixty pounds." },
+          { "speaker": "Mai", "text": "That's less than our budget. Great, I'll order two of each. Can you tell me whether delivery is free?" },
+          { "speaker": "Daniel", "text": "Yes, it's free for all orders over one thousand pounds." }
+        ],
+        "questions": [
+          {
+            "id": "L1",
+            "kind": "mcq",
+            "stem": "Why does Mai talk to Daniel?",
+            "options": [
+              { "id": "A", "text": "To complain about her old projectors" },
+              { "id": "B", "text": "To get information about projectors" },
+              { "id": "C", "text": "To sell English courses to his company" },
+              { "id": "D", "text": "To ask him to repair a projector" }
+            ],
+            "answerKey": "B",
+            "explanation": "Mai nói trường cần máy chiếu mới cho bốn phòng học và \"I'd like some information\", tức muốn tìm hiểu sản phẩm."
+          },
+          {
+            "id": "L2",
+            "kind": "mcq",
+            "stem": "How much does one Lumo 500 cost?",
+            "options": [
+              { "id": "A", "text": "£420" },
+              { "id": "B", "text": "£560" },
+              { "id": "C", "text": "£1,960" },
+              { "id": "D", "text": "£2,240" }
+            ],
+            "answerKey": "B",
+            "explanation": "Daniel nói \"the Lumo 500 is five hundred and sixty\". 420 bảng là giá Lumo 300; 2.240 bảng là giá bốn máy Lumo 500; 1.960 bảng là giá hai máy mỗi loại."
+          },
+          {
+            "id": "L3",
+            "kind": "mcq",
+            "stem": "What can only the Lumo 500 do?",
+            "options": [
+              { "id": "A", "text": "Connect to laptops wirelessly" },
+              { "id": "B", "text": "Play sound through speakers" },
+              { "id": "C", "text": "Work with a remote control" },
+              { "id": "D", "text": "Show three-dimensional images" }
+            ],
+            "answerKey": "A",
+            "explanation": "\"only the 500 can connect to laptops wirelessly\". Điều khiển từ xa và loa có sẵn ở cả hai mẫu; hình ba chiều không được nhắc đến."
+          },
+          {
+            "id": "L4",
+            "kind": "mcq",
+            "stem": "Why doesn't Mai buy four Lumo 500s?",
+            "options": [
+              { "id": "A", "text": "They would cost more than her budget." },
+              { "id": "B", "text": "They are too heavy for the classrooms." },
+              { "id": "C", "text": "They are not bright enough for her rooms." },
+              { "id": "D", "text": "The delivery would take too long." }
+            ],
+            "answerKey": "A",
+            "explanation": "Bốn máy Lumo 500 \"would come to two thousand two hundred and forty pounds\", trong khi ngân sách chỉ có 2.000 bảng."
+          },
+          {
+            "id": "L5",
+            "kind": "mcq",
+            "stem": "What does Mai decide to order?",
+            "options": [
+              { "id": "A", "text": "Four Lumo 500s" },
+              { "id": "B", "text": "Four Lumo 300s" },
+              { "id": "C", "text": "Two of each model" },
+              { "id": "D", "text": "One of each model" }
+            ],
+            "answerKey": "C",
+            "explanation": "Daniel khuyên \"buying two of each model\" (tổng 1.960 bảng, dưới ngân sách) và Mai nói \"I'll order two of each\"."
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "instructions": "Listen to the talk and answer the questions. Write NO MORE THAN THREE WORDS for each answer (Questions L6–L10).",
+        "context": "Paul, the practice manager of Harbour Dental Clinic, tells the staff about the clinic's IT costs this year.",
+        "speakers": [{ "name": "Paul", "voice": "male" }],
+        "script": [
+          { "speaker": "Paul", "text": "Good morning, everyone. Today I want to explain how much we spent on IT this year. In total, our IT costs came to twenty-four thousand pounds, which is less than we spent last year." },
+          { "speaker": "Paul", "text": "First, hardware. We bought ten new desktop computers for reception and the treatment rooms. Each one cost six hundred and fifty pounds, so together they came to six thousand five hundred pounds. The most expensive single item was the new server, which cost eight thousand pounds." },
+          { "speaker": "Paul", "text": "Next, software. Our new booking software costs a hundred and fifty pounds a month, so we pay eighteen hundred pounds a year for it. We also paid a local company twelve hundred pounds to install new network cables. We spent the rest of the money on training and small repairs." },
+          { "speaker": "Paul", "text": "Finally, my recommendation for next year. Our printers are the oldest machines in the clinic, and they often break down. I think we should replace them in the spring. Thank you. Are there any questions?" }
+        ],
+        "questions": [
+          {
+            "id": "L6",
+            "kind": "short",
+            "stem": "How many new desktop computers did the clinic buy?",
+            "maxWords": 3,
+            "acceptedAnswers": ["ten", "10", "ten computers", "10 computers", "ten desktop computers", "10 desktop computers"],
+            "explanation": "Paul nói \"We bought ten new desktop computers for reception and the treatment rooms\"."
+          },
+          {
+            "id": "L7",
+            "kind": "short",
+            "stem": "What was the most expensive single item?",
+            "maxWords": 3,
+            "acceptedAnswers": ["the new server", "new server", "the server", "server", "a new server", "a server"],
+            "explanation": "\"The most expensive single item was the new server, which cost eight thousand pounds\"."
+          },
+          {
+            "id": "L8",
+            "kind": "short",
+            "stem": "How much does the booking software cost each month?",
+            "maxWords": 3,
+            "acceptedAnswers": ["150", "150 pounds", "150 a month", "a hundred fifty", "one hundred fifty"],
+            "explanation": "\"Our new booking software costs a hundred and fifty pounds a month\" (1.800 bảng một năm)."
+          },
+          {
+            "id": "L9",
+            "kind": "short",
+            "stem": "What did a local company install for the clinic?",
+            "maxWords": 3,
+            "acceptedAnswers": ["new network cables", "network cables", "the network cables", "cables", "new cables", "the cables"],
+            "explanation": "\"We also paid a local company twelve hundred pounds to install new network cables\"."
+          },
+          {
+            "id": "L10",
+            "kind": "short",
+            "stem": "What does Paul recommend replacing next year?",
+            "maxWords": 3,
+            "acceptedAnswers": ["the printers", "printers", "the old printers", "old printers"],
+            "explanation": "Máy in là máy cũ nhất và hay hỏng, nên Paul nói \"I think we should replace them in the spring\"."
+          }
+        ]
+      }
+    ]
+  },
+  "reading": {
+    "matching": {
+      "instructions": "Match the terms (1–5) with the correct definitions (A–F). There is one extra definition that you do not need (Questions 1–5).",
+      "definitions": [
+        { "id": "A", "text": "The ability or power that makes a machine or a person able to do something difficult." },
+        { "id": "B", "text": "A short time during which you use something to find out whether it is good enough for your needs." },
+        { "id": "C", "text": "A book or document that explains how to use a product." },
+        { "id": "D", "text": "A way of charging for something that follows methods which have been used for a long time." },
+        { "id": "E", "text": "A building that houses computer systems and related equipment, such as storage systems." },
+        { "id": "F", "text": "A display that lets users see and change the basic settings of a system." }
+      ],
+      "items": [
+        { "id": "R1", "term": "Data centre", "answerKey": "E", "explanation": "Data centre (trung tâm dữ liệu) là toà nhà đặt các hệ thống máy tính và thiết bị đi kèm như hệ thống lưu trữ." },
+        { "id": "R2", "term": "Trial period", "answerKey": "B", "explanation": "Trial period (thời gian dùng thử) là khoảng thời gian ngắn dùng thử để xem sản phẩm có đáp ứng nhu cầu không." },
+        { "id": "R3", "term": "Control panel", "answerKey": "F", "explanation": "Control panel (bảng điều khiển) là màn hình cho người dùng xem và thay đổi các thiết lập cơ bản của hệ thống." },
+        { "id": "R4", "term": "Capability", "answerKey": "A", "explanation": "Capability (năng lực, khả năng) là khả năng giúp máy móc hoặc con người làm được việc khó." },
+        { "id": "R5", "term": "Traditional pricing", "answerKey": "D", "explanation": "Traditional pricing (định giá truyền thống) là cách tính giá theo phương pháp đã dùng từ lâu. Định nghĩa C là của user guide (sách hướng dẫn sử dụng), không có trong danh sách thuật ngữ." }
+      ]
+    },
+    "grammar": [
+      {
+        "id": "R6",
+        "kind": "mcq",
+        "stem": "Router X sends data at 300 Mbps, and Router Y sends data at 600 Mbps. Router Y is ______ than Router X.",
+        "options": [
+          { "id": "A", "text": "fastest" },
+          { "id": "B", "text": "more fast" },
+          { "id": "C", "text": "faster" },
+          { "id": "D", "text": "the fastest" }
+        ],
+        "answerKey": "C",
+        "explanation": "So sánh hơn của tính từ ngắn: fast → faster than. \"more fast\" sai vì tính từ một âm tiết thêm -er; \"fastest\" và \"the fastest\" là so sánh nhất, không đi với \"than\"."
+      },
+      {
+        "id": "R7",
+        "kind": "mcq",
+        "stem": "Both monitors cost £180, so the Asta monitor is ______ expensive as the Brio monitor.",
+        "options": [
+          { "id": "A", "text": "more" },
+          { "id": "B", "text": "as" },
+          { "id": "C", "text": "than" },
+          { "id": "D", "text": "most" }
+        ],
+        "answerKey": "B",
+        "explanation": "Hai màn hình cùng giá nên dùng so sánh bằng \"as + tính từ + as\": as expensive as. \"more\" phải đi với \"than\"; \"than\" và \"most\" không đứng trước \"expensive as\"."
+      },
+      {
+        "id": "R8",
+        "kind": "mcq",
+        "stem": "Of all the printers in the catalogue, the K20 has ______ running costs.",
+        "options": [
+          { "id": "A", "text": "lowest" },
+          { "id": "B", "text": "the lower" },
+          { "id": "C", "text": "more low" },
+          { "id": "D", "text": "the lowest" }
+        ],
+        "answerKey": "D",
+        "explanation": "\"Of all the printers\" là so sánh trong cả nhóm nên dùng so sánh nhất có \"the\": the lowest. \"lowest\" thiếu \"the\"; \"the lower\" và \"more low\" là so sánh hơn (dạng \"more low\" còn sai)."
+      },
+      {
+        "id": "R9",
+        "kind": "mcq",
+        "stem": "Last year, the school ______ £3,000 on new keyboards and mice.",
+        "options": [
+          { "id": "A", "text": "spent" },
+          { "id": "B", "text": "cost" },
+          { "id": "C", "text": "came" },
+          { "id": "D", "text": "charged" }
+        ],
+        "answerKey": "A",
+        "explanation": "Chủ ngữ là người hoặc tổ chức (the school) chi tiền cho món đồ: spend + số tiền + on + món đồ. \"cost\" và \"come to\" dùng khi món đồ là chủ ngữ; \"charge\" là bên bán tính tiền, không đi với \"on\" theo nghĩa này."
+      },
+      {
+        "id": "R10",
+        "kind": "mcq",
+        "stem": "Could you tell me how long ______?",
+        "options": [
+          { "id": "A", "text": "does the battery last" },
+          { "id": "B", "text": "the battery lasts" },
+          { "id": "C", "text": "lasts the battery" },
+          { "id": "D", "text": "the battery last" }
+        ],
+        "answerKey": "B",
+        "explanation": "Câu hỏi gián tiếp dùng trật tự câu kể sau từ để hỏi: how long + chủ ngữ + động từ (the battery lasts). Không dùng trợ động từ \"does\", không đảo động từ lên trước; \"the battery last\" sai hoà hợp chủ ngữ – động từ."
+      },
+      {
+        "id": "R11",
+        "kind": "mcq",
+        "stem": "Can you tell me ______ the price includes delivery or not?",
+        "options": [
+          { "id": "A", "text": "what" },
+          { "id": "B", "text": "that" },
+          { "id": "C", "text": "whether" },
+          { "id": "D", "text": "which" }
+        ],
+        "answerKey": "C",
+        "explanation": "Câu hỏi gián tiếp cho câu hỏi có/không dùng whether (hoặc if); cụm \"or not\" ở cuối câu chỉ đi được với whether. \"what\", \"which\" cần một chỗ trống danh từ; \"that\" không dùng với \"or not\"."
+      },
+      {
+        "id": "R12",
+        "kind": "mcq",
+        "stem": "I recommend ______ the new software on one computer before we install it everywhere.",
+        "options": [
+          { "id": "A", "text": "testing" },
+          { "id": "B", "text": "to test" },
+          { "id": "C", "text": "test" },
+          { "id": "D", "text": "tested" }
+        ],
+        "answerKey": "A",
+        "explanation": "Khuyến nghị: \"I recommend + V-ing\" (I recommend testing…). Không dùng \"recommend to + V\" hay động từ nguyên mẫu, quá khứ ngay sau \"recommend\"."
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "R13",
+        "kind": "mcq",
+        "stem": "My phone battery is almost empty. Have you got a ______ I can borrow?",
+        "options": [
+          { "id": "A", "text": "reader" },
+          { "id": "B", "text": "charger" },
+          { "id": "C", "text": "holder" },
+          { "id": "D", "text": "tier" }
+        ],
+        "answerKey": "B",
+        "explanation": "Charger (bộ sạc) là thiết bị nạp điện vào pin."
+      },
+      {
+        "id": "R14",
+        "kind": "mcq",
+        "stem": "It is only a ______ problem with the display settings, so it won't take long to fix.",
+        "options": [
+          { "id": "A", "text": "major" },
+          { "id": "B", "text": "dedicated" },
+          { "id": "C", "text": "unlimited" },
+          { "id": "D", "text": "minor" }
+        ],
+        "answerKey": "D",
+        "explanation": "Minor (nhỏ, không nghiêm trọng) hợp với \"only\" và \"won't take long to fix\". Major là lớn, quan trọng, trái nghĩa."
+      },
+      {
+        "id": "R15",
+        "kind": "mcq",
+        "stem": "Before we choose a supplier, we need to ______ the prices and features of each product carefully.",
+        "options": [
+          { "id": "A", "text": "charge" },
+          { "id": "B", "text": "spend" },
+          { "id": "C", "text": "analyse" },
+          { "id": "D", "text": "host" }
+        ],
+        "answerKey": "C",
+        "explanation": "Analyse (phân tích) là xem xét kỹ để hiểu rõ, ở đây là xem giá và tính năng trước khi chọn nhà cung cấp."
+      },
+      {
+        "id": "R16",
+        "kind": "mcq",
+        "stem": "If you have a question about the app, you can ask other users on the online ______.",
+        "options": [
+          { "id": "A", "text": "forum" },
+          { "id": "B", "text": "tier" },
+          { "id": "C", "text": "fee" },
+          { "id": "D", "text": "plan" }
+        ],
+        "answerKey": "A",
+        "explanation": "Forum (diễn đàn) là nhóm người dùng trao đổi về một chủ đề qua Internet."
+      },
+      {
+        "id": "R17",
+        "kind": "mcq",
+        "stem": "The ______ of a presentation is the final part, where the speaker summarises the main points.",
+        "options": [
+          { "id": "A", "text": "introduction" },
+          { "id": "B", "text": "body" },
+          { "id": "C", "text": "title" },
+          { "id": "D", "text": "conclusion" }
+        ],
+        "answerKey": "D",
+        "explanation": "Conclusion (phần kết luận) là phần cuối. Introduction là phần mở đầu, body là phần thân."
+      },
+      {
+        "id": "R18",
+        "kind": "mcq",
+        "stem": "This plan includes ______ storage, so you can upload as many files as you like.",
+        "options": [
+          { "id": "A", "text": "minor" },
+          { "id": "B", "text": "unlimited" },
+          { "id": "C", "text": "major" },
+          { "id": "D", "text": "basic" }
+        ],
+        "answerKey": "B",
+        "explanation": "Unlimited (không giới hạn) khớp với \"as many files as you like\"."
+      },
+      {
+        "id": "R19",
+        "kind": "mcq",
+        "stem": "The keyboard, mouse and cables come as a ______, so you don't need to buy them separately.",
+        "options": [
+          { "id": "A", "text": "tier" },
+          { "id": "B", "text": "forum" },
+          { "id": "C", "text": "set" },
+          { "id": "D", "text": "plan" }
+        ],
+        "answerKey": "C",
+        "explanation": "Set (bộ) là nhóm đồ vật cùng loại đi với nhau, nên không phải mua riêng từng món."
+      },
+      {
+        "id": "R20",
+        "kind": "mcq",
+        "stem": "The company offers a cleaning ______ for laptops: a technician visits the office once a month.",
+        "options": [
+          { "id": "A", "text": "service" },
+          { "id": "B", "text": "accessory" },
+          { "id": "C", "text": "charger" },
+          { "id": "D", "text": "reader" }
+        ],
+        "answerKey": "A",
+        "explanation": "Service (dịch vụ) là công việc doanh nghiệp làm cho khách hàng, không phải sản xuất hàng hoá; ở đây là dịch vụ vệ sinh máy tính xách tay."
+      }
+    ],
+    "passageMcq": {
+      "instructions": "Read the passage and choose the best answer A, B, C or D (Questions 21–25).",
+      "passage": {
+        "title": "A New Till for Rosa's Café",
+        "paragraphs": [
+          "Rosa owns a small café in Bristol with two members of staff. Her old cash register is slow, and it cannot print receipts for card payments. She wants a point-of-sale (POS) system that runs on a tablet. Her nephew Leo, who is studying IT at university, offers to help her research two products.",
+          "The first system, SwiftTill, comes with a tablet, a card machine and a receipt printer for £650. The software costs £25 a month and sends Rosa a sales report every evening. However, support is by email only, and the company usually replies within 24 hours.",
+          "The second system, CafeDesk, is cheaper to buy, because the hardware costs only £480. On the other hand, its software is more expensive at £40 a month. It includes telephone support seven days a week and a stock feature that tells Rosa when she is running out of milk or coffee beans. Leo phones CafeDesk and asks whether the system works without the internet. The salesperson explains that it saves sales on the tablet and sends them to the cloud later. SwiftTill does not have this feature.",
+          "Leo works out the costs for the first year. SwiftTill comes to £950, and CafeDesk comes to £960, so the difference is very small. The café's internet connection often goes down at weekends, when the café is busiest. For this reason, Leo recommends CafeDesk. Rosa agrees with him and plans to order it next week."
+        ]
+      },
+      "questions": [
+        {
+          "id": "R21",
+          "kind": "mcq",
+          "stem": "Why does Rosa want a new system?",
+          "options": [
+            { "id": "A", "text": "Her staff cannot use the old tablet." },
+            { "id": "B", "text": "Her old cash register is slow." },
+            { "id": "C", "text": "She wants to sell coffee online." },
+            { "id": "D", "text": "Her nephew asked her to change it." }
+          ],
+          "answerKey": "B",
+          "explanation": "Đoạn 1: \"Her old cash register is slow, and it cannot print receipts for card payments.\""
+        },
+        {
+          "id": "R22",
+          "kind": "mcq",
+          "stem": "What is true about SwiftTill?",
+          "options": [
+            { "id": "A", "text": "Its hardware is cheaper than CafeDesk's." },
+            { "id": "B", "text": "It offers telephone support every day." },
+            { "id": "C", "text": "Its support is by email only." },
+            { "id": "D", "text": "It tells Rosa when stock is low." }
+          ],
+          "answerKey": "C",
+          "explanation": "Đoạn 2: \"support is by email only\". Phần cứng SwiftTill đắt hơn (650 so với 480 bảng); hỗ trợ qua điện thoại và tính năng báo hết hàng là của CafeDesk."
+        },
+        {
+          "id": "R23",
+          "kind": "mcq",
+          "stem": "What did Leo want to find out when he phoned CafeDesk?",
+          "options": [
+            { "id": "A", "text": "Whether the system works without the internet" },
+            { "id": "B", "text": "How much the hardware costs" },
+            { "id": "C", "text": "When the system can be delivered" },
+            { "id": "D", "text": "Whether the staff need any training" }
+          ],
+          "answerKey": "A",
+          "explanation": "Đoạn 3: \"Leo phones CafeDesk and asks whether the system works without the internet.\""
+        },
+        {
+          "id": "R24",
+          "kind": "mcq",
+          "stem": "How do the first-year costs of the two systems compare?",
+          "options": [
+            { "id": "A", "text": "CafeDesk costs £10 more than SwiftTill." },
+            { "id": "B", "text": "SwiftTill costs £10 more than CafeDesk." },
+            { "id": "C", "text": "The two systems cost exactly the same." },
+            { "id": "D", "text": "CafeDesk costs half as much as SwiftTill." }
+          ],
+          "answerKey": "A",
+          "explanation": "Đoạn 4: SwiftTill \"comes to £950\", CafeDesk \"comes to £960\", nên CafeDesk đắt hơn 10 bảng."
+        },
+        {
+          "id": "R25",
+          "kind": "mcq",
+          "stem": "Why does Leo recommend CafeDesk?",
+          "options": [
+            { "id": "A", "text": "It costs less in the first year." },
+            { "id": "B", "text": "It sends a sales report every evening." },
+            { "id": "C", "text": "The café's internet often goes down at weekends." },
+            { "id": "D", "text": "Rosa's staff have used it before." }
+          ],
+          "answerKey": "C",
+          "explanation": "Đoạn 4: mạng Internet của quán hay mất vào cuối tuần, lúc đông khách nhất, \"For this reason, Leo recommends CafeDesk\". CafeDesk đắt hơn trong năm đầu; báo cáo doanh thu buổi tối là của SwiftTill."
+        }
+      ]
+    },
+    "passageTrueFalse": {
+      "instructions": "Read the passage and write T (True) or F (False) (Questions 26–30).",
+      "passage": {
+        "title": "Old Computers at Greenway Library",
+        "paragraphs": [
+          "Greenway Library has twelve public computers, and they are now six years old. Visitors often complain that the machines are slow, especially when several people print at the same time. Hassan, the library's IT technician, has looked at two options.",
+          "The first option is to upgrade the old computers with more memory and faster hard drives. This costs £120 per computer. The machines would be faster after the upgrade, but they would not be as fast as new ones. The second option is to buy new compact desktops at £480 each. They are smaller than the old towers, and they use less electricity than them.",
+          "Hassan recommends buying eight new computers for the main hall now. He thinks it is best to upgrade the four computers in the children's area, because children use them only for homework and simple games. Before he wrote his report, he asked the city council whether it could pay half of the cost. The council agreed, so the library will order the new computers next month."
+        ]
+      },
+      "questions": [
+        {
+          "id": "R26",
+          "kind": "tf",
+          "statement": "The library's public computers are six years old.",
+          "answerKey": "T",
+          "explanation": "Đoạn 1: \"Greenway Library has twelve public computers, and they are now six years old.\""
+        },
+        {
+          "id": "R27",
+          "kind": "tf",
+          "statement": "Upgrading one old computer costs more than buying one new desktop.",
+          "answerKey": "F",
+          "explanation": "Đoạn 2: nâng cấp tốn 120 bảng mỗi máy, còn máy mới giá 480 bảng mỗi chiếc."
+        },
+        {
+          "id": "R28",
+          "kind": "tf",
+          "statement": "After the upgrade, the old computers would be as fast as new ones.",
+          "answerKey": "F",
+          "explanation": "Đoạn 2: \"they would not be as fast as new ones\"."
+        },
+        {
+          "id": "R29",
+          "kind": "tf",
+          "statement": "The new desktops use less electricity than the old computers.",
+          "answerKey": "T",
+          "explanation": "Đoạn 2: máy mới \"use less electricity than them\" (them = các máy tower cũ)."
+        },
+        {
+          "id": "R30",
+          "kind": "tf",
+          "statement": "The city council refused to pay any of the cost.",
+          "answerKey": "F",
+          "explanation": "Đoạn 3: Hassan hỏi hội đồng thành phố có thể trả một nửa chi phí không, và \"The council agreed\"."
+        }
+      ]
+    }
+  },
+  "writing": {
+    "translation": {
+      "instructions": "Translate these sentences into Vietnamese (Questions 31–35).",
+      "items": [
+        {
+          "id": "W31",
+          "source": "The new scanner was more expensive than the old one, but it is much faster.",
+          "referenceTranslation": "Máy quét mới đắt hơn máy cũ, nhưng nó nhanh hơn nhiều."
+        },
+        {
+          "id": "W32",
+          "source": "Could you tell me whether the price includes installation and training?",
+          "referenceTranslation": "Bạn có thể cho tôi biết giá này đã bao gồm lắp đặt và đào tạo chưa?"
+        },
+        {
+          "id": "W33",
+          "source": "Our IT costs came to £15,000 last year, and we spent most of the money on new laptops.",
+          "referenceTranslation": "Năm ngoái chi phí công nghệ thông tin của chúng tôi lên tới 15.000 bảng, và chúng tôi đã chi phần lớn số tiền đó cho máy tính xách tay mới."
+        },
+        {
+          "id": "W34",
+          "source": "The trial period lasts thirty days, so we can try out the software before we pay for it.",
+          "referenceTranslation": "Thời gian dùng thử kéo dài ba mươi ngày, nên chúng ta có thể dùng thử phần mềm trước khi trả tiền."
+        },
+        {
+          "id": "W35",
+          "source": "I think it's best to choose the plan with unlimited bandwidth because our website is growing quickly.",
+          "referenceTranslation": "Tôi nghĩ tốt nhất là chọn gói có băng thông không giới hạn vì trang web của chúng ta đang phát triển nhanh."
+        }
+      ]
+    },
+    "email": {
+      "id": "W-EMAIL",
+      "recipient": "Tom",
+      "task": "You are an IT assistant. Tom, a new office assistant, needs to order toner cartridges for the office printers from the OfficeSupply website. Write an email to Tom explaining the steps, using the notes below. In your email you must use:\n- at least one comparative or superlative (more pages than, cheaper than, the cheapest);\n- the verbs cost or come to to talk about the price;\n- at least one recommendation (I recommend…, I think it's best to…);\n- at least one indirect question (Could you ask … whether…?, Do you know if…?).\nFollow the standard layout for an email giving instructions: From / To / Date / Subject, a greeting, It should be quite easy to …, the steps with First / Then / Next / After that / Finally, a reminder (Don't forget to … when you've finished.), then Best wishes and your name, position and department.\nWrite 80–100 words (do not count the From, To, Date and Subject lines).",
+      "bullets": [
+        "log in to the OfficeSupply website / open 'Printer supplies'",
+        "compare the standard and XL cartridges: the XL prints more pages",
+        "add 6 XL cartridges to the basket / £45 each (total £270)",
+        "choose delivery / recommend free standard delivery (the cheapest option)",
+        "pay with the company card / check the confirmation email",
+        "ask the supplier whether they recycle old cartridges",
+        "reminder: log out"
+      ],
+      "wordRange": [80, 100],
+      "targetGrammar": [
+        "Comparatives and superlatives (at least one): more pages than, cheaper than, the cheapest",
+        "Talking about money: cost, come to",
+        "Recommendations (at least one): I recommend + -ing / noun phrase; I think it's best to…",
+        "Indirect questions (at least one): Could you ask … whether…?, Do you know if…?"
+      ],
+      "modelAnswer": "From: Nguyen Minh Chau\nTo: Tom\nDate: 3rd March\nSubject: Ordering toner cartridges\n\nHi Tom,\n\nIt should be quite easy to order toner cartridges.\nFirst, log in to OfficeSupply and open 'Printer supplies'.\nThen, compare the cartridges: the XL prints more pages than the standard one.\nNext, add six XL cartridges to the basket. They cost £45 each, so they come to £270.\nAfter that, I recommend choosing free standard delivery because it's the cheapest.\nFinally, pay by company card and check the confirmation email.\nCould you ask the supplier whether they recycle old cartridges?\nDon't forget to log out when you've finished.\n\nBest wishes,\nNguyen Minh Chau\nIT Assistant\nIT Department"
+    }
+  },
+  "speaking": {
+    "parts": [
+      {
+        "id": "S1",
+        "kind": "questions",
+        "instructions": "Answer the three questions. Speak for 30–45 seconds for each question.",
+        "questions": [
+          "Which app on your phone is the most useful for you? Compare it with another app that you use. Use comparatives and superlatives (more useful than, the most…, as … as).",
+          "What is the most expensive piece of technology that you or your family has bought? How much did it cost, and what else did you pay for with it? Use cost, pay, spend or come to.",
+          "Your university wants to buy new software for students. What would you recommend? Use at least one recommendation structure (I think we should…, I recommend…, it's best to…)."
+        ],
+        "secondsPerQuestion": 45
+      },
+      {
+        "id": "S2",
+        "kind": "explain",
+        "instructions": "Explain what you need to find out and ask the questions. Speak for 1–1.5 minutes.",
+        "prompt": "Your manager wants to buy a 3-D printer for the design team. You are going to phone the supplier. First, explain briefly what information the team needs. Then say the questions you will ask the supplier, using the cues. Use at least four polite indirect questions (Could you tell me…?, Do you know whether/if…?, Can you tell me…?).",
+        "cues": [
+          "the price of the printer and the delivery charge",
+          "the cost of the plastic for printing (per kilo)",
+          "the largest model size it can print",
+          "training for the design team",
+          "how long the guarantee lasts"
+        ],
+        "requiredGrammar": [
+          "Indirect questions (at least four) with statement word order: Could you tell me how much it costs?; Do you know whether/if the price includes delivery?; Can you tell me how long the guarantee lasts?"
+        ],
+        "seconds": 90,
+        "sampleAnswer": "Our design team wants a 3-D printer, so before we buy one, we need some information about prices, size and support. When I phone the supplier, I'll start with the price. Could you tell me how much the printer costs? Do you know whether the price includes delivery, or is there a delivery charge? Then I'll ask about running costs: can you tell me how much the plastic for printing costs per kilo? After that, I need to know about size, so I'll ask: could you tell me what the largest model size is? Our designers have never used a 3-D printer, so I'll also ask: do you know if you offer training for new users? Finally, I'll ask: can you tell me how long the guarantee lasts? With these answers, we can compare this printer with other models."
+      },
+      {
+        "id": "S3",
+        "kind": "situation",
+        "instructions": "Deal with the situation. Speak for 1–1.5 minutes.",
+        "prompt": "Your company has eight salespeople, and they need new mobile phone contracts. Your manager asks you to compare two offers and recommend one. Compare the offers with comparatives and superlatives, say what each offer would cost for the whole team with cost or come to, and give your recommendation with at least two recommendation structures (I recommend…, I think we should…, it's best to…).",
+        "cues": [
+          "Offer A: £18 per phone a month / 10 GB of data / no calls abroad",
+          "Offer B: £25 per phone a month / unlimited data / cheap calls in Europe",
+          "the sales team visits customers in Europe every month",
+          "monthly budget for the team: £220"
+        ],
+        "requiredGrammar": [
+          "Comparatives and superlatives: cheaper than, more data than, the most expensive",
+          "Talking about money: Offer A costs…; for eight phones it comes to…",
+          "Recommendations: I recommend + -ing / that we + verb; I think we should…; it's best to…"
+        ],
+        "seconds": 90,
+        "sampleAnswer": "I've compared the two offers for our eight salespeople. Offer A is cheaper than Offer B. It costs eighteen pounds per phone a month, so for the whole team it comes to a hundred and forty-four pounds. Offer B is more expensive at twenty-five pounds per phone, and that comes to two hundred pounds a month. However, Offer B gives us unlimited data, which is much more than the ten gigabytes in Offer A, and it has cheap calls in Europe. Our team visits customers in Europe every month, so Offer A could become the most expensive option because of extra charges. Offer B is still under our budget of two hundred and twenty pounds. So I recommend choosing Offer B. I also think we should check the data use after three months."
+      }
+    ]
+  }
+}
