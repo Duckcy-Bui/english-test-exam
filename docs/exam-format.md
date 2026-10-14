@@ -140,7 +140,7 @@ Tổng = Listening + Reading + Writing + Speaking, tối đa 10. Điểm từng 
 ## 4. Quy tắc soạn đề (áp dụng cho et-author, et-auditor kiểm tra)
 
 1. Mỗi câu trắc nghiệm có đúng một đáp án đúng. Câu có từ hai đáp án hợp lý trở lên là lỗi.
-2. Không lộ đáp án chéo: thuật ngữ và từ khoá của định nghĩa ở câu nối 1–5 không được xuất hiện làm đáp án hoặc gợi ý ở câu 6–30.
+2. Không lộ đáp án chéo: thuật ngữ và từ khoá của định nghĩa ở câu nối 1–5 không được xuất hiện làm đáp án hoặc gợi ý ở câu 6–30. Giữa các kỹ năng (ví dụ câu dịch W31–W35 trùng ngữ pháp với R6–R12) không tính là lộ, vì chế độ Thi thử chạy tuần tự và chỉ mở kỹ năng sau khi đã nộp kỹ năng trước.
 3. Không lặp tình huống quá một lần trong cùng một đề.
 4. Phương án nhiễu cùng từ loại và cùng độ dài tương đương với đáp án đúng.
 5. Câu 6–12 kiểm tra ngữ pháp của Unit; câu 13–20 kiểm tra từ vựng của Unit (theo Workbook Part 1).
