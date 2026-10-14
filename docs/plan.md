@@ -173,3 +173,4 @@ Xong khi: web chạy trên domain qua HTTPS, micro hoạt động, chấm AI ho�
 | 2026-10-14 16:00 +07 | **Unit 1 và Unit 4 AUDIT-OK** (giải mù lại R7 `cfcfde8` khớp 1/1 mỗi Unit, báo cáo `e53aaa1`). Merge vào `main`. Unit 2 r1 (`2939025`) validate 0 lỗi. |
 | 2026-10-14 16:06 +07 | **Unit 2 và Unit 3 AUDIT-OK** (Unit 2: giải mù lại R15/R18/R19 `bcefd84` khớp 3/3; Unit 3: `a78df5e` khớp 40/40, báo cáo `29a0ddd` không có CHẶN). Merge vào `main`. NÊN SỬA của Unit 3: ví dụ câu điều kiện trong đề email chỉ có mẫu loại 1; giao et-author sửa (r2), auditor xác nhận phần chữ. |
 | 2026-10-14 16:08 +07 | Unit 3 r2 (`252a629`): chỉ sửa đề email (tách mẫu câu điều kiện loại 0 và loại 1), không đổi câu chấm tự động; et-lead duyệt, merge. |
+| 2026-10-14 16:11 +07 | et-dev nộp `dev/unit6-app-r1@e4eb51d` sửa QA-SEC-01 (122/122 unit test, 17/17 e2e). Giao et-qa kiểm lại trên `qa/unit6-app-r1`. |
