@@ -24,7 +24,8 @@
     "Bài đọc R21–R25 (mạng chậm lúc 3 giờ chiều ở công ty kế toán) và R26–R30 (giảm hoá đơn điện ở trường học) viết mới. Không nhắc cấp hỗ trợ đầu tiên, tài liệu hỏi đáp tìm lỗi, chập điện, phần mềm thừa tính năng hay thiết bị được chỉnh riêng để không diễn đạt lại định nghĩa câu nối.",
     "Listening A (tìm nguyên nhân trang web của khách hàng không vào được) theo bài Investigations; Listening B (sinh viên năm cuối nói về kế hoạch nghề nghiệp) theo bài Your future in IT. Viết mới, không chép Audio script.",
     "Listening B: acceptedAnswers có biến thể chính tả và mạo từ; một số biến thể không có nguyên văn trong lời thoại.",
-    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng."
+    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
+    "Bản r1 (tự soát theo lỗi chung et-lead nêu): định nghĩa A, E, F viết lại để không chứa từ được hỏi hoặc từ của câu khác (cause, solutions, fault, power); R8 bỏ \"connection\" (từ khoá định nghĩa E); R7, R9, R16 đổi ngữ cảnh để không lặp tình huống sao lưu/máy chậm của bài đọc R21–R25 và tiền điện qua đêm của bài đọc R26–R30."
   ],
   "listening": {
     "parts": [
@@ -315,7 +316,7 @@
       "definitions": [
         {
           "id": "A",
-          "text": "Software or a printed manual that asks you a series of questions to find the cause of a computer problem and suggests solutions."
+          "text": "Software or a printed manual that asks you a series of questions to help you discover why a computer is not working."
         },
         {
           "id": "B",
@@ -331,11 +332,11 @@
         },
         {
           "id": "E",
-          "text": "A failure of an electrical system caused by bad wires or a fault in a connection."
+          "text": "A failure of an electrical system caused by bad wires or a broken connection between them."
         },
         {
           "id": "F",
-          "text": "Unnecessary features in a program that use more computing power than necessary and give users little benefit."
+          "text": "Unnecessary features in a program that use more of the computer's resources than necessary and give users little benefit."
         }
       ],
       "items": [
@@ -400,7 +401,7 @@
       {
         "id": "R7",
         "kind": "mcq",
-        "stem": "Don't worry about the backup. I've ______ done it.",
+        "stem": "Don't worry about the new user accounts. I've ______ created them.",
         "options": [
           {
             "id": "A",
@@ -420,12 +421,12 @@
           }
         ],
         "answerKey": "C",
-        "explanation": "Câu khẳng định thì hiện tại hoàn thành, việc đã xong sớm hơn mong đợi: \"I've already done it\". \"yet\" dùng trong câu hỏi, câu phủ định; \"ago\" đi với quá khứ đơn; \"still\" không đứng ở vị trí này."
+        "explanation": "Câu khẳng định thì hiện tại hoàn thành, việc đã xong sớm hơn mong đợi: \"I've already created them\". \"yet\" dùng trong câu hỏi, câu phủ định; \"ago\" đi với quá khứ đơn; \"still\" không đứng ở vị trí này."
       },
       {
         "id": "R8",
         "kind": "mcq",
-        "stem": "Everyone in the office lost the internet connection at the same moment, and all the lights on the router are off. The router ______ be the problem.",
+        "stem": "Nobody in the office can get online, and all the lights on the router are off. The router ______ be the problem.",
         "options": [
           {
             "id": "A",
@@ -445,12 +446,12 @@
           }
         ],
         "answerKey": "C",
-        "explanation": "Có bằng chứng rõ (cả văn phòng mất mạng cùng lúc, đèn router tắt) nên dùng \"must\" để phỏng đoán gần như chắc chắn. \"can't\" trái với bằng chứng; \"mustn't\" là cấm đoán; \"doesn't be\" sai ngữ pháp."
+        "explanation": "Có bằng chứng rõ (cả văn phòng không vào mạng được, đèn router tắt) nên dùng \"must\" để phỏng đoán gần như chắc chắn. \"can't\" trái với bằng chứng; \"mustn't\" là cấm đoán; \"doesn't be\" sai ngữ pháp."
       },
       {
         "id": "R9",
         "kind": "mcq",
-        "stem": "Ana's computer is very slow right now. It might ______ a large update in the background.",
+        "stem": "Ana's phone feels very warm right now. It might ______ a large update in the background.",
         "options": [
           {
             "id": "A",
@@ -627,7 +628,7 @@
       {
         "id": "R16",
         "kind": "mcq",
-        "stem": "Our electricity ______ has gone up because the servers run all night.",
+        "stem": "Our mobile data ______ has gone up since we started watching videos on the train.",
         "options": [
           {
             "id": "A",
@@ -647,7 +648,7 @@
           }
         ],
         "answerKey": "D",
-        "explanation": "Usage (lượng sử dụng) là lượng một thứ được dùng, ở đây là lượng điện tiêu thụ."
+        "explanation": "Usage (lượng sử dụng) là lượng một thứ được dùng, ở đây là lượng dữ liệu di động đã dùng."
       },
       {
         "id": "R17",
