@@ -5,5 +5,5 @@ export default async function Page({
   params: Promise<{ unit: string }>;
 }) {
   const { unit } = await params;
-  return <UnitPage unit={Number(unit)} />;
+  return <UnitPage key={unit} unit={Number(unit)} />;
 }

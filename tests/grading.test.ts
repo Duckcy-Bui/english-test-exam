@@ -52,11 +52,13 @@ test("Reading assigns fractional points and caps a perfect section at 2.5", () =
 
 test("a single-skill practice result preserves the skill's precision instead of rounding it as a four-skill total", async () => {
   process.env.EXAM_DATA_DIR = "fixtures";
-  const session = await createSession(randomUUID(), 6, "practice", "reading");
+  const session = await createSession(randomUUID(), 6, "practice", "reading", "A");
   const answers = emptyAnswers();
   answers.reading.R1 = exam.reading.matching.items[0].answerKey;
   const result = await gradeSession(session, answers);
   assert.equal(result.total, SCORING.readingPerQuestion);
+  assert.equal(result.testId, "A");
+  assert.equal(result.source, exam.source);
   assert.equal(result.total, result.skills.reading!.score);
   assert.deepEqual(Object.keys(result.review), ["reading"]);
   assert.equal(result.mock, false);

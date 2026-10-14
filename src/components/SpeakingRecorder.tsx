@@ -302,7 +302,7 @@ export function SpeakingRecorder({
           :{(seconds % 60).toString().padStart(2, "0")} <small>/ 03:00</small>
         </span>
         {value.audio && !recording && (
-          <span className="badge teal">
+          <span className="recording-saved">
             <Icon name="check" />
             Đã có bản ghi
           </span>
@@ -323,8 +323,7 @@ export function SpeakingRecorder({
         </label>
       )}
       <p className="recorder-note">
-        Bản ghi dùng để chấm bài. Mỗi bản tối đa 3 phút, 6 MB. Bạn có thể nghe
-        lại và ghi lại trước khi nộp.
+        Mỗi bản ghi tối đa 3 phút, 6 MB. Nghe lại và ghi lại trước khi nộp.
       </p>
       {(audioUrl || value.audio) && (
         <audio

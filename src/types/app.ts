@@ -5,6 +5,8 @@ import type {
   ScriptLine,
   Speaker,
   ANSWER_FIELDS,
+  TestId,
+  ExamSource,
 } from "./exam";
 
 export type Skill = "listening" | "reading" | "writing" | "speaking";
@@ -20,11 +22,17 @@ export type PublicData<T> = T extends readonly unknown[]
 export type PublicExam = PublicData<UnitExam>;
 export type SessionExam = Omit<PublicExam, Skill> &
   Partial<Pick<PublicExam, Skill>>;
+export interface TestSummary {
+  testId: TestId;
+  source: ExamSource;
+}
 export interface UnitSummary {
   unit: number;
   title: string;
   available: boolean;
   grammarFocus: string[];
+  tests: TestSummary[];
+  testCount: number;
 }
 export interface AudioAnswer {
   mimeType: "audio/wav";
@@ -68,6 +76,8 @@ export interface ExamResult {
   id: string;
   unit: number;
   unitTitle: string;
+  testId: TestId;
+  source: ExamSource;
   mode: Mode;
   scope: Scope;
   submittedAt: string;

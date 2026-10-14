@@ -22,9 +22,9 @@ import {
   ErrorNotice,
   Icon,
   Loading,
-  skillDescriptions,
-  skillIcons,
+  Modal,
   skillNames,
+  SourceBadge,
 } from "./ui";
 
 function idsFor(session: ExamSession, skill: Skill): string[] {
@@ -86,6 +86,11 @@ export function ExamPage({ sessionId }: { sessionId: string }) {
   const [activeRecording, setActiveRecording] = useState<string | null>(null);
   const [remaining, setRemaining] = useState<number | null>(null);
   const [expired, setExpired] = useState(false);
+  const [elapsed, setElapsed] = useState(0);
+  const [exitConfirm, setExitConfirm] = useState(false);
+  const [questionSheet, setQuestionSheet] = useState(false);
+  const [activeQuestion, setActiveQuestion] = useState("");
+  const [requestedQuestion, setRequestedQuestion] = useState<{ id: string; token: number }>();
   const answersRef = useRef(answers);
   const sessionRef = useRef(session);
   const submitting = useRef(false);
@@ -205,7 +210,7 @@ export function ExamPage({ sessionId }: { sessionId: string }) {
           );
           setSession(nextSession);
           setSkill(nextSession.activeSkill ?? "speaking");
-          window.scrollTo({ top: 0, behavior: "smooth" });
+          window.scrollTo({ top: 0, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
         } else {
           const { result } = await api.grade(sessionId, answersRef.current);
           const saved = saveAttempt(result, answersRef.current);
@@ -243,6 +248,47 @@ export function ExamPage({ sessionId }: { sessionId: string }) {
     void submit("final");
   }, [expired, activeRecording, busy, session, submit]);
 
+  useEffect(() => {
+    if (!session || session.expiresAt) return;
+    const started = new Date(session.startedAt).getTime();
+    const update = () => setElapsed(Math.max(0, Math.floor((Date.now() - started) / 1000)));
+    update();
+    const timer = setInterval(update, 1000);
+    return () => clearInterval(timer);
+  }, [session]);
+
+  useEffect(() => {
+    if (!requestedQuestion || skill === "reading") return;
+    const frame = requestAnimationFrame(() => {
+      const question = document.getElementById(`question-${requestedQuestion.id}`);
+      question?.scrollIntoView({
+        block: "start",
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
+      });
+      const control = question?.querySelector<HTMLElement>('input:checked, input:not([type="checkbox"]):not(:disabled), textarea:not(:disabled), select:not(:disabled)');
+      control?.focus({ preventScroll: true });
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [skill, requestedQuestion]);
+
+  useEffect(() => {
+    if (!session) return;
+    const observer = new IntersectionObserver((entries) => {
+      const visible = entries.filter((entry) => entry.isIntersecting)
+        .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+      if (visible[0]) setActiveQuestion(visible[0].target.id.replace("question-", ""));
+    }, { rootMargin: "-150px 0px -45% 0px", threshold: 0 });
+    const observe = () => {
+      observer.disconnect();
+      document.querySelectorAll('.exam-content [id^="question-"]').forEach((node) => observer.observe(node));
+    };
+    observe();
+    const mutations = new MutationObserver(observe);
+    const content = document.querySelector(".exam-content");
+    if (content) mutations.observe(content, { childList: true, subtree: true });
+    return () => { observer.disconnect(); mutations.disconnect(); };
+  }, [session, skill, loading]);
+
   if (loading) return <Loading label="Đang mở bài làm…" />;
   if (!session)
     return (
@@ -277,136 +323,96 @@ export function ExamPage({ sessionId }: { sessionId: string }) {
   );
   const scopeTotal = scopeSkills.reduce((sum, item) => sum + expected[item], 0);
 
-  return (
-    <>
-      <div className="exam-topline">
-        <span className="back-link">
-          UNIT {session.exam.unit} · {session.exam.unitTitle}
-        </span>
-        <span className={`badge ${sequential ? "amber" : "teal"}`}>
-          {sequential ? "Thi thử" : "Luyện tập"}
-        </span>
-      </div>
-      <div className="exam-title-row">
-        <div>
-          <p className="eyebrow">
-            {scopeSkills.length === 4
-              ? "ĐỀ ĐẦY ĐỦ · 4 KỸ NĂNG"
-              : "LUYỆN MỘT KỸ NĂNG"}
-          </p>
-          <h1>{session.exam.unitTitle}</h1>
-        </div>
-        {remaining !== null ? (
-          <div
-            className={`timer ${remaining <= 300 ? "urgent" : ""}`}
-            role="timer"
-            aria-label={`Thời gian còn lại ${Math.floor(remaining / 60)} phút ${remaining % 60} giây`}
-          >
-            <Icon name="clock" />
-            <div>
-              <small>THỜI GIAN CÒN LẠI</small>
-              <strong>
-                {Math.floor(remaining / 3600)
-                  .toString()
-                  .padStart(2, "0")}
-                :
-                {Math.floor((remaining % 3600) / 60)
-                  .toString()
-                  .padStart(2, "0")}
-                :{(remaining % 60).toString().padStart(2, "0")}
-              </strong>
+  function navigate(item: Skill, id?: string) {
+    if (!canNavigate || (sequential && item !== activeSkill)) return;
+    setSkill(item);
+    setQuestionSheet(false);
+    const target = id ?? navIds(item)[0];
+    setActiveQuestion(target ?? "");
+    if (target) setRequestedQuestion({ id: target, token: Date.now() });
+  }
+  function navIds(item: Skill): string[] {
+    if (item === "speaking") return ["S1", "S2", "S3"];
+    if (item === "writing") return ["W31", "W32", "W33", "W34", "W35", "email"];
+    const ids = idsFor(session!, item);
+    return ids.length ? ids : Array.from({ length: expected[item] }, (_, i) => `${item === "reading" ? "R" : "L"}${i + 1}`);
+  }
+  function isAnswered(item: Skill, id: string): boolean {
+    if (session!.completedSkills.includes(item)) return true;
+    if (item === "writing") return !!(id === "email" ? answers.writing.email : answers.writing.translations[id])?.trim();
+    if (item === "speaking") {
+      const ids = id === "S1" ? ["S1-1", "S1-2", "S1-3"] : [id];
+      return ids.every((key) => answers.speaking[key]?.audio || answers.speaking[key]?.text.trim());
+    }
+    return !!answers[item][id]?.trim();
+  }
+  const time = remaining ?? elapsed;
+  const formattedTime = `${time >= 3600 ? `${Math.floor(time / 3600)}:` : ""}${Math.floor((time % 3600) / 60).toString().padStart(2, "0")}:${(time % 60).toString().padStart(2, "0")}`;
+  const questionGrid = (
+    <nav className="question-nav" aria-label="Danh sách câu hỏi">
+      {scopeSkills.map((item) => {
+        const locked = sequential && item !== activeSkill;
+        return (
+          <div className={`question-nav-group ${locked ? "locked" : ""}`} key={item}>
+            <h3>{skillNames[item]} {locked && <Icon name="lock" />}</h3>
+            <div className="question-grid">
+              {navIds(item).map((id) => {
+                const viewed = item === activeSkill && (activeQuestion === id || (id === "S1" && activeQuestion.startsWith("S1-")));
+                const done = isAnswered(item, id);
+                const label = id === "email" ? "Email" : id;
+                return (
+                  <button type="button" key={id}
+                    aria-label={`Tới câu ${label}`}
+                    aria-current={viewed ? "true" : undefined}
+                    title={`${label}${locked ? " · Đã khoá" : done ? " · Đã trả lời" : " · Chưa trả lời"}`}
+                    disabled={locked || !canNavigate}
+                    className={`${done ? "answered" : ""} ${viewed ? "current" : ""}`}
+                    onClick={() => navigate(item, id)}>
+                    {label}
+                  </button>
+                );
+              })}
             </div>
           </div>
-        ) : (
-          <div className="untimed-note">
-            <Icon name="book" />
-            Học theo nhịp của bạn
-          </div>
-        )}
+        );
+      })}
+    </nav>
+  );
+  return (
+    <div className="exam-page">
+      <div className="exam-title-row">
+        <h1>Unit {session.exam.unit}: {session.exam.unitTitle}</h1>
+        <span className="exam-test-label">Đề {session.exam.testId}</span>
+        <SourceBadge source={session.exam.source} />
+        <span className="exam-mode">{sequential ? "Thi thử" : "Luyện tập"}</span>
+        <button className="button secondary small-button" disabled={busy || !!activeRecording}
+          onClick={() => hasDraft ? setExitConfirm(true) : router.push(`/unit/${session.exam.unit}`)}>Thoát</button>
       </div>
-      <nav className="skill-tabs" aria-label="Các phần của bài làm">
-        {scopeSkills.map((item, index) => {
-          const locked = session.completedSkills.includes(item);
-          const tabDisabled = sequential
-            ? item !== activeSkill || busy
-            : !canNavigate;
-          return (
-            <button
-              key={item}
-              className={`${item === activeSkill ? "active" : ""} ${locked ? "completed" : ""}`}
-              disabled={tabDisabled}
-              aria-current={item === activeSkill ? "step" : undefined}
-              onClick={() => {
-                setSkill(item);
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }}
-            >
-              <span className="tab-step">
-                {locked ? <Icon name="check" /> : index + 1}
-              </span>
-              <span>
-                {skillNames[item]}
-                <small>
-                  {locked
-                    ? "Đã nộp · Đã khoá"
-                    : sequential && item !== activeSkill
-                      ? "Chưa mở"
-                      : `${answered(session, item, answers)}/${expected[item]} hoàn thành`}
-                </small>
-              </span>
-              {sequential && item !== activeSkill && (
-                <Icon name="lock" className="tab-lock" />
-              )}
-            </button>
-          );
-        })}
-      </nav>
-      {sequential && (
-        <p className="exam-rule">
-          <Icon name="lock" />
-          Nộp từng phần để mở phần tiếp theo. Phần đã nộp không thể sửa; đáp án
-          chỉ hiện sau khi nộp cả đề.
-        </p>
-      )}
       {expired && (
         <div role="status" className="warning-notice">
           Đã hết thời gian. Bài làm đang được nộp tự động
-          {activeRecording ? " sau khi hoàn tất bản ghi hiện tại" : ""}. Các câu
-          chưa làm được tính là bỏ trống.
+          {activeRecording ? " sau khi hoàn tất bản ghi hiện tại" : ""}. Các câu chưa làm được tính là bỏ trống.
         </div>
       )}
       {error && <ErrorNotice message={error} />}
       <div className="exam-workspace">
-        <aside className="exam-sidebar">
-          <span className={`skill-icon skill-${activeSkill}`}>
-            <Icon name={skillIcons[activeSkill]} />
-          </span>
-          <h2>{skillNames[activeSkill]}</h2>
-          <p>{skillDescriptions[activeSkill]}</p>
-          <div className="progress-label">
-            <span>Đã trả lời</span>
-            <strong>
-              {complete}/{total}
-            </strong>
-          </div>
-          <div className="progress-track">
-            <span style={{ width: `${(complete / total) * 100}%` }} />
-          </div>
-          <div className="sidebar-score">
-            <strong>2,50</strong>
-            <span>điểm tối đa</span>
-          </div>
-          <p className="sidebar-tip">
-            {activeSkill === "listening"
-              ? "Đọc câu hỏi trước khi nghe. Part B trả lời không quá 3 từ."
-              : activeSkill === "reading"
-                ? "Đọc kỹ ngữ cảnh, rồi chọn đáp án phù hợp nhất."
-                : activeSkill === "writing"
-                  ? "Kiểm tra đủ các bước hướng dẫn và cấu trúc email trước khi nộp."
-                  : "Nói rõ ràng, dùng ngữ pháp của Unit và hỗ trợ ý chính bằng ví dụ."}
-          </p>
-        </aside>
-        <div className="exam-content" aria-busy={busy}>
+        <div className="exam-content" aria-busy={busy} onFocusCapture={(event) => {
+          const target = (event.target as HTMLElement).closest('[id^="question-"]');
+          if (target) setActiveQuestion(target.id.replace("question-", ""));
+        }}>
+          <nav className="skill-tabs" aria-label="Các phần của bài làm">
+            {scopeSkills.map((item) => (
+              <button type="button" key={item}
+                className={item === activeSkill ? "active" : ""}
+                aria-current={item === activeSkill ? "page" : undefined}
+                disabled={sequential ? item !== activeSkill || busy : !canNavigate}
+                onClick={() => navigate(item)}>
+                {skillNames[item]}
+                {sequential && item !== activeSkill && <Icon name="lock" />}
+              </button>
+            ))}
+          </nav>
+          {sequential && <p className="exam-rule">Nộp từng phần để mở phần tiếp theo. Phần đã nộp được khoá; đáp án hiện sau khi nộp cả đề.</p>}
           {activeSkill === "listening" && session.exam.listening && (
             <ListeningQuestions
               section={session.exam.listening}
@@ -425,6 +431,7 @@ export function ExamPage({ sessionId }: { sessionId: string }) {
           {activeSkill === "reading" && session.exam.reading && (
             <ReadingQuestions
               section={session.exam.reading}
+              requestedQuestion={requestedQuestion}
               values={answers.reading}
               onChange={(id, value) =>
                 setAnswers((current) => ({
@@ -467,89 +474,48 @@ export function ExamPage({ sessionId }: { sessionId: string }) {
           {!currentSection && (
             <ErrorNotice message="Nội dung phần này chưa mở. Hãy tải lại phiên làm bài." />
           )}
-          {confirm && (
-            <div className="confirm-panel" role="alert">
-              <div>
-                <h3>
-                  {confirm === "advance"
-                    ? `Nộp phần ${skillNames[activeSkill]}?`
-                    : "Sẵn sàng nộp bài?"}
-                </h3>
-                <p>
-                  {confirm === "advance"
-                    ? `Phần này sẽ được khoá. ${total - complete > 0 ? `Còn ${total - complete} câu chưa trả lời và sẽ tính là bỏ trống.` : "Bạn đã trả lời tất cả câu hỏi."}`
-                    : `${scopeTotal - scopeComplete > 0 ? `Còn ${scopeTotal - scopeComplete} mục chưa trả lời. ` : ""}Sau khi nộp, bạn sẽ xem điểm và giải thích.`}
-                </p>
-              </div>
-              <div>
-                <button
-                  className="button secondary"
-                  onClick={() => setConfirm(null)}
-                >
-                  Kiểm tra lại
-                </button>
-                <button
-                  className="button primary"
-                  onClick={() => void submit(confirm)}
-                  disabled={!!activeRecording || busy}
-                >
-                  Xác nhận nộp
-                  <Icon name="check" />
-                </button>
-              </div>
-            </div>
-          )}
           <div className="exam-actions">
-            <span>
-              {busy ? (
-                <>
-                  <span className="spinner" />
-                  {advance
-                    ? "Đang nộp phần…"
-                    : "Đang chấm bài. Vui lòng giữ trang này mở…"}
-                </>
-              ) : activeRecording ? (
-                "Hãy dừng ghi âm và đợi xử lý trước khi chuyển phần hoặc nộp bài."
-              ) : (
-                `${complete}/${total} mục đã trả lời`
-              )}
-            </span>
-            <div>
-              {!sequential && nextSkill && (
-                <button
-                  className="button secondary"
-                  onClick={() => {
-                    setSkill(nextSkill);
-                    window.scrollTo({ top: 0, behavior: "smooth" });
-                  }}
-                  disabled={!canNavigate}
-                >
-                  Tiếp: {skillNames[nextSkill]}
-                  <Icon name="arrow" />
-                </button>
-              )}
-              <button
-                className="button primary"
-                disabled={busy || !!activeRecording}
-                onClick={() =>
-                  expired
-                    ? void submit("final")
-                    : setConfirm(advance ? "advance" : "final")
-                }
-              >
-                {busy
-                  ? "Đang xử lý…"
-                  : expired
-                    ? "Nộp lại bài"
-                    : advance
-                      ? `Nộp ${skillNames[activeSkill]} & tiếp tục`
-                      : "Nộp bài & xem kết quả"}
-                <Icon name={advance ? "arrow" : "check"} />
-              </button>
-            </div>
+            <span role="status">{busy ? "Đang xử lý bài làm…" : activeRecording ? "Dừng ghi âm và đợi xử lý trước khi nộp." : `${complete}/${total} mục đã trả lời`}</span>
+            {!sequential && nextSkill && <button className="button secondary" disabled={!canNavigate} onClick={() => navigate(nextSkill)}>Tiếp: {skillNames[nextSkill]} <Icon name="arrow" /></button>}
           </div>
         </div>
+        <aside className="exam-sidebar" aria-label="Thời gian và nộp bài">
+          <div className={`timer ${remaining !== null && remaining <= 300 ? "urgent" : ""}`} role="timer" aria-label={`${remaining !== null ? "Thời gian còn lại" : "Thời gian đã làm"} ${formattedTime}`}>
+            <small>{remaining !== null ? "Thời gian còn lại:" : "Thời gian đã làm:"}</small>
+            <strong>{formattedTime}</strong>
+          </div>
+          <button className="button submit-button" disabled={busy || !!activeRecording}
+            onClick={() => { setQuestionSheet(false); expired ? void submit("final") : setConfirm(advance ? "advance" : "final"); }}>
+            {busy ? "Đang xử lý…" : expired ? "Nộp lại bài" : advance ? `Nộp ${skillNames[activeSkill]}` : "NỘP BÀI"}
+          </button>
+          <button className="button secondary question-list-button" aria-haspopup="dialog" aria-expanded={questionSheet} onClick={() => setQuestionSheet(true)}>Danh sách câu</button>
+          <div className="desktop-question-nav">
+            <p className="navigation-hint">Bấm số câu để tới câu đó</p>
+            {questionGrid}
+          </div>
+        </aside>
       </div>
-    </>
+      {questionSheet && <Modal titleId="question-list-title" onClose={() => setQuestionSheet(false)} className="question-sheet">
+        <div className="sheet-heading"><h2 id="question-list-title">Danh sách câu</h2><button className="button secondary small-button" onClick={() => setQuestionSheet(false)}>Đóng</button></div>
+        <p className="navigation-hint">Bấm số câu để tới câu đó</p>
+        {questionGrid}
+      </Modal>}
+      {confirm && <Modal alert titleId="submit-title" onClose={() => setConfirm(null)} className="confirm-panel">
+        <h2 id="submit-title">{confirm === "advance" ? `Nộp phần ${skillNames[activeSkill]}?` : "Sẵn sàng nộp bài?"}</h2>
+        <p>{confirm === "advance" ? `Phần này sẽ được khoá. ${total - complete > 0 ? `Còn ${total - complete} câu chưa trả lời và sẽ tính là bỏ trống.` : "Bạn đã trả lời tất cả câu hỏi."}` : `${scopeTotal - scopeComplete > 0 ? `Còn ${scopeTotal - scopeComplete} mục chưa trả lời. ` : ""}Sau khi nộp, bạn sẽ xem điểm và giải thích.`}</p>
+        <div className="modal-actions">
+          <button className="button secondary" onClick={() => setConfirm(null)}>Kiểm tra lại</button>
+          <button className="button primary" onClick={() => void submit(confirm)} disabled={!!activeRecording || busy}>Xác nhận nộp <Icon name="check" /></button>
+        </div>
+      </Modal>}
+      {exitConfirm && <Modal alert titleId="exit-title" onClose={() => setExitConfirm(false)} className="confirm-panel exit-confirm">
+        <h2 id="exit-title">Thoát bài chưa nộp?</h2>
+        <p>Bài làm chưa được nộp. Bản nháp được giữ trên trình duyệt này; bản ghi âm cần làm lại nếu rời trang.</p>
+        <div className="modal-actions">
+          <button className="button secondary" onClick={() => setExitConfirm(false)}>Tiếp tục làm bài</button>
+          <button className="button primary" onClick={() => router.push(`/unit/${session.exam.unit}`)}>Xác nhận thoát</button>
+        </div>
+      </Modal>}
+    </div>
   );
 }
