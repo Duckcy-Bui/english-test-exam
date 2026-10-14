@@ -107,13 +107,15 @@ File nguồn (PDF, ảnh đề) không đưa vào repo.
 
 Người làm: et-lead.
 - [x] `docs/source-materials.md`, `docs/exam-format.md`, `docs/PROTOCOL.md`, `docs/plan.md`.
-- [ ] Khởi tạo tối thiểu để chạy TypeScript (`package.json`, `tsconfig.json`, chạy script bằng `tsx`).
-- [ ] `src/types/exam.ts`: kiểu dữ liệu đề, đáp án, barem.
-- [ ] `scripts/strip-answers.ts`: tạo bản đề không có đáp án cho et-auditor.
-- [ ] `scripts/validate-exams.ts`: kiểm schema, số câu, thang điểm, quét trùng từ khoá giữa câu nối 1–5 và câu 6–30.
-- [ ] `scripts/compare-blind.ts`: so đáp án giải mù của et-auditor với đáp án của et-author, in danh sách câu `AMBIGUOUS`.
+- [x] Khởi tạo tối thiểu để chạy TypeScript (`package.json`, `tsconfig.json`, chạy script bằng `tsx`).
+- [x] `src/types/exam.ts`: kiểu dữ liệu đề, đáp án, barem.
+- [x] `scripts/strip-answers.ts`: tạo bản đề không có đáp án cho et-auditor.
+- [x] `scripts/validate-exams.ts`: kiểm schema, số câu, thang điểm, quét trùng từ khoá giữa câu nối 1–5 và câu 6–30.
+- [x] `scripts/compare-blind.ts`: so đáp án giải mù của et-auditor với đáp án của et-author, in danh sách câu `AMBIGUOUS`.
 
 Xong khi: chủ dự án duyệt 4 file docs và `exam.ts`.
+
+Ghi chú cho et-dev: `package.json` và `tsconfig.json` đã có sẵn. Thêm Next.js vào hai file này, không chạy `create-next-app` đè lên. Lệnh kiểm: `npm run validate`, `npm run strip -- N`, `npm run compare -- N`, `npm run typecheck`.
 
 ### Giai đoạn 2: Mẫu chuẩn Unit 6
 
@@ -152,3 +154,4 @@ Xong khi: web chạy trên domain qua HTTPS, micro hoạt động, chấm AI ho�
 |---|---|
 | 2026-10-14 14:34 +07 | et-lead viết lại 4 file docs sau khi phiên cloud mất dữ liệu (chưa push được do lỗi 403). |
 | 2026-10-14 14:49 +07 | Chủ dự án duyệt docs, chốt repo public, giao et-lead chọn cách làm tròn. Tra API Docs ShopAIKey: định dạng Gemini gốc, nhận audio base64 (không có webm). |
+| 2026-10-14 14:53 +07 | Xong Giai đoạn 1: `src/types/exam.ts`, `scripts/{lib,validate-exams,strip-answers,compare-blind}.ts`, đã test bằng đề giả (bắt được lộ đáp án, chính tả Mỹ, câu AMBIGUOUS). Chủ dự án cho phép bắt đầu Giai đoạn 2 mà không duyệt riêng `exam.ts`. |

@@ -44,7 +44,8 @@ et-dev và et-qa cùng họ Codex. Hai agent này chỉ độc lập ở mức p
 | `docs/**` | et-lead |
 | `src/types/exam.ts` | et-lead. Agent khác cần đổi schema thì gửi đề xuất cho et-lead. |
 | `data/units/*.json` | et-author |
-| `scripts/strip-answers.ts`, `scripts/validate-exams.ts` | et-lead (Giai đoạn 1); sau đó et-dev sửa khi et-lead đồng ý |
+| `scripts/*.ts` (lib, strip-answers, validate-exams, compare-blind) | et-lead. et-dev chỉ sửa khi et-lead đồng ý. |
+| `package.json`, `tsconfig.json` | et-dev được thêm phụ thuộc và script; không xoá script `validate`, `strip`, `compare`, `typecheck`. |
 | `audit/**` | et-auditor |
 | `src/**` (trừ `exam.ts`), `app/**`, cấu hình build, `Dockerfile` | et-dev |
 | `qa/**` | et-qa |
