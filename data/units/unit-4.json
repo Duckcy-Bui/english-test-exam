@@ -30,7 +30,8 @@
     "Listening và Speaking viết mới. Listening A lấy cảm hứng từ bài Systems administration (track 20), Listening B từ bài Databases (track 19); không chép Audio script. Listening A không dùng tình huống kiểm tra nhật ký máy chủ vì đã có ở W34 và email.",
     "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại, xử lý giống Unit 6.",
     "Bản r1 (theo báo cáo et-auditor 8ffd2ee): viết lại R9 để chỉ một phương án đúng; R7 đổi tình huống để không trùng email; R14, R15 bỏ phương án nhiễu trùng thuật ngữ câu nối 3; R23 và L4 bỏ phương án nhiễu gần định nghĩa câu nối 1; R25 sửa một phương án cho đúng nghĩa bài đọc; L9 thêm một biến thể đáp án.",
-    "Áp dụng quy tắc 11–15 (main c59c818): Listening B bỏ câu tìm bản ghi bằng ô tìm kiếm (gần định nghĩa câu nối 3); bài đọc R26–R30 thêm câu khẳng định hoặc phủ định trực tiếp cho R26–R28, viết lại R28 và R30; đề email nêu rõ phải dùng before/after + -ing và by + -ing; S1 thay câu 2 và cả ba câu S1 cùng đề S3 nêu rõ cấu trúc cần dùng; sourceNotes bỏ mọi thông tin đáp án."
+    "Áp dụng quy tắc 11–15 (main c59c818): Listening B bỏ câu tìm bản ghi bằng ô tìm kiếm (gần định nghĩa câu nối 3); bài đọc R26–R30 thêm câu khẳng định hoặc phủ định trực tiếp cho R26–R28, viết lại R28 và R30; đề email nêu rõ phải dùng before/after + -ing và by + -ing; S1 thay câu 2 và cả ba câu S1 cùng đề S3 nêu rõ cấu trúc cần dùng; sourceNotes bỏ mọi thông tin đáp án.",
+    "Email theo khung giáo viên (2026-10-14): email hướng dẫn From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng."
   ],
   "listening": {
     "parts": [
@@ -39,24 +40,72 @@
         "instructions": "Listen to the conversation and choose the best answer A, B, C or D (Questions L1–L5).",
         "context": "Sofia, an IT manager, has just come back from a conference. She asks Ben, her assistant, what happened while she was away.",
         "speakers": [
-          { "name": "Sofia", "voice": "female" },
-          { "name": "Ben", "voice": "male" }
+          {
+            "name": "Sofia",
+            "voice": "female"
+          },
+          {
+            "name": "Ben",
+            "voice": "male"
+          }
         ],
         "script": [
-          { "speaker": "Sofia", "text": "Hi Ben, I'm back! How did everything go while I was at the conference?" },
-          { "speaker": "Ben", "text": "Quite well, thanks. There weren't any big problems." },
-          { "speaker": "Sofia", "text": "Good. Did you deploy the update to the accounting software?" },
-          { "speaker": "Ben", "text": "Yes, I deployed it on Wednesday evening, after everyone went home. It went smoothly on almost every computer." },
-          { "speaker": "Sofia", "text": "Almost?" },
-          { "speaker": "Ben", "text": "One laptop in the sales office was switched off, so it didn't get the update. I installed it the next morning before the sales manager arrived." },
-          { "speaker": "Sofia", "text": "Fine. What about the new interns in the finance department?" },
-          { "speaker": "Ben", "text": "I set their permissions on Monday. They have read-only access to the finance folder, so they can open the files, but they can't change them." },
-          { "speaker": "Sofia", "text": "Perfect. Any security problems?" },
-          { "speaker": "Ben", "text": "Just one. While I was updating the antivirus software on Friday, the system sent me an alert. Someone tried to log in to the director's account forty times during the night." },
-          { "speaker": "Sofia", "text": "Forty times! What did you do?" },
-          { "speaker": "Ben", "text": "I blocked that IP address straight away and sent a message to the director." },
-          { "speaker": "Sofia", "text": "Well done. I'll talk to our security company this afternoon. Before I do that, could you send me a copy of the alert?" },
-          { "speaker": "Ben", "text": "Sure, no problem." }
+          {
+            "speaker": "Sofia",
+            "text": "Hi Ben, I'm back! How did everything go while I was at the conference?"
+          },
+          {
+            "speaker": "Ben",
+            "text": "Quite well, thanks. There weren't any big problems."
+          },
+          {
+            "speaker": "Sofia",
+            "text": "Good. Did you deploy the update to the accounting software?"
+          },
+          {
+            "speaker": "Ben",
+            "text": "Yes, I deployed it on Wednesday evening, after everyone went home. It went smoothly on almost every computer."
+          },
+          {
+            "speaker": "Sofia",
+            "text": "Almost?"
+          },
+          {
+            "speaker": "Ben",
+            "text": "One laptop in the sales office was switched off, so it didn't get the update. I installed it the next morning before the sales manager arrived."
+          },
+          {
+            "speaker": "Sofia",
+            "text": "Fine. What about the new interns in the finance department?"
+          },
+          {
+            "speaker": "Ben",
+            "text": "I set their permissions on Monday. They have read-only access to the finance folder, so they can open the files, but they can't change them."
+          },
+          {
+            "speaker": "Sofia",
+            "text": "Perfect. Any security problems?"
+          },
+          {
+            "speaker": "Ben",
+            "text": "Just one. While I was updating the antivirus software on Friday, the system sent me an alert. Someone tried to log in to the director's account forty times during the night."
+          },
+          {
+            "speaker": "Sofia",
+            "text": "Forty times! What did you do?"
+          },
+          {
+            "speaker": "Ben",
+            "text": "I blocked that IP address straight away and sent a message to the director."
+          },
+          {
+            "speaker": "Sofia",
+            "text": "Well done. I'll talk to our security company this afternoon. Before I do that, could you send me a copy of the alert?"
+          },
+          {
+            "speaker": "Ben",
+            "text": "Sure, no problem."
+          }
         ],
         "questions": [
           {
@@ -64,10 +113,22 @@
             "kind": "mcq",
             "stem": "When did Ben deploy the update to the accounting software?",
             "options": [
-              { "id": "A", "text": "On Monday morning" },
-              { "id": "B", "text": "On Wednesday evening" },
-              { "id": "C", "text": "On Friday evening" },
-              { "id": "D", "text": "On Thursday afternoon" }
+              {
+                "id": "A",
+                "text": "On Monday morning"
+              },
+              {
+                "id": "B",
+                "text": "On Wednesday evening"
+              },
+              {
+                "id": "C",
+                "text": "On Friday evening"
+              },
+              {
+                "id": "D",
+                "text": "On Thursday afternoon"
+              }
             ],
             "answerKey": "B",
             "explanation": "Ben nói \"I deployed it on Wednesday evening, after everyone went home\". Thứ Hai là ngày cài quyền cho thực tập sinh, thứ Sáu là ngày cập nhật phần mềm diệt virus."
@@ -77,10 +138,22 @@
             "kind": "mcq",
             "stem": "Why didn't one laptop get the update?",
             "options": [
-              { "id": "A", "text": "It was switched off." },
-              { "id": "B", "text": "The sales manager took it home." },
-              { "id": "C", "text": "Its hard drive was full." },
-              { "id": "D", "text": "It was in the server room." }
+              {
+                "id": "A",
+                "text": "It was switched off."
+              },
+              {
+                "id": "B",
+                "text": "The sales manager took it home."
+              },
+              {
+                "id": "C",
+                "text": "Its hard drive was full."
+              },
+              {
+                "id": "D",
+                "text": "It was in the server room."
+              }
             ],
             "answerKey": "A",
             "explanation": "\"One laptop in the sales office was switched off, so it didn't get the update.\" Ben cài lại vào sáng hôm sau."
@@ -90,10 +163,22 @@
             "kind": "mcq",
             "stem": "What can the interns do with the files in the finance folder?",
             "options": [
-              { "id": "A", "text": "Change and delete them" },
-              { "id": "B", "text": "Open them but not change them" },
-              { "id": "C", "text": "Copy them to a memory stick" },
-              { "id": "D", "text": "Send them to the director" }
+              {
+                "id": "A",
+                "text": "Change and delete them"
+              },
+              {
+                "id": "B",
+                "text": "Open them but not change them"
+              },
+              {
+                "id": "C",
+                "text": "Copy them to a memory stick"
+              },
+              {
+                "id": "D",
+                "text": "Send them to the director"
+              }
             ],
             "answerKey": "B",
             "explanation": "Thực tập sinh có \"read-only access\" (quyền chỉ đọc): \"they can open the files, but they can't change them\"."
@@ -103,10 +188,22 @@
             "kind": "mcq",
             "stem": "What happened while Ben was updating the antivirus software?",
             "options": [
-              { "id": "A", "text": "The email server was very slow." },
-              { "id": "B", "text": "The update deleted some emails." },
-              { "id": "C", "text": "He got an alert about many login attempts." },
-              { "id": "D", "text": "An intern opened the director's account." }
+              {
+                "id": "A",
+                "text": "The email server was very slow."
+              },
+              {
+                "id": "B",
+                "text": "The update deleted some emails."
+              },
+              {
+                "id": "C",
+                "text": "He got an alert about many login attempts."
+              },
+              {
+                "id": "D",
+                "text": "An intern opened the director's account."
+              }
             ],
             "answerKey": "C",
             "explanation": "Trong lúc Ben đang cập nhật phần mềm diệt virus, hệ thống gửi cảnh báo: có người \"tried to log in to the director's account forty times during the night\" (cố đăng nhập 40 lần trong đêm)."
@@ -116,10 +213,22 @@
             "kind": "mcq",
             "stem": "What does Sofia ask Ben to do?",
             "options": [
-              { "id": "A", "text": "Call the security company" },
-              { "id": "B", "text": "Send her a copy of the alert" },
-              { "id": "C", "text": "Block the director's account" },
-              { "id": "D", "text": "Install the update again" }
+              {
+                "id": "A",
+                "text": "Call the security company"
+              },
+              {
+                "id": "B",
+                "text": "Send her a copy of the alert"
+              },
+              {
+                "id": "C",
+                "text": "Block the director's account"
+              },
+              {
+                "id": "D",
+                "text": "Install the update again"
+              }
             ],
             "answerKey": "B",
             "explanation": "Sofia hỏi \"could you send me a copy of the alert?\". Chính Sofia sẽ nói chuyện với công ty bảo mật (A sai)."
@@ -131,14 +240,32 @@
         "instructions": "Listen to the talk and answer the questions. Write NO MORE THAN THREE WORDS for each answer (Questions L6–L10).",
         "context": "Helen, the database administrator at a dental clinic, explains the patient database to new receptionists.",
         "speakers": [
-          { "name": "Helen", "voice": "female" }
+          {
+            "name": "Helen",
+            "voice": "female"
+          }
         ],
         "script": [
-          { "speaker": "Helen", "text": "Good morning, and welcome to Riverside Dental Clinic. I'm Helen, the database administrator. Before you start work at reception, I'd like to show you how our patient database works." },
-          { "speaker": "Helen", "text": "The database has three tables: Patients, Appointments and Treatments. Each record in the Patients table holds information about one person, such as given name, family name, date of birth and phone number. Many patients have the same family name, so we give each person a unique patient number. That field is the primary key." },
-          { "speaker": "Helen", "text": "You add new patients by using the New Patient form. Please don't type information straight into the tables, because it's easy to make mistakes there. When a patient changes their phone number, please update their record on the same day, because we send appointment reminders by text message." },
-          { "speaker": "Helen", "text": "Every evening, before you go home, please print the list of tomorrow's appointments by running the Daily Diary report. Last month a receptionist forgot to do this, and the next morning nobody knew which patients were coming in." },
-          { "speaker": "Helen", "text": "Is everything clear so far?" }
+          {
+            "speaker": "Helen",
+            "text": "Good morning, and welcome to Riverside Dental Clinic. I'm Helen, the database administrator. Before you start work at reception, I'd like to show you how our patient database works."
+          },
+          {
+            "speaker": "Helen",
+            "text": "The database has three tables: Patients, Appointments and Treatments. Each record in the Patients table holds information about one person, such as given name, family name, date of birth and phone number. Many patients have the same family name, so we give each person a unique patient number. That field is the primary key."
+          },
+          {
+            "speaker": "Helen",
+            "text": "You add new patients by using the New Patient form. Please don't type information straight into the tables, because it's easy to make mistakes there. When a patient changes their phone number, please update their record on the same day, because we send appointment reminders by text message."
+          },
+          {
+            "speaker": "Helen",
+            "text": "Every evening, before you go home, please print the list of tomorrow's appointments by running the Daily Diary report. Last month a receptionist forgot to do this, and the next morning nobody knew which patients were coming in."
+          },
+          {
+            "speaker": "Helen",
+            "text": "Is everything clear so far?"
+          }
         ],
         "questions": [
           {
@@ -146,7 +273,12 @@
             "kind": "short",
             "stem": "How many tables does the database have?",
             "maxWords": 3,
-            "acceptedAnswers": ["three", "three tables", "3", "3 tables"],
+            "acceptedAnswers": [
+              "three",
+              "three tables",
+              "3",
+              "3 tables"
+            ],
             "explanation": "Helen nói \"The database has three tables: Patients, Appointments and Treatments\"."
           },
           {
@@ -154,7 +286,11 @@
             "kind": "short",
             "stem": "Which field is the primary key in the Patients table?",
             "maxWords": 3,
-            "acceptedAnswers": ["patient number", "the patient number", "unique patient number"],
+            "acceptedAnswers": [
+              "patient number",
+              "the patient number",
+              "unique patient number"
+            ],
             "explanation": "Vì nhiều bệnh nhân trùng họ, mỗi người có một mã bệnh nhân riêng: \"a unique patient number. That field is the primary key.\""
           },
           {
@@ -162,7 +298,10 @@
             "kind": "short",
             "stem": "What should receptionists use to add new patients?",
             "maxWords": 3,
-            "acceptedAnswers": ["new patient form", "patient form"],
+            "acceptedAnswers": [
+              "new patient form",
+              "patient form"
+            ],
             "explanation": "\"You add new patients by using the New Patient form.\" Helen dặn không gõ thẳng vào bảng (tables)."
           },
           {
@@ -170,7 +309,13 @@
             "kind": "short",
             "stem": "When should receptionists print the list of tomorrow's appointments?",
             "maxWords": 3,
-            "acceptedAnswers": ["every evening", "evening", "each evening", "in the evening", "before going home"],
+            "acceptedAnswers": [
+              "every evening",
+              "evening",
+              "each evening",
+              "in the evening",
+              "before going home"
+            ],
             "explanation": "\"Every evening, before you go home, please print the list of tomorrow's appointments\"."
           },
           {
@@ -178,7 +323,11 @@
             "kind": "short",
             "stem": "Which report prints the list of tomorrow's appointments?",
             "maxWords": 3,
-            "acceptedAnswers": ["daily diary report", "daily diary", "the daily diary"],
+            "acceptedAnswers": [
+              "daily diary report",
+              "daily diary",
+              "the daily diary"
+            ],
             "explanation": "Danh sách lịch hẹn ngày mai được in \"by running the Daily Diary report\"."
           }
         ]
@@ -189,12 +338,30 @@
     "matching": {
       "instructions": "Match the terms (1–5) with the correct definitions (A–F). There is one extra definition that you do not need (Questions 1–5).",
       "definitions": [
-        { "id": "A", "text": "To ask a question about the data stored in a computer system, in order to retrieve some information." },
-        { "id": "B", "text": "To take (a number or an amount) from a larger number or amount." },
-        { "id": "C", "text": "A device that allows you to draw on its surface, using a stylus rather than a mouse, with the results appearing on your computer screen." },
-        { "id": "D", "text": "An occasion when a computer or a computer system suddenly stops working." },
-        { "id": "E", "text": "The art of combining pictures, words and decoration in the production of books, magazines, etc." },
-        { "id": "F", "text": "A thing shaped like a pen, used for writing on a special computer screen." }
+        {
+          "id": "A",
+          "text": "To ask a question about the data stored in a computer system, in order to retrieve some information."
+        },
+        {
+          "id": "B",
+          "text": "To take (a number or an amount) from a larger number or amount."
+        },
+        {
+          "id": "C",
+          "text": "A device that allows you to draw on its surface, using a stylus rather than a mouse, with the results appearing on your computer screen."
+        },
+        {
+          "id": "D",
+          "text": "An occasion when a computer or a computer system suddenly stops working."
+        },
+        {
+          "id": "E",
+          "text": "The art of combining pictures, words and decoration in the production of books, magazines, etc."
+        },
+        {
+          "id": "F",
+          "text": "A thing shaped like a pen, used for writing on a special computer screen."
+        }
       ],
       "items": [
         {
@@ -235,10 +402,22 @@
         "kind": "mcq",
         "stem": "Did you ______ the sales figures in the spreadsheet and ______ any errors?",
         "options": [
-          { "id": "A", "text": "check / found" },
-          { "id": "B", "text": "checked / find" },
-          { "id": "C", "text": "check / find" },
-          { "id": "D", "text": "checked / found" }
+          {
+            "id": "A",
+            "text": "check / found"
+          },
+          {
+            "id": "B",
+            "text": "checked / find"
+          },
+          {
+            "id": "C",
+            "text": "check / find"
+          },
+          {
+            "id": "D",
+            "text": "checked / found"
+          }
         ],
         "answerKey": "C",
         "explanation": "Câu hỏi thì quá khứ đơn: Did + chủ ngữ + động từ nguyên mẫu. Cả hai động từ sau \"Did you\" đều để nguyên mẫu: check, find."
@@ -248,10 +427,22 @@
         "kind": "mcq",
         "stem": "Before ______ the keyboard, always switch off and unplug the computer.",
         "options": [
-          { "id": "A", "text": "clean" },
-          { "id": "B", "text": "cleaned" },
-          { "id": "C", "text": "to clean" },
-          { "id": "D", "text": "cleaning" }
+          {
+            "id": "A",
+            "text": "clean"
+          },
+          {
+            "id": "B",
+            "text": "cleaned"
+          },
+          {
+            "id": "C",
+            "text": "to clean"
+          },
+          {
+            "id": "D",
+            "text": "cleaning"
+          }
         ],
         "answerKey": "D",
         "explanation": "Khi hai vế cùng chủ ngữ (bạn lau bàn phím, bạn tắt máy), sau \"before\" dùng V-ing: \"Before cleaning …\". \"before\" là giới từ nên không đi với động từ nguyên mẫu, quá khứ phân từ hay to-infinitive."
@@ -261,10 +452,22 @@
         "kind": "mcq",
         "stem": "After ______ the server room, always lock the door.",
         "options": [
-          { "id": "A", "text": "leave" },
-          { "id": "B", "text": "leaving" },
-          { "id": "C", "text": "left" },
-          { "id": "D", "text": "to leave" }
+          {
+            "id": "A",
+            "text": "leave"
+          },
+          {
+            "id": "B",
+            "text": "leaving"
+          },
+          {
+            "id": "C",
+            "text": "left"
+          },
+          {
+            "id": "D",
+            "text": "to leave"
+          }
         ],
         "answerKey": "B",
         "explanation": "Khi hai vế cùng chủ ngữ (bạn rời phòng, bạn khoá cửa), sau \"after\" dùng V-ing: \"After leaving …\"."
@@ -274,10 +477,22 @@
         "kind": "mcq",
         "stem": "______ a report in the database, you can see last month's total sales.",
         "options": [
-          { "id": "A", "text": "By running" },
-          { "id": "B", "text": "By run" },
-          { "id": "C", "text": "For run" },
-          { "id": "D", "text": "With runs" }
+          {
+            "id": "A",
+            "text": "By running"
+          },
+          {
+            "id": "B",
+            "text": "By run"
+          },
+          {
+            "id": "C",
+            "text": "For run"
+          },
+          {
+            "id": "D",
+            "text": "With runs"
+          }
         ],
         "answerKey": "A",
         "explanation": "Diễn tả cách làm một việc dùng \"by + V-ing\": \"By running a report\" (bằng cách chạy một báo cáo). Sau giới từ \"by\" phải dùng V-ing, không dùng động từ nguyên mẫu."
@@ -287,10 +502,22 @@
         "kind": "mcq",
         "stem": "By ______ a filter on the Date column, you can see only this month's orders.",
         "options": [
-          { "id": "A", "text": "use" },
-          { "id": "B", "text": "used" },
-          { "id": "C", "text": "to use" },
-          { "id": "D", "text": "using" }
+          {
+            "id": "A",
+            "text": "use"
+          },
+          {
+            "id": "B",
+            "text": "used"
+          },
+          {
+            "id": "C",
+            "text": "to use"
+          },
+          {
+            "id": "D",
+            "text": "using"
+          }
         ],
         "answerKey": "D",
         "explanation": "Sau giới từ \"by\" dùng V-ing: \"By using a filter …\" (bằng cách dùng bộ lọc)."
@@ -300,10 +527,22 @@
         "kind": "mcq",
         "stem": "The technician found an error in the network settings and ______ it straight away.",
         "options": [
-          { "id": "A", "text": "correct" },
-          { "id": "B", "text": "corrects" },
-          { "id": "C", "text": "corrected" },
-          { "id": "D", "text": "correcting" }
+          {
+            "id": "A",
+            "text": "correct"
+          },
+          {
+            "id": "B",
+            "text": "corrects"
+          },
+          {
+            "id": "C",
+            "text": "corrected"
+          },
+          {
+            "id": "D",
+            "text": "correcting"
+          }
         ],
         "answerKey": "C",
         "explanation": "Hai hành động nối tiếp đã xong trong quá khứ, nối bằng \"and\": found … and corrected (quá khứ đơn, động từ có quy tắc thêm -ed)."
@@ -313,10 +552,22 @@
         "kind": "mcq",
         "stem": "While the technicians ______ the network drives, the power suddenly went off.",
         "options": [
-          { "id": "A", "text": "were checking" },
-          { "id": "B", "text": "was checking" },
-          { "id": "C", "text": "check" },
-          { "id": "D", "text": "are checking" }
+          {
+            "id": "A",
+            "text": "were checking"
+          },
+          {
+            "id": "B",
+            "text": "was checking"
+          },
+          {
+            "id": "C",
+            "text": "check"
+          },
+          {
+            "id": "D",
+            "text": "are checking"
+          }
         ],
         "answerKey": "A",
         "explanation": "Hành động dài đang diễn ra (quá khứ tiếp diễn sau \"while\") thì bị hành động ngắn xen vào (went off, quá khứ đơn). Chủ ngữ \"the technicians\" số nhiều nên dùng \"were checking\"."
@@ -328,10 +579,22 @@
         "kind": "mcq",
         "stem": "In a spreadsheet, a horizontal line of cells that goes across the page is called a ______.",
         "options": [
-          { "id": "A", "text": "column" },
-          { "id": "B", "text": "cell" },
-          { "id": "C", "text": "formula" },
-          { "id": "D", "text": "row" }
+          {
+            "id": "A",
+            "text": "column"
+          },
+          {
+            "id": "B",
+            "text": "cell"
+          },
+          {
+            "id": "C",
+            "text": "formula"
+          },
+          {
+            "id": "D",
+            "text": "row"
+          }
         ],
         "answerKey": "D",
         "explanation": "Row (hàng) là dãy ô nằm ngang. Column (cột) là dãy ô theo chiều dọc."
@@ -341,10 +604,22 @@
         "kind": "mcq",
         "stem": "In a database table, a ______ is a single field that uniquely identifies each record, such as a staff ID number.",
         "options": [
-          { "id": "A", "text": "report" },
-          { "id": "B", "text": "primary key" },
-          { "id": "C", "text": "table" },
-          { "id": "D", "text": "form" }
+          {
+            "id": "A",
+            "text": "report"
+          },
+          {
+            "id": "B",
+            "text": "primary key"
+          },
+          {
+            "id": "C",
+            "text": "table"
+          },
+          {
+            "id": "D",
+            "text": "form"
+          }
         ],
         "answerKey": "B",
         "explanation": "Primary key (khoá chính) là trường xác định duy nhất mỗi bản ghi trong bảng, ví dụ mã nhân viên."
@@ -354,10 +629,22 @@
         "kind": "mcq",
         "stem": "Which database object is used as an interface for users to enter data into tables easily?",
         "options": [
-          { "id": "A", "text": "Record" },
-          { "id": "B", "text": "Report" },
-          { "id": "C", "text": "Form" },
-          { "id": "D", "text": "Field" }
+          {
+            "id": "A",
+            "text": "Record"
+          },
+          {
+            "id": "B",
+            "text": "Report"
+          },
+          {
+            "id": "C",
+            "text": "Form"
+          },
+          {
+            "id": "D",
+            "text": "Field"
+          }
         ],
         "answerKey": "C",
         "explanation": "Form (biểu mẫu) là đối tượng giúp nhập dữ liệu vào bảng dễ dàng. Report dùng để in kết quả; record là một bản ghi và field là một trường trong bảng, không phải giao diện nhập liệu."
@@ -367,10 +654,22 @@
         "kind": "mcq",
         "stem": "When an IT administrator decides who can open or change specific files and folders on a server, they are setting ______.",
         "options": [
-          { "id": "A", "text": "permissions" },
-          { "id": "B", "text": "updates" },
-          { "id": "C", "text": "logs" },
-          { "id": "D", "text": "backups" }
+          {
+            "id": "A",
+            "text": "permissions"
+          },
+          {
+            "id": "B",
+            "text": "updates"
+          },
+          {
+            "id": "C",
+            "text": "logs"
+          },
+          {
+            "id": "D",
+            "text": "backups"
+          }
         ],
         "answerKey": "A",
         "explanation": "Permissions (quyền truy cập) là thiết lập cho biết ai được dùng, mở hay sửa tệp và thư mục. Cụm \"set permissions\" có trong bài Systems administration."
@@ -380,10 +679,22 @@
         "kind": "mcq",
         "stem": "A systems administrator reads the ______ to see a record of events on the server, for example who logged in and when.",
         "options": [
-          { "id": "A", "text": "drivers" },
-          { "id": "B", "text": "updates" },
-          { "id": "C", "text": "logs" },
-          { "id": "D", "text": "apps" }
+          {
+            "id": "A",
+            "text": "drivers"
+          },
+          {
+            "id": "B",
+            "text": "updates"
+          },
+          {
+            "id": "C",
+            "text": "logs"
+          },
+          {
+            "id": "D",
+            "text": "apps"
+          }
         ],
         "answerKey": "C",
         "explanation": "Log (nhật ký hệ thống) là bản ghi chính thức các sự kiện, ví dụ ai đăng nhập lúc nào."
@@ -393,10 +704,22 @@
         "kind": "mcq",
         "stem": "A ______ is a collection of hard drives in a single box accessed through a network, providing flexible storage for all connected computers.",
         "options": [
-          { "id": "A", "text": "multifunction printer" },
-          { "id": "B", "text": "NAS device" },
-          { "id": "C", "text": "touch screen" },
-          { "id": "D", "text": "projector" }
+          {
+            "id": "A",
+            "text": "multifunction printer"
+          },
+          {
+            "id": "B",
+            "text": "NAS device"
+          },
+          {
+            "id": "C",
+            "text": "touch screen"
+          },
+          {
+            "id": "D",
+            "text": "projector"
+          }
         ],
         "answerKey": "B",
         "explanation": "NAS (Network Attached Storage) device là bộ nhiều ổ cứng trong một hộp, truy cập qua mạng để các máy tính cùng lưu trữ."
@@ -406,10 +729,22 @@
         "kind": "mcq",
         "stem": "Which part of a laptop do you slide your finger across to move the cursor instead of using a mouse?",
         "options": [
-          { "id": "A", "text": "Touchpad" },
-          { "id": "B", "text": "Headset" },
-          { "id": "C", "text": "Projector" },
-          { "id": "D", "text": "Webcam" }
+          {
+            "id": "A",
+            "text": "Touchpad"
+          },
+          {
+            "id": "B",
+            "text": "Headset"
+          },
+          {
+            "id": "C",
+            "text": "Projector"
+          },
+          {
+            "id": "D",
+            "text": "Webcam"
+          }
         ],
         "answerKey": "A",
         "explanation": "Touchpad (bàn di chuột cảm ứng) là bộ phận của laptop dùng ngón tay để di chuyển con trỏ thay cho chuột."
@@ -419,10 +754,22 @@
         "kind": "mcq",
         "stem": "When paper gets stuck inside a printer and stops it from printing, this common problem is called a paper ______.",
         "options": [
-          { "id": "A", "text": "freeze" },
-          { "id": "B", "text": "dropout" },
-          { "id": "C", "text": "lock" },
-          { "id": "D", "text": "jam" }
+          {
+            "id": "A",
+            "text": "freeze"
+          },
+          {
+            "id": "B",
+            "text": "dropout"
+          },
+          {
+            "id": "C",
+            "text": "lock"
+          },
+          {
+            "id": "D",
+            "text": "jam"
+          }
         ],
         "answerKey": "D",
         "explanation": "Paper jam (kẹt giấy) là khi giấy bị kẹt trong máy in khiến máy không in được."
@@ -445,10 +792,22 @@
           "kind": "mcq",
           "stem": "What was Maria's problem before January?",
           "options": [
-            { "id": "A", "text": "Her calculator often broke." },
-            { "id": "B", "text": "She often made mistakes in her sums." },
-            { "id": "C", "text": "Her shops closed too early." },
-            { "id": "D", "text": "Her nephew lost her notebook." }
+            {
+              "id": "A",
+              "text": "Her calculator often broke."
+            },
+            {
+              "id": "B",
+              "text": "She often made mistakes in her sums."
+            },
+            {
+              "id": "C",
+              "text": "Her shops closed too early."
+            },
+            {
+              "id": "D",
+              "text": "Her nephew lost her notebook."
+            }
           ],
           "answerKey": "B",
           "explanation": "Đoạn 1: Maria cộng doanh số bằng tay và máy tính bỏ túi, mất khoảng một giờ và \"often made mistakes when she was tired\"."
@@ -458,10 +817,22 @@
           "kind": "mcq",
           "stem": "What did the formula in column D do?",
           "options": [
-            { "id": "A", "text": "It added the prices of all the products." },
-            { "id": "B", "text": "It divided the total by the two shops." },
-            { "id": "C", "text": "It multiplied the price by the items sold." },
-            { "id": "D", "text": "It showed the name of each product." }
+            {
+              "id": "A",
+              "text": "It added the prices of all the products."
+            },
+            {
+              "id": "B",
+              "text": "It divided the total by the two shops."
+            },
+            {
+              "id": "C",
+              "text": "It multiplied the price by the items sold."
+            },
+            {
+              "id": "D",
+              "text": "It showed the name of each product."
+            }
           ],
           "answerKey": "C",
           "explanation": "Đoạn 2: \"a formula into column D that multiplied the price by the number of items\". Việc cộng tất cả giá trị là của hàm SUM ở cuối cột D."
@@ -471,10 +842,22 @@
           "kind": "mcq",
           "stem": "Why did Maria check every total with her calculator for two weeks?",
           "options": [
-            { "id": "A", "text": "The spreadsheet was too slow." },
-            { "id": "B", "text": "She did not trust the spreadsheet at first." },
-            { "id": "C", "text": "Daniel asked her to test his formulae." },
-            { "id": "D", "text": "The prices changed every day." }
+            {
+              "id": "A",
+              "text": "The spreadsheet was too slow."
+            },
+            {
+              "id": "B",
+              "text": "She did not trust the spreadsheet at first."
+            },
+            {
+              "id": "C",
+              "text": "Daniel asked her to test his formulae."
+            },
+            {
+              "id": "D",
+              "text": "The prices changed every day."
+            }
           ],
           "answerKey": "B",
           "explanation": "Đoạn 3: \"At first, Maria did not trust the spreadsheet. For two weeks, she checked every total with her calculator.\""
@@ -484,10 +867,22 @@
           "kind": "mcq",
           "stem": "What was wrong with one of Daniel's formulae?",
           "options": [
-            { "id": "A", "text": "It used the wrong cells." },
-            { "id": "B", "text": "It had a spelling mistake." },
-            { "id": "C", "text": "It used the wrong worksheet." },
-            { "id": "D", "text": "It counted the cakes twice." }
+            {
+              "id": "A",
+              "text": "It used the wrong cells."
+            },
+            {
+              "id": "B",
+              "text": "It had a spelling mistake."
+            },
+            {
+              "id": "C",
+              "text": "It used the wrong worksheet."
+            },
+            {
+              "id": "D",
+              "text": "It counted the cakes twice."
+            }
           ],
           "answerKey": "A",
           "explanation": "Đoạn 3: \"Daniel chose the wrong cells in one formula\", nên tổng của cửa hàng thứ hai thiếu bánh ngọt (không phải tính hai lần)."
@@ -497,10 +892,22 @@
           "kind": "mcq",
           "stem": "What did Maria do after comparing the two worksheets?",
           "options": [
-            { "id": "A", "text": "She closed the second shop." },
-            { "id": "B", "text": "She bought a new calculator." },
-            { "id": "C", "text": "She started selling cakes online." },
-            { "id": "D", "text": "She stopped making brown bread for one shop." }
+            {
+              "id": "A",
+              "text": "She closed the second shop."
+            },
+            {
+              "id": "B",
+              "text": "She bought a new calculator."
+            },
+            {
+              "id": "C",
+              "text": "She started selling cakes online."
+            },
+            {
+              "id": "D",
+              "text": "She stopped making brown bread for one shop."
+            }
           ],
           "answerKey": "D",
           "explanation": "Đoạn 4: \"she stopped making brown bread for the second shop because very few customers bought it there\"."
@@ -590,7 +997,7 @@
     "email": {
       "id": "W-EMAIL",
       "recipient": "Peter",
-      "task": "Write an email to your user called Peter to instruct him about how to prepare his system before a major software upgrade and resolve an account login issue. Use the notes below. In your email you must use:\n- before or after + -ing at least twice to show the order of the steps (Before deploying…, After setting…);\n- by + -ing at least once to explain how to do something (You can … by selecting…).\nWrite 80–100 words.",
+      "task": "Write an email to your user called Peter to instruct him about how to prepare his system before a major software upgrade and resolve an account login issue. Use the notes below. In your email you must use:\n- before or after + -ing at least twice to show the order of the steps (Before deploying…, After setting…);\n- by + -ing at least once to explain how to do something (You can … by selecting…).\nFollow the standard layout for an email giving instructions: From / To / Date / Subject, a greeting, It should be quite easy to …, the steps with First / Then / Next / After that / Finally, a reminder (Don't forget to … when you've finished.), then Best wishes and your name, position and department.\nWrite 80–100 words (do not count the From, To, Date and Subject lines).",
       "bullets": [
         "back up database files / transfer them to NAS device",
         "check system logs / verify network connections",
@@ -598,13 +1005,16 @@
         "open login page / select \"Reset Password\" if account is locked",
         "set new password / log in to confirm new credentials work"
       ],
-      "wordRange": [80, 100],
+      "wordRange": [
+        80,
+        100
+      ],
       "targetGrammar": [
-        "Before / after + -ing (at least twice) to show the order of tasks, with -ing when the subject is the same: Before deploying the upgrade, …; After setting a new password, …",
-        "Imperatives with sequence words (first, then, next, finally)",
+        "Before / after + -ing (at least twice) to show the order of tasks: Before deploying the upgrade, …; After setting a new password, …",
+        "Imperatives with sequence words (first, then, next, after that, finally)",
         "By + -ing (at least once) to explain how to do something: by selecting \"Reset Password\""
       ],
-      "modelAnswer": "Dear Peter,\n\nWe are installing a major software upgrade today, so please prepare your system first. Before starting, back up your database files and transfer them to the NAS device. Then check the system logs and verify your network connections. After deploying the upgrade, restart your computer. If your account is locked when you try to log in, open the login page and solve the problem by selecting \"Reset Password\". After setting a new password, log in again to confirm that your new credentials work.\n\nBest regards,\nLinh\nIT Support"
+      "modelAnswer": "From: Pham Thu Ha\nTo: Peter\nDate: 25th November\nSubject: Preparing for the software upgrade\n\nHi Peter,\n\nIt should be quite easy to prepare your system for the upgrade.\nFirst, back up the database files and transfer them to the NAS device.\nThen, before deploying the upgrade, check the system logs and network connections.\nNext, deploy the upgrade and restart your computer.\nAfter that, open the login page. You can unlock your account by selecting \"Reset Password\".\nFinally, after setting a new password, log in to confirm that it works.\nDon't forget to log out of the NAS device when you've finished.\n\nBest wishes,\nPham Thu Ha\nSupport Technician\nHelp Desk Department"
     }
   },
   "speaking": {

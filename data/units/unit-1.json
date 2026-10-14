@@ -23,7 +23,8 @@
     "Listening A lấy cảm hứng từ bài Meetings (track 06) nhưng tình huống khác; Listening B lấy cảm hứng từ bài IT jobs and duties (track 02–03). Không chép Audio script.",
     "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại, xử lý giống Unit 6.",
     "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
-    "Bản r1 (theo báo cáo et-auditor 9e85ebd): R7 đổi bộ phương án để chỉ một cách hoàn chỉnh đúng ngữ pháp (vẫn kiểm trạng từ tần suất sau be); gợi ý 4 của email đổi lịch và việc định kỳ để không lặp chi tiết cập nhật chiều thứ Sáu của Listening A."
+    "Bản r1 (theo báo cáo et-auditor 9e85ebd): R7 đổi bộ phương án để chỉ một cách hoàn chỉnh đúng ngữ pháp (vẫn kiểm trạng từ tần suất sau be); gợi ý 4 của email đổi lịch và việc định kỳ để không lặp chi tiết cập nhật chiều thứ Sáu của Listening A.",
+    "Email theo khung giáo viên (2026-10-14): email hướng dẫn From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng."
   ],
   "listening": {
     "parts": [
@@ -32,22 +33,64 @@
         "instructions": "Listen to the meeting and choose the best answer A, B, C or D (Questions L1–L5).",
         "context": "Mark, an office manager, and Paula, a helpdesk supervisor, discuss a problem with the helpdesk.",
         "speakers": [
-          { "name": "Mark", "voice": "male" },
-          { "name": "Paula", "voice": "female" }
+          {
+            "name": "Mark",
+            "voice": "male"
+          },
+          {
+            "name": "Paula",
+            "voice": "female"
+          }
         ],
         "script": [
-          { "speaker": "Mark", "text": "Paula, thanks for coming. You said the helpdesk has a problem on Monday mornings?" },
-          { "speaker": "Paula", "text": "Yes. On Mondays we get about sixty calls between nine and eleven. Normally we get twenty. My team can't answer them all, so people wait for a long time." },
-          { "speaker": "Mark", "text": "Why are Mondays so busy?" },
-          { "speaker": "Paula", "text": "Mostly because of the updates. The system installs updates on Sunday night, and on Monday people can't find their programs, or their settings are different." },
-          { "speaker": "Mark", "text": "I see. Shall we hire another technician?" },
-          { "speaker": "Paula", "text": "I'm afraid that's too expensive. We only need extra help for two hours a week." },
-          { "speaker": "Mark", "text": "True. How about moving the updates to Friday afternoon? Then your team can help people before the weekend." },
-          { "speaker": "Paula", "text": "That's a good idea. Friday afternoons are usually quiet." },
-          { "speaker": "Mark", "text": "And what about writing some short help pages on the intranet? People could solve the simple problems themselves." },
-          { "speaker": "Paula", "text": "Maybe we could make short videos too. A lot of users prefer watching to reading." },
-          { "speaker": "Mark", "text": "Great. Could you prepare three videos by the end of the month?" },
-          { "speaker": "Paula", "text": "Yes, no problem. I'll start next week." }
+          {
+            "speaker": "Mark",
+            "text": "Paula, thanks for coming. You said the helpdesk has a problem on Monday mornings?"
+          },
+          {
+            "speaker": "Paula",
+            "text": "Yes. On Mondays we get about sixty calls between nine and eleven. Normally we get twenty. My team can't answer them all, so people wait for a long time."
+          },
+          {
+            "speaker": "Mark",
+            "text": "Why are Mondays so busy?"
+          },
+          {
+            "speaker": "Paula",
+            "text": "Mostly because of the updates. The system installs updates on Sunday night, and on Monday people can't find their programs, or their settings are different."
+          },
+          {
+            "speaker": "Mark",
+            "text": "I see. Shall we hire another technician?"
+          },
+          {
+            "speaker": "Paula",
+            "text": "I'm afraid that's too expensive. We only need extra help for two hours a week."
+          },
+          {
+            "speaker": "Mark",
+            "text": "True. How about moving the updates to Friday afternoon? Then your team can help people before the weekend."
+          },
+          {
+            "speaker": "Paula",
+            "text": "That's a good idea. Friday afternoons are usually quiet."
+          },
+          {
+            "speaker": "Mark",
+            "text": "And what about writing some short help pages on the intranet? People could solve the simple problems themselves."
+          },
+          {
+            "speaker": "Paula",
+            "text": "Maybe we could make short videos too. A lot of users prefer watching to reading."
+          },
+          {
+            "speaker": "Mark",
+            "text": "Great. Could you prepare three videos by the end of the month?"
+          },
+          {
+            "speaker": "Paula",
+            "text": "Yes, no problem. I'll start next week."
+          }
         ],
         "questions": [
           {
@@ -55,10 +98,22 @@
             "kind": "mcq",
             "stem": "What is the problem on Monday mornings?",
             "options": [
-              { "id": "A", "text": "The helpdesk gets too many calls." },
-              { "id": "B", "text": "The office opens very late." },
-              { "id": "C", "text": "The updates do not install." },
-              { "id": "D", "text": "Paula's team is on holiday." }
+              {
+                "id": "A",
+                "text": "The helpdesk gets too many calls."
+              },
+              {
+                "id": "B",
+                "text": "The office opens very late."
+              },
+              {
+                "id": "C",
+                "text": "The updates do not install."
+              },
+              {
+                "id": "D",
+                "text": "Paula's team is on holiday."
+              }
             ],
             "answerKey": "A",
             "explanation": "Paula nói sáng thứ Hai có khoảng 60 cuộc gọi từ 9 đến 11 giờ, nhóm không trả lời hết nên người dùng phải chờ lâu."
@@ -68,10 +123,22 @@
             "kind": "mcq",
             "stem": "How many calls does the helpdesk normally get between nine and eleven?",
             "options": [
-              { "id": "A", "text": "Sixty" },
-              { "id": "B", "text": "Twenty" },
-              { "id": "C", "text": "Forty" },
-              { "id": "D", "text": "Eleven" }
+              {
+                "id": "A",
+                "text": "Sixty"
+              },
+              {
+                "id": "B",
+                "text": "Twenty"
+              },
+              {
+                "id": "C",
+                "text": "Forty"
+              },
+              {
+                "id": "D",
+                "text": "Eleven"
+              }
             ],
             "answerKey": "B",
             "explanation": "\"Normally we get twenty.\" Sáu mươi là số cuộc gọi vào sáng thứ Hai."
@@ -81,10 +148,22 @@
             "kind": "mcq",
             "stem": "Why does Paula disagree with hiring another technician?",
             "options": [
-              { "id": "A", "text": "Her team does not want a new colleague." },
-              { "id": "B", "text": "There is no desk for a new person." },
-              { "id": "C", "text": "It is too expensive for two hours a week." },
-              { "id": "D", "text": "Technicians cannot answer calls." }
+              {
+                "id": "A",
+                "text": "Her team does not want a new colleague."
+              },
+              {
+                "id": "B",
+                "text": "There is no desk for a new person."
+              },
+              {
+                "id": "C",
+                "text": "It is too expensive for two hours a week."
+              },
+              {
+                "id": "D",
+                "text": "Technicians cannot answer calls."
+              }
             ],
             "answerKey": "C",
             "explanation": "Paula nói \"I'm afraid that's too expensive. We only need extra help for two hours a week.\""
@@ -94,10 +173,22 @@
             "kind": "mcq",
             "stem": "When does Mark suggest installing the updates?",
             "options": [
-              { "id": "A", "text": "On Friday afternoon" },
-              { "id": "B", "text": "On Sunday night" },
-              { "id": "C", "text": "On Monday morning" },
-              { "id": "D", "text": "At the end of the month" }
+              {
+                "id": "A",
+                "text": "On Friday afternoon"
+              },
+              {
+                "id": "B",
+                "text": "On Sunday night"
+              },
+              {
+                "id": "C",
+                "text": "On Monday morning"
+              },
+              {
+                "id": "D",
+                "text": "At the end of the month"
+              }
             ],
             "answerKey": "A",
             "explanation": "Mark gợi ý \"How about moving the updates to Friday afternoon?\". Tối Chủ nhật là thời điểm cập nhật hiện nay, gây ra vấn đề."
@@ -107,10 +198,22 @@
             "kind": "mcq",
             "stem": "What will Paula do by the end of the month?",
             "options": [
-              { "id": "A", "text": "Hire a new technician" },
-              { "id": "B", "text": "Write a report for Mark" },
-              { "id": "C", "text": "Answer all the Monday calls" },
-              { "id": "D", "text": "Prepare three short videos" }
+              {
+                "id": "A",
+                "text": "Hire a new technician"
+              },
+              {
+                "id": "B",
+                "text": "Write a report for Mark"
+              },
+              {
+                "id": "C",
+                "text": "Answer all the Monday calls"
+              },
+              {
+                "id": "D",
+                "text": "Prepare three short videos"
+              }
             ],
             "answerKey": "D",
             "explanation": "Mark hỏi \"Could you prepare three videos by the end of the month?\" và Paula đồng ý."
@@ -122,13 +225,28 @@
         "instructions": "Listen to the talk and answer the questions. Write NO MORE THAN THREE WORDS for each answer (Questions L6–L10).",
         "context": "Rachel, a network technician, talks about her job at a university careers day.",
         "speakers": [
-          { "name": "Rachel", "voice": "female" }
+          {
+            "name": "Rachel",
+            "voice": "female"
+          }
         ],
         "script": [
-          { "speaker": "Rachel", "text": "Hello, everyone. My name's Rachel, and I'm a network technician at City Hospital. Thank you for inviting me to your careers day." },
-          { "speaker": "Rachel", "text": "I look after the hospital's network, which connects more than eight hundred computers, so my job is very important. A normal day starts at half past seven. First, I always check that every part of the network is working. This check takes about fifteen minutes. Then I usually answer messages from doctors and nurses who can't log in to the system." },
-          { "speaker": "Rachel", "text": "Twice a week, I replace old cables and switches, and once a month I work a night shift, because we can only update the main servers when the hospital is quiet. I hardly ever work at weekends." },
-          { "speaker": "Rachel", "text": "The thing I like most about my job is that I help the doctors to help their patients. If you want to do a job like mine, I think you need to be calm, because problems in a hospital are always urgent. Any questions?" }
+          {
+            "speaker": "Rachel",
+            "text": "Hello, everyone. My name's Rachel, and I'm a network technician at City Hospital. Thank you for inviting me to your careers day."
+          },
+          {
+            "speaker": "Rachel",
+            "text": "I look after the hospital's network, which connects more than eight hundred computers, so my job is very important. A normal day starts at half past seven. First, I always check that every part of the network is working. This check takes about fifteen minutes. Then I usually answer messages from doctors and nurses who can't log in to the system."
+          },
+          {
+            "speaker": "Rachel",
+            "text": "Twice a week, I replace old cables and switches, and once a month I work a night shift, because we can only update the main servers when the hospital is quiet. I hardly ever work at weekends."
+          },
+          {
+            "speaker": "Rachel",
+            "text": "The thing I like most about my job is that I help the doctors to help their patients. If you want to do a job like mine, I think you need to be calm, because problems in a hospital are always urgent. Any questions?"
+          }
         ],
         "questions": [
           {
@@ -136,7 +254,13 @@
             "kind": "short",
             "stem": "Where does Rachel work?",
             "maxWords": 3,
-            "acceptedAnswers": ["city hospital", "at city hospital", "a hospital", "hospital", "the hospital"],
+            "acceptedAnswers": [
+              "city hospital",
+              "at city hospital",
+              "a hospital",
+              "hospital",
+              "the hospital"
+            ],
             "explanation": "Rachel nói \"I'm a network technician at City Hospital\"."
           },
           {
@@ -144,7 +268,12 @@
             "kind": "short",
             "stem": "How long does Rachel's morning network check take?",
             "maxWords": 3,
-            "acceptedAnswers": ["about fifteen minutes", "fifteen minutes", "15 minutes", "about 15 minutes"],
+            "acceptedAnswers": [
+              "about fifteen minutes",
+              "fifteen minutes",
+              "15 minutes",
+              "about 15 minutes"
+            ],
             "explanation": "\"This check takes about fifteen minutes.\""
           },
           {
@@ -152,7 +281,9 @@
             "kind": "short",
             "stem": "How often does Rachel replace old cables and switches?",
             "maxWords": 3,
-            "acceptedAnswers": ["twice a week"],
+            "acceptedAnswers": [
+              "twice a week"
+            ],
             "explanation": "\"Twice a week, I replace old cables and switches\". \"Once a month\" là tần suất làm ca đêm."
           },
           {
@@ -160,7 +291,9 @@
             "kind": "short",
             "stem": "How often does Rachel work a night shift?",
             "maxWords": 3,
-            "acceptedAnswers": ["once a month"],
+            "acceptedAnswers": [
+              "once a month"
+            ],
             "explanation": "\"once a month I work a night shift\", vì chỉ cập nhật máy chủ chính được khi bệnh viện yên tĩnh."
           },
           {
@@ -168,7 +301,11 @@
             "kind": "short",
             "stem": "What does Rachel say you need to be for a job like hers?",
             "maxWords": 3,
-            "acceptedAnswers": ["calm", "be calm", "very calm"],
+            "acceptedAnswers": [
+              "calm",
+              "be calm",
+              "very calm"
+            ],
             "explanation": "\"I think you need to be calm, because problems in a hospital are always urgent.\""
           }
         ]
@@ -179,12 +316,30 @@
     "matching": {
       "instructions": "Match the terms (1–5) with the correct definitions (A–F). There is one extra definition that you do not need (Questions 1–5).",
       "definitions": [
-        { "id": "A", "text": "To find out what the cause of a fault is, after doing tests." },
-        { "id": "B", "text": "Someone whose job is to study a company's computer needs and provide suitable software and equipment." },
-        { "id": "C", "text": "An official written record of what is said and decided at a meeting." },
-        { "id": "D", "text": "A company that makes large quantities of goods." },
-        { "id": "E", "text": "Using both letters and numbers." },
-        { "id": "F", "text": "A list of the subjects to be discussed at a meeting." }
+        {
+          "id": "A",
+          "text": "To find out what the cause of a fault is, after doing tests."
+        },
+        {
+          "id": "B",
+          "text": "Someone whose job is to study a company's computer needs and provide suitable software and equipment."
+        },
+        {
+          "id": "C",
+          "text": "An official written record of what is said and decided at a meeting."
+        },
+        {
+          "id": "D",
+          "text": "A company that makes large quantities of goods."
+        },
+        {
+          "id": "E",
+          "text": "Using both letters and numbers."
+        },
+        {
+          "id": "F",
+          "text": "A list of the subjects to be discussed at a meeting."
+        }
       ],
       "items": [
         {
@@ -225,10 +380,22 @@
         "kind": "mcq",
         "stem": "I ______ my emails first thing in the morning.",
         "options": [
-          { "id": "A", "text": "check always" },
-          { "id": "B", "text": "checking always" },
-          { "id": "C", "text": "always checks" },
-          { "id": "D", "text": "always check" }
+          {
+            "id": "A",
+            "text": "check always"
+          },
+          {
+            "id": "B",
+            "text": "checking always"
+          },
+          {
+            "id": "C",
+            "text": "always checks"
+          },
+          {
+            "id": "D",
+            "text": "always check"
+          }
         ],
         "answerKey": "D",
         "explanation": "Trạng từ tần suất đứng trước động từ chính: \"always check\". Chủ ngữ \"I\" nên động từ không thêm -s."
@@ -238,10 +405,22 @@
         "kind": "mcq",
         "stem": "Our project manager ______ late for meetings.",
         "options": [
-          { "id": "A", "text": "hardly ever be" },
-          { "id": "B", "text": "is hardly ever" },
-          { "id": "C", "text": "are hardly ever" },
-          { "id": "D", "text": "hardly ever being" }
+          {
+            "id": "A",
+            "text": "hardly ever be"
+          },
+          {
+            "id": "B",
+            "text": "is hardly ever"
+          },
+          {
+            "id": "C",
+            "text": "are hardly ever"
+          },
+          {
+            "id": "D",
+            "text": "hardly ever being"
+          }
         ],
         "answerKey": "B",
         "explanation": "Câu cần động từ \"be\" chia theo chủ ngữ số ít (Our project manager): \"is\", và trạng từ tần suất đứng sau \"be\": \"is hardly ever late\". \"be\", \"being\" không chia; \"are\" sai với chủ ngữ số ít."
@@ -251,10 +430,22 @@
         "kind": "mcq",
         "stem": "______ your company sell software to schools?",
         "options": [
-          { "id": "A", "text": "Do" },
-          { "id": "B", "text": "Is" },
-          { "id": "C", "text": "Does" },
-          { "id": "D", "text": "Are" }
+          {
+            "id": "A",
+            "text": "Do"
+          },
+          {
+            "id": "B",
+            "text": "Is"
+          },
+          {
+            "id": "C",
+            "text": "Does"
+          },
+          {
+            "id": "D",
+            "text": "Are"
+          }
         ],
         "answerKey": "C",
         "explanation": "Câu hỏi thì hiện tại đơn: Does + chủ ngữ số ít (your company) + động từ nguyên mẫu (sell)."
@@ -264,10 +455,22 @@
         "kind": "mcq",
         "stem": "How often ______ the backup system?",
         "options": [
-          { "id": "A", "text": "do you check" },
-          { "id": "B", "text": "you check" },
-          { "id": "C", "text": "you do check" },
-          { "id": "D", "text": "does you check" }
+          {
+            "id": "A",
+            "text": "do you check"
+          },
+          {
+            "id": "B",
+            "text": "you check"
+          },
+          {
+            "id": "C",
+            "text": "you do check"
+          },
+          {
+            "id": "D",
+            "text": "does you check"
+          }
         ],
         "answerKey": "A",
         "explanation": "Câu hỏi có từ để hỏi: từ để hỏi (How often) + do/does + chủ ngữ + động từ. Chủ ngữ \"you\" đi với \"do\"."
@@ -277,10 +480,22 @@
         "kind": "mcq",
         "stem": "You ______ eat or drink near the computers in the lab. It's against the rules.",
         "options": [
-          { "id": "A", "text": "should" },
-          { "id": "B", "text": "mustn't" },
-          { "id": "C", "text": "have to" },
-          { "id": "D", "text": "don't have to" }
+          {
+            "id": "A",
+            "text": "should"
+          },
+          {
+            "id": "B",
+            "text": "mustn't"
+          },
+          {
+            "id": "C",
+            "text": "have to"
+          },
+          {
+            "id": "D",
+            "text": "don't have to"
+          }
         ],
         "answerKey": "B",
         "explanation": "\"It's against the rules\" nên cần từ chỉ sự cấm: \"mustn't\". \"don't have to\" chỉ có nghĩa là không bắt buộc."
@@ -290,10 +505,22 @@
         "kind": "mcq",
         "stem": "All visitors ______ sign in at reception. It's a company rule.",
         "options": [
-          { "id": "A", "text": "has to" },
-          { "id": "B", "text": "don't have to" },
-          { "id": "C", "text": "have to" },
-          { "id": "D", "text": "having to" }
+          {
+            "id": "A",
+            "text": "has to"
+          },
+          {
+            "id": "B",
+            "text": "don't have to"
+          },
+          {
+            "id": "C",
+            "text": "have to"
+          },
+          {
+            "id": "D",
+            "text": "having to"
+          }
         ],
         "answerKey": "C",
         "explanation": "Quy định bắt buộc dùng \"have to\". Chủ ngữ \"All visitors\" số nhiều nên dùng \"have to\", không dùng \"has to\"."
@@ -303,10 +530,22 @@
         "kind": "mcq",
         "stem": "What about ______ the meeting to Tuesday morning?",
         "options": [
-          { "id": "A", "text": "move" },
-          { "id": "B", "text": "to move" },
-          { "id": "C", "text": "moved" },
-          { "id": "D", "text": "moving" }
+          {
+            "id": "A",
+            "text": "move"
+          },
+          {
+            "id": "B",
+            "text": "to move"
+          },
+          {
+            "id": "C",
+            "text": "moved"
+          },
+          {
+            "id": "D",
+            "text": "moving"
+          }
         ],
         "answerKey": "D",
         "explanation": "Đưa ra gợi ý: \"What about / How about + V-ing\": \"What about moving…?\"."
@@ -318,10 +557,22 @@
         "kind": "mcq",
         "stem": "A ______ is in charge of the team that answers users' calls about computer problems.",
         "options": [
-          { "id": "A", "text": "helpdesk supervisor" },
-          { "id": "B", "text": "database administrator" },
-          { "id": "C", "text": "project manager" },
-          { "id": "D", "text": "software developer" }
+          {
+            "id": "A",
+            "text": "helpdesk supervisor"
+          },
+          {
+            "id": "B",
+            "text": "database administrator"
+          },
+          {
+            "id": "C",
+            "text": "project manager"
+          },
+          {
+            "id": "D",
+            "text": "software developer"
+          }
         ],
         "answerKey": "A",
         "explanation": "Helpdesk supervisor (trưởng nhóm bộ phận hỗ trợ) quản lý bộ phận mà người dùng gọi đến khi gặp sự cố máy tính."
@@ -331,10 +582,22 @@
         "kind": "mcq",
         "stem": "Our company sells its products to more than 200 ______ in Europe.",
         "options": [
-          { "id": "A", "text": "colleagues" },
-          { "id": "B", "text": "versions" },
-          { "id": "C", "text": "clients" },
-          { "id": "D", "text": "passwords" }
+          {
+            "id": "A",
+            "text": "colleagues"
+          },
+          {
+            "id": "B",
+            "text": "versions"
+          },
+          {
+            "id": "C",
+            "text": "clients"
+          },
+          {
+            "id": "D",
+            "text": "passwords"
+          }
         ],
         "answerKey": "C",
         "explanation": "Client (khách hàng) là người hoặc tổ chức nhận dịch vụ, mua sản phẩm của công ty. Colleague là đồng nghiệp."
@@ -344,10 +607,22 @@
         "kind": "mcq",
         "stem": "The company will ______ the new version of its app next month.",
         "options": [
-          { "id": "A", "text": "attend" },
-          { "id": "B", "text": "launch" },
-          { "id": "C", "text": "supervise" },
-          { "id": "D", "text": "chair" }
+          {
+            "id": "A",
+            "text": "attend"
+          },
+          {
+            "id": "B",
+            "text": "launch"
+          },
+          {
+            "id": "C",
+            "text": "supervise"
+          },
+          {
+            "id": "D",
+            "text": "chair"
+          }
         ],
         "answerKey": "B",
         "explanation": "Launch (ra mắt) là đưa sản phẩm mới ra bán lần đầu."
@@ -357,10 +632,22 @@
         "kind": "mcq",
         "stem": "Please don't ______ music or videos on the office network. It uses too much bandwidth.",
         "options": [
-          { "id": "A", "text": "maintain" },
-          { "id": "B", "text": "attend" },
-          { "id": "C", "text": "supervise" },
-          { "id": "D", "text": "stream" }
+          {
+            "id": "A",
+            "text": "maintain"
+          },
+          {
+            "id": "B",
+            "text": "attend"
+          },
+          {
+            "id": "C",
+            "text": "supervise"
+          },
+          {
+            "id": "D",
+            "text": "stream"
+          }
         ],
         "answerKey": "D",
         "explanation": "Stream (phát trực tuyến) là phát nhạc, video ngay trong lúc đang tải từ Internet, tốn nhiều băng thông."
@@ -370,10 +657,22 @@
         "kind": "mcq",
         "stem": "At the start of the meeting, the ______ welcomes everyone and asks the first speaker to begin.",
         "options": [
-          { "id": "A", "text": "chairperson" },
-          { "id": "B", "text": "supplier" },
-          { "id": "C", "text": "developer" },
-          { "id": "D", "text": "client" }
+          {
+            "id": "A",
+            "text": "chairperson"
+          },
+          {
+            "id": "B",
+            "text": "supplier"
+          },
+          {
+            "id": "C",
+            "text": "developer"
+          },
+          {
+            "id": "D",
+            "text": "client"
+          }
         ],
         "answerKey": "A",
         "explanation": "Chairperson (chủ toạ) là người điều khiển cuộc họp."
@@ -383,10 +682,22 @@
         "kind": "mcq",
         "stem": "If your laptop breaks, take it to our ______ centre in the city, and a technician will repair it.",
         "options": [
-          { "id": "A", "text": "production" },
-          { "id": "B", "text": "network" },
-          { "id": "C", "text": "service" },
-          { "id": "D", "text": "word" }
+          {
+            "id": "A",
+            "text": "production"
+          },
+          {
+            "id": "B",
+            "text": "network"
+          },
+          {
+            "id": "C",
+            "text": "service"
+          },
+          {
+            "id": "D",
+            "text": "word"
+          }
         ],
         "answerKey": "C",
         "explanation": "Service centre (trung tâm dịch vụ) là nơi doanh nghiệp cung cấp dịch vụ, ví dụ sửa chữa, cho khách hàng."
@@ -396,10 +707,22 @@
         "kind": "mcq",
         "stem": "A ______ is a document that can show and calculate financial information, such as monthly costs.",
         "options": [
-          { "id": "A", "text": "presentation" },
-          { "id": "B", "text": "spreadsheet" },
-          { "id": "C", "text": "password" },
-          { "id": "D", "text": "network" }
+          {
+            "id": "A",
+            "text": "presentation"
+          },
+          {
+            "id": "B",
+            "text": "spreadsheet"
+          },
+          {
+            "id": "C",
+            "text": "password"
+          },
+          {
+            "id": "D",
+            "text": "network"
+          }
         ],
         "answerKey": "B",
         "explanation": "Spreadsheet (bảng tính) là tài liệu có thể hiển thị và tính toán thông tin tài chính."
@@ -409,10 +732,22 @@
         "kind": "mcq",
         "stem": "Please ______ your laptop to the projector before the presentation starts.",
         "options": [
-          { "id": "A", "text": "download" },
-          { "id": "B", "text": "maintain" },
-          { "id": "C", "text": "supervise" },
-          { "id": "D", "text": "connect" }
+          {
+            "id": "A",
+            "text": "download"
+          },
+          {
+            "id": "B",
+            "text": "maintain"
+          },
+          {
+            "id": "C",
+            "text": "supervise"
+          },
+          {
+            "id": "D",
+            "text": "connect"
+          }
         ],
         "answerKey": "D",
         "explanation": "Connect (kết nối) A to B: nối laptop với máy chiếu."
@@ -435,10 +770,22 @@
           "kind": "mcq",
           "stem": "What does Cloudbridge provide?",
           "options": [
-            { "id": "A", "text": "Laptops for students" },
-            { "id": "B", "text": "Cloud services for schools" },
-            { "id": "C", "text": "Repairs for computers" },
-            { "id": "D", "text": "Training for teachers" }
+            {
+              "id": "A",
+              "text": "Laptops for students"
+            },
+            {
+              "id": "B",
+              "text": "Cloud services for schools"
+            },
+            {
+              "id": "C",
+              "text": "Repairs for computers"
+            },
+            {
+              "id": "D",
+              "text": "Training for teachers"
+            }
           ],
           "answerKey": "B",
           "explanation": "Đoạn 1: \"It provides cloud computing services to schools and colleges.\" Công ty chỉ làm phần mềm, không bán laptop."
@@ -448,10 +795,22 @@
           "kind": "mcq",
           "stem": "What does Daniel always do first at work?",
           "options": [
-            { "id": "A", "text": "Read messages from the support team" },
-            { "id": "B", "text": "Test the platform on tablets" },
-            { "id": "C", "text": "Visit schools to talk to users" },
-            { "id": "D", "text": "Write code for new features" }
+            {
+              "id": "A",
+              "text": "Read messages from the support team"
+            },
+            {
+              "id": "B",
+              "text": "Test the platform on tablets"
+            },
+            {
+              "id": "C",
+              "text": "Visit schools to talk to users"
+            },
+            {
+              "id": "D",
+              "text": "Write code for new features"
+            }
           ],
           "answerKey": "A",
           "explanation": "Đoạn 2: Daniel \"always reads his messages from the support team first\". Viết mã là việc làm sau đó."
@@ -461,10 +820,22 @@
           "kind": "mcq",
           "stem": "Why does Daniel test the platform on tablets and phones?",
           "options": [
-            { "id": "A", "text": "He hardly ever uses a computer." },
-            { "id": "B", "text": "The project manager asks him to every day." },
-            { "id": "C", "text": "Many students use mobile devices in class." },
-            { "id": "D", "text": "Schools do not have any laptops." }
+            {
+              "id": "A",
+              "text": "He hardly ever uses a computer."
+            },
+            {
+              "id": "B",
+              "text": "The project manager asks him to every day."
+            },
+            {
+              "id": "C",
+              "text": "Many students use mobile devices in class."
+            },
+            {
+              "id": "D",
+              "text": "Schools do not have any laptops."
+            }
           ],
           "answerKey": "C",
           "explanation": "Đoạn 3: Daniel thử trên máy tính bảng và điện thoại \"because many students use mobile devices in class\"."
@@ -474,10 +845,22 @@
           "kind": "mcq",
           "stem": "How often do the developers have a meeting with the project manager?",
           "options": [
-            { "id": "A", "text": "Once a month" },
-            { "id": "B", "text": "Twice a week" },
-            { "id": "C", "text": "Every day" },
-            { "id": "D", "text": "Once a year" }
+            {
+              "id": "A",
+              "text": "Once a month"
+            },
+            {
+              "id": "B",
+              "text": "Twice a week"
+            },
+            {
+              "id": "C",
+              "text": "Every day"
+            },
+            {
+              "id": "D",
+              "text": "Once a year"
+            }
           ],
           "answerKey": "A",
           "explanation": "Đoạn 3: \"Once a month, on a Wednesday afternoon, all the developers attend a meeting with the project manager\". \"Twice a week\" là tần suất thử trên thiết bị di động."
@@ -487,10 +870,22 @@
           "kind": "mcq",
           "stem": "When does Daniel sometimes work at weekends?",
           "options": [
-            { "id": "A", "text": "In January" },
-            { "id": "B", "text": "After every meeting" },
-            { "id": "C", "text": "When he visits schools" },
-            { "id": "D", "text": "In September" }
+            {
+              "id": "A",
+              "text": "In January"
+            },
+            {
+              "id": "B",
+              "text": "After every meeting"
+            },
+            {
+              "id": "C",
+              "text": "When he visits schools"
+            },
+            {
+              "id": "D",
+              "text": "In September"
+            }
           ],
           "answerKey": "D",
           "explanation": "Đoạn 4: tháng Chín là lúc bận nhất; \"During that month, he occasionally works at weekends\"."
@@ -581,23 +976,26 @@
     "email": {
       "id": "W-EMAIL",
       "recipient": "Tom",
-      "task": "You are the IT support manager. Tom is a new support technician who starts work in your team on Monday. Write an email to Tom explaining his duties and two important rules, using the notes below. In your email you must use:\n- at least two adverbs of frequency or time expressions (usually, always, every Thursday, once a week);\n- at least two rule structures (must, mustn't, have to, should) or imperatives.\nWrite 80–100 words.",
+      "task": "You are the IT support manager. Tom is a new support technician in your team. Write an email to Tom explaining how to set up a computer for a new member of staff, using the notes below. In your email you must use:\n- at least two adverbs of frequency or time expressions (always, usually, every Friday);\n- at least two rule structures (must, mustn't, have to, should) or imperatives.\nFollow the standard layout for an email giving instructions: From / To / Date / Subject, a greeting, It should be quite easy to …, the steps with First / Then / Next / After that / Finally, a reminder (Don't forget to … when you've finished.), then Best wishes and your name, position and department.\nWrite 80–100 words (do not count the From, To, Date and Subject lines).",
       "bullets": [
-        "welcome Tom to the IT support team",
-        "start work at 8.30 / check the helpdesk inbox first",
-        "answer calls from users / visit their desks when necessary",
-        "set up computers for new staff / check the printers every Thursday morning",
-        "team meeting every Monday at 9.00",
-        "rules: wear your ID card in the server room / never give a password over the phone",
-        "invite Tom to ask questions"
+        "unpack the computer / connect it to the network",
+        "switch it on / install the company software (usually takes twenty minutes)",
+        "create a user account / always set a temporary password",
+        "never give the password over the phone",
+        "test the printer",
+        "write the details in the helpdesk log (checked every Friday)",
+        "reminder: lock the store room when you've finished"
       ],
-      "wordRange": [80, 100],
+      "wordRange": [
+        80,
+        100
+      ],
       "targetGrammar": [
-        "Adverbs of frequency and time expressions (at least two): usually, always, every Thursday, once a week",
-        "Rules (at least two): must, mustn't, have to, should; imperatives (Wear…, Never give…)",
+        "Adverbs of frequency and time expressions (at least two): always, usually, never, every Friday",
+        "Rules (at least two): must, mustn't, have to, should; imperatives (Unpack…, Never give…)",
         "Present simple for regular duties"
       ],
-      "modelAnswer": "Dear Tom,\n\nWelcome to the team! We usually start work at 8.30, and you should always check the helpdesk inbox first. You will answer calls from users and visit their desks when necessary. You will also set up computers for new staff, and every Thursday morning we check the printers. We have a team meeting once a week, on Monday at 9.00. Please remember two rules: you must wear your ID card in the server room, and you mustn't give a password over the phone.\n\nIf you have any questions, just ask me.\n\nBest regards,\nAnna"
+      "modelAnswer": "From: Nguyen Minh Anh\nTo: Tom\nDate: 25th November\nSubject: Setting up a new computer\n\nHi Tom,\n\nIt should be quite easy to set up a computer for a new employee.\nFirst, unpack it and connect it to the network.\nThen, switch it on and install the company software, which usually takes twenty minutes.\nNext, create a user account. You must always set a temporary password and never give it over the phone.\nAfter that, just test the printer.\nFinally, write the details in the helpdesk log, which we check every Friday.\nDon't forget to lock the store room when you've finished.\n\nBest wishes,\nNguyen Minh Anh\nIT Support Manager\nHelp Desk Department"
     }
   },
   "speaking": {

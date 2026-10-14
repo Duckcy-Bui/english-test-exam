@@ -24,7 +24,8 @@
     "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại, xử lý giống Unit 6.",
     "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
     "Bản r2 (theo báo cáo et-auditor d89202f): R19 thêm chi tiết giai đoạn và người kiểm thử, thay phương án nhiễu Dynamic để chỉ một đáp án đúng; R27 và câu tương ứng trong bài đọc thêm phạm vi \"During the day\" để văn bản khẳng định thẳng, giữ ngoại lệ ban đêm cho R28.",
-    "Bản r1 (tự rà theo các lỗi auditor đã bắt ở Unit 1, 4, 5, 6): R21 thay một phương án nhiễu cũng là mong muốn của công ty trong bài; R27, R29 viết lại để đáp án được văn bản nói thẳng (quy tắc 12); Listening B và email bỏ cụm \"scheduled to go live\" để chi tiết này chỉ còn ở bài đọc R21–R25."
+    "Bản r1 (tự rà theo các lỗi auditor đã bắt ở Unit 1, 4, 5, 6): R21 thay một phương án nhiễu cũng là mong muốn của công ty trong bài; R27, R29 viết lại để đáp án được văn bản nói thẳng (quy tắc 12); Listening B và email bỏ cụm \"scheduled to go live\" để chi tiết này chỉ còn ở bài đọc R21–R25.",
+    "Email theo khung giáo viên (2026-10-14): email hướng dẫn From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng."
   ],
   "listening": {
     "parts": [
@@ -33,23 +34,68 @@
         "instructions": "Listen to the interview and choose the best answer A, B, C or D (Questions L1–L5).",
         "context": "Owen, a systems analyst, asks Clara, the manager of a gym, about the booking app she wants.",
         "speakers": [
-          { "name": "Owen", "voice": "male" },
-          { "name": "Clara", "voice": "female" }
+          {
+            "name": "Owen",
+            "voice": "male"
+          },
+          {
+            "name": "Clara",
+            "voice": "female"
+          }
         ],
         "script": [
-          { "speaker": "Owen", "text": "Thanks for meeting me, Clara. I'd like to ask some questions about the booking app you want for the gym." },
-          { "speaker": "Clara", "text": "Of course." },
-          { "speaker": "Owen", "text": "First, what should members be able to do with the app?" },
-          { "speaker": "Clara", "text": "Mainly book classes. At the moment, people have to phone reception, and the phone is always busy. We want members to book a place in a class in just a few seconds." },
-          { "speaker": "Owen", "text": "Do members need to log in?" },
-          { "speaker": "Clara", "text": "Yes, they have to log in with their membership number and a password. We don't want visitors to book classes." },
-          { "speaker": "Owen", "text": "OK. What happens if a class is full?" },
-          { "speaker": "Clara", "text": "The app should put the member on a waiting list. And if someone cancels, the next person on the list should get a message." },
-          { "speaker": "Owen", "text": "That's clear. Do you need any payment features?" },
-          { "speaker": "Clara", "text": "No. Members pay every month at reception, so the app doesn't need to take payments. But I'd like it to show the class timetable for the whole week." },
-          { "speaker": "Owen", "text": "Fine. Anything else?" },
-          { "speaker": "Clara", "text": "Yes. Our instructors want the app to tell them how many people are coming to each class." },
-          { "speaker": "Owen", "text": "Great. I'll write the specification and send it to you on Friday." }
+          {
+            "speaker": "Owen",
+            "text": "Thanks for meeting me, Clara. I'd like to ask some questions about the booking app you want for the gym."
+          },
+          {
+            "speaker": "Clara",
+            "text": "Of course."
+          },
+          {
+            "speaker": "Owen",
+            "text": "First, what should members be able to do with the app?"
+          },
+          {
+            "speaker": "Clara",
+            "text": "Mainly book classes. At the moment, people have to phone reception, and the phone is always busy. We want members to book a place in a class in just a few seconds."
+          },
+          {
+            "speaker": "Owen",
+            "text": "Do members need to log in?"
+          },
+          {
+            "speaker": "Clara",
+            "text": "Yes, they have to log in with their membership number and a password. We don't want visitors to book classes."
+          },
+          {
+            "speaker": "Owen",
+            "text": "OK. What happens if a class is full?"
+          },
+          {
+            "speaker": "Clara",
+            "text": "The app should put the member on a waiting list. And if someone cancels, the next person on the list should get a message."
+          },
+          {
+            "speaker": "Owen",
+            "text": "That's clear. Do you need any payment features?"
+          },
+          {
+            "speaker": "Clara",
+            "text": "No. Members pay every month at reception, so the app doesn't need to take payments. But I'd like it to show the class timetable for the whole week."
+          },
+          {
+            "speaker": "Owen",
+            "text": "Fine. Anything else?"
+          },
+          {
+            "speaker": "Clara",
+            "text": "Yes. Our instructors want the app to tell them how many people are coming to each class."
+          },
+          {
+            "speaker": "Owen",
+            "text": "Great. I'll write the specification and send it to you on Friday."
+          }
         ],
         "questions": [
           {
@@ -57,10 +103,22 @@
             "kind": "mcq",
             "stem": "Why does Clara want a booking app?",
             "options": [
-              { "id": "A", "text": "The reception phone is always busy." },
-              { "id": "B", "text": "Reception closes very early." },
-              { "id": "C", "text": "Members want to pay online." },
-              { "id": "D", "text": "Some instructors are leaving." }
+              {
+                "id": "A",
+                "text": "The reception phone is always busy."
+              },
+              {
+                "id": "B",
+                "text": "Reception closes very early."
+              },
+              {
+                "id": "C",
+                "text": "Members want to pay online."
+              },
+              {
+                "id": "D",
+                "text": "Some instructors are leaving."
+              }
             ],
             "answerKey": "A",
             "explanation": "Clara nói hiện giờ hội viên phải gọi lễ tân \"and the phone is always busy\"."
@@ -70,10 +128,22 @@
             "kind": "mcq",
             "stem": "What do members need to log in?",
             "options": [
-              { "id": "A", "text": "An email address and a password" },
-              { "id": "B", "text": "A membership number and a password" },
-              { "id": "C", "text": "A phone number only" },
-              { "id": "D", "text": "A name and a date of birth" }
+              {
+                "id": "A",
+                "text": "An email address and a password"
+              },
+              {
+                "id": "B",
+                "text": "A membership number and a password"
+              },
+              {
+                "id": "C",
+                "text": "A phone number only"
+              },
+              {
+                "id": "D",
+                "text": "A name and a date of birth"
+              }
             ],
             "answerKey": "B",
             "explanation": "\"they have to log in with their membership number and a password\"."
@@ -83,10 +153,22 @@
             "kind": "mcq",
             "stem": "What should the app do if a class is full?",
             "options": [
-              { "id": "A", "text": "Cancel the class" },
-              { "id": "B", "text": "Ask the member to pay more" },
-              { "id": "C", "text": "Put the member on a waiting list" },
-              { "id": "D", "text": "Tell reception to phone the member" }
+              {
+                "id": "A",
+                "text": "Cancel the class"
+              },
+              {
+                "id": "B",
+                "text": "Ask the member to pay more"
+              },
+              {
+                "id": "C",
+                "text": "Put the member on a waiting list"
+              },
+              {
+                "id": "D",
+                "text": "Tell reception to phone the member"
+              }
             ],
             "answerKey": "C",
             "explanation": "\"The app should put the member on a waiting list.\""
@@ -96,10 +178,22 @@
             "kind": "mcq",
             "stem": "Why doesn't the app need to take payments?",
             "options": [
-              { "id": "A", "text": "All the classes are free." },
-              { "id": "B", "text": "Members pay every month at reception." },
-              { "id": "C", "text": "The bank does not allow it." },
-              { "id": "D", "text": "Instructors collect the money." }
+              {
+                "id": "A",
+                "text": "All the classes are free."
+              },
+              {
+                "id": "B",
+                "text": "Members pay every month at reception."
+              },
+              {
+                "id": "C",
+                "text": "The bank does not allow it."
+              },
+              {
+                "id": "D",
+                "text": "Instructors collect the money."
+              }
             ],
             "answerKey": "B",
             "explanation": "\"Members pay every month at reception, so the app doesn't need to take payments.\""
@@ -109,10 +203,22 @@
             "kind": "mcq",
             "stem": "When will Owen send the specification?",
             "options": [
-              { "id": "A", "text": "Today" },
-              { "id": "B", "text": "On Monday" },
-              { "id": "C", "text": "Next week" },
-              { "id": "D", "text": "On Friday" }
+              {
+                "id": "A",
+                "text": "Today"
+              },
+              {
+                "id": "B",
+                "text": "On Monday"
+              },
+              {
+                "id": "C",
+                "text": "Next week"
+              },
+              {
+                "id": "D",
+                "text": "On Friday"
+              }
             ],
             "answerKey": "D",
             "explanation": "\"I'll write the specification and send it to you on Friday.\""
@@ -124,13 +230,28 @@
         "instructions": "Listen to the presentation and answer the questions. Write NO MORE THAN THREE WORDS for each answer (Questions L6–L10).",
         "context": "Priya, a web designer, presents the structure of a new museum website.",
         "speakers": [
-          { "name": "Priya", "voice": "female" }
+          {
+            "name": "Priya",
+            "voice": "female"
+          }
         ],
         "script": [
-          { "speaker": "Priya", "text": "Good afternoon. Today I'm going to show you the structure of the new website for the City Science Museum. Everything starts from the home page, which is linked to five main sections: Visit, Exhibitions, Learning, Shop and Contact." },
-          { "speaker": "Priya", "text": "The Visit section is used most, so it is placed first in the menu. Opening times and ticket prices are shown on this page, and tickets can be bought online. In the Exhibitions section, each exhibition is given its own page with photos and a short video. Past exhibitions are kept in an archive, so they can still be seen after they close." },
-          { "speaker": "Priya", "text": "The Learning section is designed for teachers. Lesson plans can be downloaded there for free. The Contact page includes a map and a form, and all messages are answered within two days." },
-          { "speaker": "Priya", "text": "Finally, every page is tested on phones and tablets, because about seventy percent of visitors use mobile devices. The new site will be launched in September. Thank you." }
+          {
+            "speaker": "Priya",
+            "text": "Good afternoon. Today I'm going to show you the structure of the new website for the City Science Museum. Everything starts from the home page, which is linked to five main sections: Visit, Exhibitions, Learning, Shop and Contact."
+          },
+          {
+            "speaker": "Priya",
+            "text": "The Visit section is used most, so it is placed first in the menu. Opening times and ticket prices are shown on this page, and tickets can be bought online. In the Exhibitions section, each exhibition is given its own page with photos and a short video. Past exhibitions are kept in an archive, so they can still be seen after they close."
+          },
+          {
+            "speaker": "Priya",
+            "text": "The Learning section is designed for teachers. Lesson plans can be downloaded there for free. The Contact page includes a map and a form, and all messages are answered within two days."
+          },
+          {
+            "speaker": "Priya",
+            "text": "Finally, every page is tested on phones and tablets, because about seventy percent of visitors use mobile devices. The new site will be launched in September. Thank you."
+          }
         ],
         "questions": [
           {
@@ -138,7 +259,13 @@
             "kind": "short",
             "stem": "How many main sections are linked to the home page?",
             "maxWords": 3,
-            "acceptedAnswers": ["five", "5", "five sections", "five main sections", "5 sections"],
+            "acceptedAnswers": [
+              "five",
+              "5",
+              "five sections",
+              "five main sections",
+              "5 sections"
+            ],
             "explanation": "\"the home page, which is linked to five main sections\"."
           },
           {
@@ -146,7 +273,11 @@
             "kind": "short",
             "stem": "Which section is used most?",
             "maxWords": 3,
-            "acceptedAnswers": ["visit", "the visit section", "visit section"],
+            "acceptedAnswers": [
+              "visit",
+              "the visit section",
+              "visit section"
+            ],
             "explanation": "\"The Visit section is used most, so it is placed first in the menu.\""
           },
           {
@@ -154,7 +285,10 @@
             "kind": "short",
             "stem": "Who is the Learning section designed for?",
             "maxWords": 3,
-            "acceptedAnswers": ["teachers", "for teachers"],
+            "acceptedAnswers": [
+              "teachers",
+              "for teachers"
+            ],
             "explanation": "\"The Learning section is designed for teachers.\""
           },
           {
@@ -162,7 +296,12 @@
             "kind": "short",
             "stem": "How quickly are messages from the Contact page answered?",
             "maxWords": 3,
-            "acceptedAnswers": ["within two days", "two days", "2 days", "within 2 days"],
+            "acceptedAnswers": [
+              "within two days",
+              "two days",
+              "2 days",
+              "within 2 days"
+            ],
             "explanation": "\"all messages are answered within two days\"."
           },
           {
@@ -170,7 +309,10 @@
             "kind": "short",
             "stem": "When will the new site be launched?",
             "maxWords": 3,
-            "acceptedAnswers": ["september", "in september"],
+            "acceptedAnswers": [
+              "september",
+              "in september"
+            ],
             "explanation": "\"The new site will be launched in September.\""
           }
         ]
@@ -181,12 +323,30 @@
     "matching": {
       "instructions": "Match the terms (1–5) with the correct definitions (A–F). There is one extra definition that you do not need (Questions 1–5).",
       "definitions": [
-        { "id": "A", "text": "To remove the mistakes from a computer program." },
-        { "id": "B", "text": "Website information of very high quality that you often need to pay to access." },
-        { "id": "C", "text": "A type of bar chart that shows when things are going to happen in a project." },
-        { "id": "D", "text": "The process of improving the position of a website in the results of a search engine." },
-        { "id": "E", "text": "A quantity in a program that can represent several different amounts." },
-        { "id": "F", "text": "A process of testing software in which customers use it, so that any problems will be found." }
+        {
+          "id": "A",
+          "text": "To remove the mistakes from a computer program."
+        },
+        {
+          "id": "B",
+          "text": "Website information of very high quality that you often need to pay to access."
+        },
+        {
+          "id": "C",
+          "text": "A type of bar chart that shows when things are going to happen in a project."
+        },
+        {
+          "id": "D",
+          "text": "The process of improving the position of a website in the results of a search engine."
+        },
+        {
+          "id": "E",
+          "text": "A quantity in a program that can represent several different amounts."
+        },
+        {
+          "id": "F",
+          "text": "A process of testing software in which customers use it, so that any problems will be found."
+        }
       ],
       "items": [
         {
@@ -227,10 +387,22 @@
         "kind": "mcq",
         "stem": "The manager wants the developers ______ the app by Friday.",
         "options": [
-          { "id": "A", "text": "finish" },
-          { "id": "B", "text": "to finish" },
-          { "id": "C", "text": "finishing" },
-          { "id": "D", "text": "finished" }
+          {
+            "id": "A",
+            "text": "finish"
+          },
+          {
+            "id": "B",
+            "text": "to finish"
+          },
+          {
+            "id": "C",
+            "text": "finishing"
+          },
+          {
+            "id": "D",
+            "text": "finished"
+          }
         ],
         "answerKey": "B",
         "explanation": "Cấu trúc want + tân ngữ + to-infinitive: \"wants the developers to finish\"."
@@ -240,10 +412,22 @@
         "kind": "mcq",
         "stem": "Users ______ to log in before they can see their orders.",
         "options": [
-          { "id": "A", "text": "should" },
-          { "id": "B", "text": "must" },
-          { "id": "C", "text": "need" },
-          { "id": "D", "text": "can" }
+          {
+            "id": "A",
+            "text": "should"
+          },
+          {
+            "id": "B",
+            "text": "must"
+          },
+          {
+            "id": "C",
+            "text": "need"
+          },
+          {
+            "id": "D",
+            "text": "can"
+          }
         ],
         "answerKey": "C",
         "explanation": "Chỗ trống đứng trước \"to log in\" nên chỉ \"need (to)\" đúng. \"should\", \"must\", \"can\" là động từ khuyết thiếu, đi thẳng với động từ nguyên mẫu, không có \"to\"."
@@ -253,10 +437,22 @@
         "kind": "mcq",
         "stem": "The website ______ by thousands of people every day.",
         "options": [
-          { "id": "A", "text": "visits" },
-          { "id": "B", "text": "visit" },
-          { "id": "C", "text": "is visiting" },
-          { "id": "D", "text": "is visited" }
+          {
+            "id": "A",
+            "text": "visits"
+          },
+          {
+            "id": "B",
+            "text": "visit"
+          },
+          {
+            "id": "C",
+            "text": "is visiting"
+          },
+          {
+            "id": "D",
+            "text": "is visited"
+          }
         ],
         "answerKey": "D",
         "explanation": "Câu bị động (có \"by thousands of people\"): be + quá khứ phân từ: \"is visited\"."
@@ -266,10 +462,22 @@
         "kind": "mcq",
         "stem": "The new company logo ______ last week by our design team.",
         "options": [
-          { "id": "A", "text": "was designed" },
-          { "id": "B", "text": "designed" },
-          { "id": "C", "text": "is designing" },
-          { "id": "D", "text": "has design" }
+          {
+            "id": "A",
+            "text": "was designed"
+          },
+          {
+            "id": "B",
+            "text": "designed"
+          },
+          {
+            "id": "C",
+            "text": "is designing"
+          },
+          {
+            "id": "D",
+            "text": "has design"
+          }
         ],
         "answerKey": "A",
         "explanation": "Bị động thì quá khứ đơn (last week, by our design team): was + quá khứ phân từ: \"was designed\"."
@@ -279,10 +487,22 @@
         "kind": "mcq",
         "stem": "Clicking this button makes the video ______ again from the beginning.",
         "options": [
-          { "id": "A", "text": "to start" },
-          { "id": "B", "text": "starting" },
-          { "id": "C", "text": "start" },
-          { "id": "D", "text": "started" }
+          {
+            "id": "A",
+            "text": "to start"
+          },
+          {
+            "id": "B",
+            "text": "starting"
+          },
+          {
+            "id": "C",
+            "text": "start"
+          },
+          {
+            "id": "D",
+            "text": "started"
+          }
         ],
         "answerKey": "C",
         "explanation": "make + tân ngữ + động từ nguyên mẫu không \"to\": \"makes the video start\"."
@@ -292,10 +512,22 @@
         "kind": "mcq",
         "stem": "A missing bracket in the code can cause the program ______.",
         "options": [
-          { "id": "A", "text": "crash" },
-          { "id": "B", "text": "crashing" },
-          { "id": "C", "text": "crashed" },
-          { "id": "D", "text": "to crash" }
+          {
+            "id": "A",
+            "text": "crash"
+          },
+          {
+            "id": "B",
+            "text": "crashing"
+          },
+          {
+            "id": "C",
+            "text": "crashed"
+          },
+          {
+            "id": "D",
+            "text": "to crash"
+          }
         ],
         "answerKey": "D",
         "explanation": "cause + tân ngữ + to-infinitive: \"cause the program to crash\"."
@@ -305,10 +537,22 @@
         "kind": "mcq",
         "stem": "We're due ______ the app to the client at the end of the month.",
         "options": [
-          { "id": "A", "text": "to deliver" },
-          { "id": "B", "text": "delivering" },
-          { "id": "C", "text": "deliver" },
-          { "id": "D", "text": "for delivering" }
+          {
+            "id": "A",
+            "text": "to deliver"
+          },
+          {
+            "id": "B",
+            "text": "delivering"
+          },
+          {
+            "id": "C",
+            "text": "deliver"
+          },
+          {
+            "id": "D",
+            "text": "for delivering"
+          }
         ],
         "answerKey": "A",
         "explanation": "be due + to-infinitive để nói về lịch trình: \"We're due to deliver\"."
@@ -320,10 +564,22 @@
         "kind": "mcq",
         "stem": "According to the project ______, the design stage finishes in May.",
         "options": [
-          { "id": "A", "text": "schedule" },
-          { "id": "B", "text": "feedback" },
-          { "id": "C", "text": "content" },
-          { "id": "D", "text": "value" }
+          {
+            "id": "A",
+            "text": "schedule"
+          },
+          {
+            "id": "B",
+            "text": "feedback"
+          },
+          {
+            "id": "C",
+            "text": "content"
+          },
+          {
+            "id": "D",
+            "text": "value"
+          }
         ],
         "answerKey": "A",
         "explanation": "Schedule (lịch trình) là kế hoạch cho biết việc gì sẽ diễn ra và khi nào."
@@ -333,10 +589,22 @@
         "kind": "mcq",
         "stem": "Our teacher gave us some useful ______ on our project presentation.",
         "options": [
-          { "id": "A", "text": "purchase" },
-          { "id": "B", "text": "feedback" },
-          { "id": "C", "text": "combination" },
-          { "id": "D", "text": "robot" }
+          {
+            "id": "A",
+            "text": "purchase"
+          },
+          {
+            "id": "B",
+            "text": "feedback"
+          },
+          {
+            "id": "C",
+            "text": "combination"
+          },
+          {
+            "id": "D",
+            "text": "robot"
+          }
         ],
         "answerKey": "B",
         "explanation": "Feedback (nhận xét, phản hồi) là lời khuyên, góp ý về mức độ thành công của một việc."
@@ -346,10 +614,22 @@
         "kind": "mcq",
         "stem": "The client has to ______ the design before the programmers start work.",
         "options": [
-          { "id": "A", "text": "calculate" },
-          { "id": "B", "text": "interview" },
-          { "id": "C", "text": "navigate" },
-          { "id": "D", "text": "approve" }
+          {
+            "id": "A",
+            "text": "calculate"
+          },
+          {
+            "id": "B",
+            "text": "interview"
+          },
+          {
+            "id": "C",
+            "text": "navigate"
+          },
+          {
+            "id": "D",
+            "text": "approve"
+          }
         ],
         "answerKey": "D",
         "explanation": "Approve (phê duyệt) là chính thức chấp nhận một kế hoạch, bản thiết kế."
@@ -359,10 +639,22 @@
         "kind": "mcq",
         "stem": "The ______ is the first page that visitors see when they open a website.",
         "options": [
-          { "id": "A", "text": "pop-up menu" },
-          { "id": "B", "text": "line of code" },
-          { "id": "C", "text": "home page" },
-          { "id": "D", "text": "navigation chart" }
+          {
+            "id": "A",
+            "text": "pop-up menu"
+          },
+          {
+            "id": "B",
+            "text": "line of code"
+          },
+          {
+            "id": "C",
+            "text": "home page"
+          },
+          {
+            "id": "D",
+            "text": "navigation chart"
+          }
         ],
         "answerKey": "C",
         "explanation": "Home page (trang chủ) là trang đầu tiên của trang web, thường có liên kết tới các trang khác."
@@ -372,10 +664,22 @@
         "kind": "mcq",
         "stem": "Before you contact customer support, read the ______ page, where you can find answers to common questions.",
         "options": [
-          { "id": "A", "text": "challenge" },
-          { "id": "B", "text": "FAQs" },
-          { "id": "C", "text": "schedule" },
-          { "id": "D", "text": "specification" }
+          {
+            "id": "A",
+            "text": "challenge"
+          },
+          {
+            "id": "B",
+            "text": "FAQs"
+          },
+          {
+            "id": "C",
+            "text": "schedule"
+          },
+          {
+            "id": "D",
+            "text": "specification"
+          }
         ],
         "answerKey": "B",
         "explanation": "FAQs (Frequently Asked Questions) là trang các câu hỏi thường gặp kèm câu trả lời."
@@ -385,10 +689,22 @@
         "kind": "mcq",
         "stem": "This program has more than 50,000 ______ of code.",
         "options": [
-          { "id": "A", "text": "lines" },
-          { "id": "B", "text": "values" },
-          { "id": "C", "text": "robots" },
-          { "id": "D", "text": "details" }
+          {
+            "id": "A",
+            "text": "lines"
+          },
+          {
+            "id": "B",
+            "text": "values"
+          },
+          {
+            "id": "C",
+            "text": "robots"
+          },
+          {
+            "id": "D",
+            "text": "details"
+          }
         ],
         "answerKey": "A",
         "explanation": "Line of code (dòng mã) là một dòng lệnh trong chương trình."
@@ -398,10 +714,22 @@
         "kind": "mcq",
         "stem": "______ testing is the first stage of testing, when the company that is writing the software checks it before anyone outside the company uses it.",
         "options": [
-          { "id": "A", "text": "Wireless" },
-          { "id": "B", "text": "Final" },
-          { "id": "C", "text": "Alpha" },
-          { "id": "D", "text": "Public" }
+          {
+            "id": "A",
+            "text": "Wireless"
+          },
+          {
+            "id": "B",
+            "text": "Final"
+          },
+          {
+            "id": "C",
+            "text": "Alpha"
+          },
+          {
+            "id": "D",
+            "text": "Public"
+          }
         ],
         "answerKey": "C",
         "explanation": "Alpha testing (kiểm thử alpha) là giai đoạn kiểm thử đầu tiên, do chính công ty viết phần mềm thực hiện trước khi người ngoài công ty dùng. \"Final\" mâu thuẫn với \"first stage\"; \"Public\" mâu thuẫn với \"before anyone outside the company\"."
@@ -411,10 +739,22 @@
         "kind": "mcq",
         "stem": "The ______ describes exactly what the new software should do.",
         "options": [
-          { "id": "A", "text": "challenge" },
-          { "id": "B", "text": "specification" },
-          { "id": "C", "text": "robot" },
-          { "id": "D", "text": "combination" }
+          {
+            "id": "A",
+            "text": "challenge"
+          },
+          {
+            "id": "B",
+            "text": "specification"
+          },
+          {
+            "id": "C",
+            "text": "robot"
+          },
+          {
+            "id": "D",
+            "text": "combination"
+          }
         ],
         "answerKey": "B",
         "explanation": "Specification (bản đặc tả) là mô tả chi tiết phần mềm phải làm gì."
@@ -437,10 +777,22 @@
           "kind": "mcq",
           "stem": "Why did Harbour Ferries ask Bytecraft to develop an app?",
           "options": [
-            { "id": "A", "text": "To advertise the islands" },
-            { "id": "B", "text": "To sell more boats" },
-            { "id": "C", "text": "To train its staff" },
-            { "id": "D", "text": "To reduce the queues for tickets" }
+            {
+              "id": "A",
+              "text": "To advertise the islands"
+            },
+            {
+              "id": "B",
+              "text": "To sell more boats"
+            },
+            {
+              "id": "C",
+              "text": "To train its staff"
+            },
+            {
+              "id": "D",
+              "text": "To reduce the queues for tickets"
+            }
           ],
           "answerKey": "D",
           "explanation": "Đoạn 1: \"to reduce the queues, the company asked a small software firm, Bytecraft, to develop a mobile app\". Quảng cáo các đảo không được nhắc đến."
@@ -450,10 +802,22 @@
           "kind": "mcq",
           "stem": "When were the requirements approved?",
           "options": [
-            { "id": "A", "text": "In February" },
-            { "id": "B", "text": "In January" },
-            { "id": "C", "text": "In March" },
-            { "id": "D", "text": "In April" }
+            {
+              "id": "A",
+              "text": "In February"
+            },
+            {
+              "id": "B",
+              "text": "In January"
+            },
+            {
+              "id": "C",
+              "text": "In March"
+            },
+            {
+              "id": "D",
+              "text": "In April"
+            }
           ],
           "answerKey": "A",
           "explanation": "Đoạn 2: \"The requirements were approved by the ferry company in February\"."
@@ -463,10 +827,22 @@
           "kind": "mcq",
           "stem": "Why is the payment system the most difficult part?",
           "options": [
-            { "id": "A", "text": "Many passengers do not have smartphones." },
-            { "id": "B", "text": "The client changed it in April." },
-            { "id": "C", "text": "It must work with a weak phone signal." },
-            { "id": "D", "text": "It has to print paper tickets." }
+            {
+              "id": "A",
+              "text": "Many passengers do not have smartphones."
+            },
+            {
+              "id": "B",
+              "text": "The client changed it in April."
+            },
+            {
+              "id": "C",
+              "text": "It must work with a weak phone signal."
+            },
+            {
+              "id": "D",
+              "text": "It has to print paper tickets."
+            }
           ],
           "answerKey": "C",
           "explanation": "Đoạn 2: hệ thống thanh toán \"has to work even when passengers have a weak phone signal at sea\"."
@@ -476,10 +852,22 @@
           "kind": "mcq",
           "stem": "When is the app scheduled to go live?",
           "options": [
-            { "id": "A", "text": "At the end of May" },
-            { "id": "B", "text": "In July" },
-            { "id": "C", "text": "In April" },
-            { "id": "D", "text": "On 1 June" }
+            {
+              "id": "A",
+              "text": "At the end of May"
+            },
+            {
+              "id": "B",
+              "text": "In July"
+            },
+            {
+              "id": "C",
+              "text": "In April"
+            },
+            {
+              "id": "D",
+              "text": "On 1 June"
+            }
           ],
           "answerKey": "D",
           "explanation": "Đoạn 3: \"it is scheduled to go live on 1 June\". Cuối tháng Năm là lúc ứng dụng dự kiến làm xong."
@@ -489,10 +877,22 @@
           "kind": "mcq",
           "stem": "What does the team plan to do with the live boat times feature?",
           "options": [
-            { "id": "A", "text": "Remove it from the app" },
-            { "id": "B", "text": "Release it in July" },
-            { "id": "C", "text": "Release it on 1 June" },
-            { "id": "D", "text": "Add it to the paper tickets" }
+            {
+              "id": "A",
+              "text": "Remove it from the app"
+            },
+            {
+              "id": "B",
+              "text": "Release it in July"
+            },
+            {
+              "id": "C",
+              "text": "Release it on 1 June"
+            },
+            {
+              "id": "D",
+              "text": "Add it to the paper tickets"
+            }
           ],
           "answerKey": "B",
           "explanation": "Đoạn 4: \"the team is planning to release it in July instead\"."
@@ -583,22 +983,26 @@
     "email": {
       "id": "W-EMAIL",
       "recipient": "Leo",
-      "task": "You are a project manager at a software company. The new food delivery app is almost finished, and Leo, a junior tester in your team, is going to test it this week. Write an email to Leo explaining what he needs to check, using the notes below. In your email you must use:\n- at least two of should, have to and need to;\n- at least one passive sentence (… is saved…, … must be reported…);\n- be due to or be scheduled to at least once.\nWrite 80–100 words.",
+      "task": "You are a project manager at a software company. The new food delivery app is almost finished, and Leo, a junior tester in your team, is going to test it this week. Write an email to Leo explaining how to test the app, using the notes below. In your email you must use:\n- at least two of should, have to and need to;\n- at least one passive sentence (… is saved…, … should be reported…);\n- be due to or be scheduled to at least once.\nFollow the standard layout for an email giving instructions: From / To / Date / Subject, a greeting, It should be quite easy to …, the steps with First / Then / Next / After that / Finally, a reminder (Don't forget to … when you've finished.), then Best wishes and your name, position and department.\nWrite 80–100 words (do not count the From, To, Date and Subject lines).",
       "bullets": [
         "log in with the test account / the password is in the project folder",
         "place three test orders / check that each order is saved",
         "check the app on Android and iOS phones",
         "check that the restaurant receives a message for each order",
         "report every problem in the tracker with a screenshot",
-        "testing: due to finish on Thursday / app: scheduled to be released to customers next Monday"
+        "testing: due to finish on Thursday / app: scheduled to be released next Monday",
+        "reminder: log out of the test account"
       ],
-      "wordRange": [80, 100],
+      "wordRange": [
+        80,
+        100
+      ],
       "targetGrammar": [
         "Requirements (at least two): should, have to, need to",
-        "The passive (at least one): is saved, must be reported, can be found",
+        "The passive (at least one): is saved, should be reported, can be found",
         "Schedules (at least one): be due to, be scheduled to"
       ],
-      "modelAnswer": "Dear Leo,\n\nHere is what you need to check in the new delivery app. First, you have to log in with the test account. The password can be found in the project folder. Then place three test orders and check that each order is saved. You should test the app on both Android and iOS phones. Also check that the restaurant receives a message for each order. Every problem must be reported in the tracker with a screenshot. Testing is due to finish on Thursday, because the app is scheduled to be released next Monday.\n\nThanks,\nMaya"
+      "modelAnswer": "From: Bui Thanh Tung\nTo: Leo\nDate: 25th November\nSubject: Testing the food delivery app\n\nHi Leo,\n\nIt should be quite easy to test the new app.\nFirst, log in with the test account. The password can be found in the project folder.\nThen, place three test orders and check that each order is saved.\nNext, you need to check it on Android and iOS phones.\nAfter that, check that the restaurant gets each order.\nFinally, every problem should be reported in the tracker.\nTesting is due to finish on Thursday.\nDon't forget to log out of the test account when you've finished.\n\nBest wishes,\nBui Thanh Tung\nProject Manager\nSoftware Development Department"
     }
   },
   "speaking": {

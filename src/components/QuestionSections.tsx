@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { api, ApiError } from "../client/api";
-import { countWords, type Speaker } from "../types/exam";
+import { countEmailWords, countWords, type Speaker } from "../types/exam";
 import type {
   ExamAnswers,
   ExamSession,
@@ -546,7 +546,7 @@ export function WritingQuestions({
   onChange: (value: ExamAnswers["writing"]) => void;
   disabled: boolean;
 }) {
-  const words = countWords(values.email);
+  const words = countEmailWords(values.email);
   return (
     <>
       <section className="exam-section">
@@ -601,15 +601,36 @@ export function WritingQuestions({
             ))}
           </div>
         </div>
-        <label className="field-label" htmlFor="email-answer">
-          Email của bạn
-        </label>
+        <div className="email-editor-head">
+          <label className="field-label" htmlFor="email-answer">
+            Email của bạn
+          </label>
+          <button
+            type="button"
+            className="button ghost"
+            disabled={disabled || values.email.trim() !== ""}
+            title={
+              values.email.trim()
+                ? "Chỉ chèn được khi ô email còn trống"
+                : "Điền sẵn khung email của giáo viên"
+            }
+            onClick={() =>
+              onChange({
+                ...values,
+                email: emailTemplate(section.email.recipient),
+              })
+            }
+          >
+            <Icon name="pen" />
+            Chèn khung email
+          </button>
+        </div>
         <textarea
           id="email-answer"
           maxLength={10000}
           className="email-editor"
           rows={13}
-          placeholder={`Dear ${section.email.recipient},\n\n…`}
+          placeholder={`From: …\nTo: ${section.email.recipient}\nDate: …\nSubject: …\n\nHi ${section.email.recipient},\n\nIt should be quite easy to …\nFirst, … Then, … Next, … After that, … Finally, …\nDon't forget to … when you've finished.\n\nBest wishes,\n…`}
           value={values.email}
           onChange={(event) =>
             onChange({ ...values, email: event.target.value })
@@ -618,8 +639,8 @@ export function WritingQuestions({
         />
         <div className="editor-footer">
           <span>
-            Viết bằng tiếng Anh, {section.email.wordRange[0]}–
-            {section.email.wordRange[1]} từ.
+            Viết bằng tiếng Anh, phần thân {section.email.wordRange[0]}–
+            {section.email.wordRange[1]} từ (không tính 4 dòng From/To/Date/Subject).
           </span>
           <strong
             className={words > section.email.wordRange[1] ? "over-limit" : ""}
@@ -630,6 +651,42 @@ export function WritingQuestions({
       </section>
     </>
   );
+}
+
+/** Khung email hướng dẫn theo mẫu của giáo viên. */
+function emailTemplate(recipient: string): string {
+  const now = new Date();
+  const day = now.getDate();
+  const suffix =
+    day % 10 === 1 && day !== 11
+      ? "st"
+      : day % 10 === 2 && day !== 12
+        ? "nd"
+        : day % 10 === 3 && day !== 13
+          ? "rd"
+          : "th";
+  const month = now.toLocaleString("en-GB", { month: "long" });
+  return [
+    "From: [Your name]",
+    `To: ${recipient}`,
+    `Date: ${day}${suffix} ${month}`,
+    "Subject: [Short, clear subject]",
+    "",
+    `Hi ${recipient},`,
+    "",
+    "It should be quite easy to [main task].",
+    "First, [step 1].",
+    "Then, [step 2].",
+    "Next, [step 3].",
+    "After that, [step 4].",
+    "Finally, [step 5].",
+    "Don't forget to [reminder] when you've finished.",
+    "",
+    "Best wishes,",
+    "[Your name]",
+    "[Your position, e.g. Support Technician]",
+    "[Your department, e.g. Help Desk Department]",
+  ].join("\n");
 }
 
 export function SpeakingQuestions({

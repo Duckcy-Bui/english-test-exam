@@ -115,6 +115,37 @@ Mỗi Unit có 1 đề gồm 4 kỹ năng, mỗi kỹ năng 2,5 điểm.
   - Từ vựng chuyên ngành: 0,25.
 - Email dưới 60 từ thì phần "đủ các bước" tối đa 0,25.
 
+### Khung email hướng dẫn (theo giáo viên)
+
+Mọi đề email đều là email hướng dẫn. Bài mẫu và barem AI chấm theo đúng khung này:
+
+```
+From: [Họ và tên người viết]
+To: [Tên người nhận trong đề]
+Date: [Ngày tháng, ví dụ 25th November]
+Subject: [Chủ đề ngắn gọn, rõ ràng]
+
+Hi / Dear [Tên người nhận],
+
+It should be quite easy to [hành động chính].
+First, [bước 1].
+Then, [bước 2].
+Next, [bước 3].
+After that, [bước 4].
+Finally, [bước 5].
+Don't forget to [lời nhắc an toàn / tắt thiết bị] when you've finished.
+
+Best wishes,
+[Họ tên]
+[Vị trí công việc, ví dụ Support Technician]
+[Bộ phận, ví dụ Help Desk Department]
+```
+
+- Dùng câu mệnh lệnh cho các bước, thỉnh thoảng thêm "just". Ngữ pháp riêng của Unit lồng vào các bước.
+- Giới hạn 80–100 từ chỉ tính **phần thân**, từ lời chào đến hết chữ ký, không tính 4 dòng From/To/Date/Subject.
+- Điểm bố cục (0,25): đủ 5 phần (đầu thư; lời chào; câu mở; các bước với First/Then/Next/After that/Finally; câu nhắc và chữ ký 3 dòng) được 0,25; thiếu 1–2 phần được 0,125; thiếu từ 3 phần được 0.
+- Ô viết email trên web có nút "Chèn khung email" điền sẵn khung này.
+
 ### Speaking
 
 Ba phần, mọi đề bài phải buộc sinh viên dùng chức năng và ngữ pháp của Unit (bảng trong `docs/source-materials.md`, mục 1).

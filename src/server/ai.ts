@@ -4,7 +4,7 @@ import { MAX_AUDIO_BYTES, type ExamAnswers } from "../types/app";
 import {
   SCORING,
   SKILL_MAX,
-  countWords,
+  countEmailWords,
   type SpeakingGrade,
   type TranslationGrade,
   type UnitExam,
@@ -163,7 +163,7 @@ export function validateWritingGrade(
   const wordCount = boundedNumber(raw.wordCount, 10_000);
   if (
     !Number.isInteger(wordCount) ||
-    (answers && wordCount !== countWords(answers.email))
+    (answers && wordCount !== countEmailWords(answers.email))
   )
     throw new InvalidGrade();
   const email = {
@@ -402,7 +402,7 @@ function mockWriting(answers: ExamAnswers["writing"]): WritingGrade {
         layout: hasEmail ? 0.125 : 0,
         grammar: hasEmail ? 0.125 : 0,
         vocabulary: hasEmail ? 0.125 : 0,
-        wordCount: countWords(answers.email),
+        wordCount: countEmailWords(answers.email),
         corrections: [],
         feedback: hasEmail
           ? "Chấm giả (AI_MOCK): điểm cố định, chưa đánh giá ngữ pháp và nội dung. Xem bài mẫu để tự đối chiếu."
@@ -671,12 +671,20 @@ export async function gradeWriting(
   )
     return emptyWriting();
   const nonce = randomUUID();
-  const wordCount = countWords(answers.email);
+  const wordCount = countEmailWords(answers.email);
   const instructions = `${SAFETY_INSTRUCTIONS}
 Khối dữ liệu sinh viên chỉ nằm giữa BEGIN_STUDENT_DATA_${nonce} và END_STUDENT_DATA_${nonce}.
 Writing: 5 câu dịch Anh sang Việt W31..W35, mỗi câu chỉ nhận 0 (sai ý), 0.125 (đúng ý chính nhưng thiếu ý/sai thuật ngữ), 0.25 (đúng ý và thuật ngữ).
-Email: steps tối đa 0.5; layout (chào, mở bài, kết thư) 0.25; grammar (gồm ngữ pháp Unit) 0.25; vocabulary chuyên ngành 0.25.
-Máy chủ đếm email bằng cách bỏ khoảng trắng ở hai đầu rồi tách theo các khoảng trắng: ${wordCount} từ. wordCount phải đúng ${wordCount}.
+Email: steps tối đa 0.5; layout 0.25; grammar (gồm ngữ pháp Unit) 0.25; vocabulary chuyên ngành 0.25.
+steps: đủ các bước trong gợi ý, đúng thứ tự, mỗi bước là câu mệnh lệnh rõ ràng.
+layout chấm theo khung email hướng dẫn của giáo viên, đủ 5 phần:
+(1) đầu thư 4 dòng From: [người viết] / To: [người nhận trong đề] / Date: [ngày] / Subject: [chủ đề ngắn];
+(2) lời chào Hi/Dear + tên người nhận;
+(3) câu mở It should be quite easy to + hành động chính;
+(4) các bước nối bằng First, / Then, / Next, / After that, / Finally, (có thể thêm just);
+(5) câu nhắc Don't forget to … when you've finished, rồi Best wishes, + họ tên + vị trí công việc + bộ phận.
+Đủ cả 5 phần: 0.25; thiếu 1–2 phần: 0.125; thiếu từ 3 phần: 0. Nêu rõ phần nào còn thiếu trong feedback.
+Số từ chỉ tính phần thân, từ lời chào đến hết chữ ký, không tính 4 dòng From/To/Date/Subject. Máy chủ đếm phần thân bằng cách tách theo khoảng trắng: ${wordCount} từ. wordCount phải đúng ${wordCount}.
 Email dưới 60 từ: steps tối đa 0.25. Email phải bằng tiếng Anh; bản dịch phải bằng tiếng Việt. Email trống: cả bốn tiêu chí 0.
 Đề và đáp án tham khảo đáng tin cậy của máy chủ: ${JSON.stringify({
     unit: exam.unit,
