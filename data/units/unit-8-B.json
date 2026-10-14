@@ -25,7 +25,8 @@
     "Listening A (tìm nguyên nhân trang web của khách hàng không vào được) theo bài Investigations; Listening B (sinh viên năm cuối nói về kế hoạch nghề nghiệp) theo bài Your future in IT. Viết mới, không chép Audio script.",
     "Listening B: acceptedAnswers có biến thể chính tả và mạo từ; một số biến thể không có nguyên văn trong lời thoại.",
     "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
-    "Bản r1 (tự soát theo lỗi chung et-lead nêu): định nghĩa A, E, F viết lại để không chứa từ được hỏi hoặc từ của câu khác (cause, solutions, fault, power); R8 bỏ \"connection\" (từ khoá định nghĩa E); R7, R9, R16 đổi ngữ cảnh để không lặp tình huống sao lưu/máy chậm của bài đọc R21–R25 và tiền điện qua đêm của bài đọc R26–R30."
+    "Bản r1 (tự soát theo lỗi chung et-lead nêu): định nghĩa A, E, F viết lại để không chứa từ được hỏi hoặc từ của câu khác (cause, solutions, fault, power); R8 bỏ \"connection\" (từ khoá định nghĩa E); R7, R9, R16 đổi ngữ cảnh để không lặp tình huống sao lưu/máy chậm của bài đọc R21–R25 và tiền điện qua đêm của bài đọc R26–R30.",
+    "Bản r1 (theo review chéo của et-author): R8 đổi chứng cứ phỏng đoán (khác R9 đề A); R10 đổi ngữ cảnh USB lạ (khác R15 đề A); R14 đổi ngữ cảnh đồng hồ thông minh (không lặp cue S2); R16 thay phương án nhiễu động từ award bằng danh từ; bài đọc R21–R25 đoạn 4 chuyển sang thì quá khứ; S3 đổi sang sự cố máy in mạng để không lặp Listening A."
   ],
   "listening": {
     "parts": [
@@ -426,7 +427,7 @@
       {
         "id": "R8",
         "kind": "mcq",
-        "stem": "Nobody in the office can get online, and all the lights on the router are off. The router ______ be the problem.",
+        "stem": "Only Tom's computer can't get online, and its network cable is lying on the floor next to the desk. The cable ______ be the problem.",
         "options": [
           {
             "id": "A",
@@ -446,7 +447,7 @@
           }
         ],
         "answerKey": "C",
-        "explanation": "Có bằng chứng rõ (cả văn phòng không vào mạng được, đèn router tắt) nên dùng \"must\" để phỏng đoán gần như chắc chắn. \"can't\" trái với bằng chứng; \"mustn't\" là cấm đoán; \"doesn't be\" sai ngữ pháp."
+        "explanation": "Có bằng chứng rõ (chỉ máy của Tom không vào mạng được, dây mạng nằm dưới sàn) nên dùng \"must\" để phỏng đoán gần như chắc chắn. \"can't\" trái với bằng chứng; \"mustn't\" là cấm đoán; \"doesn't be\" sai ngữ pháp."
       },
       {
         "id": "R9",
@@ -476,7 +477,7 @@
       {
         "id": "R10",
         "kind": "mcq",
-        "stem": "If you don't know the sender, you ______ open the attachment.",
+        "stem": "If you find a USB stick in the car park, you ______ plug it into your computer.",
         "options": [
           {
             "id": "A",
@@ -496,7 +497,7 @@
           }
         ],
         "answerKey": "D",
-        "explanation": "Lời khuyên trong câu điều kiện loại 1: If + hiện tại đơn, … shouldn't + động từ nguyên mẫu. Không dùng \"don't should\", \"not should\" hay \"to\" sau should."
+        "explanation": "Lời khuyên trong câu điều kiện loại 1: If + hiện tại đơn, … shouldn't + động từ nguyên mẫu (USB lạ có thể chứa vi-rút). Không dùng \"don't should\", \"not should\" hay \"to\" sau should."
       },
       {
         "id": "R11",
@@ -578,27 +579,27 @@
       {
         "id": "R14",
         "kind": "mcq",
-        "stem": "If you type all day, a soft rest under your ______ can help to stop pain in your hands.",
+        "stem": "My smartwatch measures my heart rate from my ______.",
         "options": [
           {
             "id": "A",
-            "text": "wrists"
+            "text": "wrist"
           },
           {
             "id": "B",
-            "text": "knees"
+            "text": "knee"
           },
           {
             "id": "C",
-            "text": "ankles"
+            "text": "ankle"
           },
           {
             "id": "D",
-            "text": "shoulders"
+            "text": "shoulder"
           }
         ],
         "answerKey": "A",
-        "explanation": "Wrist (cổ tay) là chỗ bàn tay nối với cánh tay; đệm kê cổ tay giúp giảm đau khi gõ phím."
+        "explanation": "Wrist (cổ tay) là chỗ bàn tay nối với cánh tay; đồng hồ thông minh đeo ở cổ tay."
       },
       {
         "id": "R15",
@@ -640,7 +641,7 @@
           },
           {
             "id": "C",
-            "text": "award"
+            "text": "backache"
           },
           {
             "id": "D",
@@ -759,7 +760,7 @@
           "Every afternoon at about three o'clock, the network at Greenleaf Accountants becomes very slow. Files take minutes to open, and video calls with clients freeze. The staff are getting frustrated, and two clients have already complained. In the morning, everything works normally. The office manager has called the company's IT supplier, and a technician, Omar, has come to investigate.",
           "Omar's first idea was that the router might be too old. However, the router was replaced only six months ago, and it works well in the mornings. For these reasons, he decided that the router can't be the cause of the problem.",
           "Next, Omar looked at the network traffic. He found that at three o'clock, one laptop starts to upload a huge amount of data to the internet. The laptop belongs to Ruth, a new employee who joined the company last week. Omar thinks it must be a backup program, because the files that the laptop is sending are copies of Ruth's documents.",
-          "When Omar asks her about it, Ruth explains that her son set up a free online backup service on the laptop before she started her new job. It is set to run every afternoon. Omar suggests that she should change the time to seven in the evening, when the office is empty. He also says that if staff want to back up their work, they should use the company's server instead of free online services."
+          "When Omar asked her about it, Ruth explained that her son had set up a free online backup service on the laptop before she started her new job. It was set to run every afternoon. Omar suggested that she should change the time to seven in the evening, when the office is empty. He also said that if staff want to back up their work, they should use the company's server instead of free online services."
         ]
       },
       "questions": [
@@ -791,7 +792,7 @@
         {
           "id": "R22",
           "kind": "mcq",
-          "stem": "Why does Omar decide that the router can't be the cause?",
+          "stem": "Why did Omar decide that the router couldn't be the cause?",
           "options": [
             {
               "id": "A",
@@ -866,7 +867,7 @@
         {
           "id": "R25",
           "kind": "mcq",
-          "stem": "What does Omar suggest that Ruth should do?",
+          "stem": "What did Omar suggest that Ruth should do?",
           "options": [
             {
               "id": "A",
@@ -1032,21 +1033,21 @@
         "id": "S3",
         "kind": "situation",
         "instructions": "Deal with the situation. Speak for 1–1.5 minutes.",
-        "prompt": "You work at a help desk. A customer's online booking system stopped working this morning. Your manager phones you and asks what you have done so far. Use the cues. Use the present perfect with already and yet for what you have and haven't done, and the past simple for actions at a finished time (at 8.30, at 10 o'clock).",
+        "prompt": "You work at a help desk. This morning the network printer on the second floor stopped printing, and nobody on that floor can print. Your manager phones you and asks what you have done so far. Use the cues. Use the present perfect with already and yet for what you have and haven't done, and the past simple for actions at a finished time (at 8.30, at 10 o'clock).",
         "cues": [
-          "8.30: the customer reported the problem",
-          "already: restarted the server / checked the logs (error code 503)",
-          "10 o'clock: you phoned the customer with an update",
-          "not yet: contacted the software company / found the cause",
+          "8.30: staff reported the problem",
+          "already: restarted the printer / cleared the print queue (error code 49)",
+          "10 o'clock: you sent an email to all staff on the second floor",
+          "not yet: contacted the printer supplier / found the cause",
           "next step: what you plan to do this afternoon"
         ],
         "requiredGrammar": [
-          "Present perfect with already: I've already restarted the server.",
-          "Present perfect with yet: I haven't contacted the software company yet.",
-          "Past simple with finished times: The customer reported the problem at 8.30."
+          "Present perfect with already: I've already restarted the printer.",
+          "Present perfect with yet: I haven't contacted the supplier yet.",
+          "Past simple with finished times: Staff reported the problem at 8.30."
         ],
         "seconds": 90,
-        "sampleAnswer": "The customer reported the problem at eight thirty this morning. Their online booking system shows an error page, and nobody can book anything. I've already restarted the server, but that didn't help. I've also checked the logs, and they show error code five oh three, which usually means the service is not available. At ten o'clock, I phoned the customer and told them what I had done. However, I haven't found the cause yet, and I haven't contacted the software company yet, because their support line opens at one o'clock. This afternoon, I plan to call them and send them the logs. I hope to fix the problem before the end of the day."
+        "sampleAnswer": "Staff on the second floor reported the problem at eight thirty this morning. The network printer stopped printing, and nobody on that floor can print anything. I've already restarted the printer, but that didn't help. I've also cleared the print queue, and the printer now shows error code forty-nine. At ten o'clock, I sent an email to all the staff on the second floor and asked them to use the printer on the first floor for now. However, I haven't found the cause yet, and I haven't contacted the printer supplier yet, because their support line opens at one o'clock. This afternoon, I plan to call them and send them a photo of the error. I hope to fix the printer before the end of the day."
       }
     ]
   }
