@@ -23,6 +23,7 @@
     "Listening A lấy cảm hứng từ bài Requirements analysis (track 36–37) nhưng đổi sang ứng dụng đặt lớp tập gym; Listening B lấy cảm hứng từ bài Website design and architecture. Không chép Audio script.",
     "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại, xử lý giống Unit 6.",
     "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
+    "Bản r2 (theo báo cáo et-auditor d89202f): R19 thêm chi tiết giai đoạn và người kiểm thử, thay phương án nhiễu Dynamic để chỉ một đáp án đúng; R27 và câu tương ứng trong bài đọc thêm phạm vi \"During the day\" để văn bản khẳng định thẳng, giữ ngoại lệ ban đêm cho R28.",
     "Bản r1 (tự rà theo các lỗi auditor đã bắt ở Unit 1, 4, 5, 6): R21 thay một phương án nhiễu cũng là mong muốn của công ty trong bài; R27, R29 viết lại để đáp án được văn bản nói thẳng (quy tắc 12); Listening B và email bỏ cụm \"scheduled to go live\" để chi tiết này chỉ còn ở bài đọc R21–R25."
   ],
   "listening": {
@@ -395,15 +396,15 @@
       {
         "id": "R19",
         "kind": "mcq",
-        "stem": "______ testing is done by the company that is writing the software.",
+        "stem": "______ testing is the first stage of testing, when the company that is writing the software checks it before anyone outside the company uses it.",
         "options": [
           { "id": "A", "text": "Wireless" },
-          { "id": "B", "text": "Dynamic" },
+          { "id": "B", "text": "Final" },
           { "id": "C", "text": "Alpha" },
           { "id": "D", "text": "Public" }
         ],
         "answerKey": "C",
-        "explanation": "Alpha testing (kiểm thử alpha) do chính công ty viết phần mềm thực hiện."
+        "explanation": "Alpha testing (kiểm thử alpha) là giai đoạn kiểm thử đầu tiên, do chính công ty viết phần mềm thực hiện trước khi người ngoài công ty dùng. \"Final\" mâu thuẫn với \"first stage\"; \"Public\" mâu thuẫn với \"before anyone outside the company\"."
       },
       {
         "id": "R20",
@@ -504,7 +505,7 @@
         "title": "A Program for a Smart Greenhouse",
         "paragraphs": [
           "A small farm near York uses a computer program to control its greenhouse. The program was written by a local student, and it reads information from three sensors every five minutes: one for temperature, one for light and one for the soil.",
-          "If the temperature goes above 28 degrees, the program makes the roof windows open. When the temperature falls below 18 degrees, it closes the windows and makes the heater switch on. Dry soil causes the water pump to start, and the pump runs for exactly two minutes each time.",
+          "During the day, if the temperature goes above 28 degrees, the program makes the roof windows open. When the temperature falls below 18 degrees, it closes the windows and makes the heater switch on. Dry soil causes the water pump to start, and the pump runs for exactly two minutes each time.",
           "At night, the program does not open the windows, even if the greenhouse is warm, because the farmer worries about animals getting inside. Every morning at seven o'clock, a short report is sent to the farmer's phone.",
           "Last summer, a broken sensor caused the pump to run all day, and many plants were damaged. Since then, the program has had a new safety rule: the pump is never allowed to run more than ten times in one day."
         ]
@@ -520,9 +521,9 @@
         {
           "id": "R27",
           "kind": "tf",
-          "statement": "A temperature above 28 degrees makes the roof windows open.",
+          "statement": "During the day, a temperature above 28 degrees makes the roof windows open.",
           "answerKey": "T",
-          "explanation": "Đoạn 2: \"If the temperature goes above 28 degrees, the program makes the roof windows open.\""
+          "explanation": "Đoạn 2: \"During the day, if the temperature goes above 28 degrees, the program makes the roof windows open.\" Ban đêm thì khác (xem R28)."
         },
         {
           "id": "R28",
