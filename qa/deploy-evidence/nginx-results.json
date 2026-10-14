@@ -1,0 +1,47 @@
+{
+  "sourceCommit": "07c4fac",
+  "certificate": "local self-signed QA CA, not public HTTPS deployment",
+  "outcomes": [
+    {
+      "name": "nginx -t with template and local test certificate",
+      "pass": true,
+      "details": {
+        "syntax": true,
+        "stdout": ""
+      }
+    },
+    {
+      "name": "HTTP 308 redirect and ACME exception",
+      "pass": true,
+      "details": {
+        "redirect": 308,
+        "acme": 200
+      }
+    },
+    {
+      "name": "HTTPS proxy health and security/microphone headers, including 413",
+      "pass": true,
+      "details": {
+        "health": 200,
+        "headers": {
+          "x-content-type-options": "nosniff",
+          "x-frame-options": "DENY",
+          "referrer-policy": "same-origin",
+          "strict-transport-security": "max-age=31536000",
+          "permissions-policy": "microphone=(self), camera=()"
+        },
+        "body49MiB": 413
+      }
+    },
+    {
+      "name": "Nginx overwrites forged XFF, forwards HTTPS scheme and Host",
+      "pass": true,
+      "details": {
+        "xff": "127.0.0.1",
+        "proto": "https",
+        "host": "example.com"
+      }
+    }
+  ],
+  "serversStopped": true
+}

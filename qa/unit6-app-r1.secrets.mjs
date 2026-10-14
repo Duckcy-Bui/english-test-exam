@@ -8,7 +8,7 @@ import { readFileSync, mkdirSync, writeFileSync, rmSync } from 'node:fs';
 // Upstream controls valid grade strings. Credentials are synthetic and are
 // intentionally unlike prose, so whitespace/split probes cannot be false positives.
 const root = resolve(import.meta.dirname, '..');
-const out = join(root, 'qa/unit6-app-r1-evidence');
+const out = resolve(root, process.env.QA_EVIDENCE_DIR || 'qa/unit6-app-r1-evidence');
 mkdirSync(out, { recursive: true });
 const secrets = { AI_API_KEY: 'zQ8mV6pR2+K9w/X4nT7=H3%uY5&bC1', SESSION_SECRET: 'sJ4dP9wF7!mR3qL8@cV6nZ2#tH5xG1', ACCESS_CODE: 'aN5cX9vB2/yD7kF4+rM8pQ3=zW6jT1' };
 const base = 'http://127.0.0.1:3111';
@@ -39,6 +39,10 @@ const representations = {
   'URL-with-spaces': s => [...Buffer.from(s)].map(b => `%${b.toString(16).padStart(2, '0')}`).join(' '),
   'unicode-with-newlines': s => [...s].map(unicode).join('\n'),
 };
+if (process.env.QA_NEW_VARIANTS === '1') {
+  representations['zero-width-every-character'] = s => [...s].join('\u200b');
+  representations.hex = s => Buffer.from(s).toString('hex');
+}
 const outcomes = [], calls = [];
 let active, cookie = {}, processApp, appLog = '';
 function answers() {
@@ -51,8 +55,9 @@ function grade(writing, student) {
 function applyAttack(g, writing, attack) {
   const section = writing ? g.email : g;
   const value = secrets[attack.secret];
-  if (attack.representation === 'split-four') {
-    const parts = chunks(value, 4); section.feedback = parts[0]; section.corrections = [];
+  if (attack.representation === 'split-four' || attack.representation === 'split-reverse-four') {
+    const parts = chunks(value, 4); if (attack.representation === 'split-reverse-four') parts.reverse();
+    section.feedback = parts[0]; section.corrections = [];
     for (let i = 1; i < parts.length; i += 3) section.corrections.push({ original: parts[i], corrected: parts[i + 1] ?? 'Sửa câu.', note: parts[i + 2] ?? 'Ghi chú.' });
     return;
   }
@@ -72,12 +77,16 @@ function reconstruct(r, attack) {
   const section = attack.skill === 'writing' ? g.email : g;
   let value = attack.placement === 'translationFeedback' ? g.translations[0].feedback : attack.placement === 'feedback' ? section.feedback : section.corrections[0][attack.placement];
   if (attack.representation.startsWith('split-')) {
-    value = section.feedback + section.corrections.flatMap(c => [c.original, c.corrected, c.note]).filter(v => !['Sửa câu.', 'Ghi chú.'].includes(v)).join('');
+    const parts = [section.feedback, ...section.corrections.flatMap(c => [c.original, c.corrected, c.note])].filter(v => !['Sửa câu.', 'Ghi chú.'].includes(v));
+    if (attack.representation === 'split-reverse-four') parts.reverse();
+    value = parts.join('');
   }
   if (['spaces-every-character', 'newlines-every-four', 'tabs-newlines-every-four', 'base64-newlines-four', 'URL-with-spaces', 'unicode-with-newlines'].includes(attack.representation)) value = value.replace(/\s/g, '');
   if (attack.representation.startsWith('URL')) { value = decodeURIComponent(value); if (attack.representation === 'URL-double') value = decodeURIComponent(value); }
   if (['base64', 'base64url', 'base64-newlines-four', 'split-base64-four'].includes(attack.representation)) value = Buffer.from(value, 'base64').toString();
   if (attack.representation.includes('unicode')) value = value.replace(/\\u([0-9a-f]{4})/gi, (_, h) => String.fromCharCode(parseInt(h, 16)));
+  if (attack.representation === 'zero-width-every-character') value = value.replaceAll('\u200b', '');
+  if (attack.representation === 'hex') value = Buffer.from(value, 'hex').toString();
   return value === secrets[attack.secret];
 }
 async function req(path, body) {
@@ -101,10 +110,11 @@ const fake = createServer(async (req, res) => {
   try {
     assert(active); let raw = ''; for await (const b of req) raw += b;
     const body = JSON.parse(raw); assert.equal(req.headers.authorization, `Bearer ${secrets.AI_API_KEY}`);
+    assert(Object.values(secrets).every(secret => !JSON.stringify(body).includes(secret)), 'server secrets must not be included in model prompt');
     assert.equal(req.url, '/v1beta/models/qa-secrets-primary:generateContent'); assert.equal(body.generationConfig.temperature, 0);
     const student = JSON.parse(body.contents[0].parts[0].text.split('\n')[1]); const writing = Object.hasOwn(student, 'email');
     assert.equal(writing, active.skill === 'writing'); active.count++;
-    calls.push({ name: active.name, attempt: active.count, temperature: 0 });
+    calls.push({ name: active.name, attempt: active.count, temperature: 0, serverSecretInPrompt: false, syntheticApiKeyInAuthHeader: true });
     const g = grade(writing, student);
     if (!active.recover || active.count === 1) applyAttack(g, writing, active);
     let text = JSON.stringify(g);
@@ -150,7 +160,7 @@ try {
   for (let i = 0; i < 90; i++) { try { if ((await fetch(base + '/api/access')).ok) { ready = true; break; } } catch {} await delay(500); }
   assert(ready, 'production app ready');
   for (const skill of ['writing', 'speaking']) {
-    for (const secret of Object.keys(secrets)) for (const representation of [...Object.keys(representations), 'split-four', 'split-base64-four']) {
+    for (const secret of Object.keys(secrets)) for (const representation of [...Object.keys(representations), 'split-four', 'split-base64-four', ...(process.env.QA_NEW_VARIANTS === '1' ? ['split-reverse-four'] : [])]) {
       // URL/encoded cases also cover corrections fields; raw/truncated cover feedback.
       const placement = representation.includes('base64') ? 'corrected' : representation.includes('URL') ? 'original' : representation.includes('unicode') ? 'note' : 'feedback';
       await runCase({ skill, secret, representation, placement });
@@ -166,7 +176,7 @@ try {
   if (fake.listening) { fake.close(); await once(fake, 'close'); }
   writeFileSync(join(out, 'variants-app.log'), appLog);
   outcomes.push({ name: 'no raw secret in app logs', pass: Object.values(secrets).every(s => !appLog.includes(s)) });
-  writeFileSync(join(out, 'secret-variants-results.json'), JSON.stringify({ sourceCommit: 'e4eb51d', realModel: false, syntheticSecretsOnly: true, outcomes, calls, serversStopped: true }, null, 2));
+  writeFileSync(join(out, 'secret-variants-results.json'), JSON.stringify({ sourceCommit: process.env.QA_SOURCE_COMMIT || 'e4eb51d', realModel: false, syntheticSecretsOnly: true, outcomes, calls, serversStopped: true }, null, 2));
 }
 console.log(JSON.stringify({ passed: outcomes.filter(r => r.pass).length, failed: outcomes.filter(r => !r.pass).length }));
 if (outcomes.some(r => !r.pass)) process.exitCode = 1;

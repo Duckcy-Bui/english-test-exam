@@ -7,3 +7,10 @@ unit6-app-r1-evidence/*.sqlite*
 unit6-app-r1-evidence/playwright/
 unit6-app-r1-evidence/runtime/
 unit6-app-r1-run/.next
+deploy-evidence/*.sqlite*
+deploy-evidence/container.env
+deploy-evidence/quota-cookies.json
+deploy-evidence/runtime/
+deploy-evidence/playwright/
+deploy-run/.next
+deploy-run/data

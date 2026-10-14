@@ -5,7 +5,7 @@ import { resolve } from 'node:path';
 // In-process route integration: seed a cached result to verify the real GET and
 // cached POST guards independently of the upstream/retry path. No app edits.
 const root = resolve(import.meta.dirname, '..');
-const out = resolve(root, 'qa/unit6-app-r1-evidence');
+const out = resolve(root, process.env.QA_EVIDENCE_DIR || 'qa/unit6-app-r1-evidence');
 mkdirSync(out, { recursive: true });
 const secrets = { AI_API_KEY: 'zQ8mV6pR2+K9w/X4nT7=H3%uY5&bC1', SESSION_SECRET: 'sJ4dP9wF7!mR3qL8@cV6nZ2#tH5xG1', ACCESS_CODE: 'aN5cX9vB2/yD7kF4+rM8pQ3=zW6jT1' };
 Object.assign(process.env, secrets, { AI_MOCK: '1', EXAM_DATA_DIR: resolve(root, 'data/units'), RATE_LIMIT_DB: resolve(out, 'cached.sqlite') });
@@ -57,6 +57,6 @@ for (const skill of ['writing', 'speaking'] as const) for (const method of ['GET
   await run(skill, method, 'AI_API_KEY', 'clean');
   for (const secretName of Object.keys(secrets) as (keyof typeof secrets)[]) for (const representation of ['raw', 'base64', 'spaces', 'split-four']) await run(skill, method, secretName, representation);
 }
-writeFileSync(resolve(out, 'cached-results.json'), JSON.stringify({ sourceCommit: 'e4eb51d', syntheticSecretsOnly: true, outcomes }, null, 2));
+writeFileSync(resolve(out, 'cached-results.json'), JSON.stringify({ sourceCommit: process.env.QA_SOURCE_COMMIT || 'e4eb51d', syntheticSecretsOnly: true, outcomes }, null, 2));
 console.log(JSON.stringify({ passed: outcomes.length - failures, failed: failures }));
 process.exitCode = failures ? 1 : 0;

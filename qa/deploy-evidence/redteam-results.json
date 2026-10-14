@@ -1,0 +1,1357 @@
+{
+  "sourceCommit": "07c4fac",
+  "data": "data/units/unit-6.json",
+  "realModel": false,
+  "results": [
+    {
+      "name": "missing/wrong access and forged cookies rejected",
+      "pass": true
+    },
+    {
+      "name": "AI_MOCK writing payload 1",
+      "pass": true,
+      "details": {
+        "status": 200,
+        "score": 1.25,
+        "mock": true
+      }
+    },
+    {
+      "name": "AI_MOCK speaking payload 1",
+      "pass": true,
+      "details": {
+        "status": 200,
+        "score": 1.25,
+        "mock": true
+      }
+    },
+    {
+      "name": "AI_MOCK writing payload 2",
+      "pass": true,
+      "details": {
+        "status": 200,
+        "score": 1.25,
+        "mock": true
+      }
+    },
+    {
+      "name": "AI_MOCK speaking payload 2",
+      "pass": true,
+      "details": {
+        "status": 200,
+        "score": 1.25,
+        "mock": true
+      }
+    },
+    {
+      "name": "AI_MOCK writing payload 3",
+      "pass": true,
+      "details": {
+        "status": 200,
+        "score": 1.25,
+        "mock": true
+      }
+    },
+    {
+      "name": "AI_MOCK speaking payload 3",
+      "pass": true,
+      "details": {
+        "status": 200,
+        "score": 1.25,
+        "mock": true
+      }
+    },
+    {
+      "name": "AI_MOCK writing payload 4",
+      "pass": true,
+      "details": {
+        "status": 200,
+        "score": 1.25,
+        "mock": true
+      }
+    },
+    {
+      "name": "AI_MOCK speaking payload 4",
+      "pass": true,
+      "details": {
+        "status": 200,
+        "score": 1.25,
+        "mock": true
+      }
+    },
+    {
+      "name": "AI_MOCK writing payload 5",
+      "pass": true,
+      "details": {
+        "status": 200,
+        "score": 0,
+        "mock": true
+      }
+    },
+    {
+      "name": "AI_MOCK speaking payload 5",
+      "pass": true,
+      "details": {
+        "status": 200,
+        "score": 0,
+        "mock": true
+      }
+    },
+    {
+      "name": "AI_MOCK writing payload 6",
+      "pass": true,
+      "details": {
+        "status": 200,
+        "score": 1.25,
+        "mock": true
+      }
+    },
+    {
+      "name": "AI_MOCK speaking payload 6",
+      "pass": true,
+      "details": {
+        "status": 200,
+        "score": 1.25,
+        "mock": true
+      }
+    },
+    {
+      "name": "AI_MOCK writing payload 7",
+      "pass": true,
+      "details": {
+        "status": 200,
+        "score": 1.25,
+        "mock": true
+      }
+    },
+    {
+      "name": "AI_MOCK speaking payload 7",
+      "pass": true,
+      "details": {
+        "status": 200,
+        "score": 1.25,
+        "mock": true
+      }
+    },
+    {
+      "name": "exam sequential release, answer locking, listening 2 plays, result gate",
+      "pass": true,
+      "details": {
+        "total": 7.5,
+        "immutable": true
+      }
+    },
+    {
+      "name": "public endpoints, HTML and client bundles contain no private reference answers/key",
+      "pass": true,
+      "details": {
+        "scannedFiles": 52,
+        "staticPaths404": true
+      }
+    },
+    {
+      "name": "10/device, 100/IP; deleting cookies and spoofing XFF cannot bypass; cached grade free",
+      "pass": true,
+      "details": {
+        "firstDevice": "10 accepted, 11th rejected",
+        "freshDevices": 9,
+        "ip": "100 accepted, 101st rejected",
+        "trustProxy": 0
+      }
+    },
+    {
+      "name": "configured 3/device and 5/IP, full scope costs two, concurrency cannot overspend",
+      "pass": true,
+      "details": {
+        "fullCost": 2,
+        "deviceLimit": 3,
+        "ipLimit": 5,
+        "parallelAccepted": 2,
+        "parallelRejected": 2
+      }
+    },
+    {
+      "name": "IP quota persists after production restart",
+      "pass": true
+    },
+    {
+      "name": "Gemini writing rejects over",
+      "pass": true,
+      "details": {
+        "status": 502,
+        "calls": 2,
+        "savedResult": false
+      }
+    },
+    {
+      "name": "Gemini writing rejects negative",
+      "pass": true,
+      "details": {
+        "status": 502,
+        "calls": 2,
+        "savedResult": false
+      }
+    },
+    {
+      "name": "Gemini writing rejects strings",
+      "pass": true,
+      "details": {
+        "status": 502,
+        "calls": 2,
+        "savedResult": false
+      }
+    },
+    {
+      "name": "Gemini writing rejects extra-total",
+      "pass": true,
+      "details": {
+        "status": 502,
+        "calls": 2,
+        "savedResult": false
+      }
+    },
+    {
+      "name": "Gemini writing rejects missing",
+      "pass": true,
+      "details": {
+        "status": 502,
+        "calls": 2,
+        "savedResult": false
+      }
+    },
+    {
+      "name": "Gemini writing rejects invalid-json",
+      "pass": true,
+      "details": {
+        "status": 502,
+        "calls": 2,
+        "savedResult": false
+      }
+    },
+    {
+      "name": "Gemini writing rejects nan",
+      "pass": true,
+      "details": {
+        "status": 502,
+        "calls": 2,
+        "savedResult": false
+      }
+    },
+    {
+      "name": "Gemini writing rejects huge",
+      "pass": true,
+      "details": {
+        "status": 502,
+        "calls": 2,
+        "savedResult": false
+      }
+    },
+    {
+      "name": "Gemini writing rejects blocked",
+      "pass": true,
+      "details": {
+        "status": 502,
+        "calls": 2,
+        "savedResult": false
+      }
+    },
+    {
+      "name": "Gemini writing rejects transport",
+      "pass": true,
+      "details": {
+        "status": 502,
+        "calls": 2,
+        "savedResult": false
+      }
+    },
+    {
+      "name": "Gemini writing rejects word-count",
+      "pass": true,
+      "details": {
+        "status": 502,
+        "calls": 2,
+        "savedResult": false
+      }
+    },
+    {
+      "name": "Gemini writing rejects duplicate-id",
+      "pass": true,
+      "details": {
+        "status": 502,
+        "calls": 2,
+        "savedResult": false
+      }
+    },
+    {
+      "name": "Gemini writing rejects bad-translation-step",
+      "pass": true,
+      "details": {
+        "status": 502,
+        "calls": 2,
+        "savedResult": false
+      }
+    },
+    {
+      "name": "Gemini writing rejects short-max-steps",
+      "pass": true,
+      "details": {
+        "status": 502,
+        "calls": 2,
+        "savedResult": false
+      }
+    },
+    {
+      "name": "Gemini writing rejects blank-email-points",
+      "pass": true,
+      "details": {
+        "status": 502,
+        "calls": 2,
+        "savedResult": false
+      }
+    },
+    {
+      "name": "Gemini writing rejects blank-translation-points",
+      "pass": true,
+      "details": {
+        "status": 502,
+        "calls": 2,
+        "savedResult": false
+      }
+    },
+    {
+      "name": "Gemini speaking rejects over",
+      "pass": true,
+      "details": {
+        "status": 502,
+        "calls": 2,
+        "savedResult": false
+      }
+    },
+    {
+      "name": "Gemini speaking rejects negative",
+      "pass": true,
+      "details": {
+        "status": 502,
+        "calls": 2,
+        "savedResult": false
+      }
+    },
+    {
+      "name": "Gemini speaking rejects strings",
+      "pass": true,
+      "details": {
+        "status": 502,
+        "calls": 2,
+        "savedResult": false
+      }
+    },
+    {
+      "name": "Gemini speaking rejects extra-total",
+      "pass": true,
+      "details": {
+        "status": 502,
+        "calls": 2,
+        "savedResult": false
+      }
+    },
+    {
+      "name": "Gemini speaking rejects missing",
+      "pass": true,
+      "details": {
+        "status": 502,
+        "calls": 2,
+        "savedResult": false
+      }
+    },
+    {
+      "name": "Gemini speaking rejects invalid-json",
+      "pass": true,
+      "details": {
+        "status": 502,
+        "calls": 2,
+        "savedResult": false
+      }
+    },
+    {
+      "name": "Gemini speaking rejects nan",
+      "pass": true,
+      "details": {
+        "status": 502,
+        "calls": 2,
+        "savedResult": false
+      }
+    },
+    {
+      "name": "Gemini speaking rejects huge",
+      "pass": true,
+      "details": {
+        "status": 502,
+        "calls": 2,
+        "savedResult": false
+      }
+    },
+    {
+      "name": "Gemini speaking rejects blocked",
+      "pass": true,
+      "details": {
+        "status": 502,
+        "calls": 2,
+        "savedResult": false
+      }
+    },
+    {
+      "name": "Gemini speaking rejects transport",
+      "pass": true,
+      "details": {
+        "status": 502,
+        "calls": 2,
+        "savedResult": false
+      }
+    },
+    {
+      "name": "Gemini speaking rejects false-pronunciation",
+      "pass": true,
+      "details": {
+        "status": 502,
+        "calls": 2,
+        "savedResult": false
+      }
+    },
+    {
+      "name": "Gemini speaking rejects partial-full-task",
+      "pass": true,
+      "details": {
+        "status": 502,
+        "calls": 2,
+        "savedResult": false
+      }
+    },
+    {
+      "name": "Gemini receives validated audio/wav inlineData; invalid webm rejected before upstream",
+      "pass": true,
+      "details": {
+        "validWavStatus": 200,
+        "invalidWebmStatus": 400,
+        "audioIncludedInResult": false
+      }
+    },
+    {
+      "name": "Gemini writing invalid-then-valid",
+      "pass": true,
+      "details": {
+        "status": 200,
+        "calls": 2,
+        "score": 1.25
+      }
+    },
+    {
+      "name": "Gemini writing fallback",
+      "pass": true,
+      "details": {
+        "status": 200,
+        "calls": 2,
+        "score": 1.25
+      }
+    },
+    {
+      "name": "Gemini writing valid",
+      "pass": true,
+      "details": {
+        "status": 200,
+        "calls": 1,
+        "score": 1.25
+      }
+    },
+    {
+      "name": "Gemini speaking invalid-then-valid",
+      "pass": true,
+      "details": {
+        "status": 200,
+        "calls": 2,
+        "score": 1.25
+      }
+    },
+    {
+      "name": "Gemini speaking fallback",
+      "pass": true,
+      "details": {
+        "status": 200,
+        "calls": 2,
+        "score": 1.25
+      }
+    },
+    {
+      "name": "Gemini speaking valid",
+      "pass": true,
+      "details": {
+        "status": 200,
+        "calls": 1,
+        "score": 1.25
+      }
+    },
+    {
+      "name": "Gemini transport writing payload 1",
+      "pass": true,
+      "details": {
+        "calls": 1,
+        "score": 1.25,
+        "semanticModelTested": false
+      }
+    },
+    {
+      "name": "Gemini transport speaking payload 1",
+      "pass": true,
+      "details": {
+        "calls": 1,
+        "score": 1.25,
+        "semanticModelTested": false
+      }
+    },
+    {
+      "name": "Gemini transport writing payload 2",
+      "pass": true,
+      "details": {
+        "calls": 1,
+        "score": 1.25,
+        "semanticModelTested": false
+      }
+    },
+    {
+      "name": "Gemini transport speaking payload 2",
+      "pass": true,
+      "details": {
+        "calls": 1,
+        "score": 1.25,
+        "semanticModelTested": false
+      }
+    },
+    {
+      "name": "Gemini transport writing payload 3",
+      "pass": true,
+      "details": {
+        "calls": 1,
+        "score": 1.25,
+        "semanticModelTested": false
+      }
+    },
+    {
+      "name": "Gemini transport speaking payload 3",
+      "pass": true,
+      "details": {
+        "calls": 1,
+        "score": 1.25,
+        "semanticModelTested": false
+      }
+    },
+    {
+      "name": "Gemini transport writing payload 4",
+      "pass": true,
+      "details": {
+        "calls": 1,
+        "score": 1.25,
+        "semanticModelTested": false
+      }
+    },
+    {
+      "name": "Gemini transport speaking payload 4",
+      "pass": true,
+      "details": {
+        "calls": 1,
+        "score": 1.25,
+        "semanticModelTested": false
+      }
+    },
+    {
+      "name": "Gemini transport writing payload 5",
+      "pass": true,
+      "details": {
+        "calls": 0,
+        "score": 0,
+        "semanticModelTested": false
+      }
+    },
+    {
+      "name": "Gemini transport speaking payload 5",
+      "pass": true,
+      "details": {
+        "calls": 0,
+        "score": 0,
+        "semanticModelTested": false
+      }
+    },
+    {
+      "name": "Gemini transport writing payload 6",
+      "pass": true,
+      "details": {
+        "calls": 1,
+        "score": 1.25,
+        "semanticModelTested": false
+      }
+    },
+    {
+      "name": "Gemini transport speaking payload 6",
+      "pass": true,
+      "details": {
+        "calls": 1,
+        "score": 1.25,
+        "semanticModelTested": false
+      }
+    },
+    {
+      "name": "Gemini transport writing payload 7",
+      "pass": true,
+      "details": {
+        "calls": 1,
+        "score": 1.25,
+        "semanticModelTested": false
+      }
+    },
+    {
+      "name": "Gemini transport speaking payload 7",
+      "pass": true,
+      "details": {
+        "calls": 1,
+        "score": 1.25,
+        "semanticModelTested": false
+      }
+    },
+    {
+      "name": "Gemini writing does not expose key echoed by upstream in feedback",
+      "pass": true,
+      "details": {
+        "status": 502,
+        "calls": 2,
+        "readback": 409,
+        "resultSaved": false
+      }
+    },
+    {
+      "name": "Gemini speaking does not expose key echoed by upstream in feedback",
+      "pass": true,
+      "details": {
+        "status": 502,
+        "calls": 2,
+        "readback": 409,
+        "resultSaved": false
+      }
+    },
+    {
+      "name": "app server logs contain no synthetic API key",
+      "pass": true
+    }
+  ],
+  "calls": [
+    {
+      "scenario": "over",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "over",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "negative",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "negative",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "strings",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "strings",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "extra-total",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "extra-total",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "missing",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "missing",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "invalid-json",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "invalid-json",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "nan",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "nan",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "huge",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "huge",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "blocked",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "blocked",
+      "url": "/v1beta/models/qa-fallback:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "transport",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "transport",
+      "url": "/v1beta/models/qa-fallback:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "word-count",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "word-count",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "duplicate-id",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "duplicate-id",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "bad-translation-step",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "bad-translation-step",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "short-max-steps",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 7,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "short-max-steps",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 7,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "blank-email-points",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 0,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "blank-email-points",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 0,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "blank-translation-points",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "blank-translation-points",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "over",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "over",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "negative",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "negative",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "strings",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "strings",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "extra-total",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "extra-total",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "missing",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "missing",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "invalid-json",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "invalid-json",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "nan",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "nan",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "huge",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "huge",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "blocked",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "blocked",
+      "url": "/v1beta/models/qa-fallback:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "transport",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "transport",
+      "url": "/v1beta/models/qa-fallback:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "false-pronunciation",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "false-pronunciation",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "partial-full-task",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "partial-full-task",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "valid-previous",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": [
+        "audio/wav"
+      ]
+    },
+    {
+      "scenario": "invalid-then-valid-previous",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "invalid-then-valid-previous",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "fallback-previous",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "fallback-previous",
+      "url": "/v1beta/models/qa-fallback:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "valid-previous",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "invalid-then-valid",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "invalid-then-valid",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "fallback",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "fallback",
+      "url": "/v1beta/models/qa-fallback:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "valid",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "valid",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 7,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "valid",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "valid",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 23,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "valid",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "valid",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 1,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "valid",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "valid",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 16,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "valid",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "valid",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 125,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "valid",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "valid",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 7,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "valid",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "key-feedback",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "key-feedback",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": true,
+      "wordCount": 97,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "key-feedback",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    },
+    {
+      "scenario": "key-feedback",
+      "url": "/v1beta/models/qa-primary:generateContent",
+      "writing": false,
+      "temperature": 0,
+      "nonceDelimited": true,
+      "audioTypes": []
+    }
+  ],
+  "serversStopped": true
+}

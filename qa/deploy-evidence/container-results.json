@@ -1,0 +1,85 @@
+{
+  "sourceCommit": "07c4fac",
+  "outcomes": [
+    {
+      "name": "image metadata: non-root and no runtime secrets baked in",
+      "pass": true,
+      "details": {
+        "imageId": "sha256:cee07baca543123ae8a153c4b6d13c4d795e86afccafca4fa31c709c5f231712",
+        "user": "nextjs",
+        "envNames": [
+          "PATH",
+          "NODE_VERSION",
+          "YARN_VERSION",
+          "NODE_ENV",
+          "NEXT_TELEMETRY_DISABLED",
+          "PORT",
+          "HOSTNAME",
+          "EXAM_DATA_DIR",
+          "RATE_LIMIT_DB"
+        ],
+        "secretsBakedIn": false
+      }
+    },
+    {
+      "name": "container uid=1001, gid=1001, hardening and loopback bind",
+      "pass": true,
+      "details": {
+        "id": "uid=1001(nextjs) gid=1001(nextjs) groups=1001(nextjs)",
+        "readOnly": true,
+        "capDrop": [
+          "ALL"
+        ],
+        "securityOpt": [
+          "no-new-privileges:true"
+        ],
+        "port": [
+          {
+            "HostIp": "127.0.0.1",
+            "HostPort": "3120"
+          }
+        ],
+        "health": "healthy",
+        "volume": "et-qa-deploy-07c4fac_quota"
+      }
+    },
+    {
+      "name": "application image files: 8 Units; no .git,qa,audit,tests or .env",
+      "pass": true,
+      "details": {
+        "rootEntries": [
+          ".next",
+          "data",
+          "node_modules",
+          "package.json",
+          "server.js"
+        ],
+        "forbidden": [],
+        "envFiles": [],
+        "units": [
+          "unit-1.json",
+          "unit-2.json",
+          "unit-3.json",
+          "unit-4.json",
+          "unit-5.json",
+          "unit-6.json",
+          "unit-7.json",
+          "unit-8.json"
+        ]
+      }
+    },
+    {
+      "name": "quota DB is on volume, has rows and passes integrity",
+      "pass": true,
+      "details": {
+        "path": "/var/lib/english-it/rate-limits.sqlite",
+        "uid": 1001,
+        "counts": {
+          "count": 4,
+          "used": 32
+        },
+        "integrity": "ok"
+      }
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+PASS image metadata: non-root and no runtime secrets baked in
+PASS container uid=1001, gid=1001, hardening and loopback bind
+PASS application image files: 8 Units; no .git,qa,audit,tests or .env
+PASS quota DB is on volume, has rows and passes integrity

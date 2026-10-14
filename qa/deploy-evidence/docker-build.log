@@ -1,0 +1,68 @@
+ Image english-it-exam:qa-deploy-07c4fac Building
+#1 [internal] load local bake definitions
+#1 reading from stdin 547B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 1.36kB done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/node:24-bookworm-slim
+#3 DONE 1.2s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 311B done
+#4 DONE 0.0s
+
+#5 [dependencies 1/4] FROM docker.io/library/node:24-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20
+#5 resolve docker.io/library/node:24-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20 0.0s done
+#5 DONE 0.0s
+
+#6 [internal] load build context
+#6 transferring context: 649.63kB 0.0s done
+#6 DONE 0.1s
+
+#7 [runner 3/6] RUN groupadd --system --gid 1001 nextjs     && useradd --system --uid 1001 --gid nextjs --no-create-home --home-dir /app nextjs     && mkdir -p /var/lib/english-it     && chown nextjs:nextjs /app /var/lib/english-it
+#7 CACHED
+
+#8 [dependencies 3/4] COPY package.json package-lock.json ./
+#8 CACHED
+
+#9 [dependencies 4/4] RUN npm ci
+#9 CACHED
+
+#10 [builder 3/5] COPY --from=dependencies /app/node_modules ./node_modules
+#10 CACHED
+
+#11 [builder 4/5] COPY . .
+#11 CACHED
+
+#12 [builder 5/5] RUN npm run build
+#12 CACHED
+
+#13 [runner 5/6] COPY --from=builder --chown=nextjs:nextjs /app/.next/static ./.next/static
+#13 CACHED
+
+#14 [dependencies 2/4] WORKDIR /app
+#14 CACHED
+
+#15 [runner 4/6] COPY --from=builder --chown=nextjs:nextjs /app/.next/standalone ./
+#15 CACHED
+
+#16 [runner 6/6] COPY --from=builder --chown=nextjs:nextjs /app/data/units ./data/units
+#16 CACHED
+
+#17 exporting to image
+#17 exporting layers done
+#17 exporting manifest sha256:e3ed5e673d398addc0c120ce8b4163dc0ce5c7b0eaf18ac7ed990182be060273 0.0s done
+#17 exporting config sha256:dc5f8d68a8f9469ab070bf0eb9845237f99d40e844aac7307f232ce7bce595d0 0.0s done
+#17 exporting attestation manifest sha256:854d87b77236c98233df6f9e8c16d0273136495b5d3347659f1405bd5597a111 0.0s done
+#17 exporting manifest list sha256:cee07baca543123ae8a153c4b6d13c4d795e86afccafca4fa31c709c5f231712 0.0s done
+#17 naming to docker.io/library/english-it-exam:qa-deploy-07c4fac done
+#17 unpacking to docker.io/library/english-it-exam:qa-deploy-07c4fac
+#17 unpacking to docker.io/library/english-it-exam:qa-deploy-07c4fac 0.0s done
+#17 DONE 0.1s
+
+#18 resolving provenance for metadata file
+#18 DONE 0.0s
+ Image english-it-exam:qa-deploy-07c4fac Built
