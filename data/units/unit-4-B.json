@@ -26,7 +26,8 @@
     "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
     "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
     "Bản r1 (tự soát theo nhắc của et-lead): R8 đổi tình huống (tìm bản ghi khách hàng gần nghĩa thuật ngữ R2 retrieve a record); R13 và bài đọc R26–R30 bỏ từ 'record'; R17, R20 thay nhiễu 'attached' (từ khoá định nghĩa C, headset) bằng horizontal / vertical.",
-    "Bản r1, đợt 2 (theo review chéo của et-author2): Listening B bỏ ý 'nobody can change it' (diễn đạt lại định nghĩa F, read-only access), L10 hỏi email; R8 đổi sang in nhãn bằng báo cáo (không lặp tìm kiếm và sắp xếp); bài R26–R30 viết lại câu bảng, bỏ câu tìm sách, R26 hỏi số sách, R27 theo câu mới; email bước 3 đổi, thêm 'then click it'; R11 đổi sang máy chiếu (trùng Listening A); R12 đổi sự việc (trùng đề A); W32 đổi câu; S2 bỏ câu chép đề A; R14, R16 nhiễu cùng từ loại; L6, L7, L8 thêm biến thể."
+    "Bản r1, đợt 2 (theo review chéo của et-author2): Listening B bỏ ý 'nobody can change it' (diễn đạt lại định nghĩa F, read-only access), L10 hỏi email; R8 đổi sang in nhãn bằng báo cáo (không lặp tìm kiếm và sắp xếp); bài R26–R30 viết lại câu bảng, bỏ câu tìm sách, R26 hỏi số sách, R27 theo câu mới; email bước 3 đổi, thêm 'then click it'; R11 đổi sang máy chiếu (trùng Listening A); R12 đổi sự việc (trùng đề A); W32 đổi câu; S2 bỏ câu chép đề A; R14, R16 nhiễu cùng từ loại; L6, L7, L8 thêm biến thể.",
+    "Bản r1, đợt 2b: bỏ biến thể 'red color' (chính tả Mỹ); bài R26–R30 thêm một câu để đủ 160 từ."
   ],
   "listening": {
     "parts": [
@@ -291,8 +292,7 @@
               "red",
               "it turns red",
               "turns red",
-              "red colour",
-              "red color"
+              "red colour"
             ],
             "explanation": "\"If the result is negative, we spent too much, and the cell turns red automatically.\""
           },
@@ -913,7 +913,7 @@
         "title": "How City Library Uses Its Database",
         "paragraphs": [
           "City Library has more than 40,000 books, and the staff manage all of them with a database. It stores information about books, members and loans. Every book has its own barcode, which is the primary key for the books.",
-          "When a member borrows a book, the librarian scans the member's card and then the book's barcode. The database adds a new line to the Loans table and calculates the return date automatically: three weeks after the day of the loan.",
+          "When a member borrows a book, the librarian scans the member's card and then the book's barcode. The database adds a new line to the Loans table and calculates the return date automatically: three weeks after the day of the loan. Each member can borrow up to six books at a time.",
           "Every morning, a librarian runs a report that lists all the books which are more than one week late. The library then sends a reminder by email to each member on the list.",
           "Members can also use the database themselves. By logging in to the library website, they can see which books they have at home and renew a book for another three weeks. A member who has three late books cannot borrow any more until they return them."
         ]
