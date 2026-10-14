@@ -27,7 +27,8 @@
     "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
     "Bản r1 (tự soát theo nhắc của et-lead): R8 đổi tình huống (tìm bản ghi khách hàng gần nghĩa thuật ngữ R2 retrieve a record); R13 và bài đọc R26–R30 bỏ từ 'record'; R17, R20 thay nhiễu 'attached' (từ khoá định nghĩa C, headset) bằng horizontal / vertical.",
     "Bản r1, đợt 2 (theo review chéo của et-author2): Listening B bỏ ý 'nobody can change it' (diễn đạt lại định nghĩa F, read-only access), L10 hỏi email; R8 đổi sang in nhãn bằng báo cáo (không lặp tìm kiếm và sắp xếp); bài R26–R30 viết lại câu bảng, bỏ câu tìm sách, R26 hỏi số sách, R27 theo câu mới; email bước 3 đổi, thêm 'then click it'; R11 đổi sang máy chiếu (trùng Listening A); R12 đổi sự việc (trùng đề A); W32 đổi câu; S2 bỏ câu chép đề A; R14, R16 nhiễu cùng từ loại; L6, L7, L8 thêm biến thể.",
-    "Bản r1, đợt 2b: bỏ biến thể chính tả Mỹ của 'red colour'; bài R26–R30 thêm một câu để đủ 160 từ."
+    "Bản r1, đợt 2b: bỏ biến thể chính tả Mỹ của 'red colour'; bài R26–R30 thêm một câu để đủ 160 từ.",
+    "Xáo thứ tự phương án R11, R13, R18, R20 để khoá R6–R25 không lặp chu kỳ (không đổi chữ). Email: thời điểm xoá tệp đổi thành 'this morning' cho khớp bản sao lưu đêm qua (audit 4B)."
   ],
   "listening": {
     "parts": [
@@ -521,7 +522,7 @@
         "options": [
           {
             "id": "A",
-            "text": "were giving"
+            "text": "was giving"
           },
           {
             "id": "B",
@@ -529,14 +530,14 @@
           },
           {
             "id": "C",
-            "text": "was giving"
+            "text": "were giving"
           },
           {
             "id": "D",
             "text": "give"
           }
         ],
-        "answerKey": "C",
+        "answerKey": "A",
         "explanation": "Hành động đang diễn ra trong quá khứ (yesterday) thì bị hành động ngắn xen vào (when the projector switched off): quá khứ tiếp diễn \"was giving\" với chủ ngữ I."
       },
       {
@@ -573,11 +574,11 @@
         "options": [
           {
             "id": "A",
-            "text": "field"
+            "text": "bracket"
           },
           {
             "id": "B",
-            "text": "bracket"
+            "text": "field"
           },
           {
             "id": "C",
@@ -588,7 +589,7 @@
             "text": "log"
           }
         ],
-        "answerKey": "A",
+        "answerKey": "B",
         "explanation": "Field (trường) là phần dành cho một loại thông tin trong bản ghi, ví dụ số điện thoại."
       },
       {
@@ -698,11 +699,11 @@
         "options": [
           {
             "id": "A",
-            "text": "resets"
+            "text": "locks"
           },
           {
             "id": "B",
-            "text": "locks"
+            "text": "resets"
           },
           {
             "id": "C",
@@ -713,7 +714,7 @@
             "text": "checks"
           }
         ],
-        "answerKey": "B",
+        "answerKey": "A",
         "explanation": "Lock sb out of sth (khoá không cho ai truy cập): hệ thống khoá tài khoản sau ba lần nhập sai."
       },
       {
@@ -752,7 +753,7 @@
           },
           {
             "id": "B",
-            "text": "external"
+            "text": "unique"
           },
           {
             "id": "C",
@@ -760,10 +761,10 @@
           },
           {
             "id": "D",
-            "text": "unique"
+            "text": "external"
           }
         ],
-        "answerKey": "D",
+        "answerKey": "B",
         "explanation": "Unique (duy nhất): mỗi khách hàng có một mã số riêng, không trùng với ai."
       }
     ],
@@ -991,7 +992,7 @@
     "email": {
       "id": "W-EMAIL",
       "recipient": "Hugo",
-      "task": "You are a support technician. Hugo, a sales manager, deleted an important file from the shared drive by mistake yesterday. Write an email to Hugo explaining how to restore the file from last night's backup, using the notes below. In your email you must use:\n- before or after + -ing at least twice to show the order of the steps (Before restoring…, After opening…);\n- by + -ing at least once to explain how to do something (by typing…).\nFollow the standard layout for an email giving instructions: From / To / Date / Subject, a greeting, It should be quite easy to …, the steps with First / Then / Next / After that / Finally, a reminder (Don't forget to … when you've finished.), then Best wishes and your name, position and department.\nWrite 80–100 words (do not count the From, To, Date and Subject lines).",
+      "task": "You are a support technician. Hugo, a sales manager, deleted an important file from the shared drive by mistake this morning. Write an email to Hugo explaining how to restore the file from last night's backup, using the notes below. In your email you must use:\n- before or after + -ing at least twice to show the order of the steps (Before restoring…, After opening…);\n- by + -ing at least once to explain how to do something (by typing…).\nFollow the standard layout for an email giving instructions: From / To / Date / Subject, a greeting, It should be quite easy to …, the steps with First / Then / Next / After that / Finally, a reminder (Don't forget to … when you've finished.), then Best wishes and your name, position and department.\nWrite 80–100 words (do not count the From, To, Date and Subject lines).",
       "bullets": [
         "open the Backup app on your desktop",
         "choose last night's date",
