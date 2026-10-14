@@ -24,7 +24,8 @@
     "Listening A: quản lý và kỹ sư mạng bàn về mạng cho văn phòng mới (Networks). Listening B: giới thiệu cổng thông tin sinh viên (Internet browsing). Không chép Audio script.",
     "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại.",
     "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
-    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng."
+    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
+    "Bản r1 (tự soát theo nhắc của et-lead): R13 bỏ 'click the … button' vì trùng từ thuật ngữ và định nghĩa F (back button)."
   ],
   "listening": {
     "parts": [
@@ -569,7 +570,7 @@
       {
         "id": "R13",
         "kind": "mcq",
-        "stem": "If the page doesn't show the latest news, click the ______ button.",
+        "stem": "If the news page doesn't show the latest stories, ______ it.",
         "options": [
           {
             "id": "A",
@@ -589,7 +590,7 @@
           }
         ],
         "answerKey": "A",
-        "explanation": "Refresh (làm mới) là cho màn hình hiển thị thông tin mới nhất kể từ khi bạn mở trang."
+        "explanation": "Refresh (làm mới) là cho trang hiển thị thông tin mới nhất kể từ khi bạn mở trang."
       },
       {
         "id": "R14",
