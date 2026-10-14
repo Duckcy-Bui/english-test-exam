@@ -569,7 +569,10 @@ async function runGrading<T>(
       try {
         const candidate: unknown = JSON.parse(output);
         assertNoServerSecrets(candidate);
-        return validate(candidate);
+        const grade = validate(candidate);
+        // Validators restore canonical field order; check that view too.
+        assertNoServerSecrets(grade);
+        return grade;
       } catch {
         if (invalidAttempt === 1) throw new InvalidGrade();
       }

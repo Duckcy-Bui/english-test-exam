@@ -67,6 +67,7 @@ Hai chế độ:
   - Model phải trả JSON theo schema cố định, `temperature` = 0.
   - Server kiểm lại JSON: đúng tiêu chí, mỗi điểm nằm trong giới hạn, tổng không vượt 2,5. Sai thì gọi lại 1 lần; vẫn sai thì báo lỗi, không ghi điểm.
 - Nhận xét, sửa lỗi và bài mẫu trả về bằng tiếng Việt.
+- Bí mật server: `SESSION_SECRET` và `ACCESS_CODE` không bao giờ gửi lên model; `AI_API_KEY` chỉ nằm trong header. Phòng thủ nhiều lớp: server quét đầu ra AI (cả dạng chèn khoảng trắng, chia mảnh qua nhiều trường, percent-encode, base64) trước khi lưu hoặc trả về; nhiễm thì gọi lại, vẫn nhiễm thì trả lỗi 502. Rủi ro còn lại chỉ đến từ việc nhà cung cấp trung gian cố ý chèn key, được chấp nhận.
 
 ### Listening
 
@@ -178,3 +179,4 @@ Xong khi: web chạy trên domain qua HTTPS, micro hoạt động, chấm AI ho�
 | 2026-10-14 16:17 +07 | **Unit 7 AUDIT-OK** (giải mù lại R19/R27 `b00befc` khớp 2/2, báo cáo `7182540` không có phát hiện). Merge vào `main`. Unit 8 r2 (`bcc8bc7`) validate 0 lỗi; auditor phiên mới giải mù lại R7, R11, R21–R25. |
 | 2026-10-14 16:20 +07 | **Unit 8 AUDIT-OK** (giải mù lại R7, R11, R21–R25 `6bcffe2` khớp 7/7; báo cáo `3b336dc` chỉ còn NÊN SỬA về độ chặt lập luận kỹ thuật ở bài đọc, R22 vẫn một đáp án). **Đủ 8/8 Unit AUDIT-OK trên `main`.** |
 | 2026-10-14 16:20 +07 | Bắt đầu Giai đoạn 4 song song: et-dev đóng gói Docker + Nginx + HTTPS trên nhánh `dev/deploy` (từ `dev/unit6-app-r1` + main có đủ 8 Unit), kiểm app chạy cả 8 Unit. et-qa vẫn đang kiểm lại `dev/unit6-app-r1`. |
+| 2026-10-14 16:22 +07 | et-qa kiểm lại r1 (`9361e77`): QA-SEC-01 gốc PASS, bộ cũ 72/72; 2 CHẶN mới do et-lead yêu cầu thử biến thể (chèn khoảng trắng, chia mảnh qua nhiều trường), 80/128 PASS. Đánh giá rủi ro thực tế thấp (model không thấy bí mật) nhưng sửa vì rẻ: quét gộp đã chuẩn hoá, giao et-dev `dev/unit6-app-r2` sau khi xong `dev/deploy`. |
