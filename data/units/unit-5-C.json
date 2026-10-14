@@ -25,7 +25,7 @@
     "Listening A (so sánh ba bộ camera an ninh cho cửa hàng) theo bài Web hosting về chức năng so sánh; Listening B (tin nhắn thoại của chuyên viên tư vấn về Wi-Fi khách sạn) theo bài Making recommendations. Viết mới, không chép Audio script.",
     "Listening B: acceptedAnswers có biến thể cách viết số, mạo từ và cách viết fiber; một số biến thể không có nguyên văn trong lời thoại.",
     "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
-    "Bản r1 (theo báo cáo et-auditor audit/unit-5-C): R18 thay phương án nhiễu có từ gốc của thuật ngữ câu nối R5; R19 viết lại ngữ cảnh gói cước điện thoại, không nhắc các mức gói; R17 viết lại câu và đổi bộ phương án sang cùng nhóm từ mô tả hình ảnh."
+    "Bản r1 (theo báo cáo et-auditor audit/unit-5-C): R18 thay phương án nhiễu có từ gốc của thuật ngữ câu nối R5; R19 viết lại ngữ cảnh gói cước điện thoại, không nhắc các mức gói; R17 viết lại câu và đổi bộ phương án sang cùng nhóm từ mô tả hình ảnh. Giải mù lại: R19 viết lại lần hai theo nghĩa kế hoạch dự án, không nhắc dữ liệu, tháng hay gói cước."
   ],
   "listening": {
     "parts": [
@@ -369,7 +369,7 @@
       {
         "id": "R19",
         "kind": "mcq",
-        "stem": "My phone ______ includes 20 GB of data and unlimited calls for £15 a month.",
+        "stem": "Before the team starts the project, we need a clear ______ that shows who will do each task and when.",
         "options": [
           { "id": "A", "text": "holder" },
           { "id": "B", "text": "set" },
@@ -377,7 +377,7 @@
           { "id": "D", "text": "fee" }
         ],
         "answerKey": "C",
-        "explanation": "Plan (gói cước, gói dịch vụ) cho biết chính xác bạn trả bao nhiêu tiền và được dùng những gì, ví dụ gói điện thoại 15 bảng mỗi tháng. Fee là khoản phí, không \"includes\" dữ liệu và cuộc gọi."
+        "explanation": "Plan (kế hoạch) cho biết ai làm việc gì và khi nào. Holder là người sở hữu; set là một bộ đồ vật; fee là khoản phí."
       },
       {
         "id": "R20",
