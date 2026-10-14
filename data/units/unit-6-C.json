@@ -24,7 +24,8 @@
     "Bài đọc R21–R25 (xu hướng làm việc tại nhà ở công ty phần mềm) và R26–R30 (khách sạn nhỏ dùng mạng xã hội) viết mới. Không nhắc giới hạn dùng nội dung số, gắn nhãn tệp, dịch vụ chia sẻ tệp, bán hàng cho người tiêu dùng hay máy nhận diện giọng nói để không diễn đạt lại định nghĩa câu nối.",
     "Listening A (phòng kế toán xin đào tạo ứng dụng chi phí) theo bài Training users; Listening B (thông báo phòng hội nghị truyền hình của trường đại học) theo bài Video conferencing. Viết mới, không chép Audio script.",
     "Listening B: acceptedAnswers có biến thể cách viết số; một số biến thể không có nguyên văn trong lời thoại.",
-    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng."
+    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
+    "Bản r1 (theo review chéo của et-author): R7 đổi ngữ cảnh Wi-Fi chậm (trùng bài T/F) sang hàng chờ máy in; R11 đổi NFC (trùng cue S2) sang hệ thống mã QR; L6 thêm \"in room 204\"; S2 gộp requiredGrammar thành một mục, bỏ dòng hướng dẫn khỏi cues."
   ],
   "listening": {
     "parts": [
@@ -136,7 +137,7 @@
             "kind": "short",
             "stem": "Which room is the new video conferencing room?",
             "maxWords": 3,
-            "acceptedAnswers": ["room 204", "204"],
+            "acceptedAnswers": ["room 204", "204", "in room 204"],
             "explanation": "Dr Patel nói phòng ở tầng hai thư viện, \"in Room 204\"."
           },
           {
@@ -211,15 +212,15 @@
       {
         "id": "R7",
         "kind": "mcq",
-        "stem": "Because more people are using it, the free Wi-Fi in the library is getting ______.",
+        "stem": "Because more and more people print at lunchtime, the queue at the printer is getting ______.",
         "options": [
-          { "id": "A", "text": "slowest" },
-          { "id": "B", "text": "more slow" },
-          { "id": "C", "text": "the slower" },
-          { "id": "D", "text": "slower" }
+          { "id": "A", "text": "longest" },
+          { "id": "B", "text": "more long" },
+          { "id": "C", "text": "the longer" },
+          { "id": "D", "text": "longer" }
         ],
         "answerKey": "D",
-        "explanation": "Mô tả thay đổi: get + tính từ so sánh hơn: \"is getting slower\" (ngày càng chậm hơn). Tính từ ngắn thêm -er, không dùng \"more slow\"; \"slowest\", \"the slower\" sai dạng."
+        "explanation": "Mô tả thay đổi: get + tính từ so sánh hơn: \"is getting longer\" (ngày càng dài hơn). Tính từ ngắn thêm -er, không dùng \"more long\"; \"longest\", \"the longer\" sai dạng."
       },
       {
         "id": "R8",
@@ -263,7 +264,7 @@
       {
         "id": "R11",
         "kind": "mcq",
-        "stem": "Our café uses NFC, ______ lets customers pay by holding their phone near the card machine.",
+        "stem": "Our café uses a QR code system, ______ lets customers pay by scanning a code with their phone.",
         "options": [
           { "id": "A", "text": "which" },
           { "id": "B", "text": "who" },
@@ -271,7 +272,7 @@
           { "id": "D", "text": "what" }
         ],
         "answerKey": "A",
-        "explanation": "Giải nghĩa thuật ngữ bằng mệnh đề quan hệ chỉ vật: \"NFC, which lets customers pay…\". \"who\" chỉ người; \"where\" chỉ nơi chốn; \"what\" không dùng làm đại từ quan hệ."
+        "explanation": "Giải nghĩa thuật ngữ bằng mệnh đề quan hệ chỉ vật: \"a QR code system, which lets customers pay…\". \"who\" chỉ người; \"where\" chỉ nơi chốn; \"what\" không dùng làm đại từ quan hệ."
       },
       {
         "id": "R12",
@@ -596,14 +597,10 @@
           "shopping basket",
           "cookie",
           "NFC payment",
-          "B2B",
-          "Ways to give meanings: … called …, … which means …, … is …"
+          "B2B"
         ],
         "requiredGrammar": [
-          "Give meanings in at least two of these three ways (all three are not required):",
-          "called: a small file called a cookie",
-          "which means / relative clause: B2B, which means business to business, …",
-          "be: A shopping basket is…"
+          "Giving meanings in at least two of three ways (called / which means / be): a small file called a cookie; B2B, which means business to business; A shopping basket is…"
         ],
         "seconds": 90,
         "sampleAnswer": "Let me explain some words you will see on shopping websites. First, the shopping basket is the place on the website where you keep the things you want to buy before you pay. It's like a real basket in a supermarket. Next, many websites save a small file called a cookie on your computer. The cookie helps the website remember you, so next time it can show your basket again. Then there's NFC payment, which means you can pay by holding your phone or bank card near the card machine. You don't need to type a PIN for small amounts. Finally, you may see B2B, which means business to business. These are websites where companies sell to other companies, so you probably won't use them."
