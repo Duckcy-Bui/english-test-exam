@@ -142,7 +142,7 @@ Tổng = Listening + Reading + Writing + Speaking, tối đa 10. Điểm từng 
 1. Mỗi câu trắc nghiệm có đúng một đáp án đúng. Câu có từ hai đáp án hợp lý trở lên là lỗi.
 2. Không lộ đáp án chéo: thuật ngữ và từ khoá của định nghĩa ở câu nối 1–5 không được xuất hiện làm đáp án hoặc gợi ý ở câu 6–30. Giữa các kỹ năng (ví dụ câu dịch W31–W35 trùng ngữ pháp với R6–R12) không tính là lộ, vì chế độ Thi thử chạy tuần tự và chỉ mở kỹ năng sau khi đã nộp kỹ năng trước.
 3. Không lặp tình huống quá một lần trong cùng một đề.
-4. Phương án nhiễu cùng từ loại và cùng độ dài tương đương với đáp án đúng.
+4. Câu từ vựng (13–20): phương án nhiễu cùng từ loại và độ dài tương đương với đáp án đúng. Câu ngữ pháp (6–12) được trộn các dạng khác nhau (ví dụ to / that / for / about) miễn là chỉ một phương án đúng ngữ pháp.
 5. Câu 6–12 kiểm tra ngữ pháp của Unit; câu 13–20 kiểm tra từ vựng của Unit, lấy từ Workbook Part 1 hoặc từ các bài của Unit đó trong giáo trình (ghi trang trong `sourceNotes` nếu từ không có trong Workbook).
 6. Bài đọc 21–25 dài 230–270 từ; bài đọc 26–30 dài 160–200 từ. Cả hai viết mới.
 7. Câu dịch 31–35 dùng từ vựng và ngữ pháp của Unit; không trùng câu giữa các Unit.
