@@ -22,7 +22,8 @@
     "Bài đọc R21–R25 lấy cảm hứng từ bài Investigations và Diagnosis; bài đọc R26–R30 lấy cảm hứng từ bài Your future in IT. Cả hai viết mới, không dùng thuật ngữ và định nghĩa của câu nối.",
     "Listening A lấy cảm hứng từ bài Diagnosis (track 45) nhưng đổi sang sự cố máy in; Listening B lấy cảm hứng từ bài Solutions (an toàn sức khoẻ nơi làm việc). Không chép Audio script.",
     "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại, xử lý giống Unit 6.",
-    "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều."
+    "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
+    "Bản r1 (tự rà theo các lỗi auditor đã bắt ở Unit 1, 4, 5, 6): R6, R12, R16, R17 đổi tình huống để không lặp chi tiết máy in và hộp mực của Listening A, làm đổ nước lên bàn phím của Listening B; R24 thay phương án nhiễu \"compared\" (bài không nói thẳng) bằng việc bài nói rõ là đã làm; câu dịch W33 đổi nội dung để không lặp lời khuyên máy nóng thì tắt máy của Listening B."
   ],
   "listening": {
     "parts": [
@@ -223,7 +224,7 @@
       {
         "id": "R6",
         "kind": "mcq",
-        "stem": "I ______ the printer drivers yesterday, but the problem is still there.",
+        "stem": "I ______ the graphics card drivers yesterday, but the problem is still there.",
         "options": [
           { "id": "A", "text": "have updated" },
           { "id": "B", "text": "updated" },
@@ -301,15 +302,15 @@
       {
         "id": "R12",
         "kind": "mcq",
-        "stem": "If the printer still doesn't work, try ______ the cable and plugging it in again.",
+        "stem": "If the wi-fi signal is weak, try ______ closer to the router.",
         "options": [
-          { "id": "A", "text": "unplug" },
-          { "id": "B", "text": "to unplugging" },
-          { "id": "C", "text": "unplugging" },
-          { "id": "D", "text": "unplugged" }
+          { "id": "A", "text": "move" },
+          { "id": "B", "text": "to moving" },
+          { "id": "C", "text": "moving" },
+          { "id": "D", "text": "moved" }
         ],
         "answerKey": "C",
-        "explanation": "Gợi ý giải pháp: try + V-ing (thử làm gì). Vế sau \"and plugging it in\" cũng dùng V-ing."
+        "explanation": "Gợi ý giải pháp: try + V-ing (thử làm gì): \"try moving\". \"to moving\", \"move\", \"moved\" không đúng sau \"try\" trong cấu trúc này."
       }
     ],
     "vocabulary": [
@@ -355,7 +356,7 @@
       {
         "id": "R16",
         "kind": "mcq",
-        "stem": "The printer ______ explains how to replace the ink cartridge.",
+        "stem": "The ______ explains how to set up the new scanner.",
         "options": [
           { "id": "A", "text": "fault" },
           { "id": "B", "text": "manual" },
@@ -368,15 +369,15 @@
       {
         "id": "R17",
         "kind": "mcq",
-        "stem": "Don't put drinks next to the keyboard. If you ______ coffee on it, it may stop working.",
+        "stem": "Don't ______ the cable too much, or the wires inside it may break.",
         "options": [
-          { "id": "A", "text": "spill" },
-          { "id": "B", "text": "bend" },
+          { "id": "A", "text": "bend" },
+          { "id": "B", "text": "spill" },
           { "id": "C", "text": "burn" },
           { "id": "D", "text": "award" }
         ],
         "answerKey": "A",
-        "explanation": "Spill (làm đổ) là để chất lỏng tràn ra ngoài."
+        "explanation": "Bend (bẻ cong, gập) là làm cho vật không còn thẳng; gập cáp quá nhiều có thể làm đứt dây bên trong."
       },
       {
         "id": "R18",
@@ -476,11 +477,11 @@
           "options": [
             { "id": "A", "text": "Updated the app on every phone" },
             { "id": "B", "text": "Checked the hotel's wi-fi" },
-            { "id": "C", "text": "Compared old and new phones" },
+            { "id": "C", "text": "Asked staff to record the crashes" },
             { "id": "D", "text": "Contacted the app developer" }
           ],
           "answerKey": "D",
-          "explanation": "Đoạn 3: \"He hasn't contacted the app developer yet\". Cập nhật ứng dụng và kiểm tra wi-fi là những việc đã làm (So far, he has…)."
+          "explanation": "Đoạn 3: \"He hasn't contacted the app developer yet\". Cập nhật ứng dụng, kiểm tra wi-fi và nhờ nhân viên ghi lại thời điểm sập là những việc đã làm."
         },
         {
           "id": "R25",
@@ -562,8 +563,8 @@
         },
         {
           "id": "W33",
-          "source": "If your computer gets too hot, you should switch it off and let it cool down.",
-          "referenceTranslation": "Nếu máy tính của bạn quá nóng, bạn nên tắt máy và để máy nguội bớt."
+          "source": "If your password doesn't work, you should try resetting it on the login page.",
+          "referenceTranslation": "Nếu mật khẩu của bạn không dùng được, bạn nên thử đặt lại mật khẩu trên trang đăng nhập."
         },
         {
           "id": "W34",
