@@ -24,7 +24,8 @@
     "Listening A: helpdesk hướng dẫn thêm máy in qua Settings (GUI operations). Listening B: giới thiệu phòng Media Lab (Multimedia hardware). Không chép Audio script.",
     "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại.",
     "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
-    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng."
+    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
+    "Bản r1 (tự soát theo nhắc của et-lead): R15 đổi sang projector vì đáp án cũ 'speakers' cùng gốc với 'speak into' trong định nghĩa E (microphone); R24 bỏ 'speakers' khỏi phương án D."
   ],
   "listening": {
     "parts": [
@@ -622,27 +623,27 @@
       {
         "id": "R15",
         "kind": "mcq",
-        "stem": "I can't hear the music. Are the ______ switched on?",
+        "stem": "The ______ shows our slides on the big screen in the meeting room.",
         "options": [
           {
             "id": "A",
-            "text": "projectors"
+            "text": "webcam"
           },
           {
             "id": "B",
-            "text": "webcams"
+            "text": "printer"
           },
           {
             "id": "C",
-            "text": "speakers"
+            "text": "projector"
           },
           {
             "id": "D",
-            "text": "printers"
+            "text": "headphones"
           }
         ],
         "answerKey": "C",
-        "explanation": "Speaker (loa) là bộ phận phát ra âm thanh."
+        "explanation": "Projector (máy chiếu) làm hình ảnh, slide hiện lên màn hình hoặc mặt phẳng lớn."
       },
       {
         "id": "R16",
@@ -876,7 +877,7 @@
             },
             {
               "id": "D",
-              "text": "For headphones and speakers"
+              "text": "For headphones and other audio devices"
             }
           ],
           "answerKey": "A",
