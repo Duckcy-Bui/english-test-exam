@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   output: "standalone",
   outputFileTracingIncludes: {
-    "/api/**/*": ["./data/units/**/*.json", "./fixtures/*.json"],
+    "/api/**/*": ["./data/units/**/*.json"],
   },
   async headers() {
     return [

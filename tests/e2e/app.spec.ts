@@ -14,7 +14,7 @@ import {
   type Skill,
 } from "../../src/types/app";
 
-const dataDir = process.env.E2E_DATA_DIR || "fixtures";
+const dataDir = process.env.E2E_DATA_DIR || "data/units";
 const examFile = join(
   dataDir,
   existsSync(join(dataDir, "unit-6.json"))
