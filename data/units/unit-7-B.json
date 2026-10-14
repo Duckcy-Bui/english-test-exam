@@ -239,7 +239,7 @@
       {
         "id": "R9",
         "kind": "mcq",
-        "stem": "The app ______ from our website or from the app store.",
+        "stem": "The app ______ by users from our website or from the app store.",
         "options": [
           { "id": "A", "text": "can be downloaded" },
           { "id": "B", "text": "can download" },
