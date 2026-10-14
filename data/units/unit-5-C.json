@@ -24,7 +24,8 @@
     "Bài đọc R21–R25 (mua hay thuê máy tính xách tay cho công ty mới) và R26–R30 (màn hình thứ hai cho người dịch thuật) viết mới. Không nhắc lưu trữ web, băng thông, các mức giá theo phiên bản, sách hướng dẫn hay lời cam kết sửa chữa để không diễn đạt lại định nghĩa câu nối.",
     "Listening A (so sánh ba bộ camera an ninh cho cửa hàng) theo bài Web hosting về chức năng so sánh; Listening B (tin nhắn thoại của chuyên viên tư vấn về Wi-Fi khách sạn) theo bài Making recommendations. Viết mới, không chép Audio script.",
     "Listening B: acceptedAnswers có biến thể cách viết số, mạo từ và cách viết fiber; một số biến thể không có nguyên văn trong lời thoại.",
-    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng."
+    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
+    "Bản r1 (theo báo cáo et-auditor audit/unit-5-C): R18 thay phương án nhiễu có từ gốc của thuật ngữ câu nối R5; R19 viết lại ngữ cảnh gói cước điện thoại, không nhắc các mức gói; R17 viết lại câu và đổi bộ phương án sang cùng nhóm từ mô tả hình ảnh."
   ],
   "listening": {
     "parts": [
@@ -342,15 +343,15 @@
       {
         "id": "R17",
         "kind": "mcq",
-        "stem": "This simple drawing program can only make flat, ______ images, not 3-D models.",
+        "stem": "Drawings on paper are ______: they have length and width, but no depth.",
         "options": [
           { "id": "A", "text": "2-D" },
-          { "id": "B", "text": "HD" },
-          { "id": "C", "text": "PDF" },
-          { "id": "D", "text": "USB" }
+          { "id": "B", "text": "3-D" },
+          { "id": "C", "text": "HD" },
+          { "id": "D", "text": "4K" }
         ],
         "answerKey": "A",
-        "explanation": "2-D (hai chiều) là phẳng, chỉ có chiều dài và chiều rộng, trái với 3-D (ba chiều)."
+        "explanation": "2-D (hai chiều) là phẳng, chỉ có chiều dài và chiều rộng, không có chiều sâu. 3-D (ba chiều) có thêm chiều sâu; HD và 4K nói về độ phân giải của hình ảnh, không nói về số chiều."
       },
       {
         "id": "R18",
@@ -360,7 +361,7 @@
           { "id": "A", "text": "plan" },
           { "id": "B", "text": "card" },
           { "id": "C", "text": "fee" },
-          { "id": "D", "text": "tier" }
+          { "id": "D", "text": "set" }
         ],
         "answerKey": "B",
         "explanation": "Memory card (thẻ nhớ) là thiết bị điện tử lưu dữ liệu, dùng trong máy ảnh, điện thoại…"
@@ -368,15 +369,15 @@
       {
         "id": "R19",
         "kind": "mcq",
-        "stem": "Which price ______ is best for a small business: Basic or Pro?",
+        "stem": "My phone ______ includes 20 GB of data and unlimited calls for £15 a month.",
         "options": [
           { "id": "A", "text": "holder" },
           { "id": "B", "text": "set" },
           { "id": "C", "text": "plan" },
-          { "id": "D", "text": "card" }
+          { "id": "D", "text": "fee" }
         ],
         "answerKey": "C",
-        "explanation": "Plan (gói, bảng giá) là tài liệu cho biết giá của từng loại hoặc từng mức dịch vụ, ví dụ gói Basic và gói Pro."
+        "explanation": "Plan (gói cước, gói dịch vụ) cho biết chính xác bạn trả bao nhiêu tiền và được dùng những gì, ví dụ gói điện thoại 15 bảng mỗi tháng. Fee là khoản phí, không \"includes\" dữ liệu và cuộc gọi."
       },
       {
         "id": "R20",
