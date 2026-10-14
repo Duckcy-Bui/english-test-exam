@@ -506,23 +506,23 @@
         "options": [
           {
             "id": "A",
-            "text": "Plug into the audio socket the headphones."
+            "text": "Connect printer the to the laptop."
           },
           {
             "id": "B",
-            "text": "Plug the headphones into socket the audio."
+            "text": "Connect the printer the laptop to."
           },
           {
             "id": "C",
-            "text": "Plug the headphones into the audio socket."
+            "text": "Connect the printer to the laptop."
           },
           {
             "id": "D",
-            "text": "Plug the headphones the audio socket into."
+            "text": "To the laptop connect printer the."
           }
         ],
         "answerKey": "C",
-        "explanation": "Trật tự câu hai tân ngữ: động từ + tân ngữ 1 (the headphones) + giới từ (into) + tân ngữ 2 (the audio socket). Các phương án khác đặt sai vị trí tân ngữ hoặc tách sai cụm danh từ."
+        "explanation": "Trật tự câu hai tân ngữ: động từ + tân ngữ 1 (the printer) + giới từ (to) + tân ngữ 2 (the laptop). Các phương án khác đặt sai vị trí tân ngữ hoặc tách sai cụm danh từ."
       },
       {
         "id": "R11",
