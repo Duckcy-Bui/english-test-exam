@@ -26,7 +26,8 @@
     "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
     "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
     "Bản r1 (tự soát theo nhắc của et-lead): R10 đổi 'cable' thành 'headphones', R14 và R15 thay nhiễu 'cable' bằng 'tab' (cable là từ khoá định nghĩa E, Ethernet connector); R20 đổi tình huống để không lặp việc cài hệ thống của bài đọc R21–R25.",
-    "Bản r1, đợt 2 (theo review chéo của et-author2): L9 sửa stem để chỉ còn một đáp án, thêm biến thể; L6, L7 thêm biến thể có gạch nối; R13 đổi sang right-click (không lặp R15 đề A); R12 đổi sang 'to maximise' (không lặp F2/BIOS của đề A); R16 đổi tình huống (không lặp bước khởi động lại trong email); W35 đổi chủ đề; W33 dịch 'audio socket' là 'cổng âm thanh'."
+    "Bản r1, đợt 2 (theo review chéo của et-author2): L9 sửa stem để chỉ còn một đáp án, thêm biến thể; L6, L7 thêm biến thể có gạch nối; R13 đổi sang right-click (không lặp R15 đề A); R12 đổi sang 'to maximise' (không lặp F2/BIOS của đề A); R16 đổi tình huống (không lặp bước khởi động lại trong email); W35 đổi chủ đề; W33 dịch 'audio socket' là 'cổng âm thanh'.",
+    "Bản r1, đợt 2b: R16 bỏ 'screen', 'mouse' (từ khoá định nghĩa D, drag)."
   ],
   "listening": {
     "parts": [
@@ -652,7 +653,7 @@
       {
         "id": "R16",
         "kind": "mcq",
-        "stem": "If the screen freezes and the mouse doesn't work, ______ the computer.",
+        "stem": "If a program stops responding, ______ the computer.",
         "options": [
           {
             "id": "A",
@@ -672,7 +673,7 @@
           }
         ],
         "answerKey": "B",
-        "explanation": "Restart (khởi động lại) là cho máy chạy lại sau khi đã dừng, ví dụ khi màn hình bị treo."
+        "explanation": "Restart (khởi động lại) là cho máy chạy lại sau khi đã dừng, ví dụ khi chương trình bị treo."
       },
       {
         "id": "R17",
