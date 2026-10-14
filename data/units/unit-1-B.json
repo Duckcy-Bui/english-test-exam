@@ -1,0 +1,1068 @@
+{
+  "schemaVersion": 1,
+  "unit": 1,
+  "unitTitle": "Working in IT",
+  "testId": "B",
+  "source": "ai",
+  "functions": [
+    "Describing IT-related jobs and duties (IT jobs and duties)",
+    "Talking about what IT companies do (IT organisations)",
+    "Discussing IT workplace rules (IT workplace rules)",
+    "Making suggestions, agreeing and disagreeing (Meetings)"
+  ],
+  "grammarFocus": [
+    "Expressing frequency: adverbs of frequency (always, usually, normally, often, sometimes, hardly ever, never) before the main verb and after be; time expressions (once a fortnight, twice a day, every morning) at the beginning or end of the sentence",
+    "Present simple questions: do/does + subject + main verb; question word (where, what, how often…) at the beginning",
+    "Rules: must, mustn't, have to, don't have to, should, can't, need to; imperatives (Keep…, Don't…)",
+    "Making suggestions, agreeing and disagreeing: shall/could; how about / what about + -ing; maybe/perhaps; I'm afraid…"
+  ],
+  "sourceNotes": [
+    "Đề B Unit 1, AI soạn mới theo khung đề và quy tắc 1–15; không lặp bài đọc, lời thoại, tình huống, câu dịch, đề email và đề nói của đề A.",
+    "R1–R5: thuật ngữ và định nghĩa lấy gần nguyên văn Workbook Unit 1 Part 1 (1A, 1B, 1D); định nghĩa thừa lấy từ Workbook 1B. Không trùng thuật ngữ câu nối với đề A.",
+    "R13–R20: từ vựng lấy từ Workbook Unit 1 Part 1 (1A, 1B, 1C, 1D); 'head office' ở nhiễu R15 là từ thông dụng.",
+    "Bài đọc R21–R25 (công ty hỗ trợ IT cho khách sạn) và R26–R30 (quy định làm việc tại nhà) viết mới; không dùng thuật ngữ câu nối và không diễn đạt lại định nghĩa của chúng.",
+    "Listening A: cuộc họp chuẩn bị gian hàng hội chợ công nghệ (chức năng Meetings). Listening B: trưởng nhóm helpdesk giới thiệu lịch làm việc cho nhân viên mới (IT jobs and duties). Không chép Audio script.",
+    "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại.",
+    "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
+    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng."
+  ],
+  "listening": {
+    "parts": [
+      {
+        "id": "A",
+        "instructions": "Listen to the meeting and choose the best answer A, B, C or D (Questions L1–L5).",
+        "context": "Lucy, a marketing manager, and Sam, a software developer, plan their company's stand at a technology fair.",
+        "speakers": [
+          {
+            "name": "Lucy",
+            "voice": "female"
+          },
+          {
+            "name": "Sam",
+            "voice": "male"
+          }
+        ],
+        "script": [
+          {
+            "speaker": "Lucy",
+            "text": "Right, Sam. The Hanoi Technology Fair is on the twelfth of May, so we need to plan our stand. Shall we start with the equipment?"
+          },
+          {
+            "speaker": "Sam",
+            "text": "OK. How about bringing two large screens? We could show our new fitness app on them."
+          },
+          {
+            "speaker": "Lucy",
+            "text": "Good idea. And what about giving away free USB sticks?"
+          },
+          {
+            "speaker": "Sam",
+            "text": "I'm afraid that's quite expensive. Last year we gave away five hundred, and most visitors threw them away."
+          },
+          {
+            "speaker": "Lucy",
+            "text": "Fair point. Maybe we could give away pens and stickers instead. They're much cheaper."
+          },
+          {
+            "speaker": "Sam",
+            "text": "Yes, I agree. Now, who's going to work on the stand?"
+          },
+          {
+            "speaker": "Lucy",
+            "text": "I'd like three people there every day. Perhaps you could come on the first day? Visitors often ask technical questions."
+          },
+          {
+            "speaker": "Sam",
+            "text": "I'm afraid I can't. I've got a client meeting in Da Nang on the twelfth. But I can come on the second and third days."
+          },
+          {
+            "speaker": "Lucy",
+            "text": "That's fine. What about asking Mai to work on the first day? She knows the app really well."
+          },
+          {
+            "speaker": "Sam",
+            "text": "Great idea. Shall I send her an email this afternoon?"
+          },
+          {
+            "speaker": "Lucy",
+            "text": "Yes, please. And could you prepare a short demonstration of the app? About five minutes long."
+          },
+          {
+            "speaker": "Sam",
+            "text": "No problem. I'll have it ready by next Friday."
+          }
+        ],
+        "questions": [
+          {
+            "id": "L1",
+            "kind": "mcq",
+            "stem": "What are Lucy and Sam planning?",
+            "options": [
+              {
+                "id": "A",
+                "text": "A training day for new staff"
+              },
+              {
+                "id": "B",
+                "text": "Their company's stand at a technology fair"
+              },
+              {
+                "id": "C",
+                "text": "A client meeting in Da Nang"
+              },
+              {
+                "id": "D",
+                "text": "A new version of their fitness app"
+              }
+            ],
+            "answerKey": "B",
+            "explanation": "Lucy mở đầu: \"The Hanoi Technology Fair is on the twelfth of May, so we need to plan our stand.\" Cuộc họp ở Đà Nẵng là lý do Sam bận ngày đầu."
+          },
+          {
+            "id": "L2",
+            "kind": "mcq",
+            "stem": "Why does Sam disagree with giving away USB sticks?",
+            "options": [
+              {
+                "id": "A",
+                "text": "The fair does not allow free gifts."
+              },
+              {
+                "id": "B",
+                "text": "The company has no USB sticks left."
+              },
+              {
+                "id": "C",
+                "text": "They are expensive, and most visitors threw them away last year."
+              },
+              {
+                "id": "D",
+                "text": "Visitors prefer pens and stickers."
+              }
+            ],
+            "answerKey": "C",
+            "explanation": "Sam nói \"I'm afraid that's quite expensive. Last year we gave away five hundred, and most visitors threw them away.\" Bút và nhãn dán là gợi ý thay thế của Lucy vì rẻ hơn, không phải vì khách thích hơn."
+          },
+          {
+            "id": "L3",
+            "kind": "mcq",
+            "stem": "What does Lucy suggest giving away instead?",
+            "options": [
+              {
+                "id": "A",
+                "text": "Pens and stickers"
+              },
+              {
+                "id": "B",
+                "text": "Large screens"
+              },
+              {
+                "id": "C",
+                "text": "Free copies of the app"
+              },
+              {
+                "id": "D",
+                "text": "Printed brochures"
+              }
+            ],
+            "answerKey": "A",
+            "explanation": "Lucy: \"Maybe we could give away pens and stickers instead. They're much cheaper.\""
+          },
+          {
+            "id": "L4",
+            "kind": "mcq",
+            "stem": "Why can't Sam work on the stand on the first day?",
+            "options": [
+              {
+                "id": "A",
+                "text": "He is on holiday that week."
+              },
+              {
+                "id": "B",
+                "text": "He doesn't know the app well."
+              },
+              {
+                "id": "C",
+                "text": "He is preparing the demonstration."
+              },
+              {
+                "id": "D",
+                "text": "He has a client meeting in Da Nang."
+              }
+            ],
+            "answerKey": "D",
+            "explanation": "Sam: \"I'm afraid I can't. I've got a client meeting in Da Nang on the twelfth.\" Ngày 12 là ngày đầu hội chợ."
+          },
+          {
+            "id": "L5",
+            "kind": "mcq",
+            "stem": "What does Sam promise to have ready by next Friday?",
+            "options": [
+              {
+                "id": "A",
+                "text": "A list of visitors"
+              },
+              {
+                "id": "B",
+                "text": "Two large screens"
+              },
+              {
+                "id": "C",
+                "text": "A short demonstration of the app"
+              },
+              {
+                "id": "D",
+                "text": "Pens and stickers for the stand"
+              }
+            ],
+            "answerKey": "C",
+            "explanation": "Lucy nhờ \"could you prepare a short demonstration of the app?\" và Sam trả lời \"I'll have it ready by next Friday.\" Email cho Mai thì Sam gửi ngay chiều nay."
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "instructions": "Listen to the talk and answer the questions. Write NO MORE THAN THREE WORDS for each answer (Questions L6–L10).",
+        "context": "Omar, a helpdesk supervisor at Riverside College, talks to new members of his team on their first day.",
+        "speakers": [
+          {
+            "name": "Omar",
+            "voice": "male"
+          }
+        ],
+        "script": [
+          {
+            "speaker": "Omar",
+            "text": "Good morning, everyone, and welcome to the helpdesk team at Riverside College. I'm Omar, the helpdesk supervisor. Let me tell you about a normal week here."
+          },
+          {
+            "speaker": "Omar",
+            "text": "We open at eight o'clock, but you should arrive ten minutes early. Every morning, the first job is to read the overnight log. It shows any problems with the college systems since the evening before."
+          },
+          {
+            "speaker": "Omar",
+            "text": "We spend most of the day answering calls and messages from teachers and students. On a busy day, we get about two hundred calls. Students often forget their passwords, so password resets are our most common job."
+          },
+          {
+            "speaker": "Omar",
+            "text": "On Tuesdays and Thursdays, two of you work in the library, because students usually need help with printing there. Once a fortnight, we have a team meeting on Friday afternoon to talk about difficult problems. You hardly ever need to work late, but during exam weeks the helpdesk stays open until nine in the evening."
+          },
+          {
+            "speaker": "Omar",
+            "text": "Finally, one important rule: you must never ask a user for their password. If you need to log in to someone's account, ask me first. Right, any questions?"
+          }
+        ],
+        "questions": [
+          {
+            "id": "L6",
+            "kind": "short",
+            "stem": "What do the helpdesk staff read first every morning?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "the overnight log",
+              "overnight log",
+              "the overnight logs",
+              "overnight logs"
+            ],
+            "explanation": "\"Every morning, the first job is to read the overnight log.\""
+          },
+          {
+            "id": "L7",
+            "kind": "short",
+            "stem": "About how many calls does the helpdesk get on a busy day?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "two hundred",
+              "about two hundred",
+              "two hundred calls",
+              "200",
+              "about 200",
+              "200 calls"
+            ],
+            "explanation": "\"On a busy day, we get about two hundred calls.\""
+          },
+          {
+            "id": "L8",
+            "kind": "short",
+            "stem": "What is the helpdesk's most common job?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "password resets",
+              "password reset",
+              "resetting passwords",
+              "resetting password"
+            ],
+            "explanation": "\"Students often forget their passwords, so password resets are our most common job.\""
+          },
+          {
+            "id": "L9",
+            "kind": "short",
+            "stem": "Where do two of the new staff work on Tuesdays and Thursdays?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "in the library",
+              "the library",
+              "library",
+              "in library"
+            ],
+            "explanation": "\"On Tuesdays and Thursdays, two of you work in the library\", vì sinh viên thường cần giúp in ấn ở đó."
+          },
+          {
+            "id": "L10",
+            "kind": "short",
+            "stem": "How often does the team have a meeting?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "once a fortnight",
+              "every two weeks",
+              "fortnightly",
+              "every fortnight",
+              "every other week"
+            ],
+            "explanation": "\"Once a fortnight, we have a team meeting on Friday afternoon\". Fortnight = hai tuần."
+          }
+        ]
+      }
+    ]
+  },
+  "reading": {
+    "matching": {
+      "instructions": "Match the terms (1–5) with the correct definitions (A–F). There is one extra definition that you do not need (Questions 1–5).",
+      "definitions": [
+        {
+          "id": "A",
+          "text": "To keep a machine in good condition by checking and repairing it regularly."
+        },
+        {
+          "id": "B",
+          "text": "To make a new product available for sale for the first time."
+        },
+        {
+          "id": "C",
+          "text": "Someone whose job is to look after a computer database that has many users."
+        },
+        {
+          "id": "D",
+          "text": "A discussion in which people in different places talk to each other using video equipment."
+        },
+        {
+          "id": "E",
+          "text": "A document produced by a computer program that can show a new product or idea or display information."
+        },
+        {
+          "id": "F",
+          "text": "A company or person that provides a particular product."
+        }
+      ],
+      "items": [
+        {
+          "id": "R1",
+          "term": "Database administrator",
+          "answerKey": "C",
+          "explanation": "Database administrator (quản trị viên cơ sở dữ liệu) trông coi một cơ sở dữ liệu có nhiều người dùng."
+        },
+        {
+          "id": "R2",
+          "term": "Supplier",
+          "answerKey": "F",
+          "explanation": "Supplier (nhà cung cấp) là công ty hoặc người cung cấp một sản phẩm cụ thể."
+        },
+        {
+          "id": "R3",
+          "term": "Launch",
+          "answerKey": "B",
+          "explanation": "Launch (ra mắt) là đưa một sản phẩm mới ra bán lần đầu tiên. Định nghĩa E là của presentation (bài trình chiếu), không có trong danh sách thuật ngữ."
+        },
+        {
+          "id": "R4",
+          "term": "Videoconference",
+          "answerKey": "D",
+          "explanation": "Videoconference (hội nghị truyền hình) là cuộc thảo luận giữa những người ở các nơi khác nhau qua thiết bị video."
+        },
+        {
+          "id": "R5",
+          "term": "Maintain",
+          "answerKey": "A",
+          "explanation": "Maintain (bảo trì) là giữ máy móc ở tình trạng tốt bằng cách kiểm tra và sửa chữa thường xuyên."
+        }
+      ]
+    },
+    "grammar": [
+      {
+        "id": "R6",
+        "kind": "mcq",
+        "stem": "Our developers ______ their code on three different browsers.",
+        "options": [
+          {
+            "id": "A",
+            "text": "usually tests"
+          },
+          {
+            "id": "B",
+            "text": "test usually"
+          },
+          {
+            "id": "C",
+            "text": "usually testing"
+          },
+          {
+            "id": "D",
+            "text": "usually test"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Trạng từ tần suất đứng trước động từ chính: \"usually test\". Chủ ngữ số nhiều (Our developers) nên động từ không thêm -s. Trạng từ không đứng giữa động từ và tân ngữ (test usually their code)."
+      },
+      {
+        "id": "R7",
+        "kind": "mcq",
+        "stem": "'______ do you update the antivirus software?' 'Once a week.'",
+        "options": [
+          {
+            "id": "A",
+            "text": "How long"
+          },
+          {
+            "id": "B",
+            "text": "How often"
+          },
+          {
+            "id": "C",
+            "text": "How much"
+          },
+          {
+            "id": "D",
+            "text": "How many"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Câu trả lời \"Once a week\" chỉ tần suất nên câu hỏi dùng \"How often\". How long hỏi khoảng thời gian, How much / How many hỏi số lượng."
+      },
+      {
+        "id": "R8",
+        "kind": "mcq",
+        "stem": "'______?' 'At a software company in Da Nang.'",
+        "options": [
+          {
+            "id": "A",
+            "text": "Where your brother works"
+          },
+          {
+            "id": "B",
+            "text": "Where works your brother"
+          },
+          {
+            "id": "C",
+            "text": "Where does your brother work"
+          },
+          {
+            "id": "D",
+            "text": "Where does your brother works"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "Câu hỏi thì hiện tại đơn: từ để hỏi + does + chủ ngữ + động từ nguyên mẫu (work, không thêm -s)."
+      },
+      {
+        "id": "R9",
+        "kind": "mcq",
+        "stem": "Staff ______ wear a suit on Fridays, but they can wear one if they want to.",
+        "options": [
+          {
+            "id": "A",
+            "text": "don't have to"
+          },
+          {
+            "id": "B",
+            "text": "mustn't"
+          },
+          {
+            "id": "C",
+            "text": "have to"
+          },
+          {
+            "id": "D",
+            "text": "must"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "Vế sau \"they can wear one if they want to\" cho thấy không bắt buộc: \"don't have to\". \"mustn't\" là cấm, mâu thuẫn với việc được mặc nếu muốn; have to / must là bắt buộc."
+      },
+      {
+        "id": "R10",
+        "kind": "mcq",
+        "stem": "You ______ leave your company laptop in your car. Thieves often break into cars.",
+        "options": [
+          {
+            "id": "A",
+            "text": "need to"
+          },
+          {
+            "id": "B",
+            "text": "have"
+          },
+          {
+            "id": "C",
+            "text": "don't have to"
+          },
+          {
+            "id": "D",
+            "text": "mustn't"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Câu sau nêu nguy cơ bị trộm nên đây là điều cấm: \"mustn't\". \"have\" thiếu \"to\"; need to / don't have to không hợp nghĩa."
+      },
+      {
+        "id": "R11",
+        "kind": "mcq",
+        "stem": "'Shall we buy a new server this month?' '______. We don't have enough money until June.'",
+        "options": [
+          {
+            "id": "A",
+            "text": "Yes, let's"
+          },
+          {
+            "id": "B",
+            "text": "I'm afraid not"
+          },
+          {
+            "id": "C",
+            "text": "Sure, why not"
+          },
+          {
+            "id": "D",
+            "text": "I'm agree"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Lý do \"We don't have enough money\" cho thấy người nói từ chối lịch sự: \"I'm afraid not\". A, C là đồng ý, mâu thuẫn với lý do; \"I'm agree\" sai ngữ pháp (đúng là I agree)."
+      },
+      {
+        "id": "R12",
+        "kind": "mcq",
+        "stem": "How about ______ the printer next to the window? There's more space there.",
+        "options": [
+          {
+            "id": "A",
+            "text": "move"
+          },
+          {
+            "id": "B",
+            "text": "to move"
+          },
+          {
+            "id": "C",
+            "text": "moving"
+          },
+          {
+            "id": "D",
+            "text": "moved"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "Đưa ra gợi ý: \"How about / What about + V-ing\": \"How about moving…?\"."
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "R13",
+        "kind": "mcq",
+        "stem": "Please read the ______ before the meeting so that you know which subjects we will discuss.",
+        "options": [
+          {
+            "id": "A",
+            "text": "agenda"
+          },
+          {
+            "id": "B",
+            "text": "version"
+          },
+          {
+            "id": "C",
+            "text": "password"
+          },
+          {
+            "id": "D",
+            "text": "client"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "Agenda (chương trình họp) là danh sách các vấn đề sẽ thảo luận trong cuộc họp."
+      },
+      {
+        "id": "R14",
+        "kind": "mcq",
+        "stem": "Our ______ write and test new apps for mobile phones.",
+        "options": [
+          {
+            "id": "A",
+            "text": "chairpersons"
+          },
+          {
+            "id": "B",
+            "text": "clients"
+          },
+          {
+            "id": "C",
+            "text": "passwords"
+          },
+          {
+            "id": "D",
+            "text": "developers"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Developer (lập trình viên, nhà phát triển phần mềm) viết và thử nghiệm phần mềm mới. Chairperson là chủ toạ, client là khách hàng."
+      },
+      {
+        "id": "R15",
+        "kind": "mcq",
+        "stem": "The company has a large ______ in Vietnam, where it makes printers and scanners.",
+        "options": [
+          {
+            "id": "A",
+            "text": "service centre"
+          },
+          {
+            "id": "B",
+            "text": "production facility"
+          },
+          {
+            "id": "C",
+            "text": "operating system"
+          },
+          {
+            "id": "D",
+            "text": "head office"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Production facility (cơ sở sản xuất) là nơi làm ra hàng hoá với số lượng lớn. Service centre cung cấp dịch vụ, không sản xuất hàng hoá; head office là trụ sở chính."
+      },
+      {
+        "id": "R16",
+        "kind": "mcq",
+        "stem": "Your password must contain at least ten ______, including letters and numbers.",
+        "options": [
+          {
+            "id": "A",
+            "text": "versions"
+          },
+          {
+            "id": "B",
+            "text": "products"
+          },
+          {
+            "id": "C",
+            "text": "characters"
+          },
+          {
+            "id": "D",
+            "text": "colleagues"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "Character (ký tự) là một chữ cái, chữ số hay ký hiệu. Mật khẩu dài ít nhất mười ký tự."
+      },
+      {
+        "id": "R17",
+        "kind": "mcq",
+        "stem": "I'm sorry, but I can't ______ the meeting on Thursday because I'm visiting a client.",
+        "options": [
+          {
+            "id": "A",
+            "text": "install"
+          },
+          {
+            "id": "B",
+            "text": "attend"
+          },
+          {
+            "id": "C",
+            "text": "download"
+          },
+          {
+            "id": "D",
+            "text": "diagnose"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Attend a meeting (dự họp)."
+      },
+      {
+        "id": "R18",
+        "kind": "mcq",
+        "stem": "Please don't ______ large files from the internet during working hours. It slows down the network.",
+        "options": [
+          {
+            "id": "A",
+            "text": "download"
+          },
+          {
+            "id": "B",
+            "text": "diagnose"
+          },
+          {
+            "id": "C",
+            "text": "design"
+          },
+          {
+            "id": "D",
+            "text": "attend"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "Download (tải xuống) là chuyển thông tin, chương trình từ mạng về máy tính cá nhân."
+      },
+      {
+        "id": "R19",
+        "kind": "mcq",
+        "stem": "Our technicians ______ a security check on every new laptop before they give it to a user.",
+        "options": [
+          {
+            "id": "A",
+            "text": "attend"
+          },
+          {
+            "id": "B",
+            "text": "download"
+          },
+          {
+            "id": "C",
+            "text": "stream"
+          },
+          {
+            "id": "D",
+            "text": "carry out"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Carry out (tiến hành, thực hiện) một việc cần tổ chức, lên kế hoạch: carry out a security check (tiến hành kiểm tra bảo mật)."
+      },
+      {
+        "id": "R20",
+        "kind": "mcq",
+        "stem": "You mustn't print ______ documents, such as your holiday photos, on the office printer.",
+        "options": [
+          {
+            "id": "A",
+            "text": "alphanumeric"
+          },
+          {
+            "id": "B",
+            "text": "responsible"
+          },
+          {
+            "id": "C",
+            "text": "personal"
+          },
+          {
+            "id": "D",
+            "text": "successful"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "Personal (cá nhân) là thuộc về riêng một người, không phải của công ty; ảnh đi nghỉ là tài liệu cá nhân."
+      }
+    ],
+    "passageMcq": {
+      "instructions": "Read the passage and choose the best answer A, B, C or D (Questions 21–25).",
+      "passage": {
+        "title": "Kestrel Data: IT Support for Hotels",
+        "paragraphs": [
+          "Kestrel Data is an IT services company in Bristol. It has twenty-five employees and offers technical support to hotels in the south-west of England. Its clients range from small family hotels with ten rooms to large hotels with conference halls. Kestrel Data does not make any hardware or software itself. Instead, it chooses suitable computers, booking software and Wi-Fi equipment for each hotel and sets everything up.",
+          "Most hotels pay a monthly fee. For this fee, Kestrel Data watches its clients' networks from its office twenty-four hours a day. If a hotel's booking system stops working, a technician usually solves the problem online within thirty minutes. When a technician has to visit a hotel, the company promises to arrive within three hours.",
+          "The company's busiest months are July and August, when most hotels are full. During these two months, all staff work longer hours, and nobody takes a holiday. In winter, when hotels are quieter, the technicians install new equipment and train hotel staff. These training sessions take place once a month at Kestrel Data's office.",
+          "The company's director, Helen Price, says that hotel guests now expect fast Wi-Fi in every room. 'Ten years ago, guests usually asked about the restaurant when they arrived,' she says. 'Today, their first question is nearly always about the Wi-Fi password.' Next year, Kestrel Data plans to open a second office in Cardiff, because more and more hotels in Wales want its services."
+        ]
+      },
+      "questions": [
+        {
+          "id": "R21",
+          "kind": "mcq",
+          "stem": "What does Kestrel Data do?",
+          "options": [
+            {
+              "id": "A",
+              "text": "It makes computers for hotels."
+            },
+            {
+              "id": "B",
+              "text": "It offers IT support to hotels."
+            },
+            {
+              "id": "C",
+              "text": "It runs family hotels in Bristol."
+            },
+            {
+              "id": "D",
+              "text": "It writes booking software."
+            }
+          ],
+          "answerKey": "B",
+          "explanation": "Đoạn 1: công ty \"offers technical support to hotels\" và \"does not make any hardware or software itself\"."
+        },
+        {
+          "id": "R22",
+          "kind": "mcq",
+          "stem": "How quickly does a technician usually solve a booking system problem online?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Within thirty minutes"
+            },
+            {
+              "id": "B",
+              "text": "Within three hours"
+            },
+            {
+              "id": "C",
+              "text": "Within one day"
+            },
+            {
+              "id": "D",
+              "text": "Within ten minutes"
+            }
+          ],
+          "answerKey": "A",
+          "explanation": "Đoạn 2: \"a technician usually solves the problem online within thirty minutes\". Ba giờ là thời gian hứa có mặt khi phải đến khách sạn."
+        },
+        {
+          "id": "R23",
+          "kind": "mcq",
+          "stem": "What happens at Kestrel Data in July and August?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Technicians train hotel staff."
+            },
+            {
+              "id": "B",
+              "text": "Staff take their holidays."
+            },
+            {
+              "id": "C",
+              "text": "All staff work longer hours."
+            },
+            {
+              "id": "D",
+              "text": "Technicians install new equipment."
+            }
+          ],
+          "answerKey": "C",
+          "explanation": "Đoạn 3: \"During these two months, all staff work longer hours, and nobody takes a holiday.\" Đào tạo và lắp thiết bị mới diễn ra vào mùa đông."
+        },
+        {
+          "id": "R24",
+          "kind": "mcq",
+          "stem": "How often are the training sessions for hotel staff held?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Once a month"
+            },
+            {
+              "id": "B",
+              "text": "Once a week"
+            },
+            {
+              "id": "C",
+              "text": "Twice a month"
+            },
+            {
+              "id": "D",
+              "text": "Every summer"
+            }
+          ],
+          "answerKey": "A",
+          "explanation": "Đoạn 3: \"These training sessions take place once a month at Kestrel Data's office.\""
+        },
+        {
+          "id": "R25",
+          "kind": "mcq",
+          "stem": "According to Helen Price, what do hotel guests nearly always ask about first today?",
+          "options": [
+            {
+              "id": "A",
+              "text": "The restaurant"
+            },
+            {
+              "id": "B",
+              "text": "The conference halls"
+            },
+            {
+              "id": "C",
+              "text": "The booking system"
+            },
+            {
+              "id": "D",
+              "text": "The Wi-Fi password"
+            }
+          ],
+          "answerKey": "D",
+          "explanation": "Đoạn 4: \"Today, their first question is nearly always about the Wi-Fi password.\" Nhà hàng là câu hỏi của khách mười năm trước."
+        }
+      ]
+    },
+    "passageTrueFalse": {
+      "instructions": "Read the passage and write T (True) or F (False) (Questions 26–30).",
+      "passage": {
+        "title": "Working from Home: IT Rules at Fenwick Insurance",
+        "paragraphs": [
+          "Staff at Fenwick Insurance can work from home two days a week. Our customers trust us with their personal information, so please follow these IT rules every time you work at home.",
+          "You have to connect to the company network through the VPN before you open any work files. You mustn't save customer files on your own computer. Always keep them on the company server.",
+          "Your company laptop is for work only. Family members and friends mustn't use it, even for a few minutes. You can use your own printer at home, but you should shred printed customer documents when you no longer need them.",
+          "You don't have to start work at nine o'clock on your home-working days, but you must answer phone calls between ten and four. If you have a technical problem, call the helpdesk. It is open from eight in the morning to six in the evening, Monday to Friday. Outside these hours, send an email, and a technician will reply the next morning."
+        ]
+      },
+      "questions": [
+        {
+          "id": "R26",
+          "kind": "tf",
+          "statement": "Staff at Fenwick Insurance can work from home three days a week.",
+          "answerKey": "F",
+          "explanation": "Đoạn 1: nhân viên được làm việc tại nhà \"two days a week\" (hai ngày một tuần)."
+        },
+        {
+          "id": "R27",
+          "kind": "tf",
+          "statement": "Staff have to connect through the VPN before they open work files at home.",
+          "answerKey": "T",
+          "explanation": "Đoạn 2: \"You have to connect to the company network through the VPN before you open any work files.\""
+        },
+        {
+          "id": "R28",
+          "kind": "tf",
+          "statement": "Family members can use a company laptop for a few minutes.",
+          "answerKey": "F",
+          "explanation": "Đoạn 3: \"Family members and friends mustn't use it, even for a few minutes.\""
+        },
+        {
+          "id": "R29",
+          "kind": "tf",
+          "statement": "Staff mustn't use their own printers at home.",
+          "answerKey": "F",
+          "explanation": "Đoạn 3: \"You can use your own printer at home\"; chỉ cần huỷ giấy tờ khách hàng khi không cần nữa."
+        },
+        {
+          "id": "R30",
+          "kind": "tf",
+          "statement": "If a member of staff emails the helpdesk outside its opening hours, a technician replies the next morning.",
+          "answerKey": "T",
+          "explanation": "Đoạn 4: \"Outside these hours, send an email, and a technician will reply the next morning.\""
+        }
+      ]
+    }
+  },
+  "writing": {
+    "translation": {
+      "instructions": "Translate these sentences into Vietnamese (Questions 31–35).",
+      "items": [
+        {
+          "id": "W31",
+          "source": "The helpdesk supervisor normally checks the call log twice a day to see which problems are still open.",
+          "referenceTranslation": "Trưởng nhóm hỗ trợ kỹ thuật thường kiểm tra nhật ký cuộc gọi hai lần một ngày để xem những sự cố nào vẫn chưa được giải quyết."
+        },
+        {
+          "id": "W32",
+          "source": "Which operating system does your company install on new laptops?",
+          "referenceTranslation": "Công ty của bạn cài đặt hệ điều hành nào trên các máy tính xách tay mới?"
+        },
+        {
+          "id": "W33",
+          "source": "You don't have to switch off your computer at night, but you must log out before you leave the office.",
+          "referenceTranslation": "Bạn không cần phải tắt máy tính vào buổi tối, nhưng bạn phải đăng xuất trước khi rời văn phòng."
+        },
+        {
+          "id": "W34",
+          "source": "Our company supplies printers and scanners to schools, and it has a service centre in every large city.",
+          "referenceTranslation": "Công ty chúng tôi cung cấp máy in và máy quét cho các trường học, và công ty có một trung tâm dịch vụ ở mỗi thành phố lớn."
+        },
+        {
+          "id": "W35",
+          "source": "What about asking the systems analyst to join our meeting with the client next week?",
+          "referenceTranslation": "Hay là chúng ta mời chuyên viên phân tích hệ thống tham gia cuộc họp của chúng ta với khách hàng vào tuần tới?"
+        }
+      ]
+    },
+    "email": {
+      "id": "W-EMAIL",
+      "recipient": "Kate",
+      "task": "You are the manager of your university's computer lab. Kate is a new lab assistant. Write an email to Kate explaining how to close the computer lab at the end of the day, using the notes below. In your email you must use:\n- at least two adverbs of frequency or time expressions (always, never, every Monday);\n- at least two rule structures (must, mustn't, have to, should) or imperatives.\nFollow the standard layout for an email giving instructions: From / To / Date / Subject, a greeting, It should be quite easy to …, the steps with First / Then / Next / After that / Finally, a reminder (Don't forget to … when you've finished.), then Best wishes and your name, position and department.\nWrite 80–100 words (do not count the From, To, Date and Subject lines).",
+      "bullets": [
+        "check all students have logged out / you must always log out any open accounts",
+        "collect USB sticks left in computers / put them in the lost property box (checked every Monday)",
+        "switch off the computers and the projector",
+        "never switch off the server in the corner",
+        "close the windows / write any problems in the lab log",
+        "turn off the air conditioning",
+        "reminder: lock the door when you've finished"
+      ],
+      "wordRange": [
+        80,
+        100
+      ],
+      "targetGrammar": [
+        "Adverbs of frequency and time expressions (at least two): always, never, every Monday",
+        "Rules (at least two): must, mustn't, have to, should; imperatives (Check…, Never switch off…)",
+        "Present simple for regular routines"
+      ],
+      "modelAnswer": "From: Hoang Thu Ha\nTo: Kate\nDate: 3rd March\nSubject: Closing the computer lab\n\nHi Kate,\n\nIt should be quite easy to close the lab each evening.\nFirst, check that all students have logged out. You must always log out any open accounts.\nThen, put any USB sticks in the lost property box, which we check every Monday.\nNext, switch off the computers and the projector, but never switch off the server.\nAfter that, just close the windows and write any problems in the lab log.\nFinally, turn off the air conditioning.\nDon't forget to lock the door when you've finished.\n\nBest wishes,\nHoang Thu Ha\nLab Manager\nIT Services Department"
+    }
+  },
+  "speaking": {
+    "parts": [
+      {
+        "id": "S1",
+        "kind": "questions",
+        "instructions": "Answer the three questions. Speak for 30–45 seconds for each question.",
+        "questions": [
+          "How often do you check your email or messages, and when do you usually do it? Use adverbs of frequency and time expressions (always, usually, every morning, twice a day).",
+          "Imagine a support technician visits your class to talk about their job. Ask them three questions about their work. Use present simple questions (Do you…? How often do you…? What do you…?).",
+          "Your class wants to organise an end-of-term party. Make two suggestions about it. Use Shall we…?, How about / What about + -ing? or We could…."
+        ],
+        "secondsPerQuestion": 45
+      },
+      {
+        "id": "S2",
+        "kind": "explain",
+        "instructions": "Describe an IT company. Speak for 1–1.5 minutes.",
+        "prompt": "You work for an IT company (real or imagined). A group of students is visiting your company. Explain what your company does, who its clients are, what products or services it provides and how often it does important things. Use the present simple (We provide…, Our clients are…, It sells…) and adverbs of frequency or time expressions (usually, always, twice a year).",
+        "cues": [
+          "type of company: software developer / service provider / manufacturer",
+          "products or services",
+          "clients",
+          "where the company works and how many employees it has",
+          "how often it does important things (new versions, training, meetings)"
+        ],
+        "requiredGrammar": [
+          "Present simple for company activities: We provide…, It sells…, Our clients are…",
+          "Adverbs of frequency and time expressions: usually, always, often, twice a year, every month"
+        ],
+        "seconds": 90,
+        "sampleAnswer": "Welcome to Blue River Software. We are a software developer in Ho Chi Minh City, and we have about sixty employees. We make apps for restaurants and coffee shops. Our main product is an ordering app: customers scan a code on the table and order their food on their phone. Our clients are usually small restaurants, but we also work with two big coffee chains. We provide training for our clients' staff, and we always answer support calls within one hour. We release a new version of the app twice a year, normally in March and September. Every month, the developers meet the sales team to talk about what clients want. We hardly ever sell hardware, but we sometimes recommend suitable tablets to our clients."
+      },
+      {
+        "id": "S3",
+        "kind": "situation",
+        "instructions": "Deal with the situation. Speak for 1–1.5 minutes.",
+        "prompt": "You are a senior technician. A new colleague is going to start work in your company's server room tomorrow. Tell them the rules of the server room using the cues. Use must, mustn't, have to, don't have to, can't and should, and at least two imperatives (Keep…, Don't…).",
+        "cues": [
+          "sign in at the door every time you enter (must / have to)",
+          "no food or drink (mustn't / can't)",
+          "a uniform is not necessary (don't have to)",
+          "visitors only with the manager's permission (can't)",
+          "report any warning lights to the supervisor immediately (should)",
+          "keep the door closed / don't touch the cables without permission (imperatives)"
+        ],
+        "requiredGrammar": [
+          "Rules: must, mustn't, have to, don't have to, can't, should",
+          "Imperatives: Keep…, Don't…"
+        ],
+        "seconds": 90,
+        "sampleAnswer": "Welcome to the team. Before you start tomorrow, I want to tell you the rules of the server room. First, you must sign in at the door every time you enter, even if you only stay for two minutes. You mustn't bring any food or drink into the room, because a cup of coffee can destroy a server. You don't have to wear a uniform, but you should wear comfortable shoes. You can't bring visitors into the room without the manager's permission. If you see a warning light on any machine, you should report it to the supervisor immediately. And two more things: keep the door closed at all times, because the room needs to stay cool, and don't touch any cables without permission. If you have any questions, just ask me."
+      }
+    ]
+  }
+}
