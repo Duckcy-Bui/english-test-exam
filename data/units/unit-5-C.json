@@ -25,7 +25,8 @@
     "Listening A (so sánh ba bộ camera an ninh cho cửa hàng) theo bài Web hosting về chức năng so sánh; Listening B (tin nhắn thoại của chuyên viên tư vấn về Wi-Fi khách sạn) theo bài Making recommendations. Viết mới, không chép Audio script.",
     "Listening B: acceptedAnswers có biến thể cách viết số, mạo từ và cách viết fiber; một số biến thể không có nguyên văn trong lời thoại.",
     "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
-    "Bản r1 (theo báo cáo et-auditor audit/unit-5-C): R18 thay phương án nhiễu có từ gốc của thuật ngữ câu nối R5; R19 viết lại ngữ cảnh gói cước điện thoại, không nhắc các mức gói; R17 viết lại câu và đổi bộ phương án sang cùng nhóm từ mô tả hình ảnh. Giải mù lại: R19 viết lại lần hai theo nghĩa kế hoạch dự án, không nhắc dữ liệu, tháng hay gói cước."
+    "Bản r1 (theo báo cáo et-auditor audit/unit-5-C): R18 thay phương án nhiễu có từ gốc của thuật ngữ câu nối R5; R19 viết lại ngữ cảnh gói cước điện thoại, không nhắc các mức gói; R17 viết lại câu và đổi bộ phương án sang cùng nhóm từ mô tả hình ảnh. Giải mù lại: R19 viết lại lần hai theo nghĩa kế hoạch dự án, không nhắc dữ liệu, tháng hay gói cước.",
+    "Bản r1 (theo review chéo của et-author): S2 đổi từ so sánh shared/dedicated hosting (gần bài T/F đề A) sang so sánh ba máy in cho studio thiết kế; L9 thêm biến thể separate guest network, network for guests."
   ],
   "listening": {
     "parts": [
@@ -160,7 +161,7 @@
             "kind": "short",
             "stem": "What should the hotel have for its guests?",
             "maxWords": 3,
-            "acceptedAnswers": ["a separate network", "separate network", "a guest network", "guest network", "their own network"],
+            "acceptedAnswers": ["a separate network", "separate network", "a guest network", "guest network", "their own network", "separate guest network", "network for guests"],
             "explanation": "\"it's best to have a separate network for guests, so they can't see your office computers\"."
           },
           {
@@ -591,19 +592,20 @@
       {
         "id": "S2",
         "kind": "explain",
-        "instructions": "Compare the two options and give a recommendation. Speak for 1–1.5 minutes.",
-        "prompt": "A small travel agency wants a new website. Explain the difference between shared hosting and dedicated hosting to the owner, using the cues, and recommend one option. Use comparatives and superlatives, and at least one recommendation structure (I recommend…, I think you should…, it's best to…).",
+        "instructions": "Compare the products and give a recommendation. Speak for 1–1.5 minutes.",
+        "prompt": "A friend runs a small design studio and needs a new printer. The studio prints about 2,000 colour pages a month. Compare the three printers in the cues and recommend one. Use comparatives and superlatives, and at least one recommendation structure (I recommend…, I think you should…, it's best to…).",
         "cues": [
-          "Shared hosting: £5 a month / many websites on one server / can be slower when the server is busy",
-          "Dedicated hosting: £90 a month / one server only for your website / faster, more control, needs technical skills",
-          "The agency: three staff, no IT person, about 200 visitors a day, small budget"
+          "InkJet 50: £120 / colour / 15 pages a minute / 8p per page",
+          "LaserMono: £260 / black and white only / 30 pages a minute / 3p per page",
+          "ColourLaser 9: £420 / colour / 25 pages a minute / 5p per page",
+          "the studio: about 2,000 colour pages a month"
         ],
         "requiredGrammar": [
-          "Comparatives and superlatives: cheaper than, faster than, more control than, the most expensive",
+          "Comparatives and superlatives: cheaper than, faster than, the most expensive, the lowest",
           "Recommendations: I recommend + -ing / that you + verb; I think you should…; it's best to…"
         ],
         "seconds": 90,
-        "sampleAnswer": "There are two main ways to host your website. With shared hosting, your website is on a server with many other websites. It's much cheaper than dedicated hosting, only five pounds a month, but it can be slower when the server is busy. With dedicated hosting, you have a whole server just for your website. It's faster and gives you more control, but it's the most expensive option at ninety pounds a month, and you need technical skills to manage it. Your agency has only three staff, no IT person and about two hundred visitors a day, so you don't need a very powerful server. I recommend choosing shared hosting. I think you should check the website speed every few months, and if you get many more visitors, it's best to move to a bigger plan."
+        "sampleAnswer": "I've compared three printers for your studio. The InkJet 50 is the cheapest to buy at a hundred and twenty pounds, but it's also the slowest, and each page costs eight pence, which is more than the other two. The LaserMono is faster than the InkJet and its pages are the cheapest, only three pence each, but it prints in black and white only, so it's no good for design work. The ColourLaser 9 is the most expensive printer at four hundred and twenty pounds, but it prints in colour, it's almost as fast as the LaserMono, and each page costs five pence. You print about two thousand colour pages a month, so you'd save sixty pounds a month compared with the InkJet. I recommend buying the ColourLaser 9. I think it's best to order spare toner at the same time."
       },
       {
         "id": "S3",
