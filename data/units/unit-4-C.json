@@ -251,7 +251,7 @@
           {
             "id": "L6",
             "kind": "short",
-            "stem": "What time did Nora start the update?",
+            "stem": "What time did Nora start work on the update?",
             "maxWords": 3,
             "acceptedAnswers": [
               "ten o'clock",
@@ -1010,7 +1010,7 @@
         "pull the stuck paper out slowly with both hands",
         "check for small pieces of paper: look inside with a torch",
         "put the tray back / close the cover",
-        "plug the printer in / print a test page",
+        "plug the printer in / switch it on / print a test page",
         "reminder: wash your hands when you've finished"
       ],
       "wordRange": [
