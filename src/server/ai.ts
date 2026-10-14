@@ -1,4 +1,5 @@
 import { randomUUID } from "node:crypto";
+import { assertNoServerSecrets } from "./secrets";
 import { MAX_AUDIO_BYTES, type ExamAnswers } from "../types/app";
 import {
   SCORING,
@@ -566,7 +567,9 @@ async function runGrading<T>(
       }
       if (output === undefined) throw new UpstreamError();
       try {
-        return validate(JSON.parse(output));
+        const candidate: unknown = JSON.parse(output);
+        assertNoServerSecrets(candidate);
+        return validate(candidate);
       } catch {
         if (invalidAttempt === 1) throw new InvalidGrade();
       }

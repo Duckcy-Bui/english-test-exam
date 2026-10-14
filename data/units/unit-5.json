@@ -1,0 +1,665 @@
+{
+  "schemaVersion": 1,
+  "unit": 5,
+  "unitTitle": "Choice",
+  "testId": "A",
+  "functions": [
+    "Comparing products (Web hosting)",
+    "Discussing IT costs (IT costs)",
+    "Researching products (Product research)",
+    "Recommending products (Making recommendations)"
+  ],
+  "grammarFocus": [
+    "Comparatives and superlatives: -er than, more/less … than, fewer … than; as … as; the same (as); the -est, the most/least",
+    "Talking about money: cost, come to, be when the item is the subject; spend, pay when a person or company is the subject; saying prices and large numbers",
+    "Indirect questions to be polite: Could you tell me what…?, Do you know whether/if…? (statement word order after the question word)",
+    "Recommendations: I think (that) we should + verb; it's a good idea / it's best + to-infinitive; I recommend + -ing / that we + verb / noun phrase"
+  ],
+  "sourceNotes": [
+    "Reading dựa trên đề mẫu Unit 5 Test A (ảnh SVRvWcQ1.jpeg, sUBtv-Wl.jpeg). Câu dịch W31–W35 lấy từ ảnh nVkk2zJS.jpeg. Đề mẫu không có ảnh đề email nên đề email viết mới.",
+    "R1–R5: giữ nguyên 5 thuật ngữ của đề mẫu. Một định nghĩa trong bảng của đề mẫu trùng nội dung bài đọc R26–R30 nên được thay bằng một định nghĩa khác lấy từ Workbook 5D. Thuật ngữ freemium pricing không có trong Workbook; nguồn là giáo trình trang sách 40 (trang PDF 42).",
+    "R6: đề mẫu không cho giá nên cả hai phương án so sánh đều đúng ngữ pháp; thêm giá vào đề và đổi sang so sánh hai máy tính xách tay để không trùng tình huống câu dịch W32.",
+    "R7, R8, R11, R12: đổi tình huống để không trùng bài đọc R21–R25 (CAD), không dùng từ khoá định nghĩa của câu nối và không chép ví dụ trong Language box.",
+    "R9: đề mẫu chỉ kiểm từ để hỏi; viết lại để kiểm trật tự từ của câu hỏi gián tiếp (ngữ pháp bài Product research).",
+    "R14: câu đề mẫu nêu nội dung định nghĩa câu nối 3; thay bằng câu từ vựng khác của Workbook 5C.",
+    "R15: đổi sang cụm động từ khác của Workbook 5C vì tình huống dùng thử phần mềm đã có ở bài đọc R21–R25 và Listening A.",
+    "R16: câu đề mẫu trùng tình huống bài đọc R26–R30 và câu dịch W35; thay bằng từ vựng khác của Workbook 5D.",
+    "R17: đáp án của câu đề mẫu là từ khoá trong định nghĩa câu nối 1, và một phương án nhiễu cũng gần đúng; thay bằng từ vựng khác của Workbook 5D.",
+    "R18: đổi một phương án nhiễu trùng đáp án câu khác.",
+    "Thứ tự phương án R6–R25 được xếp lại so với đề mẫu.",
+    "Bài đọc R21–R25 (BlueLine Design): giữ bối cảnh so sánh hai gói CAD; bỏ thuật ngữ câu nối 3, 4 cùng các câu diễn đạt lại định nghĩa của chúng và chi tiết gần định nghĩa của một câu nối khác; đổi gói thứ nhất thành phần mềm nguồn mở; viết lại câu 21–25.",
+    "Bài đọc R26–R30 (website cho cửa hàng): đổi \"repair shop\" thành \"bike shop\" và bỏ \"guarantee\" vì là từ khoá định nghĩa câu nối 1; sắp lại trình tự để câu 30 được văn bản nói rõ.",
+    "Listening và Speaking viết mới. Listening A lấy cảm hứng từ bài Product research (track 26), Listening B từ bài Making recommendations và Business matters (track 28–29); không chép Audio script.",
+    "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại, xử lý giống Unit 6."
+  ],
+  "listening": {
+    "parts": [
+      {
+        "id": "A",
+        "instructions": "Listen to the phone call and choose the best answer A, B, C or D (Questions L1–L5).",
+        "context": "Grace, an office manager, phones Sam, a salesperson at a software company, to ask about project management software.",
+        "speakers": [
+          { "name": "Sam", "voice": "male" },
+          { "name": "Grace", "voice": "female" }
+        ],
+        "script": [
+          { "speaker": "Sam", "text": "Good morning, TaskPoint sales. Sam speaking." },
+          { "speaker": "Grace", "text": "Hello, my name's Grace Evans. I'm the office manager at a small accounting firm. We're looking for project management software for our team, and I have a few questions." },
+          { "speaker": "Sam", "text": "Of course. What would you like to know?" },
+          { "speaker": "Grace", "text": "First, could you tell me how much TaskPoint costs?" },
+          { "speaker": "Sam", "text": "Sure. We use tiered pricing. The Team level costs eight dollars per user each month, and the Business level is fifteen dollars per user." },
+          { "speaker": "Grace", "text": "I see. Do you know what the difference between the two levels is?" },
+          { "speaker": "Sam", "text": "Both levels have the same planning tools. But with the Business level, you also get telephone support and more storage. With the Team level, support is by email only." },
+          { "speaker": "Grace", "text": "OK. Can you tell me whether it works on mobile phones? Our accountants often visit clients." },
+          { "speaker": "Sam", "text": "Yes, both levels have a mobile app." },
+          { "speaker": "Grace", "text": "Great. And is there a trial period?" },
+          { "speaker": "Sam", "text": "Yes, you can try it out free for thirty days. You don't need to give any card details." },
+          { "speaker": "Grace", "text": "That sounds good. There are twelve of us, so the Business level would come to a hundred and eighty dollars a month. That's more than we want to spend at the moment." },
+          { "speaker": "Sam", "text": "Then I'd recommend starting with the Team level. You can upgrade at any time." },
+          { "speaker": "Grace", "text": "Thanks. I think it's best to try the Team level first. I'll sign up for the trial today." }
+        ],
+        "questions": [
+          {
+            "id": "L1",
+            "kind": "mcq",
+            "stem": "Why is Grace phoning TaskPoint?",
+            "options": [
+              { "id": "A", "text": "To complain about a problem" },
+              { "id": "B", "text": "To find out about their software" },
+              { "id": "C", "text": "To sell them accounting services" },
+              { "id": "D", "text": "To ask for technical support" }
+            ],
+            "answerKey": "B",
+            "explanation": "Grace nói công ty đang tìm phần mềm quản lý dự án và \"I have a few questions\", tức gọi để tìm hiểu sản phẩm."
+          },
+          {
+            "id": "L2",
+            "kind": "mcq",
+            "stem": "How much does the Business level cost?",
+            "options": [
+              { "id": "A", "text": "$8 per user each month" },
+              { "id": "B", "text": "$12 per user each month" },
+              { "id": "C", "text": "$15 per user each month" },
+              { "id": "D", "text": "$180 per user each month" }
+            ],
+            "answerKey": "C",
+            "explanation": "Sam nói \"the Business level is fifteen dollars per user\". 8 đô la là mức Team; 180 đô la là tổng một tháng cho 12 người, không phải giá mỗi người."
+          },
+          {
+            "id": "L3",
+            "kind": "mcq",
+            "stem": "What do Business level users get that Team level users do not?",
+            "options": [
+              { "id": "A", "text": "A mobile app" },
+              { "id": "B", "text": "Planning tools" },
+              { "id": "C", "text": "Telephone support" },
+              { "id": "D", "text": "A free trial" }
+            ],
+            "answerKey": "C",
+            "explanation": "Mức Business có thêm \"telephone support and more storage\". Cả hai mức đều có công cụ lập kế hoạch và ứng dụng di động."
+          },
+          {
+            "id": "L4",
+            "kind": "mcq",
+            "stem": "How long is the trial period?",
+            "options": [
+              { "id": "A", "text": "Thirty days" },
+              { "id": "B", "text": "Twelve days" },
+              { "id": "C", "text": "Fifteen days" },
+              { "id": "D", "text": "Eight days" }
+            ],
+            "answerKey": "A",
+            "explanation": "Sam nói \"you can try it out free for thirty days\". Các số 12, 15, 8 là số người và giá."
+          },
+          {
+            "id": "L5",
+            "kind": "mcq",
+            "stem": "What does Grace decide to do?",
+            "options": [
+              { "id": "A", "text": "Buy the Business level today" },
+              { "id": "B", "text": "Try the Team level first" },
+              { "id": "C", "text": "Phone again next month" },
+              { "id": "D", "text": "Buy twelve mobile phones" }
+            ],
+            "answerKey": "B",
+            "explanation": "Grace nói \"I think it's best to try the Team level first\" vì mức Business tốn 180 đô la một tháng, nhiều hơn số tiền công ty muốn chi."
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "instructions": "Listen to the presentation and answer the questions. Write NO MORE THAN THREE WORDS for each answer (Questions L6–L10).",
+        "context": "An IT consultant gives a short presentation to a travel agency about new laptops for its sales team.",
+        "speakers": [
+          { "name": "Olivia", "voice": "female" }
+        ],
+        "script": [
+          { "speaker": "Olivia", "text": "Good afternoon, everyone. Today I'm going to give you my recommendations for new laptops for your sales team. I looked at three models: the Vega, the Zenith and the Arlo." },
+          { "speaker": "Olivia", "text": "Let's start with the Vega. It's the cheapest of the three at five hundred and eighty dollars, but it is also the heaviest, so it isn't ideal for people who travel a lot. The Zenith is the lightest laptop, and its battery lasts fourteen hours, which is longer than the other two. However, it costs twelve hundred and fifty dollars, and that's too expensive for your budget." },
+          { "speaker": "Olivia", "text": "In my opinion, the Arlo is the best choice. It's almost as light as the Zenith, its battery lasts eleven hours, and it costs seven hundred and ninety dollars." },
+          { "speaker": "Olivia", "text": "I also recommend buying a spare charger for each laptop, because your staff often work in hotels and airports. Finally, I think it's best to order the laptops this month, because the supplier is going to increase its prices in June. Thank you. Are there any questions?" }
+        ],
+        "questions": [
+          {
+            "id": "L6",
+            "kind": "short",
+            "stem": "How many laptop models did the consultant compare?",
+            "maxWords": 3,
+            "acceptedAnswers": ["three", "three models", "3", "3 models"],
+            "explanation": "Olivia nói \"I looked at three models: the Vega, the Zenith and the Arlo\"."
+          },
+          {
+            "id": "L7",
+            "kind": "short",
+            "stem": "What is the problem with the cheapest laptop? It is the ______.",
+            "maxWords": 3,
+            "acceptedAnswers": ["heaviest", "the heaviest"],
+            "explanation": "Máy Vega rẻ nhất nhưng \"it is also the heaviest\" (nặng nhất), nên không hợp với người hay đi lại."
+          },
+          {
+            "id": "L8",
+            "kind": "short",
+            "stem": "How long does the Zenith's battery last?",
+            "maxWords": 3,
+            "acceptedAnswers": ["fourteen hours", "14 hours", "fourteen", "14"],
+            "explanation": "\"its battery lasts fourteen hours, which is longer than the other two\". Pin máy Arlo dùng được 11 giờ."
+          },
+          {
+            "id": "L9",
+            "kind": "short",
+            "stem": "What does the consultant recommend buying for each laptop?",
+            "maxWords": 3,
+            "acceptedAnswers": ["a spare charger", "spare charger", "spare chargers"],
+            "explanation": "\"I also recommend buying a spare charger for each laptop\" vì nhân viên hay làm việc ở khách sạn và sân bay."
+          },
+          {
+            "id": "L10",
+            "kind": "short",
+            "stem": "In which month will the supplier's prices go up?",
+            "maxWords": 3,
+            "acceptedAnswers": ["june", "in june"],
+            "explanation": "\"the supplier is going to increase its prices in June\", nên Olivia khuyên đặt hàng ngay trong tháng này."
+          }
+        ]
+      }
+    ]
+  },
+  "reading": {
+    "matching": {
+      "instructions": "Match the terms (1–5) with the correct definitions (A–F). There is one extra definition that you do not need (Questions 1–5).",
+      "definitions": [
+        { "id": "A", "text": "The ability of different files, programs or devices to work together." },
+        { "id": "B", "text": "The total of the purchase price and later costs of using an item." },
+        { "id": "C", "text": "A building used to house computer systems and their storage." },
+        { "id": "D", "text": "A promise to repair a product beyond the standard guarantee." },
+        { "id": "E", "text": "A model with a free basic version and a paid version with more features." },
+        { "id": "F", "text": "A device used to take information from a memory card." }
+      ],
+      "items": [
+        {
+          "id": "R1",
+          "term": "Extended warranty",
+          "answerKey": "D",
+          "explanation": "Extended warranty (bảo hành mở rộng) là cam kết sửa chữa sản phẩm trong thời gian dài hơn bảo hành tiêu chuẩn."
+        },
+        {
+          "id": "R2",
+          "term": "Card reader",
+          "answerKey": "F",
+          "explanation": "Card reader (đầu đọc thẻ) là thiết bị lấy dữ liệu từ thẻ nhớ."
+        },
+        {
+          "id": "R3",
+          "term": "Total cost of ownership (TCO)",
+          "answerKey": "B",
+          "explanation": "Total cost of ownership (tổng chi phí sở hữu) gồm giá mua cộng các chi phí phát sinh sau đó khi sử dụng."
+        },
+        {
+          "id": "R4",
+          "term": "Freemium pricing",
+          "answerKey": "E",
+          "explanation": "Freemium pricing là mô hình có bản cơ bản miễn phí và bản trả phí có thêm tính năng."
+        },
+        {
+          "id": "R5",
+          "term": "Compatibility",
+          "answerKey": "A",
+          "explanation": "Compatibility (tính tương thích) là khả năng các tệp, chương trình hoặc thiết bị khác nhau dùng được với nhau. Định nghĩa C là của data centre (trung tâm dữ liệu), không có trong danh sách thuật ngữ."
+        }
+      ]
+    },
+    "grammar": [
+      {
+        "id": "R6",
+        "kind": "mcq",
+        "stem": "This laptop ($650) is ______ expensive than that one ($900).",
+        "options": [
+          { "id": "A", "text": "more" },
+          { "id": "B", "text": "fewer" },
+          { "id": "C", "text": "less" },
+          { "id": "D", "text": "the least" }
+        ],
+        "answerKey": "C",
+        "explanation": "650 đô la rẻ hơn 900 đô la, nên dùng so sánh kém \"less expensive than\". \"fewer\" dùng với danh từ đếm được; \"the least\" là so sánh nhất, không đi với \"than\"."
+      },
+      {
+        "id": "R7",
+        "kind": "mcq",
+        "stem": "The old printer is not as ______ as the new one.",
+        "options": [
+          { "id": "A", "text": "speed" },
+          { "id": "B", "text": "faster" },
+          { "id": "C", "text": "fastest" },
+          { "id": "D", "text": "fast" }
+        ],
+        "answerKey": "D",
+        "explanation": "Cấu trúc \"(not) as + tính từ nguyên dạng + as\": \"not as fast as\"."
+      },
+      {
+        "id": "R8",
+        "kind": "mcq",
+        "stem": "Which tablet has ______ storage of the three?",
+        "options": [
+          { "id": "A", "text": "the most" },
+          { "id": "B", "text": "more" },
+          { "id": "C", "text": "as many" },
+          { "id": "D", "text": "the same" }
+        ],
+        "answerKey": "A",
+        "explanation": "So sánh từ ba vật trở lên (of the three) dùng so sánh nhất: \"the most + danh từ\"."
+      },
+      {
+        "id": "R9",
+        "kind": "mcq",
+        "stem": "Could you tell me how much ______?",
+        "options": [
+          { "id": "A", "text": "does the Premium plan cost" },
+          { "id": "B", "text": "the Premium plan costs" },
+          { "id": "C", "text": "costs the Premium plan" },
+          { "id": "D", "text": "is the Premium plan cost" }
+        ],
+        "answerKey": "B",
+        "explanation": "Câu hỏi gián tiếp (Could you tell me…?) dùng trật tự câu kể sau từ để hỏi: how much + chủ ngữ + động từ, không dùng trợ động từ \"does\"."
+      },
+      {
+        "id": "R10",
+        "kind": "mcq",
+        "stem": "I recommend ______ we choose the low-cost option for now.",
+        "options": [
+          { "id": "A", "text": "to" },
+          { "id": "B", "text": "that" },
+          { "id": "C", "text": "for" },
+          { "id": "D", "text": "about" }
+        ],
+        "answerKey": "B",
+        "explanation": "Khuyến nghị: \"I recommend that we + động từ nguyên mẫu\". Không dùng \"recommend to\" trong cấu trúc này."
+      },
+      {
+        "id": "R11",
+        "kind": "mcq",
+        "stem": "How much did you spend ______ the new headset?",
+        "options": [
+          { "id": "A", "text": "at" },
+          { "id": "B", "text": "from" },
+          { "id": "C", "text": "to" },
+          { "id": "D", "text": "on" }
+        ],
+        "answerKey": "D",
+        "explanation": "Nói về tiền: \"spend (money) on + món đồ\"."
+      },
+      {
+        "id": "R12",
+        "kind": "mcq",
+        "stem": "I think it is best ______ read the user reviews before buying.",
+        "options": [
+          { "id": "A", "text": "to" },
+          { "id": "B", "text": "for" },
+          { "id": "C", "text": "than" },
+          { "id": "D", "text": "with" }
+        ],
+        "answerKey": "A",
+        "explanation": "Khuyến nghị: \"it's best + to-infinitive\": \"it is best to read…\"."
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "R13",
+        "kind": "mcq",
+        "stem": "A laptop bag is a useful IT ______ when you travel.",
+        "options": [
+          { "id": "A", "text": "software" },
+          { "id": "B", "text": "server" },
+          { "id": "C", "text": "accessory" },
+          { "id": "D", "text": "licence" }
+        ],
+        "answerKey": "C",
+        "explanation": "Accessory (phụ kiện) là đồ dùng kèm giúp thiết bị tiện hơn, như túi đựng laptop."
+      },
+      {
+        "id": "R14",
+        "kind": "mcq",
+        "stem": "With ______ pricing, you pay more for a more complicated version of a program and less for a simpler version.",
+        "options": [
+          { "id": "A", "text": "tiered" },
+          { "id": "B", "text": "traditional" },
+          { "id": "C", "text": "unlimited" },
+          { "id": "D", "text": "shared" }
+        ],
+        "answerKey": "A",
+        "explanation": "Tiered pricing (định giá theo bậc) chia phần mềm thành nhiều mức; mức phức tạp hơn đắt hơn."
+      },
+      {
+        "id": "R15",
+        "kind": "mcq",
+        "stem": "The new version of the app will ______ next month, so we can download it then.",
+        "options": [
+          { "id": "A", "text": "turn off" },
+          { "id": "B", "text": "log out" },
+          { "id": "C", "text": "try out" },
+          { "id": "D", "text": "come out" }
+        ],
+        "answerKey": "D",
+        "explanation": "Come out (ra mắt) là khi chương trình được phát hành cho công chúng. \"try out\" cần tân ngữ và nghĩa là dùng thử."
+      },
+      {
+        "id": "R16",
+        "kind": "mcq",
+        "stem": "Every computer that connects to the internet needs a unique ______ address.",
+        "options": [
+          { "id": "A", "text": "USB" },
+          { "id": "B", "text": "IP" },
+          { "id": "C", "text": "CAD" },
+          { "id": "D", "text": "PDF" }
+        ],
+        "answerKey": "B",
+        "explanation": "IP address (địa chỉ IP) là số dùng để nhận diện máy tính khi kết nối Internet."
+      },
+      {
+        "id": "R17",
+        "kind": "mcq",
+        "stem": "The training centre charges a registration ______ of $50 before the course starts.",
+        "options": [
+          { "id": "A", "text": "licence" },
+          { "id": "B", "text": "tier" },
+          { "id": "C", "text": "fee" },
+          { "id": "D", "text": "forum" }
+        ],
+        "answerKey": "C",
+        "explanation": "Fee (phí, lệ phí) là khoản tiền phải trả để làm một việc, ví dụ phí đăng ký."
+      },
+      {
+        "id": "R18",
+        "kind": "mcq",
+        "stem": "Many CAD packages can produce three-dimensional, or ______, models.",
+        "options": [
+          { "id": "A", "text": "2-D" },
+          { "id": "B", "text": "3-D" },
+          { "id": "C", "text": "CPU" },
+          { "id": "D", "text": "USB" }
+        ],
+        "answerKey": "B",
+        "explanation": "3-D (ba chiều) là viết tắt của three-dimensional. 2-D là hai chiều."
+      },
+      {
+        "id": "R19",
+        "kind": "mcq",
+        "stem": "The server has very high ______ because it is working almost all the time.",
+        "options": [
+          { "id": "A", "text": "fee" },
+          { "id": "B", "text": "licence" },
+          { "id": "C", "text": "accessory" },
+          { "id": "D", "text": "uptime" }
+        ],
+        "answerKey": "D",
+        "explanation": "Uptime (thời gian hoạt động) là khoảng thời gian máy tính chạy bình thường và dùng được."
+      },
+      {
+        "id": "R20",
+        "kind": "mcq",
+        "stem": "A user who pays every month usually has a ______ plan.",
+        "options": [
+          { "id": "A", "text": "traditional" },
+          { "id": "B", "text": "one-off" },
+          { "id": "C", "text": "subscription" },
+          { "id": "D", "text": "trial" }
+        ],
+        "answerKey": "C",
+        "explanation": "Subscription plan (gói thuê bao) là gói trả phí định kỳ, thường hằng tháng. One-off là trả một lần."
+      }
+    ],
+    "passageMcq": {
+      "instructions": "Read the passage and choose the best answer A, B, C or D (Questions 21–25).",
+      "passage": {
+        "title": "Choosing CAD Software at BlueLine Design",
+        "paragraphs": [
+          "BlueLine Design is a small engineering company with three designers. The company needs computer-aided design, or CAD, software to prepare technical drawings for its clients. At the moment, the designers draw most plans by hand, which takes a long time. Its manager, Nina, has asked the team to compare two packages before buying anything.",
+          "The first package, DrawLite, is open source software, so it costs nothing. It is very good for simple 2-D drawings, but it has only a few modelling tools, and it becomes slow when designers work on very large projects. There is no telephone support, so users ask questions on an online forum instead. Experienced users there usually reply within a day.",
+          "The second package, CADWorks Pro, costs $35 per user each month. It includes advanced modelling tools, faster performance with large projects, technical support by telephone and online training. For some clients, these features will be important. However, three monthly subscriptions come to $105 a month, and that is a lot of money for a company of BlueLine's size.",
+          "Nina asked the designers what kind of work they usually do. Most of their projects are simple 2-D plans for local builders, and only one client has asked for detailed models in the last year. Because of this, she recommends trying DrawLite for the next two months. If they start working with a manufacturer that needs detailed models, they can consider CADWorks Pro later. The designers agree to review the decision after the trial."
+        ]
+      },
+      "questions": [
+        {
+          "id": "R21",
+          "kind": "mcq",
+          "stem": "Why does BlueLine need CAD software?",
+          "options": [
+            { "id": "A", "text": "To hold online meetings" },
+            { "id": "B", "text": "To prepare technical drawings" },
+            { "id": "C", "text": "To print marketing leaflets" },
+            { "id": "D", "text": "To build its own website" }
+          ],
+          "answerKey": "B",
+          "explanation": "Đoạn 1: công ty cần phần mềm CAD \"to prepare technical drawings for its clients\"."
+        },
+        {
+          "id": "R22",
+          "kind": "mcq",
+          "stem": "What is one advantage of DrawLite?",
+          "options": [
+            { "id": "A", "text": "It costs nothing." },
+            { "id": "B", "text": "It has telephone support." },
+            { "id": "C", "text": "It includes online training." },
+            { "id": "D", "text": "It has advanced modelling tools." }
+          ],
+          "answerKey": "A",
+          "explanation": "Đoạn 2: DrawLite là phần mềm nguồn mở \"so it costs nothing\". Hỗ trợ qua điện thoại, đào tạo trực tuyến và công cụ nâng cao là của CADWorks Pro."
+        },
+        {
+          "id": "R23",
+          "kind": "mcq",
+          "stem": "What is one disadvantage of DrawLite?",
+          "options": [
+            { "id": "A", "text": "It cannot make any drawings." },
+            { "id": "B", "text": "It costs $35 per month." },
+            { "id": "C", "text": "It needs three separate servers." },
+            { "id": "D", "text": "It is slow with very large projects." }
+          ],
+          "answerKey": "D",
+          "explanation": "Đoạn 2: DrawLite \"becomes slow when designers work on very large projects\"."
+        },
+        {
+          "id": "R24",
+          "kind": "mcq",
+          "stem": "How much would CADWorks Pro cost BlueLine each month?",
+          "options": [
+            { "id": "A", "text": "$35" },
+            { "id": "B", "text": "$70" },
+            { "id": "C", "text": "$105" },
+            { "id": "D", "text": "$135" }
+          ],
+          "answerKey": "C",
+          "explanation": "Đoạn 3: \"three monthly subscriptions come to $105 a month\" (35 đô la × 3 người)."
+        },
+        {
+          "id": "R25",
+          "kind": "mcq",
+          "stem": "Why does Nina recommend DrawLite for now?",
+          "options": [
+            { "id": "A", "text": "Most projects are simple 2-D plans." },
+            { "id": "B", "text": "The designers prefer online forums." },
+            { "id": "C", "text": "CADWorks Pro has no training." },
+            { "id": "D", "text": "A manufacturer asked for DrawLite." }
+          ],
+          "answerKey": "A",
+          "explanation": "Đoạn 4: \"Most of their projects are simple 2-D plans\" và chỉ một khách hàng cần mô hình chi tiết, nên Nina đề nghị dùng thử DrawLite trước."
+        }
+      ]
+    },
+    "passageTrueFalse": {
+      "instructions": "Read the passage and write T (True) or F (False) (Questions 26–30).",
+      "passage": {
+        "title": "A Website for a Bike Shop",
+        "paragraphs": [
+          "Kim is building a small website for a local bike shop. She wants customers to find the shop's contact details and read short descriptions of its services. The website will not receive thousands of visitors each day. Before she makes a recommendation, Kim compares shared hosting and dedicated hosting.",
+          "With shared hosting, the bike shop's website will be stored on a server with several other websites. This is usually a low-cost solution, although pages may load more slowly when the server is busy. With dedicated hosting, one customer has a whole server for its website. This can give faster performance and more control, but the monthly fee is normally higher.",
+          "The shop has a small budget. First, Kim checks the support service and the expected uptime of three hosting companies. After that, she recommends a shared hosting plan with enough disk space and monthly bandwidth for a simple site. She tells the owner that a more expensive plan would be useful only if the website became much busier."
+        ]
+      },
+      "questions": [
+        {
+          "id": "R26",
+          "kind": "tf",
+          "statement": "Kim is developing a website for a bike shop.",
+          "answerKey": "T",
+          "explanation": "Đoạn 1: \"Kim is building a small website for a local bike shop.\""
+        },
+        {
+          "id": "R27",
+          "kind": "tf",
+          "statement": "The shop expects thousands of visitors every day.",
+          "answerKey": "F",
+          "explanation": "Đoạn 1: \"The website will not receive thousands of visitors each day.\""
+        },
+        {
+          "id": "R28",
+          "kind": "tf",
+          "statement": "With shared hosting, the shop's website is the only site on its server.",
+          "answerKey": "F",
+          "explanation": "Đoạn 2: với shared hosting, trang web được lưu \"on a server with several other websites\"."
+        },
+        {
+          "id": "R29",
+          "kind": "tf",
+          "statement": "Dedicated hosting normally has a higher monthly fee.",
+          "answerKey": "T",
+          "explanation": "Đoạn 2: với dedicated hosting \"the monthly fee is normally higher\"."
+        },
+        {
+          "id": "R30",
+          "kind": "tf",
+          "statement": "Kim checks the support and uptime before she recommends a plan.",
+          "answerKey": "T",
+          "explanation": "Đoạn 3: \"First, Kim checks the support service and the expected uptime… After that, she recommends a shared hosting plan\"."
+        }
+      ]
+    }
+  },
+  "writing": {
+    "translation": {
+      "instructions": "Translate these sentences into Vietnamese (Questions 31–35).",
+      "items": [
+        {
+          "id": "W31",
+          "source": "A card reader and a spare battery can increase the total cost of ownership of a digital camera.",
+          "referenceTranslation": "Đầu đọc thẻ và pin dự phòng có thể làm tăng tổng chi phí sở hữu của một chiếc máy ảnh kỹ thuật số."
+        },
+        {
+          "id": "W32",
+          "source": "The Basic hosting plan is cheaper than the Premier plan, but it offers less bandwidth.",
+          "referenceTranslation": "Gói lưu trữ web Basic rẻ hơn gói Premier, nhưng cung cấp ít băng thông hơn."
+        },
+        {
+          "id": "W33",
+          "source": "Could you tell me whether this CAD package is compatible with our files?",
+          "referenceTranslation": "Bạn có thể cho tôi biết gói phần mềm CAD này có tương thích với các tệp của chúng tôi không?"
+        },
+        {
+          "id": "W34",
+          "source": "With a freemium pricing model, users can try a basic version before paying for extra features.",
+          "referenceTranslation": "Với mô hình định giá freemium, người dùng có thể dùng thử phiên bản cơ bản trước khi trả tiền cho các tính năng bổ sung."
+        },
+        {
+          "id": "W35",
+          "source": "I recommend choosing shared hosting because the company has a small website and a limited budget.",
+          "referenceTranslation": "Tôi đề xuất chọn dịch vụ lưu trữ web dùng chung (shared hosting) vì công ty có trang web nhỏ và ngân sách hạn chế."
+        }
+      ]
+    },
+    "email": {
+      "id": "W-EMAIL",
+      "recipient": "Laura",
+      "task": "You are an IT officer. Your office manager, Laura, has asked you to compare three online backup services for the company's 20 staff and recommend one. Write an email to Laura using the notes below. In your email you must use:\n- at least two comparatives or superlatives (cheaper than, more … than, the most, as … as);\n- at least one recommendation (I recommend…, I think it's best to…);\n- at least one indirect question (Could you let me know whether…?);\n- the verbs cost or come to to talk about the price.\nWrite 80–100 words.",
+      "bullets": [
+        "say why you are writing (comparison of three backup services for 20 staff)",
+        "SafeCopy: $4 per user a month / 100 GB storage / email support only",
+        "DataVault: $6 per user a month / 500 GB storage / telephone support",
+        "BoxBack: one-off licence $300 / no online storage",
+        "give the monthly price of DataVault for 20 staff",
+        "recommend one service and give a reason",
+        "ask Laura whether she agrees"
+      ],
+      "wordRange": [80, 100],
+      "targetGrammar": [
+        "Comparatives and superlatives (at least two): cheaper than, more … than, the most, as … as",
+        "Recommendations (at least one): I recommend + -ing / that we + verb; I think it's best to…",
+        "Indirect questions (at least one): Could you let me know whether…?",
+        "Talking about money: cost, come to"
+      ],
+      "modelAnswer": "Dear Laura,\n\nAs you asked, I have compared three online backup services for our 20 staff. SafeCopy is the cheapest at $4 per user a month, but it has the least storage and only email support. DataVault costs $6 per user, so it comes to $120 a month. However, it offers much more storage than SafeCopy and telephone support. BoxBack is a one-off licence of $300, but it has no online storage. I recommend choosing DataVault because our files are getting bigger. Could you let me know whether you agree?\n\nBest regards,\nMinh"
+    }
+  },
+  "speaking": {
+    "parts": [
+      {
+        "id": "S1",
+        "kind": "questions",
+        "instructions": "Answer the three questions. Speak for 30–45 seconds for each question.",
+        "questions": [
+          "Compare two phones, laptops or other devices that you know. Which one is better for a student, and why? Use comparatives and superlatives (cheaper than, as … as, the best).",
+          "How much do you spend on technology each month, for example on your phone plan, internet or apps? Use cost, spend, pay or come to.",
+          "Imagine you want to buy a new laptop. What would you ask the shop assistant? Ask at least two indirect questions (Could you tell me…? / Do you know whether…?)."
+        ],
+        "secondsPerQuestion": 45
+      },
+      {
+        "id": "S2",
+        "kind": "explain",
+        "instructions": "Compare the products and give a recommendation. Speak for 1–1.5 minutes.",
+        "prompt": "A friend works as a freelance graphic designer and needs online storage for large design files. Compare the three cloud storage plans in the cues and recommend one. Use comparatives and superlatives, and at least one recommendation structure (I recommend…, I think it's best to…, In my opinion, you should…).",
+        "cues": [
+          "Lite: $2 a month / 50 GB / web support only",
+          "Plus: $6 a month / 500 GB / email support",
+          "Pro: $15 a month / 2 TB / telephone support",
+          "Your friend's design files: about 300 GB now, growing every month"
+        ],
+        "requiredGrammar": [
+          "Comparatives and superlatives: cheaper than, more storage than, the most expensive, as … as",
+          "Recommendations: I recommend + -ing / that you + verb; I think it's best to…; you should…"
+        ],
+        "seconds": 90,
+        "sampleAnswer": "I compared the three plans for you. Lite is the cheapest plan at only two dollars a month, but it has the least storage, just fifty gigabytes, so it's too small for your design files. Plus costs six dollars a month and gives you five hundred gigabytes, which is ten times more storage than Lite. It also has email support. Pro is the most expensive plan at fifteen dollars, but it has the most storage, two terabytes, and telephone support. Your files are about three hundred gigabytes now, so Plus is big enough for the moment. In my opinion, you should choose Plus. I recommend checking your storage every few months, and when your files get close to five hundred gigabytes, I think it's best to move to Pro."
+      },
+      {
+        "id": "S3",
+        "kind": "situation",
+        "instructions": "Deal with the situation. Speak for 1–1.5 minutes.",
+        "prompt": "Last week you bought equipment for a new employee in your department. Your manager wants to know how much everything cost. Use the receipt in the cues to explain the costs. Talk about money with cost, come to, spend and pay, say the prices clearly, and compare at least two items.",
+        "cues": [
+          "laptop: $899",
+          "laptop bag: $45",
+          "wireless mouse: $25",
+          "two-year support plan: $120",
+          "everything together: $1,089 (budget: $1,200)"
+        ],
+        "requiredGrammar": [
+          "Talking about money: The laptop cost…; Everything came to…; We spent … on…; We paid…",
+          "Saying prices: eight hundred and ninety-nine dollars; one thousand and eighty-nine / ten eighty-nine dollars",
+          "Comparatives: The mouse was cheaper than the bag."
+        ],
+        "seconds": 90,
+        "sampleAnswer": "I bought all the equipment for our new colleague last week. The laptop was the most expensive item. It cost eight hundred and ninety-nine dollars. I also bought a laptop bag, which was forty-five dollars, and a wireless mouse for twenty-five dollars, so the mouse was cheaper than the bag. Then we paid a hundred and twenty dollars for a two-year support plan, because the laptop will travel a lot. Altogether, everything came to one thousand and eighty-nine dollars. Our budget was twelve hundred dollars, so we spent a hundred and eleven dollars less than we planned. I think we can use the extra money for a spare charger."
+      }
+    ]
+  }
+}
