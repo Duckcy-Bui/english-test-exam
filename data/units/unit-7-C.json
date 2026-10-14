@@ -477,7 +477,7 @@
         "title": "A Self-Service Screen for Pho House",
         "paragraphs": [
           "Pho House is a busy noodle restaurant in Hanoi. At lunchtime, customers often wait ten minutes just to order their food. Some customers give up and go to another restaurant. The owner, Mr Quang, wants a self-service screen near the door so that customers can order and pay without waiting for a waiter.",
-          "Mr Quang has talked to the developers about his ideas. Customers have to be able to see a photo of every dish and choose the size of their bowl. The screen should accept card and phone payments, but it does not need to accept cash. Each order has to be sent to the kitchen immediately.",
+          "Mr Quang has talked to a team of developers about his ideas for the system. Customers have to be able to see a photo of every dish and choose the size of their bowl. The screen should accept card and phone payments, but it does not need to accept cash. Each order has to be sent to the kitchen immediately.",
           "The kitchen staff also want the system to show how long each order has been waiting. Mr Quang wants the screen to work in Vietnamese and English, because many tourists eat at the restaurant. He plans to install the screen before the Lunar New Year holiday, when the restaurant is busiest."
         ]
       },
