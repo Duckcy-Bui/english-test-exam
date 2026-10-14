@@ -1,0 +1,1068 @@
+{
+  "schemaVersion": 1,
+  "unit": 4,
+  "unitTitle": "Administration",
+  "testId": "C",
+  "source": "ai",
+  "functions": [
+    "Talking about past actions (Spreadsheets and formulae)",
+    "Describing how to use databases (Databases)",
+    "Explaining sequences of system administration tasks (Systems administration)",
+    "Explaining how problems occurred (Peripherals)"
+  ],
+  "grammarFocus": [
+    "Past simple for finished actions in the past; did/didn't + bare infinitive in questions and negative sentences; irregular past forms (took, found, went)",
+    "By + -ing to express how to do things: By running a query, you can find the customers in one city.",
+    "While, before, after to show the order of events; -ing form after these words when the subject is the same in both clauses, a full clause when the subject is different",
+    "Past continuous and past simple: past continuous for the longer action in progress, past simple for the shorter action that interrupts it; when + past simple, while + past continuous"
+  ],
+  "sourceNotes": [
+    "Đề C Unit 4, AI soạn mới theo khung đề và quy tắc 1–15; không lặp bài đọc, lời thoại, tình huống, câu dịch, đề email và đề nói của đề A (đề cô) và đề B.",
+    "R1–R5: thuật ngữ và định nghĩa lấy gần nguyên văn Workbook Unit 4 Part 1 (4A, 4B, 4D); định nghĩa thừa (column) lấy từ Workbook 4C. Không trùng thuật ngữ câu nối với đề A, đề B.",
+    "R13–R20: từ vựng lấy từ Workbook Unit 4 Part 1 (4A, 4B, 4C, 4D).",
+    "Bài đọc R21–R25 (báo cáo sự cố máy bán vé tự động, Peripherals) và R26–R30 (email về lỗi trong bảng tính doanh số, Spreadsheets and formulae) viết mới; không dùng thuật ngữ câu nối và không diễn đạt lại định nghĩa của chúng.",
+    "Listening A: hướng dẫn chạy truy vấn trong cơ sở dữ liệu khách hàng (Databases, by + -ing). Listening B: lời nhắn của quản trị hệ thống về đợt cập nhật máy chủ đêm qua (Systems administration). Không chép Audio script.",
+    "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại.",
+    "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
+    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng."
+  ],
+  "listening": {
+    "parts": [
+      {
+        "id": "A",
+        "instructions": "Listen to the conversation and choose the best answer A, B, C or D (Questions L1–L5).",
+        "context": "Mia, a sales manager, asks Felix, the database administrator, how to get some information from the customer database.",
+        "speakers": [
+          {
+            "name": "Mia",
+            "voice": "female"
+          },
+          {
+            "name": "Felix",
+            "voice": "male"
+          }
+        ],
+        "script": [
+          {
+            "speaker": "Mia",
+            "text": "Felix, have you got a minute? The marketing team wants a list of all our customers in Da Lat who bought something last year. How can I get that from the database?"
+          },
+          {
+            "speaker": "Felix",
+            "text": "You can do it by running a query. Open the database, click the Create tab, and then choose Query Design."
+          },
+          {
+            "speaker": "Mia",
+            "text": "OK, I've done that. Which tables do I need?"
+          },
+          {
+            "speaker": "Felix",
+            "text": "Just two: Customers and Orders. Add both of them. Then drag the fields you need into the grid at the bottom: Name, Email, City and Order Date."
+          },
+          {
+            "speaker": "Mia",
+            "text": "Right. How do I choose only Da Lat?"
+          },
+          {
+            "speaker": "Felix",
+            "text": "In the City column, type Da Lat in the Criteria row. And in the Order Date column, type the dates for last year."
+          },
+          {
+            "speaker": "Mia",
+            "text": "And then?"
+          },
+          {
+            "speaker": "Felix",
+            "text": "Click Run. The database finds all the matching records. By saving the query, you can run it again next year without starting from the beginning."
+          },
+          {
+            "speaker": "Mia",
+            "text": "That's really useful. Can I send the list straight to Marketing?"
+          },
+          {
+            "speaker": "Felix",
+            "text": "Yes, by exporting it to a spreadsheet. But first, please remove the customers who don't want marketing emails. There's a field called No Marketing for that."
+          },
+          {
+            "speaker": "Mia",
+            "text": "Thanks, Felix."
+          }
+        ],
+        "questions": [
+          {
+            "id": "L1",
+            "kind": "mcq",
+            "stem": "What does the marketing team want?",
+            "options": [
+              {
+                "id": "A",
+                "text": "A new customer database"
+              },
+              {
+                "id": "B",
+                "text": "A list of all customers in Vietnam"
+              },
+              {
+                "id": "C",
+                "text": "The email addresses of all staff"
+              },
+              {
+                "id": "D",
+                "text": "A list of customers in Da Lat who bought something last year"
+              }
+            ],
+            "answerKey": "D",
+            "explanation": "Mia: \"The marketing team wants a list of all our customers in Da Lat who bought something last year.\""
+          },
+          {
+            "id": "L2",
+            "kind": "mcq",
+            "stem": "Which two tables does Mia need for the query?",
+            "options": [
+              {
+                "id": "A",
+                "text": "Customers and Products"
+              },
+              {
+                "id": "B",
+                "text": "Customers and Orders"
+              },
+              {
+                "id": "C",
+                "text": "Orders and Payments"
+              },
+              {
+                "id": "D",
+                "text": "Staff and Customers"
+              }
+            ],
+            "answerKey": "B",
+            "explanation": "Felix: \"Just two: Customers and Orders.\""
+          },
+          {
+            "id": "L3",
+            "kind": "mcq",
+            "stem": "Where does Mia type 'Da Lat'?",
+            "options": [
+              {
+                "id": "A",
+                "text": "In the search box at the top"
+              },
+              {
+                "id": "B",
+                "text": "In the Name field"
+              },
+              {
+                "id": "C",
+                "text": "In the Criteria row of the City column"
+              },
+              {
+                "id": "D",
+                "text": "In a new form"
+              }
+            ],
+            "answerKey": "C",
+            "explanation": "Felix: \"In the City column, type Da Lat in the Criteria row.\""
+          },
+          {
+            "id": "L4",
+            "kind": "mcq",
+            "stem": "Why does Felix tell Mia to save the query?",
+            "options": [
+              {
+                "id": "A",
+                "text": "So that she can run it again next year without starting again"
+              },
+              {
+                "id": "B",
+                "text": "So that Marketing can open it"
+              },
+              {
+                "id": "C",
+                "text": "Because the database closes automatically"
+              },
+              {
+                "id": "D",
+                "text": "Because the query takes a long time to run"
+              }
+            ],
+            "answerKey": "A",
+            "explanation": "Felix: \"By saving the query, you can run it again next year without starting from the beginning.\""
+          },
+          {
+            "id": "L5",
+            "kind": "mcq",
+            "stem": "What must Mia do before she sends the list to Marketing?",
+            "options": [
+              {
+                "id": "A",
+                "text": "Print the list"
+              },
+              {
+                "id": "B",
+                "text": "Add the customers' phone numbers"
+              },
+              {
+                "id": "C",
+                "text": "Ask Felix to check the list"
+              },
+              {
+                "id": "D",
+                "text": "Remove the customers who don't want marketing emails"
+              }
+            ],
+            "answerKey": "D",
+            "explanation": "Felix: \"But first, please remove the customers who don't want marketing emails.\""
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "instructions": "Listen to the voice message and answer the questions. Write NO MORE THAN THREE WORDS for each answer (Questions L6–L10).",
+        "context": "Nora, a systems administrator, leaves a voice message for her manager, Greg, about last night's server update.",
+        "speakers": [
+          {
+            "name": "Nora",
+            "voice": "female"
+          }
+        ],
+        "script": [
+          {
+            "speaker": "Nora",
+            "text": "Hi Greg, it's Nora. I'm calling to tell you how last night's update went. I started at ten o'clock, after everyone went home. Before installing anything, I backed up all three servers to the NAS. That took about forty minutes."
+          },
+          {
+            "speaker": "Nora",
+            "text": "Then I installed the update on the mail server first, because it's the most important one. While it was installing, I checked the logs on the other two servers. There were no errors. After restarting the mail server, I sent a few test emails. Everything worked, so I moved on to the file server and the web server. I finished at half past one."
+          },
+          {
+            "speaker": "Nora",
+            "text": "There was only one small problem. The web server didn't restart by itself, so I had to switch it on by hand. It's fine now."
+          },
+          {
+            "speaker": "Nora",
+            "text": "This morning, two people from Accounts called the helpdesk because they couldn't log in. That wasn't because of the update. They typed their old passwords. I reset them both. OK, that's everything. Bye."
+          }
+        ],
+        "questions": [
+          {
+            "id": "L6",
+            "kind": "short",
+            "stem": "What time did Nora start the update?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "ten o'clock",
+              "10 o'clock",
+              "at ten o'clock",
+              "at 10 o'clock",
+              "ten",
+              "10",
+              "10 pm",
+              "ten pm",
+              "at ten"
+            ],
+            "explanation": "\"I started at ten o'clock, after everyone went home.\""
+          },
+          {
+            "id": "L7",
+            "kind": "short",
+            "stem": "Where did Nora back up the three servers?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "the nas",
+              "nas",
+              "to the nas",
+              "the nas device",
+              "nas device",
+              "on the nas"
+            ],
+            "explanation": "\"Before installing anything, I backed up all three servers to the NAS.\""
+          },
+          {
+            "id": "L8",
+            "kind": "short",
+            "stem": "Which server did Nora update first?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "the mail server",
+              "mail server",
+              "mail"
+            ],
+            "explanation": "\"I installed the update on the mail server first, because it's the most important one.\""
+          },
+          {
+            "id": "L9",
+            "kind": "short",
+            "stem": "What time did Nora finish?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "half past one",
+              "1 30",
+              "one thirty",
+              "1 30 am",
+              "at 1 30"
+            ],
+            "explanation": "\"I finished at half past one.\""
+          },
+          {
+            "id": "L10",
+            "kind": "short",
+            "stem": "What did the two people from Accounts type by mistake?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "their old passwords",
+              "old passwords",
+              "old password",
+              "their old password",
+              "the old passwords"
+            ],
+            "explanation": "\"That wasn't because of the update. They typed their old passwords.\""
+          }
+        ]
+      }
+    ]
+  },
+  "reading": {
+    "matching": {
+      "instructions": "Match the terms (1–5) with the correct definitions (A–F). There is one extra definition that you do not need (Questions 1–5).",
+      "definitions": [
+        {
+          "id": "A",
+          "text": "A line of numbers or words written under each other that goes down a page."
+        },
+        {
+          "id": "B",
+          "text": "In a table, something that uniquely identifies each record."
+        },
+        {
+          "id": "C",
+          "text": "A situation in which a machine does not work because something is stopping a part from moving."
+        },
+        {
+          "id": "D",
+          "text": "The button that you press on a computer when you want to use only capital letters."
+        },
+        {
+          "id": "E",
+          "text": "To organise or move equipment so that it is in the right place and ready to be used."
+        },
+        {
+          "id": "F",
+          "text": "A type of computer screen that you touch in order to tell the computer what to do or to get information."
+        }
+      ],
+      "items": [
+        {
+          "id": "R1",
+          "term": "Deploy",
+          "answerKey": "E",
+          "explanation": "Deploy (triển khai) là sắp xếp, đưa thiết bị (hoặc phần mềm) vào đúng chỗ để sẵn sàng sử dụng."
+        },
+        {
+          "id": "R2",
+          "term": "Caps Lock",
+          "answerKey": "D",
+          "explanation": "Caps Lock (phím viết hoa) là phím bấm khi muốn gõ toàn chữ in hoa."
+        },
+        {
+          "id": "R3",
+          "term": "Touch screen",
+          "answerKey": "F",
+          "explanation": "Touch screen (màn hình cảm ứng) là màn hình chạm vào để ra lệnh cho máy tính hoặc lấy thông tin."
+        },
+        {
+          "id": "R4",
+          "term": "Primary key",
+          "answerKey": "B",
+          "explanation": "Primary key (khoá chính) là thứ xác định duy nhất mỗi bản ghi trong một bảng. Định nghĩa A là của column (cột), không có trong danh sách thuật ngữ."
+        },
+        {
+          "id": "R5",
+          "term": "Jam",
+          "answerKey": "C",
+          "explanation": "Jam (sự kẹt) là tình trạng máy không chạy vì có vật cản một bộ phận chuyển động, ví dụ kẹt giấy."
+        }
+      ]
+    },
+    "grammar": [
+      {
+        "id": "R6",
+        "kind": "mcq",
+        "stem": "______ you back up the customer files yesterday?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Do"
+          },
+          {
+            "id": "B",
+            "text": "Were"
+          },
+          {
+            "id": "C",
+            "text": "Did"
+          },
+          {
+            "id": "D",
+            "text": "Have"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "Câu hỏi quá khứ đơn (yesterday): Did + chủ ngữ + động từ nguyên mẫu (back up)."
+      },
+      {
+        "id": "R7",
+        "kind": "mcq",
+        "stem": "The update ______ two hours to install yesterday.",
+        "options": [
+          {
+            "id": "A",
+            "text": "taked"
+          },
+          {
+            "id": "B",
+            "text": "took"
+          },
+          {
+            "id": "C",
+            "text": "taken"
+          },
+          {
+            "id": "D",
+            "text": "takes"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "\"take\" là động từ bất quy tắc: quá khứ đơn là \"took\" (taken là quá khứ phân từ)."
+      },
+      {
+        "id": "R8",
+        "kind": "mcq",
+        "stem": "'How did you find the missing invoice?' '______ the database for the customer's name.'",
+        "options": [
+          {
+            "id": "A",
+            "text": "By searching"
+          },
+          {
+            "id": "B",
+            "text": "For search"
+          },
+          {
+            "id": "C",
+            "text": "By searched"
+          },
+          {
+            "id": "D",
+            "text": "With search"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "Trả lời câu hỏi \"How…?\" (bằng cách nào) dùng by + V-ing: By searching…"
+      },
+      {
+        "id": "R9",
+        "kind": "mcq",
+        "stem": "After the technician ______ the new printer, everyone could print again.",
+        "options": [
+          {
+            "id": "A",
+            "text": "installing"
+          },
+          {
+            "id": "B",
+            "text": "install"
+          },
+          {
+            "id": "C",
+            "text": "was install"
+          },
+          {
+            "id": "D",
+            "text": "installed"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Hai vế khác chủ ngữ (the technician / everyone) nên sau \"after\" là một mệnh đề đầy đủ: After the technician installed… Chỉ dùng V-ing khi hai vế cùng chủ ngữ."
+      },
+      {
+        "id": "R10",
+        "kind": "mcq",
+        "stem": "______ I was updating the server, the power went off.",
+        "options": [
+          {
+            "id": "A",
+            "text": "During"
+          },
+          {
+            "id": "B",
+            "text": "While"
+          },
+          {
+            "id": "C",
+            "text": "For"
+          },
+          {
+            "id": "D",
+            "text": "By"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Trước mệnh đề quá khứ tiếp diễn (I was updating…) dùng liên từ \"While\". \"During\" và \"For\" là giới từ, phải đi với danh từ, không đi với mệnh đề."
+      },
+      {
+        "id": "R11",
+        "kind": "mcq",
+        "stem": "The users ______ the new system when the error message appeared.",
+        "options": [
+          {
+            "id": "A",
+            "text": "was testing"
+          },
+          {
+            "id": "B",
+            "text": "are testing"
+          },
+          {
+            "id": "C",
+            "text": "were testing"
+          },
+          {
+            "id": "D",
+            "text": "test"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "Hành động đang diễn ra trong quá khứ thì bị xen vào (when the error message appeared): quá khứ tiếp diễn; chủ ngữ số nhiều (The users) nên \"were testing\"."
+      },
+      {
+        "id": "R12",
+        "kind": "mcq",
+        "stem": "When the screen ______ black, I restarted the laptop.",
+        "options": [
+          {
+            "id": "A",
+            "text": "go"
+          },
+          {
+            "id": "B",
+            "text": "goes"
+          },
+          {
+            "id": "C",
+            "text": "gone"
+          },
+          {
+            "id": "D",
+            "text": "went"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Sự việc ngắn trong quá khứ sau \"when\" dùng quá khứ đơn: went (quá khứ của go)."
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "R13",
+        "kind": "mcq",
+        "stem": "Each ______ in the Customers table holds all the information about one customer.",
+        "options": [
+          {
+            "id": "A",
+            "text": "bracket"
+          },
+          {
+            "id": "B",
+            "text": "stylus"
+          },
+          {
+            "id": "C",
+            "text": "headset"
+          },
+          {
+            "id": "D",
+            "text": "record"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Record (bản ghi) là một dòng trong bảng cơ sở dữ liệu, chứa thông tin về một đối tượng, ví dụ một khách hàng."
+      },
+      {
+        "id": "R14",
+        "kind": "mcq",
+        "stem": "Our customer data is arranged in a ______ with rows and columns.",
+        "options": [
+          {
+            "id": "A",
+            "text": "table"
+          },
+          {
+            "id": "B",
+            "text": "stylus"
+          },
+          {
+            "id": "C",
+            "text": "headset"
+          },
+          {
+            "id": "D",
+            "text": "bracket"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "Table (bảng) là danh sách số liệu, thông tin sắp xếp theo hàng và cột."
+      },
+      {
+        "id": "R15",
+        "kind": "mcq",
+        "stem": "Could you ______ me through the new booking system? I've never used it before.",
+        "options": [
+          {
+            "id": "A",
+            "text": "check"
+          },
+          {
+            "id": "B",
+            "text": "lock"
+          },
+          {
+            "id": "C",
+            "text": "walk"
+          },
+          {
+            "id": "D",
+            "text": "reset"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "Walk sb through sth (giải thích, hướng dẫn từng bước cho ai)."
+      },
+      {
+        "id": "R16",
+        "kind": "mcq",
+        "stem": "I forgot my password, so the helpdesk ______ it for me.",
+        "options": [
+          {
+            "id": "A",
+            "text": "multiplied"
+          },
+          {
+            "id": "B",
+            "text": "reset"
+          },
+          {
+            "id": "C",
+            "text": "divided"
+          },
+          {
+            "id": "D",
+            "text": "attached"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Reset (đặt lại) mật khẩu để dùng lại được. Quá khứ của reset vẫn là reset."
+      },
+      {
+        "id": "R17",
+        "kind": "mcq",
+        "stem": "Please ______ the new user's details carefully before you create the account.",
+        "options": [
+          {
+            "id": "A",
+            "text": "lock out"
+          },
+          {
+            "id": "B",
+            "text": "divide"
+          },
+          {
+            "id": "C",
+            "text": "subtract"
+          },
+          {
+            "id": "D",
+            "text": "check out"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Check sth out (kiểm tra kỹ xem có đúng không) trước khi tạo tài khoản."
+      },
+      {
+        "id": "R18",
+        "kind": "mcq",
+        "stem": "Five ______ four is twenty.",
+        "options": [
+          {
+            "id": "A",
+            "text": "times"
+          },
+          {
+            "id": "B",
+            "text": "plus"
+          },
+          {
+            "id": "C",
+            "text": "minus"
+          },
+          {
+            "id": "D",
+            "text": "sum"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "Times (nhân): 5 × 4 = 20. Plus là cộng (5 + 4 = 9), minus là trừ."
+      },
+      {
+        "id": "R19",
+        "kind": "mcq",
+        "stem": "A keyboard and a mouse are both ______ devices: they put information into a computer.",
+        "options": [
+          {
+            "id": "A",
+            "text": "unique"
+          },
+          {
+            "id": "B",
+            "text": "multifunction"
+          },
+          {
+            "id": "C",
+            "text": "input"
+          },
+          {
+            "id": "D",
+            "text": "read-only"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "Input device (thiết bị đầu vào) đưa thông tin vào máy tính, ví dụ bàn phím, chuột."
+      },
+      {
+        "id": "R20",
+        "kind": "mcq",
+        "stem": "The NAS device is ______ to the office network, so everyone can save files on it.",
+        "options": [
+          {
+            "id": "A",
+            "text": "unique"
+          },
+          {
+            "id": "B",
+            "text": "attached"
+          },
+          {
+            "id": "C",
+            "text": "divided"
+          },
+          {
+            "id": "D",
+            "text": "walked"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Attached (được gắn, nối vào) cái gì: thiết bị NAS nối vào mạng văn phòng."
+      }
+    ],
+    "passageMcq": {
+      "instructions": "Read the passage and choose the best answer A, B, C or D (Questions 21–25).",
+      "passage": {
+        "title": "Incident Report: Ticket Machines at Riverside Cinema",
+        "paragraphs": [
+          "On Saturday 12th October, the six self-service ticket machines at Riverside Cinema stopped taking card payments for almost two hours. This report explains what happened and what we did.",
+          "At 6.40 p.m., the cinema was very busy. About forty customers were buying tickets for the seven o'clock films when the card readers on all six machines suddenly stopped working. The screens showed the message 'Payment service not available'. While the duty manager was calling the IT helpdesk, staff opened two extra counters and sold tickets by hand.",
+          "The technician, Sam Ortiz, connected to the machines from his office. After checking the system logs, he found the cause. The night before, the payment company had installed a software update on all the card readers. The update had a bug, and it stopped the readers when there were more than ten payments in one minute.",
+          "Sam could not remove the update himself, so he phoned the payment company. Their engineer removed it at 8.30 p.m., and the machines worked normally again. Two films started fifteen minutes late, and the cinema gave free drinks to about 200 customers.",
+          "In future, the payment company will test every update on one machine for a week before installing it on the others. The cinema will also keep a portable card reader at the main counter, so that staff can sell tickets quickly if the machines stop again."
+        ]
+      },
+      "questions": [
+        {
+          "id": "R21",
+          "kind": "mcq",
+          "stem": "What stopped working at 6.40 p.m.?",
+          "options": [
+            {
+              "id": "A",
+              "text": "The cinema's projectors"
+            },
+            {
+              "id": "B",
+              "text": "The online booking website"
+            },
+            {
+              "id": "C",
+              "text": "The lights in the cinema"
+            },
+            {
+              "id": "D",
+              "text": "The card readers on the ticket machines"
+            }
+          ],
+          "answerKey": "D",
+          "explanation": "Đoạn 2: \"the card readers on all six machines suddenly stopped working\"."
+        },
+        {
+          "id": "R22",
+          "kind": "mcq",
+          "stem": "What did staff do while the duty manager was calling the helpdesk?",
+          "options": [
+            {
+              "id": "A",
+              "text": "They restarted the ticket machines."
+            },
+            {
+              "id": "B",
+              "text": "They opened two extra counters and sold tickets by hand."
+            },
+            {
+              "id": "C",
+              "text": "They gave free drinks to all the customers."
+            },
+            {
+              "id": "D",
+              "text": "They closed the cinema for the evening."
+            }
+          ],
+          "answerKey": "B",
+          "explanation": "Đoạn 2: \"While the duty manager was calling the IT helpdesk, staff opened two extra counters and sold tickets by hand.\" Đồ uống miễn phí được phát sau, khi phim chiếu muộn."
+        },
+        {
+          "id": "R23",
+          "kind": "mcq",
+          "stem": "How did Sam find the cause of the problem?",
+          "options": [
+            {
+              "id": "A",
+              "text": "By visiting the cinema"
+            },
+            {
+              "id": "B",
+              "text": "By phoning the payment company"
+            },
+            {
+              "id": "C",
+              "text": "By checking the system logs"
+            },
+            {
+              "id": "D",
+              "text": "By testing his own card"
+            }
+          ],
+          "answerKey": "C",
+          "explanation": "Đoạn 3: \"After checking the system logs, he found the cause.\" Sam gọi công ty thanh toán sau đó để gỡ bản cập nhật."
+        },
+        {
+          "id": "R24",
+          "kind": "mcq",
+          "stem": "When did the bug stop the card readers?",
+          "options": [
+            {
+              "id": "A",
+              "text": "When there were more than ten payments in one minute"
+            },
+            {
+              "id": "B",
+              "text": "Every evening at 6.40 p.m."
+            },
+            {
+              "id": "C",
+              "text": "When customers paid in cash"
+            },
+            {
+              "id": "D",
+              "text": "When the films started"
+            }
+          ],
+          "answerKey": "A",
+          "explanation": "Đoạn 3: lỗi làm đầu đọc thẻ dừng \"when there were more than ten payments in one minute\"."
+        },
+        {
+          "id": "R25",
+          "kind": "mcq",
+          "stem": "What will the payment company do in future?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Stop updating the card readers"
+            },
+            {
+              "id": "B",
+              "text": "Send an engineer to the cinema every Saturday"
+            },
+            {
+              "id": "C",
+              "text": "Give free drinks to customers"
+            },
+            {
+              "id": "D",
+              "text": "Test every update on one machine for a week first"
+            }
+          ],
+          "answerKey": "D",
+          "explanation": "Đoạn 5: \"the payment company will test every update on one machine for a week before installing it on the others\"."
+        }
+      ]
+    },
+    "passageTrueFalse": {
+      "instructions": "Read the email and write T (True) or F (False) (Questions 26–30).",
+      "passage": {
+        "title": "Problems with the September sales report",
+        "paragraphs": [
+          "Hi team,",
+          "Last week, the monthly sales report showed that we sold £86,000 of goods in September. This number looked too high, so Karen in Finance checked the spreadsheet on Monday.",
+          "She found two problems. First, someone copied some of the October sales into the September sheet. Second, the formula in the Total column added the tax twice. Karen corrected both problems, and the real total for September was £71,500.",
+          "Before sending the report again, she asked Tom to check all the other formulae. While he was checking them, he found another small error in the Returns column, but it did not change the total.",
+          "To stop these problems in future, we are going to lock all the cells with formulae, so that only the finance team can change them. Please don't copy data into the report by hand any more. From next month, the report will take the numbers directly from the sales database.",
+          "Thanks,",
+          "Ruth Evans, Finance Manager"
+        ]
+      },
+      "questions": [
+        {
+          "id": "R26",
+          "kind": "tf",
+          "statement": "The first total for September looked too low.",
+          "answerKey": "F",
+          "explanation": "Đoạn 2: \"This number looked too high\" (quá cao)."
+        },
+        {
+          "id": "R27",
+          "kind": "tf",
+          "statement": "Karen checked the spreadsheet on Monday.",
+          "answerKey": "T",
+          "explanation": "Đoạn 2: \"Karen in Finance checked the spreadsheet on Monday\"."
+        },
+        {
+          "id": "R28",
+          "kind": "tf",
+          "statement": "The formula in the Total column added the tax twice.",
+          "answerKey": "T",
+          "explanation": "Đoạn 3: \"the formula in the Total column added the tax twice\"."
+        },
+        {
+          "id": "R29",
+          "kind": "tf",
+          "statement": "The error that Tom found changed the total.",
+          "answerKey": "F",
+          "explanation": "Đoạn 4: Tom tìm thấy một lỗi nhỏ ở cột Returns \"but it did not change the total\"."
+        },
+        {
+          "id": "R30",
+          "kind": "tf",
+          "statement": "From next month, staff will copy the sales data into the report by hand.",
+          "answerKey": "F",
+          "explanation": "Đoạn 5: \"Please don't copy data into the report by hand any more. From next month, the report will take the numbers directly from the sales database.\""
+        }
+      ]
+    }
+  },
+  "writing": {
+    "translation": {
+      "instructions": "Translate these sentences into Vietnamese (Questions 31–35).",
+      "items": [
+        {
+          "id": "W31",
+          "source": "The engineer chose a larger hard drive because the old one was nearly full.",
+          "referenceTranslation": "Kỹ sư đã chọn một ổ cứng lớn hơn vì ổ cũ đã gần đầy."
+        },
+        {
+          "id": "W32",
+          "source": "By filtering the Status column, you can see only the orders that customers have not paid.",
+          "referenceTranslation": "Bằng cách lọc cột Trạng thái, bạn có thể chỉ xem những đơn hàng mà khách hàng chưa thanh toán."
+        },
+        {
+          "id": "W33",
+          "source": "Before replacing the toner, switch off the printer and wait for it to cool down.",
+          "referenceTranslation": "Trước khi thay hộp mực, hãy tắt máy in và đợi máy nguội."
+        },
+        {
+          "id": "W34",
+          "source": "While the trainer was using the touch screen, the system suddenly froze.",
+          "referenceTranslation": "Trong khi người hướng dẫn đang sử dụng màn hình cảm ứng thì hệ thống đột nhiên bị treo."
+        },
+        {
+          "id": "W35",
+          "source": "To calculate the average, add the three numbers together and divide the total by three.",
+          "referenceTranslation": "Để tính giá trị trung bình, hãy cộng ba số lại với nhau rồi chia tổng cho ba."
+        }
+      ]
+    },
+    "email": {
+      "id": "W-EMAIL",
+      "recipient": "Daisy",
+      "task": "You are a support technician. Daisy, a new receptionist, often uses the office printer, and this morning the paper got stuck inside it. Write an email to Daisy explaining how to clear a paper jam, using the notes below. In your email you must use:\n- before or after + -ing at least twice to show the order of the steps (Before opening…, After removing…);\n- by + -ing at least once to explain how to do something (by looking…).\nFollow the standard layout for an email giving instructions: From / To / Date / Subject, a greeting, It should be quite easy to …, the steps with First / Then / Next / After that / Finally, a reminder (Don't forget to … when you've finished.), then Best wishes and your name, position and department.\nWrite 80–100 words (do not count the From, To, Date and Subject lines).",
+      "bullets": [
+        "switch off the printer / unplug it (before opening the cover)",
+        "open the front cover / take out the paper tray",
+        "pull the stuck paper out slowly with both hands",
+        "check for small pieces of paper: look inside with a torch",
+        "put the tray back / close the cover",
+        "plug the printer in / print a test page",
+        "reminder: wash your hands when you've finished"
+      ],
+      "wordRange": [
+        80,
+        100
+      ],
+      "targetGrammar": [
+        "Before / after + -ing (at least twice): Before opening the cover, switch off…; After removing the paper, check…",
+        "By + -ing (at least once): check for small pieces by looking inside with a torch",
+        "Imperatives with sequence words for the steps"
+      ],
+      "modelAnswer": "From: Do Thanh Tam\nTo: Daisy\nDate: 21st January\nSubject: Clearing a paper jam\n\nHi Daisy,\n\nIt should be quite easy to clear a paper jam.\nFirst, before opening the cover, switch off the printer and unplug it.\nThen, open the front cover and take out the paper tray.\nNext, just pull the stuck paper out slowly with both hands.\nAfter that, check for small pieces of paper by looking inside with a torch.\nFinally, after putting the tray back and closing the cover, plug the printer in and print a test page.\nDon't forget to wash your hands when you've finished.\n\nBest wishes,\nDo Thanh Tam\nSupport Technician\nHelp Desk Department"
+    }
+  },
+  "speaking": {
+    "parts": [
+      {
+        "id": "S1",
+        "kind": "questions",
+        "instructions": "Answer the three questions. Speak for 30–45 seconds for each question.",
+        "questions": [
+          "Tell me about the first computer or phone you had. When did you get it, and what did you use it for? Use the past simple.",
+          "What do you do before starting and after finishing an assignment on a computer? Use before + -ing and after + -ing (Before starting…, After finishing…).",
+          "What were you doing at eight o'clock yesterday evening? Did anything interrupt you? Use the past continuous and the past simple (I was …ing when …)."
+        ],
+        "secondsPerQuestion": 45
+      },
+      {
+        "id": "S2",
+        "kind": "explain",
+        "instructions": "Talk about a spreadsheet you made. Speak for 1–1.5 minutes.",
+        "prompt": "Last month you made a spreadsheet to plan the budget for your class trip. Explain what you did and which formulae you used. Use the past simple (I made…, I typed…, I added…) and spreadsheet words such as column, row, sum, minus, multiply and divide.",
+        "cues": [
+          "column A: the costs (bus, hotel, food, tickets)",
+          "column B: the price for one student / column C: the number of students",
+          "column D: multiplied B by C",
+          "the SUM function at the bottom of column D: the total cost",
+          "divided the total by the number of students: the cost for each person"
+        ],
+        "requiredGrammar": [
+          "Past simple for finished actions: I made…, I typed…, I added…, I divided…",
+          "Spreadsheet language: column, row, cell, sum, minus, multiply, divide"
+        ],
+        "seconds": 90,
+        "sampleAnswer": "Last month, our class went on a trip to Ha Long Bay, and I made a spreadsheet for the budget. In column A, I wrote all the costs: the bus, the hotel, the food and the boat tickets. In column B, I typed the price for one student, and in column C, I put the number of students, which was thirty-two. Then, in column D, I multiplied column B by column C, so I could see the total for each item. At the bottom of column D, I used the SUM function to add everything together. The total cost was about forty-eight million dong. Finally, I divided the total by thirty-two, and each student paid one and a half million. My teacher liked the spreadsheet, and we used it again for the next trip."
+      },
+      {
+        "id": "S3",
+        "kind": "situation",
+        "instructions": "Deal with the situation. Speak for 1–1.5 minutes.",
+        "prompt": "Yesterday a new colleague, Lan, could not log in to her account. Your manager was away and asks you what happened. Use the cues to explain how the problem occurred and what you did. Use the past continuous for the actions in progress and the past simple for what happened (She was …ing when …; While I was …ing, …).",
+        "cues": [
+          "9.30 a.m.: Lan / prepare the monthly report",
+          "her laptop / restart for an update → she / log in again",
+          "Caps Lock / be on → she / type the wrong password three times → the system / lock her out",
+          "while you / reset her password → she / use a colleague's laptop",
+          "after resetting it → you / show her the Caps Lock light"
+        ],
+        "requiredGrammar": [
+          "Past continuous for the longer action: She was preparing…, While I was resetting…",
+          "Past simple for the shorter action and for what you did: the laptop restarted, the system locked her out, I showed…"
+        ],
+        "seconds": 90,
+        "sampleAnswer": "Yesterday morning, at about half past nine, Lan was preparing the monthly report when her laptop suddenly restarted for an update. When it came back on, she tried to log in again. Unfortunately, the Caps Lock was on, but she didn't notice it. She typed her password three times, and each time it was wrong, so the system locked her out of her account. She phoned me, and I went to her desk. While I was resetting her password, she used a colleague's laptop, so she didn't lose too much time. After resetting it, I showed her the small Caps Lock light on the keyboard. She logged in with the new password at about ten o'clock and finished the report before lunch."
+      }
+    ]
+  }
+}
