@@ -22,7 +22,8 @@
     "Bài đọc R21–R25 lấy cảm hứng từ bài Mobile computing (lợi ích của máy tính bảng cho nhân viên làm việc bên ngoài) nhưng đổi sang tình huống điều dưỡng tại nhà; bài đọc R26–R30 lấy cảm hứng từ bài Networks. Cả hai viết mới.",
     "Listening A lấy cảm hứng từ bài Internet browsing (track 12), Listening B từ bài Email. Không chép Audio script.",
     "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại, xử lý giống Unit 6.",
-    "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều."
+    "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
+    "Bản r1 (tự rà theo các lỗi auditor đã bắt ở Unit 1, 4, 5, 6): R7 và R11 đổi phương án nhiễu để chỉ một phương án đúng ngữ pháp; R16 đổi sang từ khác để không lặp tình huống bấm refresh xem tin mới của Listening A; S1 câu 2 đổi tình huống để không lặp wi-fi công cộng với câu dịch W33."
   ],
   "listening": {
     "parts": [
@@ -238,12 +239,12 @@
         "stem": "I ______ what this error message means. Can you help me?",
         "options": [
           { "id": "A", "text": "don't understand" },
-          { "id": "B", "text": "am not understanding" },
-          { "id": "C", "text": "not understand" },
-          { "id": "D", "text": "doesn't understand" }
+          { "id": "B", "text": "doesn't understand" },
+          { "id": "C", "text": "not understanding" },
+          { "id": "D", "text": "am not understand" }
         ],
         "answerKey": "A",
-        "explanation": "\"understand\" là động từ chỉ trạng thái, thường không dùng ở thể tiếp diễn. Chủ ngữ \"I\" đi với \"don't\"."
+        "explanation": "\"understand\" là động từ chỉ trạng thái nên dùng hiện tại đơn, không dùng tiếp diễn. Chủ ngữ \"I\" đi với \"don't\" + động từ nguyên mẫu; các phương án còn lại sai ngữ pháp."
       },
       {
         "id": "R8",
@@ -292,7 +293,7 @@
           { "id": "A", "text": "are being" },
           { "id": "B", "text": "were" },
           { "id": "C", "text": "will be" },
-          { "id": "D", "text": "would be" }
+          { "id": "D", "text": "be" }
         ],
         "answerKey": "C",
         "explanation": "Câu điều kiện loại 1 (kết quả có thể xảy ra): If + hiện tại đơn (buy), will + V: \"will be able to\"."
@@ -354,15 +355,15 @@
       {
         "id": "R16",
         "kind": "mcq",
-        "stem": "Click the ______ button to see the latest news on the page.",
+        "stem": "Click the ______ button to return to the page that you were looking at before.",
         "options": [
-          { "id": "A", "text": "back" },
-          { "id": "B", "text": "refresh" },
+          { "id": "A", "text": "refresh" },
+          { "id": "B", "text": "back" },
           { "id": "C", "text": "delete" },
           { "id": "D", "text": "sign" }
         ],
         "answerKey": "B",
-        "explanation": "Refresh (làm mới) cho trang hiện thông tin mới nhất. Nút back quay về trang trước."
+        "explanation": "Back button (nút quay lại) đưa bạn về trang trước đó. Nút refresh làm mới trang đang xem."
       },
       {
         "id": "R17",
@@ -607,7 +608,7 @@
         "instructions": "Answer the three questions. Speak for 30–45 seconds for each question.",
         "questions": [
           "What do you usually do online in a normal week, and what are you doing differently this month? Use the present simple and the present continuous.",
-          "What happens if people use public wi-fi without any protection? Use zero or first conditional sentences (If you…, … / If you…, … will…).",
+          "What happens if you click on a link in an email from someone you don't know? Use zero or first conditional sentences (If you…, … / If you…, … will…).",
           "Describe a website or app that you use often. Use relative clauses with which, that or who (It's an app which…)."
         ],
         "secondsPerQuestion": 45
