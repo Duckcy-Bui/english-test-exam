@@ -176,3 +176,4 @@ Xong khi: web chạy trên domain qua HTTPS, micro hoạt động, chấm AI ho�
 | 2026-10-14 16:11 +07 | et-dev nộp `dev/unit6-app-r1@e4eb51d` sửa QA-SEC-01 (122/122 unit test, 17/17 e2e). Giao et-qa kiểm lại trên `qa/unit6-app-r1`. |
 | 2026-10-14 16:14 +07 | Unit 7: giải mù `aabca0d` khớp 40/40, báo cáo `d89202f` 2 CHẶN (R19, R27); et-author sửa r2 (`563b374`), auditor phiên mới giải mù lại. Unit 8: giải mù `5e29126` khớp 40/40, báo cáo `1b23076` 1 CHẶN (R7 since/yet) và 2 NÊN SỬA; giao et-author r2. |
 | 2026-10-14 16:17 +07 | **Unit 7 AUDIT-OK** (giải mù lại R19/R27 `b00befc` khớp 2/2, báo cáo `7182540` không có phát hiện). Merge vào `main`. Unit 8 r2 (`bcc8bc7`) validate 0 lỗi; auditor phiên mới giải mù lại R7, R11, R21–R25. |
+| 2026-10-14 16:20 +07 | **Unit 8 AUDIT-OK** (giải mù lại R7, R11, R21–R25 `6bcffe2` khớp 7/7; báo cáo `3b336dc` chỉ còn NÊN SỬA về độ chặt lập luận kỹ thuật ở bài đọc, R22 vẫn một đáp án). **Đủ 8/8 Unit AUDIT-OK trên `main`.** |
