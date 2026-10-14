@@ -2,7 +2,35 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 import { Icon } from "./ui";
+
+type Theme = "light" | "dark";
+
+function ThemeToggle() {
+  const [theme, setTheme] = useState<Theme | null>(null);
+  useEffect(() => {
+    setTheme(document.documentElement.dataset.theme === "dark" ? "dark" : "light");
+  }, []);
+  const next: Theme = theme === "dark" ? "light" : "dark";
+  return (
+    <button
+      type="button"
+      className="theme-toggle"
+      aria-label={next === "dark" ? "Chuyển sang chế độ tối" : "Chuyển sang chế độ sáng"}
+      title={next === "dark" ? "Chế độ tối" : "Chế độ sáng"}
+      onClick={() => {
+        document.documentElement.dataset.theme = next;
+        try {
+          localStorage.setItem("theme", next);
+        } catch {}
+        setTheme(next);
+      }}
+    >
+      <Icon name={theme === "dark" ? "sun" : "moon"} />
+    </button>
+  );
+}
 
 export function Header() {
   const pathname = usePathname();
@@ -36,6 +64,7 @@ export function Header() {
           </Link>
         </nav>
         <span className="course-badge">ENGLISH FOR IT 2</span>
+        <ThemeToggle />
       </div>
     </header>
   );

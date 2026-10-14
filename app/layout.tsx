@@ -12,9 +12,15 @@ export const metadata: Metadata = {
     "Luyện 4 kỹ năng tiếng Anh chuyên ngành CNTT theo 8 Unit. Làm bài, xem giải thích và theo dõi tiến bộ.",
 };
 
+// Đặt chế độ sáng/tối trước khi trang hiển thị để không bị nháy màu.
+const themeScript = `try{var t=localStorage.getItem("theme");if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.dataset.theme=t}catch(e){}`;
+
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="vi">
+    <html lang="vi" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
       <body>
         <a href="#main" className="skip-link">
           Đến nội dung chính
