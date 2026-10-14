@@ -24,7 +24,8 @@
     "Bài đọc R21–R25 (yêu cầu cho ứng dụng thuê xe đạp) và R26–R30 (chương trình của chuông cửa có camera) viết mới. Không mô tả phiên bản gần hoàn thiện, vị trí trong kết quả tìm kiếm, menu bật lên, ngôn ngữ tạo trang web hay sơ đồ đường đi để không diễn đạt lại định nghĩa câu nối.",
     "Listening A (cập nhật tiến độ ứng dụng đặt bánh) theo bài Project management; Listening B (chương trình bãi đỗ xe thông minh) theo bài Software development. Viết mới, không chép Audio script.",
     "Listening B: acceptedAnswers có biến thể cách viết số và mạo từ; một số biến thể không có nguyên văn trong lời thoại.",
-    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng."
+    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
+    "Bản r1 (tự soát theo lỗi chung et-lead nêu): R6 đổi \"search box\" để không trùng gốc thuật ngữ nối R3 (search ranking); R12 và bài đọc R21–R25, câu R24 bỏ từ \"version\" (từ khoá định nghĩa R1) và \"list\" (từ khoá định nghĩa R2); R23, R24 bỏ \"language\" (từ khoá định nghĩa R4)."
   ],
   "listening": {
     "parts": [
@@ -198,7 +199,7 @@
       {
         "id": "R6",
         "kind": "mcq",
-        "stem": "The client wants us ______ a search box to every page of the website.",
+        "stem": "The client wants us ______ a contact form to every page of the website.",
         "options": [
           { "id": "A", "text": "add" },
           { "id": "B", "text": "adding" },
@@ -276,7 +277,7 @@
       {
         "id": "R12",
         "kind": "mcq",
-        "stem": "We ______ scheduled to launch the new version next Tuesday.",
+        "stem": "We ______ scheduled to launch the new app next Tuesday.",
         "options": [
           { "id": "A", "text": "are" },
           { "id": "B", "text": "have" },
@@ -399,8 +400,8 @@
         "title": "Requirements for the CityBikes App",
         "paragraphs": [
           "CityBikes rents bicycles to the public from forty stations in Hue. At the moment, customers rent bikes with a plastic card at each station, but the cards are often lost, and the machines at the stations are getting old. The company has asked a software team to build a mobile app instead. Before the team starts writing any code, an analyst called Linh meets the managers and some customers to find out what the app should do.",
-          "The managers want customers to rent a bike by scanning a code on the bike with their phone. Customers have to create an account and add a bank card before their first ride. The app should also show a list of the nearest stations and the number of bikes that are available at each one.",
-          "Customers asked for some other features. Many of them want the app to show how far they have cycled. Tourists said that the app needs to work in English, Vietnamese and Korean. One customer also asked for a dark mode for night riding, but the managers decided that this is not necessary for the first version.",
+          "The managers want customers to rent a bike by scanning a code on the bike with their phone. Customers have to create an account and add a bank card before their first ride. The app should also show the nearest stations and the number of bikes that are available at each one.",
+          "Customers asked for some other features. Many of them want the app to show how far they have cycled. Tourists said that the app needs to work in English, Vietnamese and Korean. One customer also asked for a dark mode for night riding, but the managers decided that this is not necessary at the beginning.",
           "The managers also have one important rule: the app has to stop a customer from renting a second bike before the first one is returned. Linh will write the requirements document this week and send it to the managers by Friday, and the managers need to accept it before any code is written."
         ]
       },
@@ -437,7 +438,7 @@
           "stem": "What do customers have to do before their first ride?",
           "options": [
             { "id": "A", "text": "Visit the company office" },
-            { "id": "B", "text": "Choose a language" },
+            { "id": "B", "text": "Pay a deposit" },
             { "id": "C", "text": "Create an account and add a bank card" },
             { "id": "D", "text": "Return their plastic card" }
           ],
@@ -447,15 +448,15 @@
         {
           "id": "R24",
           "kind": "mcq",
-          "stem": "Which feature will NOT be in the first version of the app?",
+          "stem": "Which feature will NOT be included at the beginning?",
           "options": [
-            { "id": "A", "text": "A list of the nearest stations" },
-            { "id": "B", "text": "Korean language" },
+            { "id": "A", "text": "The number of bikes at each station" },
+            { "id": "B", "text": "Korean" },
             { "id": "C", "text": "The distance that a customer has cycled" },
             { "id": "D", "text": "A dark mode for night riding" }
           ],
           "answerKey": "D",
-          "explanation": "Đoạn 3: quản lý quyết định chế độ tối \"is not necessary for the first version\"."
+          "explanation": "Đoạn 3: quản lý quyết định chế độ tối \"is not necessary at the beginning\"."
         },
         {
           "id": "R25",
