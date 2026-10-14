@@ -1,0 +1,154 @@
+# Kế hoạch web luyện thi English for IT 2
+
+Cập nhật: 2026-10-14 14:34 +07 (et-lead)
+
+Tài liệu liên quan: `docs/source-materials.md` (nguồn), `docs/exam-format.md` (khung đề), `docs/PROTOCOL.md` (quy trình multi-agent).
+
+## 1. Mục tiêu
+
+Web cho sinh viên CNTT ĐH GTVT tự luyện đề English for IT 2 theo 8 Unit, đủ 4 kỹ năng Listening, Reading, Writing, Speaking. Mỗi Unit 1 đề. Writing và Speaking do AI chấm.
+
+## 2. Quyết định đã chốt
+
+| Mục | Quyết định | Ngày chốt |
+|---|---|---|
+| Thang điểm | 10 điểm, mỗi kỹ năng 2,5 | 2026-10-14 |
+| Speaking | Bám lý thuyết (chức năng và ngữ pháp) của từng Unit | 2026-10-14 |
+| Listening | Giọng đọc trình duyệt, lời thoại viết mới | 2026-10-14 |
+| Phạm vi bản đầu | 8 Unit, mỗi Unit 1 đề | 2026-10-14 |
+| Người dùng | Chỉ sinh viên luyện đề; không có tài khoản, không có giáo viên | 2026-10-14 |
+| Lưu kết quả | `localStorage` trên trình duyệt | 2026-10-14 |
+| AI chấm | Gemini qua ShopAIKey: `gemini-2.5-flash`, dự phòng `gemini-3.8-flash` | 2026-10-14 |
+| Chống lạm dụng | `ACCESS_CODE` chung; rate limit 10 lần chấm/thiết bị/ngày và trần 100 lần/IP/ngày | 2026-10-14 (et-lead chọn, chủ dự án giao quyền) |
+| Làm tròn điểm | Tổng làm tròn đến 0,25 gần nhất, tối đa 10. Điểm từng kỹ năng hiển thị 2 chữ số thập phân. | 2026-10-14 (et-lead chọn, chủ dự án giao quyền) |
+| Repo | Public trên GitHub (`Duckcy-Bui/english-test-exam`) | 2026-10-14 |
+| Deploy | VPS riêng của chủ dự án, đã có domain; Docker + Nginx + HTTPS | 2026-10-14 |
+| Quy trình | 5 agent kiểm chéo khác họ model (`docs/PROTOCOL.md`) | 2026-10-14 |
+
+## 3. Các trang
+
+1. **Trang chủ:** nhập mã truy cập lần đầu; danh sách 8 Unit kèm điểm cao nhất đã đạt.
+2. **Trang Unit:** 4 thẻ kỹ năng và nút "Thi cả đề". Chọn chế độ Luyện tập hoặc Thi thử.
+3. **Trang làm bài** cho từng kỹ năng.
+4. **Trang kết quả:** điểm từng kỹ năng, đáp án và giải thích, nhận xét của AI bằng tiếng Việt, bài mẫu.
+5. **Lịch sử:** các lần làm bài lưu trong `localStorage`, có nút xoá.
+
+Hai chế độ:
+- **Luyện tập:** không tính giờ, làm xong xem ngay đáp án, giải thích và lời thoại bài nghe.
+- **Thi thử:** có đồng hồ, mỗi phần nghe tối đa 2 lần, chỉ xem đáp án sau khi nộp cả đề.
+
+## 4. Kỹ thuật
+
+### Công nghệ
+
+- Next.js (App Router) + TypeScript + Tailwind CSS.
+- Dữ liệu đề là file JSON tĩnh trong `data/units/`, kiểu dữ liệu định nghĩa ở `src/types/exam.ts`.
+- Đáp án Reading và Listening chấm phía server, để không gửi đáp án xuống trình duyệt trước khi nộp bài.
+
+### Biến môi trường (`.env`, chỉ nằm trên server)
+
+| Biến | Ví dụ | Ghi chú |
+|---|---|---|
+| `AI_BASE_URL` | `https://api.shopaikey.com` | Định dạng Gemini gốc, xem mục "Chấm bằng AI" |
+| `AI_API_KEY` | | Không commit, không gửi xuống trình duyệt |
+| `AI_MODEL` | `gemini-2.5-flash` | |
+| `AI_MODEL_FALLBACK` | `gemini-3.8-flash` | Dùng khi model chính lỗi |
+| `ACCESS_CODE` | | Mã chung phát cho lớp |
+| `RATE_LIMIT_PER_DEVICE` | `10` | Số lần chấm AI mỗi thiết bị (cookie) mỗi ngày |
+| `RATE_LIMIT_PER_IP` | `100` | Trần số lần chấm mỗi IP mỗi ngày, đặt cao vì cả lớp có thể dùng chung Wi-Fi |
+
+### Chấm bằng AI
+
+- Một API route phía server (`/api/grade`) nhận bài làm, kiểm `ACCESS_CODE` và rate limit, rồi gọi model.
+- Gọi ShopAIKey theo định dạng Gemini gốc: `POST https://api.shopaikey.com/v1beta/models/{model}:generateContent`, header `Authorization: Bearer <AI_API_KEY>`. Có thể dùng SDK `@google/genai` với `httpOptions.baseUrl = AI_BASE_URL`. Không dùng định dạng OpenAI (`/v1/chat/completions`) cho Speaking vì cần gửi audio.
+- Prompt chấm chứa barem trong `docs/exam-format.md` mục 3 và ngữ pháp trọng tâm của Unit.
+- Chống prompt injection:
+  - Bài làm của sinh viên đặt trong khối phân cách rõ ràng. Prompt hệ thống ghi rõ đó là dữ liệu cần chấm, không phải lệnh.
+  - Model phải trả JSON theo schema cố định, `temperature` = 0.
+  - Server kiểm lại JSON: đúng tiêu chí, mỗi điểm nằm trong giới hạn, tổng không vượt 2,5. Sai thì gọi lại 1 lần; vẫn sai thì báo lỗi, không ghi điểm.
+- Nhận xét, sửa lỗi và bài mẫu trả về bằng tiếng Việt.
+
+### Listening
+
+- Dùng `speechSynthesis` của trình duyệt, ưu tiên giọng `en-GB`. Giọng đọc khác nhau tuỳ hệ điều hành và trình duyệt.
+- Mở rộng sau: tạo sẵn file âm thanh bằng model TTS của Gemini qua ShopAIKey, chỉ tốn tiền một lần cho mỗi bài.
+
+### Speaking (thu âm kết hợp)
+
+- Web Speech API hiển thị bản chữ trong lúc nói. Chỉ chạy trên Chrome và Edge; âm thanh được gửi lên máy chủ Google để nhận dạng.
+- Đồng thời ghi âm bằng `MediaRecorder`. Server gửi cả audio (base64 `inlineData`) và bản chữ cho Gemini để chấm cả phát âm. ShopAIKey nhận `audio/wav`, `audio/mp3`, `audio/mpeg`, `audio/aac`, `audio/ogg`, `audio/flac`, **không có `audio/webm`** (định dạng mặc định của Chrome). Trình duyệt phải chuyển bản ghi sang WAV mono 16 kHz trước khi gửi. Audio tính khoảng 32 token mỗi giây.
+- Trình duyệt không hỗ trợ Web Speech API (Firefox, Safari cũ): chỉ dùng audio, hoặc cho sinh viên gõ câu trả lời.
+- Audio không lưu lại trên server sau khi chấm.
+- Micro chỉ hoạt động trên HTTPS.
+
+### Deploy
+
+- Next.js build dạng `standalone`, đóng gói bằng `Dockerfile` và `docker-compose.yml`.
+- Nginx làm reverse proxy, HTTPS bằng Let's Encrypt.
+- Rate limit lưu trên server (bộ nhớ hoặc SQLite). Nginx phải chuyển IP thật của người dùng qua header `X-Forwarded-For`.
+
+### Cấu trúc thư mục dự kiến
+
+```
+docs/                 tài liệu (et-lead)
+src/types/exam.ts     kiểu dữ liệu đề (et-lead khoá)
+data/units/           unit-1.json … unit-8.json (et-author)
+scripts/              strip-answers.ts, validate-exams.ts
+audit/                kết quả giải mù và báo cáo (et-auditor)
+qa/                   báo cáo kiểm thử (et-qa)
+app/, src/            mã nguồn web (et-dev)
+```
+
+File nguồn (PDF, ảnh đề) không đưa vào repo.
+
+## 5. Lộ trình 4 giai đoạn
+
+### Giai đoạn 1: Khoá đặc tả và công cụ kiểm chéo
+
+Người làm: et-lead.
+- [x] `docs/source-materials.md`, `docs/exam-format.md`, `docs/PROTOCOL.md`, `docs/plan.md`.
+- [ ] Khởi tạo tối thiểu để chạy TypeScript (`package.json`, `tsconfig.json`, chạy script bằng `tsx`).
+- [ ] `src/types/exam.ts`: kiểu dữ liệu đề, đáp án, barem.
+- [ ] `scripts/strip-answers.ts`: tạo bản đề không có đáp án cho et-auditor.
+- [ ] `scripts/validate-exams.ts`: kiểm schema, số câu, thang điểm, quét trùng từ khoá giữa câu nối 1–5 và câu 6–30.
+- [ ] `scripts/compare-blind.ts`: so đáp án giải mù của et-auditor với đáp án của et-author, in danh sách câu `AMBIGUOUS`.
+
+Xong khi: chủ dự án duyệt 4 file docs và `exam.ts`.
+
+### Giai đoạn 2: Mẫu chuẩn Unit 6
+
+Hai nhánh chạy song song:
+- **Nội dung:** et-author soạn `data/units/unit-6.json` từ đề mẫu Unit 6, sửa 4 cặp lộ đáp án và câu 17, bổ sung Listening và Speaking. et-auditor giải mù và kiểm, cấp `AUDIT-OK`.
+- **Code:** et-dev dựng giao diện và API chấm trên Unit 6. et-qa kiểm build, red team chống gian lận, kiểm `ACCESS_CODE` và rate limit, cấp `QA-OK`.
+
+Xong khi: Unit 6 chạy đủ 4 kỹ năng trên máy local, có cả hai nhãn; chủ dự án dùng thử và duyệt.
+
+### Giai đoạn 3: Sản xuất 7 Unit còn lại
+
+- Thứ tự: Unit 4, 5 (đã có đề mẫu), rồi 1, 2, 3, 7, 8.
+- Cuốn chiếu: et-author soạn Unit N+1 trong khi et-auditor kiểm Unit N.
+- Mỗi Unit chỉ merge khi có `AUDIT-OK`.
+
+Xong khi: đủ 8 Unit có `AUDIT-OK`, `validate-exams.ts` qua trên toàn bộ.
+
+### Giai đoạn 4: Đóng gói và đưa lên VPS
+
+- et-dev viết `Dockerfile` (standalone), `docker-compose.yml`, cấu hình mẫu Nginx và HTTPS.
+- et-qa kiểm lại trên bản build production.
+- Chủ dự án cung cấp thông tin VPS và domain khi đến bước này.
+
+Xong khi: web chạy trên domain qua HTTPS, micro hoạt động, chấm AI hoạt động.
+
+## 6. Vấn đề còn mở
+
+1. **10 lần chấm/ngày đủ bao nhiêu đề.** Một đề cần ít nhất 2 lần chấm (Writing, Speaking), nên mỗi thiết bị làm được tối đa khoảng 5 đề đầy đủ mỗi ngày. Giới hạn theo cookie dễ bị lách bằng cách xoá cookie; trần theo IP chặn mức thiệt hại.
+2. **Đáp án nằm trong repo public.** `data/units/*.json` chứa đáp án nên ai đọc GitHub cũng xem được. Với web luyện tập thì chấp nhận được; nếu muốn giấu thì phải tách dữ liệu sang repo private.
+3. **Bản quyền:** repo public nên không được commit PDF, ảnh hay nguyên văn bài đọc và lời thoại của Pearson.
+4. **Ảnh đề mẫu còn thiếu:** Part 2 của Unit 4 (cả hai bản), câu 1–5 bản Josh, email Unit 5.
+
+## 7. Nhật ký
+
+| Thời điểm | Sự kiện |
+|---|---|
+| 2026-10-14 14:34 +07 | et-lead viết lại 4 file docs sau khi phiên cloud mất dữ liệu (chưa push được do lỗi 403). |
+| 2026-10-14 14:49 +07 | Chủ dự án duyệt docs, chốt repo public, giao et-lead chọn cách làm tròn. Tra API Docs ShopAIKey: định dạng Gemini gốc, nhận audio base64 (không có webm). |

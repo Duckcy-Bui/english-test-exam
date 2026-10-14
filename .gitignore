@@ -1,0 +1,21 @@
+# dependencies & build
+node_modules/
+.next/
+out/
+dist/
+*.tsbuildinfo
+
+# secrets — never commit
+.env
+.env.*
+!.env.example
+
+# copyrighted source material (Pearson PDF, exam photos) stays outside git
+sources/
+*.pdf
+*.jpeg
+*.jpg
+
+# local
+.DS_Store
+npm-debug.log*
