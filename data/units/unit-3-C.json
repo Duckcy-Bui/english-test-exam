@@ -26,7 +26,8 @@
     "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
     "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
     "Bản r1 (tự soát theo nhắc của et-lead): R13 bỏ 'click the … button' vì trùng từ thuật ngữ và định nghĩa F (back button).",
-    "Bản r1, đợt 2 (theo review chéo của et-author2): R11 đổi nhiễu 'arrived' thành 'arrives'; R13 đổi sang 'follow a link' (bản trước lặp tình huống trang tin cũ của đề A); S2 bài mẫu bỏ 'round arrow' và 'latest news'; Listening B bỏ lịch bảo trì (trùng bài R26–R30), L10 hỏi nơi phải đăng xuất; W34 đổi tình huống (trùng R16 quét tài liệu); email mẫu có câu điều kiện loại 1 đúng mẫu; L6, L9 thêm biến thể."
+    "Bản r1, đợt 2 (theo review chéo của et-author2): R11 đổi nhiễu 'arrived' thành 'arrives'; R13 đổi sang 'follow a link' (bản trước lặp tình huống trang tin cũ của đề A); S2 bài mẫu bỏ 'round arrow' và 'latest news'; Listening B bỏ lịch bảo trì (trùng bài R26–R30), L10 hỏi nơi phải đăng xuất; W34 đổi tình huống (trùng R16 quét tài liệu); email mẫu có câu điều kiện loại 1 đúng mẫu; L6, L9 thêm biến thể.",
+    "Bản r1, đợt 2b: Listening B thêm một câu để đủ 150 từ."
   ],
   "listening": {
     "parts": [
@@ -243,7 +244,7 @@
           },
           {
             "speaker": "Owen",
-            "text": "The portal works best in Chrome or Firefox. If a page looks strange or doesn't load, clear your browser history and try again. If that doesn't help, contact us through the help page."
+            "text": "The portal works best in Chrome or Firefox. If a page looks strange or doesn't load, clear your browser history and try again. If that doesn't help, contact us through the help page. The portal also shows important messages from your teachers, so check it every morning."
           },
           {
             "speaker": "Owen",
