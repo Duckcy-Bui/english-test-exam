@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState, type CSSProperties } from "react";
+import { useEffect, useState } from "react";
 import { findAttempt, type SavedAttempt } from "../client/history";
 import {
   SCORING,
@@ -54,22 +54,25 @@ function Rubric({
   rows: { label: string; score: number; max: number }[];
 }) {
   return (
-    <div className="rubric-grid">
-      {rows.map((row) => (
-        <div className="rubric-item" key={row.label}>
-          <span>{row.label}</span>
-          <strong>
-            {row.score.toFixed(2)}{" "}
-            <small>
-              / {row.max.toFixed(3).replace(/0+$/, "").replace(/\.$/, "")}
-            </small>
-          </strong>
-          <div className="progress-track">
-            <span style={{ width: `${(row.score / row.max) * 100}%` }} />
-          </div>
-        </div>
-      ))}
-    </div>
+    <table className="rubric-table" aria-label="Điểm theo tiêu chí">
+      <thead>
+        <tr>
+          <th scope="col">Tiêu chí</th>
+          <th scope="col">Điểm</th>
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((row) => (
+          <tr key={row.label}>
+            <th scope="row">{row.label}</th>
+            <td>
+              <strong>{row.score.toFixed(2)}</strong> /{" "}
+              {row.max.toFixed(3).replace(/0+$/, "").replace(/\.$/, "")}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
   );
 }
 
@@ -103,7 +106,6 @@ function WritingFeedback({ grade }: { grade: WritingGrade }) {
       />
       <p className="word-counter">Email: {grade.email.wordCount} từ</p>
       <div className="feedback-box">
-        <Icon name="spark" />
         <div>
           <h3>Nhận xét cho email</h3>
           <p>{grade.email.feedback}</p>
@@ -149,7 +151,6 @@ function SpeakingFeedback({ grade }: { grade: SpeakingGrade }) {
           : "Chưa đánh giá phát âm."}
       </p>
       <div className="feedback-box">
-        <Icon name="spark" />
         <div>
           <h3>Nhận xét cho bài nói</h3>
           <p>{grade.feedback}</p>
@@ -214,33 +215,40 @@ function AnswerReview({
       className={`answer-review ${question.correct ? "correct" : "incorrect"}`}
     >
       <summary>
-        <span className="review-status">
-          <Icon name={question.correct ? "check" : "pen"} />
-        </span>
-        <span>
-          <strong>{question.id}</strong> {prompt?.stem ?? "Câu hỏi"}
-        </span>
+        <span className="question-id">{question.id}</span>
+        <span className="review-question-stem">{prompt?.stem ?? "Câu hỏi"}</span>
         <span className="question-points">
-          {question.score.toFixed(2)} điểm
+          {question.correct ? "Đúng" : "Sai"} · {question.score.toFixed(2)} điểm
         </span>
       </summary>
       <div className="answer-review-body">
         {prompt?.options && (
           <ul className="review-options">
             {prompt.options.map((option) => (
-              <li key={option.id}>
+              <li
+                key={option.id}
+                className={
+                  option.id === question.correctAnswer
+                    ? "answer-correct"
+                    : option.id === question.answer
+                      ? "answer-incorrect"
+                      : undefined
+                }
+              >
                 {option.id}. {option.text}
               </li>
             ))}
           </ul>
         )}
         <div className="answer-comparison">
-          <div>
-            <small>BẠN CHỌN</small>
+          <div
+            className={question.correct ? "answer-correct" : "answer-incorrect"}
+          >
+            <strong className="review-answer-label">Bạn chọn</strong>
             <p>{label(question.answer)}</p>
           </div>
-          <div>
-            <small>ĐÁP ÁN ĐÚNG</small>
+          <div className="answer-correct">
+            <strong className="review-answer-label">Đáp án đúng</strong>
             <p>{label(question.correctAnswer)}</p>
           </div>
         </div>
@@ -260,22 +268,40 @@ function ObjectiveReview({
   result: ExamResult;
 }) {
   const questions = result.skills[skill]?.questions ?? [];
+  const listening = skill === "listening" ? result.review.listening : undefined;
+  const reading = skill === "reading" ? result.review.reading : undefined;
+  const reviewedIds = new Set(
+    listening
+      ? listening.parts.flatMap((part) => part.questions.map(({ id }) => id))
+      : reading
+        ? [
+            ...reading.matching.items,
+            ...reading.grammar,
+            ...reading.vocabulary,
+            ...reading.passageMcq.questions,
+            ...reading.passageTrueFalse.questions,
+          ].map(({ id }) => id)
+        : [],
+  );
+  const renderQuestions = (ids: string[]) =>
+    questions
+      .filter((question) => ids.includes(question.id))
+      .map((question) => (
+        <AnswerReview key={question.id} question={question} result={result} />
+      ));
   return (
     <>
       <p className="review-summary">
         Đúng {questions.filter((question) => question.correct).length}/
         {questions.length} câu. Mở từng câu để xem đáp án và giải thích.
       </p>
-      {questions.map((question) => (
-        <AnswerReview key={question.id} question={question} result={result} />
-      ))}
-      {skill === "listening" &&
-        result.review.listening?.parts.map((part) => (
-          <details className="reference-panel" key={part.id}>
-            <summary>
-              <Icon name="headphones" />
-              Lời thoại Listening · Part {part.id}
-            </summary>
+      {listening?.parts.map((part) => (
+        <section className="review-section" key={part.id}>
+          <h3>Part {part.id}</h3>
+          <p className="quiet-note">{part.context}</p>
+          {renderQuestions(part.questions.map(({ id }) => id))}
+          <details className="reference-panel">
+            <summary>Lời thoại Listening · Part {part.id}</summary>
             <div>
               {part.script.map((line, index) => (
                 <p key={index}>
@@ -284,41 +310,63 @@ function ObjectiveReview({
               ))}
             </div>
           </details>
-        ))}
-      {skill === "reading" && result.review.reading && (
+        </section>
+      ))}
+      {reading && (
         <>
-          <details className="reference-panel">
-            <summary>
-              <Icon name="book" />
-              Các định nghĩa bài nối
-            </summary>
-            <div>
-              {result.review.reading.matching.definitions.map((definition) => (
-                <p key={definition.id}>
-                  <strong>{definition.id}.</strong> {definition.text}
-                </p>
+          <section className="review-section">
+            <h3>Nối thuật ngữ và định nghĩa</h3>
+            <div className="definitions-list">
+              {reading.matching.definitions.map((definition) => (
+                <div key={definition.id}>
+                  <strong>{definition.id}.</strong>
+                  <p>{definition.text}</p>
+                </div>
               ))}
             </div>
-          </details>
+            {renderQuestions(reading.matching.items.map(({ id }) => id))}
+          </section>
           {[
-            result.review.reading.passageMcq.passage,
-            result.review.reading.passageTrueFalse.passage,
-          ].map((passage, index) => (
-            <details className="reference-panel" key={index}>
-              <summary>
-                <Icon name="book" />
-                Bài đọc {index + 1}
-                {passage.title ? ` · ${passage.title}` : ""}
-              </summary>
-              <div>
-                {passage.paragraphs.map((paragraph, index) => (
-                  <p key={index}>{paragraph}</p>
-                ))}
+            { title: "Ngữ pháp", questions: reading.grammar },
+            { title: "Từ vựng trong ngữ cảnh", questions: reading.vocabulary },
+          ].map((part) => (
+            <section className="review-section" key={part.title}>
+              <h3>{part.title}</h3>
+              {renderQuestions(part.questions.map(({ id }) => id))}
+            </section>
+          ))}
+          {[
+            { title: "Part 2: Đọc hiểu", ...reading.passageMcq },
+            { title: "Part 2: True / False", ...reading.passageTrueFalse },
+          ].map((part) => (
+            <section
+              className="review-section reading-comprehension"
+              key={part.title}
+            >
+              <h3>{part.title}</h3>
+              <div className="reading-split">
+                <div className="reading-passage-pane">
+                  <p className="quiet-note">{part.instructions}</p>
+                  <article className="reading-passage">
+                    {part.passage.title && <h4>{part.passage.title}</h4>}
+                    {part.passage.paragraphs.map((paragraph, index) => (
+                      <p key={index}>{paragraph}</p>
+                    ))}
+                  </article>
+                </div>
+                <div className="reading-question-pane">
+                  {renderQuestions(part.questions.map(({ id }) => id))}
+                </div>
               </div>
-            </details>
+            </section>
           ))}
         </>
       )}
+      {questions
+        .filter((question) => !reviewedIds.has(question.id))
+        .map((question) => (
+          <AnswerReview key={question.id} question={question} result={result} />
+        ))}
     </>
   );
 }
@@ -359,7 +407,6 @@ export function ResultsPage({ resultId }: { resultId: string }) {
     <>
       <div className="page-heading">
         <div>
-          <p className="eyebrow">HOÀN THÀNH MỘT BƯỚC TIẾN</p>
           <h1>Kết quả làm bài</h1>
           <p>
             Unit {result.unit} · {result.unitTitle} · Đề {result.testId} <span>·</span>{" "}
@@ -384,66 +431,51 @@ export function ResultsPage({ resultId }: { resultId: string }) {
           trong trang này.
         </div>
       )}
-      <section className="results-overview">
+      <section className="results-overview" aria-label="Tổng quan kết quả">
         <div className="total-score">
-          <div
-            className="score-ring"
-            style={
-              {
-                "--score-angle": `${(result.total / max) * 360}deg`,
-              } as CSSProperties
-            }
-          >
-            <div>
-              <strong>{result.total.toFixed(2)}</strong>
-              <span>/ {max === 10 ? "10" : "2,50"}</span>
-            </div>
+          <h2>
+            {result.scope === "full"
+              ? "Tổng điểm"
+              : `Điểm ${skillNames[result.scope]}`}
+          </h2>
+          <div className="score-total-value">
+            <strong>{result.total.toFixed(2)}</strong>
+            <span>/ {max === 10 ? "10" : "2,50"}</span>
           </div>
-          <div>
-            <p className="eyebrow">
-              {result.scope === "full"
-                ? "TỔNG ĐIỂM"
-                : `ĐIỂM ${skillNames[result.scope].toUpperCase()}`}
-            </p>
-            <h2>
-              {result.mock
-                ? "Bạn đã hoàn thành bài thử!"
-                : result.total / max >= 0.8
-                  ? "Một kết quả đáng khích lệ!"
-                  : "Mỗi lần làm bài, một lần tiến bộ."}
-            </h2>
-            <p>
-              {result.mode === "exam" ? "Thi thử" : "Luyện tập"} ·{" "}
-              {result.scope === "full"
-                ? "Đủ 4 kỹ năng"
-                : skillNames[result.scope]}
-            </p>
-          </div>
+          <p className="score-total-label">
+            {result.mode === "exam" ? "Thi thử" : "Luyện tập"} ·{" "}
+            {result.scope === "full" ? "Đủ 4 kỹ năng" : skillNames[result.scope]}
+          </p>
         </div>
-        <div className="score-breakdown">
-          {scopeSkills.map((skill) => (
-            <button
-              key={skill}
-              className={`score-skill ${activeSkill === skill ? "selected" : ""}`}
-              onClick={() => setActiveSkill(skill)}
-            >
-              <span className={`skill-icon skill-${skill}`}>
-                <Icon name={skillIcons[skill]} />
-              </span>
-              <div>
-                <span>{skillNames[skill]}</span>
-                <strong>
-                  {result.skills[skill]!.score.toFixed(2)} <small>/ 2,50</small>
-                </strong>
-              </div>
-              <Icon name="arrow" />
-            </button>
-          ))}
-        </div>
+        <table className="score-table" aria-label="Điểm các kỹ năng">
+          <thead>
+            <tr>
+              <th scope="col">Kỹ năng</th>
+              <th scope="col">Điểm</th>
+            </tr>
+          </thead>
+          <tbody>
+            {scopeSkills.map((skill) => (
+              <tr key={skill} className={activeSkill === skill ? "selected" : ""}>
+                <th scope="row">
+                  <button
+                    className="score-skill"
+                    aria-pressed={activeSkill === skill}
+                    onClick={() => setActiveSkill(skill)}
+                  >
+                    {skillNames[skill]}
+                  </button>
+                </th>
+                <td>
+                  <strong>{result.skills[skill]!.score.toFixed(2)}</strong> / 2,50
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </section>
       <div className="section-heading">
         <div>
-          <p className="eyebrow">HIỂU KẾT QUẢ CỦA BẠN</p>
           <h2>Đáp án & nhận xét</h2>
         </div>
         <p>Chọn kỹ năng để xem chi tiết.</p>
@@ -479,18 +511,24 @@ export function ResultsPage({ resultId }: { resultId: string }) {
                 <article className="translation-review" key={item.id}>
                   <h3>
                     <span className="question-id">{item.id}</span>
-                    {item.source}
-                    <span>{grade?.score.toFixed(2)} / 0,25</span>
+                    <span className="review-question-stem">{item.source}</span>
+                    <span className="question-points">
+                      {grade?.score.toFixed(2)} / 0,25
+                    </span>
                   </h3>
                   <div className="answer-comparison">
                     <div>
-                      <small>BẢN DỊCH CỦA BẠN</small>
+                      <strong className="review-answer-label">
+                        Bản dịch của bạn
+                      </strong>
                       <p>
                         {answers?.writing.translations[item.id] || "Bỏ trống"}
                       </p>
                     </div>
                     <div>
-                      <small>BẢN DỊCH THAM KHẢO</small>
+                      <strong className="review-answer-label">
+                        Bản dịch tham khảo
+                      </strong>
                       <p>{item.referenceTranslation}</p>
                     </div>
                   </div>

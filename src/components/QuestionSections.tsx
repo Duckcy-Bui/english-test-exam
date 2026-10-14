@@ -27,7 +27,11 @@ function Mcq({
   disabled: boolean;
 }) {
   return (
-    <fieldset className="question-card" disabled={disabled}>
+    <fieldset
+      id={`question-${question.id}`}
+      className="question-card"
+      disabled={disabled}
+    >
       <legend>
         <span className="question-id">{question.id}</span>
         {question.stem}
@@ -45,7 +49,7 @@ function Mcq({
               checked={value === option.id}
               onChange={() => onChange(option.id)}
             />
-            <span className="option-letter">{option.id}</span>
+            <span className="option-letter">{option.id}.</span>
             <span>{option.text}</span>
           </label>
         ))}
@@ -280,9 +284,9 @@ export function ListenButton({
   }
   return (
     <div className="listening-control">
-      <div>
+      <div className="listening-toolbar">
         <button
-          className="button primary"
+          className="button secondary"
           onClick={play}
           disabled={
             disabled ||
@@ -314,13 +318,16 @@ export function ListenButton({
             Dừng
           </button>
         )}
+        <span className="listening-remaining">
+          {examMode ? `Còn ${remaining ?? 0}/2 lượt nghe` : "Nghe không giới hạn"}
+        </span>
       </div>
-      <p>
+      <p className="quiet-note">
         {examMode
-          ? `Còn ${remaining ?? 0}/2 lượt nghe. Mỗi lần bấm phát tính một lượt.`
+          ? "Mỗi lần bấm phát tính một lượt."
           : listeningOnly
             ? "Nghe không giới hạn để làm phần Listening trong PDF."
-            : "Nghe không giới hạn. Lời thoại hiển thị sau khi nộp bài."}
+            : "Lời thoại hiển thị sau khi nộp bài."}
       </p>
       {error && (
         <p className="field-error" role="alert">
@@ -349,17 +356,13 @@ export function ListeningQuestions({
   return (
     <>
       {section.parts.map((part) => (
-        <section className="exam-section" key={part.id}>
-          <div className="section-title">
-            <span className="part-tag">PART {part.id}</span>
+        <section className="exam-section listening-part" key={part.id}>
+          <div className="section-title listening-part-header">
             <h2>
+              Part {part.id}: {" "}
               {part.id === "A" ? "Nghe và chọn đáp án" : "Nghe và trả lời ngắn"}
             </h2>
             <p>{part.instructions}</p>
-          </div>
-          <div className="listening-context">
-            <Icon name="headphones" />
-            <p>{part.context}</p>
           </div>
           <ListenButton
             sessionId={sessionId}
@@ -367,6 +370,7 @@ export function ListeningQuestions({
             examMode={examMode}
             disabled={disabled}
           />
+          <p className="listening-context">{part.context}</p>
           {part.questions.map((question) =>
             question.kind === "mcq" ? (
               <Mcq
@@ -377,7 +381,11 @@ export function ListeningQuestions({
                 disabled={disabled}
               />
             ) : (
-              <div className="question-card short-question" key={question.id}>
+              <div
+                id={`question-${question.id}`}
+                className="question-card short-question"
+                key={question.id}
+              >
                 <label htmlFor={question.id}>
                   <span className="question-id">{question.id}</span>
                   {question.stem}
@@ -412,129 +420,268 @@ export function ReadingQuestions({
   values,
   onChange,
   disabled,
+  requestedQuestion,
 }: {
   section: NonNullable<SessionExam["reading"]>;
   values: Record<string, string>;
   onChange: (id: string, value: string) => void;
   disabled: boolean;
+  requestedQuestion?: { id: string; token: number };
 }) {
+  type ReadingPart = "part1" | "mcq" | "truefalse";
+  const [activePart, setActivePart] = useState<ReadingPart>("part1");
+  const handledRequest = useRef<number | null>(null);
+  const tabs: { id: ReadingPart; label: string }[] = [
+    { id: "part1", label: "Part 1" },
+    { id: "mcq", label: "Part 2: Đọc hiểu" },
+    { id: "truefalse", label: "Part 2: True/False" },
+  ];
+  let requestedPart: ReadingPart | null = null;
+  if (requestedQuestion) {
+    const hasRequestedQuestion = (questions: { id: string }[]) =>
+      questions.some((question) => question.id === requestedQuestion.id);
+    if (hasRequestedQuestion(section.passageMcq.questions)) requestedPart = "mcq";
+    else if (hasRequestedQuestion(section.passageTrueFalse.questions))
+      requestedPart = "truefalse";
+    else if (
+      hasRequestedQuestion([
+        ...section.matching.items,
+        ...section.grammar,
+        ...section.vocabulary,
+      ])
+    )
+      requestedPart = "part1";
+  }
+
+  useEffect(() => {
+    if (requestedPart) setActivePart(requestedPart);
+  }, [requestedPart, requestedQuestion?.token]);
+
+  useEffect(() => {
+    if (
+      !requestedQuestion ||
+      !requestedPart ||
+      activePart !== requestedPart ||
+      handledRequest.current === requestedQuestion.token
+    )
+      return;
+    const frame = window.requestAnimationFrame(() => {
+      const question = document.getElementById(`question-${requestedQuestion.id}`);
+      if (!question) return;
+      handledRequest.current = requestedQuestion.token;
+      question.scrollIntoView({
+        block: "start",
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+          ? "auto"
+          : "smooth",
+      });
+    });
+    return () => window.cancelAnimationFrame(frame);
+  }, [activePart, requestedPart, requestedQuestion?.id, requestedQuestion?.token]);
+
   return (
     <>
-      <section className="exam-section">
-        <div className="section-title">
-          <span className="part-tag">PHẦN 1</span>
-          <h2>Nối thuật ngữ và định nghĩa</h2>
-          <p>{section.matching.instructions}</p>
-        </div>
-        <div className="definitions-list">
-          {section.matching.definitions.map((definition) => (
-            <div key={definition.id}>
-              <strong>{definition.id}</strong>
-              <p>{definition.text}</p>
-            </div>
-          ))}
-        </div>
-        <div className="matching-grid">
-          {section.matching.items.map((item) => (
-            <div className="matching-item" key={item.id}>
-              <label htmlFor={item.id}>
-                <span className="question-id">{item.id}</span>
-                {item.term}
-              </label>
-              <select
-                id={item.id}
-                value={values[item.id] ?? ""}
-                onChange={(event) => onChange(item.id, event.target.value)}
-                disabled={disabled}
-              >
-                <option value="">Chọn…</option>
-                {section.matching.definitions.map((definition) => (
-                  <option key={definition.id} value={definition.id}>
-                    {definition.id}
-                  </option>
-                ))}
-              </select>
-            </div>
-          ))}
-        </div>
-      </section>
-      {[
-        { title: "Ngữ pháp", questions: section.grammar },
-        { title: "Từ vựng trong ngữ cảnh", questions: section.vocabulary },
-      ].map((part, index) => (
-        <section className="exam-section" key={part.title}>
-          <div className="section-title">
-            <span className="part-tag">PHẦN {index + 2}</span>
-            <h2>{part.title}</h2>
-            <p>Chọn một đáp án đúng cho mỗi câu.</p>
-          </div>
-          {part.questions.map((question) => (
-            <Mcq
-              key={question.id}
-              question={question}
-              value={values[question.id]}
-              onChange={(value) => onChange(question.id, value)}
-              disabled={disabled}
-            />
-          ))}
-        </section>
-      ))}
-      <section className="exam-section">
-        <div className="section-title">
-          <span className="part-tag">PHẦN 4</span>
-          <h2>Đọc hiểu</h2>
-          <p>{section.passageMcq.instructions}</p>
-        </div>
-        <ReadingPassage passage={section.passageMcq.passage} />
-        {section.passageMcq.questions.map((question) => (
-          <Mcq
-            key={question.id}
-            question={question}
-            value={values[question.id]}
-            onChange={(value) => onChange(question.id, value)}
-            disabled={disabled}
-          />
-        ))}
-      </section>
-      <section className="exam-section">
-        <div className="section-title">
-          <span className="part-tag">PHẦN 5</span>
-          <h2>True / False</h2>
-          <p>{section.passageTrueFalse.instructions}</p>
-        </div>
-        <ReadingPassage passage={section.passageTrueFalse.passage} />
-        {section.passageTrueFalse.questions.map((question) => (
-          <fieldset
-            className="question-card"
-            key={question.id}
-            disabled={disabled}
+      <div className="reading-tabs" role="tablist" aria-label="Phần Reading">
+        {tabs.map((tab, index) => (
+          <button
+            type="button"
+            key={tab.id}
+            id={`reading-tab-${tab.id}`}
+            role="tab"
+            aria-selected={activePart === tab.id}
+            aria-controls={`reading-panel-${tab.id}`}
+            tabIndex={activePart === tab.id ? 0 : -1}
+            className={activePart === tab.id ? "active" : ""}
+            onClick={() => setActivePart(tab.id)}
+            onKeyDown={(event) => {
+              const nextIndex =
+                event.key === "ArrowRight"
+                  ? (index + 1) % tabs.length
+                  : event.key === "ArrowLeft"
+                    ? (index + tabs.length - 1) % tabs.length
+                    : event.key === "Home"
+                      ? 0
+                      : event.key === "End"
+                        ? tabs.length - 1
+                        : null;
+              if (nextIndex === null) return;
+              event.preventDefault();
+              setActivePart(tabs[nextIndex].id);
+              document.getElementById(`reading-tab-${tabs[nextIndex].id}`)?.focus();
+            }}
           >
-            <legend>
-              <span className="question-id">{question.id}</span>
-              {question.statement}
-            </legend>
-            <div className="tf-options">
-              {[
-                { value: "T", label: "True" },
-                { value: "F", label: "False" },
-              ].map((option) => (
-                <label
-                  className={`option ${values[question.id] === option.value ? "chosen" : ""}`}
-                  key={option.value}
-                >
-                  <input
-                    type="radio"
-                    name={question.id}
-                    checked={values[question.id] === option.value}
-                    onChange={() => onChange(question.id, option.value)}
-                  />
-                  <span>{option.label}</span>
-                </label>
-              ))}
-            </div>
-          </fieldset>
+            {tab.label}
+          </button>
         ))}
-      </section>
+      </div>
+      <div
+        className="reading-panel"
+        id={`reading-panel-${activePart}`}
+        role="tabpanel"
+        aria-labelledby={`reading-tab-${activePart}`}
+        tabIndex={0}
+      >
+        {activePart === "part1" && (
+          <>
+            <section className="exam-section">
+              <div className="section-title">
+                <h2>Nối thuật ngữ và định nghĩa</h2>
+                <p>{section.matching.instructions}</p>
+              </div>
+              <div className="definitions-list">
+                {section.matching.definitions.map((definition) => (
+                  <div key={definition.id}>
+                    <strong>{definition.id}</strong>
+                    <p>{definition.text}</p>
+                  </div>
+                ))}
+              </div>
+              <div className="matching-grid">
+                {section.matching.items.map((item) => (
+                  <div
+                    id={`question-${item.id}`}
+                    className="matching-item"
+                    key={item.id}
+                  >
+                    <label htmlFor={item.id}>
+                      <span className="question-id">{item.id}</span>
+                      {item.term}
+                    </label>
+                    <select
+                      id={item.id}
+                      value={values[item.id] ?? ""}
+                      onChange={(event) => onChange(item.id, event.target.value)}
+                      disabled={disabled}
+                    >
+                      <option value="">Chọn…</option>
+                      {section.matching.definitions.map((definition) => (
+                        <option key={definition.id} value={definition.id}>
+                          {definition.id}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                ))}
+              </div>
+            </section>
+            {[
+              { title: "Ngữ pháp", questions: section.grammar },
+              { title: "Từ vựng trong ngữ cảnh", questions: section.vocabulary },
+            ].map((part) => (
+              <section className="exam-section" key={part.title}>
+                <div className="section-title">
+                  <h2>{part.title}</h2>
+                  <p>Chọn một đáp án đúng cho mỗi câu.</p>
+                </div>
+                {part.questions.map((question) => (
+                  <Mcq
+                    key={question.id}
+                    question={question}
+                    value={values[question.id]}
+                    onChange={(value) => onChange(question.id, value)}
+                    disabled={disabled}
+                  />
+                ))}
+              </section>
+            ))}
+          </>
+        )}
+        {activePart === "mcq" && (
+          <section className="exam-section reading-comprehension">
+            <div className="section-title">
+              <h2>Đọc hiểu</h2>
+            </div>
+            <div className="reading-split">
+              <div
+                className="reading-passage-pane"
+                role="region"
+                tabIndex={0}
+                aria-label="Bài đọc hiểu"
+              >
+                <p className="reading-instructions">
+                  {section.passageMcq.instructions}
+                </p>
+                <ReadingPassage passage={section.passageMcq.passage} />
+              </div>
+              <div
+                className="reading-question-pane"
+                role="region"
+                tabIndex={0}
+                aria-label="Câu hỏi đọc hiểu"
+              >
+                {section.passageMcq.questions.map((question) => (
+                  <Mcq
+                    key={question.id}
+                    question={question}
+                    value={values[question.id]}
+                    onChange={(value) => onChange(question.id, value)}
+                    disabled={disabled}
+                  />
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+        {activePart === "truefalse" && (
+          <section className="exam-section reading-comprehension">
+            <div className="section-title">
+              <h2>True / False</h2>
+            </div>
+            <div className="reading-split">
+              <div
+                className="reading-passage-pane"
+                role="region"
+                tabIndex={0}
+                aria-label="Bài đọc True / False"
+              >
+                <p className="reading-instructions">
+                  {section.passageTrueFalse.instructions}
+                </p>
+                <ReadingPassage passage={section.passageTrueFalse.passage} />
+              </div>
+              <div
+                className="reading-question-pane"
+                role="region"
+                tabIndex={0}
+                aria-label="Câu hỏi True / False"
+              >
+                {section.passageTrueFalse.questions.map((question) => (
+                  <fieldset
+                    id={`question-${question.id}`}
+                    className="question-card"
+                    key={question.id}
+                    disabled={disabled}
+                  >
+                    <legend>
+                      <span className="question-id">{question.id}</span>
+                      {question.statement}
+                    </legend>
+                    <div className="tf-options">
+                      {[
+                        { value: "T", label: "True" },
+                        { value: "F", label: "False" },
+                      ].map((option) => (
+                        <label
+                          className={`option ${values[question.id] === option.value ? "chosen" : ""}`}
+                          key={option.value}
+                        >
+                          <input
+                            type="radio"
+                            name={question.id}
+                            checked={values[question.id] === option.value}
+                            onChange={() => onChange(question.id, option.value)}
+                          />
+                          <span>{option.label}</span>
+                        </label>
+                      ))}
+                    </div>
+                  </fieldset>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+      </div>
     </>
   );
 }
@@ -555,12 +702,15 @@ export function WritingQuestions({
     <>
       <section className="exam-section">
         <div className="section-title">
-          <span className="part-tag">PHẦN 1 · 1,25 ĐIỂM</span>
           <h2>Dịch Anh → Việt</h2>
           <p>{section.translation.instructions}</p>
         </div>
         {section.translation.items.map((item) => (
-          <div className="question-card translation-question" key={item.id}>
+          <div
+            id={`question-${item.id}`}
+            className="question-card translation-question"
+            key={item.id}
+          >
             <label htmlFor={item.id}>
               <span className="question-id">{item.id}</span>
               {item.source}
@@ -585,72 +735,77 @@ export function WritingQuestions({
           </div>
         ))}
       </section>
-      <section className="exam-section">
+      <section className="exam-section email-section" id="question-email">
         <div className="section-title">
-          <span className="part-tag">PHẦN 2 · 1,25 ĐIỂM</span>
           <h2>Viết email hướng dẫn</h2>
-          <p>{section.email.task}</p>
         </div>
-        <div className="email-task">
-          <span className="badge teal">To: {section.email.recipient}</span>
-          <h3>Nội dung cần có</h3>
-          <ul>
-            {section.email.bullets.map((bullet) => (
-              <li key={bullet}>{bullet}</li>
-            ))}
-          </ul>
-          <div className="grammar-chips">
-            {section.email.targetGrammar.map((grammar) => (
-              <span key={grammar}>{grammar}</span>
-            ))}
+        <div className="writing-email-layout">
+          <div className="email-task">
+            <p>{section.email.task}</p>
+            <p className="email-recipient">
+              <strong>To:</strong> {section.email.recipient}
+            </p>
+            <h3>Nội dung cần có</h3>
+            <ul>
+              {section.email.bullets.map((bullet) => (
+                <li key={bullet}>{bullet}</li>
+              ))}
+            </ul>
+            <div className="grammar-chips">
+              {section.email.targetGrammar.map((grammar) => (
+                <span key={grammar}>{grammar}</span>
+              ))}
+            </div>
           </div>
-        </div>
-        <div className="email-editor-head">
-          <label className="field-label" htmlFor="email-answer">
-            Email của bạn
-          </label>
-          <button
-            type="button"
-            className="button ghost"
-            disabled={disabled || values.email.trim() !== ""}
-            title={
-              values.email.trim()
-                ? "Chỉ chèn được khi ô email còn trống"
-                : "Điền sẵn khung email của giáo viên"
-            }
-            onClick={() =>
-              onChange({
-                ...values,
-                email: emailTemplate(section.email.recipient),
-              })
-            }
-          >
-            <Icon name="pen" />
-            Chèn khung email
-          </button>
-        </div>
-        <textarea
-          id="email-answer"
-          maxLength={10000}
-          className="email-editor"
-          rows={13}
-          placeholder={`From: …\nTo: ${section.email.recipient}\nDate: …\nSubject: …\n\nHi ${section.email.recipient},\n\nIt should be quite easy to …\nFirst, … Then, … Next, … After that, … Finally, …\nDon't forget to … when you've finished.\n\nBest wishes,\n…`}
-          value={values.email}
-          onChange={(event) =>
-            onChange({ ...values, email: event.target.value })
-          }
-          disabled={disabled}
-        />
-        <div className="editor-footer">
-          <span>
-            Viết bằng tiếng Anh, phần thân {section.email.wordRange[0]}–
-            {section.email.wordRange[1]} từ (không tính 4 dòng From/To/Date/Subject).
-          </span>
-          <strong
-            className={words > section.email.wordRange[1] ? "over-limit" : ""}
-          >
-            {words} từ
-          </strong>
+          <div className="email-editor-pane">
+            <div className="email-editor-head">
+              <label className="field-label" htmlFor="email-answer">
+                Email của bạn
+              </label>
+              <button
+                type="button"
+                className="button ghost"
+                disabled={disabled || values.email.trim() !== ""}
+                title={
+                  values.email.trim()
+                    ? "Chỉ chèn được khi ô email còn trống"
+                    : "Điền sẵn khung email của giáo viên"
+                }
+                onClick={() =>
+                  onChange({
+                    ...values,
+                    email: emailTemplate(section.email.recipient),
+                  })
+                }
+              >
+                <Icon name="pen" />
+                Chèn khung email
+              </button>
+            </div>
+            <textarea
+              id="email-answer"
+              maxLength={10000}
+              className="email-editor"
+              rows={13}
+              placeholder={`From: …\nTo: ${section.email.recipient}\nDate: …\nSubject: …\n\nHi ${section.email.recipient},\n\nIt should be quite easy to …\nFirst, … Then, … Next, … After that, … Finally, …\nDon't forget to … when you've finished.\n\nBest wishes,\n…`}
+              value={values.email}
+              onChange={(event) =>
+                onChange({ ...values, email: event.target.value })
+              }
+              disabled={disabled}
+            />
+            <div className="editor-footer">
+              <span>
+                Viết bằng tiếng Anh, phần thân {section.email.wordRange[0]}–
+                {section.email.wordRange[1]} từ (không tính 4 dòng From/To/Date/Subject).
+              </span>
+              <strong
+                className={words > section.email.wordRange[1] ? "over-limit" : ""}
+              >
+                {words} từ
+              </strong>
+            </div>
+          </div>
         </div>
       </section>
     </>
@@ -711,10 +866,14 @@ export function SpeakingQuestions({
   return (
     <>
       {section.parts.map((part) => (
-        <section className="exam-section" key={part.id}>
+        <section
+          id={`question-${part.id}`}
+          className="exam-section speaking-part"
+          key={part.id}
+        >
           <div className="section-title">
-            <span className="part-tag">PART {part.id.substring(1)}</span>
             <h2>
+              Part {part.id.substring(1)}: {" "}
               {part.kind === "questions"
                 ? "Trả lời câu hỏi"
                 : part.kind === "explain"
@@ -727,7 +886,11 @@ export function SpeakingQuestions({
             part.questions.map((question, index) => {
               const id = `S1-${index + 1}`;
               return (
-                <article className="speaking-question" key={id}>
+                <article
+                  id={`question-${id}`}
+                  className="speaking-question"
+                  key={id}
+                >
                   <h3>
                     <span className="question-id">{id}</span>
                     {question}

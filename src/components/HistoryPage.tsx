@@ -8,7 +8,14 @@ import {
   readHistory,
   type SavedAttempt,
 } from "../client/history";
-import { EmptyState, ErrorNotice, formatDate, Icon, skillNames, SourceBadge } from "./ui";
+import {
+  EmptyState,
+  ErrorNotice,
+  formatDate,
+  Icon,
+  skillNames,
+  SourceBadge,
+} from "./ui";
 
 export function HistoryPage() {
   const [attempts, setAttempts] = useState<SavedAttempt[]>([]);
@@ -35,9 +42,8 @@ export function HistoryPage() {
     <>
       <div className="page-heading">
         <div>
-          <p className="eyebrow">NHÌN LẠI HÀNH TRÌNH</p>
           <h1>Lịch sử làm bài</h1>
-          <p>Mỗi lần luyện tập đều là một bước tiến.</p>
+          <p>Xem kết quả các lần làm bài đã lưu trên trình duyệt này.</p>
         </div>
         {attempts.length > 0 && (
           <button
@@ -75,11 +81,8 @@ export function HistoryPage() {
         </div>
       )}
       {ready && !attempts.length ? (
-        <EmptyState title="Hành trình của bạn bắt đầu từ đây">
-          <p>
-            Làm một bài luyện tập, rồi quay lại để xem kết quả và theo dõi tiến
-            bộ.
-          </p>
+        <EmptyState title="Chưa có lịch sử làm bài">
+          <p>Kết quả sẽ xuất hiện ở đây sau khi bạn nộp bài.</p>
           <Link href="/" className="button primary">
             Chọn Unit
             <Icon name="arrow" />
@@ -89,13 +92,11 @@ export function HistoryPage() {
         <div className="history-list">
           {attempts.map(({ result }) => (
             <article className="history-row" key={result.id}>
-              <span className="history-unit">
-                {String(result.unit).padStart(2, "0")}
-              </span>
               <div className="history-info">
-                <span className="unit-label">UNIT {result.unit} · Đề {result.testId}</span>
+                <h2>
+                  Unit {result.unit}: {result.unitTitle} · Đề {result.testId}
+                </h2>
                 <SourceBadge source={result.source} />
-                <h2>{result.unitTitle}</h2>
                 <p>
                   {formatDate(result.submittedAt)} <span>·</span>{" "}
                   {result.mode === "practice" ? "Luyện tập" : "Thi thử"}{" "}
@@ -105,7 +106,7 @@ export function HistoryPage() {
                     : skillNames[result.scope]}
                 </p>
                 {result.mock && (
-                  <span className="badge amber">Kết quả chấm mô phỏng</span>
+                  <span className="quiet-note">Kết quả chấm mô phỏng</span>
                 )}
               </div>
               <div className="history-score">

@@ -244,8 +244,8 @@ test("browser completes a full sequential Unit 6, shows reviews and clears histo
   await expect(testCard.getByRole("link", { name: "Tải PDF đề", exact: true })).toHaveAttribute("href", "/api/pdf?unit=6&test=A&kind=exam");
   await testCard.getByRole("button", { name: "Thi cả đề", exact: true }).click();
   await expect(page).toHaveURL(/\/exam\//);
-  await expect(page.locator(".exam-topline")).toContainText("Đề A");
-  await expect(page.locator(".exam-topline")).toContainText(sourceLabel);
+  await expect(page.locator(".exam-title-row")).toContainText("Đề A");
+  await expect(page.locator(".exam-title-row")).toContainText(sourceLabel);
   for (const q of exam.listening.parts[0].questions)
     await page.locator(`input[name="${q.id}"][value="${q.answerKey}"]`).check();
   for (const q of exam.listening.parts[1].questions)
@@ -254,12 +254,16 @@ test("browser completes a full sequential Unit 6, shows reviews and clears histo
   await expect(page.locator("#W31")).toHaveCount(0);
   for (const q of exam.reading.matching.items)
     await page.locator(`#${q.id}`).selectOption(q.answerKey);
-  for (const q of [
-    ...exam.reading.grammar,
-    ...exam.reading.vocabulary,
-    ...exam.reading.passageMcq.questions,
-  ])
+  for (const q of [...exam.reading.grammar, ...exam.reading.vocabulary])
     await page.locator(`input[name="${q.id}"][value="${q.answerKey}"]`).check();
+  await page
+    .getByRole("tab", { name: "Part 2: Đọc hiểu", exact: true })
+    .click();
+  for (const q of exam.reading.passageMcq.questions)
+    await page.locator(`input[name="${q.id}"][value="${q.answerKey}"]`).check();
+  await page
+    .getByRole("tab", { name: "Part 2: True/False", exact: true })
+    .click();
   for (const q of exam.reading.passageTrueFalse.questions)
     await page
       .locator(`fieldset`)
@@ -353,7 +357,7 @@ test("practice permits an individual skill and Chromium recording reaches the se
   for (const [id, answer] of Object.entries(answers.speaking))
     await page.locator(`#speaking-text-${id}`).fill(answer.text);
   await page
-    .getByRole("button", { name: "Nộp bài & xem kết quả", exact: true })
+    .getByRole("button", { name: "NỘP BÀI", exact: true })
     .click();
   const submitted = page.waitForRequest(
     (req) => req.url().endsWith("/api/grade") && req.method() === "POST",
@@ -395,4 +399,212 @@ test("PDF downloads require the class access code and serve separate exam and an
   }
   expect((await request.get("/api/pdf?unit=6&test=Z&kind=exam")).status()).toBe(400);
   expect((await request.get("/api/pdf?unit=6&test=A&kind=transcript")).status()).toBe(400);
+});
+
+test("sequential question navigation locks future and submitted skills", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1600, height: 900 });
+  const session = await start(page.request);
+  await page.goto(`/exam/${session.sessionId}`);
+  await expect(
+    page.getByRole("button", { name: "Tới câu L1", exact: true }),
+  ).toBeEnabled();
+  for (const id of ["R16", "W31", "Email", "S1", "S2", "S3"])
+    await expect(
+      page.getByRole("button", { name: `Tới câu ${id}`, exact: true }),
+    ).toBeDisabled();
+  await expect(page.locator('input[name="R16"]')).toHaveCount(0);
+  await nextSection(page, "Listening");
+  await expect(
+    page.getByRole("button", { name: "Tới câu L1", exact: true }),
+  ).toBeDisabled();
+  await expect(
+    page.getByRole("button", { name: "Tới câu R16", exact: true }),
+  ).toBeEnabled();
+  await expect(
+    page.getByRole("button", { name: "Tới câu W31", exact: true }),
+  ).toBeDisabled();
+  await page.getByRole("button", { name: "Tới câu R16", exact: true }).click();
+  await expect(page.locator('input[name="R16"]').first()).toBeVisible();
+  await expect(page.locator('input[name="L1"]')).toHaveCount(0);
+});
+
+test("practice question navigation opens the correct skill and Reading part without losing answers", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1600, height: 900 });
+  const session = await start(page.request, "practice", "full");
+  await page.goto(`/exam/${session.sessionId}`);
+  const firstReading = exam.reading.passageMcq.questions[0];
+  const readingNavigation = page.getByRole("button", {
+    name: `Tới câu ${firstReading.id}`,
+    exact: true,
+  });
+  await readingNavigation.click();
+  await expect(readingNavigation).toHaveAttribute("aria-current", "true");
+  await expect(
+    page.getByRole("tab", { name: "Part 2: Đọc hiểu", exact: true }),
+  ).toHaveAttribute("aria-selected", "true");
+  const readingAnswer = page.locator(
+    `input[name="${firstReading.id}"][value="${firstReading.answerKey}"]`,
+  );
+  await readingAnswer.check();
+  await expect(readingNavigation).toHaveClass(/\banswered\b/);
+  await expect(page.locator("#R1")).toHaveCount(0);
+  await expect(
+    page.locator(`input[name="${exam.reading.passageTrueFalse.questions[0].id}"]`),
+  ).toHaveCount(0);
+  await page.getByRole("button", { name: "Tới câu L1", exact: true }).click();
+  await expect(page.locator('input[name="L1"]').first()).toBeVisible();
+  await expect(readingAnswer).toHaveCount(0);
+  await expect(readingNavigation).toHaveClass(/\banswered\b/);
+  await readingNavigation.click();
+  await expect(readingAnswer).toBeChecked();
+  const firstTrueFalse = exam.reading.passageTrueFalse.questions[0];
+  await page
+    .getByRole("button", { name: `Tới câu ${firstTrueFalse.id}`, exact: true })
+    .click();
+  await expect(
+    page.getByRole("tab", { name: "Part 2: True/False", exact: true }),
+  ).toHaveAttribute("aria-selected", "true");
+  await expect(
+    page.locator(`input[name="${firstTrueFalse.id}"]`).first(),
+  ).toBeVisible();
+  await expect(readingAnswer).toHaveCount(0);
+  await page.getByRole("button", { name: "Tới câu R1", exact: true }).click();
+  await expect(page.locator("#R1")).toBeVisible();
+  await page.getByRole("button", { name: "Tới câu W31", exact: true }).click();
+  await expect(page.locator("#W31")).toBeVisible();
+  await page.getByRole("button", { name: "Tới câu Email", exact: true }).click();
+  await expect(page.locator("#email-answer")).toBeInViewport();
+  await page.getByRole("button", { name: "Tới câu S2", exact: true }).click();
+  await expect(page.locator("#question-S2")).toBeInViewport();
+});
+
+test("exiting an unfinished practice asks for confirmation and keeps the draft", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1600, height: 900 });
+  const session = await start(page.request, "practice", "listening");
+  const url = `/exam/${session.sessionId}`;
+  await page.goto(url);
+  const question = exam.listening.parts[1].questions[0];
+  const draft = "my saved draft";
+  await page.locator(`#${question.id}`).fill(draft);
+  await expect(
+    page.getByRole("button", { name: `Tới câu ${question.id}`, exact: true }),
+  ).toHaveClass(/\banswered\b/);
+  const exit = page.getByRole("button", { name: "Thoát", exact: true });
+  await exit.click();
+  const confirmation = page.getByRole("alertdialog", {
+    name: "Thoát bài chưa nộp?",
+    exact: true,
+  });
+  await expect(confirmation).toBeVisible();
+  await confirmation
+    .getByRole("button", { name: "Tiếp tục làm bài", exact: true })
+    .click();
+  await expect(confirmation).toHaveCount(0);
+  await expect(page).toHaveURL(new RegExp(`/exam/${session.sessionId}$`));
+  await expect(page.locator(`#${question.id}`)).toHaveValue(draft);
+  await expect(exit).toBeFocused();
+  await exit.click();
+  await confirmation
+    .getByRole("button", { name: "Xác nhận thoát", exact: true })
+    .click();
+  await expect(page).toHaveURL(/\/unit\/6$/);
+  await page.goto(url);
+  await expect(page.locator(`#${question.id}`)).toHaveValue(draft);
+  await expect(
+    page.getByRole("button", { name: `Tới câu ${question.id}`, exact: true }),
+  ).toHaveClass(/\banswered\b/);
+});
+
+test("mobile question sheet navigates Reading and retains the selected theme on reload", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.emulateMedia({ colorScheme: "light", reducedMotion: "reduce" });
+  const session = await start(page.request, "practice", "full");
+  await page.goto(`/exam/${session.sessionId}`);
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
+  await page
+    .getByRole("button", { name: "Chuyển sang chế độ tối", exact: true })
+    .click();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+  await page.reload();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+  await expect(page.getByRole("timer")).toBeInViewport();
+  await expect(
+    page.getByRole("button", { name: "NỘP BÀI", exact: true }),
+  ).toBeInViewport();
+  const list = page.getByRole("button", { name: "Danh sách câu", exact: true });
+  const sheet = page.getByRole("dialog", { name: "Danh sách câu", exact: true });
+  await list.click();
+  await expect(sheet).toBeVisible();
+  await sheet.getByRole("button", { name: "Tới câu R16", exact: true }).click();
+  await expect(sheet).toHaveCount(0);
+  await expect(page.locator("#question-R16")).toBeInViewport();
+  await expect(
+    page.getByRole("tab", { name: "Part 2: Đọc hiểu", exact: true }),
+  ).toHaveAttribute("aria-selected", "true");
+  await expect
+    .poll(() => page.evaluate(() => document.documentElement.scrollWidth))
+    .toBeLessThanOrEqual(390);
+  await list.click();
+  await sheet.getByRole("button", { name: "Đóng", exact: true }).click();
+  await expect(sheet).toHaveCount(0);
+  await expect(list).toBeFocused();
+  await list.click();
+  await page.keyboard.press("Escape");
+  await expect(sheet).toHaveCount(0);
+  await expect(list).toBeFocused();
+});
+
+test("desktop Reading scrolls the passage and questions independently", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1600, height: 600 });
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  const session = await start(page.request, "practice", "reading");
+  await page.goto(`/exam/${session.sessionId}`);
+  await page.getByRole("tab", { name: "Part 2: Đọc hiểu", exact: true }).click();
+  const passage = page.locator(".reading-passage-pane");
+  const questions = page.locator(".reading-question-pane");
+  await expect(passage).toBeVisible();
+  await expect(questions).toBeVisible();
+  const passageBox = await passage.boundingBox();
+  const questionsBox = await questions.boundingBox();
+  expect(passageBox).not.toBeNull();
+  expect(questionsBox).not.toBeNull();
+  expect(passageBox!.x + passageBox!.width).toBeLessThanOrEqual(questionsBox!.x);
+  expect(Math.abs(passageBox!.y - questionsBox!.y)).toBeLessThan(2);
+  for (const pane of [passage, questions]) {
+    await expect
+      .poll(() => pane.evaluate((element) => element.scrollHeight - element.clientHeight))
+      .toBeGreaterThan(0);
+    await expect(pane).toHaveCSS("overflow-y", "auto");
+  }
+  await questions.hover({ position: { x: 20, y: 20 } });
+  const pageScroll = await page.evaluate(() => window.scrollY);
+  const passageScroll = await passage.evaluate((element) => element.scrollTop);
+  await page.mouse.wheel(0, 320);
+  await expect
+    .poll(() => questions.evaluate((element) => element.scrollTop))
+    .toBeGreaterThan(0);
+  await expect
+    .poll(() => passage.evaluate((element) => element.scrollTop))
+    .toBe(passageScroll);
+  await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(pageScroll);
+  const questionsScroll = await questions.evaluate((element) => element.scrollTop);
+  await passage.hover({ position: { x: 20, y: 20 } });
+  await page.mouse.wheel(0, 220);
+  await expect
+    .poll(() => passage.evaluate((element) => element.scrollTop))
+    .toBeGreaterThan(passageScroll);
+  await expect
+    .poll(() => questions.evaluate((element) => element.scrollTop))
+    .toBe(questionsScroll);
+  await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(pageScroll);
 });

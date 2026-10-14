@@ -119,12 +119,12 @@ test("three test cards keep sources, PDF links, submissions and best scores sepa
   await cardB.locator(".skill-reading").getByRole("button", { name: "Luyện kỹ năng này", exact: true }).click();
   expect((await submitted).postDataJSON()).toEqual({ unit: 6, test: "B", mode: "practice", scope: "reading" });
   await expect(page).toHaveURL(/\/exam\//);
-  await expect(page.locator(".exam-topline")).toContainText("Đề B");
-  await expect(page.locator(".exam-topline")).toContainText("Đề AI");
+  await expect(page.locator(".exam-title-row")).toContainText("Đề B");
+  await expect(page.locator(".exam-title-row")).toContainText("Đề AI");
   await expect(page.locator('label[for="R1"]')).toContainText("Synthetic routing marker B");
   await page.locator('label[for="R1"]').scrollIntoViewIfNeeded();
   await page.screenshot({ path: "test-results/multi-test-reading-b-marker.png" });
-  await page.getByRole("button", { name: "Nộp bài & xem kết quả", exact: true }).click();
+  await page.getByRole("button", { name: "NỘP BÀI", exact: true }).click();
   await page.locator(".confirm-panel").getByRole("button", { name: "Xác nhận nộp", exact: true }).click();
   await expect(page).toHaveURL(/\/results\//);
   await expect(page.locator(".page-heading")).toContainText("Đề B");
@@ -146,7 +146,7 @@ test("three test cards keep sources, PDF links, submissions and best scores sepa
   const examStart = page.waitForRequest((req) => req.url().endsWith("/api/session") && req.method() === "POST");
   await cardC.getByRole("button", { name: "Thi cả đề", exact: true }).click();
   expect((await examStart).postDataJSON()).toEqual({ unit: 6, test: "C", mode: "exam", scope: "full" });
-  await expect(page.locator(".exam-topline")).toContainText("Đề C");
+  await expect(page.locator(".exam-title-row")).toContainText("Đề C");
   await expect(page.locator("#R1")).toHaveCount(0);
   await page.screenshot({ path: "test-results/multi-test-exam-c.png" });
 });

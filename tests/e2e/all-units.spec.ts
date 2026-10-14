@@ -281,7 +281,10 @@ test.describe("all eight audited Units with AI_MOCK", () => {
         .click();
       await expect(page).toHaveURL(/\/exam\//);
       await expect(
-        page.getByRole("heading", { name: exam.unitTitle, exact: true }),
+        page.getByRole("heading", {
+          name: `Unit ${exam.unit}: ${exam.unitTitle}`,
+          exact: true,
+        }),
       ).toBeVisible();
       await expect(page.locator("#R1")).toHaveCount(0);
       await expect(page.locator("#W31")).toHaveCount(0);
@@ -302,13 +305,24 @@ test.describe("all eight audited Units with AI_MOCK", () => {
       for (const question of [
         ...exam.reading.grammar,
         ...exam.reading.vocabulary,
-        ...exam.reading.passageMcq.questions,
       ])
         await page
           .locator(
             `input[name="${question.id}"][value="${question.answerKey}"]`,
           )
           .check();
+      await page
+        .getByRole("tab", { name: "Part 2: Đọc hiểu", exact: true })
+        .click();
+      for (const question of exam.reading.passageMcq.questions)
+        await page
+          .locator(
+            `input[name="${question.id}"][value="${question.answerKey}"]`,
+          )
+          .check();
+      await page
+        .getByRole("tab", { name: "Part 2: True/False", exact: true })
+        .click();
       for (const question of exam.reading.passageTrueFalse.questions)
         await page
           .locator("fieldset")

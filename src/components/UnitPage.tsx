@@ -13,7 +13,6 @@ import {
   Icon,
   Loading,
   skillDescriptions,
-  skillIcons,
   skillNames,
   SourceBadge,
 } from "./ui";
@@ -82,8 +81,7 @@ export function UnitPage({ unit }: { unit: number }) {
       </Link>
       <section className="unit-heading">
         <div>
-          <p className="eyebrow">UNIT {unit.toString().padStart(2, "0")}</p>
-          <h1>{summary.title}</h1>
+          <h1>Unit {unit}: {summary.title}</h1>
           <p>
             {summary.testCount} đề · Chọn một đề để luyện kỹ năng hoặc làm cả đề.
           </p>
@@ -93,9 +91,7 @@ export function UnitPage({ unit }: { unit: number }) {
             ))}
           </div>
         </div>
-        <div className="unit-mark" aria-hidden="true">
-          {unit.toString().padStart(2, "0")}
-        </div>
+
       </section>
       <section className="mode-panel">
         <div>
@@ -171,12 +167,6 @@ export function UnitPage({ unit }: { unit: number }) {
               <div className="skill-grid">
                 {SKILLS.map((skill, index) => (
                   <article className={`skill-card skill-${skill}`} key={skill}>
-                    <div className="skill-card-top">
-                      <span className="skill-icon">
-                        <Icon name={skillIcons[skill]} />
-                      </span>
-                      <span className="subtle-number">0{index + 1}</span>
-                    </div>
                     <h2>{skillNames[skill]}</h2>
                     <p>{skillDescriptions[skill]}</p>
                     <div className="skill-details">
@@ -209,12 +199,8 @@ export function UnitPage({ unit }: { unit: number }) {
                 ))}
               </div>
               <section className="full-exam-panel">
-                <span className="full-exam-icon">
-                  <Icon name="spark" />
-                </span>
                 <div>
-                  <p className="eyebrow">THỬ THÁCH TOÀN DIỆN</p>
-                  <h2>4 kỹ năng. Một bước tiến lớn.</h2>
+                  <h2>Đề đầy đủ 4 kỹ năng</h2>
                   <p>
                     {mode === "exam"
                       ? "90 phút cho cả đề · Listening tối đa 2 lần mỗi phần · Thang điểm 10"
