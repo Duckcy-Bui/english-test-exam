@@ -24,7 +24,8 @@
     "Bài đọc R21–R25 (máy tính tiền POS cho quán cà phê) và R26–R30 (nâng cấp hay thay máy tính thư viện) viết mới. Không nhắc dùng thử, trung tâm dữ liệu, bảng điều khiển hay cách tính giá truyền thống để không diễn đạt lại định nghĩa câu nối.",
     "Listening A (máy chiếu cho trường ngoại ngữ, hội chợ công nghệ) theo bài Product research; Listening B (chi phí IT của phòng khám nha khoa) theo bài IT costs. Viết mới, không chép Audio script.",
     "Listening B: acceptedAnswers có biến thể cách viết số và mạo từ; một số biến thể không có nguyên văn trong lời thoại.",
-    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng."
+    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
+    "Bản r1 (theo review chéo của et-author): S1 câu 2 sửa hoà hợp \"you or your family have bought\". L8 đã được et-lead bổ sung biến thể ở 73d66db."
   ],
   "listening": {
     "parts": [
@@ -583,7 +584,7 @@
         "instructions": "Answer the three questions. Speak for 30–45 seconds for each question.",
         "questions": [
           "Which app on your phone is the most useful for you? Compare it with another app that you use. Use comparatives and superlatives (more useful than, the most…, as … as).",
-          "What is the most expensive piece of technology that you or your family has bought? How much did it cost, and what else did you pay for with it? Use cost, pay, spend or come to.",
+          "What is the most expensive piece of technology that you or your family have bought? How much did it cost, and what else did you pay for with it? Use cost, pay, spend or come to.",
           "Your university wants to buy new software for students. What would you recommend? Use at least one recommendation structure (I think we should…, I recommend…, it's best to…)."
         ],
         "secondsPerQuestion": 45
