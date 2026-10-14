@@ -24,7 +24,8 @@
     "Listening A: hướng dẫn chạy truy vấn trong cơ sở dữ liệu khách hàng (Databases, by + -ing). Listening B: lời nhắn của quản trị hệ thống về đợt cập nhật máy chủ đêm qua (Systems administration). Không chép Audio script.",
     "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại.",
     "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
-    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng."
+    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
+    "Bản r1 (tự soát theo nhắc của et-lead): R15, R17 và bài đọc R26–R30 bỏ 'lock' (cùng gốc thuật ngữ R2 Caps Lock); R13 (record) và R14 (table) đổi sang query / form vì là từ khoá định nghĩa B (primary key); R19, R20 thay nhiễu 'unique'; R12 và bài đọc R21–R25 bỏ 'screen' (thuật ngữ R3 touch screen)."
   ],
   "listening": {
     "parts": [
@@ -538,7 +539,7 @@
       {
         "id": "R12",
         "kind": "mcq",
-        "stem": "When the screen ______ black, I restarted the laptop.",
+        "stem": "When the laptop suddenly ______ off, I lost my work.",
         "options": [
           {
             "id": "A",
@@ -558,43 +559,43 @@
           }
         ],
         "answerKey": "D",
-        "explanation": "Sự việc ngắn trong quá khứ sau \"when\" dùng quá khứ đơn: went (quá khứ của go)."
+        "explanation": "Sự việc ngắn trong quá khứ sau \"when\" dùng quá khứ đơn: went (quá khứ của go); go off = tắt."
       }
     ],
     "vocabulary": [
       {
         "id": "R13",
         "kind": "mcq",
-        "stem": "Each ______ in the Customers table holds all the information about one customer.",
+        "stem": "I need last March's sales figures. Can you ______ the database for me?",
         "options": [
           {
             "id": "A",
-            "text": "bracket"
+            "text": "divide"
           },
           {
             "id": "B",
-            "text": "stylus"
+            "text": "multiply"
           },
           {
             "id": "C",
-            "text": "headset"
+            "text": "attach"
           },
           {
             "id": "D",
-            "text": "record"
+            "text": "query"
           }
         ],
         "answerKey": "D",
-        "explanation": "Record (bản ghi) là một dòng trong bảng cơ sở dữ liệu, chứa thông tin về một đối tượng, ví dụ một khách hàng."
+        "explanation": "Query the database (truy vấn cơ sở dữ liệu) là đặt câu hỏi với dữ liệu đã lưu để lấy thông tin."
       },
       {
         "id": "R14",
         "kind": "mcq",
-        "stem": "Our customer data is arranged in a ______ with rows and columns.",
+        "stem": "The new receptionist filled in a ______ with her name, address and bank details.",
         "options": [
           {
             "id": "A",
-            "text": "table"
+            "text": "form"
           },
           {
             "id": "B",
@@ -610,7 +611,7 @@
           }
         ],
         "answerKey": "A",
-        "explanation": "Table (bảng) là danh sách số liệu, thông tin sắp xếp theo hàng và cột."
+        "explanation": "Form (biểu mẫu) là văn bản có các ô trống để điền thông tin, nhất là thông tin cá nhân."
       },
       {
         "id": "R15",
@@ -623,7 +624,7 @@
           },
           {
             "id": "B",
-            "text": "lock"
+            "text": "multiply"
           },
           {
             "id": "C",
@@ -669,7 +670,7 @@
         "options": [
           {
             "id": "A",
-            "text": "lock out"
+            "text": "multiply"
           },
           {
             "id": "B",
@@ -719,7 +720,7 @@
         "options": [
           {
             "id": "A",
-            "text": "unique"
+            "text": "vertical"
           },
           {
             "id": "B",
@@ -744,7 +745,7 @@
         "options": [
           {
             "id": "A",
-            "text": "unique"
+            "text": "horizontal"
           },
           {
             "id": "B",
@@ -769,7 +770,7 @@
         "title": "Incident Report: Ticket Machines at Riverside Cinema",
         "paragraphs": [
           "On Saturday 12th October, the six self-service ticket machines at Riverside Cinema stopped taking card payments for almost two hours. This report explains what happened and what we did.",
-          "At 6.40 p.m., the cinema was very busy. About forty customers were buying tickets for the seven o'clock films when the card readers on all six machines suddenly stopped working. The screens showed the message 'Payment service not available'. While the duty manager was calling the IT helpdesk, staff opened two extra counters and sold tickets by hand.",
+          "At 6.40 p.m., the cinema was very busy. About forty customers were buying tickets for the seven o'clock films when the card readers on all six machines suddenly stopped working. Each machine showed the message 'Payment service not available'. While the duty manager was calling the IT helpdesk, staff opened two extra counters and sold tickets by hand.",
           "The technician, Sam Ortiz, connected to the machines from his office. After checking the system logs, he found the cause. The night before, the payment company had installed a software update on all the card readers. The update had a bug, and it stopped the readers when there were more than ten payments in one minute.",
           "Sam could not remove the update himself, so he phoned the payment company. Their engineer removed it at 8.30 p.m., and the machines worked normally again. Two films started fifteen minutes late, and the cinema gave free drinks to about 200 customers.",
           "In future, the payment company will test every update on one machine for a week before installing it on the others. The cinema will also keep a portable card reader at the main counter, so that staff can sell tickets quickly if the machines stop again."
@@ -912,7 +913,7 @@
           "Last week, the monthly sales report showed that we sold £86,000 of goods in September. This number looked too high, so Karen in Finance checked the spreadsheet on Monday.",
           "She found two problems. First, someone copied some of the October sales into the September sheet. Second, the formula in the Total column added the tax twice. Karen corrected both problems, and the real total for September was £71,500.",
           "Before sending the report again, she asked Tom to check all the other formulae. While he was checking them, he found another small error in the Returns column, but it did not change the total.",
-          "To stop these problems in future, we are going to lock all the cells with formulae, so that only the finance team can change them. Please don't copy data into the report by hand any more. From next month, the report will take the numbers directly from the sales database.",
+          "To stop these problems in future, we are going to protect all the cells with formulae, so that only the finance team can change them. Please don't copy data into the report by hand any more. From next month, the report will take the numbers directly from the sales database.",
           "Thanks,",
           "Ruth Evans, Finance Manager"
         ]
