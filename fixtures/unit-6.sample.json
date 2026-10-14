@@ -1,0 +1,972 @@
+{
+  "schemaVersion": 1,
+  "unit": 6,
+  "unitTitle": "Interactions — TEST SAMPLE",
+  "testId": "A",
+  "functions": [
+    "Describe trends in enterprise social media",
+    "Explain the benefits of video conferencing",
+    "Define e-commerce terms",
+    "Request user training politely"
+  ],
+  "grammarFocus": [
+    "Present continuous for trends; more and more; become + comparative",
+    "Second conditional: if + past simple, would + infinitive",
+    "Definitions with be, called and relative clauses",
+    "Polite requests: It would be great to know; Could someone tell me"
+  ],
+  "sourceNotes": [
+    "FAKE ORIGINAL FIXTURE: test data written specifically for application development; not the official Unit 6 exam and not audited course material.",
+    "All dialogue, passages, questions and examples in this fixture are newly written. No textbook or workbook passage is reproduced."
+  ],
+  "listening": {
+    "parts": [
+      {
+        "id": "A",
+        "instructions": "Listen to the conversation and choose the best answer for L1–L5.",
+        "context": "Two colleagues plan an online induction for a support team.",
+        "speakers": [
+          {
+            "name": "Mira",
+            "voice": "female"
+          },
+          {
+            "name": "Theo",
+            "voice": "male"
+          }
+        ],
+        "script": [
+          {
+            "speaker": "Mira",
+            "text": "We need to plan the online induction for the new support team. More and more colleagues are working from home, so a remote session would help everyone attend. I suggest starting at half past nine on Thursday. The trainer can explain our internal forum first, and then everyone can ask questions. Could you test the equipment before the session begins?"
+          },
+          {
+            "speaker": "Theo",
+            "text": "Yes. I checked the microphone this morning, and it works well. The camera picture disappeared twice because its cable was loose. I have replaced the cable, and the picture is steady now. If we had a second camera, we would have a spare for important sessions. I will ask the manager about that later."
+          },
+          {
+            "speaker": "Mira",
+            "text": "Good idea. Please send a short survey on Friday so we can learn what the new colleagues think. We should ask whether the instructions were clear and whether they could hear the trainer. Next month, I would like to allow more time for follow-up questions. A longer presentation would not necessarily make the training better."
+          },
+          {
+            "speaker": "Theo",
+            "text": "Agreed. I will prepare the survey today and send the meeting invitation after lunch."
+          }
+        ],
+        "questions": [
+          {
+            "id": "L1",
+            "kind": "mcq",
+            "stem": "Why does Mira suggest a remote session?",
+            "options": [
+              {
+                "id": "A",
+                "text": "To cancel an existing meeting"
+              },
+              {
+                "id": "B",
+                "text": "To help colleagues working from home attend"
+              },
+              {
+                "id": "C",
+                "text": "To replace the support team"
+              },
+              {
+                "id": "D",
+                "text": "To train only the company managers"
+              }
+            ],
+            "answerKey": "B",
+            "explanation": "Mira nói buổi trực tuyến giúp đồng nghiệp làm việc tại nhà tham gia."
+          },
+          {
+            "id": "L2",
+            "kind": "mcq",
+            "stem": "When should the session begin?",
+            "options": [
+              {
+                "id": "A",
+                "text": "At eight on Wednesday"
+              },
+              {
+                "id": "B",
+                "text": "At ten on Friday"
+              },
+              {
+                "id": "C",
+                "text": "At half past nine on Thursday"
+              },
+              {
+                "id": "D",
+                "text": "At eleven on Monday"
+              }
+            ],
+            "answerKey": "C",
+            "explanation": "Mira đề nghị bắt đầu lúc 9 giờ 30 thứ Năm."
+          },
+          {
+            "id": "L3",
+            "kind": "mcq",
+            "stem": "What caused the camera problem?",
+            "options": [
+              {
+                "id": "A",
+                "text": "A loose cable"
+              },
+              {
+                "id": "B",
+                "text": "A broken screen"
+              },
+              {
+                "id": "C",
+                "text": "A missing application"
+              },
+              {
+                "id": "D",
+                "text": "A weak microphone"
+              }
+            ],
+            "answerKey": "A",
+            "explanation": "Theo xác định dây cáp lỏng làm hình ảnh biến mất."
+          },
+          {
+            "id": "L4",
+            "kind": "mcq",
+            "stem": "When will colleagues receive the survey?",
+            "options": [
+              {
+                "id": "A",
+                "text": "Today"
+              },
+              {
+                "id": "B",
+                "text": "On Thursday"
+              },
+              {
+                "id": "C",
+                "text": "Next month"
+              },
+              {
+                "id": "D",
+                "text": "On Friday"
+              }
+            ],
+            "answerKey": "D",
+            "explanation": "Mira yêu cầu gửi khảo sát vào thứ Sáu."
+          },
+          {
+            "id": "L5",
+            "kind": "mcq",
+            "stem": "What would Mira like to add next month?",
+            "options": [
+              {
+                "id": "A",
+                "text": "A longer presentation"
+              },
+              {
+                "id": "B",
+                "text": "More time for follow-up questions"
+              },
+              {
+                "id": "C",
+                "text": "A second lunch break"
+              },
+              {
+                "id": "D",
+                "text": "More technical words"
+              }
+            ],
+            "answerKey": "B",
+            "explanation": "Mira muốn dành thêm thời gian cho câu hỏi sau phần trình bày."
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "instructions": "Listen and answer L6–L10 using no more than THREE words for each answer.",
+        "context": "Rosa announces a customer service workshop.",
+        "speakers": [
+          {
+            "name": "Rosa",
+            "voice": "female"
+          }
+        ],
+        "script": [
+          {
+            "speaker": "Rosa",
+            "text": "Welcome to our short announcement about next week's customer service workshop. The workshop is on Tuesday, and it starts at ten in the morning. Please come to room twelve on the second floor. We are using a small room because each person needs time to try the new online ordering service. Bring your headphones, but you do not need to bring a laptop because the room already has computers. First, the trainer will show how to choose an item and confirm the delivery address. Then you will practise with a partner using a sample customer account. Please use the training account, not your personal account. If you have trouble signing in, contact the help desk before the workshop starts. They can reset your details and check that you have permission to use the service. At the end, each pair will give a summary lasting two minutes about one problem they solved. It would be great to know which steps you find difficult, so write your questions on the shared page. We will use those questions to improve the next workshop."
+          }
+        ],
+        "questions": [
+          {
+            "id": "L6",
+            "kind": "short",
+            "stem": "On which day is the workshop?",
+            "maxWords": 3,
+            "acceptedAnswers": ["tuesday"],
+            "explanation": "Buổi đào tạo diễn ra vào Tuesday."
+          },
+          {
+            "id": "L7",
+            "kind": "short",
+            "stem": "Which room should participants go to?",
+            "maxWords": 3,
+            "acceptedAnswers": ["room twelve", "twelve", "room 12", "12"],
+            "explanation": "Rosa yêu cầu đến room twelve."
+          },
+          {
+            "id": "L8",
+            "kind": "short",
+            "stem": "What should participants bring?",
+            "maxWords": 3,
+            "acceptedAnswers": ["headphones", "your headphones"],
+            "explanation": "Người tham dự cần mang headphones."
+          },
+          {
+            "id": "L9",
+            "kind": "short",
+            "stem": "Who should participants contact if they cannot sign in?",
+            "maxWords": 3,
+            "acceptedAnswers": ["help desk", "the help desk"],
+            "explanation": "Rosa hướng dẫn liên hệ help desk nếu đăng nhập gặp lỗi."
+          },
+          {
+            "id": "L10",
+            "kind": "short",
+            "stem": "How long is each pair’s summary?",
+            "maxWords": 3,
+            "acceptedAnswers": ["two minutes", "2 minutes"],
+            "explanation": "Mỗi cặp trình bày phần tổng kết trong two minutes."
+          }
+        ]
+      }
+    ]
+  },
+  "reading": {
+    "matching": {
+      "instructions": "Match the terms R1–R5 with definitions A–F. One definition is extra.",
+      "definitions": [
+        {
+          "id": "A",
+          "text": "Software controlling the creation and revision of office documents."
+        },
+        {
+          "id": "B",
+          "text": "A temporary collection of products selected before payment."
+        },
+        {
+          "id": "C",
+          "text": "An educational presentation delivered live through the internet."
+        },
+        {
+          "id": "D",
+          "text": "An activity involving brief published updates on a social platform."
+        },
+        {
+          "id": "E",
+          "text": "A technique reducing the storage space occupied by files."
+        },
+        {
+          "id": "F",
+          "text": "A method disguising confidential information with a secret mathematical key."
+        }
+      ],
+      "items": [
+        {
+          "id": "R1",
+          "term": "microblogging",
+          "answerKey": "D",
+          "explanation": "Microblogging là hoạt động đăng các cập nhật ngắn."
+        },
+        {
+          "id": "R2",
+          "term": "data compression",
+          "answerKey": "E",
+          "explanation": "Data compression làm giảm dung lượng lưu trữ của tệp."
+        },
+        {
+          "id": "R3",
+          "term": "shopping basket",
+          "answerKey": "B",
+          "explanation": "Shopping basket tập hợp sản phẩm được chọn trước thanh toán."
+        },
+        {
+          "id": "R4",
+          "term": "document management system",
+          "answerKey": "A",
+          "explanation": "Document management system quản lí việc tạo và sửa tài liệu."
+        },
+        {
+          "id": "R5",
+          "term": "webinar",
+          "answerKey": "C",
+          "explanation": "Webinar là buổi trình bày đào tạo trực tiếp qua Internet."
+        }
+      ]
+    },
+    "grammar": [
+      {
+        "id": "R6",
+        "kind": "mcq",
+        "stem": "More employees ______ video calls at present.",
+        "options": [
+          {
+            "id": "A",
+            "text": "use"
+          },
+          {
+            "id": "B",
+            "text": "are using"
+          },
+          {
+            "id": "C",
+            "text": "used"
+          },
+          {
+            "id": "D",
+            "text": "will use"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "At present biểu thị xu hướng đang diễn ra, dùng hiện tại tiếp diễn."
+      },
+      {
+        "id": "R7",
+        "kind": "mcq",
+        "stem": "If we installed a remote meeting service, we ______ travel costs.",
+        "options": [
+          {
+            "id": "A",
+            "text": "reduce"
+          },
+          {
+            "id": "B",
+            "text": "reduced"
+          },
+          {
+            "id": "C",
+            "text": "will reduce"
+          },
+          {
+            "id": "D",
+            "text": "would reduce"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Điều kiện loại 2 dùng if + quá khứ đơn và would + động từ nguyên thể."
+      },
+      {
+        "id": "R8",
+        "kind": "mcq",
+        "stem": "It would be great to ______ how to invite a guest.",
+        "options": [
+          {
+            "id": "A",
+            "text": "know"
+          },
+          {
+            "id": "B",
+            "text": "knowing"
+          },
+          {
+            "id": "C",
+            "text": "knew"
+          },
+          {
+            "id": "D",
+            "text": "known"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "Sau to trong mẫu yêu cầu lịch sự này dùng động từ nguyên thể."
+      },
+      {
+        "id": "R9",
+        "kind": "mcq",
+        "stem": "An invoice is a document ______ shows how much a customer must pay.",
+        "options": [
+          {
+            "id": "A",
+            "text": "where"
+          },
+          {
+            "id": "B",
+            "text": "who"
+          },
+          {
+            "id": "C",
+            "text": "which"
+          },
+          {
+            "id": "D",
+            "text": "when"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "Which thay thế danh từ chỉ vật và làm chủ ngữ của mệnh đề quan hệ."
+      },
+      {
+        "id": "R10",
+        "kind": "mcq",
+        "stem": "Online ordering is becoming ______ and more popular.",
+        "options": [
+          {
+            "id": "A",
+            "text": "much"
+          },
+          {
+            "id": "B",
+            "text": "more"
+          },
+          {
+            "id": "C",
+            "text": "many"
+          },
+          {
+            "id": "D",
+            "text": "most"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "More and more + tính từ mô tả xu hướng tăng dần."
+      },
+      {
+        "id": "R11",
+        "kind": "mcq",
+        "stem": "If I ______ the trainer, I would show the steps more slowly.",
+        "options": [
+          {
+            "id": "A",
+            "text": "were"
+          },
+          {
+            "id": "B",
+            "text": "am"
+          },
+          {
+            "id": "C",
+            "text": "will be"
+          },
+          {
+            "id": "D",
+            "text": "have been"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "Were dùng trong giả định điều kiện loại 2."
+      },
+      {
+        "id": "R12",
+        "kind": "mcq",
+        "stem": "The number of remote users ______ at present.",
+        "options": [
+          {
+            "id": "A",
+            "text": "decrease"
+          },
+          {
+            "id": "B",
+            "text": "stays"
+          },
+          {
+            "id": "C",
+            "text": "were falling"
+          },
+          {
+            "id": "D",
+            "text": "is increasing"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "The number là chủ ngữ số ít; at present phù hợp với is increasing."
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "R13",
+        "kind": "mcq",
+        "stem": "To stop sending sound during an online call, select ______.",
+        "options": [
+          {
+            "id": "A",
+            "text": "download"
+          },
+          {
+            "id": "B",
+            "text": "refresh"
+          },
+          {
+            "id": "C",
+            "text": "mute"
+          },
+          {
+            "id": "D",
+            "text": "print"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "Mute là tắt tiếng microphone trong cuộc gọi."
+      },
+      {
+        "id": "R14",
+        "kind": "mcq",
+        "stem": "A person taking part in a meeting is a ______.",
+        "options": [
+          {
+            "id": "A",
+            "text": "participant"
+          },
+          {
+            "id": "B",
+            "text": "receipt"
+          },
+          {
+            "id": "C",
+            "text": "supplier"
+          },
+          {
+            "id": "D",
+            "text": "browser"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "Participant có nghĩa là người tham gia."
+      },
+      {
+        "id": "R15",
+        "kind": "mcq",
+        "stem": "The shop returned the customer’s money as a ______.",
+        "options": [
+          {
+            "id": "A",
+            "text": "booking"
+          },
+          {
+            "id": "B",
+            "text": "profile"
+          },
+          {
+            "id": "C",
+            "text": "message"
+          },
+          {
+            "id": "D",
+            "text": "refund"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Refund là khoản tiền được hoàn lại."
+      },
+      {
+        "id": "R16",
+        "kind": "mcq",
+        "stem": "The supplier sent an ______ listing the amount we had to pay.",
+        "options": [
+          {
+            "id": "A",
+            "text": "agenda"
+          },
+          {
+            "id": "B",
+            "text": "invoice"
+          },
+          {
+            "id": "C",
+            "text": "invitation"
+          },
+          {
+            "id": "D",
+            "text": "account"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Invoice là hóa đơn yêu cầu thanh toán."
+      },
+      {
+        "id": "R17",
+        "kind": "mcq",
+        "stem": "Sales from one company to another are called ______ sales.",
+        "options": [
+          {
+            "id": "A",
+            "text": "person-to-person"
+          },
+          {
+            "id": "B",
+            "text": "consumer-to-business"
+          },
+          {
+            "id": "C",
+            "text": "business-to-business"
+          },
+          {
+            "id": "D",
+            "text": "business-to-consumer"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "Business-to-business chỉ giao dịch giữa doanh nghiệp với doanh nghiệp."
+      },
+      {
+        "id": "R18",
+        "kind": "mcq",
+        "stem": "The customer chose next-day ______ so the goods would arrive quickly.",
+        "options": [
+          {
+            "id": "A",
+            "text": "registration"
+          },
+          {
+            "id": "B",
+            "text": "discussion"
+          },
+          {
+            "id": "C",
+            "text": "permission"
+          },
+          {
+            "id": "D",
+            "text": "delivery"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Delivery là hoạt động giao hàng."
+      },
+      {
+        "id": "R19",
+        "kind": "mcq",
+        "stem": "Keep your ______ secret when you sign into the training site.",
+        "options": [
+          {
+            "id": "A",
+            "text": "password"
+          },
+          {
+            "id": "B",
+            "text": "speaker"
+          },
+          {
+            "id": "C",
+            "text": "monitor"
+          },
+          {
+            "id": "D",
+            "text": "calendar"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "Password là mật khẩu và cần được giữ bí mật."
+      },
+      {
+        "id": "R20",
+        "kind": "mcq",
+        "stem": "The final online stage where a buyer confirms and pays for an order is ______.",
+        "options": [
+          {
+            "id": "A",
+            "text": "sign-in"
+          },
+          {
+            "id": "B",
+            "text": "checkout"
+          },
+          {
+            "id": "C",
+            "text": "browsing"
+          },
+          {
+            "id": "D",
+            "text": "feedback"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Checkout là bước xác nhận đơn hàng và thanh toán."
+      }
+    ],
+    "passageMcq": {
+      "instructions": "Read the passage and choose the best answer for R21–R25.",
+      "passage": {
+        "title": "A trial of a staff forum",
+        "paragraphs": [
+          "Rivergate Design is a small company with staff in three towns. Last spring, its managers noticed that employees were sending the same questions by email every week. Replies often reached only the person who asked, so useful advice was difficult for others to find. The company decided to try a private staff forum for two weeks before choosing a permanent service.",
+          "During the trial, each team appointed a mentor who welcomed new users and answered simple questions. Employees could search earlier discussions or start a new topic. The most helpful replies came from experienced colleagues who explained a task in plain language. New starters valued these replies because they included practical examples rather than unexplained technical words. Mentors wrote a short weekly summary so that staff who had missed a discussion could catch up quickly.",
+          "Managers also set clear expectations. The forum was for work questions, and personal customer details had to stay in approved systems. Nobody was required to read messages outside working hours. Staff could still telephone a colleague when an issue was urgent. A popular suggestion was to rotate the mentor role each month, giving several people a chance to share their knowledge.",
+          "After the trial, the company counted unanswered questions and asked employees about their experience. It did not judge success by the number of posts alone. If the service helped people solve real problems faster, the managers would keep it. They planned another review after three months to check whether the improvement lasted."
+        ]
+      },
+      "questions": [
+        {
+          "id": "R21",
+          "kind": "mcq",
+          "stem": "Why did Rivergate decide to try the forum?",
+          "options": [
+            {
+              "id": "A",
+              "text": "To stop all urgent telephone calls"
+            },
+            {
+              "id": "B",
+              "text": "To make repeated work advice easier to find"
+            },
+            {
+              "id": "C",
+              "text": "To let customers contact designers directly"
+            },
+            {
+              "id": "D",
+              "text": "To remove the need for team mentors"
+            }
+          ],
+          "answerKey": "B",
+          "explanation": "Nhân viên hỏi lặp lại qua email và người khác khó tìm lời khuyên hữu ích."
+        },
+        {
+          "id": "R22",
+          "kind": "mcq",
+          "stem": "How long was the first trial?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Three months"
+            },
+            {
+              "id": "B",
+              "text": "One week"
+            },
+            {
+              "id": "C",
+              "text": "One month"
+            },
+            {
+              "id": "D",
+              "text": "Two weeks"
+            }
+          ],
+          "answerKey": "D",
+          "explanation": "Đoạn đầu nêu thử nghiệm kéo dài two weeks."
+        },
+        {
+          "id": "R23",
+          "kind": "mcq",
+          "stem": "Why did new starters value some replies?",
+          "options": [
+            {
+              "id": "A",
+              "text": "They included practical examples in plain language"
+            },
+            {
+              "id": "B",
+              "text": "They contained many unexplained technical words"
+            },
+            {
+              "id": "C",
+              "text": "They were sent outside normal working hours"
+            },
+            {
+              "id": "D",
+              "text": "They offered a new permanent job to everyone"
+            }
+          ],
+          "answerKey": "A",
+          "explanation": "Đoạn hai nhấn mạnh ví dụ thực tế và ngôn ngữ dễ hiểu."
+        },
+        {
+          "id": "R24",
+          "kind": "mcq",
+          "stem": "What did staff suggest changing each month?",
+          "options": [
+            {
+              "id": "A",
+              "text": "The office address"
+            },
+            {
+              "id": "B",
+              "text": "The telephone numbers"
+            },
+            {
+              "id": "C",
+              "text": "The person acting as mentor"
+            },
+            {
+              "id": "D",
+              "text": "The customer payment date"
+            }
+          ],
+          "answerKey": "C",
+          "explanation": "Nhân viên đề nghị luân phiên vai trò mentor hằng tháng."
+        },
+        {
+          "id": "R25",
+          "kind": "mcq",
+          "stem": "Which measure did managers use after the trial?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Only the total number of posts"
+            },
+            {
+              "id": "B",
+              "text": "The number of unanswered questions"
+            },
+            {
+              "id": "C",
+              "text": "The number of office telephones"
+            },
+            {
+              "id": "D",
+              "text": "Only the longest written reply"
+            }
+          ],
+          "answerKey": "B",
+          "explanation": "Nhà quản lí đếm câu hỏi chưa được trả lời và hỏi trải nghiệm người dùng."
+        }
+      ]
+    },
+    "passageTrueFalse": {
+      "instructions": "Read the passage and decide whether R26–R30 are True (T) or False (F).",
+      "passage": {
+        "title": "A studio tests video meetings",
+        "paragraphs": [
+          "North Lane Studio is testing video meetings with two partner teams. Before the trial, most discussions took place by telephone. Designers sometimes misunderstood a change because they could not see the same drawing. The studio now holds two online sessions each week, with one person sharing a picture on the screen. Each session lasts thirty minutes, and a coordinator sends a short list of topics in advance.",
+          "The partners can join from their existing laptops; they do not have to buy new computers. Participants should use a quiet place and test their sound before joining. Some people prefer to listen first and ask questions at the end, which is allowed. The coordinator invites only named team members and checks each person before admitting them. Invitations are not published on an open website.",
+          "The studio is collecting comments during the six-week trial. If sound quality improved, the partners would consider more frequent sessions. However, the manager will wait until the trial ends before deciding whether to expand the service. Short written notes remain available for colleagues who cannot attend."
+        ]
+      },
+      "questions": [
+        {
+          "id": "R26",
+          "kind": "tf",
+          "statement": "The studio holds two online sessions every week during the trial.",
+          "answerKey": "T",
+          "explanation": "Đoạn một nêu two online sessions each week."
+        },
+        {
+          "id": "R27",
+          "kind": "tf",
+          "statement": "Partners must buy new computers before joining.",
+          "answerKey": "F",
+          "explanation": "Đối tác có thể tham gia bằng laptop hiện có."
+        },
+        {
+          "id": "R28",
+          "kind": "tf",
+          "statement": "Participants may listen first and ask questions at the end.",
+          "answerKey": "T",
+          "explanation": "Đoạn hai cho phép người tham gia nghe trước và hỏi ở cuối."
+        },
+        {
+          "id": "R29",
+          "kind": "tf",
+          "statement": "Meeting invitations are published on an open website.",
+          "answerKey": "F",
+          "explanation": "Lời mời chỉ gửi cho thành viên được chỉ định, không đăng công khai."
+        },
+        {
+          "id": "R30",
+          "kind": "tf",
+          "statement": "The manager will expand the service before the trial finishes.",
+          "answerKey": "F",
+          "explanation": "Nhà quản lí chờ kết thúc thử nghiệm mới quyết định mở rộng."
+        }
+      ]
+    }
+  },
+  "writing": {
+    "translation": {
+      "instructions": "Translate W31–W35 into Vietnamese.",
+      "items": [
+        {
+          "id": "W31",
+          "source": "More and more colleagues are joining our internal discussion group.",
+          "referenceTranslation": "Ngày càng nhiều đồng nghiệp đang tham gia nhóm thảo luận nội bộ của chúng tôi."
+        },
+        {
+          "id": "W32",
+          "source": "If the shop offered quicker delivery, more customers would order online.",
+          "referenceTranslation": "Nếu cửa hàng cung cấp dịch vụ giao hàng nhanh hơn, nhiều khách hàng hơn sẽ đặt hàng trực tuyến."
+        },
+        {
+          "id": "W33",
+          "source": "A supplier is a company that provides goods to another business.",
+          "referenceTranslation": "Nhà cung cấp là công ty cung cấp hàng hóa cho một doanh nghiệp khác."
+        },
+        {
+          "id": "W34",
+          "source": "It would be great to know how to share my screen with the trainer.",
+          "referenceTranslation": "Sẽ rất tốt nếu tôi biết cách chia sẻ màn hình với người đào tạo."
+        },
+        {
+          "id": "W35",
+          "source": "The cost of our remote meetings is becoming lower every month.",
+          "referenceTranslation": "Chi phí cho các cuộc họp từ xa của chúng tôi đang giảm dần mỗi tháng."
+        }
+      ]
+    },
+    "email": {
+      "id": "W-EMAIL",
+      "recipient": "Sam",
+      "task": "Write an email of 80–100 words to Sam explaining how to attend a remote training session. Include all the steps below, one polite request and a second conditional sentence about a possible improvement.",
+      "bullets": [
+        "Open the training application and sign in",
+        "Check the microphone and camera",
+        "Enter the session code from the invitation",
+        "Select Join and wait for the trainer",
+        "Use the hand button to ask a question",
+        "Leave at the end and send feedback"
+      ],
+      "wordRange": [80, 100],
+      "targetGrammar": ["Polite requests with could", "Second conditional"],
+      "modelAnswer": "Dear Sam,\nHere are the steps for your remote training session. First, open the training application and sign in. Check your microphone and camera before you start. Next, enter the session code from the invitation. Select Join and wait for the trainer to admit you. During the session, use the hand button if you want to ask a question. Finally, leave the session and send your feedback. Could you tell me if anything is unclear? If we had more time, we would practise together beforehand.\nBest wishes,\nAlex"
+    }
+  },
+  "speaking": {
+    "parts": [
+      {
+        "id": "S1",
+        "kind": "questions",
+        "instructions": "Answer the three questions. Use language for trends, definitions and polite requests where requested.",
+        "questions": [
+          "How is online communication changing in your class? Use the present continuous and more and more.",
+          "What is an online customer account? Define it using be or a relative clause.",
+          "What would you politely ask a trainer before learning to use a new service?"
+        ],
+        "secondsPerQuestion": 40
+      },
+      {
+        "id": "S2",
+        "kind": "explain",
+        "instructions": "Explain the trend using the cues. Include a polite training request.",
+        "prompt": "Your team is using a private discussion group more frequently. Explain the change and ask for training.",
+        "cues": [
+          "Describe what more colleagues are doing",
+          "Explain how communication is becoming easier",
+          "Ask the trainer how to search earlier discussions"
+        ],
+        "requiredGrammar": [
+          "Present continuous for trends",
+          "More and more",
+          "Polite request with Could someone tell me"
+        ],
+        "seconds": 75,
+        "sampleAnswer": "More and more colleagues are sharing questions in our private group. People are answering each other more quickly, and communication is becoming easier. New users can learn from earlier discussions, but they need clear instructions. Could someone tell me how to search for a topic? It would be great to know how to mark a useful reply as well."
+      },
+      {
+        "id": "S3",
+        "kind": "situation",
+        "instructions": "Give a proposal using at least two second conditional sentences and a polite request.",
+        "prompt": "Your manager is considering video meetings with another office. Explain two possible benefits and politely ask for a trial.",
+        "cues": [
+          "Discuss travel time",
+          "Explain how teams could see the same picture",
+          "Request a short trial before buying the service"
+        ],
+        "requiredGrammar": [
+          "Second conditional: if + past simple, would + infinitive",
+          "Polite request with could"
+        ],
+        "seconds": 90,
+        "sampleAnswer": "If we used video meetings, we would spend less time travelling to the other office. If both teams shared a picture on screen, they would understand design changes more clearly. We should test the sound and allow time for questions. Could we arrange a short trial before buying the service? If the trial worked well, we would have better evidence for our decision."
+      }
+    ]
+  }
+}

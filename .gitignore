@@ -19,3 +19,6 @@ sources/
 # local
 .DS_Store
 npm-debug.log*
+.runtime/
+test-results/
+playwright-report/
