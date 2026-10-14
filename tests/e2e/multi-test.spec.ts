@@ -95,12 +95,12 @@ test("three test cards keep sources, PDF links, submissions and best scores sepa
     { result: { ...historyResult({ id: "invalid", total: 10 }), testId: "Z" } },
   ]);
   await page.reload();
-  const homeUnit = page.locator(".unit-card").filter({ has: page.getByRole("link", { name: "Luyện tập Unit 6", exact: true }) });
+  const homeUnit = page.locator(".unit-card").filter({ has: page.getByRole("link", { name: "Vào Unit 6", exact: true }) });
   await expect(homeUnit.getByText("3 đề", { exact: true })).toBeVisible();
   await expect(homeUnit.locator(".test-best-score").nth(0)).toContainText("5.25 / 10");
   await expect(homeUnit.locator(".test-best-score").nth(1)).toContainText("9.00 / 10");
   await expect(homeUnit.locator(".test-best-score").nth(2)).toContainText("—");
-  await homeUnit.getByRole("link", { name: "Luyện tập Unit 6", exact: true }).click();
+  await homeUnit.getByRole("link", { name: "Vào Unit 6", exact: true }).click();
   await expect(page.locator(".test-card")).toHaveCount(3);
   const cardA = page.locator('.test-card[data-test-id="A"]');
   const cardB = page.locator('.test-card[data-test-id="B"]');

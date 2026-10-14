@@ -235,8 +235,13 @@ test("browser completes a full sequential Unit 6, shows reviews and clears histo
   await page.getByLabel("Mã truy cập", { exact: true }).fill("local-e2e-code");
   await page.getByRole("button", { name: "Vào luyện tập" }).click();
   await expect(page.locator(".unit-card")).toHaveCount(8);
+  for (let unit = 1; unit <= 8; unit++) {
+    const link = page.getByRole("link", { name: `Vào Unit ${unit}`, exact: true });
+    await expect(link).toHaveText("Vào Unit");
+    await expect(link).toHaveAccessibleName(`Vào Unit ${unit}`);
+  }
   await page
-    .getByRole("link", { name: "Luyện tập Unit 6", exact: true })
+    .getByRole("link", { name: "Vào Unit 6", exact: true })
     .click();
   await page.getByRole("button", { name: "Thi thử", exact: true }).click();
   const testCard = page.locator('.test-card[data-test-id="A"]');

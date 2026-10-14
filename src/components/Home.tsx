@@ -144,7 +144,7 @@ export function Home() {
                     <Link
                       href={`/unit/${unit.unit}`}
                       className="round-link"
-                      aria-label={`Luyện tập Unit ${unit.unit}`}
+                      aria-label={`Vào Unit ${unit.unit}`}
                     >
                       Vào Unit <Icon name="arrow" />
                     </Link>

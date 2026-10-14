@@ -257,7 +257,7 @@ test.describe("all eight audited Units with AI_MOCK", () => {
       for (const unit of exams) {
         const card = page.locator(".unit-card").filter({
           has: page.getByRole("link", {
-            name: `Luyện tập Unit ${unit.unit}`,
+            name: `Vào Unit ${unit.unit}`,
             exact: true,
           }),
         });
@@ -270,7 +270,7 @@ test.describe("all eight audited Units with AI_MOCK", () => {
       }
       await page
         .getByRole("link", {
-          name: `Luyện tập Unit ${exam.unit}`,
+          name: `Vào Unit ${exam.unit}`,
           exact: true,
         })
         .click();
