@@ -6,6 +6,7 @@ import {
   gradeWriting,
   speakingScore,
   validateSpeakingGrade,
+  applyAudioChecks,
   validateWritingGrade,
   writingScore,
 } from "../src/server/ai";
@@ -513,12 +514,62 @@ test("Speaking sends WAV inlineData and transcript together inside the untrusted
       );
       const grade = speakingCandidate();
       grade.pronunciationAssessed = true;
-      return response(grade);
+      return response({
+        ...grade,
+        audioChecks: [
+          { id: "S2", containsSpeech: true, matchesTranscript: true },
+        ],
+      });
     },
   );
   assert.equal(
     (await gradeSpeaking(exam, answers)).pronunciationAssessed,
     true,
+  );
+});
+
+test("Speaking ignores a pronunciation claim when the audio has no matching speech", async () => {
+  const answers = speakingAnswers();
+  answers.S2.audio = {
+    mimeType: "audio/wav",
+    data: Buffer.from("server-validated-audio").toString("base64"),
+  };
+  for (const check of [
+    { containsSpeech: false, matchesTranscript: false },
+    { containsSpeech: true, matchesTranscript: false },
+  ]) {
+    mock.method(globalThis, "fetch", async () =>
+      response({
+        ...speakingCandidate(),
+        pronunciationAssessed: true,
+        audioChecks: [{ id: "S2", ...check }],
+      }),
+    );
+    assert.equal(
+      (await gradeSpeaking(exam, answers)).pronunciationAssessed,
+      false,
+    );
+    mock.restoreAll();
+  }
+});
+
+test("Speaking with audio rejects missing or mismatched audioChecks", () => {
+  const audioIds = ["S2"];
+  assert.throws(() => applyAudioChecks(speakingCandidate(), audioIds));
+  assert.throws(() =>
+    applyAudioChecks(
+      {
+        ...speakingCandidate(),
+        audioChecks: [
+          { id: "S3", containsSpeech: true, matchesTranscript: true },
+        ],
+      },
+      audioIds,
+    ),
+  );
+  assert.equal(
+    applyAudioChecks(speakingCandidate(), []).pronunciationAssessed,
+    false,
   );
 });
 

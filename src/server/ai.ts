@@ -300,6 +300,16 @@ const WRITING_SCHEMA = objectSchema({
   }),
 });
 const SPEAKING_SCHEMA = objectSchema({
+  audioChecks: {
+    type: "array",
+    description:
+      "Một mục cho mỗi câu có âm thanh, xác định trước khi chấm. Không có âm thanh thì để mảng rỗng.",
+    items: objectSchema({
+      id: { type: "string", enum: [...SPEAKING_IDS] },
+      containsSpeech: { type: "boolean" },
+      matchesTranscript: { type: "boolean" },
+    }),
+  },
   task: scoreSchema(SCORING.speaking.task),
   unitGrammar: scoreSchema(SCORING.speaking.unitGrammar),
   vocabulary: scoreSchema(SCORING.speaking.vocabulary),
@@ -308,6 +318,53 @@ const SPEAKING_SCHEMA = objectSchema({
   feedback: feedbackSchema,
   corrections: correctionsSchema,
 });
+
+interface AudioCheck {
+  id: string;
+  containsSpeech: boolean;
+  matchesTranscript: boolean;
+}
+
+/**
+ * Tách kết quả kiểm tra âm thanh khỏi đầu ra AI. Mỗi câu có âm thanh phải có
+ * đúng một mục. Phát âm chỉ được coi là đã đánh giá khi ít nhất một file chứa
+ * giọng nói và khớp với bản chữ; AI từng khen phát âm cho một tiếng bíp.
+ */
+export function applyAudioChecks(
+  value: unknown,
+  audioIds: readonly string[],
+  answers?: ExamAnswers["speaking"],
+): SpeakingGrade {
+  if (!record(value)) throw new InvalidGrade();
+  // Bài chỉ có chữ thì không có gì để kiểm; bài có âm thanh bắt buộc phải có.
+  const rawChecks =
+    value.audioChecks === undefined && audioIds.length === 0
+      ? []
+      : value.audioChecks;
+  if (!Array.isArray(rawChecks)) throw new InvalidGrade();
+  const checks: AudioCheck[] = rawChecks.map((c) => {
+    exactKeys(c, ["id", "containsSpeech", "matchesTranscript"]);
+    if (
+      typeof c.id !== "string" ||
+      typeof c.containsSpeech !== "boolean" ||
+      typeof c.matchesTranscript !== "boolean"
+    )
+      throw new InvalidGrade();
+    return {
+      id: c.id,
+      containsSpeech: c.containsSpeech,
+      matchesTranscript: c.matchesTranscript,
+    };
+  });
+  const ids = checks.map((c) => c.id).sort();
+  if (ids.join(",") !== [...audioIds].sort().join(","))
+    throw new InvalidGrade();
+  const { audioChecks: _ignored, ...core } = value;
+  const grade = validateSpeakingGrade(core, answers);
+  if (!checks.some((c) => c.containsSpeech && c.matchesTranscript))
+    grade.pronunciationAssessed = false;
+  return grade;
+}
 
 function mockWriting(answers: ExamAnswers["writing"]): WritingGrade {
   const hasEmail = Boolean(answers.email.trim());
@@ -644,8 +701,8 @@ Chấm bốn tiêu chí task (hoàn thành nhiệm vụ), unitGrammar (ngữ ph�
 Không cho task tối đa khi thiếu bất kỳ câu trả lời nào. Câu trả lời phải bằng tiếng Anh, bám đề và ngữ pháp bắt buộc.
 Các câu có âm thanh: ${JSON.stringify(audioIds)}. ${
     audioIds.length
-      ? "Xét phát âm và độ trôi chảy qua audio. pronunciationAssessed chỉ true nếu đã thực sự đánh giá phát âm từ âm thanh."
-      : "Chỉ có bản chữ: tuyệt đối không đánh giá phát âm, pronunciationAssessed phải false. Độ trôi chảy chỉ dựa trên mạch lạc của bản chữ."
+      ? "Trước khi chấm, nghe từng file âm thanh và ghi vào audioChecks: containsSpeech = file có giọng người nói tiếng Anh rõ ràng (im lặng, tiếng bíp, âm thanh tổng hợp, tiếng ồn, nhạc đều là false); matchesTranscript = lời nói trong file khớp nội dung với bản chữ của câu đó. Với câu có containsSpeech hoặc matchesTranscript là false: tuyệt đối không nhận xét phát âm, ngữ điệu hay độ trôi chảy khi nói của câu đó; chấm câu đó theo những gì thực sự được nói trong file (không có lời nói thì coi như không nói, giảm task và fluency tương ứng) và nêu rõ trong feedback rằng bản ghi không có lời nói hoặc không khớp chữ đã gõ. Chỉ xét phát âm qua các file có cả containsSpeech và matchesTranscript là true. pronunciationAssessed chỉ true khi có ít nhất một file như vậy."
+      : "Chỉ có bản chữ: audioChecks là mảng rỗng; tuyệt đối không đánh giá phát âm, pronunciationAssessed phải false. Độ trôi chảy chỉ dựa trên mạch lạc của bản chữ."
   }
 Đề và bài mẫu đáng tin cậy của máy chủ: ${JSON.stringify({
     unit: exam.unit,
@@ -678,6 +735,6 @@ Các câu có âm thanh: ${JSON.stringify(audioIds)}. ${
   }
   parts.push({ text: `END_STUDENT_DATA_${nonce}` });
   return runGrading(instructions, parts, SPEAKING_SCHEMA, (value) =>
-    validateSpeakingGrade(value, answers),
+    applyAudioChecks(value, audioIds, answers),
   );
 }
