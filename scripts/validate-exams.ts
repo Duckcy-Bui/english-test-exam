@@ -128,6 +128,15 @@ function validateExam(exam: UnitExam, file: string): Report {
     if (a.questions?.length !== COUNTS.listeningMcq) r.errors.push(`Listening A phải có ${COUNTS.listeningMcq} câu`);
     checkIds(r, "Listening A", a.questions, range("L", 1, 5));
     a.questions?.forEach((q) => checkMcq(r, q, q.id));
+    // Ngữ cảnh hiện cho sinh viên trước khi nghe: không được nói sẵn đáp án Part A.
+    const contextWords = new Set(contentWords(a.context ?? ""));
+    for (const q of a.questions ?? []) {
+      const answer = contentWords(q.options?.find((o) => o.id === q.answerKey)?.text ?? "");
+      const shared = answer.filter((w) => contextWords.has(w));
+      if (shared.length >= 2 && shared.length >= 0.6 * answer.length) {
+        r.warnings.push(`${q.id}: ngữ cảnh Listening A chứa sẵn đáp án (${shared.join(", ")})`);
+      }
+    }
     if (b.questions?.length !== COUNTS.listeningShort) r.errors.push(`Listening B phải có ${COUNTS.listeningShort} câu`);
     checkIds(r, "Listening B", b.questions, range("L", 6, 10));
     for (const q of b.questions ?? []) {
