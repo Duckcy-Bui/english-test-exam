@@ -25,7 +25,8 @@
     "Listening A (cập nhật tiến độ ứng dụng đặt bánh) theo bài Project management; Listening B (chương trình bãi đỗ xe thông minh) theo bài Software development. Viết mới, không chép Audio script.",
     "Listening B: acceptedAnswers có biến thể cách viết số và mạo từ; một số biến thể không có nguyên văn trong lời thoại.",
     "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
-    "Bản r1 (tự soát theo lỗi chung et-lead nêu): R6 đổi \"search box\" để không trùng gốc thuật ngữ nối R3 (search ranking); R12 và bài đọc R21–R25, câu R24 bỏ từ \"version\" (từ khoá định nghĩa R1) và \"list\" (từ khoá định nghĩa R2); R23, R24 bỏ \"language\" (từ khoá định nghĩa R4)."
+    "Bản r1 (tự soát theo lỗi chung et-lead nêu): R6 đổi \"search box\" để không trùng gốc thuật ngữ nối R3 (search ranking); R12 và bài đọc R21–R25, câu R24 bỏ từ \"version\" (từ khoá định nghĩa R1) và \"list\" (từ khoá định nghĩa R2); R23, R24 bỏ \"language\" (từ khoá định nghĩa R4).",
+    "Bản r1 (theo review chéo của et-author): R24 hỏi trực tiếp tính năng quản lý quyết định không cần; L6, L9, L10 thêm biến thể (turns red, phone app, 11 p m…); email mẫu thêm một câu bị động riêng."
   ],
   "listening": {
     "parts": [
@@ -137,7 +138,7 @@
             "kind": "short",
             "stem": "What colour is the light above a space when a car is parked there?",
             "maxWords": 3,
-            "acceptedAnswers": ["red", "it is red", "it's red", "red light"],
+            "acceptedAnswers": ["red", "it is red", "it's red", "red light", "it turns red", "turns red"],
             "explanation": "\"When a car parks in a space, the sensor makes the light above it turn red.\""
           },
           {
@@ -161,7 +162,7 @@
             "kind": "short",
             "stem": "What do drivers use to pay?",
             "maxWords": 3,
-            "acceptedAnswers": ["the app", "app", "an app", "their phones", "phones", "the phone app"],
+            "acceptedAnswers": ["the app", "app", "an app", "their phones", "phones", "the phone app", "phone app", "their phone", "mobile app", "the mobile app"],
             "explanation": "\"Drivers pay with the app on their phones.\""
           },
           {
@@ -169,7 +170,7 @@
             "kind": "short",
             "stem": "After what time do the lights in empty areas switch off?",
             "maxWords": 3,
-            "acceptedAnswers": ["eleven o'clock", "eleven", "11", "11 o'clock", "11 pm", "11pm", "eleven pm", "eleven at night"],
+            "acceptedAnswers": ["eleven o'clock", "eleven", "11", "11 o'clock", "11 pm", "11pm", "eleven pm", "eleven at night", "11 p m", "eleven p m", "11 at night"],
             "explanation": "\"After eleven o'clock at night, the program causes the lights in empty areas to switch off\"."
           }
         ]
@@ -448,7 +449,7 @@
         {
           "id": "R24",
           "kind": "mcq",
-          "stem": "Which feature will NOT be included at the beginning?",
+          "stem": "Which feature did the managers decide is not necessary at the beginning?",
           "options": [
             { "id": "A", "text": "The number of bikes at each station" },
             { "id": "B", "text": "Korean" },
@@ -573,7 +574,7 @@
         "The passive (at least one): is shown, can be found, is published",
         "Plans and schedules: be due to / be scheduled to + infinitive"
       ],
-      "modelAnswer": "From: Hoang Gia Huy\nTo: Anna\nDate: 2nd June\nSubject: Publishing a news article\n\nHi Anna,\n\nIt should be quite easy to publish your first article.\nFirst, log in to the website's admin page.\nThen, click 'New article' and type the title and the text.\nNext, add a photo. It has to be smaller than 2 MB.\nAfter that, choose the 'News' category and click 'Preview'. You should check the article on a phone.\nFinally, click 'Publish'. Your article is scheduled to appear on the home page at 9 a.m. tomorrow.\nDon't forget to log out of the admin page when you've finished.\n\nBest wishes,\nHoang Gia Huy\nWeb Developer\nIT Department"
+      "modelAnswer": "From: Hoang Gia Huy\nTo: Anna\nDate: 2nd June\nSubject: Publishing a news article\n\nHi Anna,\n\nIt should be quite easy to publish your article.\nFirst, log in to the admin page.\nThen, click 'New article' and type the title and text.\nNext, add a photo. It has to be under 2 MB.\nAfter that, choose 'News' and click 'Preview'. You should check it on a phone.\nFinally, click 'Publish'. The article is added to the News list and is scheduled to appear on the home page at 9 a.m. tomorrow.\nDon't forget to log out of the admin page when you've finished.\n\nBest wishes,\nHoang Gia Huy\nWeb Developer\nIT Department"
     }
   },
   "speaking": {
