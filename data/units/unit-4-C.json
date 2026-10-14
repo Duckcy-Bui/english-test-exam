@@ -26,7 +26,8 @@
     "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
     "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
     "Bản r1 (tự soát theo nhắc của et-lead): R15, R17 và bài đọc R26–R30 bỏ 'lock' (cùng gốc thuật ngữ R2 Caps Lock); R13 (record) và R14 (table) đổi sang query / form vì là từ khoá định nghĩa B (primary key); R19, R20 thay nhiễu 'unique'; R12 và bài đọc R21–R25 bỏ 'screen' (thuật ngữ R3 touch screen).",
-    "Bản r1, đợt 2 (theo review chéo của et-author2): S2 đổi sang bảng điểm (bản cũ chép cấu trúc bảng tính bài đọc đề A); Listening B đổi người nghe, bỏ 'after everyone went home', đổi sự việc cuối (không lặp đặt lại mật khẩu), L10 mới; S3 đổi khung; R10 đổi tình huống; R16 đổi sang reset router; R18 đổi sang divide (trùng đề B); W31, W32, W33, W35 viết mới; L6, L9 thêm biến thể giờ; bài R26–R30 thêm một câu vào thân thư."
+    "Bản r1, đợt 2 (theo review chéo của et-author2): S2 đổi sang bảng điểm (bản cũ chép cấu trúc bảng tính bài đọc đề A); Listening B đổi người nghe, bỏ 'after everyone went home', đổi sự việc cuối (không lặp đặt lại mật khẩu), L10 mới; S3 đổi khung; R10 đổi tình huống; R16 đổi sang reset router; R18 đổi sang divide (trùng đề B); W31, W32, W33, W35 viết mới; L6, L9 thêm biến thể giờ; bài R26–R30 thêm một câu vào thân thư.",
+    "Bản r1, đợt 2b: L9 bỏ biến thể quá 3 từ."
   ],
   "listening": {
     "parts": [
@@ -308,7 +309,6 @@
               "one thirty",
               "1 30 am",
               "at 1 30",
-              "1 30 a m",
               "1 30am",
               "one thirty am",
               "at one thirty"
