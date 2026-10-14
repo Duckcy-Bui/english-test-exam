@@ -10,6 +10,7 @@ import { parseAnswers } from "@/server/answers";
 import { failure, json, readBody } from "@/server/http";
 import { AppError } from "@/server/errors";
 import { AiGradingError } from "@/server/ai";
+import { assertSafeResult, UnsafeAiOutputError } from "@/server/secrets";
 export const runtime = "nodejs";
 export const maxDuration = 180;
 export async function GET(request: Request) {
@@ -20,8 +21,17 @@ export async function GET(request: Request) {
     );
     if (!s.result)
       throw new AppError(409, "Chỉ xem được kết quả sau khi nộp bài.");
+    try {
+      assertSafeResult(s.result);
+    } catch (error) {
+      delete s.result;
+      s.status = "idle";
+      throw error;
+    }
     return json({ result: s.result });
   } catch (error) {
+    if (error instanceof UnsafeAiOutputError)
+      return failure(new AppError(502, error.message));
     return failure(error);
   }
 }
@@ -36,7 +46,16 @@ export async function POST(request: Request) {
         "Không được đổi chế độ hoặc phạm vi khi nộp bài.",
       );
     const s = getSession(body.sessionId, device);
-    if (s.result) return json({ result: s.result });
+    if (s.result) {
+      try {
+        assertSafeResult(s.result);
+      } catch (error) {
+        delete s.result;
+        s.status = "idle";
+        throw error;
+      }
+      return json({ result: s.result });
+    }
     if (s.status === "grading")
       throw new AppError(409, "Bài đang được chấm. Vui lòng chờ.");
     const answers = parseAnswers(body.answers);
@@ -64,12 +83,13 @@ export async function POST(request: Request) {
     s.status = "grading";
     pending = s;
     const result = await gradeSession(s, lockedAnswers);
+    assertSafeResult(result);
     s.result = result;
     s.status = "submitted";
     return json({ result });
   } catch (error) {
     if (pending) pending.status = "idle";
-    if (error instanceof AiGradingError)
+    if (error instanceof AiGradingError || error instanceof UnsafeAiOutputError)
       return failure(new AppError(502, error.message));
     return failure(error);
   } finally {
