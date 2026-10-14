@@ -24,7 +24,8 @@
     "Bài đọc R21–R25 (kế hoạch nghề nghiệp của người mới tốt nghiệp) và R26–R30 (làm đổ nước lên máy tính xách tay) viết mới. Không nhắc phần mềm quản lý danh sách sự cố, lỗi kết nối, vấp ngã, khả năng sắp xếp công việc hay chứng chỉ trình độ cao hơn để không diễn đạt lại định nghĩa câu nối.",
     "Listening A (đoán nguyên nhân máy chiếu tự tắt) theo bài Diagnosis; Listening B (tin nhắn thoại báo những việc đã làm với lỗi email) theo bài Investigations. Viết mới, không chép Audio script.",
     "Listening B: acceptedAnswers có biến thể cách viết số và mạo từ; một số biến thể không có nguyên văn trong lời thoại.",
-    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng."
+    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
+    "Bản r1 (tự soát theo lỗi chung et-lead nêu): R20 bỏ \"error\" (gốc thuật ngữ nối R2); R24 thay phương án có \"course\" (từ khoá định nghĩa D); bài đọc R21–R25 bỏ câu người chơi báo lỗi (gần định nghĩa B), \"levels\" (định nghĩa D) và \"skills\" (gốc thuật ngữ nối R4)."
   ],
   "listening": {
     "parts": [
@@ -381,7 +382,7 @@
       {
         "id": "R20",
         "kind": "mcq",
-        "stem": "Without the error log, we can only ______ about the cause of the crash.",
+        "stem": "Without the log files, we can only ______ about the cause of the crash.",
         "options": [
           { "id": "A", "text": "award" },
           { "id": "B", "text": "burn" },
@@ -397,9 +398,9 @@
       "passage": {
         "title": "Huy's Plans for the Future",
         "paragraphs": [
-          "Huy is twenty-two, and he has just finished a degree in software engineering in Da Nang. During his studies, he worked on three small mobile games with two friends. One of the games has been downloaded more than 50,000 times, and Huy has learned a lot from the players' comments. Some players asked for new levels, and others reported small problems, which the team fixed quickly.",
+          "Huy is twenty-two, and he has just finished a degree in software engineering in Da Nang. During his studies, he worked on three small mobile games with two friends. One of the games has been downloaded more than 50,000 times, and Huy has learned a lot from the players' comments. Some players asked for new characters, and the team added them within a few weeks.",
           "Since he graduated, Huy has already had two job interviews with game companies. The first company offered him a job testing games, but he said no, because he hopes to work as a programmer, not as a tester. His second interview was last Friday, and he hasn't heard from the company yet.",
-          "While he waits, Huy is working hard to improve his skills. He intends to learn a new game engine this summer, and he plans to build a small game with it by September. He also wants to improve his English, because many game studios in Vietnam work with clients in other countries, and meetings are often held in English.",
+          "While he waits, Huy is working hard to become a better programmer. He intends to learn a new game engine this summer, and he plans to build a small game with it by September. He also wants to improve his English, because many game studios in Vietnam work with clients in other countries, and meetings are often held in English.",
           "In the long term, Huy expects to work for a company in Vietnam for about five years. After that, he hopes to start his own studio with the two friends who made the games with him. He knows that it will not be easy, but he thinks that a small team can make games that people love."
         ]
       },
@@ -450,7 +451,7 @@
           "options": [
             { "id": "A", "text": "Start his own studio" },
             { "id": "B", "text": "Move to another country" },
-            { "id": "C", "text": "Finish an English course" },
+            { "id": "C", "text": "Visit game studios abroad" },
             { "id": "D", "text": "Build a small game with a new game engine" }
           ],
           "answerKey": "D",
