@@ -3,6 +3,7 @@
   "unit": 8,
   "unitTitle": "IT solutions",
   "testId": "A",
+  "source": "ai",
   "functions": [
     "Describing what has been done to find a fault (Investigations)",
     "Speculating about the causes of problems (Diagnosis)",

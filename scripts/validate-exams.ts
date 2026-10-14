@@ -1,8 +1,9 @@
 // Kiểm tra cấu trúc đề và quét lộ đáp án cơ bản (docs/exam-format.md mục 3–4).
 //
 // Cách dùng:
-//   npm run validate                 kiểm mọi file data/units/unit-N.json
-//   npm run validate -- 6            chỉ kiểm Unit 6
+//   npm run validate                 kiểm mọi file data/units/unit-N-<Test>.json
+//   npm run validate -- 6            kiểm mọi đề của Unit 6
+//   npm run validate -- 6B           chỉ kiểm đề B của Unit 6
 //   npm run validate -- path/x.json  kiểm một file bất kỳ
 //   npm run validate -- a.json b.json  kiểm nhiều file, có kiểm câu dịch trùng giữa các file
 //
@@ -13,6 +14,7 @@ import {
   COUNTS,
   SCHEMA_VERSION,
   SCORING,
+  TEST_IDS,
   SKILL_MAX,
   TOTAL_MAX,
   WORD_LIMITS,
@@ -23,7 +25,7 @@ import {
   type Passage,
   type UnitExam,
 } from "../src/types/exam";
-import { listUnitFiles, readJson, unitPath } from "./lib";
+import { FILE_RE, listUnitFiles, parseUnitArg, readJson, unitPath } from "./lib";
 
 interface Report {
   file: string;
@@ -99,10 +101,12 @@ function validateExam(exam: UnitExam, file: string): Report {
 
   // ---- Thông tin chung ----
   if (exam.schemaVersion !== SCHEMA_VERSION) r.errors.push(`schemaVersion phải là ${SCHEMA_VERSION}`);
-  const m = basename(file).match(/^unit-(\d)\.json$/);
-  if (m && Number(m[1]) !== exam.unit) r.errors.push(`unit = ${exam.unit} không khớp tên file`);
+  const m = basename(file).match(FILE_RE);
+  if (m && (Number(m[1]) !== exam.unit || m[2] !== exam.testId))
+    r.errors.push(`Unit ${exam.unit} đề ${exam.testId} không khớp tên file`);
   if (!(exam.unit >= 1 && exam.unit <= 8)) r.errors.push(`unit phải từ 1 đến 8`);
-  if (exam.testId !== "A") r.errors.push(`testId phải là "A"`);
+  if (!TEST_IDS.includes(exam.testId)) r.errors.push(`testId phải là một trong ${TEST_IDS.join(", ")}`);
+  if (exam.source !== "teacher" && exam.source !== "ai") r.errors.push(`source phải là "teacher" hoặc "ai"`);
   if (!exam.unitTitle?.trim()) r.errors.push(`thiếu unitTitle`);
   if (!exam.grammarFocus?.length) r.errors.push(`thiếu grammarFocus`);
   if (exam.functions?.length !== 4) r.warnings.push(`functions nên có 4 mục (4 bài của Unit)`);
@@ -322,7 +326,17 @@ function checkScoringConstants(): string[] {
 
 function main() {
   const args = process.argv.slice(2);
-  const files = args.length === 0 ? listUnitFiles() : args.map((a) => (/^\d$/.test(a) ? unitPath(Number(a)) : a));
+  // "6" = mọi đề của Unit 6; "6B" = đề B; đường dẫn = file bất kỳ.
+  const files = args.length === 0
+    ? listUnitFiles()
+    : args.flatMap((a) => {
+        if (/^[1-8]$/.test(a)) return listUnitFiles(Number(a));
+        if (/^[1-8]-?[A-Da-d]$/.test(a)) {
+          const { unit, test } = parseUnitArg(a);
+          return [unitPath(unit, test)];
+        }
+        return [a];
+      });
 
   const constErrors = checkScoringConstants();
   constErrors.forEach((e) => console.log(`LỖI  [hằng số] ${e}`));
@@ -334,6 +348,7 @@ function main() {
 
   const reports: Report[] = [];
   const translationSeen = new Map<string, string>();
+  const unitSeen = new Map<string, { name: string; passages: string[]; terms: Set<string> }[]>();
   for (const file of files) {
     if (!existsSync(file)) {
       reports.push({ file, errors: ["không tìm thấy file"], warnings: [] });
@@ -359,6 +374,21 @@ function main() {
       if (key && prev) report.errors.push(`${t.id}: câu dịch trùng với ${prev}`);
       else if (key) translationSeen.set(key, `${basename(file)} ${t.id}`);
     }
+    // Các đề cùng Unit không được dùng lại bài đọc; hạn chế trùng thuật ngữ câu nối.
+    const key = `unit-${exam.unit}`;
+    const seen = unitSeen.get(key) ?? [];
+    const passages = [exam.reading?.passageMcq?.passage, exam.reading?.passageTrueFalse?.passage]
+      .flatMap((p) => p?.paragraphs ?? [])
+      .map((t) => normalizeAnswer(t).slice(0, 80));
+    const terms = new Set((exam.reading?.matching?.items ?? []).map((i) => normalizeAnswer(i.term)));
+    for (const other of seen) {
+      if (passages.some((p) => other.passages.includes(p)))
+        report.errors.push(`Bài đọc trùng với ${other.name}`);
+      const shared = [...terms].filter((t) => other.terms.has(t));
+      if (shared.length > 2) report.warnings.push(`Câu nối trùng ${shared.length} thuật ngữ với ${other.name}: ${shared.join(", ")}`);
+    }
+    seen.push({ name: basename(file), passages, terms });
+    unitSeen.set(key, seen);
     reports.push(report);
   }
 

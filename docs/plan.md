@@ -142,6 +142,15 @@ Xong khi: đủ 8 Unit có `AUDIT-OK`, `validate-exams.ts` qua trên toàn bộ.
 
 Xong khi: web chạy trên domain qua HTTPS, micro hoạt động, chấm AI hoạt động.
 
+## 5b. Giai đoạn 5: nhiều đề mỗi Unit và PDF
+
+Chốt với chủ dự án ngày 2026-10-14:
+- Mỗi Unit có nhiều đề: A (hiện có), B, C (AI sinh thêm). File `data/units/unit-<N>-<Test>.json`, trường `testId` và `source`.
+- Nhãn theo đúng nguồn: `source: "teacher"` hiện "Đề cô" (Unit 4, 5, 6 đề A, lấy từ đề mẫu của giảng viên); `source: "ai"` hiện "Đề AI" (Unit 1, 2, 3, 7, 8 đề A và mọi đề B, C).
+- Mỗi đề làm được trên web (như hiện nay) hoặc tải PDF: PDF đề đủ 4 kỹ năng, phần Nghe có mã QR mở bài nghe trên web; PDF đáp án tải riêng (đáp án, giải thích, lời thoại, bản dịch tham khảo, bài mẫu).
+- Audio thu sẵn: `data/audio/unit-<N>-<Test>-<Part>.mp3`; đề chưa có audio dùng giọng trình duyệt.
+- Đợt đầu: 16 đề AI (B, C cho 8 Unit), soạn và giải mù chéo như Giai đoạn 2–3.
+
 ## 6. Vấn đề còn mở
 
 1. **10 lần chấm/ngày đủ bao nhiêu đề.** Một đề cần ít nhất 2 lần chấm (Writing, Speaking), nên mỗi thiết bị làm được tối đa khoảng 5 đề đầy đủ mỗi ngày. Giới hạn theo cookie dễ bị lách bằng cách xoá cookie; trần theo IP chặn mức thiệt hại.
@@ -188,3 +197,4 @@ Xong khi: web chạy trên domain qua HTTPS, micro hoạt động, chấm AI ho�
 | 2026-10-14 19:25 +07 | Lịch sử ShopAIKey cho thấy mỗi lượt chấm bị tính tiền 2 lần (gemini-2.5-flash mất 25–45 giây, client bỏ ở 20 giây rồi gọi model dự phòng). Sửa (`eeae18a`): timeout 60 giây mỗi lần gọi, 90 giây mỗi lượt chấm; giới hạn 1024 token suy nghĩ cho dòng 2.5; chấm Writing và Speaking song song. Thử lại trên production: Writing 11,8 giây, Speaking 23,5 giây. |
 | 2026-10-14 21:03 +07 | Bài nghe thu sẵn: `/api/listen` trả đường dẫn audio có chữ ký 15 phút, trình duyệt phát MP3 trước, giọng trình duyệt chỉ là dự phòng (giọng trình duyệt im lặng trên Firefox/Linux). Unit 1 tạo bằng ElevenLabs Multilingual v2 qua giao diện PlenX (API developer của PlenX lỗi 500), PlenX đọc to thẻ break nên cắt bằng Whisper theo thời điểm từng từ. Deploy `7059a58`; production trả 200 audio/mpeg, không cookie 403. |
 | 2026-10-14 21:16 +07 | Áp khung email hướng dẫn của giáo viên (`8cb574e`): 8 Unit đều là email hướng dẫn, bài mẫu theo khung (phần thân 95–98 từ), chỉ đếm phần thân, barem bố cục kiểm 5 phần, nút "Chèn khung email". Chấm thật Unit 4: đúng khung layout 0,25; thiếu đầu thư và chữ ký layout 0,125 kèm nhận xét đúng phần thiếu. |
+| 2026-10-14 21:24 +07 | Bắt đầu Giai đoạn 5 trên nhánh `feat/multi-test`: schema thêm `testId` A–D và `source`; đổi tên `unit-N.json` thành `unit-N-A.json`, audio thành `unit-N-A-<part>.mp3`; script validate/strip/compare nhận mã đề dạng `6B`, validate cấm trùng bài đọc giữa các đề cùng Unit. |
