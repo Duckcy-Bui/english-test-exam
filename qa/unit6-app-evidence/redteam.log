@@ -1,0 +1,73 @@
+PASS missing/wrong access and forged cookies rejected
+PASS AI_MOCK writing payload 1
+PASS AI_MOCK speaking payload 1
+PASS AI_MOCK writing payload 2
+PASS AI_MOCK speaking payload 2
+PASS AI_MOCK writing payload 3
+PASS AI_MOCK speaking payload 3
+PASS AI_MOCK writing payload 4
+PASS AI_MOCK speaking payload 4
+PASS AI_MOCK writing payload 5
+PASS AI_MOCK speaking payload 5
+PASS AI_MOCK writing payload 6
+PASS AI_MOCK speaking payload 6
+PASS AI_MOCK writing payload 7
+PASS AI_MOCK speaking payload 7
+PASS exam sequential release, answer locking, listening 2 plays, result gate
+PASS public endpoints, HTML and client bundles contain no private reference answers/key
+PASS 10/device, 100/IP; deleting cookies and spoofing XFF cannot bypass; cached grade free
+PASS configured 3/device and 5/IP, full scope costs two, concurrency cannot overspend
+PASS IP quota persists after production restart
+PASS Gemini writing rejects over
+PASS Gemini writing rejects negative
+PASS Gemini writing rejects strings
+PASS Gemini writing rejects extra-total
+PASS Gemini writing rejects missing
+PASS Gemini writing rejects invalid-json
+PASS Gemini writing rejects nan
+PASS Gemini writing rejects huge
+PASS Gemini writing rejects blocked
+PASS Gemini writing rejects transport
+PASS Gemini writing rejects word-count
+PASS Gemini writing rejects duplicate-id
+PASS Gemini writing rejects bad-translation-step
+PASS Gemini writing rejects short-max-steps
+PASS Gemini writing rejects blank-email-points
+PASS Gemini writing rejects blank-translation-points
+PASS Gemini speaking rejects over
+PASS Gemini speaking rejects negative
+PASS Gemini speaking rejects strings
+PASS Gemini speaking rejects extra-total
+PASS Gemini speaking rejects missing
+PASS Gemini speaking rejects invalid-json
+PASS Gemini speaking rejects nan
+PASS Gemini speaking rejects huge
+PASS Gemini speaking rejects blocked
+PASS Gemini speaking rejects transport
+PASS Gemini speaking rejects false-pronunciation
+PASS Gemini speaking rejects partial-full-task
+PASS Gemini receives validated audio/wav inlineData; invalid webm rejected before upstream
+PASS Gemini writing invalid-then-valid
+PASS Gemini writing fallback
+PASS Gemini writing valid
+PASS Gemini speaking invalid-then-valid
+PASS Gemini speaking fallback
+PASS Gemini speaking valid
+PASS Gemini transport writing payload 1
+PASS Gemini transport speaking payload 1
+PASS Gemini transport writing payload 2
+PASS Gemini transport speaking payload 2
+PASS Gemini transport writing payload 3
+PASS Gemini transport speaking payload 3
+PASS Gemini transport writing payload 4
+PASS Gemini transport speaking payload 4
+PASS Gemini transport writing payload 5
+PASS Gemini transport speaking payload 5
+PASS Gemini transport writing payload 6
+PASS Gemini transport speaking payload 6
+PASS Gemini transport writing payload 7
+PASS Gemini transport speaking payload 7
+FAIL Gemini writing does not expose key echoed by upstream in feedback: synthetic API key returned in writing feedback (HTTP 200)
+FAIL Gemini speaking does not expose key echoed by upstream in feedback: synthetic API key returned in speaking feedback (HTTP 200)
+PASS app server logs contain no synthetic API key
+{"passed":70,"failed":2}

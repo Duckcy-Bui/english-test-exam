@@ -1,0 +1,5 @@
+# Local quota databases created by QA; evidence is in JSON/log reports.
+unit6-app-evidence/*.sqlite
+unit6-app-evidence/*.sqlite-wal
+unit6-app-evidence/*.sqlite-shm
+unit6-app-evidence/playwright/
