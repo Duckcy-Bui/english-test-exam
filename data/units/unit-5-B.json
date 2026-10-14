@@ -152,7 +152,7 @@
             "kind": "short",
             "stem": "How much does the booking software cost each month?",
             "maxWords": 3,
-            "acceptedAnswers": ["150", "150 pounds", "150 a month", "a hundred fifty", "one hundred fifty"],
+            "acceptedAnswers": ["150", "150 pounds", "150 a month", "a hundred fifty", "one hundred fifty", "150 pound", "150 per month", "hundred and fifty"],
             "explanation": "\"Our new booking software costs a hundred and fifty pounds a month\" (1.800 bảng một năm)."
           },
           {
