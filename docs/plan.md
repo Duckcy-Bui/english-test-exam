@@ -35,7 +35,7 @@ Web cho sinh viên CNTT ĐH GTVT tự luyện đề English for IT 2 theo 8 Unit
 
 Hai chế độ:
 - **Luyện tập:** không tính giờ, làm xong xem ngay đáp án, giải thích và lời thoại bài nghe.
-- **Thi thử:** có đồng hồ, mỗi phần nghe tối đa 2 lần, chỉ xem đáp án sau khi nộp cả đề.
+- **Thi thử:** có đồng hồ, mỗi phần nghe tối đa 2 lần, chỉ xem đáp án sau khi nộp cả đề. Làm tuần tự Listening → Reading → Writing → Speaking; nội dung kỹ năng sau chỉ gửi xuống trình duyệt khi kỹ năng trước đã nộp, đã nộp thì khoá.
 
 ## 4. Kỹ thuật
 
@@ -155,3 +155,6 @@ Xong khi: web chạy trên domain qua HTTPS, micro hoạt động, chấm AI ho�
 | 2026-10-14 14:34 +07 | et-lead viết lại 4 file docs sau khi phiên cloud mất dữ liệu (chưa push được do lỗi 403). |
 | 2026-10-14 14:49 +07 | Chủ dự án duyệt docs, chốt repo public, giao et-lead chọn cách làm tròn. Tra API Docs ShopAIKey: định dạng Gemini gốc, nhận audio base64 (không có webm). |
 | 2026-10-14 14:53 +07 | Xong Giai đoạn 1: `src/types/exam.ts`, `scripts/{lib,validate-exams,strip-answers,compare-blind}.ts`, đã test bằng đề giả (bắt được lộ đáp án, chính tả Mỹ, câu AMBIGUOUS). Chủ dự án cho phép bắt đầu Giai đoạn 2 mà không duyệt riêng `exam.ts`. |
+| 2026-10-14 15:06 +07 | Bắt đầu Giai đoạn 2. Tạo 4 worktree trong `~/english-test-exam-wt/` (nhánh `content/unit-6`, `audit/unit-6`, `dev/unit6-app`, `qa/unit6-app`), mở 4 agent trong tab herdr của et-lead. Sandbox Codex (bubblewrap) không chạy được vì AppArmor chặn user namespace (`kernel.apparmor_restrict_unprivileged_userns = 1`), nên 3 agent Codex chạy `-s danger-full-access -a never`; et-author chạy `--dangerously-skip-permissions`. |
+| 2026-10-14 15:13 +07 | et-author nộp Unit 6 (`cf3244d`, validate 0 lỗi 0 cảnh báo). et-lead quyết: giữ W33/W34 của đề gốc, thêm chế độ thi tuần tự để chặn lộ giữa các kỹ năng; giữ acceptedAnswers biến thể. Giao et-auditor giải mù Unit 6; et-author bắt đầu Unit 4 (nhánh `content/unit-4`, gốc bản Peter). |
+| 2026-10-14 15:18 +07 | et-auditor trả Unit 6 "CẦN SỬA" (`de65da7`): 5 CHẶN, 2 NÊN SỬA. Lượt giải mù không hợp lệ vì `strip-answers` của et-lead để sót `sourceNotes` (chứa đáp án); compare chỉ để tham khảo (40/40 khớp). et-lead sửa: thêm `sourceNotes` vào `ANSWER_FIELDS`, thêm `--from/--out` cho strip, thêm quy tắc 11–15. Giữ R19 (encryption có trong giáo trình Unit 6 tr. 45, 47). |

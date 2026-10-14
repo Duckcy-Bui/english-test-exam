@@ -3,6 +3,8 @@
 // Cách dùng:
 //   npm run strip -- 6            tạo audit/unit-6.stripped.json và audit/unit-6.blind.template.json
 //   npm run strip -- 6 --force    ghi đè nếu file đã có
+//   npm run strip -- 6 --from <file.json> --out <thư-mục>
+//        lấy đề từ file khác (ví dụ worktree của et-author), ghi ra thư mục khác
 //
 // Bản stripped bỏ mọi trường trong ANSWER_FIELDS nhưng giữ lời thoại Listening,
 // vì auditor không nghe được TTS.
@@ -45,7 +47,16 @@ function writeOnce(path: string, data: unknown, force: boolean) {
 function main() {
   const unit = parseUnitArg(process.argv[2]);
   const force = process.argv.includes("--force");
-  const exam = readJson<UnitExam>(unitPath(unit));
+  const opt = (name: string) => {
+    const i = process.argv.indexOf(name);
+    return i > 0 ? process.argv[i + 1] : undefined;
+  };
+  const exam = readJson<UnitExam>(opt("--from") ?? unitPath(unit));
+  if (exam.unit !== unit) {
+    console.error(`File đề ghi unit = ${exam.unit}, không khớp Unit ${unit}`);
+    process.exit(1);
+  }
+  const outDir = opt("--out") ?? AUDIT_DIR;
 
   const stripped = stripAnswers(exam);
   const leftover = findLeftover(stripped);
@@ -54,8 +65,8 @@ function main() {
     process.exit(1);
   }
 
-  mkdirSync(AUDIT_DIR, { recursive: true });
-  writeOnce(join(AUDIT_DIR, `unit-${unit}.stripped.json`), stripped, force);
+  mkdirSync(outDir, { recursive: true });
+  writeOnce(join(outDir, `unit-${unit}.stripped.json`), stripped, force);
 
   // Mẫu file đáp án cho auditor điền: MCQ và nối ghi chữ cái, T/F ghi T hoặc F,
   // Listening Part B ghi tối đa 3 từ.
@@ -65,7 +76,7 @@ function main() {
     answers: Object.fromEntries(autoGradedQuestions(exam).map((q) => [q.id, ""])),
     notes: {} as Record<string, string>,
   };
-  writeOnce(join(AUDIT_DIR, `unit-${unit}.blind.template.json`), template, force);
+  writeOnce(join(outDir, `unit-${unit}.blind.template.json`), template, force);
 }
 
 main();
