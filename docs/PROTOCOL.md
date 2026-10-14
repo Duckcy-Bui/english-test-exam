@@ -26,6 +26,12 @@ et-dev và et-qa cùng họ Codex. Hai agent này chỉ độc lập ở mức p
 - et-lead mở 4 agent còn lại trong **một tab herdr**, mỗi agent một pane, đặt tên đúng như bảng trên (`herdr agent rename`).
 - Gửi việc bằng `herdr agent prompt <tên> "<nội dung>"`, không dùng gửi phím rồi Enter vì có thể bị nuốt khi agent đang bận. Sau khi gửi, kiểm tra ô nhập của agent đã trống.
 - Theo dõi bằng `herdr agent read <tên>` và `herdr agent wait <tên>`.
+- Lệnh khởi động (brief từng agent nằm ở `~/english-test-exam-wt/briefs/`, ngoài repo):
+  - et-author: `claude --model claude-opus-5-5 --effort high --dangerously-skip-permissions`
+  - et-auditor: `codex -m gpt-6-astra -c 'model_reasoning_effort="high"' -s danger-full-access -a never`
+  - et-dev: `codex -m gpt-6.1-sol -c 'model_reasoning_effort="ultra"' -s danger-full-access -a never`
+  - et-qa: `codex -m gpt-6.1-sol -c 'model_reasoning_effort="high"' -s danger-full-access -a never`
+  - Sandbox `workspace-write` của Codex không dùng được trên máy này (AppArmor chặn bubblewrap), nên agent chạy không sandbox. Ranh giới file trong mục 4 dựa vào kỷ luật của agent, không có lớp chặn kỹ thuật.
 - Mỗi agent làm việc trong git worktree riêng, trên nhánh riêng:
 
 | Agent | Nhánh |
