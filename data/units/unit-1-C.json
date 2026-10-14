@@ -25,7 +25,8 @@
     "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại.",
     "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
     "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
-    "Bản r1 (theo báo cáo et-auditor audit/unit-1-C): R12 viết lại thành lời đề nghị chỉ dẫn máy in mới, các nhiễu sai ngữ pháp rõ (bỏ 'Do' và tình huống đặt phòng họp trùng bài The Hub); R13, R20 thay nhiễu 'supervise' (trùng từ khoá định nghĩa R1) bằng maintain / install; R17 đổi nhiễu thành agenda / network / product; L7 thêm biến thể 'minimum'."
+    "Bản r1 (theo báo cáo et-auditor audit/unit-1-C): R12 viết lại thành lời đề nghị chỉ dẫn máy in mới, các nhiễu sai ngữ pháp rõ (bỏ 'Do' và tình huống đặt phòng họp trùng bài The Hub); R13, R20 thay nhiễu 'supervise' (trùng từ khoá định nghĩa R1) bằng maintain / install; R17 đổi nhiễu thành agenda / network / product; L7 thêm biến thể 'minimum'.",
+    "Bản r2 (theo review chéo của et-author2): S2 đổi sang thời gian biểu của database administrator (bản cũ trùng Listening B đề A); Listening B đổi phần mật khẩu thành lịch cập nhật bảo mật, viết lại L7, L8; R11 đổi sang tệp đính kèm lạ; R9 đổi tình huống; W33 bỏ quy định mật khẩu; L6, L10 thêm biến thể; Listening A 'by the amount of storage you use'."
   ],
   "listening": {
     "parts": [
@@ -78,7 +79,7 @@
           },
           {
             "speaker": "Anna",
-            "text": "No, we don't. We charge by storage. The standard plan costs twenty pounds a month for five hundred gigabytes."
+            "text": "No, we don't. We charge by the amount of storage you use. The standard plan costs twenty pounds a month for five hundred gigabytes."
           },
           {
             "speaker": "Jack",
@@ -250,7 +251,7 @@
           },
           {
             "speaker": "Andrew",
-            "text": "First, passwords. From April, your password must be at least twelve characters long, and you have to change it every ninety days. The system always reminds you a week before."
+            "text": "First, updates. From April, the system installs security updates every Thursday at lunchtime, so you mustn't switch your computer off on Thursdays until three o'clock. The system always shows a warning ten minutes before it restarts."
           },
           {
             "speaker": "Andrew",
@@ -281,41 +282,42 @@
               "april 1",
               "on 1st april",
               "on 1 april",
-              "on april 1st"
+              "on april 1st",
+              "on april first",
+              "on april 1",
+              "april the first"
             ],
             "explanation": "\"the new IT security rules, which start on the first of April\"."
           },
           {
             "id": "L7",
             "kind": "short",
-            "stem": "How long must a password be?",
+            "stem": "On which day does the system install security updates?",
             "maxWords": 3,
             "acceptedAnswers": [
-              "twelve characters",
-              "12 characters",
-              "at least twelve",
-              "at least 12",
-              "twelve characters long",
-              "12 characters long",
-              "12 characters minimum",
-              "twelve characters minimum",
-              "minimum 12 characters",
-              "minimum twelve characters"
+              "thursday",
+              "on thursday",
+              "every thursday",
+              "thursdays",
+              "on thursdays",
+              "thursday lunchtime"
             ],
-            "explanation": "\"your password must be at least twelve characters long\"."
+            "explanation": "\"the system installs security updates every Thursday at lunchtime\"."
           },
           {
             "id": "L8",
             "kind": "short",
-            "stem": "How often do staff have to change their password?",
+            "stem": "How long before it restarts does the system show a warning?",
             "maxWords": 3,
             "acceptedAnswers": [
-              "every ninety days",
-              "every 90 days",
-              "ninety days",
-              "90 days"
+              "ten minutes",
+              "10 minutes",
+              "ten minutes before",
+              "10 minutes before",
+              "ten minute",
+              "10 minute"
             ],
-            "explanation": "\"you have to change it every ninety days\"."
+            "explanation": "\"The system always shows a warning ten minutes before it restarts.\""
           },
           {
             "id": "L9",
@@ -337,7 +339,11 @@
             "acceptedAnswers": [
               "room 4b",
               "4b",
-              "in room 4b"
+              "in room 4b",
+              "room four b",
+              "room 4 b",
+              "4 b",
+              "four b"
             ],
             "explanation": "\"a short training session … at two o'clock in Room 4B\"."
           }
@@ -486,7 +492,7 @@
       {
         "id": "R9",
         "kind": "mcq",
-        "stem": "Our new technician ______ wear an ID card at all times. It's a company rule.",
+        "stem": "Our receptionist ______ answer the phone until six o'clock every evening.",
         "options": [
           {
             "id": "A",
@@ -506,7 +512,7 @@
           }
         ],
         "answerKey": "B",
-        "explanation": "Quy định bắt buộc: chủ ngữ số ít (Our new technician) dùng \"has to\". \"must\" không đi với \"to\"; \"needs\" phải là \"needs to\"."
+        "explanation": "Nghĩa vụ trong công việc: chủ ngữ số ít (Our receptionist) dùng \"has to\". \"must\" không đi với \"to\"; \"needs\" phải là \"needs to\"."
       },
       {
         "id": "R10",
@@ -536,27 +542,27 @@
       {
         "id": "R11",
         "kind": "mcq",
-        "stem": "______ your password on a sticky note. Anyone can read it.",
+        "stem": "______ email attachments from people you don't know. They may contain viruses.",
         "options": [
           {
             "id": "A",
-            "text": "Not write"
+            "text": "Not open"
           },
           {
             "id": "B",
-            "text": "Never to write"
+            "text": "Never to open"
           },
           {
             "id": "C",
-            "text": "Doesn't write"
+            "text": "Doesn't open"
           },
           {
             "id": "D",
-            "text": "Don't write"
+            "text": "Don't open"
           }
         ],
         "answerKey": "D",
-        "explanation": "Câu mệnh lệnh phủ định: Don't + động từ nguyên mẫu: \"Don't write…\"."
+        "explanation": "Câu mệnh lệnh phủ định: Don't + động từ nguyên mẫu: \"Don't open…\"."
       },
       {
         "id": "R12",
@@ -993,8 +999,8 @@
         },
         {
           "id": "W33",
-          "source": "All employees have to use alphanumeric passwords, and they mustn't use the same password for two different systems.",
-          "referenceTranslation": "Tất cả nhân viên phải dùng mật khẩu gồm cả chữ và số, và họ không được dùng cùng một mật khẩu cho hai hệ thống khác nhau."
+          "source": "All employees have to lock their laptops in a drawer at night, and they mustn't take customer files home.",
+          "referenceTranslation": "Tất cả nhân viên phải khoá máy tính xách tay của mình trong ngăn kéo vào buổi tối, và họ không được mang hồ sơ khách hàng về nhà."
         },
         {
           "id": "W34",
@@ -1049,21 +1055,20 @@
         "id": "S2",
         "kind": "explain",
         "instructions": "Describe someone's working week. Speak for 1–1.5 minutes.",
-        "prompt": "Look at the weekly timetable of Linh, a network technician. Describe her duties and how often she does each one. Use the present simple and adverbs of frequency or time expressions (always, usually, every day, twice a week, once a month), and say which task you think is the most important and why.",
+        "prompt": "Look at the weekly timetable of Tuan, a database administrator. Describe his duties and how often he does each one. Use the present simple and adverbs of frequency or time expressions (always, usually, every evening, twice a month, every Thursday), and say which task you think is the most important and why.",
         "cues": [
-          "every day, 8.00: check that the network is working",
-          "Monday, 9.30: team meeting",
-          "Tuesday and Thursday: replace old cables and switches",
-          "Wednesday afternoon: train new staff (not every week, about twice a month)",
-          "first Friday of the month: write a report for the IT manager",
-          "never works at weekends, except in an emergency"
+          "every evening, 6.00: back up the customer database",
+          "Monday morning: check how fast the database answers queries",
+          "twice a month: update staff permissions",
+          "every Thursday, 2.00: meeting with the developers",
+          "never deletes old data without a backup"
         ],
         "requiredGrammar": [
           "Present simple for duties: She checks…, She trains…",
           "Adverbs of frequency and time expressions: always, usually, every day, twice a week, once a month, never"
         ],
         "seconds": 90,
-        "sampleAnswer": "Linh is a network technician, and she has a busy week. She always starts work at eight o'clock, and every day she checks that the network is working. On Mondays, she usually has a team meeting at half past nine. Twice a week, on Tuesdays and Thursdays, she replaces old cables and switches. She sometimes trains new staff on Wednesday afternoons, about twice a month. Once a month, on the first Friday, she writes a report for the IT manager. She never works at weekends, except when there is an emergency. I think the most important task is the daily network check, because if the network stops, nobody in the company can work."
+        "sampleAnswer": "Tuan is a database administrator, and his week is quite busy. Every evening at six o'clock, he backs up the customer database, so the company never loses its data. On Monday mornings, he usually checks how fast the database answers queries, because slow queries make the staff angry. Twice a month, he updates the staff permissions, for example when someone joins or leaves a team. Every Thursday at two o'clock, he has a meeting with the developers to talk about changes to the database. He never deletes old data without a backup. I think the most important task is the evening backup, because if the database crashes, the company can get all its information back."
       },
       {
         "id": "S3",
