@@ -70,17 +70,22 @@ export async function gradeSession(
   const skills: ExamResult["skills"] = {},
     review: ExamResult["review"] = {};
   const selected = session.scope === "full" ? SKILLS : [session.scope];
+  // Chấm Writing và Speaking song song để cả đề không chờ gấp đôi.
+  const [writing, speaking] = await Promise.all([
+    selected.includes("writing")
+      ? gradeWriting(session.exam, answers.writing)
+      : undefined,
+    selected.includes("speaking")
+      ? gradeSpeaking(session.exam, answers.speaking)
+      : undefined,
+  ]);
   for (const skill of selected) {
     if (skill === "listening" || skill === "reading")
       skills[skill] = autoGrade(session.exam, skill, answers[skill]);
-    if (skill === "writing") {
-      const writing = await gradeWriting(session.exam, answers.writing);
+    if (skill === "writing" && writing)
       skills.writing = { writing, score: writingScore(writing) };
-    }
-    if (skill === "speaking") {
-      const speaking = await gradeSpeaking(session.exam, answers.speaking);
+    if (skill === "speaking" && speaking)
       skills.speaking = { speaking, score: speakingScore(speaking) };
-    }
     Object.assign(review, {
       [skill]: stripSourceNotes(session.exam[skill as Skill]),
     });

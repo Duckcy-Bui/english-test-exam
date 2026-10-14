@@ -14,8 +14,28 @@ import {
 const TRANSLATION_IDS = ["W31", "W32", "W33", "W34", "W35"] as const;
 const SPEAKING_IDS = ["S1-1", "S1-2", "S1-3", "S2", "S3"] as const;
 const MAX_RESPONSE_BYTES = 128 * 1024;
-const REQUEST_TIMEOUT_MS = 20_000;
-const GRADING_TIMEOUT_MS = 55_000;
+// gemini-2.5-flash cần 25–45 giây mỗi lần chấm. Hết hạn sớm làm máy chủ gọi
+// sang model dự phòng trong khi lần gọi đầu vẫn chạy xong và vẫn bị tính tiền.
+const REQUEST_TIMEOUT_MS = 60_000;
+const GRADING_TIMEOUT_MS = 90_000;
+// Giới hạn token suy nghĩ của dòng 2.5 để chấm nhanh và rẻ hơn.
+const THINKING_BUDGET_25 = 1_024;
+
+function withModelConfig(body: unknown, model: string): unknown {
+  if (
+    !model.startsWith("gemini-2.5") ||
+    !record(body) ||
+    !record(body.generationConfig)
+  )
+    return body;
+  return {
+    ...body,
+    generationConfig: {
+      ...body.generationConfig,
+      thinkingConfig: { thinkingBudget: THINKING_BUDGET_25 },
+    },
+  };
+}
 const SAFE_ERROR =
   "Chưa thể chấm bài bằng AI. Vui lòng thử lại sau; chưa có điểm nào được ghi nhận.";
 
@@ -522,7 +542,7 @@ async function requestGemini(
           Authorization: `Bearer ${config.key}`,
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(body),
+        body: JSON.stringify(withModelConfig(body, model)),
         signal: controller.signal,
         redirect: "error",
         cache: "no-store",
