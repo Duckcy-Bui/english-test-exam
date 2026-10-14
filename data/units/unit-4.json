@@ -21,7 +21,7 @@
     "R19: câu đề mẫu hỏi lại thuật ngữ câu nối 5 và dùng thuật ngữ câu nối 2; viết lại với thiết bị ngoại vi khác của Workbook 4B.",
     "R18, R20: thay phương án nhiễu là thuật ngữ câu nối.",
     "R12: bỏ thuật ngữ câu nối 1 khỏi đề; đổi lời và phương án để chỉ còn một đáp án đúng theo cấu trúc while + quá khứ tiếp diễn.",
-    "R7: thay bằng tình huống khác vẫn kiểm before + -ing (bản r1).",
+    "R7: thay bằng tình huống khác vẫn kiểm before + -ing (bản r1); bản r2 chuyển sang chọn dạng động từ sau before để chỉ một phương án đúng ngữ pháp.",
     "R8: câu đề mẫu trùng tình huống với gạch đầu dòng cuối của email Peter; đổi tình huống. R10: câu đề mẫu trùng tình huống câu dịch W32; đổi tình huống. R9: bỏ từ gần thuật ngữ câu nối 3.",
     "R6: đổi lời để không chép ví dụ trong Language box của giáo trình. R11: đổi tình huống. R13: chỉnh lời. R16: thay một phương án nhiễu có thể hiểu là đúng. R17: viết lại để không dùng lại từ khoá định nghĩa của câu nối 3.",
     "Thứ tự phương án R6–R25 được xếp lại so với đề mẫu.",
@@ -246,15 +246,15 @@
       {
         "id": "R7",
         "kind": "mcq",
-        "stem": "Always switch off and unplug the computer ______ cleaning the keyboard.",
+        "stem": "Before ______ the keyboard, always switch off and unplug the computer.",
         "options": [
-          { "id": "A", "text": "While" },
-          { "id": "B", "text": "After" },
-          { "id": "C", "text": "During" },
-          { "id": "D", "text": "Before" }
+          { "id": "A", "text": "clean" },
+          { "id": "B", "text": "cleaned" },
+          { "id": "C", "text": "to clean" },
+          { "id": "D", "text": "cleaning" }
         ],
         "answerKey": "D",
-        "explanation": "Phải tắt và rút điện máy trước khi lau bàn phím: \"before cleaning …\" (cùng chủ ngữ nên dùng V-ing). Tắt máy sau khi lau (after) hay trong khi lau (while) đều không hợp lý; \"during\" không đi với V-ing có tân ngữ."
+        "explanation": "Khi hai vế cùng chủ ngữ (bạn lau bàn phím, bạn tắt máy), sau \"before\" dùng V-ing: \"Before cleaning …\". \"before\" là giới từ nên không đi với động từ nguyên mẫu, quá khứ phân từ hay to-infinitive."
       },
       {
         "id": "R8",
