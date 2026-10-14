@@ -219,3 +219,19 @@ export function reserveAccess(request: Request): void {
     throw error;
   }
 }
+
+const LISTEN_TOKEN_MS = 15 * 60 * 1000;
+/** Đường dẫn audio có chữ ký, gắn với phiên và phần nghe, hết hạn sau 15 phút. */
+export function signListenToken(sessionId: string, partId: "A" | "B"): string {
+  return signed(`listen|${sessionId}|${partId}|${Date.now() + LISTEN_TOKEN_MS}`);
+}
+export function verifyListenToken(
+  token: string | null,
+): { sessionId: string; partId: "A" | "B" } | null {
+  const plain = verified(token ?? undefined);
+  const [kind, sessionId, partId, expires] = plain?.split("|") ?? [];
+  if (kind !== "listen" || !sessionId || (partId !== "A" && partId !== "B"))
+    return null;
+  if (!(Number(expires) > Date.now())) return null;
+  return { sessionId, partId };
+}
