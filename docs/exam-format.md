@@ -151,6 +151,6 @@ Tổng = Listening + Reading + Writing + Speaking, tối đa 10. Điểm từng 
 10. Chính tả theo Anh–Anh, giống giáo trình (organise, licence, centre).
 11. Bài đọc và lời thoại không được diễn đạt lại định nghĩa của câu nối 1–5 (ví dụ bài đọc mô tả "lưu và chia sẻ tài liệu công ty" khi câu nối có document management system).
 12. Câu True/False phải được văn bản khẳng định hoặc phủ định rõ ràng. Không ra câu mà đáp án chỉ suy ra được (ví dụ "needs a dedicated room" không đủ để kết luận "cannot be installed in any room").
-13. Mọi đề bài Writing và Speaking, kể cả từng câu hỏi S1, phải nêu rõ cho sinh viên cấu trúc ngữ pháp hoặc chức năng của Unit cần dùng. Ghi trong `targetGrammar` hay `requiredGrammar` thôi là chưa đủ, vì sinh viên không thấy các trường đó.
+13. Đề email và mọi đề bài Speaking, kể cả từng câu hỏi S1, phải nêu rõ cho sinh viên cấu trúc ngữ pháp hoặc chức năng của Unit cần dùng. Ghi trong `targetGrammar` hay `requiredGrammar` thôi là chưa đủ, vì sinh viên không thấy các trường đó. Không áp dụng cho câu dịch W31–W35: dịch Anh → Việt thì sinh viên không phải tự viết câu tiếng Anh.
 14. Yêu cầu Speaking phải làm được bằng lời nói. Không yêu cầu những thứ chỉ có trong chữ viết (ví dụ dấu ngoặc).
 15. `sourceNotes` là ghi chú nội bộ, bị xoá khỏi bản gửi auditor và trình duyệt, nhưng vẫn không nên chép đáp án vào đó.
