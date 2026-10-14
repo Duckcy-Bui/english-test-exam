@@ -25,7 +25,8 @@
     "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại.",
     "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
     "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
-    "Bản r1 (tự soát theo nhắc của et-lead): R10 đổi 'cable' thành 'headphones', R14 và R15 thay nhiễu 'cable' bằng 'tab' (cable là từ khoá định nghĩa E, Ethernet connector); R20 đổi tình huống để không lặp việc cài hệ thống của bài đọc R21–R25."
+    "Bản r1 (tự soát theo nhắc của et-lead): R10 đổi 'cable' thành 'headphones', R14 và R15 thay nhiễu 'cable' bằng 'tab' (cable là từ khoá định nghĩa E, Ethernet connector); R20 đổi tình huống để không lặp việc cài hệ thống của bài đọc R21–R25.",
+    "Bản r1, đợt 2 (theo review chéo của et-author2): L9 sửa stem để chỉ còn một đáp án, thêm biến thể; L6, L7 thêm biến thể có gạch nối; R13 đổi sang right-click (không lặp R15 đề A); R12 đổi sang 'to maximise' (không lặp F2/BIOS của đề A); R16 đổi tình huống (không lặp bước khởi động lại trong email); W35 đổi chủ đề; W33 dịch 'audio socket' là 'cổng âm thanh'."
   ],
   "listening": {
     "parts": [
@@ -264,7 +265,10 @@
               "the top right",
               "top right corner",
               "top right",
-              "top right-hand"
+              "top right-hand",
+              "top-right corner",
+              "top-right",
+              "top right hand"
             ],
             "explanation": "\"On most keyboards, it's in the top right-hand corner.\""
           },
@@ -279,7 +283,9 @@
               "ctrl and v",
               "ctrl v",
               "control plus v",
-              "ctrl plus v"
+              "ctrl plus v",
+              "ctrl-v",
+              "control-v"
             ],
             "explanation": "\"Then open a document and press Control and V to paste the picture.\""
           },
@@ -298,15 +304,18 @@
           {
             "id": "L9",
             "kind": "short",
-            "stem": "In which folder are screenshots saved automatically?",
+            "stem": "What is the name of the folder inside Pictures where screenshots are saved automatically?",
             "maxWords": 3,
             "acceptedAnswers": [
               "the screenshots folder",
               "screenshots folder",
               "screenshots",
-              "in screenshots folder"
+              "in screenshots folder",
+              "screenshot folder",
+              "the screenshot folder",
+              "screenshot"
             ],
-            "explanation": "\"the screenshot is saved automatically in the Screenshots folder, inside your Pictures folder\". Thư mục chứa trực tiếp ảnh là Screenshots."
+            "explanation": "\"the screenshot is saved automatically in the Screenshots folder, inside your Pictures folder\"."
           },
           {
             "id": "L10",
@@ -541,34 +550,7 @@
       {
         "id": "R12",
         "kind": "mcq",
-        "stem": "Press F2 ______ the BIOS when the computer starts.",
-        "options": [
-          {
-            "id": "A",
-            "text": "open"
-          },
-          {
-            "id": "B",
-            "text": "to open"
-          },
-          {
-            "id": "C",
-            "text": "for open"
-          },
-          {
-            "id": "D",
-            "text": "so that open"
-          }
-        ],
-        "answerKey": "B",
-        "explanation": "Chỉ mục đích bằng to + động từ nguyên mẫu: \"Press F2 to open the BIOS\"."
-      }
-    ],
-    "vocabulary": [
-      {
-        "id": "R13",
-        "kind": "mcq",
-        "stem": "Click the ______ button to make the window as large as possible.",
+        "stem": "Double click the title bar ______ the window.",
         "options": [
           {
             "id": "A",
@@ -576,19 +558,46 @@
           },
           {
             "id": "B",
-            "text": "minimise"
+            "text": "to maximise"
           },
           {
             "id": "C",
-            "text": "close"
+            "text": "for maximise"
           },
           {
             "id": "D",
-            "text": "restart"
+            "text": "so that maximise"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Chỉ mục đích bằng to + động từ nguyên mẫu: \"Double click the title bar to maximise the window\"."
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "R13",
+        "kind": "mcq",
+        "stem": "______ on the file and choose 'Rename' from the menu that appears.",
+        "options": [
+          {
+            "id": "A",
+            "text": "Right-click"
+          },
+          {
+            "id": "B",
+            "text": "Maximise"
+          },
+          {
+            "id": "C",
+            "text": "Unplug"
+          },
+          {
+            "id": "D",
+            "text": "Resize"
           }
         ],
         "answerKey": "A",
-        "explanation": "Maximise button (nút phóng to) làm cửa sổ to nhất có thể. Minimise thu nhỏ cửa sổ."
+        "explanation": "Right-click (nhấp chuột phải) để mở menu các lệnh, ví dụ Rename (đổi tên)."
       },
       {
         "id": "R14",
@@ -643,7 +652,7 @@
       {
         "id": "R16",
         "kind": "mcq",
-        "stem": "To finish installing the update, you have to ______ the computer.",
+        "stem": "If the screen freezes and the mouse doesn't work, ______ the computer.",
         "options": [
           {
             "id": "A",
@@ -663,7 +672,7 @@
           }
         ],
         "answerKey": "B",
-        "explanation": "Restart (khởi động lại) là cho máy chạy lại sau khi đã dừng; nhiều bản cập nhật cần khởi động lại để hoàn tất."
+        "explanation": "Restart (khởi động lại) là cho máy chạy lại sau khi đã dừng, ví dụ khi màn hình bị treo."
       },
       {
         "id": "R17",
@@ -972,7 +981,7 @@
         {
           "id": "W33",
           "source": "Plug the speakers into the audio socket on the back of the computer.",
-          "referenceTranslation": "Hãy cắm loa vào ổ cắm âm thanh ở mặt sau máy tính."
+          "referenceTranslation": "Hãy cắm loa vào cổng âm thanh ở mặt sau máy tính."
         },
         {
           "id": "W34",
@@ -981,8 +990,8 @@
         },
         {
           "id": "W35",
-          "source": "Read the licence terms carefully before you click 'I agree' and install the program.",
-          "referenceTranslation": "Hãy đọc kỹ các điều khoản giấy phép trước khi bạn nhấp 'I agree' và cài đặt chương trình."
+          "source": "Open source software is usually free, and users can see and change the program code.",
+          "referenceTranslation": "Phần mềm nguồn mở thường miễn phí, và người dùng có thể xem và thay đổi mã chương trình."
         }
       ]
     },
