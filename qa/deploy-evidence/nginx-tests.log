@@ -1,0 +1,4 @@
+PASS nginx -t with template and local test certificate
+PASS HTTP 308 redirect and ACME exception
+PASS HTTPS proxy health and security/microphone headers, including 413
+PASS Nginx overwrites forged XFF, forwards HTTPS scheme and Host

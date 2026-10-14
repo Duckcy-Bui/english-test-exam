@@ -1,0 +1,9 @@
+{
+  "status": 502,
+  "leaked": false,
+  "readbackStatus": 409,
+  "readbackLeaked": false,
+  "response": {
+    "error": "Chưa thể chấm bài bằng AI. Vui lòng thử lại sau; chưa có điểm nào được ghi nhận."
+  }
+}

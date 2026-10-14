@@ -1,0 +1,11 @@
+PASS health, auth and all 8 Units listed
+PASS Unit 1: all public skills stripped, perfect/blank/wrong Reading/Listening
+PASS Unit 2: all public skills stripped, perfect/blank/wrong Reading/Listening
+PASS Unit 3: all public skills stripped, perfect/blank/wrong Reading/Listening
+PASS Unit 4: all public skills stripped, perfect/blank/wrong Reading/Listening
+PASS Unit 5: all public skills stripped, perfect/blank/wrong Reading/Listening
+PASS Unit 6: all public skills stripped, perfect/blank/wrong Reading/Listening
+PASS Unit 7: all public skills stripped, perfect/blank/wrong Reading/Listening
+PASS Unit 8: all public skills stripped, perfect/blank/wrong Reading/Listening
+PASS SQLite IP and device quota preserved across restart
+{"passed":10,"failed":0}

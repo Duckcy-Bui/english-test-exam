@@ -1,0 +1,26 @@
+[WebServer] (node:312197) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 17 tests using 1 worker
+
+(node:312210) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 ../../tests/e2e/app.spec.ts:84:1 › API enforces access, staged content, immutable submissions and listening quota (456ms)
+  ✓   2 ../../tests/e2e/app.spec.ts:200:1 › browser completes a full sequential Unit 6, shows reviews and clears history (7.8s)
+  ✓   3 ../../tests/e2e/app.spec.ts:307:1 › practice permits an individual skill and Chromium recording reaches the server as WAV mono 16 kHz (3.6s)
+  ✓   4 ../../tests/e2e/secrets.spec.ts:342:5 › writing: repeated raw API key in feedback returns 502 without a saved result (227ms)
+  ✓   5 ../../tests/e2e/secrets.spec.ts:342:5 › writing: repeated URL encoded API key in corrections.original returns 502 without a saved result (172ms)
+  ✓   6 ../../tests/e2e/secrets.spec.ts:342:5 › writing: repeated base64 API key in corrections.corrected returns 502 without a saved result (170ms)
+  ✓   7 ../../tests/e2e/secrets.spec.ts:342:5 › writing: repeated truncated API key in corrections.note returns 502 without a saved result (489ms)
+  ✓   8 ../../tests/e2e/secrets.spec.ts:342:5 › writing: repeated session secret in feedback returns 502 without a saved result (130ms)
+  ✓   9 ../../tests/e2e/secrets.spec.ts:342:5 › writing: repeated access code in corrections.note returns 502 without a saved result (174ms)
+  ✓  10 ../../tests/e2e/secrets.spec.ts:370:3 › writing: a clean retry is saved and returned after tainted corrections (146ms)
+  ✓  11 ../../tests/e2e/secrets.spec.ts:342:5 › speaking: repeated raw API key in feedback returns 502 without a saved result (147ms)
+  ✓  12 ../../tests/e2e/secrets.spec.ts:342:5 › speaking: repeated URL encoded API key in corrections.original returns 502 without a saved result (203ms)
+  ✓  13 ../../tests/e2e/secrets.spec.ts:342:5 › speaking: repeated base64 API key in corrections.corrected returns 502 without a saved result (188ms)
+  ✓  14 ../../tests/e2e/secrets.spec.ts:342:5 › speaking: repeated truncated API key in corrections.note returns 502 without a saved result (120ms)
+  ✓  15 ../../tests/e2e/secrets.spec.ts:342:5 › speaking: repeated session secret in feedback returns 502 without a saved result (86ms)
+  ✓  16 ../../tests/e2e/secrets.spec.ts:342:5 › speaking: repeated access code in corrections.note returns 502 without a saved result (97ms)
+  ✓  17 ../../tests/e2e/secrets.spec.ts:370:3 › speaking: a clean retry is saved and returned after tainted corrections (88ms)
+
+  17 passed (16.1s)

@@ -1,0 +1,36 @@
+[WebServer] (node:371492) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 27 tests using 1 worker
+
+(node:371504) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 ../../tests/e2e/all-units.spec.ts:124:5 › all eight audited Units with AI_MOCK › API completes Unit 1: Working in IT, keeps skills sequential and locks submissions (663ms)
+  ✓   2 ../../tests/e2e/all-units.spec.ts:124:5 › all eight audited Units with AI_MOCK › API completes Unit 2: IT systems, keeps skills sequential and locks submissions (527ms)
+  ✓   3 ../../tests/e2e/all-units.spec.ts:124:5 › all eight audited Units with AI_MOCK › API completes Unit 3: Data communication, keeps skills sequential and locks submissions (397ms)
+  ✓   4 ../../tests/e2e/all-units.spec.ts:124:5 › all eight audited Units with AI_MOCK › API completes Unit 4: Administration, keeps skills sequential and locks submissions (489ms)
+  ✓   5 ../../tests/e2e/all-units.spec.ts:124:5 › all eight audited Units with AI_MOCK › API completes Unit 5: Choice, keeps skills sequential and locks submissions (529ms)
+  ✓   6 ../../tests/e2e/all-units.spec.ts:124:5 › all eight audited Units with AI_MOCK › API completes Unit 6: Interactions, keeps skills sequential and locks submissions (698ms)
+  ✓   7 ../../tests/e2e/all-units.spec.ts:124:5 › all eight audited Units with AI_MOCK › API completes Unit 7: Development, keeps skills sequential and locks submissions (414ms)
+  ✓   8 ../../tests/e2e/all-units.spec.ts:124:5 › all eight audited Units with AI_MOCK › API completes Unit 8: IT solutions, keeps skills sequential and locks submissions (609ms)
+  ✓   9 ../../tests/e2e/all-units.spec.ts:210:5 › all eight audited Units with AI_MOCK › browser completes audited Unit 1 and records the result in history (7.2s)
+  ✓  10 ../../tests/e2e/all-units.spec.ts:210:5 › all eight audited Units with AI_MOCK › browser completes audited Unit 8 and records the result in history (7.1s)
+  ✓  11 ../../tests/e2e/app.spec.ts:84:1 › API enforces access, staged content, immutable submissions and listening quota (263ms)
+  ✓  12 ../../tests/e2e/app.spec.ts:200:1 › browser completes a full sequential Unit 6, shows reviews and clears history (7.7s)
+  ✓  13 ../../tests/e2e/app.spec.ts:307:1 › practice permits an individual skill and Chromium recording reaches the server as WAV mono 16 kHz (3.7s)
+  ✓  14 ../../tests/e2e/secrets.spec.ts:342:5 › writing: repeated raw API key in feedback returns 502 without a saved result (158ms)
+  ✓  15 ../../tests/e2e/secrets.spec.ts:342:5 › writing: repeated URL encoded API key in corrections.original returns 502 without a saved result (164ms)
+  ✓  16 ../../tests/e2e/secrets.spec.ts:342:5 › writing: repeated base64 API key in corrections.corrected returns 502 without a saved result (164ms)
+  ✓  17 ../../tests/e2e/secrets.spec.ts:342:5 › writing: repeated truncated API key in corrections.note returns 502 without a saved result (110ms)
+  ✓  18 ../../tests/e2e/secrets.spec.ts:342:5 › writing: repeated session secret in feedback returns 502 without a saved result (88ms)
+  ✓  19 ../../tests/e2e/secrets.spec.ts:342:5 › writing: repeated access code in corrections.note returns 502 without a saved result (103ms)
+  ✓  20 ../../tests/e2e/secrets.spec.ts:370:3 › writing: a clean retry is saved and returned after tainted corrections (102ms)
+  ✓  21 ../../tests/e2e/secrets.spec.ts:342:5 › speaking: repeated raw API key in feedback returns 502 without a saved result (80ms)
+  ✓  22 ../../tests/e2e/secrets.spec.ts:342:5 › speaking: repeated URL encoded API key in corrections.original returns 502 without a saved result (104ms)
+  ✓  23 ../../tests/e2e/secrets.spec.ts:342:5 › speaking: repeated base64 API key in corrections.corrected returns 502 without a saved result (177ms)
+  ✓  24 ../../tests/e2e/secrets.spec.ts:342:5 › speaking: repeated truncated API key in corrections.note returns 502 without a saved result (108ms)
+  ✓  25 ../../tests/e2e/secrets.spec.ts:342:5 › speaking: repeated session secret in feedback returns 502 without a saved result (99ms)
+  ✓  26 ../../tests/e2e/secrets.spec.ts:342:5 › speaking: repeated access code in corrections.note returns 502 without a saved result (105ms)
+  ✓  27 ../../tests/e2e/secrets.spec.ts:370:3 › speaking: a clean retry is saved and returned after tainted corrections (171ms)
+
+  27 passed (34.1s)

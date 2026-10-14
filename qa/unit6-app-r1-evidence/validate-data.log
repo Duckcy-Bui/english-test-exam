@@ -1,0 +1,10 @@
+
+> english-test-exam@0.1.0 validate
+> tsx scripts/validate-exams.ts
+
+
+== unit-5.json: 0 lỗi, 0 cảnh báo
+
+== unit-6.json: 0 lỗi, 0 cảnh báo
+
+Kết quả: QUA
