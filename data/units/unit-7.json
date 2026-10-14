@@ -23,7 +23,7 @@
     "Listening A lấy cảm hứng từ bài Requirements analysis (track 36–37) nhưng đổi sang ứng dụng đặt lớp tập gym; Listening B lấy cảm hứng từ bài Website design and architecture. Không chép Audio script.",
     "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại, xử lý giống Unit 6.",
     "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
-    "Bản r1 (tự rà theo các lỗi auditor đã bắt ở Unit 1, 4, 5, 6): R21 thay một phương án nhiễu cũng là mong muốn của công ty trong bài; R27, R29 viết lại để đáp án được văn bản nói thẳng (quy tắc 12); Listening B bỏ cụm \"scheduled to go live\" để không lặp chi tiết với bài đọc R21–R25 và email."
+    "Bản r1 (tự rà theo các lỗi auditor đã bắt ở Unit 1, 4, 5, 6): R21 thay một phương án nhiễu cũng là mong muốn của công ty trong bài; R27, R29 viết lại để đáp án được văn bản nói thẳng (quy tắc 12); Listening B và email bỏ cụm \"scheduled to go live\" để chi tiết này chỉ còn ở bài đọc R21–R25."
   ],
   "listening": {
     "parts": [
@@ -589,7 +589,7 @@
         "check the app on Android and iOS phones",
         "check that the restaurant receives a message for each order",
         "report every problem in the tracker with a screenshot",
-        "testing: due to finish on Thursday / app: scheduled to go live next Monday"
+        "testing: due to finish on Thursday / app: scheduled to be released to customers next Monday"
       ],
       "wordRange": [80, 100],
       "targetGrammar": [
@@ -597,7 +597,7 @@
         "The passive (at least one): is saved, must be reported, can be found",
         "Schedules (at least one): be due to, be scheduled to"
       ],
-      "modelAnswer": "Dear Leo,\n\nHere is what you need to check in the new delivery app. First, you have to log in with the test account. The password can be found in the project folder. Then place three test orders and check that each order is saved. You should test the app on both Android and iOS phones. Also check that the restaurant receives a message for each order. Every problem must be reported in the tracker with a screenshot. Testing is due to finish on Thursday, because the app is scheduled to go live next Monday.\n\nThanks,\nMaya"
+      "modelAnswer": "Dear Leo,\n\nHere is what you need to check in the new delivery app. First, you have to log in with the test account. The password can be found in the project folder. Then place three test orders and check that each order is saved. You should test the app on both Android and iOS phones. Also check that the restaurant receives a message for each order. Every problem must be reported in the tracker with a screenshot. Testing is due to finish on Thursday, because the app is scheduled to be released next Monday.\n\nThanks,\nMaya"
     }
   },
   "speaking": {
