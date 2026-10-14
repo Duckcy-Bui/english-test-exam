@@ -1,0 +1,10 @@
+{
+  "unit": 2,
+  "solver": "et-auditor — gpt-6-astra",
+  "answers": {
+    "R15": "C",
+    "R18": "A",
+    "R19": "B"
+  },
+  "notes": {}
+}
