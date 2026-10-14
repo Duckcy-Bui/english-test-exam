@@ -1,0 +1,628 @@
+{
+  "schemaVersion": 1,
+  "unit": 8,
+  "unitTitle": "IT solutions",
+  "testId": "C",
+  "source": "ai",
+  "functions": [
+    "Describing what has been done to find a fault (Investigations)",
+    "Speculating about the causes of problems (Diagnosis)",
+    "Suggesting solutions (Solutions)",
+    "Talking about career plans (Your future in IT)"
+  ],
+  "grammarFocus": [
+    "Present perfect and past simple; already in affirmative sentences, yet in questions and negative sentences",
+    "Speculating about causes: may, might, could (possible), must (almost certain), can't (impossible) + verb / be + -ing / be + past participle",
+    "Suggesting solutions: should/shouldn't in first conditional sentences; might; try + noun / -ing",
+    "Future plans: plan, intend, hope, expect + to-infinitive"
+  ],
+  "sourceNotes": [
+    "Đề C do AI soạn mới (Giai đoạn 5), cùng khung với đề A nhưng khác toàn bộ bài đọc, lời thoại, câu dịch, đề email và đề nói của đề A và đề B.",
+    "R1–R5: năm thuật ngữ không trùng câu nối đề A và đề B. Định nghĩa viết gần Workbook Unit 8: issue tracking system (8A, tr. 75), connection error (8B, tr. 76), trips and falls (8C, tr. 77), organisational skill, further qualification (8D, tr. 77–78). Định nghĩa thừa là của position held (8D, tr. 78); cụm này không dùng ở phần khác của đề.",
+    "R6–R12: quá khứ đơn và hiện tại hoàn thành với yet (R6–R7), phỏng đoán can't và might be + V3 (R8–R9), giải pháp should trong câu điều kiện loại 1 và try + danh từ (R10–R11), kế hoạch hope to (R12). R12 dùng ba động từ không đi với to-infinitive làm phương án nhiễu để chỉ một đáp án đúng.",
+    "R13–R20: crash, failure, solution (8B, tr. 76), speculate (8A, tr. 75), backache, burn (8C, tr. 76–77), award, personnel (8D, tr. 78). Không trùng từ được hỏi ở R13–R20 đề A và đề B.",
+    "Bài đọc R21–R25 (kế hoạch nghề nghiệp của người mới tốt nghiệp) và R26–R30 (làm đổ nước lên máy tính xách tay) viết mới. Không nhắc phần mềm quản lý danh sách sự cố, lỗi kết nối, vấp ngã, khả năng sắp xếp công việc hay chứng chỉ trình độ cao hơn để không diễn đạt lại định nghĩa câu nối.",
+    "Listening A (đoán nguyên nhân máy chiếu tự tắt) theo bài Diagnosis; Listening B (tin nhắn thoại báo những việc đã làm với lỗi email) theo bài Investigations. Viết mới, không chép Audio script.",
+    "Listening B: acceptedAnswers có biến thể cách viết số và mạo từ; một số biến thể không có nguyên văn trong lời thoại.",
+    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng."
+  ],
+  "listening": {
+    "parts": [
+      {
+        "id": "A",
+        "instructions": "Listen to the conversation and choose the best answer A, B, C or D (Questions L1–L5).",
+        "context": "Leah and Sam, two IT technicians at a college, talk about a projector that keeps switching itself off.",
+        "speakers": [
+          { "name": "Leah", "voice": "female" },
+          { "name": "Sam", "voice": "male" }
+        ],
+        "script": [
+          { "speaker": "Leah", "text": "Sam, the projector in Room 3 has switched itself off again. That's the third time this week." },
+          { "speaker": "Sam", "text": "Does it happen at a particular time?" },
+          { "speaker": "Leah", "text": "Yes, always after about twenty minutes. The teacher has to wait a few minutes before she can switch it on again." },
+          { "speaker": "Sam", "text": "Then it might be getting too hot. Projectors switch off automatically when they overheat." },
+          { "speaker": "Leah", "text": "Could it be the lamp? The projector is quite old." },
+          { "speaker": "Sam", "text": "It can't be the lamp. We replaced it last month." },
+          { "speaker": "Leah", "text": "True. Is anything blocking the air vents?" },
+          { "speaker": "Sam", "text": "I don't think so. It's on a shelf near the wall, but there's at least half a metre of space behind it." },
+          { "speaker": "Leah", "text": "Then what about the filter? When did someone last clean it?" },
+          { "speaker": "Sam", "text": "I don't think anyone has cleaned it since we installed it two years ago. It must be full of dust." },
+          { "speaker": "Leah", "text": "That's probably it. If the filter is dirty, air can't get through." },
+          { "speaker": "Sam", "text": "I'll clean it this afternoon. If it still switches off, we should ask the supplier to check the fan." }
+        ],
+        "questions": [
+          {
+            "id": "L1",
+            "kind": "mcq",
+            "stem": "What is the problem with the projector?",
+            "options": [
+              { "id": "A", "text": "It shows no picture." },
+              { "id": "B", "text": "It keeps switching itself off." },
+              { "id": "C", "text": "It makes a loud noise." },
+              { "id": "D", "text": "It will not switch on at all." }
+            ],
+            "answerKey": "B",
+            "explanation": "Leah nói \"the projector in Room 3 has switched itself off again. That's the third time this week.\""
+          },
+          {
+            "id": "L2",
+            "kind": "mcq",
+            "stem": "When does the problem happen?",
+            "options": [
+              { "id": "A", "text": "As soon as it is switched on" },
+              { "id": "B", "text": "Only on Mondays" },
+              { "id": "C", "text": "After about twenty minutes" },
+              { "id": "D", "text": "After about two hours" }
+            ],
+            "answerKey": "C",
+            "explanation": "\"Yes, always after about twenty minutes.\""
+          },
+          {
+            "id": "L3",
+            "kind": "mcq",
+            "stem": "Why does Sam say that the lamp can't be the cause?",
+            "options": [
+              { "id": "A", "text": "It was replaced last month." },
+              { "id": "B", "text": "It has just been cleaned." },
+              { "id": "C", "text": "The projector is new." },
+              { "id": "D", "text": "The supplier checked it." }
+            ],
+            "answerKey": "A",
+            "explanation": "\"It can't be the lamp. We replaced it last month.\""
+          },
+          {
+            "id": "L4",
+            "kind": "mcq",
+            "stem": "What does Sam think must be full of dust?",
+            "options": [
+              { "id": "A", "text": "The shelf" },
+              { "id": "B", "text": "The lamp" },
+              { "id": "C", "text": "The fan" },
+              { "id": "D", "text": "The filter" }
+            ],
+            "answerKey": "D",
+            "explanation": "Không ai làm sạch bộ lọc từ khi lắp hai năm trước, nên Sam nói \"It must be full of dust\"."
+          },
+          {
+            "id": "L5",
+            "kind": "mcq",
+            "stem": "What will they do if the projector still switches off after Sam cleans it?",
+            "options": [
+              { "id": "A", "text": "Move it to another room" },
+              { "id": "B", "text": "Ask the supplier to check the fan" },
+              { "id": "C", "text": "Buy a new lamp" },
+              { "id": "D", "text": "Move it away from the wall" }
+            ],
+            "answerKey": "B",
+            "explanation": "\"If it still switches off, we should ask the supplier to check the fan.\""
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "instructions": "Listen to the voicemail and answer the questions. Write NO MORE THAN THREE WORDS for each answer (Questions L6–L10).",
+        "context": "Grace, a technician from an IT support company, leaves a voicemail for Mr Howard, an office manager, about a problem with the staff emails.",
+        "speakers": [{ "name": "Grace", "voice": "female" }],
+        "script": [
+          { "speaker": "Grace", "text": "Hi, Mr Howard, it's Grace from TechFix. I'm calling about the problem with your staff emails. I've already checked all twelve computers in your office, and I've found the cause." },
+          { "speaker": "Grace", "text": "Your email password was changed on Tuesday, but the new password hasn't been entered in the email program on each computer yet. That's why your staff can't send any messages. They can still receive emails, so nothing has been lost." },
+          { "speaker": "Grace", "text": "I've already updated the password on the five computers in the sales office. I haven't done the computers in the finance department yet, because the staff there were in a meeting all afternoon. I'll come back tomorrow morning at nine to finish the job. It should take about an hour." },
+          { "speaker": "Grace", "text": "Also, I've noticed that your antivirus licence ends next month, so you should renew it soon. I haven't checked your backup system yet, but I'll do that tomorrow too. If you have any questions, please call me on my mobile. Thanks. Bye." }
+        ],
+        "questions": [
+          {
+            "id": "L6",
+            "kind": "short",
+            "stem": "How many computers has Grace checked?",
+            "maxWords": 3,
+            "acceptedAnswers": ["twelve", "12", "all twelve", "all 12", "twelve computers", "12 computers"],
+            "explanation": "Grace nói \"I've already checked all twelve computers in your office\"."
+          },
+          {
+            "id": "L7",
+            "kind": "short",
+            "stem": "On which day was the email password changed?",
+            "maxWords": 3,
+            "acceptedAnswers": ["tuesday", "on tuesday", "last tuesday"],
+            "explanation": "\"Your email password was changed on Tuesday\"."
+          },
+          {
+            "id": "L8",
+            "kind": "short",
+            "stem": "In which department has Grace not updated the computers yet?",
+            "maxWords": 3,
+            "acceptedAnswers": ["finance", "the finance department", "finance department", "the finance"],
+            "explanation": "\"I haven't done the computers in the finance department yet\". Năm máy ở phòng kinh doanh (sales office) đã được cập nhật."
+          },
+          {
+            "id": "L9",
+            "kind": "short",
+            "stem": "What time will Grace come back tomorrow?",
+            "maxWords": 3,
+            "acceptedAnswers": ["nine", "9", "nine o'clock", "9 o'clock", "at nine", "at 9", "9 am", "9am", "nine am", "at nine o'clock"],
+            "explanation": "\"I'll come back tomorrow morning at nine to finish the job.\""
+          },
+          {
+            "id": "L10",
+            "kind": "short",
+            "stem": "What ends next month?",
+            "maxWords": 3,
+            "acceptedAnswers": ["the antivirus licence", "antivirus licence", "the antivirus", "antivirus", "the licence", "antivirus license", "the antivirus license"],
+            "explanation": "\"your antivirus licence ends next month, so you should renew it soon\"."
+          }
+        ]
+      }
+    ]
+  },
+  "reading": {
+    "matching": {
+      "instructions": "Match the terms (1–5) with the correct definitions (A–F). There is one extra definition that you do not need (Questions 1–5).",
+      "definitions": [
+        { "id": "A", "text": "An ability to plan and arrange something so that it is successful." },
+        { "id": "B", "text": "Software that manages lists of problems reported by the users of a website or system." },
+        { "id": "C", "text": "A job that you used to do." },
+        { "id": "D", "text": "Proof that you have passed an examination or course at a higher than usual level in a subject." },
+        { "id": "E", "text": "A fault in the electrical system that joins two parts of a machine or computer network." },
+        { "id": "F", "text": "Accidents in which people fall because they hit something with their foot, or for another reason." }
+      ],
+      "items": [
+        { "id": "R1", "term": "Issue tracking system", "answerKey": "B", "explanation": "Issue tracking system (hệ thống theo dõi sự cố) là phần mềm quản lý danh sách các sự cố người dùng báo lên." },
+        { "id": "R2", "term": "Connection error", "answerKey": "E", "explanation": "Connection error (lỗi kết nối) là lỗi ở phần nối giữa hai bộ phận của máy hoặc của mạng máy tính." },
+        { "id": "R3", "term": "Trips and falls", "answerKey": "F", "explanation": "Trips and falls (vấp ngã) là các tai nạn té ngã do vấp phải vật gì đó hoặc vì lý do khác." },
+        { "id": "R4", "term": "Organisational skill", "answerKey": "A", "explanation": "Organisational skill (kỹ năng tổ chức) là khả năng lập kế hoạch và sắp xếp công việc để đạt hiệu quả." },
+        { "id": "R5", "term": "Further qualification", "answerKey": "D", "explanation": "Further qualification (bằng cấp, chứng chỉ nâng cao) chứng nhận bạn đã qua kỳ thi hoặc khoá học ở trình độ cao hơn thông thường. Định nghĩa C là của position held (vị trí đã từng làm), không có trong danh sách thuật ngữ." }
+      ]
+    },
+    "grammar": [
+      {
+        "id": "R6",
+        "kind": "mcq",
+        "stem": "The server ______ at two o'clock last night, and nobody has used it since then.",
+        "options": [
+          { "id": "A", "text": "has crashed" },
+          { "id": "B", "text": "crashes" },
+          { "id": "C", "text": "crashed" },
+          { "id": "D", "text": "is crashing" }
+        ],
+        "answerKey": "C",
+        "explanation": "Mốc thời gian đã kết thúc (at two o'clock last night) nên dùng quá khứ đơn: crashed. Hiện tại hoàn thành không đi với mốc thời gian cụ thể trong quá khứ."
+      },
+      {
+        "id": "R7",
+        "kind": "mcq",
+        "stem": "We ordered the new hard drive on Monday, but it hasn't arrived ______.",
+        "options": [
+          { "id": "A", "text": "already" },
+          { "id": "B", "text": "yet" },
+          { "id": "C", "text": "ago" },
+          { "id": "D", "text": "just" }
+        ],
+        "answerKey": "B",
+        "explanation": "Câu phủ định thì hiện tại hoàn thành dùng \"yet\" ở cuối câu: hasn't arrived yet (vẫn chưa đến). \"already\" dùng trong câu khẳng định; \"ago\" đi với quá khứ đơn; \"just\" không đứng cuối câu này."
+      },
+      {
+        "id": "R8",
+        "kind": "mcq",
+        "stem": "The printer printed a test page perfectly five minutes ago, so the printer itself ______ be broken.",
+        "options": [
+          { "id": "A", "text": "must" },
+          { "id": "B", "text": "mustn't" },
+          { "id": "C", "text": "can't" },
+          { "id": "D", "text": "doesn't" }
+        ],
+        "answerKey": "C",
+        "explanation": "Máy vừa in tốt cách đây năm phút nên gần như chắc chắn máy không hỏng: dùng \"can't\" (không thể). \"must\" trái với bằng chứng; \"mustn't\" là cấm đoán; \"doesn't be\" sai ngữ pháp."
+      },
+      {
+        "id": "R9",
+        "kind": "mcq",
+        "stem": "The picture on the monitor keeps flickering. The video cable might ______ damaged.",
+        "options": [
+          { "id": "A", "text": "be" },
+          { "id": "B", "text": "been" },
+          { "id": "C", "text": "being" },
+          { "id": "D", "text": "has" }
+        ],
+        "answerKey": "A",
+        "explanation": "Phỏng đoán về tình trạng: might + be + V3 (might be damaged). Sau động từ khuyết thiếu dùng động từ nguyên mẫu \"be\"."
+      },
+      {
+        "id": "R10",
+        "kind": "mcq",
+        "stem": "If your laptop gets too hot, you ______ use it on a hard, flat surface.",
+        "options": [
+          { "id": "A", "text": "should" },
+          { "id": "B", "text": "would" },
+          { "id": "C", "text": "ought" },
+          { "id": "D", "text": "are" }
+        ],
+        "answerKey": "A",
+        "explanation": "Lời khuyên trong câu điều kiện loại 1: If + hiện tại đơn, … should + động từ nguyên mẫu. \"ought\" thiếu \"to\"; \"would\" dùng cho câu điều kiện loại 2; \"are use\" sai."
+      },
+      {
+        "id": "R11",
+        "kind": "mcq",
+        "stem": "If the page still won't load, try ______ different browser.",
+        "options": [
+          { "id": "A", "text": "to" },
+          { "id": "B", "text": "for" },
+          { "id": "C", "text": "a" },
+          { "id": "D", "text": "with" }
+        ],
+        "answerKey": "C",
+        "explanation": "Gợi ý giải pháp: try + danh từ (try a different browser). \"try to\" cần động từ theo sau; \"try for\", \"try with\" không dùng theo nghĩa này."
+      },
+      {
+        "id": "R12",
+        "kind": "mcq",
+        "stem": "After my exams, I ______ to work as a web developer in Ho Chi Minh City.",
+        "options": [
+          { "id": "A", "text": "enjoy" },
+          { "id": "B", "text": "suggest" },
+          { "id": "C", "text": "mind" },
+          { "id": "D", "text": "hope" }
+        ],
+        "answerKey": "D",
+        "explanation": "Kế hoạch tương lai: hope + to-infinitive (hope to work). \"enjoy\", \"suggest\", \"mind\" không đi với to-infinitive."
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "R13",
+        "kind": "mcq",
+        "stem": "My computer has ______ three times today, and I've lost my work each time.",
+        "options": [
+          { "id": "A", "text": "awarded" },
+          { "id": "B", "text": "crashed" },
+          { "id": "C", "text": "burned" },
+          { "id": "D", "text": "speculated" }
+        ],
+        "answerKey": "B",
+        "explanation": "Crash (bị treo, sập) là máy tính đột ngột ngừng hoạt động, nên dữ liệu chưa lưu bị mất."
+      },
+      {
+        "id": "R14",
+        "kind": "mcq",
+        "stem": "A power ______ switched off all the computers in the building for an hour.",
+        "options": [
+          { "id": "A", "text": "failure" },
+          { "id": "B", "text": "solution" },
+          { "id": "C", "text": "personnel" },
+          { "id": "D", "text": "backache" }
+        ],
+        "answerKey": "A",
+        "explanation": "Failure (sự cố, hỏng) là khi máy hoặc hệ thống ngừng hoạt động đúng; power failure là mất điện."
+      },
+      {
+        "id": "R15",
+        "kind": "mcq",
+        "stem": "Restarting the router is a quick ______, but it doesn't fix the real cause of the problem.",
+        "options": [
+          { "id": "A", "text": "failure" },
+          { "id": "B", "text": "backache" },
+          { "id": "C", "text": "solution" },
+          { "id": "D", "text": "personnel" }
+        ],
+        "answerKey": "C",
+        "explanation": "Solution (giải pháp) là cách giải quyết một vấn đề."
+      },
+      {
+        "id": "R16",
+        "kind": "mcq",
+        "stem": "Sitting on a bad chair all day can give you ______.",
+        "options": [
+          { "id": "A", "text": "personnel" },
+          { "id": "B", "text": "solution" },
+          { "id": "C", "text": "failure" },
+          { "id": "D", "text": "backache" }
+        ],
+        "answerKey": "D",
+        "explanation": "Backache (đau lưng) là cơn đau ở lưng, thường do ngồi sai tư thế."
+      },
+      {
+        "id": "R17",
+        "kind": "mcq",
+        "stem": "If a damaged cable gets very hot, it may start to ______ and fill the room with smoke.",
+        "options": [
+          { "id": "A", "text": "burn" },
+          { "id": "B", "text": "award" },
+          { "id": "C", "text": "speculate" },
+          { "id": "D", "text": "crash" }
+        ],
+        "answerKey": "A",
+        "explanation": "Burn (cháy) là bốc lửa và bị lửa phá huỷ; có khói là dấu hiệu đang cháy."
+      },
+      {
+        "id": "R18",
+        "kind": "mcq",
+        "stem": "The university ______ her a prize for the best final-year project.",
+        "options": [
+          { "id": "A", "text": "crashed" },
+          { "id": "B", "text": "speculated" },
+          { "id": "C", "text": "awarded" },
+          { "id": "D", "text": "burned" }
+        ],
+        "answerKey": "C",
+        "explanation": "Award (trao tặng) là chính thức trao giải thưởng hoặc tiền để khen thưởng."
+      },
+      {
+        "id": "R19",
+        "kind": "mcq",
+        "stem": "All ______ must wear their ID cards when they are in the building.",
+        "options": [
+          { "id": "A", "text": "solutions" },
+          { "id": "B", "text": "personnel" },
+          { "id": "C", "text": "failures" },
+          { "id": "D", "text": "backache" }
+        ],
+        "answerKey": "B",
+        "explanation": "Personnel (nhân sự, nhân viên) là những người làm việc trong một công ty hoặc tổ chức."
+      },
+      {
+        "id": "R20",
+        "kind": "mcq",
+        "stem": "Without the error log, we can only ______ about the cause of the crash.",
+        "options": [
+          { "id": "A", "text": "award" },
+          { "id": "B", "text": "burn" },
+          { "id": "C", "text": "crash" },
+          { "id": "D", "text": "speculate" }
+        ],
+        "answerKey": "D",
+        "explanation": "Speculate (phỏng đoán) là đoán nguyên nhân hoặc hậu quả khi chưa biết đủ thông tin."
+      }
+    ],
+    "passageMcq": {
+      "instructions": "Read the passage and choose the best answer A, B, C or D (Questions 21–25).",
+      "passage": {
+        "title": "Huy's Plans for the Future",
+        "paragraphs": [
+          "Huy is twenty-two, and he has just finished a degree in software engineering in Da Nang. During his studies, he worked on three small mobile games with two friends. One of the games has been downloaded more than 50,000 times, and Huy has learned a lot from the players' comments. Some players asked for new levels, and others reported small problems, which the team fixed quickly.",
+          "Since he graduated, Huy has already had two job interviews with game companies. The first company offered him a job testing games, but he said no, because he hopes to work as a programmer, not as a tester. His second interview was last Friday, and he hasn't heard from the company yet.",
+          "While he waits, Huy is working hard to improve his skills. He intends to learn a new game engine this summer, and he plans to build a small game with it by September. He also wants to improve his English, because many game studios in Vietnam work with clients in other countries, and meetings are often held in English.",
+          "In the long term, Huy expects to work for a company in Vietnam for about five years. After that, he hopes to start his own studio with the two friends who made the games with him. He knows that it will not be easy, but he thinks that a small team can make games that people love."
+        ]
+      },
+      "questions": [
+        {
+          "id": "R21",
+          "kind": "mcq",
+          "stem": "What has happened to one of Huy's games?",
+          "options": [
+            { "id": "A", "text": "It has won a prize at the university." },
+            { "id": "B", "text": "It has been downloaded more than 50,000 times." },
+            { "id": "C", "text": "It has been sold to a game company." },
+            { "id": "D", "text": "It has been removed from the app store." }
+          ],
+          "answerKey": "B",
+          "explanation": "Đoạn 1: \"One of the games has been downloaded more than 50,000 times\"."
+        },
+        {
+          "id": "R22",
+          "kind": "mcq",
+          "stem": "Why did Huy say no to the first job?",
+          "options": [
+            { "id": "A", "text": "The salary was too low." },
+            { "id": "B", "text": "The company was too far from Da Nang." },
+            { "id": "C", "text": "He wants to be a programmer, not a tester." },
+            { "id": "D", "text": "He had already accepted another job." }
+          ],
+          "answerKey": "C",
+          "explanation": "Đoạn 2: anh từ chối công việc kiểm thử game \"because he hopes to work as a programmer, not as a tester\"."
+        },
+        {
+          "id": "R23",
+          "kind": "mcq",
+          "stem": "What hasn't happened yet?",
+          "options": [
+            { "id": "A", "text": "The second company has not replied to Huy." },
+            { "id": "B", "text": "Huy has not finished his degree." },
+            { "id": "C", "text": "Huy has not had any interviews." },
+            { "id": "D", "text": "Huy has not made any games." }
+          ],
+          "answerKey": "A",
+          "explanation": "Đoạn 2: buổi phỏng vấn thứ hai là thứ Sáu tuần trước \"and he hasn't heard from the company yet\"."
+        },
+        {
+          "id": "R24",
+          "kind": "mcq",
+          "stem": "What does Huy plan to do by September?",
+          "options": [
+            { "id": "A", "text": "Start his own studio" },
+            { "id": "B", "text": "Move to another country" },
+            { "id": "C", "text": "Finish an English course" },
+            { "id": "D", "text": "Build a small game with a new game engine" }
+          ],
+          "answerKey": "D",
+          "explanation": "Đoạn 3: \"he plans to build a small game with it by September\" (it = game engine mới)."
+        },
+        {
+          "id": "R25",
+          "kind": "mcq",
+          "stem": "What does Huy hope to do in the long term?",
+          "options": [
+            { "id": "A", "text": "Start a studio with his two friends" },
+            { "id": "B", "text": "Work as a game tester" },
+            { "id": "C", "text": "Teach programming at a university" },
+            { "id": "D", "text": "Work abroad for five years" }
+          ],
+          "answerKey": "A",
+          "explanation": "Đoạn 4: sau khoảng năm năm làm ở Việt Nam, \"he hopes to start his own studio with the two friends who made the games with him\"."
+        }
+      ]
+    },
+    "passageTrueFalse": {
+      "instructions": "Read the passage and write T (True) or F (False) (Questions 26–30).",
+      "passage": {
+        "title": "What to Do If You Spill a Drink on Your Laptop",
+        "paragraphs": [
+          "Spilling a drink on a laptop is one of the most common accidents in offices, and it often happens when people eat or drink at their desks. If it happens to you, you should switch the laptop off immediately and unplug the charger. You shouldn't wait to save your work, because liquid can damage the electronics in a few seconds.",
+          "Next, turn the laptop upside down and let the liquid run out. Try using a soft, dry cloth to clean the keyboard and the screen. You shouldn't use a hairdryer, because the hot air may damage the parts inside.",
+          "Leave the laptop to dry for at least forty-eight hours before you switch it on again. If it still doesn't start, you should take it to the IT department and explain exactly what happened. Don't try to open the laptop yourself. Sweet drinks such as cola are more dangerous than water, because the sugar can stay inside the keyboard and make the keys stick."
+        ]
+      },
+      "questions": [
+        {
+          "id": "R26",
+          "kind": "tf",
+          "statement": "You should save your work before you switch off a wet laptop.",
+          "answerKey": "F",
+          "explanation": "Đoạn 1: \"You shouldn't wait to save your work\", phải tắt máy ngay."
+        },
+        {
+          "id": "R27",
+          "kind": "tf",
+          "statement": "You should turn the laptop upside down to let the liquid run out.",
+          "answerKey": "T",
+          "explanation": "Đoạn 2: \"turn the laptop upside down and let the liquid run out\"."
+        },
+        {
+          "id": "R28",
+          "kind": "tf",
+          "statement": "A hairdryer is a good way to dry the laptop.",
+          "answerKey": "F",
+          "explanation": "Đoạn 2: \"You shouldn't use a hairdryer, because the hot air may damage the parts inside.\""
+        },
+        {
+          "id": "R29",
+          "kind": "tf",
+          "statement": "You should wait at least forty-eight hours before you switch the laptop on again.",
+          "answerKey": "T",
+          "explanation": "Đoạn 3: \"Leave the laptop to dry for at least forty-eight hours before you switch it on again.\""
+        },
+        {
+          "id": "R30",
+          "kind": "tf",
+          "statement": "Water is more dangerous for a laptop than cola.",
+          "answerKey": "F",
+          "explanation": "Đoạn 3: \"Sweet drinks such as cola are more dangerous than water\"."
+        }
+      ]
+    }
+  },
+  "writing": {
+    "translation": {
+      "instructions": "Translate these sentences into Vietnamese (Questions 31–35).",
+      "items": [
+        {
+          "id": "W31",
+          "source": "Every problem that users report is recorded in our issue tracking system.",
+          "referenceTranslation": "Mọi sự cố người dùng báo lên đều được ghi lại trong hệ thống theo dõi sự cố của chúng tôi."
+        },
+        {
+          "id": "W32",
+          "source": "The video call keeps freezing, so there might be a connection error between the router and the server.",
+          "referenceTranslation": "Cuộc gọi video cứ bị đứng hình, nên có thể có lỗi kết nối giữa bộ định tuyến và máy chủ."
+        },
+        {
+          "id": "W33",
+          "source": "We have already replaced the keyboard, but the laptop still doesn't work.",
+          "referenceTranslation": "Chúng tôi đã thay bàn phím rồi, nhưng máy tính xách tay vẫn không hoạt động."
+        },
+        {
+          "id": "W34",
+          "source": "If you feel pain in your back, you should try a different chair.",
+          "referenceTranslation": "Nếu bạn thấy đau lưng, bạn nên thử dùng một chiếc ghế khác."
+        },
+        {
+          "id": "W35",
+          "source": "Good organisational skills are important if you hope to become a project manager.",
+          "referenceTranslation": "Kỹ năng tổ chức tốt rất quan trọng nếu bạn hy vọng trở thành quản lý dự án."
+        }
+      ]
+    },
+    "email": {
+      "id": "W-EMAIL",
+      "recipient": "Kevin",
+      "task": "You are an IT support technician. Kevin, an accountant, reported that his desktop computer makes a loud noise and sometimes switches itself off. Write an email to Kevin explaining what you have already done and what he can do now, using the notes below. In your email you must use:\n- the present perfect with already and with yet (I have already…, I haven't… yet);\n- may, might or could to talk about a possible cause;\n- should or try + -ing to suggest a solution.\nFollow the standard layout for an email giving instructions: From / To / Date / Subject, a greeting, It should be quite easy to …, the steps with First / Then / Next / After that / Finally, a reminder (Don't forget to … when you've finished.), then Best wishes and your name, position and department.\nWrite 80–100 words (do not count the From, To, Date and Subject lines).",
+      "bullets": [
+        "already: check the power supply / not yet: replace the fan",
+        "possible cause: dust in the fan",
+        "switch off the computer / unplug it",
+        "move it about 20 cm away from the wall",
+        "clean the air vents with a soft brush",
+        "switch it on again / if it is still noisy: try putting it on the desk, not on the floor",
+        "reminder: tell the IT team if the noise stops"
+      ],
+      "wordRange": [80, 100],
+      "targetGrammar": [
+        "Present perfect with already and yet",
+        "Speculating: may, might, could + verb",
+        "Suggesting solutions: should; try + -ing; If…, you should…"
+      ],
+      "modelAnswer": "From: Phan Thi Mai\nTo: Kevin\nDate: 5th March\nSubject: Your noisy computer\n\nHi Kevin,\n\nI have already checked the power supply, but I haven't replaced the fan yet. There might be dust in the fan.\nIt should be quite easy to fix.\nFirst, switch off the computer and unplug it.\nThen, move it about 20 cm away from the wall.\nNext, clean the air vents with a soft brush.\nAfter that, switch it on again.\nFinally, if it is still noisy, try putting it on the desk.\nDon't forget to tell me if the noise stops when you've finished.\n\nBest wishes,\nPhan Thi Mai\nSupport Technician\nHelp Desk Department"
+    }
+  },
+  "speaking": {
+    "parts": [
+      {
+        "id": "S1",
+        "kind": "questions",
+        "instructions": "Answer the three questions. Speak for 30–45 seconds for each question.",
+        "questions": [
+          "Think about a problem that you have had with a phone or a computer. What have you already tried, and what haven't you tried yet? Use the present perfect with already and yet.",
+          "Your laptop has become very slow this week. What might the reasons be? Use may, might, could, must or can't.",
+          "What job would you like after university? Talk about your plans, using plan to, intend to, hope to or expect to."
+        ],
+        "secondsPerQuestion": 45
+      },
+      {
+        "id": "S2",
+        "kind": "explain",
+        "instructions": "Speculate about the cause of a problem. Speak for 1–1.5 minutes.",
+        "prompt": "The office printer has started to print grey lines down every page. Look at the facts in the cues and explain what might, could, must or can't be the cause. Then say what your colleagues should try. Use may, might, could, must and can't.",
+        "cues": [
+          "grey lines on every page, from every computer",
+          "the problem started after the printer was moved to another room",
+          "a test page printed from the printer's own menu also has lines",
+          "the toner cartridge was replaced yesterday",
+          "the second printer in the office prints normally"
+        ],
+        "requiredGrammar": [
+          "Speculating: may/might/could + verb (possible); must (almost certain); can't (impossible): It can't be the computers; The drum might be damaged."
+        ],
+        "seconds": 90,
+        "sampleAnswer": "Let's think about the cause of these grey lines. The lines appear on every page from every computer, so it can't be a problem with one computer. Also, the test page from the printer's own menu has lines too, so the problem must be inside the printer itself. It can't be an empty toner cartridge, because we replaced it yesterday. The problem started after the printer was moved, so something might be damaged inside. For example, the drum could be scratched, or some toner may be loose inside the printer. First, we should try cleaning the inside with a dry cloth. If that doesn't help, we should try a new drum. Until then, everyone should use the second printer, because it prints normally."
+      },
+      {
+        "id": "S3",
+        "kind": "situation",
+        "instructions": "Deal with the situation. Speak for 1–1.5 minutes.",
+        "prompt": "Your old secondary school has invited you to talk to students who want to study IT. Tell them about your experience so far and your plans. Use the present perfect for your experience (I have studied…, I have already…, I haven't… yet) and plan to, intend to, hope to or expect to for your plans.",
+        "cues": [
+          "the subjects you have studied so far",
+          "a project you have already finished",
+          "something you haven't done yet (for example, an internship)",
+          "your plans for after graduation",
+          "a skill you hope to learn in the next few years"
+        ],
+        "requiredGrammar": [
+          "Present perfect for experience: I have studied…; I have already finished…; I haven't done… yet.",
+          "plan / intend / hope / expect + to-infinitive for future plans"
+        ],
+        "seconds": 90,
+        "sampleAnswer": "Hello, everyone. I studied at this school five years ago, and now I'm in my third year of information technology at university. So far, I've studied programming, databases, networks and English for IT. I've already finished a big group project: we built a website for a local charity, and it's still online today. However, I haven't done an internship yet. I plan to apply for one this summer, because I want some real work experience. After graduation, I expect to work as a junior developer for a software company in Hanoi. In the next few years, I hope to learn more about cloud computing, and I intend to improve my English, because many IT companies work with foreign clients. If you like solving problems, IT is a great choice."
+      }
+    ]
+  }
+}
