@@ -24,7 +24,8 @@
     "Listening A: cuộc họp chuẩn bị gian hàng hội chợ công nghệ (chức năng Meetings). Listening B: trưởng nhóm helpdesk giới thiệu lịch làm việc cho nhân viên mới (IT jobs and duties). Không chép Audio script.",
     "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại.",
     "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
-    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng."
+    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
+    "Bản r2 (theo review chéo của et-author2, review/et-author2): R6 đổi điểm ngữ pháp (hardly ever không đi với phủ định) và chủ ngữ để không gợi ý R14; R12 đổi sang Shall we + V, bộ nhiễu mới; R14 thay nhiễu 'passwords' bằng 'receptionists'; L7, L10 thêm biến thể; Listening A 'starts on the twelfth'; S1 câu 3 đổi bối cảnh IT."
   ],
   "listening": {
     "parts": [
@@ -45,7 +46,7 @@
         "script": [
           {
             "speaker": "Lucy",
-            "text": "Right, Sam. The Hanoi Technology Fair is on the twelfth of May, so we need to plan our stand. Shall we start with the equipment?"
+            "text": "Right, Sam. The Hanoi Technology Fair starts on the twelfth of May, so we need to plan our stand. Shall we start with the equipment?"
           },
           {
             "speaker": "Sam",
@@ -191,7 +192,7 @@
               }
             ],
             "answerKey": "D",
-            "explanation": "Sam: \"I'm afraid I can't. I've got a client meeting in Da Nang on the twelfth.\" Ngày 12 là ngày đầu hội chợ."
+            "explanation": "Sam: \"I'm afraid I can't. I've got a client meeting in Da Nang on the twelfth.\" Hội chợ bắt đầu ngày 12 (\"starts on the twelfth of May\"), tức ngày đầu tiên."
           },
           {
             "id": "L5",
@@ -277,7 +278,10 @@
               "two hundred calls",
               "200",
               "about 200",
-              "200 calls"
+              "200 calls",
+              "about 200 calls",
+              "around 200",
+              "around two hundred"
             ],
             "explanation": "\"On a busy day, we get about two hundred calls.\""
           },
@@ -317,7 +321,9 @@
               "every two weeks",
               "fortnightly",
               "every fortnight",
-              "every other week"
+              "every other week",
+              "every 2 weeks",
+              "once every fortnight"
             ],
             "explanation": "\"Once a fortnight, we have a team meeting on Friday afternoon\". Fortnight = hai tuần."
           }
@@ -391,27 +397,27 @@
       {
         "id": "R6",
         "kind": "mcq",
-        "stem": "Our developers ______ their code on three different browsers.",
+        "stem": "Our technicians ______ work at weekends. They only work from Monday to Friday.",
         "options": [
           {
             "id": "A",
-            "text": "usually tests"
+            "text": "don't hardly ever"
           },
           {
             "id": "B",
-            "text": "test usually"
+            "text": "hardly ever don't"
           },
           {
             "id": "C",
-            "text": "usually testing"
+            "text": "aren't hardly ever"
           },
           {
             "id": "D",
-            "text": "usually test"
+            "text": "hardly ever"
           }
         ],
         "answerKey": "D",
-        "explanation": "Trạng từ tần suất đứng trước động từ chính: \"usually test\". Chủ ngữ số nhiều (Our developers) nên động từ không thêm -s. Trạng từ không đứng giữa động từ và tân ngữ (test usually their code)."
+        "explanation": "\"hardly ever\" đã mang nghĩa phủ định nên không đi với don't / aren't; trạng từ tần suất đứng trước động từ chính: \"hardly ever work\"."
       },
       {
         "id": "R7",
@@ -541,27 +547,27 @@
       {
         "id": "R12",
         "kind": "mcq",
-        "stem": "How about ______ the printer next to the window? There's more space there.",
+        "stem": "'______ order some new keyboards?' 'Good idea. The old ones are broken.'",
         "options": [
           {
             "id": "A",
-            "text": "move"
+            "text": "How about"
           },
           {
             "id": "B",
-            "text": "to move"
+            "text": "Let's we"
           },
           {
             "id": "C",
-            "text": "moving"
+            "text": "Shall we"
           },
           {
             "id": "D",
-            "text": "moved"
+            "text": "Why we"
           }
         ],
         "answerKey": "C",
-        "explanation": "Đưa ra gợi ý: \"How about / What about + V-ing\": \"How about moving…?\"."
+        "explanation": "Gợi ý: \"Shall we + động từ nguyên mẫu?\". \"How about\" phải đi với V-ing (How about ordering…), \"Let's we\" và \"Why we\" sai ngữ pháp."
       }
     ],
     "vocabulary": [
@@ -605,7 +611,7 @@
           },
           {
             "id": "C",
-            "text": "passwords"
+            "text": "receptionists"
           },
           {
             "id": "D",
@@ -1020,7 +1026,7 @@
         "questions": [
           "How often do you check your email or messages, and when do you usually do it? Use adverbs of frequency and time expressions (always, usually, every morning, twice a day).",
           "Imagine a support technician visits your class to talk about their job. Ask them three questions about their work. Use present simple questions (Do you…? How often do you…? What do you…?).",
-          "Your class wants to organise an end-of-term party. Make two suggestions about it. Use Shall we…?, How about / What about + -ing? or We could…."
+          "The computer lab at your university is always full before exams. Make two suggestions to solve the problem. Use Shall we…?, How about / What about + -ing? or We could…."
         ],
         "secondsPerQuestion": 45
       },
