@@ -24,7 +24,8 @@
     "Listening A: nhân viên gọi helpdesk kể sự cố máy in đa năng (Peripherals, quá khứ tiếp diễn và quá khứ đơn). Listening B: giảng viên giải thích công thức trong bảng tính ngân sách (Spreadsheets and formulae). Không chép Audio script.",
     "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại.",
     "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
-    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng."
+    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
+    "Bản r1 (tự soát theo nhắc của et-lead): R8 đổi tình huống (tìm bản ghi khách hàng gần nghĩa thuật ngữ R2 retrieve a record); R13 và bài đọc R26–R30 bỏ từ 'record'; R17, R20 thay nhiễu 'attached' (từ khoá định nghĩa C, headset) bằng horizontal / vertical."
   ],
   "listening": {
     "parts": [
@@ -432,27 +433,27 @@
       {
         "id": "R8",
         "kind": "mcq",
-        "stem": "You can find a customer's record quickly ______ their name in the search box.",
+        "stem": "You can put the customers' names in alphabetical order ______ the top of the Name column.",
         "options": [
           {
             "id": "A",
-            "text": "by type"
+            "text": "by click"
           },
           {
             "id": "B",
-            "text": "for typing"
+            "text": "for clicking"
           },
           {
             "id": "C",
-            "text": "with type"
+            "text": "with click"
           },
           {
             "id": "D",
-            "text": "by typing"
+            "text": "by clicking"
           }
         ],
         "answerKey": "D",
-        "explanation": "Diễn tả cách làm: by + V-ing (by typing)."
+        "explanation": "Diễn tả cách làm: by + V-ing (by clicking)."
       },
       {
         "id": "R9",
@@ -559,7 +560,7 @@
       {
         "id": "R13",
         "kind": "mcq",
-        "stem": "Every record in the Staff table has a ______ called 'Phone number'.",
+        "stem": "The Staff table has a ______ called 'Phone number' for each employee.",
         "options": [
           {
             "id": "A",
@@ -671,7 +672,7 @@
           },
           {
             "id": "C",
-            "text": "attached"
+            "text": "horizontal"
           },
           {
             "id": "D",
@@ -738,7 +739,7 @@
         "options": [
           {
             "id": "A",
-            "text": "attached"
+            "text": "vertical"
           },
           {
             "id": "B",
@@ -903,7 +904,7 @@
         "title": "How City Library Uses Its Database",
         "paragraphs": [
           "City Library has more than 40,000 books, and the staff manage all of them with a database. The database has three tables: Books, Members and Loans. Every book has a barcode, which is the primary key in the Books table.",
-          "When a member borrows a book, the librarian scans the member's card and then the book's barcode. The database adds a new record to the Loans table and calculates the return date automatically: three weeks after the day of the loan.",
+          "When a member borrows a book, the librarian scans the member's card and then the book's barcode. The database adds a new line to the Loans table and calculates the return date automatically: three weeks after the day of the loan.",
           "Staff can search for a book by its title, its author or its barcode. Every morning, a librarian runs a report that lists all the books which are more than one week late. The library then sends a reminder by email to each member on the list.",
           "Members can also use the database themselves. By logging in to the library website, they can see which books they have at home and renew a book for another three weeks. A member who has three late books cannot borrow any more until they return them."
         ]
