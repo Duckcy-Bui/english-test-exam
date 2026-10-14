@@ -26,7 +26,8 @@
     "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
     "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
     "Bản r1 (theo review chéo của et-author2): R10 đổi nhiễu 'moved' thành 'moves' (quá khứ cũng hợp lý); R16 đổi sang server để không trùng bộ phương án R17 và tình huống làm việc từ xa của R18; R11 đổi tình huống (trùng Listening A); bài đọc R21–R25 đoạn 3 thay biện pháp copy cả nhóm (trùng Listening B đề A); W33 đổi tình huống và bản dịch; S3 đổi cues sang sự cố không liên quan an toàn (trùng bài R26–R30); S1 câu 1, 2 đổi; email mẫu thêm câu điều kiện loại 1 đúng mẫu; L8, L9, L10 thêm biến thể.",
-    "Bản r1, đợt 2 (theo audit audit/unit-3-B): R17 thay nhiễu 'VPN' bằng 'dongle'; bài R26–R30 mẹo 3 và R28 viết lại cho chính xác (công ty diệt virus thật không yêu cầu gọi điện từ pop-up trên website); W35 sửa nội dung cho đúng cách tự chỉnh độ sáng."
+    "Bản r1, đợt 2 (theo audit audit/unit-3-B): R17 thay nhiễu 'VPN' bằng 'dongle'; bài R26–R30 mẹo 3 và R28 viết lại cho chính xác (công ty diệt virus thật không yêu cầu gọi điện từ pop-up trên website); W35 sửa nội dung cho đúng cách tự chỉnh độ sáng.",
+    "Xáo thứ tự phương án R11, R13, R15 để khoá R6–R25 không lặp chu kỳ (không đổi chữ trong stem và phương án)."
   ],
   "listening": {
     "parts": [
@@ -527,18 +528,18 @@
           },
           {
             "id": "B",
-            "text": "ordered"
+            "text": "will order"
           },
           {
             "id": "C",
-            "text": "will order"
+            "text": "ordered"
           },
           {
             "id": "D",
             "text": "ordering"
           }
         ],
-        "answerKey": "C",
+        "answerKey": "B",
         "explanation": "Câu điều kiện loại 1 cho một tình huống cụ thể trong tương lai (tomorrow): If + hiện tại đơn, will + động từ nguyên mẫu."
       },
       {
@@ -575,7 +576,7 @@
         "options": [
           {
             "id": "A",
-            "text": "subject line"
+            "text": "attachment"
           },
           {
             "id": "B",
@@ -583,14 +584,14 @@
           },
           {
             "id": "C",
-            "text": "attachment"
+            "text": "subject line"
           },
           {
             "id": "D",
             "text": "recipient"
           }
         ],
-        "answerKey": "A",
+        "answerKey": "C",
         "explanation": "Subject line (dòng tiêu đề) là chỗ ghi chủ đề của email."
       },
       {
@@ -625,7 +626,7 @@
         "options": [
           {
             "id": "A",
-            "text": "signed"
+            "text": "posted"
           },
           {
             "id": "B",
@@ -633,14 +634,14 @@
           },
           {
             "id": "C",
-            "text": "posted"
+            "text": "signed"
           },
           {
             "id": "D",
             "text": "followed"
           }
         ],
-        "answerKey": "C",
+        "answerKey": "A",
         "explanation": "Post (đăng) là đưa thông điệp, tài liệu lên Internet để người khác xem."
       },
       {
