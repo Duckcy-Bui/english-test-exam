@@ -25,7 +25,8 @@
     "Listening A (lợi ích hội nghị truyền hình cho công ty nội thất có nhà máy ở Đà Nẵng) theo bài Video conferencing; Listening B (xu hướng khách hàng liên hệ ngân hàng) theo bài Enterprise social media về chức năng mô tả xu hướng. Viết mới, không chép Audio script.",
     "S3 chọn tình huống hiệu sách gia đình mở bán trực tuyến (bài E-commerce) để không lặp mạng xã hội doanh nghiệp ở S2 và hội nghị truyền hình ở Listening A.",
     "Listening B: acceptedAnswers có biến thể cách viết số; một số biến thể không có nguyên văn trong lời thoại.",
-    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng."
+    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
+    "Bản r1 (theo báo cáo et-auditor audit/unit-6-B): R10 nêu rõ hiện chưa có hệ thống để chỉ còn một đáp án; R15 bỏ phương án nhiễu cùng gốc với thuật ngữ nối R3; R6 và R15 đổi ngữ cảnh (làm việc tại nhà, màn hình lớn) để không lặp tình huống thanh toán bằng điện thoại của bài đọc R26–R30."
   ],
   "listening": {
     "parts": [
@@ -389,7 +390,7 @@
       {
         "id": "R6",
         "kind": "mcq",
-        "stem": "These days, more and more of our customers ______ to pay with their phones.",
+        "stem": "These days, more and more of our employees ______ to work from home two days a week.",
         "options": [
           {
             "id": "A",
@@ -409,7 +410,7 @@
           }
         ],
         "answerKey": "B",
-        "explanation": "Mô tả thay đổi đang diễn ra dùng hiện tại tiếp diễn; chủ ngữ \"customers\" số nhiều nên dùng \"are choosing\". \"is/was choosing\" sai hoà hợp chủ ngữ, \"choosing\" thiếu trợ động từ."
+        "explanation": "Mô tả thay đổi đang diễn ra dùng hiện tại tiếp diễn; chủ ngữ \"employees\" số nhiều nên dùng \"are choosing\". \"is/was choosing\" sai hoà hợp chủ ngữ, \"choosing\" thiếu trợ động từ."
       },
       {
         "id": "R7",
@@ -489,7 +490,7 @@
       {
         "id": "R10",
         "kind": "mcq",
-        "stem": "If we used an online booking system, customers ______ to phone us for appointments.",
+        "stem": "We don't have an online booking system at the moment. If we had one, customers ______ to phone us for appointments.",
         "options": [
           {
             "id": "A",
@@ -509,7 +510,7 @@
           }
         ],
         "answerKey": "A",
-        "explanation": "Câu điều kiện loại 2: mệnh đề If ở quá khứ đơn (used) nên mệnh đề chính dùng would + V: \"wouldn't need\"."
+        "explanation": "Hiện tại chưa có hệ thống đặt lịch (\"We don't have … at the moment\") nên đây là giả định trái với hiện tại: câu điều kiện loại 2, If + quá khứ đơn (had), mệnh đề chính dùng would + V: \"wouldn't need\". \"didn't need\" là quá khứ thật, không hợp với tình huống hiện tại; \"don't need\", \"won't need\" không đi với mệnh đề If ở quá khứ."
       },
       {
         "id": "R11",
@@ -616,7 +617,7 @@
       {
         "id": "R15",
         "kind": "mcq",
-        "stem": "Many customers ______ paying by phone to paying with cash because it is quicker.",
+        "stem": "Our designers ______ large monitors to small laptop screens because they can see more detail.",
         "options": [
           {
             "id": "A",
@@ -632,11 +633,11 @@
           },
           {
             "id": "D",
-            "text": "archive"
+            "text": "decrease"
           }
         ],
         "answerKey": "B",
-        "explanation": "Prefer A to B (thích A hơn B): khách thích trả bằng điện thoại hơn trả tiền mặt."
+        "explanation": "Prefer A to B (thích A hơn B): nhà thiết kế thích màn hình lớn hơn màn hình máy tính xách tay nhỏ."
       },
       {
         "id": "R16",
