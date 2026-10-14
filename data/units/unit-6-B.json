@@ -1,0 +1,1063 @@
+{
+  "schemaVersion": 1,
+  "unit": 6,
+  "unitTitle": "Interactions",
+  "testId": "B",
+  "source": "ai",
+  "functions": [
+    "Describing trends (Enterprise social media)",
+    "Describing the benefits of video conferencing (Video conferencing)",
+    "Giving meanings of e-commerce concepts (E-commerce)",
+    "Processing requests for training (Training users)"
+  ],
+  "grammarFocus": [
+    "Describing current changes: present continuous; more and more + noun; comparative + and + comparative; get/become + comparative adjective; increase, decrease, go up, go down",
+    "Second conditional: If + past simple, would/could + infinitive (situations that are not true now or are unlikely)",
+    "Giving meanings of technical words: brackets, called, be, a separate sentence, relative clause (which/that/who)",
+    "Making requests: It would be great to know…, I'd like/love to know…, Could someone tell me…?, can/could"
+  ],
+  "sourceNotes": [
+    "Đề B do AI soạn mới (Giai đoạn 5), cùng khung với đề A nhưng khác toàn bộ bài đọc, lời thoại, câu dịch, đề email và đề nói.",
+    "R1–R5: năm thuật ngữ khác hẳn đề A. Định nghĩa viết gần Workbook Unit 6: bricks and clicks (6A, tr. 56), speech-to-text, privacy (6B, tr. 57), threaded view, archiving (6C, tr. 58). Định nghĩa thừa là của blogger (6B, tr. 57); từ này không dùng ở phần khác của đề.",
+    "R6–R12: mô tả xu hướng (R6–R8), câu điều kiện loại 2 (R9–R10), giải nghĩa bằng called (R11), yêu cầu lịch sự (R12). R12 dùng lỗi \"say me\" của Workbook bài 6.2 làm phương án nhiễu.",
+    "R13–R20: graph, policy (6B, 6C), prefer, premises, set-up, face-to-face, facility (6D, tr. 59), order (6A, tr. 56). Không trùng từ được hỏi ở R13–R20 đề A.",
+    "Bài đọc R21–R25 (đào tạo hệ thống đặt lịch khám ở bệnh viện) và R26–R30 (cách sinh viên thanh toán ở căng tin) viết mới. Không mô tả công ty vừa có cửa hàng vừa bán trên mạng, không nhắc nhóm tin nhắn theo chủ đề, lưu trữ tệp ít dùng, chuyển giọng nói thành chữ hay sự riêng tư để không diễn đạt lại định nghĩa câu nối.",
+    "Listening A (lợi ích hội nghị truyền hình cho công ty nội thất có nhà máy ở Đà Nẵng) theo bài Video conferencing; Listening B (xu hướng khách hàng liên hệ ngân hàng) theo bài Enterprise social media về chức năng mô tả xu hướng. Viết mới, không chép Audio script.",
+    "S3 chọn tình huống hiệu sách gia đình mở bán trực tuyến (bài E-commerce) để không lặp mạng xã hội doanh nghiệp ở S2 và hội nghị truyền hình ở Listening A.",
+    "Listening B: acceptedAnswers có biến thể cách viết số; một số biến thể không có nguyên văn trong lời thoại.",
+    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng."
+  ],
+  "listening": {
+    "parts": [
+      {
+        "id": "A",
+        "instructions": "Listen to the conversation and choose the best answer A, B, C or D (Questions L1–L5).",
+        "context": "Ben and Sarah, two managers at a furniture company in Manchester, talk about using video conferencing with the company's factory in Vietnam.",
+        "speakers": [
+          {
+            "name": "Ben",
+            "voice": "male"
+          },
+          {
+            "name": "Sarah",
+            "voice": "female"
+          }
+        ],
+        "script": [
+          {
+            "speaker": "Ben",
+            "text": "Sarah, have you seen the travel costs for this year? We spent nearly thirty thousand pounds on flights to the factory in Da Nang."
+          },
+          {
+            "speaker": "Sarah",
+            "text": "I know. Our designers are flying there every two months, and the tickets are getting more and more expensive."
+          },
+          {
+            "speaker": "Ben",
+            "text": "That's why I want to talk about video conferencing. If we had a proper system, the designers wouldn't need to travel so often."
+          },
+          {
+            "speaker": "Sarah",
+            "text": "But would it really work? They need to look at the furniture samples."
+          },
+          {
+            "speaker": "Ben",
+            "text": "The new systems have very clear cameras. If someone at the factory held a sample up to the camera, our designers would see every detail."
+          },
+          {
+            "speaker": "Sarah",
+            "text": "What about the time difference? Vietnam is six hours ahead of us."
+          },
+          {
+            "speaker": "Ben",
+            "text": "We could have meetings at nine in the morning here. That's three in the afternoon there."
+          },
+          {
+            "speaker": "Sarah",
+            "text": "OK. And how much would a system cost?"
+          },
+          {
+            "speaker": "Ben",
+            "text": "About twelve thousand pounds for both sites, with the cameras and screens."
+          },
+          {
+            "speaker": "Sarah",
+            "text": "So if we bought it, we would save money in the first year."
+          },
+          {
+            "speaker": "Ben",
+            "text": "Exactly. And the designers would be happier. They're getting tired of long flights."
+          },
+          {
+            "speaker": "Sarah",
+            "text": "Fine. Could you get prices from two suppliers by Friday? Then I'll present them to the directors."
+          }
+        ],
+        "questions": [
+          {
+            "id": "L1",
+            "kind": "mcq",
+            "stem": "Why does Ben want to talk about video conferencing?",
+            "options": [
+              {
+                "id": "A",
+                "text": "The factory has asked for it."
+              },
+              {
+                "id": "B",
+                "text": "The company is spending a lot on flights."
+              },
+              {
+                "id": "C",
+                "text": "The designers want to work from home."
+              },
+              {
+                "id": "D",
+                "text": "The old system has stopped working."
+              }
+            ],
+            "answerKey": "B",
+            "explanation": "Ben mở đầu bằng chi phí đi lại: gần 30.000 bảng tiền vé máy bay đến nhà máy ở Đà Nẵng, rồi nói \"That's why I want to talk about video conferencing\"."
+          },
+          {
+            "id": "L2",
+            "kind": "mcq",
+            "stem": "How often do the designers fly to the factory?",
+            "options": [
+              {
+                "id": "A",
+                "text": "Every month"
+              },
+              {
+                "id": "B",
+                "text": "Every six weeks"
+              },
+              {
+                "id": "C",
+                "text": "Every two months"
+              },
+              {
+                "id": "D",
+                "text": "Twice a year"
+              }
+            ],
+            "answerKey": "C",
+            "explanation": "Sarah nói \"Our designers are flying there every two months\"."
+          },
+          {
+            "id": "L3",
+            "kind": "mcq",
+            "stem": "According to Ben, how could the designers see the furniture samples?",
+            "options": [
+              {
+                "id": "A",
+                "text": "The factory could post the samples to Manchester."
+              },
+              {
+                "id": "B",
+                "text": "Someone could hold the samples up to the camera."
+              },
+              {
+                "id": "C",
+                "text": "The factory could email photos every week."
+              },
+              {
+                "id": "D",
+                "text": "One designer could live in Vietnam."
+              }
+            ],
+            "answerKey": "B",
+            "explanation": "Ben nói \"If someone at the factory held a sample up to the camera, our designers would see every detail\"."
+          },
+          {
+            "id": "L4",
+            "kind": "mcq",
+            "stem": "If a meeting starts at 9 a.m. in Manchester, what time is it in Vietnam?",
+            "options": [
+              {
+                "id": "A",
+                "text": "3 a.m."
+              },
+              {
+                "id": "B",
+                "text": "6 a.m."
+              },
+              {
+                "id": "C",
+                "text": "12 p.m."
+              },
+              {
+                "id": "D",
+                "text": "3 p.m."
+              }
+            ],
+            "answerKey": "D",
+            "explanation": "Việt Nam đi trước sáu tiếng; Ben nói 9 giờ sáng ở Manchester \"That's three in the afternoon there\"."
+          },
+          {
+            "id": "L5",
+            "kind": "mcq",
+            "stem": "What does Sarah ask Ben to do?",
+            "options": [
+              {
+                "id": "A",
+                "text": "Get prices from two suppliers by Friday"
+              },
+              {
+                "id": "B",
+                "text": "Book flights for the designers"
+              },
+              {
+                "id": "C",
+                "text": "Present the idea to the directors"
+              },
+              {
+                "id": "D",
+                "text": "Visit the factory next month"
+              }
+            ],
+            "answerKey": "A",
+            "explanation": "Sarah nói \"Could you get prices from two suppliers by Friday?\". Chính Sarah sẽ trình bày với ban giám đốc."
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "instructions": "Listen to the report and answer the questions. Write NO MORE THAN THREE WORDS for each answer (Questions L6–L10).",
+        "context": "Emma, the customer service manager at a bank, reports to her team on how customers are contacting the bank this year.",
+        "speakers": [
+          {
+            "name": "Emma",
+            "voice": "female"
+          }
+        ],
+        "script": [
+          {
+            "speaker": "Emma",
+            "text": "Good afternoon, everyone. Today I'm going to describe how our customers are contacting us this year, because things are changing very quickly."
+          },
+          {
+            "speaker": "Emma",
+            "text": "First, phone calls. The number of calls to our help desk is going down. Last year we received about two thousand calls a week. Now it's around twelve hundred. At the same time, more and more customers are using live chat on our website. Live chat is now our most popular channel, with about three thousand conversations a week."
+          },
+          {
+            "speaker": "Emma",
+            "text": "Email is staying about the same. Another trend is social media. Younger customers are sending us questions through social media, and this channel is getting bigger every month."
+          },
+          {
+            "speaker": "Emma",
+            "text": "Our mobile app is becoming more popular too, especially the feature called Quick Pay, which lets customers pay a bill with one tap. Because of these changes, we're going to train six more staff to answer live chat from next month. Thank you."
+          }
+        ],
+        "questions": [
+          {
+            "id": "L6",
+            "kind": "short",
+            "stem": "About how many phone calls a week does the help desk receive now?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "twelve hundred",
+              "1200",
+              "1 200",
+              "about twelve hundred",
+              "around twelve hundred",
+              "about 1200",
+              "around 1200"
+            ],
+            "explanation": "Emma nói năm ngoái khoảng 2.000 cuộc gọi mỗi tuần, \"Now it's around twelve hundred\" (1.200)."
+          },
+          {
+            "id": "L7",
+            "kind": "short",
+            "stem": "Which channel is now the most popular?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "live chat",
+              "the live chat",
+              "live chats"
+            ],
+            "explanation": "\"Live chat is now our most popular channel, with about three thousand conversations a week\"."
+          },
+          {
+            "id": "L8",
+            "kind": "short",
+            "stem": "Which channel is staying about the same?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "email",
+              "emails",
+              "e-mail",
+              "e-mails"
+            ],
+            "explanation": "\"Email is staying about the same\"."
+          },
+          {
+            "id": "L9",
+            "kind": "short",
+            "stem": "What is the name of the app feature that lets customers pay a bill with one tap?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "quick pay",
+              "quickpay"
+            ],
+            "explanation": "\"the feature called Quick Pay, which lets customers pay a bill with one tap\"."
+          },
+          {
+            "id": "L10",
+            "kind": "short",
+            "stem": "How many more staff will the bank train to answer live chat?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "six",
+              "6",
+              "six more",
+              "6 more",
+              "six staff",
+              "6 staff",
+              "six more staff",
+              "6 more staff"
+            ],
+            "explanation": "\"we're going to train six more staff to answer live chat from next month\"."
+          }
+        ]
+      }
+    ]
+  },
+  "reading": {
+    "matching": {
+      "instructions": "Match the terms (1–5) with the correct definitions (A–F). There is one extra definition that you do not need (Questions 1–5).",
+      "definitions": [
+        {
+          "id": "A",
+          "text": "Relating to changing spoken words into written text."
+        },
+        {
+          "id": "B",
+          "text": "A business model in which a company is present both offline and online."
+        },
+        {
+          "id": "C",
+          "text": "A person who writes a web page about a subject, with the newest information at the top."
+        },
+        {
+          "id": "D",
+          "text": "The state of being free from public attention."
+        },
+        {
+          "id": "E",
+          "text": "Saving a file in a way that uses less space, because you do not need it often but may need it later."
+        },
+        {
+          "id": "F",
+          "text": "A way of showing messages that are grouped by topic so that they are easy to read."
+        }
+      ],
+      "items": [
+        {
+          "id": "R1",
+          "term": "Bricks and clicks",
+          "answerKey": "B",
+          "explanation": "Bricks and clicks là mô hình kinh doanh có cả cửa hàng thực (bricks) và kênh trực tuyến (clicks)."
+        },
+        {
+          "id": "R2",
+          "term": "Threaded view",
+          "answerKey": "F",
+          "explanation": "Threaded view (chế độ xem theo luồng) gom các tin nhắn theo chủ đề để dễ đọc."
+        },
+        {
+          "id": "R3",
+          "term": "Archiving",
+          "answerKey": "E",
+          "explanation": "Archiving (lưu trữ) là lưu tệp ít dùng theo cách tốn ít dung lượng hơn để dùng lại khi cần."
+        },
+        {
+          "id": "R4",
+          "term": "Speech-to-text",
+          "answerKey": "A",
+          "explanation": "Speech-to-text (chuyển giọng nói thành văn bản) liên quan đến việc đổi lời nói thành chữ viết."
+        },
+        {
+          "id": "R5",
+          "term": "Privacy",
+          "answerKey": "D",
+          "explanation": "Privacy (sự riêng tư) là trạng thái không bị công chúng chú ý, soi xét. Định nghĩa C là của blogger (người viết blog), không có trong danh sách thuật ngữ."
+        }
+      ]
+    },
+    "grammar": [
+      {
+        "id": "R6",
+        "kind": "mcq",
+        "stem": "These days, more and more of our customers ______ to pay with their phones.",
+        "options": [
+          {
+            "id": "A",
+            "text": "is choosing"
+          },
+          {
+            "id": "B",
+            "text": "are choosing"
+          },
+          {
+            "id": "C",
+            "text": "choosing"
+          },
+          {
+            "id": "D",
+            "text": "was choosing"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Mô tả thay đổi đang diễn ra dùng hiện tại tiếp diễn; chủ ngữ \"customers\" số nhiều nên dùng \"are choosing\". \"is/was choosing\" sai hoà hợp chủ ngữ, \"choosing\" thiếu trợ động từ."
+      },
+      {
+        "id": "R7",
+        "kind": "mcq",
+        "stem": "Video calls are becoming ______ and more popular with our clients.",
+        "options": [
+          {
+            "id": "A",
+            "text": "most"
+          },
+          {
+            "id": "B",
+            "text": "much"
+          },
+          {
+            "id": "C",
+            "text": "more"
+          },
+          {
+            "id": "D",
+            "text": "many"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "Cấu trúc so sánh kép chỉ xu hướng tăng dần: \"more and more popular\" (ngày càng phổ biến)."
+      },
+      {
+        "id": "R8",
+        "kind": "mcq",
+        "stem": "The number of paper invoices is going ______ because most customers now choose email invoices.",
+        "options": [
+          {
+            "id": "A",
+            "text": "down"
+          },
+          {
+            "id": "B",
+            "text": "up"
+          },
+          {
+            "id": "C",
+            "text": "off"
+          },
+          {
+            "id": "D",
+            "text": "out"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "Khách chuyển sang hoá đơn email nên số hoá đơn giấy giảm: \"go down\". \"go up\" là tăng, trái nghĩa; \"go off\", \"go out\" không dùng để mô tả số lượng tăng giảm."
+      },
+      {
+        "id": "R9",
+        "kind": "mcq",
+        "stem": "If our office ______ a faster internet connection, video calls wouldn't freeze so often.",
+        "options": [
+          {
+            "id": "A",
+            "text": "has"
+          },
+          {
+            "id": "B",
+            "text": "will have"
+          },
+          {
+            "id": "C",
+            "text": "would have"
+          },
+          {
+            "id": "D",
+            "text": "had"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Câu điều kiện loại 2 (điều không có thật ở hiện tại): If + quá khứ đơn, … would + V. Mệnh đề sau dùng \"wouldn't freeze\" nên mệnh đề If dùng \"had\"."
+      },
+      {
+        "id": "R10",
+        "kind": "mcq",
+        "stem": "If we used an online booking system, customers ______ to phone us for appointments.",
+        "options": [
+          {
+            "id": "A",
+            "text": "wouldn't need"
+          },
+          {
+            "id": "B",
+            "text": "don't need"
+          },
+          {
+            "id": "C",
+            "text": "won't need"
+          },
+          {
+            "id": "D",
+            "text": "didn't need"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "Câu điều kiện loại 2: mệnh đề If ở quá khứ đơn (used) nên mệnh đề chính dùng would + V: \"wouldn't need\"."
+      },
+      {
+        "id": "R11",
+        "kind": "mcq",
+        "stem": "We use a security method ______ two-factor authentication, which asks for a code from your phone.",
+        "options": [
+          {
+            "id": "A",
+            "text": "call"
+          },
+          {
+            "id": "B",
+            "text": "called"
+          },
+          {
+            "id": "C",
+            "text": "calls"
+          },
+          {
+            "id": "D",
+            "text": "calling"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Giải nghĩa thuật ngữ bằng \"called\" (được gọi là): a method called two-factor authentication."
+      },
+      {
+        "id": "R12",
+        "kind": "mcq",
+        "stem": "Could someone ______ me how to add a signature to my emails?",
+        "options": [
+          {
+            "id": "A",
+            "text": "say"
+          },
+          {
+            "id": "B",
+            "text": "explain"
+          },
+          {
+            "id": "C",
+            "text": "speak"
+          },
+          {
+            "id": "D",
+            "text": "tell"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Yêu cầu lịch sự: \"Could someone tell me how to…?\". \"say\", \"explain\", \"speak\" không đi trực tiếp với tân ngữ chỉ người \"me\" theo cách này (phải là explain to me, say to me)."
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "R13",
+        "kind": "mcq",
+        "stem": "The ______ on this slide shows how the number of online orders went up last year.",
+        "options": [
+          {
+            "id": "A",
+            "text": "graph"
+          },
+          {
+            "id": "B",
+            "text": "policy"
+          },
+          {
+            "id": "C",
+            "text": "method"
+          },
+          {
+            "id": "D",
+            "text": "facility"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "Graph (biểu đồ, đồ thị) là hình vẽ dùng đường để thể hiện số liệu thay đổi."
+      },
+      {
+        "id": "R14",
+        "kind": "mcq",
+        "stem": "Our company has a strict password ______: staff must never share their passwords with anyone.",
+        "options": [
+          {
+            "id": "A",
+            "text": "graph"
+          },
+          {
+            "id": "B",
+            "text": "trend"
+          },
+          {
+            "id": "C",
+            "text": "policy"
+          },
+          {
+            "id": "D",
+            "text": "set-up"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "Policy (chính sách, quy định) là cách làm đã được tổ chức chính thức thống nhất, ví dụ quy định về mật khẩu."
+      },
+      {
+        "id": "R15",
+        "kind": "mcq",
+        "stem": "Many customers ______ paying by phone to paying with cash because it is quicker.",
+        "options": [
+          {
+            "id": "A",
+            "text": "integrate"
+          },
+          {
+            "id": "B",
+            "text": "prefer"
+          },
+          {
+            "id": "C",
+            "text": "process"
+          },
+          {
+            "id": "D",
+            "text": "archive"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Prefer A to B (thích A hơn B): khách thích trả bằng điện thoại hơn trả tiền mặt."
+      },
+      {
+        "id": "R16",
+        "kind": "mcq",
+        "stem": "Visitors are not allowed on the company's ______ without an ID badge.",
+        "options": [
+          {
+            "id": "A",
+            "text": "procedures"
+          },
+          {
+            "id": "B",
+            "text": "graphs"
+          },
+          {
+            "id": "C",
+            "text": "trends"
+          },
+          {
+            "id": "D",
+            "text": "premises"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Premises (khu vực, cơ sở) là toà nhà và khu đất công ty sử dụng."
+      },
+      {
+        "id": "R17",
+        "kind": "mcq",
+        "stem": "The meeting room has a new ______ with two cameras, a large screen and a speaker that all work together.",
+        "options": [
+          {
+            "id": "A",
+            "text": "set-up"
+          },
+          {
+            "id": "B",
+            "text": "trend"
+          },
+          {
+            "id": "C",
+            "text": "policy"
+          },
+          {
+            "id": "D",
+            "text": "method"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "Set-up (hệ thống thiết bị) là nhiều thiết bị cùng hoạt động trong một hệ thống."
+      },
+      {
+        "id": "R18",
+        "kind": "mcq",
+        "stem": "Some clients still want ______ meetings because they like to meet people in person.",
+        "options": [
+          {
+            "id": "A",
+            "text": "remote"
+          },
+          {
+            "id": "B",
+            "text": "face-to-face"
+          },
+          {
+            "id": "C",
+            "text": "online"
+          },
+          {
+            "id": "D",
+            "text": "overseas"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Face-to-face (trực tiếp, mặt đối mặt) khớp với \"meet people in person\". Remote và online là họp từ xa, trái nghĩa."
+      },
+      {
+        "id": "R19",
+        "kind": "mcq",
+        "stem": "The online shop sends each customer's ______ to the warehouse as soon as the payment goes through.",
+        "options": [
+          {
+            "id": "A",
+            "text": "trend"
+          },
+          {
+            "id": "B",
+            "text": "graph"
+          },
+          {
+            "id": "C",
+            "text": "order"
+          },
+          {
+            "id": "D",
+            "text": "policy"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "Order (đơn hàng) là hàng hoá khách đã đặt mua từ công ty."
+      },
+      {
+        "id": "R20",
+        "kind": "mcq",
+        "stem": "Our new office has a training ______ with twenty computers and a projector.",
+        "options": [
+          {
+            "id": "A",
+            "text": "facility"
+          },
+          {
+            "id": "B",
+            "text": "procedure"
+          },
+          {
+            "id": "C",
+            "text": "component"
+          },
+          {
+            "id": "D",
+            "text": "method"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "Facility (cơ sở, phòng, thiết bị phục vụ một mục đích) — training facility là phòng đào tạo có trang thiết bị."
+      }
+    ],
+    "passageMcq": {
+      "instructions": "Read the passage and choose the best answer A, B, C or D (Questions 21–25).",
+      "passage": {
+        "title": "New Software at Northgate Hospital",
+        "paragraphs": [
+          "Northgate Hospital is changing to a new system for booking patient appointments. The old system is getting slower every year, and staff are making more and more mistakes, such as booking two patients for the same doctor at the same time. The new system goes live on 1 June, so all three hundred members of staff who book appointments need training before then.",
+          "The hospital's IT trainer, Grace Mensah, asked staff what they wanted to learn. She received more than 150 emails. Many receptionists wrote messages like \"It would be great to know how to move an appointment to another day.\" Nurses asked, \"Could someone show us how to print the list of patients for each day?\" Several doctors replied that they were too busy to attend long courses.",
+          "Grace decided to offer three kinds of training. Receptionists will attend a full-day course in the training room, because they will use the system more than anyone else. Nurses will have two-hour sessions on their own wards. For doctors, Grace is making short videos, each less than five minutes long, which they can watch on their phones between patients.",
+          "Grace says that if the hospital had more trainers, she would visit every department herself. Instead, she is choosing one experienced person in each department to be a \"super user\". After the training, staff can ask these people quick questions instead of phoning the IT help desk and waiting for an answer."
+        ]
+      },
+      "questions": [
+        {
+          "id": "R21",
+          "kind": "mcq",
+          "stem": "Why is the hospital changing its booking system?",
+          "options": [
+            {
+              "id": "A",
+              "text": "The old system is too expensive."
+            },
+            {
+              "id": "B",
+              "text": "The old system is getting slower."
+            },
+            {
+              "id": "C",
+              "text": "Patients want to book online."
+            },
+            {
+              "id": "D",
+              "text": "The doctors asked for a new one."
+            }
+          ],
+          "answerKey": "B",
+          "explanation": "Đoạn 1: \"The old system is getting slower every year, and staff are making more and more mistakes\"."
+        },
+        {
+          "id": "R22",
+          "kind": "mcq",
+          "stem": "What did many receptionists want to learn?",
+          "options": [
+            {
+              "id": "A",
+              "text": "How to move an appointment"
+            },
+            {
+              "id": "B",
+              "text": "How to print a list of patients"
+            },
+            {
+              "id": "C",
+              "text": "How to watch training videos"
+            },
+            {
+              "id": "D",
+              "text": "How to phone the help desk"
+            }
+          ],
+          "answerKey": "A",
+          "explanation": "Đoạn 2: lễ tân viết \"It would be great to know how to move an appointment to another day\". In danh sách bệnh nhân là yêu cầu của y tá."
+        },
+        {
+          "id": "R23",
+          "kind": "mcq",
+          "stem": "Why is Grace making short videos for the doctors?",
+          "options": [
+            {
+              "id": "A",
+              "text": "The doctors prefer to learn at home."
+            },
+            {
+              "id": "B",
+              "text": "The training room is too small."
+            },
+            {
+              "id": "C",
+              "text": "The doctors are too busy for long courses."
+            },
+            {
+              "id": "D",
+              "text": "The videos are cheaper than courses."
+            }
+          ],
+          "answerKey": "C",
+          "explanation": "Đoạn 2: \"Several doctors replied that they were too busy to attend long courses\", nên đoạn 3 Grace làm video ngắn cho bác sĩ xem giữa các ca khám."
+        },
+        {
+          "id": "R24",
+          "kind": "mcq",
+          "stem": "Who will attend a full-day course?",
+          "options": [
+            {
+              "id": "A",
+              "text": "The nurses"
+            },
+            {
+              "id": "B",
+              "text": "The doctors"
+            },
+            {
+              "id": "C",
+              "text": "The super users"
+            },
+            {
+              "id": "D",
+              "text": "The receptionists"
+            }
+          ],
+          "answerKey": "D",
+          "explanation": "Đoạn 3: \"Receptionists will attend a full-day course in the training room\". Y tá học buổi hai tiếng; bác sĩ xem video."
+        },
+        {
+          "id": "R25",
+          "kind": "mcq",
+          "stem": "What would Grace do if the hospital had more trainers?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Make longer videos for the doctors"
+            },
+            {
+              "id": "B",
+              "text": "Visit every department herself"
+            },
+            {
+              "id": "C",
+              "text": "Close the IT help desk"
+            },
+            {
+              "id": "D",
+              "text": "Move the start date to July"
+            }
+          ],
+          "answerKey": "B",
+          "explanation": "Đoạn 4: \"if the hospital had more trainers, she would visit every department herself\"."
+        }
+      ]
+    },
+    "passageTrueFalse": {
+      "instructions": "Read the passage and write T (True) or F (False) (Questions 26–30).",
+      "passage": {
+        "title": "How Students Pay at Riverside College Café",
+        "paragraphs": [
+          "Two years ago, most students paid for their food in the Riverside College café with cash. Now the situation is changing quickly. More and more students are paying with their phones or bank cards, and the number of cash payments is going down every term.",
+          "Last term, only 15% of payments were in cash. Card payments made up 45%, and phone payments made up 40%, but phone payments are increasing faster than any other method. The café manager, Mr Dawson, says that the queues at lunchtime are getting shorter, because a phone payment takes only a few seconds and staff do not need to count change.",
+          "However, some older members of staff still prefer to pay with cash. If the café stopped taking cash, these customers would be unhappy, so Mr Dawson has decided to keep one cash till open for now. Next year, the college is planning to add a mobile app so that students can order food before their classes finish."
+        ]
+      },
+      "questions": [
+        {
+          "id": "R26",
+          "kind": "tf",
+          "statement": "Two years ago, most students paid for food with cash.",
+          "answerKey": "T",
+          "explanation": "Đoạn 1: \"Two years ago, most students paid for their food in the Riverside College café with cash.\""
+        },
+        {
+          "id": "R27",
+          "kind": "tf",
+          "statement": "The number of phone payments is going down.",
+          "answerKey": "F",
+          "explanation": "Đoạn 2: \"phone payments are increasing faster than any other method\". Thứ đang giảm là thanh toán tiền mặt."
+        },
+        {
+          "id": "R28",
+          "kind": "tf",
+          "statement": "The lunchtime queues are getting longer.",
+          "answerKey": "F",
+          "explanation": "Đoạn 2: \"the queues at lunchtime are getting shorter\"."
+        },
+        {
+          "id": "R29",
+          "kind": "tf",
+          "statement": "Some older members of staff still prefer to pay with cash.",
+          "answerKey": "T",
+          "explanation": "Đoạn 3: \"some older members of staff still prefer to pay with cash\"."
+        },
+        {
+          "id": "R30",
+          "kind": "tf",
+          "statement": "The café has already stopped taking cash.",
+          "answerKey": "F",
+          "explanation": "Đoạn 3: Mr Dawson \"has decided to keep one cash till open for now\"."
+        }
+      ]
+    }
+  },
+  "writing": {
+    "translation": {
+      "instructions": "Translate these sentences into Vietnamese (Questions 31–35).",
+      "items": [
+        {
+          "id": "W31",
+          "source": "Bricks and clicks companies sell their products both in shops and on their websites.",
+          "referenceTranslation": "Các công ty theo mô hình bricks and clicks bán sản phẩm cả ở cửa hàng lẫn trên trang web của họ."
+        },
+        {
+          "id": "W32",
+          "source": "The number of staff who work from home is increasing every year.",
+          "referenceTranslation": "Số nhân viên làm việc tại nhà đang tăng lên mỗi năm."
+        },
+        {
+          "id": "W33",
+          "source": "If we used speech-to-text software, we could write our reports much faster.",
+          "referenceTranslation": "Nếu chúng ta dùng phần mềm chuyển giọng nói thành văn bản, chúng ta có thể viết báo cáo nhanh hơn nhiều."
+        },
+        {
+          "id": "W34",
+          "source": "It would be great to know how to switch to threaded view in the company forum.",
+          "referenceTranslation": "Sẽ rất tốt nếu biết cách chuyển sang chế độ xem theo luồng trên diễn đàn của công ty."
+        },
+        {
+          "id": "W35",
+          "source": "Our overseas department is becoming more and more important because sales in Asia are going up.",
+          "referenceTranslation": "Bộ phận ở nước ngoài của chúng tôi ngày càng quan trọng hơn vì doanh số ở châu Á đang tăng."
+        }
+      ]
+    },
+    "email": {
+      "id": "W-EMAIL",
+      "recipient": "Carlos",
+      "task": "You are an IT support technician. More and more teams in your company are using DriveHub, the company's file sharing service. Carlos, a new project manager, needs to share his project files with his team. Write an email to Carlos explaining the steps, using the notes below. In your email you must use:\n- imperatives and sequence words for the steps;\n- at least one sentence describing a current trend (present continuous or more and more), for example about how many teams are using DriveHub;\n- at least one second conditional sentence (If + past simple, … would/could + verb), for example to explain what would happen if he chose \"Can edit\";\n- at least one polite request (Could you…? / It would be great if you could…), for example asking Carlos to send you a screenshot.\nFollow the standard layout for an email giving instructions: From / To / Date / Subject, a greeting, It should be quite easy to …, the steps with First / Then / Next / After that / Finally, a reminder (Don't forget to … when you've finished.), then Best wishes and your name, position and department.\nWrite 80–100 words (do not count the From, To, Date and Subject lines).",
+      "bullets": [
+        "open DriveHub / sign in with your staff ID",
+        "create a new folder / name it with the project name",
+        "upload the project files into the folder",
+        "share the folder with your team",
+        "choose 'Can view' (if 'Can edit': everyone could change the files)",
+        "ask Carlos to send you a screenshot of the shared folder",
+        "reminder: sign out"
+      ],
+      "wordRange": [
+        80,
+        100
+      ],
+      "targetGrammar": [
+        "Imperatives with sequence words: First, Then, Next, After that, Finally",
+        "Describing current trends: present continuous; more and more + noun",
+        "Second conditional: If + past simple, … would/could + verb",
+        "Polite requests: Could you…?, It would be great if you could…"
+      ],
+      "modelAnswer": "From: Pham Thu Ha\nTo: Carlos\nDate: 8th October\nSubject: Sharing files on DriveHub\n\nHi Carlos,\n\nIt should be quite easy to share your files. More and more teams are using DriveHub now.\nFirst, open DriveHub and sign in with your staff ID.\nThen, create a new folder with the project name.\nNext, upload your project files.\nAfter that, share the folder with your team and choose 'Can view'. If you chose 'Can edit', everyone could change the files.\nFinally, could you send me a screenshot of the shared folder?\nDon't forget to sign out when you've finished.\n\nBest wishes,\nPham Thu Ha\nSupport Technician\nIT Department"
+    }
+  },
+  "speaking": {
+    "parts": [
+      {
+        "id": "S1",
+        "kind": "questions",
+        "instructions": "Answer the three questions. Speak for 30–45 seconds for each question.",
+        "questions": [
+          "How is the way people shop changing in your country? Describe two trends. Use the present continuous and phrases such as more and more, is getting + comparative, or is going up/down.",
+          "If you could add one new feature to your favourite app, what would it be and why? Answer with the second conditional (If I could…, I would…).",
+          "Think of a technical word that you know, for example cloud storage or Wi-Fi. Explain what it means to someone who does not know it. Use at least one of these ways to give a meaning: called, which means, or is."
+        ],
+        "secondsPerQuestion": 45
+      },
+      {
+        "id": "S2",
+        "kind": "explain",
+        "instructions": "Ask for training. Speak for 1–1.5 minutes.",
+        "prompt": "You have just joined a company that uses an enterprise social network. Leave a voice message for the IT trainer. Explain that you are new, then ask for the training you need, using the cues. Make at least four polite requests (It would be great to know…, I'd like to know…, Could someone tell me / show me…?, Could you…?).",
+        "cues": [
+          "how to find old messages",
+          "how to join the group for your project",
+          "how to change the privacy settings on your profile",
+          "how to use the network on your phone",
+          "the date and place of the next training session"
+        ],
+        "requiredGrammar": [
+          "Polite requests (at least four): It would be great to know how to…; I'd like to know…; Could someone tell me / show me…?; Could you…?"
+        ],
+        "seconds": 90,
+        "sampleAnswer": "Hello, this is Nam from the sales department. I joined the company last week, and I'm still learning how to use our social network, so I'd like to ask for some training. First, it would be great to know how to find old messages, because my manager often asks me about earlier discussions. I'd also like to know how to join the group for my project. Could someone show me how to change the privacy settings on my profile? I don't want everyone to see my phone number. I often visit customers, so could you tell me how to use the network on my phone? Finally, could you let me know the date and place of the next training session? Thank you very much. My extension is two four five."
+      },
+      {
+        "id": "S3",
+        "kind": "situation",
+        "instructions": "Deal with the situation. Speak for 1–1.5 minutes.",
+        "prompt": "Your parents run a small bookshop in your town. They do not have a website, and sales in the shop are going down. They ask you what would happen if they started selling books online. Use the cues and answer with at least four second conditional sentences (If you sold…, customers would/could…).",
+        "cues": [
+          "now: only customers who live in the town",
+          "an online shop: customers from all over the country",
+          "online payment and home delivery",
+          "customer reviews on the website",
+          "cost: about £40 a month for the website, more time to pack orders"
+        ],
+        "requiredGrammar": [
+          "Second conditional (at least four sentences): If + past simple, … would/could + infinitive"
+        ],
+        "seconds": 90,
+        "sampleAnswer": "At the moment, only people who live in our town can buy books from you, and sales in the shop are going down. I think an online shop would help. If you sold books online, customers from all over the country could buy from you. If the website had online payment and home delivery, busy people wouldn't need to visit the shop. If customers wrote reviews on the website, other people would trust the shop more. Of course, there are some costs. The website would cost about forty pounds a month, and if you got a lot of orders, you would need more time to pack them. But if you didn't start selling online, sales would probably keep going down. So I think you should try it for six months."
+      }
+    ]
+  }
+}
