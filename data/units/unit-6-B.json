@@ -27,7 +27,8 @@
     "Listening B: acceptedAnswers có biến thể cách viết số; một số biến thể không có nguyên văn trong lời thoại.",
     "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
     "Bản r1 (theo báo cáo et-auditor audit/unit-6-B): R10 nêu rõ hiện chưa có hệ thống để chỉ còn một đáp án; R15 bỏ phương án nhiễu cùng gốc với thuật ngữ nối R3; R6 và R15 đổi ngữ cảnh (làm việc tại nhà, màn hình lớn) để không lặp tình huống thanh toán bằng điện thoại của bài đọc R26–R30.",
-    "Bản r1 (theo review chéo của et-author): R18 thay phương án nhiễu overseas (có thể hiểu là họp trực tiếp ở nước ngoài) bằng virtual; L6 thêm biến thể có đơn vị calls. R15 đã sửa ở lần r1 trước."
+    "Bản r1 (theo review chéo của et-author): R18 thay phương án nhiễu overseas (có thể hiểu là họp trực tiếp ở nước ngoài) bằng virtual; L6 thêm biến thể có đơn vị calls. R15 đã sửa ở lần r1 trước.",
+    "Giải mù lại 6B: R10 đổi tình huống sang lịch chung trực tuyến của nhóm để không lặp hệ thống đặt lịch hẹn của bài đọc R21–R25."
   ],
   "listening": {
     "parts": [
@@ -494,7 +495,7 @@
       {
         "id": "R10",
         "kind": "mcq",
-        "stem": "We don't have an online booking system at the moment. If we had one, customers ______ to phone us for appointments.",
+        "stem": "Our team doesn't have a shared online calendar at the moment. If we had one, we ______ to send so many emails to arrange meetings.",
         "options": [
           {
             "id": "A",
@@ -514,7 +515,7 @@
           }
         ],
         "answerKey": "A",
-        "explanation": "Hiện tại chưa có hệ thống đặt lịch (\"We don't have … at the moment\") nên đây là giả định trái với hiện tại: câu điều kiện loại 2, If + quá khứ đơn (had), mệnh đề chính dùng would + V: \"wouldn't need\". \"didn't need\" là quá khứ thật, không hợp với tình huống hiện tại; \"don't need\", \"won't need\" không đi với mệnh đề If ở quá khứ."
+        "explanation": "Hiện tại nhóm chưa có lịch chung trực tuyến (\"doesn't have … at the moment\") nên đây là giả định trái với hiện tại: câu điều kiện loại 2, If + quá khứ đơn (had), mệnh đề chính dùng would + V: \"wouldn't need\". \"didn't need\" là quá khứ thật, không hợp với tình huống hiện tại; \"don't need\", \"won't need\" không đi với mệnh đề If ở quá khứ."
       },
       {
         "id": "R11",
