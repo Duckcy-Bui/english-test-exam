@@ -7,7 +7,7 @@ import { once } from 'node:events';
 
 // Independent black-box QA. All authored output lives under qa/.
 const root = resolve(import.meta.dirname, '..');
-const evidence = join(root, 'qa/unit6-app-evidence');
+const evidence = resolve(root, process.env.QA_EVIDENCE_DIR || 'qa/unit6-app-r1-evidence');
 mkdirSync(evidence, { recursive: true });
 const exam = JSON.parse(readFileSync(join(root, 'data/units/unit-6.json'), 'utf8'));
 const key = 'qa-sentinel-api-key-DO-NOT-EXPOSE'; // Synthetic, never a real credential.
@@ -58,10 +58,11 @@ class Client {
   async grade(scope, answers) { const s = await this.start(scope); const r = await this.req('/api/grade', { sessionId: s.sessionId, answers }); return { ...r, sessionId: s.sessionId }; }
 }
 async function stop(child) {
-  if (!child || child.exitCode !== null) return;
-  process.kill(-child.pid, 'SIGTERM');
-  await Promise.race([once(child, 'exit'), sleep(5000)]);
-  if (child.exitCode === null) { try { process.kill(-child.pid, 'SIGKILL'); } catch {} await once(child, 'exit'); }
+  if (!child || child.exitCode !== null || child.signalCode !== null) return;
+  const exited = once(child, 'exit');
+  try { process.kill(-child.pid, 'SIGTERM'); } catch { return; }
+  await Promise.race([exited, sleep(5000)]);
+  if (child.exitCode === null && child.signalCode === null) { try { process.kill(-child.pid, 'SIGKILL'); } catch {} await exited; }
   children.delete(child);
 }
 async function startServer(name, mock, limits = {}, dev = false, proxy = '0') {
@@ -263,19 +264,22 @@ try {
     return { calls: calls.length - before, score: r.data.result.skills[scope].score, semanticModelTested: false };
   });
   for (const scope of ['writing', 'speaking']) await check(`Gemini ${scope} does not expose key echoed by upstream in feedback`, async () => {
-    scenario = 'key-feedback'; leakExpected = true;
+    scenario = 'key-feedback'; leakExpected = true; const before = calls.length;
     const r = await g.grade(scope, goodAnswers());
     const readback = await g.req(`/api/grade?sessionId=${r.sessionId}`); leakExpected = false;
     const leaked = r.text.includes(key);
     writeFileSync(join(evidence, `key-feedback-${scope}.json`), JSON.stringify({ status: r.status, leaked, readbackStatus: readback.status, readbackLeaked: readback.text.includes(key), response: JSON.parse(r.text.replaceAll(key, '[SYNTHETIC_API_KEY_REDACTED]')) }, null, 2));
     assert(!leaked, `synthetic API key returned in ${scope} feedback (HTTP ${r.status})`);
+    assert.equal(r.status, 502); assert.equal(calls.length - before, 2);
+    assert.equal(readback.status, 409); assert(!r.data.result); assert(!readback.data.result);
+    return { status: r.status, calls: calls.length - before, readback: readback.status, resultSaved: false };
   });
   await stop(running);
   await check('app server logs contain no synthetic API key', async () => { for (const name of ['mock-dev', 'quota-production', 'quota-configured', 'quota-restart', 'gemini-production']) assert(!readFileSync(join(evidence, `${name}.log`), 'utf8').includes(key), `${name} log contains key`); });
 } finally {
   for (const child of children) await stop(child);
   fake.close(); await once(fake, 'close');
-  writeFileSync(join(evidence, 'redteam-results.json'), JSON.stringify({ sourceCommit: '24b565d', data: 'data/units/unit-6.json', realModel: false, results, calls, serversStopped: true }, null, 2));
+  writeFileSync(join(evidence, 'redteam-results.json'), JSON.stringify({ sourceCommit: process.env.QA_SOURCE_COMMIT || 'e4eb51d', data: 'data/units/unit-6.json', realModel: false, results, calls, serversStopped: true }, null, 2));
 }
 console.log(JSON.stringify({ passed: results.filter(r => r.pass).length, failed: results.filter(r => !r.pass).length }));
 if (results.some(r => !r.pass)) process.exitCode = 1;

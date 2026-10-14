@@ -3,3 +3,7 @@ unit6-app-evidence/*.sqlite
 unit6-app-evidence/*.sqlite-wal
 unit6-app-evidence/*.sqlite-shm
 unit6-app-evidence/playwright/
+unit6-app-r1-evidence/*.sqlite*
+unit6-app-r1-evidence/playwright/
+unit6-app-r1-evidence/runtime/
+unit6-app-r1-run/.next
