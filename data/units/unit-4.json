@@ -21,7 +21,7 @@
     "R19: câu đề mẫu hỏi lại thuật ngữ câu nối 5 và dùng thuật ngữ câu nối 2; viết lại với thiết bị ngoại vi khác của Workbook 4B.",
     "R18, R20: thay phương án nhiễu là thuật ngữ câu nối.",
     "R12: bỏ thuật ngữ câu nối 1 khỏi đề; đổi lời và phương án để chỉ còn một đáp án đúng theo cấu trúc while + quá khứ tiếp diễn.",
-    "R7: thêm vế chỉ lý do để loại cách hiểu thứ hai.",
+    "R7: thay bằng tình huống khác vẫn kiểm before + -ing (bản r1).",
     "R8: câu đề mẫu trùng tình huống với gạch đầu dòng cuối của email Peter; đổi tình huống. R10: câu đề mẫu trùng tình huống câu dịch W32; đổi tình huống. R9: bỏ từ gần thuật ngữ câu nối 3.",
     "R6: đổi lời để không chép ví dụ trong Language box của giáo trình. R11: đổi tình huống. R13: chỉnh lời. R16: thay một phương án nhiễu có thể hiểu là đúng. R17: viết lại để không dùng lại từ khoá định nghĩa của câu nối 3.",
     "Thứ tự phương án R6–R25 được xếp lại so với đề mẫu.",
@@ -29,6 +29,7 @@
     "Email Peter: sửa \"resolve a account login issue\" thành \"resolve an account login issue\".",
     "Listening và Speaking viết mới. Listening A lấy cảm hứng từ bài Systems administration (track 20), Listening B từ bài Databases (track 19); không chép Audio script. Listening A không dùng tình huống kiểm tra nhật ký máy chủ vì đã có ở W34 và email.",
     "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại, xử lý giống Unit 6.",
+    "Bản r1 (theo báo cáo et-auditor 8ffd2ee): viết lại R9 để chỉ một phương án đúng; R7 đổi tình huống để không trùng email; R14, R15 bỏ phương án nhiễu trùng thuật ngữ câu nối 3; R23 và L4 bỏ phương án nhiễu gần định nghĩa câu nối 1; R25 sửa một phương án cho đúng nghĩa bài đọc; L9 thêm một biến thể đáp án.",
     "Áp dụng quy tắc 11–15 (main c59c818): Listening B bỏ câu tìm bản ghi bằng ô tìm kiếm (gần định nghĩa câu nối 3); bài đọc R26–R30 thêm câu khẳng định hoặc phủ định trực tiếp cho R26–R28, viết lại R28 và R30; đề email nêu rõ phải dùng before/after + -ing và by + -ing; S1 thay câu 2 và cả ba câu S1 cùng đề S3 nêu rõ cấu trúc cần dùng; sourceNotes bỏ mọi thông tin đáp án."
   ],
   "listening": {
@@ -102,7 +103,7 @@
             "kind": "mcq",
             "stem": "What happened while Ben was updating the antivirus software?",
             "options": [
-              { "id": "A", "text": "The email server stopped working." },
+              { "id": "A", "text": "The email server was very slow." },
               { "id": "B", "text": "The update deleted some emails." },
               { "id": "C", "text": "He got an alert about many login attempts." },
               { "id": "D", "text": "An intern opened the director's account." }
@@ -169,7 +170,7 @@
             "kind": "short",
             "stem": "When should receptionists print the list of tomorrow's appointments?",
             "maxWords": 3,
-            "acceptedAnswers": ["every evening", "evening", "each evening", "in the evening"],
+            "acceptedAnswers": ["every evening", "evening", "each evening", "in the evening", "before going home"],
             "explanation": "\"Every evening, before you go home, please print the list of tomorrow's appointments\"."
           },
           {
@@ -245,7 +246,7 @@
       {
         "id": "R7",
         "kind": "mcq",
-        "stem": "______ installing the new software update on the server, you must do a full backup of all database files in case the update fails.",
+        "stem": "Always switch off and unplug the computer ______ cleaning the keyboard.",
         "options": [
           { "id": "A", "text": "While" },
           { "id": "B", "text": "After" },
@@ -253,7 +254,7 @@
           { "id": "D", "text": "Before" }
         ],
         "answerKey": "D",
-        "explanation": "Sao lưu phải làm trước khi cài bản cập nhật, phòng khi cập nhật bị lỗi (in case the update fails): \"Before installing …\". \"During\" không đi với V-ing có tân ngữ như thế này."
+        "explanation": "Phải tắt và rút điện máy trước khi lau bàn phím: \"before cleaning …\" (cùng chủ ngữ nên dùng V-ing). Tắt máy sau khi lau (after) hay trong khi lau (while) đều không hợp lý; \"during\" không đi với V-ing có tân ngữ."
       },
       {
         "id": "R8",
@@ -271,15 +272,15 @@
       {
         "id": "R9",
         "kind": "mcq",
-        "stem": "You can see last month's total sales ______ a report in the database.",
+        "stem": "______ a report in the database, you can see last month's total sales.",
         "options": [
-          { "id": "A", "text": "by running" },
-          { "id": "B", "text": "with running" },
-          { "id": "C", "text": "from running" },
-          { "id": "D", "text": "to running" }
+          { "id": "A", "text": "By running" },
+          { "id": "B", "text": "By run" },
+          { "id": "C", "text": "For run" },
+          { "id": "D", "text": "With runs" }
         ],
         "answerKey": "A",
-        "explanation": "Diễn tả cách làm một việc dùng \"by + V-ing\": \"by running a report\" (bằng cách chạy một báo cáo)."
+        "explanation": "Diễn tả cách làm một việc dùng \"by + V-ing\": \"By running a report\" (bằng cách chạy một báo cáo). Sau giới từ \"by\" phải dùng V-ing, không dùng động từ nguyên mẫu."
       },
       {
         "id": "R10",
@@ -342,7 +343,7 @@
         "options": [
           { "id": "A", "text": "report" },
           { "id": "B", "text": "primary key" },
-          { "id": "C", "text": "query" },
+          { "id": "C", "text": "table" },
           { "id": "D", "text": "form" }
         ],
         "answerKey": "B",
@@ -353,13 +354,13 @@
         "kind": "mcq",
         "stem": "Which database object is used as an interface for users to enter data into tables easily?",
         "options": [
-          { "id": "A", "text": "Query" },
+          { "id": "A", "text": "Record" },
           { "id": "B", "text": "Report" },
           { "id": "C", "text": "Form" },
           { "id": "D", "text": "Field" }
         ],
         "answerKey": "C",
-        "explanation": "Form (biểu mẫu) là đối tượng giúp nhập dữ liệu vào bảng dễ dàng. Report dùng để in, query dùng để lấy thông tin, field là một trường trong bảng."
+        "explanation": "Form (biểu mẫu) là đối tượng giúp nhập dữ liệu vào bảng dễ dàng. Report dùng để in kết quả; record là một bản ghi và field là một trường trong bảng, không phải giao diện nhập liệu."
       },
       {
         "id": "R16",
@@ -470,7 +471,7 @@
           "kind": "mcq",
           "stem": "Why did Maria check every total with her calculator for two weeks?",
           "options": [
-            { "id": "A", "text": "The spreadsheet often stopped working." },
+            { "id": "A", "text": "The spreadsheet was too slow." },
             { "id": "B", "text": "She did not trust the spreadsheet at first." },
             { "id": "C", "text": "Daniel asked her to test his formulae." },
             { "id": "D", "text": "The prices changed every day." }
@@ -499,7 +500,7 @@
             { "id": "A", "text": "She closed the second shop." },
             { "id": "B", "text": "She bought a new calculator." },
             { "id": "C", "text": "She started selling cakes online." },
-            { "id": "D", "text": "She stopped sending brown bread to one shop." }
+            { "id": "D", "text": "She stopped making brown bread for one shop." }
           ],
           "answerKey": "D",
           "explanation": "Đoạn 4: \"she stopped making brown bread for the second shop because very few customers bought it there\"."
