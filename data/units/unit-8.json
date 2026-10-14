@@ -23,6 +23,7 @@
     "Listening A lấy cảm hứng từ bài Diagnosis (track 45) nhưng đổi sang sự cố máy in; Listening B lấy cảm hứng từ bài Solutions (an toàn sức khoẻ nơi làm việc). Không chép Audio script.",
     "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại, xử lý giống Unit 6.",
     "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
+    "Bản r2 (theo báo cáo et-auditor 1b23076): R7 thay phương án nhiễu \"since\" (vẫn đọc được ở cuối câu) bằng phương án sai rõ; R11 đổi điều kiện để lời khuyên lưu bài làm được; đoạn 2 bài đọc R21–R25 và câu R22 đổi bằng chứng loại trừ wi-fi cho chặt chẽ về kỹ thuật.",
     "Bản r1 (tự rà theo các lỗi auditor đã bắt ở Unit 1, 4, 5, 6): R6, R12, R16, R17 đổi tình huống để không lặp chi tiết máy in và hộp mực của Listening A, làm đổ nước lên bàn phím của Listening B; R24 thay phương án nhiễu \"compared\" (bài không nói thẳng) bằng việc bài nói rõ là đã làm; câu dịch W33 đổi nội dung để không lặp lời khuyên máy nóng thì tắt máy của Listening B."
   ],
   "listening": {
@@ -240,12 +241,12 @@
         "stem": "I haven't checked the cables ______.",
         "options": [
           { "id": "A", "text": "already" },
-          { "id": "B", "text": "since" },
+          { "id": "B", "text": "just" },
           { "id": "C", "text": "ago" },
           { "id": "D", "text": "yet" }
         ],
         "answerKey": "D",
-        "explanation": "Trong câu phủ định thì hiện tại hoàn thành, dùng \"yet\" ở cuối câu (chưa…). \"already\" dùng trong câu khẳng định."
+        "explanation": "Trong câu phủ định thì hiện tại hoàn thành, dùng \"yet\" ở cuối câu (chưa…). \"already\" dùng trong câu khẳng định; \"just\" không đứng cuối câu như vậy; \"ago\" đi với quá khứ đơn và cần khoảng thời gian phía trước."
       },
       {
         "id": "R8",
@@ -289,7 +290,7 @@
       {
         "id": "R11",
         "kind": "mcq",
-        "stem": "If the screen goes black again, you ______ save your work and restart the computer.",
+        "stem": "If the computer starts to run very slowly again, you ______ save your work and restart it.",
         "options": [
           { "id": "A", "text": "would" },
           { "id": "B", "text": "must to" },
@@ -425,7 +426,7 @@
         "title": "Problems with the Staff App at Lakeview Hotel",
         "paragraphs": [
           "Three weeks ago, Lakeview Hotel started using a new app for its cleaning and maintenance staff. Staff use the app on their phones to see which rooms need cleaning and to report repairs. About forty staff use the app every day. Since the first week, however, there have been problems. The app has crashed many times, usually when staff try to upload photos of broken items.",
-          "Kenji, the hotel's IT officer, has investigated the problem. So far, he has updated the app on every phone and checked the hotel's wi-fi. He has also asked three members of staff to write down the time of every crash. The wi-fi signal is strong in all areas of the hotel, so the network can't be the cause. He has also noticed that the crashes only happen on older phones and never on the new models that the managers use.",
+          "Kenji, the hotel's IT officer, has investigated the problem. So far, he has updated the app on every phone and checked the hotel's wi-fi. He has also asked three members of staff to write down the time of every crash. When he switched off the wi-fi on a test phone and used mobile data instead, the app crashed in exactly the same way, so the hotel's wi-fi can't be the cause. He has also noticed that the crashes only happen on older phones and never on the new models that the managers use.",
           "Kenji thinks that the problem might be the size of the photos. Older phones have less memory, and the app could be running out of memory when it processes large images. He hasn't contacted the app developer yet, but he plans to send them a report this afternoon.",
           "Until the developer releases an update, Kenji has suggested a simple solution. Staff should try reducing the photo size in the camera settings. If the app still crashes, they should describe the problem in words instead of sending a photo. Kenji will look at the results at the end of the week."
         ]
@@ -451,11 +452,11 @@
           "options": [
             { "id": "A", "text": "The developer told him." },
             { "id": "B", "text": "The app works without a network." },
-            { "id": "C", "text": "The signal is strong in all areas." },
+            { "id": "C", "text": "The app also crashes without the wi-fi." },
             { "id": "D", "text": "Staff only use mobile data." }
           ],
           "answerKey": "C",
-          "explanation": "Đoạn 2: \"The wi-fi signal is strong in all areas of the hotel, so the network can't be the cause.\""
+          "explanation": "Đoạn 2: khi tắt wi-fi và dùng dữ liệu di động, ứng dụng vẫn sập y như cũ, \"so the hotel's wi-fi can't be the cause\". Ứng dụng không chạy tốt khi không có wi-fi (B sai)."
         },
         {
           "id": "R23",
