@@ -27,7 +27,8 @@
     "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
     "Bản r1 (tự soát theo nhắc của et-lead): R10 đổi 'cable' thành 'headphones', R14 và R15 thay nhiễu 'cable' bằng 'tab' (cable là từ khoá định nghĩa E, Ethernet connector); R20 đổi tình huống để không lặp việc cài hệ thống của bài đọc R21–R25.",
     "Bản r1, đợt 2 (theo review chéo của et-author2): L9 sửa stem để chỉ còn một đáp án, thêm biến thể; L6, L7 thêm biến thể có gạch nối; R13 đổi sang right-click (không lặp R15 đề A); R12 đổi sang 'to maximise' (không lặp F2/BIOS của đề A); R16 đổi tình huống (không lặp bước khởi động lại trong email); W35 đổi chủ đề; W33 dịch 'audio socket' là 'cổng âm thanh'.",
-    "Bản r1, đợt 2b: R16 bỏ 'screen', 'mouse' (từ khoá định nghĩa D, drag)."
+    "Bản r1, đợt 2b: R16 bỏ 'screen', 'mouse' (từ khoá định nghĩa D, drag).",
+    "Bản r1, đợt 3 (theo audit audit/unit-2-C): R5 đổi thuật ngữ thành 'Ethernet cable' cho khớp định nghĩa E (Workbook ghi định nghĩa cáp dưới mục 'Ethernet connector'); bài R26–R30 bỏ chữ 'cable'; R11 thay nhiễu 'for' bằng 'because of'; R15 thay nhiễu 'tab' bằng 'speaker'; R10 thay phương án B đảo ngữ bằng trật tự sai rõ ràng."
   ],
   "listening": {
     "parts": [
@@ -391,9 +392,9 @@
         },
         {
           "id": "R5",
-          "term": "Ethernet connector",
+          "term": "Ethernet cable",
           "answerKey": "E",
-          "explanation": "Ethernet connector (cáp, đầu nối Ethernet) dùng khi nối máy tính với các mạng máy tính khác. Định nghĩa B là của socket (ổ cắm), không có trong danh sách thuật ngữ."
+          "explanation": "Ethernet cable (cáp Ethernet, cáp mạng) là loại cáp dùng để nối máy tính với các mạng máy tính khác. Định nghĩa B là của socket (ổ cắm), không có trong danh sách thuật ngữ."
         }
       ]
     },
@@ -509,7 +510,7 @@
           },
           {
             "id": "B",
-            "text": "Into the audio socket plug the headphones."
+            "text": "Plug the headphones into socket the audio."
           },
           {
             "id": "C",
@@ -521,7 +522,7 @@
           }
         ],
         "answerKey": "C",
-        "explanation": "Trật tự câu hai tân ngữ: động từ + tân ngữ 1 (the headphones) + giới từ (into) + tân ngữ 2 (the audio socket)."
+        "explanation": "Trật tự câu hai tân ngữ: động từ + tân ngữ 1 (the headphones) + giới từ (into) + tân ngữ 2 (the audio socket). Các phương án khác đặt sai vị trí tân ngữ hoặc tách sai cụm danh từ."
       },
       {
         "id": "R11",
@@ -534,7 +535,7 @@
           },
           {
             "id": "B",
-            "text": "for"
+            "text": "because of"
           },
           {
             "id": "C",
@@ -546,7 +547,7 @@
           }
         ],
         "answerKey": "D",
-        "explanation": "Vế sau (the file is damaged) là lý do nên dùng \"because\" + mệnh đề. \"so that\" chỉ mục đích; for / to không đi với mệnh đề."
+        "explanation": "Vế sau (the file is damaged) là mệnh đề chỉ lý do nên dùng \"because\". \"because of\" chỉ đi với danh từ; \"so that\" chỉ mục đích; \"to\" không đi với mệnh đề."
       },
       {
         "id": "R12",
@@ -632,7 +633,7 @@
         "options": [
           {
             "id": "A",
-            "text": "tab"
+            "text": "speaker"
           },
           {
             "id": "B",
@@ -921,7 +922,7 @@
         "title": "Headphones: Which Type Is Right for You?",
         "paragraphs": [
           "Wired headphones plug into the headphone socket of your phone or computer. They are usually cheaper than wireless ones, and you never have to charge them. However, many new phones do not have a headphone socket, so you may need an adapter.",
-          "Wireless headphones connect to your device by Bluetooth. They are more comfortable for sport because there is no cable. Most models play music for 20 to 30 hours before you need to charge them. The sound quality is good, but professional sound engineers still prefer wired headphones because there is no delay.",
+          "Wireless headphones connect to your device by Bluetooth. They are more comfortable for sport because there are no wires. Most models play music for 20 to 30 hours before you need to charge them. The sound quality is good, but professional sound engineers still prefer wired headphones because there is no delay.",
           "Noise-cancelling headphones are useful on trains and planes. They have small microphones that listen to the noise around you and cancel it. They cost more than normal headphones, and the noise-cancelling function uses extra battery power.",
           "If you work in an open-plan office, choose headphones with a built-in microphone, so that you can join online meetings without a separate headset. Before you buy, always try the headphones on in the shop, because comfort matters as much as sound."
         ]
