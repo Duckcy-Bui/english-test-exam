@@ -25,7 +25,8 @@
     "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại.",
     "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
     "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
-    "Bản r1 (tự soát theo nhắc của et-lead): R15 đổi sang projector vì đáp án cũ 'speakers' cùng gốc với 'speak into' trong định nghĩa E (microphone); R24 bỏ 'speakers' khỏi phương án D."
+    "Bản r1 (tự soát theo nhắc của et-lead): R15 đổi sang projector vì đáp án cũ 'speakers' cùng gốc với 'speak into' trong định nghĩa E (microphone); R24 bỏ 'speakers' khỏi phương án D.",
+    "Bản r1, đợt 2 (theo audit 2B và review chéo của et-author2): R15 thay nhiễu số nhiều 'headphones' bằng 'scanner' cho khớp động từ 'shows'; R20 thay nhiễu số nhiều 'graphics' bằng 'screen' cho khớp 'is'; S1 câu 3 đổi sang lưu tài liệu vào thư mục mới (không lặp R13 mở tab); S1 câu 2 bỏ 'printer'; R6 đổi sang tiền tố nano- (không lặp R6 đề A); L6, L8, L9, L10 thêm biến thể."
   ],
   "listening": {
     "parts": [
@@ -270,7 +271,8 @@
               "twenty-seven inches",
               "twenty-seven inch",
               "twenty seven inches",
-              "27-inch screen"
+              "27-inch screen",
+              "27 inch screen"
             ],
             "explanation": "\"Each one has a 27-inch screen\"."
           },
@@ -296,7 +298,9 @@
             "maxWords": 3,
             "acceptedAnswers": [
               "three days",
-              "3 days"
+              "3 days",
+              "for three days",
+              "for 3 days"
             ],
             "explanation": "\"You can borrow a camera for up to three days\"."
           },
@@ -308,7 +312,8 @@
             "acceptedAnswers": [
               "game design projects",
               "game design",
-              "game design project"
+              "game design project",
+              "for game design"
             ],
             "explanation": "\"Students usually use them for game design projects.\""
           },
@@ -322,7 +327,11 @@
               "sunday night",
               "on sunday night",
               "sunday nights",
-              "on sunday nights"
+              "on sunday nights",
+              "every sunday",
+              "on sunday",
+              "on sundays",
+              "sunday"
             ],
             "explanation": "\"we clean all the computers every Sunday night\"."
           }
@@ -396,27 +405,27 @@
       {
         "id": "R6",
         "kind": "mcq",
-        "stem": "One gigabyte is about one thousand ______.",
+        "stem": "A nanosecond is one ______ of a second.",
         "options": [
           {
             "id": "A",
-            "text": "kilobytes"
+            "text": "thousandth"
           },
           {
             "id": "B",
-            "text": "terabytes"
+            "text": "millionth"
           },
           {
             "id": "C",
-            "text": "megabytes"
+            "text": "billionth"
           },
           {
             "id": "D",
-            "text": "nanobytes"
+            "text": "hundredth"
           }
         ],
         "answerKey": "C",
-        "explanation": "Giga- lớn hơn mega- khoảng một nghìn lần: 1 GB ≈ 1.000 MB. Một nghìn kilobyte chỉ là khoảng 1 MB; terabyte lớn hơn gigabyte."
+        "explanation": "Tiền tố nano- nghĩa là một phần tỷ: 1 nanosecond = 1/1.000.000.000 giây. Một phần nghìn là milli-, một phần triệu là micro-."
       },
       {
         "id": "R7",
@@ -639,7 +648,7 @@
           },
           {
             "id": "D",
-            "text": "headphones"
+            "text": "scanner"
           }
         ],
         "answerKey": "C",
@@ -752,7 +761,7 @@
         "options": [
           {
             "id": "A",
-            "text": "graphics"
+            "text": "screen"
           },
           {
             "id": "B",
@@ -1023,8 +1032,8 @@
         "instructions": "Answer the three questions. Speak for 30–45 seconds for each question.",
         "questions": [
           "How much storage does your phone or laptop have, and how much of it is free? Say the numbers and units clearly, for example sixty-four gigabytes or one point five terabytes.",
-          "What multimedia equipment do you have at home, for example speakers, a webcam or a printer? What do you use each one for? Use for + noun, to + verb or so that.",
-          "How do you open a new tab in your web browser? Give the instructions using imperatives and sequence words (first, then, finally)."
+          "What multimedia equipment do you have at home, for example speakers, a webcam or headphones? What do you use each one for? Use for + noun, to + verb or so that.",
+          "How do you save a document in a new folder on your computer? Give the instructions using imperatives and sequence words (first, then, next, finally)."
         ],
         "secondsPerQuestion": 45
       },
