@@ -28,7 +28,8 @@
     "Bản r1 (tự soát theo nhắc của et-lead): R10 đổi 'cable' thành 'headphones', R14 và R15 thay nhiễu 'cable' bằng 'tab' (cable là từ khoá định nghĩa E, Ethernet connector); R20 đổi tình huống để không lặp việc cài hệ thống của bài đọc R21–R25.",
     "Bản r1, đợt 2 (theo review chéo của et-author2): L9 sửa stem để chỉ còn một đáp án, thêm biến thể; L6, L7 thêm biến thể có gạch nối; R13 đổi sang right-click (không lặp R15 đề A); R12 đổi sang 'to maximise' (không lặp F2/BIOS của đề A); R16 đổi tình huống (không lặp bước khởi động lại trong email); W35 đổi chủ đề; W33 dịch 'audio socket' là 'cổng âm thanh'.",
     "Bản r1, đợt 2b: R16 bỏ 'screen', 'mouse' (từ khoá định nghĩa D, drag).",
-    "Bản r1, đợt 3 (theo audit audit/unit-2-C): R5 đổi thuật ngữ thành 'Ethernet cable' cho khớp định nghĩa E (Workbook ghi định nghĩa cáp dưới mục 'Ethernet connector'); bài R26–R30 bỏ chữ 'cable'; R11 thay nhiễu 'for' bằng 'because of'; R15 thay nhiễu 'tab' bằng 'speaker'; R10 thay phương án B đảo ngữ bằng trật tự sai rõ ràng."
+    "Bản r1, đợt 3 (theo audit audit/unit-2-C): R5 đổi thuật ngữ thành 'Ethernet cable' cho khớp định nghĩa E (Workbook ghi định nghĩa cáp dưới mục 'Ethernet connector'); bài R26–R30 bỏ chữ 'cable'; R11 thay nhiễu 'for' bằng 'because of'; R15 thay nhiễu 'tab' bằng 'speaker'; R10 thay phương án B đảo ngữ bằng trật tự sai rõ ràng.",
+    "Xáo thứ tự phương án R14, R16 để khoá R6–R25 không lặp chu kỳ (không đổi chữ trong stem và phương án)."
   ],
   "listening": {
     "parts": [
@@ -616,14 +617,14 @@
           },
           {
             "id": "C",
-            "text": "filename"
+            "text": "tab"
           },
           {
             "id": "D",
-            "text": "tab"
+            "text": "filename"
           }
         ],
-        "answerKey": "C",
+        "answerKey": "D",
         "explanation": "Filename (tên tệp) là tên bạn đặt cho một tệp."
       },
       {
@@ -662,18 +663,18 @@
           },
           {
             "id": "B",
-            "text": "restart"
+            "text": "partition"
           },
           {
             "id": "C",
-            "text": "partition"
+            "text": "restart"
           },
           {
             "id": "D",
             "text": "select"
           }
         ],
-        "answerKey": "B",
+        "answerKey": "C",
         "explanation": "Restart (khởi động lại) là cho máy chạy lại sau khi đã dừng, ví dụ khi chương trình bị treo."
       },
       {
