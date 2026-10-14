@@ -183,7 +183,7 @@ const styles = `
   .sample { white-space: pre-wrap; border-left: 1.5pt solid #999; padding-left: 3mm; }
   .email-task, .email-answers, .email-model, .speaking-part { break-inside: avoid; page-break-inside: avoid; }
   .sample-note { margin-bottom: 4mm; }
-  .transcript p { white-space: pre-line; }
+  .transcript p { white-space: pre-line; break-inside: avoid; page-break-inside: avoid; }
   .word-limit { margin-top: 3mm; }
   @media screen { body { max-width: 182mm; margin: 15mm auto; } .skill + .skill { margin-top: 12mm; } }
 `;
