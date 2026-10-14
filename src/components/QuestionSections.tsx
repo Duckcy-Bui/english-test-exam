@@ -108,6 +108,11 @@ function ListenButton({
   const [error, setError] = useState("");
   const live = useRef(true);
   const playbackToken = useRef(0);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const stopAudio = () => {
+    audioRef.current?.pause();
+    audioRef.current = null;
+  };
   useEffect(() => {
     live.current = true;
     setSupported(
@@ -116,6 +121,7 @@ function ListenButton({
     const otherPlayback = (event: Event) => {
       if ((event as CustomEvent<string>).detail !== key) {
         playbackToken.current++;
+        stopAudio();
         setPlaying(false);
       }
     };
@@ -132,6 +138,7 @@ function ListenButton({
     return () => {
       live.current = false;
       playbackToken.current++;
+      stopAudio();
       window.removeEventListener("english-it-tts-start", otherPlayback);
       if ("speechSynthesis" in window) window.speechSynthesis.cancel();
     };
@@ -139,7 +146,8 @@ function ListenButton({
   useEffect(() => {
     if (disabled && playing) {
       playbackToken.current++;
-      window.speechSynthesis.cancel();
+      stopAudio();
+      if ("speechSynthesis" in window) window.speechSynthesis.cancel();
       setPlaying(false);
     }
   }, [disabled, playing]);
@@ -159,10 +167,16 @@ function ListenButton({
           /* No dialogue is persisted. */
         }
       }
-      const synth = window.speechSynthesis;
       window.dispatchEvent(
         new CustomEvent("english-it-tts-start", { detail: key }),
       );
+      // Ưu tiên file thu sẵn; giọng trình duyệt chỉ là phương án dự phòng.
+      if (playback.audioUrl && (await playRecorded(playback))) return;
+      if (!("speechSynthesis" in window)) {
+        setError("Không phát được bài nghe. Hãy thử trình duyệt khác.");
+        return;
+      }
+      const synth = window.speechSynthesis;
       synth.cancel();
       let voices = synth.getVoices();
       if (!voices.length)
@@ -198,6 +212,29 @@ function ListenButton({
         );
     } finally {
       if (live.current) setLoading(false);
+    }
+  }
+  async function playRecorded(playback: ListeningPlayback): Promise<boolean> {
+    stopAudio();
+    const token = ++playbackToken.current;
+    const audio = new Audio(playback.audioUrl);
+    audioRef.current = audio;
+    audio.onended = () => {
+      if (live.current && token === playbackToken.current) setPlaying(false);
+    };
+    audio.onerror = () => {
+      if (live.current && token === playbackToken.current) {
+        setPlaying(false);
+        setError("Không tải được file âm thanh. Hãy bấm nghe lại.");
+      }
+    };
+    try {
+      await audio.play();
+      if (live.current && token === playbackToken.current) setPlaying(true);
+      return true;
+    } catch {
+      if (audioRef.current === audio) audioRef.current = null;
+      return false;
     }
   }
   function speakLine(
@@ -246,7 +283,6 @@ function ListenButton({
           className="button primary"
           onClick={play}
           disabled={
-            !supported ||
             disabled ||
             loading ||
             playing ||
@@ -267,7 +303,8 @@ function ListenButton({
             className="button ghost"
             onClick={() => {
               playbackToken.current++;
-              window.speechSynthesis.cancel();
+              stopAudio();
+              if ("speechSynthesis" in window) window.speechSynthesis.cancel();
               setPlaying(false);
             }}
           >
@@ -281,12 +318,6 @@ function ListenButton({
           ? `Còn ${remaining ?? 0}/2 lượt nghe. Mỗi lần bấm phát tính một lượt.`
           : "Nghe không giới hạn. Lời thoại hiển thị sau khi nộp bài."}
       </p>
-      {!supported && (
-        <p className="field-error" role="alert">
-          Trình duyệt chưa hỗ trợ giọng đọc. Hãy thử trình duyệt khác để làm
-          Listening.
-        </p>
-      )}
       {error && (
         <p className="field-error" role="alert">
           {error}

@@ -1,5 +1,6 @@
 import "server-only";
-import { authorize } from "@/server/security";
+import { authorize, signListenToken } from "@/server/security";
+import { listeningAudioPath } from "@/server/audio";
 import { getSession } from "@/server/sessions";
 import { failure, json, readBody } from "@/server/http";
 import { AppError } from "@/server/errors";
@@ -36,6 +37,9 @@ export async function POST(request: Request) {
         speakers: part.speakers.map(({ name, voice }) => ({ name, voice })),
         remaining:
           session.mode === "exam" ? 2 - session.listens[part.id] : null,
+        audioUrl: listeningAudioPath(session.exam.unit, part.id)
+          ? `/api/listen/audio?t=${encodeURIComponent(signListenToken(session.id, part.id))}`
+          : undefined,
       },
     });
   } catch (error) {
