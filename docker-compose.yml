@@ -1,0 +1,29 @@
+services:
+  app:
+    build: .
+    image: ${APP_IMAGE:-english-it-exam:local}
+    env_file:
+      - path: ${APP_ENV_FILE:-.env}
+        required: true
+    environment:
+      NODE_ENV: production
+      PORT: "3000"
+      HOSTNAME: 0.0.0.0
+      EXAM_DATA_DIR: /app/data/units
+      RATE_LIMIT_DB: /var/lib/english-it/rate-limits.sqlite
+    ports:
+      - "127.0.0.1:3000:3000"
+    volumes:
+      - quota:/var/lib/english-it
+    restart: unless-stopped
+    init: true
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=64m
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+
+volumes:
+  quota:
