@@ -26,7 +26,8 @@
     "Listening B: acceptedAnswers có biến thể chính tả và mạo từ; một số biến thể không có nguyên văn trong lời thoại.",
     "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
     "Bản r1 (tự soát theo lỗi chung et-lead nêu): định nghĩa A, E, F viết lại để không chứa từ được hỏi hoặc từ của câu khác (cause, solutions, fault, power); R8 bỏ \"connection\" (từ khoá định nghĩa E); R7, R9, R16 đổi ngữ cảnh để không lặp tình huống sao lưu/máy chậm của bài đọc R21–R25 và tiền điện qua đêm của bài đọc R26–R30.",
-    "Bản r1 (theo review chéo của et-author): R8 đổi chứng cứ phỏng đoán (khác R9 đề A); R10 đổi ngữ cảnh USB lạ (khác R15 đề A); R14 đổi ngữ cảnh đồng hồ thông minh (không lặp cue S2); R16 thay phương án nhiễu động từ award bằng danh từ; bài đọc R21–R25 đoạn 4 chuyển sang thì quá khứ; S3 đổi sang sự cố máy in mạng để không lặp Listening A."
+    "Bản r1 (theo review chéo của et-author): R8 đổi chứng cứ phỏng đoán (khác R9 đề A); R10 đổi ngữ cảnh USB lạ (khác R15 đề A); R14 đổi ngữ cảnh đồng hồ thông minh (không lặp cue S2); R16 thay phương án nhiễu động từ award bằng danh từ; bài đọc R21–R25 đoạn 4 chuyển sang thì quá khứ; S3 đổi sang sự cố máy in mạng để không lặp Listening A.",
+    "Audit 8B: R19 thay phương án nhiễu bằng danh từ số nhiều dài tương đương đáp án; L3 nêu rõ thời điểm (trước khi Sophie cùng xem)."
   ],
   "listening": {
     "parts": [
@@ -144,7 +145,7 @@
           {
             "id": "L3",
             "kind": "mcq",
-            "stem": "What hasn't Max checked yet?",
+            "stem": "Before Sophie looks at it with him, what hasn't Max checked yet?",
             "options": [
               {
                 "id": "A",
@@ -708,15 +709,15 @@
         "options": [
           {
             "id": "A",
-            "text": "subjects"
+            "text": "qualifications"
           },
           {
             "id": "B",
-            "text": "bills"
+            "text": "applications"
           },
           {
             "id": "C",
-            "text": "faults"
+            "text": "governments"
           },
           {
             "id": "D",
@@ -724,7 +725,7 @@
           }
         ],
         "answerKey": "D",
-        "explanation": "Responsibility (trách nhiệm, nhiệm vụ) là việc phải làm trong công việc."
+        "explanation": "Responsibility (trách nhiệm, nhiệm vụ) là việc phải làm trong công việc. Qualification là bằng cấp, application là đơn xin hoặc ứng dụng, government là chính phủ: đều không phải việc hằng ngày của người quản trị hệ thống."
       },
       {
         "id": "R20",
