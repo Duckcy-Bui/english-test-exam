@@ -137,6 +137,10 @@ function database(): DatabaseSync {
   }
   return state.etQuotaDb.db;
 }
+/** Open/create the actual quota database so container readiness includes the volume. */
+export function checkQuotaStorage(): void {
+  database().prepare("SELECT 1").get();
+}
 function limit(value: string | undefined, fallback: number): number {
   const parsed = Number(value ?? fallback);
   if (!Number.isSafeInteger(parsed) || parsed < 1)
