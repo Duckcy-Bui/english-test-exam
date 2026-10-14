@@ -25,7 +25,8 @@
     "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại.",
     "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
     "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
-    "Bản r1 (theo review chéo của et-author2): R10 đổi nhiễu 'moved' thành 'moves' (quá khứ cũng hợp lý); R16 đổi sang server để không trùng bộ phương án R17 và tình huống làm việc từ xa của R18; R11 đổi tình huống (trùng Listening A); bài đọc R21–R25 đoạn 3 thay biện pháp copy cả nhóm (trùng Listening B đề A); W33 đổi tình huống và bản dịch; S3 đổi cues sang sự cố không liên quan an toàn (trùng bài R26–R30); S1 câu 1, 2 đổi; email mẫu thêm câu điều kiện loại 1 đúng mẫu; L8, L9, L10 thêm biến thể."
+    "Bản r1 (theo review chéo của et-author2): R10 đổi nhiễu 'moved' thành 'moves' (quá khứ cũng hợp lý); R16 đổi sang server để không trùng bộ phương án R17 và tình huống làm việc từ xa của R18; R11 đổi tình huống (trùng Listening A); bài đọc R21–R25 đoạn 3 thay biện pháp copy cả nhóm (trùng Listening B đề A); W33 đổi tình huống và bản dịch; S3 đổi cues sang sự cố không liên quan an toàn (trùng bài R26–R30); S1 câu 1, 2 đổi; email mẫu thêm câu điều kiện loại 1 đúng mẫu; L8, L9, L10 thêm biến thể.",
+    "Bản r1, đợt 2 (theo audit audit/unit-3-B): R17 thay nhiễu 'VPN' bằng 'dongle'; bài R26–R30 mẹo 3 và R28 viết lại cho chính xác (công ty diệt virus thật không yêu cầu gọi điện từ pop-up trên website); W35 sửa nội dung cho đúng cách tự chỉnh độ sáng."
   ],
   "listening": {
     "parts": [
@@ -686,11 +687,11 @@
           },
           {
             "id": "D",
-            "text": "VPN"
+            "text": "dongle"
           }
         ],
         "answerKey": "A",
-        "explanation": "LAN (mạng cục bộ) nối các máy tính trong một toà nhà hoặc tổ chức để cùng dùng thông tin."
+        "explanation": "LAN (mạng cục bộ) nối các máy tính trong một toà nhà hoặc tổ chức để cùng dùng thông tin, tệp và máy in. GPS, OCR, dongle không phải là mạng."
       },
       {
         "id": "R18",
@@ -914,7 +915,7 @@
         "paragraphs": [
           "1. Look at the address bar. If a website address starts with https, the connection between your browser and the website is encrypted. Never type your card details on a page whose address only starts with http.",
           "2. Keep your browser up to date. Most browsers update themselves automatically, but if yours asks you to restart it, do it as soon as possible.",
-          "3. Be careful with pop-up windows. If a pop-up says that your computer has a virus, close it. Real antivirus programs do not warn you in a browser window.",
+          "3. Be careful with pop-up windows. If a pop-up on a website says that your computer has a virus and asks you to phone a number, close it. Real antivirus companies never ask you to phone them from a pop-up on a website.",
           "4. Use private browsing on shared computers. If you use a private window, the browser does not save your history or your passwords when you close it. However, private browsing does not hide what you do from your employer or your internet provider.",
           "5. Clear your browsing data from time to time. This removes old cookies, which are small files that websites use to remember you. You will need to log in to some websites again afterwards."
         ]
@@ -937,9 +938,9 @@
         {
           "id": "R28",
           "kind": "tf",
-          "statement": "Real antivirus programs warn you about viruses in a browser window.",
+          "statement": "Real antivirus companies sometimes ask you to phone them from a pop-up on a website.",
           "answerKey": "F",
-          "explanation": "Mẹo 3: \"Real antivirus programs do not warn you in a browser window.\""
+          "explanation": "Mẹo 3: \"Real antivirus companies never ask you to phone them from a pop-up on a website.\""
         },
         {
           "id": "R29",
@@ -984,8 +985,8 @@
         },
         {
           "id": "W35",
-          "source": "If the room is dark, the light sensor in the phone makes the screen brighter automatically.",
-          "referenceTranslation": "Nếu phòng tối, cảm biến ánh sáng trong điện thoại sẽ tự động làm màn hình sáng hơn."
+          "source": "If the room is dark, the phone automatically makes the screen less bright.",
+          "referenceTranslation": "Nếu phòng tối, điện thoại sẽ tự động giảm độ sáng màn hình."
         }
       ]
     },
