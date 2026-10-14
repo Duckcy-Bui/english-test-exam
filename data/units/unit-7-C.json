@@ -26,7 +26,8 @@
     "Listening B: acceptedAnswers có biến thể cách viết số và mạo từ; một số biến thể không có nguyên văn trong lời thoại.",
     "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
     "Bản r1 (tự soát theo lỗi chung et-lead nêu): R14 đổi từ được hỏi (detail trùng gốc từ khoá định nghĩa R3) sang dynamic; R15, R18 thay phương án nhiễu detail; R13, R19 bỏ \"code\" (gốc thuật ngữ nối R2); bài đọc R21–R25 và câu R21, R23 bỏ \"tested\" (gốc thuật ngữ nối R1), \"information\", \"properly\", \"details\" (từ khoá định nghĩa R1, R3, R4).",
-    "Bản r1 (theo review chéo của et-author): R30 sửa thành mong muốn của Mr Quang để có căn cứ trực tiếp; R13–R20 thay phương án nhiễu, không dùng đáp án câu này làm nhiễu câu khác; L6 bỏ đáp án quá lỏng, L9 thêm biến thể có \"on\"; email đổi tên dự án ShopApp thành BookIt để không lặp ngữ cảnh cửa hàng trực tuyến."
+    "Bản r1 (theo review chéo của et-author): R30 sửa thành mong muốn của Mr Quang để có căn cứ trực tiếp; R13–R20 thay phương án nhiễu, không dùng đáp án câu này làm nhiễu câu khác; L6 bỏ đáp án quá lỏng, L9 thêm biến thể có \"on\"; email đổi tên dự án ShopApp thành BookIt để không lặp ngữ cảnh cửa hàng trực tuyến.",
+    "Bản r2 (theo et-lead sau AUDIT-OK): S3 nêu rõ cửa hàng ngừng hoạt động từ 8.15 a.m. đến 9.15 a.m. và thêm cue 8.15; R18–R20 thay phương án nhiễu feedback (không đếm được) bằng headset, không đổi đáp án."
   ],
   "listening": {
     "parts": [
@@ -359,7 +360,7 @@
         "kind": "mcq",
         "stem": "Making the app work with a very slow internet connection was a real ______ for the team.",
         "options": [
-          { "id": "A", "text": "feedback" },
+          { "id": "A", "text": "headset" },
           { "id": "B", "text": "challenge" },
           { "id": "C", "text": "schedule" },
           { "id": "D", "text": "purchase" }
@@ -373,7 +374,7 @@
         "stem": "The app crashed because of a ______ in the program, so the developers had to fix it.",
         "options": [
           { "id": "A", "text": "schedule" },
-          { "id": "B", "text": "feedback" },
+          { "id": "B", "text": "headset" },
           { "id": "C", "text": "bug" },
           { "id": "D", "text": "purchase" }
         ],
@@ -385,7 +386,7 @@
         "kind": "mcq",
         "stem": "Finishing the first working version was an important ______ in the project, so the team celebrated.",
         "options": [
-          { "id": "A", "text": "feedback" },
+          { "id": "A", "text": "headset" },
           { "id": "B", "text": "purchase" },
           { "id": "C", "text": "schedule" },
           { "id": "D", "text": "milestone" }
@@ -612,10 +613,11 @@
         "id": "S3",
         "kind": "situation",
         "instructions": "Deal with the situation. Speak for 1–1.5 minutes.",
-        "prompt": "Yesterday your company's online shop stopped working for an hour during a big sale. Your manager asks you what happened. Use the cues to explain the problem and how it was fixed. Use cause + object + to + verb and make + object + verb, and at least two passive sentences (The server was restarted…, The bug was fixed…).",
+        "prompt": "Yesterday your company's online shop stopped working from 8.15 a.m. to 9.15 a.m. during a big sale. Your manager asks you what happened. Use the cues to explain the problem and how it was fixed. Use cause + object + to + verb and make + object + verb, and at least two passive sentences (The server was restarted…, The bug was fixed…).",
         "cues": [
           "8 a.m.: the sale started / ten times more visitors than normal",
           "too many visitors → the server slowed down",
+          "8.15 a.m.: the shop stopped working / customers could not pay",
           "a bug in the payment page → the page reloaded again and again",
           "9.15 a.m.: the server restarted by the IT team",
           "the bug fixed by the developers / an extra server added"
@@ -626,7 +628,7 @@
           "The passive (at least two sentences): The server was restarted at 9.15; The bug was fixed by the developers."
         ],
         "seconds": 90,
-        "sampleAnswer": "Yesterday our big sale started at eight o'clock, and we had ten times more visitors than normal. The large number of visitors caused the server to slow down very quickly. At the same time, there was a bug in the payment page. It made the page reload again and again, so customers couldn't finish their orders. Many of them clicked the button several times, and this caused the server to slow down even more. At nine fifteen, the server was restarted by the IT team, and the shop started working again. Later, the bug was fixed by our developers, and an extra server was added. Next time, I think more servers should be prepared before a big sale."
+        "sampleAnswer": "Yesterday our big sale started at eight o'clock, and we had ten times more visitors than normal. The large number of visitors caused the server to slow down very quickly. At the same time, there was a bug in the payment page. It made the page reload again and again, so customers couldn't finish their orders. At eight fifteen, the shop stopped working completely. Many customers had clicked the button several times, and this had caused the server to slow down even more. At nine fifteen, the server was restarted by the IT team, and the shop started working again. Later, the bug was fixed by our developers, and an extra server was added. Next time, I think more servers should be prepared before a big sale."
       }
     ]
   }
