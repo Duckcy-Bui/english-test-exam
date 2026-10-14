@@ -33,7 +33,7 @@
       {
         "id": "A",
         "instructions": "Listen to the meeting and choose the best answer A, B, C or D (Questions L1–L5).",
-        "context": "Lucy, a marketing manager, and Sam, a software developer, plan their company's stand at a technology fair.",
+        "context": "Lucy, a marketing manager, and Sam, a software developer, talk about an event that their company is preparing for next month.",
         "speakers": [
           {
             "name": "Lucy",
