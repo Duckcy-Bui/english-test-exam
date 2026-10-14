@@ -14,6 +14,7 @@ import { AUDIT_DIR, autoGradedQuestions, parseUnitArg, readJson, unitPath } from
 
 interface BlindFile {
   unit: number;
+  test?: string;
   solver?: string;
   answers: Record<string, string>;
   notes?: Record<string, string>;
@@ -24,12 +25,12 @@ function main() {
   const examPath = examIdx > 0 ? process.argv[examIdx + 1] : undefined;
   const args = process.argv.slice(2).filter((a, i, all) => !a.startsWith("--") && all[i - 1] !== "--exam");
   const partial = process.argv.includes("--partial");
-  const unit = parseUnitArg(args[0]);
-  const blindPath = args[1] ?? join(AUDIT_DIR, `unit-${unit}.blind.json`);
+  const { unit, test } = parseUnitArg(args[0]);
+  const blindPath = args[1] ?? join(AUDIT_DIR, `unit-${unit}-${test}.blind.json`);
 
-  const exam = readJson<UnitExam>(examPath ?? unitPath(unit));
+  const exam = readJson<UnitExam>(examPath ?? unitPath(unit, test));
   const blind = readJson<BlindFile>(blindPath);
-  if (blind.unit !== unit) {
+  if (blind.unit !== unit || (blind.test ?? "A") !== test) {
     console.error(`File giải mù ghi unit = ${blind.unit}, không khớp Unit ${unit}`);
     process.exit(2);
   }
@@ -60,7 +61,7 @@ function main() {
     }
   }
 
-  console.log(`Unit ${unit}: so ${compared} câu, người giải: ${blind.solver ?? "(không ghi)"}`);
+  console.log(`Unit ${unit} đề ${test}: so ${compared} câu, người giải: ${blind.solver ?? "(không ghi)"}`);
   ambiguous.forEach((a) => console.log(`AMBIGUOUS  ${a}`));
   if (missing.length) console.log(`THIẾU  ${missing.join(", ")}`);
   const pass = ambiguous.length === 0 && missing.length === 0;

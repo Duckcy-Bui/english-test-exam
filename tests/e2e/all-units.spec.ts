@@ -4,23 +4,53 @@ import {
   type APIRequestContext,
   type Page,
 } from "@playwright/test";
-import { readFileSync } from "node:fs";
+import { readFileSync, readdirSync } from "node:fs";
 import { basename, join, resolve } from "node:path";
-import { ANSWER_FIELDS, type UnitExam } from "../../src/types/exam";
+import { ANSWER_FIELDS, TEST_IDS, type TestId, type UnitExam } from "../../src/types/exam";
 import {
   emptyAnswers,
   SKILLS,
   type ExamAnswers,
   type ExamResult,
   type ExamSession,
+  type UnitSummary,
 } from "../../src/types/app";
 
 // Deployment must serve the audited data, even when a fixture-only run is also used.
 const exams: UnitExam[] = Array.from({ length: 8 }, (_, index) =>
   JSON.parse(
-    readFileSync(join("data", "units", `unit-${index + 1}.json`), "utf8"),
+    readFileSync(join("data", "units", `unit-${index + 1}-A.json`), "utf8"),
   ),
 );
+const canonicalTests = readdirSync(join("data", "units"))
+  .flatMap((file) => {
+    const match = /^unit-([1-8])-([A-D])\.json$/.exec(file);
+    if (!match) return [];
+    const exam: UnitExam = JSON.parse(
+      readFileSync(join("data", "units", file), "utf8"),
+    );
+    return [{
+      unit: Number(match[1]),
+      testId: match[2] as TestId,
+      source: exam.source,
+    }];
+  })
+  .sort((left, right) =>
+    left.unit - right.unit || TEST_IDS.indexOf(left.testId) - TEST_IDS.indexOf(right.testId),
+  );
+const expectedUnits: UnitSummary[] = exams.map((exam) => {
+  const tests = canonicalTests
+    .filter((test) => test.unit === exam.unit)
+    .map(({ testId, source }) => ({ testId, source }));
+  return {
+    unit: exam.unit,
+    title: exam.unitTitle,
+    available: true,
+    grammarFocus: exam.grammarFocus,
+    tests,
+    testCount: tests.length,
+  };
+});
 const usesFixtures =
   process.env.E2E_DATA_DIR !== undefined &&
   basename(resolve(process.env.E2E_DATA_DIR)) === "fixtures";
@@ -94,6 +124,8 @@ async function authenticate(request: APIRequestContext): Promise<void> {
 function assertMockResult(result: ExamResult, exam: UnitExam): void {
   expect(result.unit).toBe(exam.unit);
   expect(result.unitTitle).toBe(exam.unitTitle);
+  expect(result.testId).toBe(exam.testId);
+  expect(result.source).toBe(exam.source);
   expect(result.mode).toBe("exam");
   expect(result.scope).toBe("full");
   expect(result.mock).toBe(true);
@@ -128,18 +160,11 @@ test.describe("all eight audited Units with AI_MOCK", () => {
       const listResponse = await request.get("/api/units");
       expect(listResponse.status()).toBe(200);
       const { units } = await listResponse.json();
-      expect(units).toEqual(
-        exams.map((unit) => ({
-          unit: unit.unit,
-          title: unit.unitTitle,
-          available: true,
-          grammarFocus: unit.grammarFocus,
-        })),
-      );
+      expect(units).toEqual(expectedUnits);
       assertPrivateFieldsAbsent(units);
 
       const startResponse = await request.post("/api/session", {
-        data: { unit: exam.unit, mode: "exam", scope: "full" },
+        data: { unit: exam.unit, test: exam.testId, mode: "exam", scope: "full" },
       });
       expect(startResponse.status()).toBe(200);
       let session: ExamSession = (await startResponse.json()).session;
@@ -147,6 +172,8 @@ test.describe("all eight audited Units with AI_MOCK", () => {
       const answers = completedAnswers(exam);
       expect(session.exam.unit).toBe(exam.unit);
       expect(session.exam.unitTitle).toBe(exam.unitTitle);
+      expect(session.exam.testId).toBe(exam.testId);
+      expect(session.exam.source).toBe(exam.source);
 
       for (const [index, skill] of SKILLS.entries()) {
         expect(session.activeSkill).toBe(skill);
@@ -230,7 +257,7 @@ test.describe("all eight audited Units with AI_MOCK", () => {
       for (const unit of exams) {
         const card = page.locator(".unit-card").filter({
           has: page.getByRole("link", {
-            name: `Luyện tập Unit ${unit.unit}`,
+            name: `Vào Unit ${unit.unit}`,
             exact: true,
           }),
         });
@@ -243,17 +270,21 @@ test.describe("all eight audited Units with AI_MOCK", () => {
       }
       await page
         .getByRole("link", {
-          name: `Luyện tập Unit ${exam.unit}`,
+          name: `Vào Unit ${exam.unit}`,
           exact: true,
         })
         .click();
       await page.getByRole("button", { name: "Thi thử", exact: true }).click();
       await page
+        .locator(`.test-card[data-test-id="${exam.testId}"]`)
         .getByRole("button", { name: "Thi cả đề", exact: true })
         .click();
       await expect(page).toHaveURL(/\/exam\//);
       await expect(
-        page.getByRole("heading", { name: exam.unitTitle, exact: true }),
+        page.getByRole("heading", {
+          name: `Unit ${exam.unit}: ${exam.unitTitle}`,
+          exact: true,
+        }),
       ).toBeVisible();
       await expect(page.locator("#R1")).toHaveCount(0);
       await expect(page.locator("#W31")).toHaveCount(0);
@@ -274,13 +305,24 @@ test.describe("all eight audited Units with AI_MOCK", () => {
       for (const question of [
         ...exam.reading.grammar,
         ...exam.reading.vocabulary,
-        ...exam.reading.passageMcq.questions,
       ])
         await page
           .locator(
             `input[name="${question.id}"][value="${question.answerKey}"]`,
           )
           .check();
+      await page
+        .getByRole("tab", { name: "Part 2: Đọc hiểu", exact: true })
+        .click();
+      for (const question of exam.reading.passageMcq.questions)
+        await page
+          .locator(
+            `input[name="${question.id}"][value="${question.answerKey}"]`,
+          )
+          .check();
+      await page
+        .getByRole("tab", { name: "Part 2: True/False", exact: true })
+        .click();
       for (const question of exam.reading.passageTrueFalse.questions)
         await page
           .locator("fieldset")

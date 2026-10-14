@@ -13,6 +13,7 @@ dist/
 # copyrighted source material (Pearson PDF, exam photos) stays outside git
 sources/
 *.pdf
+!data/pdf/*.pdf
 *.jpeg
 *.jpg
 

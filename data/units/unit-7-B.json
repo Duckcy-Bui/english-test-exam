@@ -1,0 +1,632 @@
+{
+  "schemaVersion": 1,
+  "unit": 7,
+  "unitTitle": "Development",
+  "testId": "B",
+  "source": "ai",
+  "functions": [
+    "Describing software requirements (Requirements analysis)",
+    "Describing website design and architecture (Website design and architecture)",
+    "Explaining how a program works (Software development)",
+    "Talking about plans and schedules (Project management)"
+  ],
+  "grammarFocus": [
+    "Requirements: should, have to, need to; want + object + to-infinitive",
+    "The passive: be + past participle (is used, was designed, can be viewed)",
+    "Cause and effect in programs: make + object + bare infinitive; cause + object + to-infinitive",
+    "Plans and schedules: plan to, be scheduled to, be due to + infinitive; present continuous for future arrangements"
+  ],
+  "sourceNotes": [
+    "Đề B do AI soạn mới (Giai đoạn 5), cùng khung với đề A nhưng khác toàn bộ bài đọc, lời thoại, câu dịch, đề email và đề nói.",
+    "R1–R5: năm thuật ngữ khác hẳn đề A. Định nghĩa viết gần Workbook Unit 7: release candidate (7A, tr. 67), pop-up menu (7B, tr. 68), search ranking, PHP, navigation chart (7D, tr. 69). Định nghĩa thừa là của robot (7C, tr. 68); từ này không dùng ở phần khác của đề.",
+    "R6–R12: yêu cầu (R6–R7), câu bị động (R8–R9), make/cause (R10–R11), lịch trình be scheduled to (R12).",
+    "R13–R20: interview, calculate (7B, tr. 67–68), contact, purchase, private, versatile, content (7D, tr. 68–69), instruction (7C, tr. 68). Không trùng từ được hỏi ở R13–R20 đề A.",
+    "Bài đọc R21–R25 (yêu cầu cho ứng dụng thuê xe đạp) và R26–R30 (chương trình của chuông cửa có camera) viết mới. Không mô tả phiên bản gần hoàn thiện, vị trí trong kết quả tìm kiếm, menu bật lên, ngôn ngữ tạo trang web hay sơ đồ đường đi để không diễn đạt lại định nghĩa câu nối.",
+    "Listening A (cập nhật tiến độ ứng dụng đặt bánh) theo bài Project management; Listening B (chương trình bãi đỗ xe thông minh) theo bài Software development. Viết mới, không chép Audio script.",
+    "Listening B: acceptedAnswers có biến thể cách viết số và mạo từ; một số biến thể không có nguyên văn trong lời thoại.",
+    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
+    "Bản r1 (tự soát theo lỗi chung et-lead nêu): R6 đổi \"search box\" để không trùng gốc thuật ngữ nối R3 (search ranking); R12 và bài đọc R21–R25, câu R24 bỏ từ \"version\" (từ khoá định nghĩa R1) và \"list\" (từ khoá định nghĩa R2); R23, R24 bỏ \"language\" (từ khoá định nghĩa R4).",
+    "Bản r1 (theo review chéo của et-author): R24 hỏi trực tiếp tính năng quản lý quyết định không cần; L6, L9, L10 thêm biến thể (turns red, phone app, 11 p m…); email mẫu thêm một câu bị động riêng."
+  ],
+  "listening": {
+    "parts": [
+      {
+        "id": "A",
+        "instructions": "Listen to the phone call and choose the best answer A, B, C or D (Questions L1–L5).",
+        "context": "Nadia, a project manager at a software company, gives Mr Grant, the owner of a chain of bakeries, an update on his new ordering app.",
+        "speakers": [
+          { "name": "Grant", "voice": "male" },
+          { "name": "Nadia", "voice": "female" }
+        ],
+        "script": [
+          { "speaker": "Grant", "text": "Hi Nadia. How's the ordering app going?" },
+          { "speaker": "Nadia", "text": "Very well, thanks. The design stage finished last week, and the programmers are working on the order form now." },
+          { "speaker": "Grant", "text": "Good. When can I see something?" },
+          { "speaker": "Nadia", "text": "We're due to show you the first version on the twelfth of May. Are you free that afternoon?" },
+          { "speaker": "Grant", "text": "Let me check. Yes, I'm free after two." },
+          { "speaker": "Nadia", "text": "Great. Then we're meeting at your office at half past two. After that, we plan to start testing with ten of your regular customers." },
+          { "speaker": "Grant", "text": "Only ten customers? Why not more?" },
+          { "speaker": "Nadia", "text": "Ten is enough for the first test. We need to find the biggest problems quickly. The full testing stage is scheduled to finish at the end of June." },
+          { "speaker": "Grant", "text": "And when will the app go live?" },
+          { "speaker": "Nadia", "text": "It's scheduled to go live on the first of July." },
+          { "speaker": "Grant", "text": "Hmm. That's later than I hoped. We're opening our new shop in Leeds on the twentieth of June, and I wanted customers to use the app there." },
+          { "speaker": "Nadia", "text": "I understand. If you want, we can add two more programmers, but that would cost an extra three thousand pounds." },
+          { "speaker": "Grant", "text": "No, I don't want to spend more money. Let's keep the July date." }
+        ],
+        "questions": [
+          {
+            "id": "L1",
+            "kind": "mcq",
+            "stem": "What are the programmers working on now?",
+            "options": [
+              { "id": "A", "text": "The design of the app" },
+              { "id": "B", "text": "The order form" },
+              { "id": "C", "text": "The payment system" },
+              { "id": "D", "text": "The testing stage" }
+            ],
+            "answerKey": "B",
+            "explanation": "Nadia nói giai đoạn thiết kế đã xong tuần trước \"and the programmers are working on the order form now\"."
+          },
+          {
+            "id": "L2",
+            "kind": "mcq",
+            "stem": "When is Nadia due to show Mr Grant the first version?",
+            "options": [
+              { "id": "A", "text": "On 12 May" },
+              { "id": "B", "text": "On 20 June" },
+              { "id": "C", "text": "At the end of June" },
+              { "id": "D", "text": "On 1 July" }
+            ],
+            "answerKey": "A",
+            "explanation": "\"We're due to show you the first version on the twelfth of May\". 20/6 là ngày mở cửa hàng mới; cuối tháng 6 kết thúc kiểm thử; 1/7 là ngày ra mắt."
+          },
+          {
+            "id": "L3",
+            "kind": "mcq",
+            "stem": "Who will test the app first?",
+            "options": [
+              { "id": "A", "text": "Two new programmers" },
+              { "id": "B", "text": "Staff at the new shop in Leeds" },
+              { "id": "C", "text": "Ten regular customers" },
+              { "id": "D", "text": "Mr Grant and his managers" }
+            ],
+            "answerKey": "C",
+            "explanation": "\"we plan to start testing with ten of your regular customers\"."
+          },
+          {
+            "id": "L4",
+            "kind": "mcq",
+            "stem": "Why is Mr Grant unhappy about the date when the app goes live?",
+            "options": [
+              { "id": "A", "text": "He is going on holiday in July." },
+              { "id": "B", "text": "His customers asked for the app in May." },
+              { "id": "C", "text": "The testing stage will cost too much." },
+              { "id": "D", "text": "His new shop opens before the app is ready." }
+            ],
+            "answerKey": "D",
+            "explanation": "Cửa hàng mới ở Leeds mở ngày 20/6, trước ngày ra mắt ứng dụng 1/7, mà ông muốn khách dùng ứng dụng ở đó."
+          },
+          {
+            "id": "L5",
+            "kind": "mcq",
+            "stem": "What does Mr Grant decide?",
+            "options": [
+              { "id": "A", "text": "To keep the July date" },
+              { "id": "B", "text": "To add two more programmers" },
+              { "id": "C", "text": "To pay an extra £3,000" },
+              { "id": "D", "text": "To open the shop in July" }
+            ],
+            "answerKey": "A",
+            "explanation": "Ông không muốn trả thêm 3.000 bảng để thuê thêm lập trình viên: \"Let's keep the July date\"."
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "instructions": "Listen to the talk and answer the questions. Write NO MORE THAN THREE WORDS for each answer (Questions L6–L10).",
+        "context": "Marco, a software developer, explains how the program for a smart car park works.",
+        "speakers": [{ "name": "Marco", "voice": "male" }],
+        "script": [
+          { "speaker": "Marco", "text": "Hello, everyone. I'm going to explain how our smart car park program works. There's a sensor above each parking space. When a car parks in a space, the sensor makes the light above it turn red. When the space is empty, the light is green." },
+          { "speaker": "Marco", "text": "At the entrance, a large screen shows how many spaces are free on each level. The program updates this number every ten seconds. If all the spaces on one level are full, the program causes the barrier to that level to stay closed, so drivers go straight up to the next level." },
+          { "speaker": "Marco", "text": "Drivers pay with the app on their phones. When a driver pays, the app makes the exit barrier open automatically, so nobody needs a paper ticket." },
+          { "speaker": "Marco", "text": "One more thing. After eleven o'clock at night, the program causes the lights in empty areas to switch off, and this saves a lot of electricity. Are there any questions?" }
+        ],
+        "questions": [
+          {
+            "id": "L6",
+            "kind": "short",
+            "stem": "What colour is the light above a space when a car is parked there?",
+            "maxWords": 3,
+            "acceptedAnswers": ["red", "it is red", "it's red", "red light", "it turns red", "turns red"],
+            "explanation": "\"When a car parks in a space, the sensor makes the light above it turn red.\""
+          },
+          {
+            "id": "L7",
+            "kind": "short",
+            "stem": "How often does the program update the number of free spaces?",
+            "maxWords": 3,
+            "acceptedAnswers": ["every ten seconds", "every 10 seconds", "ten seconds", "10 seconds"],
+            "explanation": "\"The program updates this number every ten seconds.\""
+          },
+          {
+            "id": "L8",
+            "kind": "short",
+            "stem": "What stays closed when all the spaces on a level are full?",
+            "maxWords": 3,
+            "acceptedAnswers": ["the barrier", "barrier", "its barrier", "the level barrier"],
+            "explanation": "\"the program causes the barrier to that level to stay closed\"."
+          },
+          {
+            "id": "L9",
+            "kind": "short",
+            "stem": "What do drivers use to pay?",
+            "maxWords": 3,
+            "acceptedAnswers": ["the app", "app", "an app", "their phones", "phones", "the phone app", "phone app", "their phone", "mobile app", "the mobile app"],
+            "explanation": "\"Drivers pay with the app on their phones.\""
+          },
+          {
+            "id": "L10",
+            "kind": "short",
+            "stem": "After what time do the lights in empty areas switch off?",
+            "maxWords": 3,
+            "acceptedAnswers": ["eleven o'clock", "eleven", "11", "11 o'clock", "11 pm", "11pm", "eleven pm", "eleven at night", "11 p m", "eleven p m", "11 at night"],
+            "explanation": "\"After eleven o'clock at night, the program causes the lights in empty areas to switch off\"."
+          }
+        ]
+      }
+    ]
+  },
+  "reading": {
+    "matching": {
+      "instructions": "Match the terms (1–5) with the correct definitions (A–F). There is one extra definition that you do not need (Questions 1–5).",
+      "definitions": [
+        { "id": "A", "text": "A position in the results produced by a search engine." },
+        { "id": "B", "text": "A machine that can move and do some of the work of a person, usually controlled by a computer." },
+        { "id": "C", "text": "A beta version of software that could become the final product if no serious problems are found." },
+        { "id": "D", "text": "A computer language first designed to produce web pages that change as a result of what the user does." },
+        { "id": "E", "text": "A list of things you can ask a computer to do, which can appear suddenly on the screen." },
+        { "id": "F", "text": "A simple picture or plan that shows which way you need to go to move from one place to another." }
+      ],
+      "items": [
+        { "id": "R1", "term": "Release candidate", "answerKey": "C", "explanation": "Release candidate (bản ứng viên phát hành) là bản beta có thể trở thành sản phẩm cuối cùng nếu không phát hiện lỗi nghiêm trọng." },
+        { "id": "R2", "term": "Pop-up menu", "answerKey": "E", "explanation": "Pop-up menu (menu bật lên) là danh sách lệnh xuất hiện bất ngờ trên màn hình khi đang dùng máy." },
+        { "id": "R3", "term": "Search ranking", "answerKey": "A", "explanation": "Search ranking (thứ hạng tìm kiếm) là vị trí trong kết quả do công cụ tìm kiếm trả về." },
+        { "id": "R4", "term": "PHP", "answerKey": "D", "explanation": "PHP là ngôn ngữ máy tính ban đầu được thiết kế để tạo trang web thay đổi theo thao tác của người dùng." },
+        { "id": "R5", "term": "Navigation chart", "answerKey": "F", "explanation": "Navigation chart (sơ đồ điều hướng) là hình hoặc bản vẽ đơn giản chỉ đường đi từ chỗ này sang chỗ khác. Định nghĩa B là của robot, không có trong danh sách thuật ngữ." }
+      ]
+    },
+    "grammar": [
+      {
+        "id": "R6",
+        "kind": "mcq",
+        "stem": "The client wants us ______ a contact form to every page of the website.",
+        "options": [
+          { "id": "A", "text": "add" },
+          { "id": "B", "text": "adding" },
+          { "id": "C", "text": "to add" },
+          { "id": "D", "text": "added" }
+        ],
+        "answerKey": "C",
+        "explanation": "Nêu yêu cầu: want + tân ngữ + to-infinitive: \"wants us to add\"."
+      },
+      {
+        "id": "R7",
+        "kind": "mcq",
+        "stem": "Every user ______ to change their password every three months.",
+        "options": [
+          { "id": "A", "text": "must" },
+          { "id": "B", "text": "has" },
+          { "id": "C", "text": "should" },
+          { "id": "D", "text": "can" }
+        ],
+        "answerKey": "B",
+        "explanation": "Chỉ \"have to\" đi với \"to\": \"has to change\" (phải đổi). \"must\", \"should\", \"can\" là động từ khuyết thiếu, theo sau là động từ nguyên mẫu không có \"to\"."
+      },
+      {
+        "id": "R8",
+        "kind": "mcq",
+        "stem": "All customer payments ______ by a secure system.",
+        "options": [
+          { "id": "A", "text": "process" },
+          { "id": "B", "text": "are processing" },
+          { "id": "C", "text": "processed" },
+          { "id": "D", "text": "are processed" }
+        ],
+        "answerKey": "D",
+        "explanation": "Thanh toán được hệ thống xử lý (có \"by\" chỉ tác nhân) nên dùng bị động hiện tại: are + V3 (are processed)."
+      },
+      {
+        "id": "R9",
+        "kind": "mcq",
+        "stem": "The app ______ by users from our website or from the app store.",
+        "options": [
+          { "id": "A", "text": "can be downloaded" },
+          { "id": "B", "text": "can download" },
+          { "id": "C", "text": "can downloaded" },
+          { "id": "D", "text": "can be download" }
+        ],
+        "answerKey": "A",
+        "explanation": "Bị động với động từ khuyết thiếu: can + be + V3 (can be downloaded). Ứng dụng không tự tải về được nên không dùng chủ động \"can download\"."
+      },
+      {
+        "id": "R10",
+        "kind": "mcq",
+        "stem": "A bug in the last update made the screen ______ black.",
+        "options": [
+          { "id": "A", "text": "to go" },
+          { "id": "B", "text": "go" },
+          { "id": "C", "text": "going" },
+          { "id": "D", "text": "gone" }
+        ],
+        "answerKey": "B",
+        "explanation": "make + tân ngữ + động từ nguyên mẫu không \"to\": \"made the screen go black\"."
+      },
+      {
+        "id": "R11",
+        "kind": "mcq",
+        "stem": "Heavy traffic on the server caused the website ______ very slowly.",
+        "options": [
+          { "id": "A", "text": "load" },
+          { "id": "B", "text": "loading" },
+          { "id": "C", "text": "loaded" },
+          { "id": "D", "text": "to load" }
+        ],
+        "answerKey": "D",
+        "explanation": "cause + tân ngữ + to-infinitive: \"caused the website to load very slowly\"."
+      },
+      {
+        "id": "R12",
+        "kind": "mcq",
+        "stem": "We ______ scheduled to launch the new app next Tuesday.",
+        "options": [
+          { "id": "A", "text": "are" },
+          { "id": "B", "text": "have" },
+          { "id": "C", "text": "do" },
+          { "id": "D", "text": "will" }
+        ],
+        "answerKey": "A",
+        "explanation": "Lịch trình: be scheduled to + V (We are scheduled to launch…)."
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "R13",
+        "kind": "mcq",
+        "stem": "Before writing the requirements, the analyst ______ ten users about their daily work.",
+        "options": [
+          { "id": "A", "text": "purchased" },
+          { "id": "B", "text": "calculated" },
+          { "id": "C", "text": "interviewed" },
+          { "id": "D", "text": "debugged" }
+        ],
+        "answerKey": "C",
+        "explanation": "Interview (phỏng vấn) là đặt câu hỏi trong một buổi gặp để tìm hiểu thông tin."
+      },
+      {
+        "id": "R14",
+        "kind": "mcq",
+        "stem": "This spreadsheet can ______ how long each stage of the project will take.",
+        "options": [
+          { "id": "A", "text": "calculate" },
+          { "id": "B", "text": "purchase" },
+          { "id": "C", "text": "contact" },
+          { "id": "D", "text": "approve" }
+        ],
+        "answerKey": "A",
+        "explanation": "Calculate (tính toán) là dùng con số để tìm ra chi phí hoặc thời gian."
+      },
+      {
+        "id": "R15",
+        "kind": "mcq",
+        "stem": "If you have a problem with your order, please ______ our support team by email.",
+        "options": [
+          { "id": "A", "text": "purchase" },
+          { "id": "B", "text": "contact" },
+          { "id": "C", "text": "calculate" },
+          { "id": "D", "text": "interview" }
+        ],
+        "answerKey": "B",
+        "explanation": "Contact (liên hệ) là viết thư hoặc gọi điện cho ai đó."
+      },
+      {
+        "id": "R16",
+        "kind": "mcq",
+        "stem": "Customers can ______ concert tickets online and print them at home.",
+        "options": [
+          { "id": "A", "text": "interview" },
+          { "id": "B", "text": "contact" },
+          { "id": "C", "text": "calculate" },
+          { "id": "D", "text": "purchase" }
+        ],
+        "answerKey": "D",
+        "explanation": "Purchase (mua) là từ trang trọng của buy."
+      },
+      {
+        "id": "R17",
+        "kind": "mcq",
+        "stem": "Your password is ______ information, so never share it with anyone.",
+        "options": [
+          { "id": "A", "text": "private" },
+          { "id": "B", "text": "public" },
+          { "id": "C", "text": "dynamic" },
+          { "id": "D", "text": "versatile" }
+        ],
+        "answerKey": "A",
+        "explanation": "Private (riêng tư, bí mật) là thông tin cá nhân không để người khác biết. Public là công khai, trái nghĩa."
+      },
+      {
+        "id": "R18",
+        "kind": "mcq",
+        "stem": "This laptop is very ______: you can use it as a tablet, a notebook or a drawing board.",
+        "options": [
+          { "id": "A", "text": "private" },
+          { "id": "B", "text": "public" },
+          { "id": "C", "text": "versatile" },
+          { "id": "D", "text": "viewable" }
+        ],
+        "answerKey": "C",
+        "explanation": "Versatile (đa năng) là có nhiều công dụng khác nhau."
+      },
+      {
+        "id": "R19",
+        "kind": "mcq",
+        "stem": "The website looks good, but the ______ is out of date: some of the prices are from last year.",
+        "options": [
+          { "id": "A", "text": "challenge" },
+          { "id": "B", "text": "content" },
+          { "id": "C", "text": "combination" },
+          { "id": "D", "text": "programmer" }
+        ],
+        "answerKey": "B",
+        "explanation": "Content (nội dung) là thông tin chứa trong trang web, tách khỏi phần mềm vận hành trang web."
+      },
+      {
+        "id": "R20",
+        "kind": "mcq",
+        "stem": "The program stops because one ______ in the code tells the computer to divide a number by zero.",
+        "options": [
+          { "id": "A", "text": "challenge" },
+          { "id": "B", "text": "purchase" },
+          { "id": "C", "text": "combination" },
+          { "id": "D", "text": "instruction" }
+        ],
+        "answerKey": "D",
+        "explanation": "Instruction (lệnh) là câu lệnh cho máy tính biết phải làm gì."
+      }
+    ],
+    "passageMcq": {
+      "instructions": "Read the passage and choose the best answer A, B, C or D (Questions 21–25).",
+      "passage": {
+        "title": "Requirements for the CityBikes App",
+        "paragraphs": [
+          "CityBikes rents bicycles to the public from forty stations in Hue. At the moment, customers rent bikes with a plastic card at each station, but the cards are often lost, and the machines at the stations are getting old. The company has asked a software team to build a mobile app instead. Before the team starts writing any code, an analyst called Linh meets the managers and some customers to find out what the app should do.",
+          "The managers want customers to rent a bike by scanning a code on the bike with their phone. Customers have to create an account and add a bank card before their first ride. The app should also show the nearest stations and the number of bikes that are available at each one.",
+          "Customers asked for some other features. Many of them want the app to show how far they have cycled. Tourists said that the app needs to work in English, Vietnamese and Korean. One customer also asked for a dark mode for night riding, but the managers decided that this is not necessary at the beginning.",
+          "The managers also have one important rule: the app has to stop a customer from renting a second bike before the first one is returned. Linh will write the requirements document this week and send it to the managers by Friday, and the managers need to accept it before any code is written."
+        ]
+      },
+      "questions": [
+        {
+          "id": "R21",
+          "kind": "mcq",
+          "stem": "Why does CityBikes want an app?",
+          "options": [
+            { "id": "A", "text": "Tourists cannot find the stations." },
+            { "id": "B", "text": "Cards are often lost and the station machines are old." },
+            { "id": "C", "text": "The company is opening forty new stations." },
+            { "id": "D", "text": "Customers want to buy bikes online." }
+          ],
+          "answerKey": "B",
+          "explanation": "Đoạn 1: \"the cards are often lost, and the machines at the stations are getting old\"."
+        },
+        {
+          "id": "R22",
+          "kind": "mcq",
+          "stem": "How will customers rent a bike with the app?",
+          "options": [
+            { "id": "A", "text": "By scanning a code on the bike" },
+            { "id": "B", "text": "By showing a plastic card" },
+            { "id": "C", "text": "By phoning the station" },
+            { "id": "D", "text": "By typing the station name" }
+          ],
+          "answerKey": "A",
+          "explanation": "Đoạn 2: \"The managers want customers to rent a bike by scanning a code on the bike with their phone.\""
+        },
+        {
+          "id": "R23",
+          "kind": "mcq",
+          "stem": "What do customers have to do before their first ride?",
+          "options": [
+            { "id": "A", "text": "Visit the company office" },
+            { "id": "B", "text": "Pay a deposit" },
+            { "id": "C", "text": "Create an account and add a bank card" },
+            { "id": "D", "text": "Return their plastic card" }
+          ],
+          "answerKey": "C",
+          "explanation": "Đoạn 2: \"Customers have to create an account and add a bank card before their first ride.\""
+        },
+        {
+          "id": "R24",
+          "kind": "mcq",
+          "stem": "Which feature did the managers decide is not necessary at the beginning?",
+          "options": [
+            { "id": "A", "text": "The number of bikes at each station" },
+            { "id": "B", "text": "Korean" },
+            { "id": "C", "text": "The distance that a customer has cycled" },
+            { "id": "D", "text": "A dark mode for night riding" }
+          ],
+          "answerKey": "D",
+          "explanation": "Đoạn 3: quản lý quyết định chế độ tối \"is not necessary at the beginning\"."
+        },
+        {
+          "id": "R25",
+          "kind": "mcq",
+          "stem": "What important rule do the managers have?",
+          "options": [
+            { "id": "A", "text": "Customers must return bikes before ten o'clock." },
+            { "id": "B", "text": "A customer cannot rent a second bike before returning the first." },
+            { "id": "C", "text": "Tourists have to pay more than local customers." },
+            { "id": "D", "text": "Each station can only have ten bikes." }
+          ],
+          "answerKey": "B",
+          "explanation": "Đoạn 4: \"the app has to stop a customer from renting a second bike before the first one is returned\"."
+        }
+      ]
+    },
+    "passageTrueFalse": {
+      "instructions": "Read the passage and write T (True) or F (False) (Questions 26–30).",
+      "passage": {
+        "title": "How the SmartBell Works",
+        "paragraphs": [
+          "SmartBell is a video doorbell that was designed by a small company in Bristol. It is connected to the home Wi-Fi network, and its program is updated automatically every month.",
+          "When a visitor presses the button, the program makes the camera start recording and sends a message to the owner's phone. The owner can then speak to the visitor through the app, even when he or she is at work. If nobody answers within thirty seconds, the program causes the doorbell to play a short recorded message.",
+          "At night, a motion sensor makes a small light switch on when someone walks near the door. However, the light does not switch on during the day. All the videos are stored online for fourteen days, and then they are deleted.",
+          "Last year, a mistake in an update caused some doorbells to restart every hour. Customers were not happy, but the company fixed the problem within two days and sent a new update to every doorbell."
+        ]
+      },
+      "questions": [
+        {
+          "id": "R26",
+          "kind": "tf",
+          "statement": "The SmartBell program is updated automatically every month.",
+          "answerKey": "T",
+          "explanation": "Đoạn 1: \"its program is updated automatically every month\"."
+        },
+        {
+          "id": "R27",
+          "kind": "tf",
+          "statement": "During the day, the light switches on when someone walks near the door.",
+          "answerKey": "F",
+          "explanation": "Đoạn 3: \"the light does not switch on during the day\"."
+        },
+        {
+          "id": "R28",
+          "kind": "tf",
+          "statement": "The videos are stored online for one month.",
+          "answerKey": "F",
+          "explanation": "Đoạn 3: video được lưu \"for fourteen days, and then they are deleted\"."
+        },
+        {
+          "id": "R29",
+          "kind": "tf",
+          "statement": "A mistake in an update caused some doorbells to restart every hour.",
+          "answerKey": "T",
+          "explanation": "Đoạn 4: \"a mistake in an update caused some doorbells to restart every hour\"."
+        },
+        {
+          "id": "R30",
+          "kind": "tf",
+          "statement": "The company needed more than a week to fix the problem.",
+          "answerKey": "F",
+          "explanation": "Đoạn 4: công ty \"fixed the problem within two days\"."
+        }
+      ]
+    }
+  },
+  "writing": {
+    "translation": {
+      "instructions": "Translate these sentences into Vietnamese (Questions 31–35).",
+      "items": [
+        {
+          "id": "W31",
+          "source": "The release candidate will be given to a small group of customers next week.",
+          "referenceTranslation": "Bản ứng viên phát hành sẽ được giao cho một nhóm nhỏ khách hàng vào tuần tới."
+        },
+        {
+          "id": "W32",
+          "source": "Our manager wants the website to load in less than two seconds.",
+          "referenceTranslation": "Quản lý của chúng tôi muốn trang web tải xong trong vòng chưa đến hai giây."
+        },
+        {
+          "id": "W33",
+          "source": "Entering a wrong password three times causes the account to lock for fifteen minutes.",
+          "referenceTranslation": "Nhập sai mật khẩu ba lần sẽ khiến tài khoản bị khoá trong mười lăm phút."
+        },
+        {
+          "id": "W34",
+          "source": "We are scheduled to present the new design to the client on Friday afternoon.",
+          "referenceTranslation": "Theo lịch, chúng tôi sẽ trình bày thiết kế mới cho khách hàng vào chiều thứ Sáu."
+        },
+        {
+          "id": "W35",
+          "source": "Users have to enter their email address before they can download the free guide.",
+          "referenceTranslation": "Người dùng phải nhập địa chỉ email trước khi có thể tải hướng dẫn miễn phí."
+        }
+      ]
+    },
+    "email": {
+      "id": "W-EMAIL",
+      "recipient": "Anna",
+      "task": "You are a web developer. Anna, the new marketing assistant, needs to publish a news article on the company website for the first time. Write an email to Anna explaining how to do it, using the notes below. In your email you must use:\n- at least two of should, have to and need to;\n- at least one passive sentence (… is shown…, … can be found…);\n- be due to or be scheduled to at least once.\nFollow the standard layout for an email giving instructions: From / To / Date / Subject, a greeting, It should be quite easy to …, the steps with First / Then / Next / After that / Finally, a reminder (Don't forget to … when you've finished.), then Best wishes and your name, position and department.\nWrite 80–100 words (do not count the From, To, Date and Subject lines).",
+      "bullets": [
+        "log in to the website's admin page",
+        "click 'New article' / type the title and the text",
+        "add a photo / the photo has to be smaller than 2 MB",
+        "choose the 'News' category",
+        "click 'Preview' / check the article on a phone",
+        "click 'Publish' / the article: scheduled to appear on the home page at 9 a.m. tomorrow",
+        "reminder: log out of the admin page"
+      ],
+      "wordRange": [80, 100],
+      "targetGrammar": [
+        "Requirements: should, have to, need to (at least two)",
+        "The passive (at least one): is shown, can be found, is published",
+        "Plans and schedules: be due to / be scheduled to + infinitive"
+      ],
+      "modelAnswer": "From: Hoang Gia Huy\nTo: Anna\nDate: 2nd June\nSubject: Publishing a news article\n\nHi Anna,\n\nIt should be quite easy to publish your article.\nFirst, log in to the admin page.\nThen, click 'New article' and type the title and text.\nNext, add a photo. It has to be under 2 MB.\nAfter that, choose 'News' and click 'Preview'. You should check it on a phone.\nFinally, click 'Publish'. The article is added to the News list and is scheduled to appear on the home page at 9 a.m. tomorrow.\nDon't forget to log out of the admin page when you've finished.\n\nBest wishes,\nHoang Gia Huy\nWeb Developer\nIT Department"
+    }
+  },
+  "speaking": {
+    "parts": [
+      {
+        "id": "S1",
+        "kind": "questions",
+        "instructions": "Answer the three questions. Speak for 30–45 seconds for each question.",
+        "questions": [
+          "Your university wants a new app for booking study rooms in the library. What should the app do? Use should, have to, need to or want + object + to (I want the app to…).",
+          "Describe how your university's online learning system is used. Use at least two passive sentences (Lecture notes are uploaded…, Homework is submitted…, Marks can be seen…).",
+          "Think about a project or assignment that you have to finish this term. Talk about the deadlines and your plans. Use be due to, be scheduled to, plan to or the present continuous for future arrangements."
+        ],
+        "secondsPerQuestion": 45
+      },
+      {
+        "id": "S2",
+        "kind": "explain",
+        "instructions": "Explain the structure of a website. Speak for 1–1.5 minutes.",
+        "prompt": "You designed a website for a new restaurant. Explain to the restaurant owner how the website is organised, using the cues. Use at least four passive sentences (is linked to, is updated, can be booked, are uploaded, is answered).",
+        "cues": [
+          "home page → linked to four sections: Menu, Book a Table, Photos, Contact",
+          "Menu: updated by the chef every week",
+          "Book a Table: tables booked online, confirmation sent by email",
+          "Photos: uploaded by staff after special events",
+          "Contact: form answered within 24 hours"
+        ],
+        "requiredGrammar": [
+          "The passive (at least four sentences): The home page is linked to…; The menu is updated…; Tables can be booked…; Photos are uploaded…"
+        ],
+        "seconds": 90,
+        "sampleAnswer": "Let me show you how your website is organised. Everything starts on the home page, which is linked to four main sections: Menu, Book a Table, Photos and Contact. The Menu section is updated by your chef every week, so customers always see the latest dishes. In the Book a Table section, tables can be booked online at any time, and a confirmation is sent to the customer by email. The Photos section is for special events. New photos are uploaded by your staff after each event, so the page always looks fresh. Finally, there's the Contact page. It has a simple form, and every message is answered within twenty-four hours. The website can also be viewed on phones, because most customers look for restaurants on their mobiles."
+      },
+      {
+        "id": "S3",
+        "kind": "situation",
+        "instructions": "Deal with the situation. Speak for 1–1.5 minutes.",
+        "prompt": "You are a systems analyst. Yesterday you met the manager of a language centre to discuss a new app for students. Now report the requirements to your development team, using the cues. Use should, have to and need to, and want + object + to-infinitive at least twice (The manager wants the app to…, Teachers want students to…).",
+        "cues": [
+          "students: check their timetable and room numbers",
+          "teachers: upload homework / students submit it in the app",
+          "manager: students pay course fees online",
+          "the app: must work in Vietnamese and English",
+          "deadline: first version ready in three months"
+        ],
+        "requiredGrammar": [
+          "should, have to, need to for requirements",
+          "want + object + to-infinitive (at least twice): The manager wants students to pay…; Teachers want the app to…"
+        ],
+        "seconds": 90,
+        "sampleAnswer": "Yesterday I met the manager of the language centre, and here are the main requirements for the new app. First, students need to check their timetable and room numbers, so the app should show this information on the first screen. Second, the teachers want the app to manage homework. Teachers want to upload homework, and they want students to submit it in the app, not by email. Third, the manager wants students to pay their course fees online, so we have to include a secure payment system. The app also has to work in both Vietnamese and English. Finally, the manager wants us to deliver the first version in three months, so we need to plan carefully and start next week."
+      }
+    ]
+  }
+}

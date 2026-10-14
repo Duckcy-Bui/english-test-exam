@@ -1,0 +1,1079 @@
+{
+  "schemaVersion": 1,
+  "unit": 2,
+  "unitTitle": "IT systems",
+  "testId": "C",
+  "source": "ai",
+  "functions": [
+    "Giving hardware specifications (System specifications)",
+    "Giving instructions for using a GUI (GUI operations)",
+    "Describing different multimedia types (Multimedia hardware)",
+    "Explaining OS installation (Operating systems)"
+  ],
+  "grammarFocus": [
+    "Large and small numbers: prefixes kilo-, mega-, giga-, tera-, milli-, micro-, nano-; saying large numbers (two million five hundred thousand) and decimals with 'point' (4.2 = four point two)",
+    "Giving instructions: imperatives; softeners (could you, can you, just); sequencers (first, then, next, after that, finally)",
+    "Sentences with two objects: verb + object + preposition + object (plug the cable into the socket, take the DVD out of the drive)",
+    "Reason and purpose: for + noun phrase; so that + clause; to-infinitive; because + clause"
+  ],
+  "sourceNotes": [
+    "Đề C Unit 2, AI soạn mới theo khung đề và quy tắc 1–15; không lặp bài đọc, lời thoại, tình huống, câu dịch, đề email và đề nói của đề A và đề B.",
+    "R1–R5: thuật ngữ và định nghĩa lấy gần nguyên văn Workbook Unit 2 Part 1 (2A, 2C, 2D); định nghĩa thừa (socket) lấy từ Workbook 2D. Không trùng thuật ngữ câu nối với đề A, đề B.",
+    "R13–R20: từ vựng lấy từ Workbook Unit 2 Part 1 (2A, 2B, 2C). R6, R7 kiểm Language box \"Large and small numbers\" (giáo trình trang sách 12).",
+    "Bài đọc R21–R25 (trường học chuyển sang hệ điều hành nguồn mở, lấy ý từ Business matters trang sách 19) và R26–R30 (hướng dẫn chọn tai nghe) viết mới; không dùng thuật ngữ câu nối và không diễn đạt lại định nghĩa của chúng.",
+    "Listening A: khách hàng đặt máy tính dựng video theo cấu hình (System specifications). Listening B: video hướng dẫn chụp màn hình (GUI operations). Không chép Audio script.",
+    "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại.",
+    "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
+    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
+    "Bản r1 (tự soát theo nhắc của et-lead): R10 đổi 'cable' thành 'headphones', R14 và R15 thay nhiễu 'cable' bằng 'tab' (cable là từ khoá định nghĩa E, Ethernet connector); R20 đổi tình huống để không lặp việc cài hệ thống của bài đọc R21–R25.",
+    "Bản r1, đợt 2 (theo review chéo của et-author2): L9 sửa stem để chỉ còn một đáp án, thêm biến thể; L6, L7 thêm biến thể có gạch nối; R13 đổi sang right-click (không lặp R15 đề A); R12 đổi sang 'to maximise' (không lặp F2/BIOS của đề A); R16 đổi tình huống (không lặp bước khởi động lại trong email); W35 đổi chủ đề; W33 dịch 'audio socket' là 'cổng âm thanh'.",
+    "Bản r1, đợt 2b: R16 bỏ 'screen', 'mouse' (từ khoá định nghĩa D, drag).",
+    "Bản r1, đợt 3 (theo audit audit/unit-2-C): R5 đổi thuật ngữ thành 'Ethernet cable' cho khớp định nghĩa E (Workbook ghi định nghĩa cáp dưới mục 'Ethernet connector'); bài R26–R30 bỏ chữ 'cable'; R11 thay nhiễu 'for' bằng 'because of'; R15 thay nhiễu 'tab' bằng 'speaker'; R10 thay phương án B đảo ngữ bằng trật tự sai rõ ràng.",
+    "Xáo thứ tự phương án R14, R16 để khoá R6–R25 không lặp chu kỳ (không đổi chữ trong stem và phương án)."
+  ],
+  "listening": {
+    "parts": [
+      {
+        "id": "A",
+        "instructions": "Listen to the phone call and choose the best answer A, B, C or D (Questions L1–L5).",
+        "context": "Chloe phones Marcus at Apex PCs, a computer shop, to order a new computer.",
+        "speakers": [
+          {
+            "name": "Marcus",
+            "voice": "male"
+          },
+          {
+            "name": "Chloe",
+            "voice": "female"
+          }
+        ],
+        "script": [
+          {
+            "speaker": "Marcus",
+            "text": "Apex PCs, Marcus speaking. How can I help?"
+          },
+          {
+            "speaker": "Chloe",
+            "text": "Hi. I'm a video editor, and I'd like to order a new computer. My old one is far too slow for 4K video."
+          },
+          {
+            "speaker": "Marcus",
+            "text": "No problem. Let's start with the processor. For 4K editing, I'd recommend our twelve-core processor. It runs at four point two gigahertz."
+          },
+          {
+            "speaker": "Chloe",
+            "text": "That sounds good. What about memory? My old computer has sixteen gigabytes."
+          },
+          {
+            "speaker": "Marcus",
+            "text": "For video, you need at least thirty-two, but I'd suggest sixty-four gigabytes so that you can run several programs at once."
+          },
+          {
+            "speaker": "Chloe",
+            "text": "OK, sixty-four, then. And storage? My video files are huge."
+          },
+          {
+            "speaker": "Marcus",
+            "text": "I'd suggest a two terabyte drive for your programs and current projects, and a large external drive for old projects. That's cheaper than putting everything inside the computer."
+          },
+          {
+            "speaker": "Chloe",
+            "text": "Good idea. Do I need a special graphics card?"
+          },
+          {
+            "speaker": "Marcus",
+            "text": "Yes, definitely. Video software uses the graphics card to make editing faster. Our best one has sixteen gigabytes of its own memory."
+          },
+          {
+            "speaker": "Chloe",
+            "text": "Great. How much will all that cost?"
+          },
+          {
+            "speaker": "Marcus",
+            "text": "Without the external drive, it comes to two thousand three hundred and fifty pounds. We can build it in five working days."
+          },
+          {
+            "speaker": "Chloe",
+            "text": "Perfect. Could you send me the details by email?"
+          }
+        ],
+        "questions": [
+          {
+            "id": "L1",
+            "kind": "mcq",
+            "stem": "Why does Chloe want a new computer?",
+            "options": [
+              {
+                "id": "A",
+                "text": "Her old computer is broken."
+              },
+              {
+                "id": "B",
+                "text": "Her old computer is too slow for 4K video."
+              },
+              {
+                "id": "C",
+                "text": "She wants to play computer games."
+              },
+              {
+                "id": "D",
+                "text": "She is starting a new company."
+              }
+            ],
+            "answerKey": "B",
+            "explanation": "Chloe: \"My old one is far too slow for 4K video.\""
+          },
+          {
+            "id": "L2",
+            "kind": "mcq",
+            "stem": "How fast is the processor that Marcus recommends?",
+            "options": [
+              {
+                "id": "A",
+                "text": "2.4 GHz"
+              },
+              {
+                "id": "B",
+                "text": "4.12 GHz"
+              },
+              {
+                "id": "C",
+                "text": "4.2 GHz"
+              },
+              {
+                "id": "D",
+                "text": "12 GHz"
+              }
+            ],
+            "answerKey": "C",
+            "explanation": "\"It runs at four point two gigahertz.\" Số 12 là số nhân (twelve-core), không phải tốc độ."
+          },
+          {
+            "id": "L3",
+            "kind": "mcq",
+            "stem": "How much memory does Chloe decide to have?",
+            "options": [
+              {
+                "id": "A",
+                "text": "64 GB"
+              },
+              {
+                "id": "B",
+                "text": "16 GB"
+              },
+              {
+                "id": "C",
+                "text": "32 GB"
+              },
+              {
+                "id": "D",
+                "text": "128 GB"
+              }
+            ],
+            "answerKey": "A",
+            "explanation": "Marcus gợi ý 64 GB và Chloe đồng ý: \"OK, sixty-four, then.\" 16 GB là máy cũ, 32 GB là mức tối thiểu."
+          },
+          {
+            "id": "L4",
+            "kind": "mcq",
+            "stem": "Why does Marcus suggest an external drive for Chloe's old projects?",
+            "options": [
+              {
+                "id": "A",
+                "text": "It is faster than an internal drive."
+              },
+              {
+                "id": "B",
+                "text": "It is easier to carry to work."
+              },
+              {
+                "id": "C",
+                "text": "The new computer has no space for a drive."
+              },
+              {
+                "id": "D",
+                "text": "It is cheaper than putting everything inside the computer."
+              }
+            ],
+            "answerKey": "D",
+            "explanation": "Marcus: \"That's cheaper than putting everything inside the computer.\""
+          },
+          {
+            "id": "L5",
+            "kind": "mcq",
+            "stem": "How much will the computer cost without the external drive?",
+            "options": [
+              {
+                "id": "A",
+                "text": "£3,250"
+              },
+              {
+                "id": "B",
+                "text": "£2,350"
+              },
+              {
+                "id": "C",
+                "text": "£2,530"
+              },
+              {
+                "id": "D",
+                "text": "£2,305"
+              }
+            ],
+            "answerKey": "B",
+            "explanation": "\"it comes to two thousand three hundred and fifty pounds\" = £2,350."
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "instructions": "Listen to the video tutorial and answer the questions. Write NO MORE THAN THREE WORDS for each answer (Questions L6–L10).",
+        "context": "Ben explains three ways to take a screenshot on a Windows laptop.",
+        "speakers": [
+          {
+            "name": "Ben",
+            "voice": "male"
+          }
+        ],
+        "script": [
+          {
+            "speaker": "Ben",
+            "text": "Hi, I'm Ben, and in today's video I'm going to show you three easy ways to take a screenshot on a Windows laptop."
+          },
+          {
+            "speaker": "Ben",
+            "text": "The first way is the quickest. Just press the Print Screen key. On most keyboards, it's in the top right-hand corner. This copies the whole screen. Then open a document and press Control and V to paste the picture."
+          },
+          {
+            "speaker": "Ben",
+            "text": "The second way is better if you only need part of the screen. Hold down the Windows key and the Shift key, and then press S. The screen goes grey. Now choose the part you want with your mouse. The picture is copied, so you can paste it into an email or a document."
+          },
+          {
+            "speaker": "Ben",
+            "text": "The third way saves the picture as a file. Press the Windows key and Print Screen together. The screen goes dark for a second, and the screenshot is saved automatically in the Screenshots folder, inside your Pictures folder."
+          },
+          {
+            "speaker": "Ben",
+            "text": "Finally, a useful tip: if you need a screenshot of a menu that disappears when you press a key, use the Snipping Tool and set a delay of five seconds. That gives you time to open the menu. See you next time!"
+          }
+        ],
+        "questions": [
+          {
+            "id": "L6",
+            "kind": "short",
+            "stem": "Where is the Print Screen key on most keyboards?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "top right-hand corner",
+              "the top right",
+              "top right corner",
+              "top right",
+              "top right-hand",
+              "top-right corner",
+              "top-right",
+              "top right hand"
+            ],
+            "explanation": "\"On most keyboards, it's in the top right-hand corner.\""
+          },
+          {
+            "id": "L7",
+            "kind": "short",
+            "stem": "Which keys do you press to paste the picture into a document?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "control and v",
+              "control v",
+              "ctrl and v",
+              "ctrl v",
+              "control plus v",
+              "ctrl plus v",
+              "ctrl-v",
+              "control-v"
+            ],
+            "explanation": "\"Then open a document and press Control and V to paste the picture.\""
+          },
+          {
+            "id": "L8",
+            "kind": "short",
+            "stem": "What colour does the screen go after you press Windows, Shift and S?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "grey",
+              "gray",
+              "it goes grey"
+            ],
+            "explanation": "\"Hold down the Windows key and the Shift key, and then press S. The screen goes grey.\""
+          },
+          {
+            "id": "L9",
+            "kind": "short",
+            "stem": "What is the name of the folder inside Pictures where screenshots are saved automatically?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "the screenshots folder",
+              "screenshots folder",
+              "screenshots",
+              "in screenshots folder",
+              "screenshot folder",
+              "the screenshot folder",
+              "screenshot"
+            ],
+            "explanation": "\"the screenshot is saved automatically in the Screenshots folder, inside your Pictures folder\"."
+          },
+          {
+            "id": "L10",
+            "kind": "short",
+            "stem": "How long is the delay that Ben suggests in the Snipping Tool?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "five seconds",
+              "5 seconds",
+              "five second",
+              "5 second"
+            ],
+            "explanation": "\"use the Snipping Tool and set a delay of five seconds\"."
+          }
+        ]
+      }
+    ]
+  },
+  "reading": {
+    "matching": {
+      "instructions": "Match the terms (1–5) with the correct definitions (A–F). There is one extra definition that you do not need (Questions 1–5).",
+      "definitions": [
+        {
+          "id": "A",
+          "text": "A computer disk that contains electronic parts, such as silicon chips, rather than moving mechanical parts."
+        },
+        {
+          "id": "B",
+          "text": "The place on a piece of electrical equipment that you put a plug into."
+        },
+        {
+          "id": "C",
+          "text": "A system that records your username and password and gives you access to a computer, your email, etc."
+        },
+        {
+          "id": "D",
+          "text": "To move words, pictures, etc. on a computer screen by pulling them along with the mouse."
+        },
+        {
+          "id": "E",
+          "text": "A type of cable used when a computer is connected to other computer networks."
+        },
+        {
+          "id": "F",
+          "text": "A small sign or picture on a computer screen that is used to start a particular operation."
+        }
+      ],
+      "items": [
+        {
+          "id": "R1",
+          "term": "Icon",
+          "answerKey": "F",
+          "explanation": "Icon (biểu tượng) là hình nhỏ trên màn hình, dùng để bắt đầu một thao tác."
+        },
+        {
+          "id": "R2",
+          "term": "Solid state drive",
+          "answerKey": "A",
+          "explanation": "Solid state drive (ổ cứng thể rắn, SSD) dùng linh kiện điện tử như chip silicon, không có bộ phận cơ khí chuyển động."
+        },
+        {
+          "id": "R3",
+          "term": "User account",
+          "answerKey": "C",
+          "explanation": "User account (tài khoản người dùng) ghi lại tên đăng nhập và mật khẩu, cho phép truy cập máy tính, email…"
+        },
+        {
+          "id": "R4",
+          "term": "Drag",
+          "answerKey": "D",
+          "explanation": "Drag (kéo) là di chuyển chữ, hình trên màn hình bằng cách giữ chuột và kéo đi."
+        },
+        {
+          "id": "R5",
+          "term": "Ethernet cable",
+          "answerKey": "E",
+          "explanation": "Ethernet cable (cáp Ethernet, cáp mạng) là loại cáp dùng để nối máy tính với các mạng máy tính khác. Định nghĩa B là của socket (ổ cắm), không có trong danh sách thuật ngữ."
+        }
+      ]
+    },
+    "grammar": [
+      {
+        "id": "R6",
+        "kind": "mcq",
+        "stem": "A millisecond is one ______ of a second.",
+        "options": [
+          {
+            "id": "A",
+            "text": "millionth"
+          },
+          {
+            "id": "B",
+            "text": "hundredth"
+          },
+          {
+            "id": "C",
+            "text": "thousandth"
+          },
+          {
+            "id": "D",
+            "text": "billionth"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "Tiền tố milli- nghĩa là một phần nghìn: 1 millisecond = 1/1.000 giây. Một phần triệu là micro-, một phần tỷ là nano-."
+      },
+      {
+        "id": "R7",
+        "kind": "mcq",
+        "stem": "The company sold 2,500,000 laptops last year. How do we say '2,500,000'?",
+        "options": [
+          {
+            "id": "A",
+            "text": "two millions five hundred thousands"
+          },
+          {
+            "id": "B",
+            "text": "two million five hundred thousand"
+          },
+          {
+            "id": "C",
+            "text": "two million five hundreds thousand"
+          },
+          {
+            "id": "D",
+            "text": "two point five hundred thousand"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Khi đọc số, million, hundred, thousand đứng sau số đếm không thêm -s: two million five hundred thousand."
+      },
+      {
+        "id": "R8",
+        "kind": "mcq",
+        "stem": "Could you ______ the printer on, please? I need to print a report.",
+        "options": [
+          {
+            "id": "A",
+            "text": "switching"
+          },
+          {
+            "id": "B",
+            "text": "to switch"
+          },
+          {
+            "id": "C",
+            "text": "switched"
+          },
+          {
+            "id": "D",
+            "text": "switch"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Lời yêu cầu lịch sự: Could you + động từ nguyên mẫu không \"to\": \"Could you switch the printer on?\"."
+      },
+      {
+        "id": "R9",
+        "kind": "mcq",
+        "stem": "Take the DVD ______ the drive and put it back in its case.",
+        "options": [
+          {
+            "id": "A",
+            "text": "out of"
+          },
+          {
+            "id": "B",
+            "text": "into"
+          },
+          {
+            "id": "C",
+            "text": "on"
+          },
+          {
+            "id": "D",
+            "text": "at"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "Câu hai tân ngữ: take + tân ngữ 1 + out of + tân ngữ 2 (lấy cái gì ra khỏi đâu)."
+      },
+      {
+        "id": "R10",
+        "kind": "mcq",
+        "stem": "Which sentence is correct?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Connect printer the to the laptop."
+          },
+          {
+            "id": "B",
+            "text": "Connect the printer the laptop to."
+          },
+          {
+            "id": "C",
+            "text": "Connect the printer to the laptop."
+          },
+          {
+            "id": "D",
+            "text": "To the laptop connect printer the."
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "Trật tự câu hai tân ngữ: động từ + tân ngữ 1 (the printer) + giới từ (to) + tân ngữ 2 (the laptop). Các phương án khác đặt sai vị trí tân ngữ hoặc tách sai cụm danh từ."
+      },
+      {
+        "id": "R11",
+        "kind": "mcq",
+        "stem": "The video won't play ______ the file is damaged.",
+        "options": [
+          {
+            "id": "A",
+            "text": "so that"
+          },
+          {
+            "id": "B",
+            "text": "because of"
+          },
+          {
+            "id": "C",
+            "text": "to"
+          },
+          {
+            "id": "D",
+            "text": "because"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Vế sau (the file is damaged) là mệnh đề chỉ lý do nên dùng \"because\". \"because of\" chỉ đi với danh từ; \"so that\" chỉ mục đích; \"to\" không đi với mệnh đề."
+      },
+      {
+        "id": "R12",
+        "kind": "mcq",
+        "stem": "Double click the title bar ______ the window.",
+        "options": [
+          {
+            "id": "A",
+            "text": "maximise"
+          },
+          {
+            "id": "B",
+            "text": "to maximise"
+          },
+          {
+            "id": "C",
+            "text": "for maximise"
+          },
+          {
+            "id": "D",
+            "text": "so that maximise"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Chỉ mục đích bằng to + động từ nguyên mẫu: \"Double click the title bar to maximise the window\"."
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "R13",
+        "kind": "mcq",
+        "stem": "______ on the file and choose 'Rename' from the menu that appears.",
+        "options": [
+          {
+            "id": "A",
+            "text": "Right-click"
+          },
+          {
+            "id": "B",
+            "text": "Maximise"
+          },
+          {
+            "id": "C",
+            "text": "Unplug"
+          },
+          {
+            "id": "D",
+            "text": "Resize"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "Right-click (nhấp chuột phải) để mở menu các lệnh, ví dụ Rename (đổi tên)."
+      },
+      {
+        "id": "R14",
+        "kind": "mcq",
+        "stem": "Give the document a clear ______, such as 'Sales_May', so that you can find it easily later.",
+        "options": [
+          {
+            "id": "A",
+            "text": "menu"
+          },
+          {
+            "id": "B",
+            "text": "socket"
+          },
+          {
+            "id": "C",
+            "text": "tab"
+          },
+          {
+            "id": "D",
+            "text": "filename"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Filename (tên tệp) là tên bạn đặt cho một tệp."
+      },
+      {
+        "id": "R15",
+        "kind": "mcq",
+        "stem": "To print the document, choose 'Print' from the File ______.",
+        "options": [
+          {
+            "id": "A",
+            "text": "speaker"
+          },
+          {
+            "id": "B",
+            "text": "socket"
+          },
+          {
+            "id": "C",
+            "text": "filename"
+          },
+          {
+            "id": "D",
+            "text": "menu"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Menu (trình đơn) là danh sách các lệnh trên màn hình; menu File có lệnh Print."
+      },
+      {
+        "id": "R16",
+        "kind": "mcq",
+        "stem": "If a program stops responding, ______ the computer.",
+        "options": [
+          {
+            "id": "A",
+            "text": "resize"
+          },
+          {
+            "id": "B",
+            "text": "partition"
+          },
+          {
+            "id": "C",
+            "text": "restart"
+          },
+          {
+            "id": "D",
+            "text": "select"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "Restart (khởi động lại) là cho máy chạy lại sau khi đã dừng, ví dụ khi chương trình bị treo."
+      },
+      {
+        "id": "R17",
+        "kind": "mcq",
+        "stem": "Type your question in the search box and ______ the Enter key.",
+        "options": [
+          {
+            "id": "A",
+            "text": "press"
+          },
+          {
+            "id": "B",
+            "text": "slide"
+          },
+          {
+            "id": "C",
+            "text": "resize"
+          },
+          {
+            "id": "D",
+            "text": "unplug"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "Press (nhấn) một phím hoặc nút để máy thực hiện việc gì."
+      },
+      {
+        "id": "R18",
+        "kind": "mcq",
+        "stem": "This game has amazing 3-D ______: the cars and buildings look almost real.",
+        "options": [
+          {
+            "id": "A",
+            "text": "audio"
+          },
+          {
+            "id": "B",
+            "text": "sockets"
+          },
+          {
+            "id": "C",
+            "text": "graphics"
+          },
+          {
+            "id": "D",
+            "text": "headphones"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "Graphics (đồ hoạ) là hình ảnh tạo ra trong chương trình máy tính để thể hiện đồ vật."
+      },
+      {
+        "id": "R19",
+        "kind": "mcq",
+        "stem": "You need to wear special ______ over your eyes to see the virtual reality world.",
+        "options": [
+          {
+            "id": "A",
+            "text": "headphones"
+          },
+          {
+            "id": "B",
+            "text": "speakers"
+          },
+          {
+            "id": "C",
+            "text": "projectors"
+          },
+          {
+            "id": "D",
+            "text": "goggles"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Virtual reality goggles (kính thực tế ảo) là kính đặc biệt đeo lên mắt để thấy môi trường do máy tính tạo ra. Headphones đeo trên tai."
+      },
+      {
+        "id": "R20",
+        "kind": "mcq",
+        "stem": "Setting up a new email account is a short ______: it has three steps and takes about five minutes.",
+        "options": [
+          {
+            "id": "A",
+            "text": "socket"
+          },
+          {
+            "id": "B",
+            "text": "process"
+          },
+          {
+            "id": "C",
+            "text": "printer"
+          },
+          {
+            "id": "D",
+            "text": "graphics"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Process (quy trình) là chuỗi các bước làm để đạt một kết quả."
+      }
+    ],
+    "passageMcq": {
+      "instructions": "Read the passage and choose the best answer A, B, C or D (Questions 21–25).",
+      "passage": {
+        "title": "Hillside School Moves to Open Source",
+        "paragraphs": [
+          "Last year, Hillside School in Leeds had a problem. Its 300 student laptops were six years old, and the proprietary operating system on them was going to stop receiving security updates. New laptops for every student would cost about £150,000, and the school could not afford that.",
+          "The school's IT manager, Ravi Patel, suggested a different solution. Instead of buying new machines, the school installed a free open source operating system on the old laptops. Because the open source system needs less memory, the laptops ran faster than before. The school only had to buy extra 4 GB memory modules for 120 of the laptops, so that they could run video software. Each module cost £15.",
+          "Ravi and two technicians did the work during the summer holiday. First, they backed up the students' files to the school server. Then they installed the new system on each laptop from a USB stick. Each installation took about twenty-five minutes, and the whole project took three weeks.",
+          "Not everyone was happy at first. Some teachers had to learn new programs, and the school's exam software only works on the old proprietary system, so the school kept ten laptops with the old system for exams. But after six months, most students and teachers say that the laptops work better than before. The school saved more than £140,000, and it now plans to use some of the money to build a new media room."
+        ]
+      },
+      "questions": [
+        {
+          "id": "R21",
+          "kind": "mcq",
+          "stem": "Why did Hillside School need to make a change?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Many of its laptops were stolen."
+            },
+            {
+              "id": "B",
+              "text": "The old operating system was going to stop receiving security updates."
+            },
+            {
+              "id": "C",
+              "text": "The students wanted tablets instead of laptops."
+            },
+            {
+              "id": "D",
+              "text": "The school server was too slow."
+            }
+          ],
+          "answerKey": "B",
+          "explanation": "Đoạn 1: máy đã 6 năm tuổi và hệ điều hành độc quyền \"was going to stop receiving security updates\"."
+        },
+        {
+          "id": "R22",
+          "kind": "mcq",
+          "stem": "Why did the laptops run faster after the change?",
+          "options": [
+            {
+              "id": "A",
+              "text": "The school put new processors in them."
+            },
+            {
+              "id": "B",
+              "text": "Students used them less often."
+            },
+            {
+              "id": "C",
+              "text": "The open source system needs less memory."
+            },
+            {
+              "id": "D",
+              "text": "The school bought new hard drives."
+            }
+          ],
+          "answerKey": "C",
+          "explanation": "Đoạn 2: \"Because the open source system needs less memory, the laptops ran faster than before.\""
+        },
+        {
+          "id": "R23",
+          "kind": "mcq",
+          "stem": "Why did the school buy memory modules for 120 laptops?",
+          "options": [
+            {
+              "id": "A",
+              "text": "So that they could run video software"
+            },
+            {
+              "id": "B",
+              "text": "To install the new operating system"
+            },
+            {
+              "id": "C",
+              "text": "Because the old modules were broken"
+            },
+            {
+              "id": "D",
+              "text": "For the students' exams"
+            }
+          ],
+          "answerKey": "A",
+          "explanation": "Đoạn 2: \"buy extra 4 GB memory modules for 120 of the laptops, so that they could run video software\"."
+        },
+        {
+          "id": "R24",
+          "kind": "mcq",
+          "stem": "How long did each installation take?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Three weeks"
+            },
+            {
+              "id": "B",
+              "text": "About two hours"
+            },
+            {
+              "id": "C",
+              "text": "Six months"
+            },
+            {
+              "id": "D",
+              "text": "About twenty-five minutes"
+            }
+          ],
+          "answerKey": "D",
+          "explanation": "Đoạn 3: \"Each installation took about twenty-five minutes, and the whole project took three weeks.\""
+        },
+        {
+          "id": "R25",
+          "kind": "mcq",
+          "stem": "Why did the school keep ten laptops with the old system?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Because the exam software only works on the old system"
+            },
+            {
+              "id": "B",
+              "text": "For teachers who did not want to learn new programs"
+            },
+            {
+              "id": "C",
+              "text": "For the new media room"
+            },
+            {
+              "id": "D",
+              "text": "Because those laptops were newer"
+            }
+          ],
+          "answerKey": "A",
+          "explanation": "Đoạn 4: \"the school's exam software only works on the old proprietary system, so the school kept ten laptops with the old system for exams\"."
+        }
+      ]
+    },
+    "passageTrueFalse": {
+      "instructions": "Read the passage and write T (True) or F (False) (Questions 26–30).",
+      "passage": {
+        "title": "Headphones: Which Type Is Right for You?",
+        "paragraphs": [
+          "Wired headphones plug into the headphone socket of your phone or computer. They are usually cheaper than wireless ones, and you never have to charge them. However, many new phones do not have a headphone socket, so you may need an adapter.",
+          "Wireless headphones connect to your device by Bluetooth. They are more comfortable for sport because there are no wires. Most models play music for 20 to 30 hours before you need to charge them. The sound quality is good, but professional sound engineers still prefer wired headphones because there is no delay.",
+          "Noise-cancelling headphones are useful on trains and planes. They have small microphones that listen to the noise around you and cancel it. They cost more than normal headphones, and the noise-cancelling function uses extra battery power.",
+          "If you work in an open-plan office, choose headphones with a built-in microphone, so that you can join online meetings without a separate headset. Before you buy, always try the headphones on in the shop, because comfort matters as much as sound."
+        ]
+      },
+      "questions": [
+        {
+          "id": "R26",
+          "kind": "tf",
+          "statement": "Wired headphones are usually cheaper than wireless headphones.",
+          "answerKey": "T",
+          "explanation": "Đoạn 1: \"They are usually cheaper than wireless ones\"."
+        },
+        {
+          "id": "R27",
+          "kind": "tf",
+          "statement": "All new phones have a headphone socket.",
+          "answerKey": "F",
+          "explanation": "Đoạn 1: \"many new phones do not have a headphone socket\"."
+        },
+        {
+          "id": "R28",
+          "kind": "tf",
+          "statement": "Most wireless headphones play music for 20 to 30 hours before they need charging.",
+          "answerKey": "T",
+          "explanation": "Đoạn 2: \"Most models play music for 20 to 30 hours before you need to charge them.\""
+        },
+        {
+          "id": "R29",
+          "kind": "tf",
+          "statement": "Professional sound engineers prefer wireless headphones.",
+          "answerKey": "F",
+          "explanation": "Đoạn 2: \"professional sound engineers still prefer wired headphones because there is no delay\"."
+        },
+        {
+          "id": "R30",
+          "kind": "tf",
+          "statement": "The noise-cancelling function does not use any extra battery power.",
+          "answerKey": "F",
+          "explanation": "Đoạn 3: \"the noise-cancelling function uses extra battery power\"."
+        }
+      ]
+    }
+  },
+  "writing": {
+    "translation": {
+      "instructions": "Translate these sentences into Vietnamese (Questions 31–35).",
+      "items": [
+        {
+          "id": "W31",
+          "source": "The server has two 3.4 GHz processors and 256 GB of memory.",
+          "referenceTranslation": "Máy chủ có hai bộ xử lý 3,4 GHz và 256 GB bộ nhớ."
+        },
+        {
+          "id": "W32",
+          "source": "First, select the text, and then click the 'Bold' button on the toolbar.",
+          "referenceTranslation": "Đầu tiên, hãy chọn đoạn văn bản, sau đó nhấp vào nút 'Bold' trên thanh công cụ."
+        },
+        {
+          "id": "W33",
+          "source": "Plug the speakers into the audio socket on the back of the computer.",
+          "referenceTranslation": "Hãy cắm loa vào cổng âm thanh ở mặt sau máy tính."
+        },
+        {
+          "id": "W34",
+          "source": "We use a projector in the classroom so that all the students can see the slides clearly.",
+          "referenceTranslation": "Chúng tôi dùng máy chiếu trong lớp học để tất cả học sinh có thể nhìn rõ các trang chiếu."
+        },
+        {
+          "id": "W35",
+          "source": "Open source software is usually free, and users can see and change the program code.",
+          "referenceTranslation": "Phần mềm nguồn mở thường miễn phí, và người dùng có thể xem và thay đổi mã chương trình."
+        }
+      ]
+    },
+    "email": {
+      "id": "W-EMAIL",
+      "recipient": "Marco",
+      "task": "You are an IT support technician. Marco, a sales assistant, needs to install the company's new sales software on his laptop. Write an email to Marco explaining the steps, using the notes below. In your email you must use:\n- imperatives with sequence words;\n- at least one softener (could you…?, just);\n- at least one sentence with two objects (insert … into …, take … out of …);\n- at least one reason or purpose (to…, so that…, because…).\nFollow the standard layout for an email giving instructions: From / To / Date / Subject, a greeting, It should be quite easy to …, the steps with First / Then / Next / After that / Finally, a reminder (Don't forget to … when you've finished.), then Best wishes and your name, position and department.\nWrite 80–100 words (do not count the From, To, Date and Subject lines).",
+      "bullets": [
+        "save your work / close all programs (so that you don't lose anything)",
+        "insert the installation USB stick into a USB port",
+        "double click on 'setup' / accept the licence terms",
+        "enter the product key from the box / click 'Install'",
+        "restart the laptop to complete the installation",
+        "reminder: take the USB stick out of the laptop / return it to the IT office when you've finished"
+      ],
+      "wordRange": [
+        80,
+        100
+      ],
+      "targetGrammar": [
+        "Imperatives with sequence words: First, … Then, … Next, … After that, … Finally, …",
+        "Softeners: just, could you…?",
+        "Sentences with two objects: insert the USB stick into a USB port, take the USB stick out of the laptop",
+        "Reason and purpose: to + verb, so that + clause"
+      ],
+      "modelAnswer": "From: Pham Thu Trang\nTo: Marco\nDate: 17th May\nSubject: Installing the new sales software\n\nHi Marco,\n\nIt should be quite easy to install the new sales software.\nFirst, save your work and close all programs so that you don't lose anything.\nThen, insert the installation USB stick into a USB port.\nNext, just double click on 'setup' and accept the licence terms.\nAfter that, enter the product key from the box and click 'Install'.\nFinally, restart the laptop to complete the installation.\nDon't forget to take the USB stick out of the laptop and return it to the IT office when you've finished.\n\nBest wishes,\nPham Thu Trang\nSupport Technician\nHelp Desk Department"
+    }
+  },
+  "speaking": {
+    "parts": [
+      {
+        "id": "S1",
+        "kind": "questions",
+        "instructions": "Answer the three questions. Speak for 30–45 seconds for each question.",
+        "questions": [
+          "How fast is the internet connection at your home, and how big are the files you usually download? Say the numbers and units clearly, for example fifty megabits per second or two point five gigabytes.",
+          "Why do many people keep their photos and documents in cloud storage? Give two or three reasons using because, for, to or so that.",
+          "How do you copy photos from your phone to a computer? Use sentences with two objects (connect … to …, plug … into …, copy … onto …)."
+        ],
+        "secondsPerQuestion": 45
+      },
+      {
+        "id": "S2",
+        "kind": "explain",
+        "instructions": "Give instructions for using a computer. Speak for 1–1.5 minutes.",
+        "prompt": "A classmate wants to share a file with you from their online storage, for example Google Drive, but does not know how. Explain the steps. Use imperatives, sequence words (first, then, next, after that, finally) and at least one softener (could you…?, just).",
+        "cues": [
+          "open the online storage website / log in",
+          "find the file / right-click on it",
+          "select 'Share'",
+          "type the other person's email address",
+          "choose 'Viewer' or 'Editor'",
+          "click 'Send'"
+        ],
+        "requiredGrammar": [
+          "Imperatives with sequence words: First, … Then, … Next, … After that, … Finally, …",
+          "Softeners: could you…?, just"
+        ],
+        "seconds": 90,
+        "sampleAnswer": "Sharing a file is really easy. First, open the website in your browser and log in with your email and password. Then find the file you want to share. You can just type the filename in the search box at the top. Next, right-click on the file and select 'Share' from the menu. A small window appears. After that, could you type my email address in the box? Make sure you spell it correctly. Then choose 'Viewer' if you only want me to read the file, or 'Editor' if you want me to change it too. For our project, please choose 'Editor', because we both need to write in it. Finally, click 'Send'. I'll get an email with a link to the file in a few seconds."
+      },
+      {
+        "id": "S3",
+        "kind": "situation",
+        "instructions": "Deal with the situation. Speak for 1–1.5 minutes.",
+        "prompt": "Your manager wants to use the office's old desktop computers for two more years. Explain to her which parts you want to add or change, how you will connect or install each one and why it is needed. Use sentences with two objects (put … into …, connect … to …, plug … into …) and reason or purpose (to…, so that…, because…, for…).",
+        "cues": [
+          "8 GB more memory: put the module into the empty DIMM slot / so that staff can open several programs",
+          "a solid state drive instead of the old hard disk / because it starts programs much faster",
+          "a second monitor: connect it to the video socket / for working with two documents",
+          "a webcam: plug it into a USB port / to join video meetings with clients"
+        ],
+        "requiredGrammar": [
+          "Sentences with two objects: put … into …, connect … to …, plug … into …",
+          "Reason and purpose: to + verb, so that + clause, because + clause, for + noun / -ing"
+        ],
+        "seconds": 90,
+        "sampleAnswer": "I think we can use the old computers for two more years if we change a few parts. First, I'd like to add eight gigabytes of memory. I'll put the new module into the empty DIMM slot on the motherboard, so that staff can open several programs at the same time. Second, I want to replace the old hard disk with a solid state drive, because it starts programs much faster. Third, each person could have a second monitor. I'll connect it to the video socket on the back of the computer. It's very useful for working with two documents at once. Finally, we need webcams. I'll plug them into the USB ports to let staff join video meetings with clients. All of this is much cheaper than buying new computers."
+      }
+    ]
+  }
+}

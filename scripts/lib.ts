@@ -11,28 +11,30 @@ export function readJson<T>(path: string): T {
   return JSON.parse(readFileSync(path, "utf8")) as T;
 }
 
-export function unitPath(unit: number): string {
-  return join(UNITS_DIR, `unit-${unit}.json`);
+/** File đề: data/units/unit-<N>-<Test>.json, ví dụ unit-6-B.json. */
+export function unitPath(unit: number, test = "A"): string {
+  return join(UNITS_DIR, `unit-${unit}-${test}.json`);
 }
 
-/** Danh sách file unit-N.json có trong data/units/. */
-export function listUnitFiles(): string[] {
+export const FILE_RE = /^unit-([1-8])-([A-D])\.json$/;
+
+/** Danh sách file đề có trong data/units/, sắp theo Unit rồi theo đề. */
+export function listUnitFiles(unit?: number): string[] {
   if (!existsSync(UNITS_DIR)) return [];
   return readdirSync(UNITS_DIR)
-    .filter((f) => /^unit-[1-8]\.json$/.test(f))
+    .filter((f) => FILE_RE.test(f) && (unit === undefined || f.startsWith(`unit-${unit}-`)))
     .sort()
     .map((f) => join(UNITS_DIR, f));
 }
 
-/** Đọc số Unit từ tham số dòng lệnh: "6", "unit-6" hoặc đường dẫn file. */
-export function parseUnitArg(arg: string | undefined): number {
-  const m = arg?.match(/(\d)/);
-  const n = m ? Number(m[1]) : NaN;
-  if (!(n >= 1 && n <= 8)) {
-    console.error(`Thiếu hoặc sai số Unit: "${arg ?? ""}". Ví dụ: 6`);
+/** Đọc "6", "6B", "6-B" hoặc "unit-6-B" thành { unit, test }. Thiếu đề thì là A. */
+export function parseUnitArg(arg: string | undefined): { unit: number; test: string } {
+  const m = arg?.match(/([1-8])\s*-?\s*([A-Da-d])?/);
+  if (!m) {
+    console.error(`Thiếu hoặc sai mã đề: "${arg ?? ""}". Ví dụ: 6, 6B`);
     process.exit(2);
   }
-  return n;
+  return { unit: Number(m[1]), test: (m[2] ?? "A").toUpperCase() };
 }
 
 export type AutoQuestion = McqQuestion | TrueFalseQuestion | ShortAnswerQuestion | MatchItem;

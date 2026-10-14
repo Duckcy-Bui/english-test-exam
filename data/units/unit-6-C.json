@@ -1,0 +1,630 @@
+{
+  "schemaVersion": 1,
+  "unit": 6,
+  "unitTitle": "Interactions",
+  "testId": "C",
+  "source": "ai",
+  "functions": [
+    "Describing trends (Enterprise social media)",
+    "Describing the benefits of video conferencing (Video conferencing)",
+    "Giving meanings of e-commerce concepts (E-commerce)",
+    "Processing requests for training (Training users)"
+  ],
+  "grammarFocus": [
+    "Describing current changes: present continuous; more and more + noun; comparative + and + comparative; get/become + comparative adjective; increase, decrease, go up, go down",
+    "Second conditional: If + past simple, would/could + infinitive (situations that are not true now or are unlikely)",
+    "Giving meanings of technical words: brackets, called, be, a separate sentence, relative clause (which/that/who)",
+    "Making requests: It would be great to know…, I'd like/love to know…, Could someone tell me…?, can/could"
+  ],
+  "sourceNotes": [
+    "Đề C do AI soạn mới (Giai đoạn 5), cùng khung với đề A nhưng khác toàn bộ bài đọc, lời thoại, câu dịch, đề email và đề nói của đề A và đề B.",
+    "R1–R5: năm thuật ngữ không trùng câu nối đề A và đề B. Định nghĩa viết gần Workbook Unit 6: DRM (6A, tr. 56), file sharing service, voice recognition (6B, tr. 57–58), tagging, B2C (6C, tr. 58). Định nghĩa thừa là của MCU (6D, tr. 59); từ này không dùng ở phần khác của đề.",
+    "R6–R12: mô tả xu hướng (R6–R8), câu điều kiện loại 2 (R9–R10), giải nghĩa bằng mệnh đề quan hệ (R11), yêu cầu lịch sự với could (R12).",
+    "R13–R20: component, code, delivery, accounting (6A, tr. 56), trend, announcement, procedure (6B, 6C, tr. 57–58), high-definition (6D, tr. 59). Không trùng từ được hỏi ở R13–R20 đề A và đề B.",
+    "Bài đọc R21–R25 (xu hướng làm việc tại nhà ở công ty phần mềm) và R26–R30 (khách sạn nhỏ dùng mạng xã hội) viết mới. Không nhắc giới hạn dùng nội dung số, gắn nhãn tệp, dịch vụ chia sẻ tệp, bán hàng cho người tiêu dùng hay máy nhận diện giọng nói để không diễn đạt lại định nghĩa câu nối.",
+    "Listening A (phòng kế toán xin đào tạo ứng dụng chi phí) theo bài Training users; Listening B (thông báo phòng hội nghị truyền hình của trường đại học) theo bài Video conferencing. Viết mới, không chép Audio script.",
+    "Listening B: acceptedAnswers có biến thể cách viết số; một số biến thể không có nguyên văn trong lời thoại.",
+    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
+    "Bản r1 (theo review chéo của et-author): R7 đổi ngữ cảnh Wi-Fi chậm (trùng bài T/F) sang hàng chờ máy in; R11 đổi NFC (trùng cue S2) sang hệ thống mã QR; L6 thêm \"in room 204\"; S2 gộp requiredGrammar thành một mục, bỏ dòng hướng dẫn khỏi cues."
+  ],
+  "listening": {
+    "parts": [
+      {
+        "id": "A",
+        "instructions": "Listen to the phone call and choose the best answer A, B, C or D (Questions L1–L5).",
+        "context": "Lena, a manager in the Accounts department, phones Ahmed at the IT help desk about the company's new expenses app.",
+        "speakers": [
+          { "name": "Ahmed", "voice": "male" },
+          { "name": "Lena", "voice": "female" }
+        ],
+        "script": [
+          { "speaker": "Ahmed", "text": "IT help desk, Ahmed speaking." },
+          { "speaker": "Lena", "text": "Hi Ahmed, it's Lena from Accounts. We started using the new expenses app on Monday, and my team is having a few problems. Could someone give us some training?" },
+          { "speaker": "Ahmed", "text": "Of course. What would you like to learn?" },
+          { "speaker": "Lena", "text": "Well, it would be great to know how to scan receipts with our phones. At the moment we're typing everything in by hand, and it takes ages." },
+          { "speaker": "Ahmed", "text": "That's easy to fix. Anything else?" },
+          { "speaker": "Lena", "text": "Yes. I'd also like to know how to approve my team's claims. I'm the manager, and I'm getting more and more requests every week." },
+          { "speaker": "Ahmed", "text": "OK. How many people are in your team?" },
+          { "speaker": "Lena", "text": "Eight, including me." },
+          { "speaker": "Ahmed", "text": "Then I can come to your office instead of booking the training room. Would Thursday morning suit you?" },
+          { "speaker": "Lena", "text": "Thursday's difficult, because we're closing the monthly accounts. Could you come on Friday instead?" },
+          { "speaker": "Ahmed", "text": "Friday at eleven is fine. It'll take about an hour. Could you ask everyone to bring their phones, with the app already installed?" },
+          { "speaker": "Lena", "text": "Sure. And could you send me the instructions before then?" },
+          { "speaker": "Ahmed", "text": "No problem. I'll email them this afternoon." }
+        ],
+        "questions": [
+          {
+            "id": "L1",
+            "kind": "mcq",
+            "stem": "Why does Lena phone the IT help desk?",
+            "options": [
+              { "id": "A", "text": "To report that the app has stopped working" },
+              { "id": "B", "text": "To ask for a new phone for her team" },
+              { "id": "C", "text": "To ask for training on the new app" },
+              { "id": "D", "text": "To book the training room for a meeting" }
+            ],
+            "answerKey": "C",
+            "explanation": "Lena nói nhóm gặp khó khăn với ứng dụng chi phí mới và hỏi \"Could someone give us some training?\"."
+          },
+          {
+            "id": "L2",
+            "kind": "mcq",
+            "stem": "How does Lena's team enter receipts at the moment?",
+            "options": [
+              { "id": "A", "text": "They type them in by hand." },
+              { "id": "B", "text": "They scan them with their phones." },
+              { "id": "C", "text": "They send them to Ahmed." },
+              { "id": "D", "text": "They take photos with a camera." }
+            ],
+            "answerKey": "A",
+            "explanation": "\"At the moment we're typing everything in by hand\". Quét hoá đơn bằng điện thoại là điều Lena muốn học."
+          },
+          {
+            "id": "L3",
+            "kind": "mcq",
+            "stem": "Why does Lena want to learn how to approve claims?",
+            "options": [
+              { "id": "A", "text": "Her team has just started work." },
+              { "id": "B", "text": "She is getting more and more requests." },
+              { "id": "C", "text": "Ahmed asked her to do it." },
+              { "id": "D", "text": "The old app did not have this feature." }
+            ],
+            "answerKey": "B",
+            "explanation": "Lena là quản lý và nói \"I'm getting more and more requests every week\"."
+          },
+          {
+            "id": "L4",
+            "kind": "mcq",
+            "stem": "When will the training take place?",
+            "options": [
+              { "id": "A", "text": "On Monday morning" },
+              { "id": "B", "text": "On Thursday morning" },
+              { "id": "C", "text": "On Thursday at eleven" },
+              { "id": "D", "text": "On Friday at eleven" }
+            ],
+            "answerKey": "D",
+            "explanation": "Thứ Năm phòng kế toán bận chốt sổ, Lena đề nghị thứ Sáu và Ahmed đồng ý \"Friday at eleven is fine\"."
+          },
+          {
+            "id": "L5",
+            "kind": "mcq",
+            "stem": "What does Ahmed ask the team to do?",
+            "options": [
+              { "id": "A", "text": "Read the instructions this afternoon" },
+              { "id": "B", "text": "Bring their phones with the app installed" },
+              { "id": "C", "text": "Come to the training room at eleven" },
+              { "id": "D", "text": "Send him their receipts by email" }
+            ],
+            "answerKey": "B",
+            "explanation": "Ahmed nói \"Could you ask everyone to bring their phones, with the app already installed?\". Ahmed sẽ đến văn phòng của nhóm, không dùng phòng đào tạo."
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "instructions": "Listen to the announcement and answer the questions. Write NO MORE THAN THREE WORDS for each answer (Questions L6–L10).",
+        "context": "Dr Patel, the head of IT at a university, announces a new video conferencing room.",
+        "speakers": [{ "name": "Dr Patel", "voice": "male" }],
+        "script": [
+          { "speaker": "Dr Patel", "text": "Good morning, everyone. I'm pleased to tell you that our new video conferencing room opens on the fourteenth of March. It's on the second floor of the library, in Room 204." },
+          { "speaker": "Dr Patel", "text": "The room has seats for sixteen people, a very large screen and four microphones on the table. Lecturers can use it to invite guest speakers from other countries. Last year we paid almost nine thousand pounds for speakers' flights and hotels. If we used video conferencing for half of these talks, we would save around four thousand pounds a year." },
+          { "speaker": "Dr Patel", "text": "Students can also book the room for project meetings with our partner universities in Japan and Australia. To book, please use the online form on the IT website at least two days before your meeting." },
+          { "speaker": "Dr Patel", "text": "If you have never used this kind of equipment before, don't worry. Our technician, Mr Lewis, gives a short introduction every Wednesday at two o'clock. Thank you." }
+        ],
+        "questions": [
+          {
+            "id": "L6",
+            "kind": "short",
+            "stem": "Which room is the new video conferencing room?",
+            "maxWords": 3,
+            "acceptedAnswers": ["room 204", "204", "in room 204"],
+            "explanation": "Dr Patel nói phòng ở tầng hai thư viện, \"in Room 204\"."
+          },
+          {
+            "id": "L7",
+            "kind": "short",
+            "stem": "How many people can sit in the room?",
+            "maxWords": 3,
+            "acceptedAnswers": ["sixteen", "16", "sixteen people", "16 people", "sixteen seats", "16 seats"],
+            "explanation": "\"The room has seats for sixteen people\"."
+          },
+          {
+            "id": "L8",
+            "kind": "short",
+            "stem": "About how much money could the university save each year?",
+            "maxWords": 3,
+            "acceptedAnswers": ["four thousand pounds", "4000 pounds", "4 000 pounds", "4000", "4 000", "four thousand", "around four thousand", "around 4000", "about four thousand", "about 4000"],
+            "explanation": "\"If we used video conferencing for half of these talks, we would save around four thousand pounds a year\"."
+          },
+          {
+            "id": "L9",
+            "kind": "short",
+            "stem": "What should people use to book the room?",
+            "maxWords": 3,
+            "acceptedAnswers": ["the online form", "online form", "an online form", "the form", "a form"],
+            "explanation": "\"To book, please use the online form on the IT website at least two days before your meeting\"."
+          },
+          {
+            "id": "L10",
+            "kind": "short",
+            "stem": "On which day does Mr Lewis give a short introduction?",
+            "maxWords": 3,
+            "acceptedAnswers": ["wednesday", "every wednesday", "on wednesday", "wednesdays", "on wednesdays"],
+            "explanation": "\"Mr Lewis, gives a short introduction every Wednesday at two o'clock\"."
+          }
+        ]
+      }
+    ]
+  },
+  "reading": {
+    "matching": {
+      "instructions": "Match the terms (1–5) with the correct definitions (A–F). There is one extra definition that you do not need (Questions 1–5).",
+      "definitions": [
+        { "id": "A", "text": "Adding a label to a program or document so that its data is arranged in a particular way." },
+        { "id": "B", "text": "A device used to connect several video conferencing locations." },
+        { "id": "C", "text": "A service that distributes or gives access to digitally stored information." },
+        { "id": "D", "text": "Used to describe business activities between companies and end-users, especially on the internet." },
+        { "id": "E", "text": "A method used to limit how digital content and devices can be used after they have been sold." },
+        { "id": "F", "text": "The ability of a computer to recognise speech, especially the speech of one particular person." }
+      ],
+      "items": [
+        { "id": "R1", "term": "DRM", "answerKey": "E", "explanation": "DRM (Digital Rights Management, quản lý quyền kỹ thuật số) là phương pháp giới hạn việc sử dụng nội dung số và thiết bị sau khi đã bán." },
+        { "id": "R2", "term": "Tagging", "answerKey": "A", "explanation": "Tagging (gắn thẻ) là gắn nhãn vào chương trình hoặc tài liệu để sắp xếp dữ liệu theo một cách nhất định." },
+        { "id": "R3", "term": "File sharing service", "answerKey": "C", "explanation": "File sharing service (dịch vụ chia sẻ tệp) là dịch vụ phân phối hoặc cho phép truy cập thông tin lưu trữ dạng số." },
+        { "id": "R4", "term": "B2C", "answerKey": "D", "explanation": "B2C (Business to Consumer, doanh nghiệp với người tiêu dùng) chỉ hoạt động kinh doanh giữa công ty và người dùng cuối, nhất là qua Internet." },
+        { "id": "R5", "term": "Voice recognition", "answerKey": "F", "explanation": "Voice recognition (nhận dạng giọng nói) là khả năng máy tính nhận ra lời nói, nhất là giọng của một người cụ thể. Định nghĩa B là của MCU (Multipoint Control Unit), không có trong danh sách thuật ngữ." }
+      ]
+    },
+    "grammar": [
+      {
+        "id": "R6",
+        "kind": "mcq",
+        "stem": "At the moment, our online sales ______ quickly.",
+        "options": [
+          { "id": "A", "text": "is growing" },
+          { "id": "B", "text": "are growing" },
+          { "id": "C", "text": "grows" },
+          { "id": "D", "text": "growing" }
+        ],
+        "answerKey": "B",
+        "explanation": "\"At the moment\" và nghĩa thay đổi đang diễn ra nên dùng hiện tại tiếp diễn; chủ ngữ \"sales\" số nhiều nên dùng \"are growing\". \"is growing\", \"grows\" sai hoà hợp; \"growing\" thiếu trợ động từ."
+      },
+      {
+        "id": "R7",
+        "kind": "mcq",
+        "stem": "Because more and more people print at lunchtime, the queue at the printer is getting ______.",
+        "options": [
+          { "id": "A", "text": "longest" },
+          { "id": "B", "text": "more long" },
+          { "id": "C", "text": "the longer" },
+          { "id": "D", "text": "longer" }
+        ],
+        "answerKey": "D",
+        "explanation": "Mô tả thay đổi: get + tính từ so sánh hơn: \"is getting longer\" (ngày càng dài hơn). Tính từ ngắn thêm -er, không dùng \"more long\"; \"longest\", \"the longer\" sai dạng."
+      },
+      {
+        "id": "R8",
+        "kind": "mcq",
+        "stem": "Last year, the price of the webcam ______ from £80 to £50.",
+        "options": [
+          { "id": "A", "text": "decreased" },
+          { "id": "B", "text": "increased" },
+          { "id": "C", "text": "went up" },
+          { "id": "D", "text": "grew" }
+        ],
+        "answerKey": "A",
+        "explanation": "Giá giảm từ 80 xuống 50 bảng nên dùng \"decreased\" (giảm). \"increased\", \"went up\", \"grew\" đều là tăng, trái với số liệu."
+      },
+      {
+        "id": "R9",
+        "kind": "mcq",
+        "stem": "If I ______ you, I would ask the IT department for some training.",
+        "options": [
+          { "id": "A", "text": "am" },
+          { "id": "B", "text": "will be" },
+          { "id": "C", "text": "were" },
+          { "id": "D", "text": "would be" }
+        ],
+        "answerKey": "C",
+        "explanation": "Câu điều kiện loại 2 dùng để khuyên: \"If I were you, I would…\". Mệnh đề If dùng quá khứ đơn (were), không dùng will/would."
+      },
+      {
+        "id": "R10",
+        "kind": "mcq",
+        "stem": "We ______ more customers if our website worked well on mobile phones.",
+        "options": [
+          { "id": "A", "text": "will get" },
+          { "id": "B", "text": "would get" },
+          { "id": "C", "text": "get" },
+          { "id": "D", "text": "got" }
+        ],
+        "answerKey": "B",
+        "explanation": "Câu điều kiện loại 2: mệnh đề If ở quá khứ đơn (worked) nên mệnh đề chính dùng would + V: \"would get\"."
+      },
+      {
+        "id": "R11",
+        "kind": "mcq",
+        "stem": "Our café uses a QR code system, ______ lets customers pay by scanning a code with their phone.",
+        "options": [
+          { "id": "A", "text": "which" },
+          { "id": "B", "text": "who" },
+          { "id": "C", "text": "where" },
+          { "id": "D", "text": "what" }
+        ],
+        "answerKey": "A",
+        "explanation": "Giải nghĩa thuật ngữ bằng mệnh đề quan hệ chỉ vật: \"a QR code system, which lets customers pay…\". \"who\" chỉ người; \"where\" chỉ nơi chốn; \"what\" không dùng làm đại từ quan hệ."
+      },
+      {
+        "id": "R12",
+        "kind": "mcq",
+        "stem": "______ you send me the slides from yesterday's training session, please?",
+        "options": [
+          { "id": "A", "text": "Must" },
+          { "id": "B", "text": "Could" },
+          { "id": "C", "text": "Should" },
+          { "id": "D", "text": "Shall" }
+        ],
+        "answerKey": "B",
+        "explanation": "Yêu cầu lịch sự dùng \"Could you…, please?\". \"Must\", \"Should\", \"Shall you\" không dùng để nhờ ai làm việc gì."
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "R13",
+        "kind": "mcq",
+        "stem": "The processor is the most important ______ of a computer.",
+        "options": [
+          { "id": "A", "text": "trend" },
+          { "id": "B", "text": "delivery" },
+          { "id": "C", "text": "component" },
+          { "id": "D", "text": "announcement" }
+        ],
+        "answerKey": "C",
+        "explanation": "Component (linh kiện, bộ phận) là một trong các phần tạo nên cả cỗ máy hoặc hệ thống."
+      },
+      {
+        "id": "R14",
+        "kind": "mcq",
+        "stem": "The programmer found a mistake in the ______, and that was why the app kept stopping.",
+        "options": [
+          { "id": "A", "text": "code" },
+          { "id": "B", "text": "trend" },
+          { "id": "C", "text": "delivery" },
+          { "id": "D", "text": "premises" }
+        ],
+        "answerKey": "A",
+        "explanation": "Code (mã) là tập lệnh cho máy tính biết phải làm gì; lỗi trong mã làm ứng dụng bị dừng."
+      },
+      {
+        "id": "R15",
+        "kind": "mcq",
+        "stem": "The shop offers free ______ on orders over £50, so the parcel comes to your door at no extra cost.",
+        "options": [
+          { "id": "A", "text": "accounting" },
+          { "id": "B", "text": "delivery" },
+          { "id": "C", "text": "messaging" },
+          { "id": "D", "text": "networking" }
+        ],
+        "answerKey": "B",
+        "explanation": "Delivery (giao hàng) là việc mang hàng đến người nhận; \"comes to your door\" là giao tận nhà."
+      },
+      {
+        "id": "R16",
+        "kind": "mcq",
+        "stem": "Our ______ software calculates taxes and keeps a record of every payment.",
+        "options": [
+          { "id": "A", "text": "delivery" },
+          { "id": "B", "text": "messaging" },
+          { "id": "C", "text": "networking" },
+          { "id": "D", "text": "accounting" }
+        ],
+        "answerKey": "D",
+        "explanation": "Accounting (kế toán) là công việc ghi chép, kiểm tra tài chính và tính thuế."
+      },
+      {
+        "id": "R17",
+        "kind": "mcq",
+        "stem": "One clear ______ this year is that more and more customers are shopping on their phones.",
+        "options": [
+          { "id": "A", "text": "trend" },
+          { "id": "B", "text": "code" },
+          { "id": "C", "text": "component" },
+          { "id": "D", "text": "procedure" }
+        ],
+        "answerKey": "A",
+        "explanation": "Trend (xu hướng) là chiều hướng thay đổi chung của một tình hình."
+      },
+      {
+        "id": "R18",
+        "kind": "mcq",
+        "stem": "At the staff meeting, the director made an important ______ about the new office in Singapore.",
+        "options": [
+          { "id": "A", "text": "component" },
+          { "id": "B", "text": "delivery" },
+          { "id": "C", "text": "announcement" },
+          { "id": "D", "text": "code" }
+        ],
+        "answerKey": "C",
+        "explanation": "Announcement (thông báo) là lời tuyên bố chính thức, quan trọng."
+      },
+      {
+        "id": "R19",
+        "kind": "mcq",
+        "stem": "Please follow the correct ______ when you report a security problem: first phone the help desk, and then complete the online form.",
+        "options": [
+          { "id": "A", "text": "trend" },
+          { "id": "B", "text": "component" },
+          { "id": "C", "text": "announcement" },
+          { "id": "D", "text": "procedure" }
+        ],
+        "answerKey": "D",
+        "explanation": "Procedure (quy trình, thủ tục) là cách làm đúng hoặc thông thường, gồm các bước theo thứ tự."
+      },
+      {
+        "id": "R20",
+        "kind": "mcq",
+        "stem": "The new ______ camera shows every small detail of the product very clearly.",
+        "options": [
+          { "id": "A", "text": "remote" },
+          { "id": "B", "text": "high-definition" },
+          { "id": "C", "text": "overseas" },
+          { "id": "D", "text": "local" }
+        ],
+        "answerKey": "B",
+        "explanation": "High-definition (độ nét cao) là thiết bị hiển thị hình ảnh rất rõ."
+      }
+    ],
+    "passageMcq": {
+      "instructions": "Read the passage and choose the best answer A, B, C or D (Questions 21–25).",
+      "passage": {
+        "title": "Working from Home at Bluewave Software",
+        "paragraphs": [
+          "Bluewave Software is a company in Da Nang with ninety employees. Five years ago, almost everyone worked in the office from Monday to Friday, and meetings were always held in the same building. Today the situation is very different. More and more staff are working from home for part of the week, and the number of people in the office on a typical day is going down.",
+          "The company's latest survey shows that 60% of employees now work from home two or three days a week. Most of them say that they are getting more work done, because they spend less time travelling to and from the office. Online meetings are also becoming shorter, as teams are learning to prepare better before each call.",
+          "However, the change is causing some problems. New employees are finding it harder to learn from experienced colleagues, because they rarely sit next to them. Some staff also say that they feel lonely when they work at home all week. At the same time, the office is getting more expensive to run, even though it is often half empty.",
+          "The managers have decided that all teams will come to the office every Tuesday and Thursday. On these days, new employees can work next to their mentors and ask questions face to face. The managers are also thinking about moving to a smaller office. If they did this, they would save around $40,000 a year."
+        ]
+      },
+      "questions": [
+        {
+          "id": "R21",
+          "kind": "mcq",
+          "stem": "What is happening to the number of people in the office on a typical day?",
+          "options": [
+            { "id": "A", "text": "It is going up." },
+            { "id": "B", "text": "It is going down." },
+            { "id": "C", "text": "It is staying the same." },
+            { "id": "D", "text": "It doubled five years ago." }
+          ],
+          "answerKey": "B",
+          "explanation": "Đoạn 1: \"the number of people in the office on a typical day is going down\"."
+        },
+        {
+          "id": "R22",
+          "kind": "mcq",
+          "stem": "According to the survey, why are employees getting more work done?",
+          "options": [
+            { "id": "A", "text": "They have faster computers at home." },
+            { "id": "B", "text": "Their meetings are getting longer." },
+            { "id": "C", "text": "They spend less time travelling." },
+            { "id": "D", "text": "They work on Tuesdays and Thursdays." }
+          ],
+          "answerKey": "C",
+          "explanation": "Đoạn 2: họ làm được nhiều việc hơn \"because they spend less time travelling to and from the office\"."
+        },
+        {
+          "id": "R23",
+          "kind": "mcq",
+          "stem": "What problem do new employees have?",
+          "options": [
+            { "id": "A", "text": "It is harder for them to learn from experienced colleagues." },
+            { "id": "B", "text": "They cannot join online meetings from home." },
+            { "id": "C", "text": "They have to work in the office every day." },
+            { "id": "D", "text": "The office is too far from their homes." }
+          ],
+          "answerKey": "A",
+          "explanation": "Đoạn 3: \"New employees are finding it harder to learn from experienced colleagues, because they rarely sit next to them.\""
+        },
+        {
+          "id": "R24",
+          "kind": "mcq",
+          "stem": "What will happen every Tuesday and Thursday?",
+          "options": [
+            { "id": "A", "text": "The office will be closed." },
+            { "id": "B", "text": "Staff will have online meetings only." },
+            { "id": "C", "text": "The company will hire new mentors." },
+            { "id": "D", "text": "All teams will come to the office." }
+          ],
+          "answerKey": "D",
+          "explanation": "Đoạn 4: \"all teams will come to the office every Tuesday and Thursday\"."
+        },
+        {
+          "id": "R25",
+          "kind": "mcq",
+          "stem": "What would happen if the company moved to a smaller office?",
+          "options": [
+            { "id": "A", "text": "It would save about $40,000 a year." },
+            { "id": "B", "text": "It would need ninety more desks." },
+            { "id": "C", "text": "Staff would have to work at home every day." },
+            { "id": "D", "text": "New employees would feel lonely." }
+          ],
+          "answerKey": "A",
+          "explanation": "Đoạn 4: \"If they did this, they would save around $40,000 a year.\""
+        }
+      ]
+    },
+    "passageTrueFalse": {
+      "instructions": "Read the passage and write T (True) or F (False) (Questions 26–30).",
+      "passage": {
+        "title": "A Small Hotel Goes Online",
+        "paragraphs": [
+          "The Seaview Hotel is a small family hotel in Cornwall with fourteen rooms and a view of the sea. Until last year, most guests booked their rooms by phone. Now more and more guests are booking through the hotel's website, and the number of phone bookings is going down.",
+          "Last spring, the owner's daughter, Jess, started a social media page for the hotel. She posts photos of the rooms, the beach and the breakfast menu three times a week. The page now has 4,000 followers, and the number is going up every month. Jess replies to every comment within one day, because she wants guests to feel welcome even before they arrive.",
+          "Not everything is easy. Some guests write negative comments, for example about the slow Wi-Fi in the rooms. Jess says that if the hotel had better Wi-Fi, it would get much better comments. The family is planning to upgrade the network in the winter, when the hotel is closed and there are no guests."
+        ]
+      },
+      "questions": [
+        {
+          "id": "R26",
+          "kind": "tf",
+          "statement": "Until last year, most guests booked their rooms by phone.",
+          "answerKey": "T",
+          "explanation": "Đoạn 1: \"Until last year, most guests booked their rooms by phone.\""
+        },
+        {
+          "id": "R27",
+          "kind": "tf",
+          "statement": "The number of phone bookings is increasing.",
+          "answerKey": "F",
+          "explanation": "Đoạn 1: \"the number of phone bookings is going down\"."
+        },
+        {
+          "id": "R28",
+          "kind": "tf",
+          "statement": "Jess posts photos on the page every day.",
+          "answerKey": "F",
+          "explanation": "Đoạn 2: Jess đăng ảnh \"three times a week\"."
+        },
+        {
+          "id": "R29",
+          "kind": "tf",
+          "statement": "Jess replies to every comment within one day.",
+          "answerKey": "T",
+          "explanation": "Đoạn 2: \"Jess replies to every comment within one day\"."
+        },
+        {
+          "id": "R30",
+          "kind": "tf",
+          "statement": "The hotel is closed in the winter.",
+          "answerKey": "T",
+          "explanation": "Đoạn 3: gia đình nâng cấp mạng \"in the winter, when the hotel is closed and there are no guests\"."
+        }
+      ]
+    }
+  },
+  "writing": {
+    "translation": {
+      "instructions": "Translate these sentences into Vietnamese (Questions 31–35).",
+      "items": [
+        {
+          "id": "W31",
+          "source": "DRM stops people from copying the e-books and music that they have bought.",
+          "referenceTranslation": "DRM (quản lý quyền kỹ thuật số) ngăn người dùng sao chép sách điện tử và nhạc mà họ đã mua."
+        },
+        {
+          "id": "W32",
+          "source": "If our staff had better training, they would make fewer mistakes with the new system.",
+          "referenceTranslation": "Nếu nhân viên của chúng ta được đào tạo tốt hơn, họ sẽ mắc ít lỗi hơn với hệ thống mới."
+        },
+        {
+          "id": "W33",
+          "source": "More and more companies are using file sharing services to work with remote colleagues.",
+          "referenceTranslation": "Ngày càng nhiều công ty dùng dịch vụ chia sẻ tệp để làm việc với đồng nghiệp ở xa."
+        },
+        {
+          "id": "W34",
+          "source": "B2C, which means business to consumer, is the most common type of e-commerce.",
+          "referenceTranslation": "B2C, nghĩa là doanh nghiệp với người tiêu dùng, là loại hình thương mại điện tử phổ biến nhất."
+        },
+        {
+          "id": "W35",
+          "source": "Could someone show me how to add tags to my photos in the company's online library?",
+          "referenceTranslation": "Ai đó có thể chỉ cho tôi cách gắn thẻ cho ảnh của tôi trong thư viện trực tuyến của công ty được không?"
+        }
+      ]
+    },
+    "email": {
+      "id": "W-EMAIL",
+      "recipient": "Mia",
+      "task": "You are an IT support technician. More and more staff are using TeamTalk, the company's instant messaging app, on their phones. Mia, a new sales assistant, wants to install it. Write an email to Mia explaining the steps, using the notes below. In your email you must use:\n- imperatives and sequence words for the steps;\n- at least one sentence describing a current trend (present continuous or more and more);\n- at least one second conditional sentence (If + past simple, … would/could + verb), for example to explain what would happen if she didn't set her status to \"Away\";\n- at least one polite request (Could you…? / It would be great if you could…), for example asking Mia to send you a test message.\nFollow the standard layout for an email giving instructions: From / To / Date / Subject, a greeting, It should be quite easy to …, the steps with First / Then / Next / After that / Finally, a reminder (Don't forget to … when you've finished.), then Best wishes and your name, position and department.\nWrite 80–100 words (do not count the From, To, Date and Subject lines).",
+      "bullets": [
+        "download TeamTalk from the app store",
+        "sign in with your work email and password",
+        "join the channel for the sales department",
+        "set your status to 'Away' when you are out (if not: colleagues would expect a quick reply)",
+        "ask Mia to send you a test message",
+        "reminder: lock your phone"
+      ],
+      "wordRange": [80, 100],
+      "targetGrammar": [
+        "Imperatives with sequence words: First, Then, Next, After that, Finally",
+        "Describing current trends: present continuous; more and more + noun",
+        "Second conditional: If + past simple, … would/could + verb",
+        "Polite requests: Could you…?, It would be great if you could…"
+      ],
+      "modelAnswer": "From: Le Minh Duc\nTo: Mia\nDate: 15th April\nSubject: Installing TeamTalk\n\nHi Mia,\n\nIt should be quite easy to install TeamTalk. More and more of our staff are using it on their phones.\nFirst, download TeamTalk from the app store.\nThen, sign in with your work email and password.\nNext, join the sales department channel.\nAfter that, set your status to 'Away' when you are out. If you didn't, colleagues would expect a quick reply.\nFinally, could you send me a test message?\nDon't forget to lock your phone when you've finished.\n\nBest wishes,\nLe Minh Duc\nSupport Technician\nIT Department"
+    }
+  },
+  "speaking": {
+    "parts": [
+      {
+        "id": "S1",
+        "kind": "questions",
+        "instructions": "Answer the three questions. Speak for 30–45 seconds for each question.",
+        "questions": [
+          "How is the way students study changing these days? Describe two trends. Use the present continuous and words such as more and more, is getting/becoming + comparative, or is increasing/decreasing.",
+          "If your class had a video conference with students in another country, what would you talk about, and what would you learn? Answer with the second conditional (If we had…, we would…).",
+          "You want to learn how to use a new app for your studies. Make at least two polite requests to your teacher (It would be great to know…, Could you show me…?, I'd like to know…)."
+        ],
+        "secondsPerQuestion": 45
+      },
+      {
+        "id": "S2",
+        "kind": "explain",
+        "instructions": "Explain the terms. Speak for 1–1.5 minutes.",
+        "prompt": "Your grandparents are starting to shop online, but they do not understand some words on shopping websites. Explain what each term in the cues means and give a simple example. Give the meanings in at least two different spoken ways: called, which means, or is.",
+        "cues": [
+          "shopping basket",
+          "cookie",
+          "NFC payment",
+          "B2B"
+        ],
+        "requiredGrammar": [
+          "Giving meanings in at least two of three ways (called / which means / be): a small file called a cookie; B2B, which means business to business; A shopping basket is…"
+        ],
+        "seconds": 90,
+        "sampleAnswer": "Let me explain some words you will see on shopping websites. First, the shopping basket is the place on the website where you keep the things you want to buy before you pay. It's like a real basket in a supermarket. Next, many websites save a small file called a cookie on your computer. The cookie helps the website remember you, so next time it can show your basket again. Then there's NFC payment, which means you can pay by holding your phone or bank card near the card machine. You don't need to type a PIN for small amounts. Finally, you may see B2B, which means business to business. These are websites where companies sell to other companies, so you probably won't use them."
+      },
+      {
+        "id": "S3",
+        "kind": "situation",
+        "instructions": "Deal with the situation. Speak for 1–1.5 minutes.",
+        "prompt": "You are the IT manager of a supermarket chain. Your manager asks how customers' shopping habits are changing and whether the supermarket should buy self-checkout machines. First, describe the current trends in the cues with the present continuous, more and more, get/become + comparative, or go up/go down. Then explain what would happen if the supermarket bought the machines, with at least two second conditional sentences (If we bought…, customers would…).",
+        "cues": [
+          "online orders: going up by about 20% a year",
+          "cash payments: going down",
+          "phone payments: more and more popular",
+          "queues at weekends: getting longer",
+          "proposal: ten self-checkout machines (£4,000 each)"
+        ],
+        "requiredGrammar": [
+          "Present continuous for current changes: Online orders are going up.",
+          "more and more + noun; get/become + comparative adjective: Queues are getting longer.",
+          "Second conditional (at least two sentences): If we bought the machines, customers would wait less."
+        ],
+        "seconds": 90,
+        "sampleAnswer": "Our customers' habits are changing quickly. Online orders are going up by about twenty percent a year, and cash payments are going down. More and more people are paying with their phones, because it's faster. However, the queues at weekends are getting longer, and some customers are complaining. That's why I think we should buy ten self-checkout machines. Each machine costs four thousand pounds. If we bought them, customers with only a few items would pay in less than a minute, so the queues would get shorter. If the machines accepted phone payments, they would be very popular with younger customers. Also, if we had self-checkouts, our staff could spend more time helping customers in the shop."
+      }
+    ]
+  }
+}

@@ -1,0 +1,1072 @@
+{
+  "schemaVersion": 1,
+  "unit": 3,
+  "unitTitle": "Data communications",
+  "testId": "B",
+  "source": "ai",
+  "functions": [
+    "Solving browser problems (Internet browsing)",
+    "Explaining network concepts (Networks)",
+    "Describing the benefits of mobile devices (Mobile computing)",
+    "Finding information in an email (Email)"
+  ],
+  "grammarFocus": [
+    "Present simple and present continuous; state verbs (know, understand, want, need, like) are not usually used in the continuous form",
+    "Relative clauses with which, that, who",
+    "Zero conditional (If + present simple, present simple) for things that are always true; first conditional (If + present simple, will + verb) for likely future results",
+    "Articles a, an, the"
+  ],
+  "sourceNotes": [
+    "Đề B Unit 3, AI soạn mới theo khung đề và quy tắc 1–15; không lặp bài đọc, lời thoại, tình huống, câu dịch, đề email và đề nói của đề A.",
+    "R1–R5: thuật ngữ và định nghĩa lấy gần nguyên văn Workbook Unit 3 Part 1 (3A, 3B, 3C, 3D); định nghĩa thừa (recharger) lấy từ Workbook 3C. Không trùng thuật ngữ câu nối với đề A.",
+    "R13–R20: từ vựng lấy từ Workbook Unit 3 Part 1 (3A, 3B, 3C, 3D).",
+    "Bài đọc R21–R25 (công ty giảm lượng email nội bộ) và R26–R30 (mẹo duyệt web an toàn) viết mới; không dùng thuật ngữ câu nối và không diễn đạt lại định nghĩa của chúng.",
+    "Listening A: nhân viên làm việc tại nhà gọi IT vì cuộc gọi video bị đứng hình (Networks). Listening B: bản tin công nghệ giới thiệu ứng dụng đi tàu (Mobile computing). Không chép Audio script.",
+    "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại.",
+    "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
+    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
+    "Bản r1 (theo review chéo của et-author2): R10 đổi nhiễu 'moved' thành 'moves' (quá khứ cũng hợp lý); R16 đổi sang server để không trùng bộ phương án R17 và tình huống làm việc từ xa của R18; R11 đổi tình huống (trùng Listening A); bài đọc R21–R25 đoạn 3 thay biện pháp copy cả nhóm (trùng Listening B đề A); W33 đổi tình huống và bản dịch; S3 đổi cues sang sự cố không liên quan an toàn (trùng bài R26–R30); S1 câu 1, 2 đổi; email mẫu thêm câu điều kiện loại 1 đúng mẫu; L8, L9, L10 thêm biến thể.",
+    "Bản r1, đợt 2 (theo audit audit/unit-3-B): R17 thay nhiễu 'VPN' bằng 'dongle'; bài R26–R30 mẹo 3 và R28 viết lại cho chính xác (công ty diệt virus thật không yêu cầu gọi điện từ pop-up trên website); W35 sửa nội dung cho đúng cách tự chỉnh độ sáng.",
+    "Xáo thứ tự phương án R11, R13, R15 để khoá R6–R25 không lặp chu kỳ (không đổi chữ trong stem và phương án)."
+  ],
+  "listening": {
+    "parts": [
+      {
+        "id": "A",
+        "instructions": "Listen to the phone call and choose the best answer A, B, C or D (Questions L1–L5).",
+        "context": "Freya, who is working from home today, phones Dan at IT support.",
+        "speakers": [
+          {
+            "name": "Dan",
+            "voice": "male"
+          },
+          {
+            "name": "Freya",
+            "voice": "female"
+          }
+        ],
+        "script": [
+          {
+            "speaker": "Dan",
+            "text": "IT support, Dan speaking."
+          },
+          {
+            "speaker": "Freya",
+            "text": "Hi Dan, it's Freya. I'm working from home today, and I'm having problems with my video calls. The picture keeps freezing, and people can't hear me properly."
+          },
+          {
+            "speaker": "Dan",
+            "text": "OK. Are you using the wi-fi or a cable?"
+          },
+          {
+            "speaker": "Freya",
+            "text": "The wi-fi. The router is downstairs, and I'm sitting in my bedroom upstairs."
+          },
+          {
+            "speaker": "Dan",
+            "text": "That's probably the problem. Wi-fi signals get weaker if they go through walls and floors. Can you move closer to the router?"
+          },
+          {
+            "speaker": "Freya",
+            "text": "Not really. My children are watching TV in the living room, right next to it."
+          },
+          {
+            "speaker": "Dan",
+            "text": "I see. Is anyone else using the internet at the moment?"
+          },
+          {
+            "speaker": "Freya",
+            "text": "Yes, I think my son is playing an online game."
+          },
+          {
+            "speaker": "Dan",
+            "text": "That uses a lot of bandwidth. If he stops the game during your call, the picture will be much better. Another option is a powerline adapter. It sends the internet signal through the electrical wires in your house, so you get a wired connection upstairs."
+          },
+          {
+            "speaker": "Freya",
+            "text": "That sounds good. Where can I get one?"
+          },
+          {
+            "speaker": "Dan",
+            "text": "We keep some in the IT office. If you come in tomorrow, I'll give you one."
+          },
+          {
+            "speaker": "Freya",
+            "text": "Great. For now, I'll ask my son to stop playing. Thanks, Dan."
+          }
+        ],
+        "questions": [
+          {
+            "id": "L1",
+            "kind": "mcq",
+            "stem": "What problem is Freya having?",
+            "options": [
+              {
+                "id": "A",
+                "text": "She can't log in to her email."
+              },
+              {
+                "id": "B",
+                "text": "Her laptop won't switch on."
+              },
+              {
+                "id": "C",
+                "text": "Her router is broken."
+              },
+              {
+                "id": "D",
+                "text": "The picture in her video calls keeps freezing."
+              }
+            ],
+            "answerKey": "D",
+            "explanation": "Freya: \"I'm having problems with my video calls. The picture keeps freezing, and people can't hear me properly.\""
+          },
+          {
+            "id": "L2",
+            "kind": "mcq",
+            "stem": "Where is Freya sitting during the call?",
+            "options": [
+              {
+                "id": "A",
+                "text": "In her bedroom upstairs"
+              },
+              {
+                "id": "B",
+                "text": "In the living room"
+              },
+              {
+                "id": "C",
+                "text": "In the IT office"
+              },
+              {
+                "id": "D",
+                "text": "Next to the router"
+              }
+            ],
+            "answerKey": "A",
+            "explanation": "\"The router is downstairs, and I'm sitting in my bedroom upstairs.\""
+          },
+          {
+            "id": "L3",
+            "kind": "mcq",
+            "stem": "Why can't Freya move closer to the router?",
+            "options": [
+              {
+                "id": "A",
+                "text": "The router is in the IT office."
+              },
+              {
+                "id": "B",
+                "text": "Her children are watching TV next to it."
+              },
+              {
+                "id": "C",
+                "text": "Her laptop cable is too short."
+              },
+              {
+                "id": "D",
+                "text": "Her son is sleeping in that room."
+              }
+            ],
+            "answerKey": "B",
+            "explanation": "Freya: \"My children are watching TV in the living room, right next to it.\""
+          },
+          {
+            "id": "L4",
+            "kind": "mcq",
+            "stem": "According to Dan, what will make the picture much better during Freya's call?",
+            "options": [
+              {
+                "id": "A",
+                "text": "Switching off the TV"
+              },
+              {
+                "id": "B",
+                "text": "Restarting her laptop"
+              },
+              {
+                "id": "C",
+                "text": "Her son stopping his online game"
+              },
+              {
+                "id": "D",
+                "text": "Buying a new router"
+              }
+            ],
+            "answerKey": "C",
+            "explanation": "Dan: \"If he stops the game during your call, the picture will be much better.\""
+          },
+          {
+            "id": "L5",
+            "kind": "mcq",
+            "stem": "What will Dan give Freya if she comes to the office tomorrow?",
+            "options": [
+              {
+                "id": "A",
+                "text": "A powerline adapter"
+              },
+              {
+                "id": "B",
+                "text": "A new laptop"
+              },
+              {
+                "id": "C",
+                "text": "A long network cable"
+              },
+              {
+                "id": "D",
+                "text": "A faster router"
+              }
+            ],
+            "answerKey": "A",
+            "explanation": "Dan nói về powerline adapter rồi: \"We keep some in the IT office. If you come in tomorrow, I'll give you one.\""
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "instructions": "Listen to the radio programme and answer the questions. Write NO MORE THAN THREE WORDS for each answer (Questions L6–L10).",
+        "context": "Laura presents a short technology programme about a new mobile app for train passengers.",
+        "speakers": [
+          {
+            "name": "Laura",
+            "voice": "female"
+          }
+        ],
+        "script": [
+          {
+            "speaker": "Laura",
+            "text": "Welcome to Tech Today. I'm Laura. This week, the national rail company is introducing its new mobile app, RailGo, and lots of passengers are already using it. Here's what it does."
+          },
+          {
+            "speaker": "Laura",
+            "text": "First, you can buy tickets on the app, and the ticket appears as a QR code on your phone. If you show the code at the gate, the gate opens automatically, so you don't need a paper ticket."
+          },
+          {
+            "speaker": "Laura",
+            "text": "Second, the app shows live train times. If your train is late, the app sends you a message straight away. It also tells you which platform your train is leaving from."
+          },
+          {
+            "speaker": "Laura",
+            "text": "Third, the app uses your location to find the nearest station. This is very useful when you're visiting a new city."
+          },
+          {
+            "speaker": "Laura",
+            "text": "The app is free, and it works on both Android and Apple phones. It needs about 80 megabytes of space. One warning, though: the app uses GPS a lot, so it can reduce your battery life. If you're going on a long journey, take a charger with you. That's all for today."
+          }
+        ],
+        "questions": [
+          {
+            "id": "L6",
+            "kind": "short",
+            "stem": "What is the name of the new app?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "railgo",
+              "rail go"
+            ],
+            "explanation": "\"its new mobile app, RailGo\"."
+          },
+          {
+            "id": "L7",
+            "kind": "short",
+            "stem": "What does the ticket appear as on your phone?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "a qr code",
+              "qr code",
+              "the qr code"
+            ],
+            "explanation": "\"the ticket appears as a QR code on your phone\"."
+          },
+          {
+            "id": "L8",
+            "kind": "short",
+            "stem": "What does the app send you if your train is late?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "a message",
+              "message",
+              "a text message",
+              "text message",
+              "the message"
+            ],
+            "explanation": "\"If your train is late, the app sends you a message straight away.\""
+          },
+          {
+            "id": "L9",
+            "kind": "short",
+            "stem": "How much space does the app need on your phone?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "about 80 megabytes",
+              "80 megabytes",
+              "eighty megabytes",
+              "about eighty megabytes",
+              "80 mb",
+              "about 80 mb",
+              "80mb",
+              "about 80mb"
+            ],
+            "explanation": "\"It needs about 80 megabytes of space.\""
+          },
+          {
+            "id": "L10",
+            "kind": "short",
+            "stem": "What should you take with you on a long journey?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "a charger",
+              "charger",
+              "your charger",
+              "a phone charger",
+              "phone charger",
+              "the charger"
+            ],
+            "explanation": "\"If you're going on a long journey, take a charger with you.\""
+          }
+        ]
+      }
+    ]
+  },
+  "reading": {
+    "matching": {
+      "instructions": "Match the terms (1–5) with the correct definitions (A–F). There is one extra definition that you do not need (Questions 1–5).",
+      "definitions": [
+        {
+          "id": "A",
+          "text": "A list of goods that have been supplied or work that has been done, showing how much you owe for them."
+        },
+        {
+          "id": "B",
+          "text": "A circuit that connects each computer on a network to several others."
+        },
+        {
+          "id": "C",
+          "text": "A machine that puts a new supply of electricity into a battery."
+        },
+        {
+          "id": "D",
+          "text": "A computer program that tells you when you have spelled a word wrongly."
+        },
+        {
+          "id": "E",
+          "text": "A special word or picture on a web page that you click on to move quickly to another page or another part of the same page."
+        },
+        {
+          "id": "F",
+          "text": "To change something to make it more suitable for you, or to make it look different from things of a similar type."
+        }
+      ],
+      "items": [
+        {
+          "id": "R1",
+          "term": "Spell checker",
+          "answerKey": "D",
+          "explanation": "Spell checker (trình kiểm tra chính tả) báo cho bạn khi viết sai chính tả một từ."
+        },
+        {
+          "id": "R2",
+          "term": "Invoice",
+          "answerKey": "A",
+          "explanation": "Invoice (hoá đơn) liệt kê hàng hoá đã cung cấp hoặc công việc đã làm và số tiền phải trả."
+        },
+        {
+          "id": "R3",
+          "term": "Customise",
+          "answerKey": "F",
+          "explanation": "Customise (tuỳ chỉnh) là thay đổi cái gì cho phù hợp với mình hơn hoặc khác với những thứ cùng loại."
+        },
+        {
+          "id": "R4",
+          "term": "Mesh",
+          "answerKey": "B",
+          "explanation": "Mesh (mạng lưới) là kiểu kết nối trong đó mỗi máy tính nối với nhiều máy khác trong mạng. Định nghĩa C là của recharger (bộ sạc), không có trong danh sách thuật ngữ."
+        },
+        {
+          "id": "R5",
+          "term": "Link",
+          "answerKey": "E",
+          "explanation": "Link (đường liên kết) là từ hoặc hình trên trang web, nhấp vào để chuyển nhanh sang trang khác hoặc phần khác."
+        }
+      ]
+    },
+    "grammar": [
+      {
+        "id": "R6",
+        "kind": "mcq",
+        "stem": "Our technician ______ the servers every Sunday night, so the website is sometimes slow then.",
+        "options": [
+          {
+            "id": "A",
+            "text": "is updating"
+          },
+          {
+            "id": "B",
+            "text": "updates"
+          },
+          {
+            "id": "C",
+            "text": "update"
+          },
+          {
+            "id": "D",
+            "text": "updating"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "\"every Sunday night\" chỉ thói quen lặp lại nên dùng hiện tại đơn; chủ ngữ số ít (Our technician) nên \"updates\"."
+      },
+      {
+        "id": "R7",
+        "kind": "mcq",
+        "stem": "'______ the password for the guest wi-fi?' 'Yes, it's on the card at reception.'",
+        "options": [
+          {
+            "id": "A",
+            "text": "Are you knowing"
+          },
+          {
+            "id": "B",
+            "text": "Does you know"
+          },
+          {
+            "id": "C",
+            "text": "Do you know"
+          },
+          {
+            "id": "D",
+            "text": "You knowing"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "\"know\" là động từ trạng thái, không dùng ở thì tiếp diễn. Câu hỏi hiện tại đơn với \"you\": Do you know…?"
+      },
+      {
+        "id": "R8",
+        "kind": "mcq",
+        "stem": "A router is a device ______ sends data from one network to another.",
+        "options": [
+          {
+            "id": "A",
+            "text": "who"
+          },
+          {
+            "id": "B",
+            "text": "what"
+          },
+          {
+            "id": "C",
+            "text": "where"
+          },
+          {
+            "id": "D",
+            "text": "that"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Mệnh đề quan hệ bổ nghĩa cho vật (a device) làm chủ ngữ: dùng \"that\" hoặc \"which\". \"who\" chỉ dùng cho người."
+      },
+      {
+        "id": "R9",
+        "kind": "mcq",
+        "stem": "The engineer ______ fixed our network yesterday works for a company in Da Nang.",
+        "options": [
+          {
+            "id": "A",
+            "text": "who"
+          },
+          {
+            "id": "B",
+            "text": "which"
+          },
+          {
+            "id": "C",
+            "text": "what"
+          },
+          {
+            "id": "D",
+            "text": "where"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "Mệnh đề quan hệ bổ nghĩa cho người (The engineer): dùng \"who\"."
+      },
+      {
+        "id": "R10",
+        "kind": "mcq",
+        "stem": "If you ______ a file to the Recycle Bin, you can still restore it.",
+        "options": [
+          {
+            "id": "A",
+            "text": "will move"
+          },
+          {
+            "id": "B",
+            "text": "move"
+          },
+          {
+            "id": "C",
+            "text": "moves"
+          },
+          {
+            "id": "D",
+            "text": "moving"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Câu điều kiện loại 0 (điều luôn đúng): If + hiện tại đơn, hiện tại đơn. Chủ ngữ \"you\" nên \"move\" (không thêm -s); mệnh đề If không dùng \"will\"."
+      },
+      {
+        "id": "R11",
+        "kind": "mcq",
+        "stem": "If the printer runs out of paper again tomorrow, I ______ more.",
+        "options": [
+          {
+            "id": "A",
+            "text": "order"
+          },
+          {
+            "id": "B",
+            "text": "will order"
+          },
+          {
+            "id": "C",
+            "text": "ordered"
+          },
+          {
+            "id": "D",
+            "text": "ordering"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Câu điều kiện loại 1 cho một tình huống cụ thể trong tương lai (tomorrow): If + hiện tại đơn, will + động từ nguyên mẫu."
+      },
+      {
+        "id": "R12",
+        "kind": "mcq",
+        "stem": "We bought a new printer last week. Unfortunately, ______ printer is already broken.",
+        "options": [
+          {
+            "id": "A",
+            "text": "a"
+          },
+          {
+            "id": "B",
+            "text": "an"
+          },
+          {
+            "id": "C",
+            "text": "any"
+          },
+          {
+            "id": "D",
+            "text": "the"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Máy in đã được nhắc ở câu trước (a new printer) nên lần nhắc thứ hai dùng mạo từ xác định \"the\"."
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "R13",
+        "kind": "mcq",
+        "stem": "Write a short, clear ______ so that people know what your email is about before they open it.",
+        "options": [
+          {
+            "id": "A",
+            "text": "attachment"
+          },
+          {
+            "id": "B",
+            "text": "signature"
+          },
+          {
+            "id": "C",
+            "text": "subject line"
+          },
+          {
+            "id": "D",
+            "text": "recipient"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "Subject line (dòng tiêu đề) là chỗ ghi chủ đề của email."
+      },
+      {
+        "id": "R14",
+        "kind": "mcq",
+        "stem": "Please ______ the old files that you don't need any more, because the server is nearly full.",
+        "options": [
+          {
+            "id": "A",
+            "text": "post"
+          },
+          {
+            "id": "B",
+            "text": "delete"
+          },
+          {
+            "id": "C",
+            "text": "follow"
+          },
+          {
+            "id": "D",
+            "text": "sign"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Delete (xoá) là bỏ đi thứ đã lưu trên máy tính."
+      },
+      {
+        "id": "R15",
+        "kind": "mcq",
+        "stem": "The company ______ a message on its website to tell customers about the new opening hours.",
+        "options": [
+          {
+            "id": "A",
+            "text": "posted"
+          },
+          {
+            "id": "B",
+            "text": "deleted"
+          },
+          {
+            "id": "C",
+            "text": "signed"
+          },
+          {
+            "id": "D",
+            "text": "followed"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "Post (đăng) là đưa thông điệp, tài liệu lên Internet để người khác xem."
+      },
+      {
+        "id": "R16",
+        "kind": "mcq",
+        "stem": "All our shared files are stored on the main ______, which controls the other computers on the network.",
+        "options": [
+          {
+            "id": "A",
+            "text": "dongle"
+          },
+          {
+            "id": "B",
+            "text": "GPS"
+          },
+          {
+            "id": "C",
+            "text": "browser"
+          },
+          {
+            "id": "D",
+            "text": "server"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Server (máy chủ) là máy tính chính trong mạng, điều khiển các máy khác hoặc cung cấp một dịch vụ, ví dụ lưu tệp dùng chung."
+      },
+      {
+        "id": "R17",
+        "kind": "mcq",
+        "stem": "All the computers in our building are on the same ______, so we can share files and printers.",
+        "options": [
+          {
+            "id": "A",
+            "text": "LAN"
+          },
+          {
+            "id": "B",
+            "text": "GPS"
+          },
+          {
+            "id": "C",
+            "text": "OCR"
+          },
+          {
+            "id": "D",
+            "text": "dongle"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "LAN (mạng cục bộ) nối các máy tính trong một toà nhà hoặc tổ chức để cùng dùng thông tin, tệp và máy in. GPS, OCR, dongle không phải là mạng."
+      },
+      {
+        "id": "R18",
+        "kind": "mcq",
+        "stem": "You can ______ your work files from home if you log in to the company website.",
+        "options": [
+          {
+            "id": "A",
+            "text": "follow"
+          },
+          {
+            "id": "B",
+            "text": "access"
+          },
+          {
+            "id": "C",
+            "text": "tag"
+          },
+          {
+            "id": "D",
+            "text": "report"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Access (truy cập) là tìm, mở thông tin, nhất là trên máy tính."
+      },
+      {
+        "id": "R19",
+        "kind": "mcq",
+        "stem": "The taxi app shows your exact ______ on a map, so the driver can find you easily.",
+        "options": [
+          {
+            "id": "A",
+            "text": "feature"
+          },
+          {
+            "id": "B",
+            "text": "function"
+          },
+          {
+            "id": "C",
+            "text": "location"
+          },
+          {
+            "id": "D",
+            "text": "record"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "Location (vị trí) là chỗ của người hoặc vật."
+      },
+      {
+        "id": "R20",
+        "kind": "mcq",
+        "stem": "One useful ______ of this phone is that you can unlock it with your fingerprint.",
+        "options": [
+          {
+            "id": "A",
+            "text": "guideline"
+          },
+          {
+            "id": "B",
+            "text": "recipient"
+          },
+          {
+            "id": "C",
+            "text": "record"
+          },
+          {
+            "id": "D",
+            "text": "feature"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Feature (tính năng) là một điểm đáng chú ý, quan trọng của sản phẩm."
+      }
+    ],
+    "passageMcq": {
+      "instructions": "Read the passage and choose the best answer A, B, C or D (Questions 21–25).",
+      "passage": {
+        "title": "Less Email, More Work",
+        "paragraphs": [
+          "Two years ago, staff at Brightline Insurance in Bristol were receiving about 120 emails a day. Many of these messages were copies of conversations which did not really concern them. A survey showed that employees spent nearly three hours a day reading and answering email, and many people were checking their inbox late at night.",
+          "The company's managers decided to make some changes. First, they introduced a chat app for short questions. If someone needs a quick answer, they now send a chat message instead of an email. Email is only for longer messages and for messages that go to customers.",
+          "Second, the company set a size limit for attachments. Files bigger than 10 MB now go into a shared folder on the server instead. Third, the company's email server holds messages that are sent after seven in the evening and delivers them the next morning at eight. Managers can still send urgent messages at night, but they have to mark them as urgent.",
+          "The results are impressive. Staff now receive about forty emails a day, and they spend about one hour a day on email. In a second survey, 80 per cent of employees said that they felt less stressed. However, some staff say that the chat app is now becoming a problem, because it sends them a notification every few minutes. The company is considering a quiet hour every afternoon, when nobody can send chat messages."
+        ]
+      },
+      "questions": [
+        {
+          "id": "R21",
+          "kind": "mcq",
+          "stem": "How many emails a day did staff receive two years ago?",
+          "options": [
+            {
+              "id": "A",
+              "text": "About 40"
+            },
+            {
+              "id": "B",
+              "text": "About 80"
+            },
+            {
+              "id": "C",
+              "text": "About 120"
+            },
+            {
+              "id": "D",
+              "text": "About 300"
+            }
+          ],
+          "answerKey": "C",
+          "explanation": "Đoạn 1: \"staff … were receiving about 120 emails a day\". 40 là con số hiện nay."
+        },
+        {
+          "id": "R22",
+          "kind": "mcq",
+          "stem": "What do staff use the chat app for?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Short questions"
+            },
+            {
+              "id": "B",
+              "text": "Messages to customers"
+            },
+            {
+              "id": "C",
+              "text": "Long reports"
+            },
+            {
+              "id": "D",
+              "text": "Urgent messages at night"
+            }
+          ],
+          "answerKey": "A",
+          "explanation": "Đoạn 2: \"they introduced a chat app for short questions\". Thư gửi khách hàng vẫn dùng email."
+        },
+        {
+          "id": "R23",
+          "kind": "mcq",
+          "stem": "What happens to an ordinary email that someone sends at nine in the evening?",
+          "options": [
+            {
+              "id": "A",
+              "text": "The server deletes it."
+            },
+            {
+              "id": "B",
+              "text": "It goes to a manager first."
+            },
+            {
+              "id": "C",
+              "text": "It is marked as urgent."
+            },
+            {
+              "id": "D",
+              "text": "It arrives the next morning at eight."
+            }
+          ],
+          "answerKey": "D",
+          "explanation": "Đoạn 3: máy chủ giữ thư gửi sau 7 giờ tối \"and delivers them the next morning at eight\". Chỉ thư khẩn do quản lý đánh dấu mới được gửi ban đêm."
+        },
+        {
+          "id": "R24",
+          "kind": "mcq",
+          "stem": "How much time do staff spend on email now?",
+          "options": [
+            {
+              "id": "A",
+              "text": "About one hour a day"
+            },
+            {
+              "id": "B",
+              "text": "Nearly three hours a day"
+            },
+            {
+              "id": "C",
+              "text": "About forty minutes a day"
+            },
+            {
+              "id": "D",
+              "text": "About eight hours a week"
+            }
+          ],
+          "answerKey": "A",
+          "explanation": "Đoạn 4: \"they spend about one hour a day on email\". Gần ba giờ là con số hai năm trước."
+        },
+        {
+          "id": "R25",
+          "kind": "mcq",
+          "stem": "Why are some staff unhappy with the chat app?",
+          "options": [
+            {
+              "id": "A",
+              "text": "It is too expensive."
+            },
+            {
+              "id": "B",
+              "text": "It sends notifications every few minutes."
+            },
+            {
+              "id": "C",
+              "text": "Customers cannot use it."
+            },
+            {
+              "id": "D",
+              "text": "It does not work in the afternoon."
+            }
+          ],
+          "answerKey": "B",
+          "explanation": "Đoạn 4: \"it sends them a notification every few minutes\"."
+        }
+      ]
+    },
+    "passageTrueFalse": {
+      "instructions": "Read the passage and write T (True) or F (False) (Questions 26–30).",
+      "passage": {
+        "title": "Browse Safely: Five Simple Tips",
+        "paragraphs": [
+          "1. Look at the address bar. If a website address starts with https, the connection between your browser and the website is encrypted. Never type your card details on a page whose address only starts with http.",
+          "2. Keep your browser up to date. Most browsers update themselves automatically, but if yours asks you to restart it, do it as soon as possible.",
+          "3. Be careful with pop-up windows. If a pop-up on a website says that your computer has a virus and asks you to phone a number, close it. Real antivirus companies never ask you to phone them from a pop-up on a website.",
+          "4. Use private browsing on shared computers. If you use a private window, the browser does not save your history or your passwords when you close it. However, private browsing does not hide what you do from your employer or your internet provider.",
+          "5. Clear your browsing data from time to time. This removes old cookies, which are small files that websites use to remember you. You will need to log in to some websites again afterwards."
+        ]
+      },
+      "questions": [
+        {
+          "id": "R26",
+          "kind": "tf",
+          "statement": "If a website address starts with https, the connection is encrypted.",
+          "answerKey": "T",
+          "explanation": "Mẹo 1: \"If a website address starts with https, the connection between your browser and the website is encrypted.\""
+        },
+        {
+          "id": "R27",
+          "kind": "tf",
+          "statement": "Most browsers need the user to install updates by hand.",
+          "answerKey": "F",
+          "explanation": "Mẹo 2: \"Most browsers update themselves automatically\" (tự cập nhật)."
+        },
+        {
+          "id": "R28",
+          "kind": "tf",
+          "statement": "Real antivirus companies sometimes ask you to phone them from a pop-up on a website.",
+          "answerKey": "F",
+          "explanation": "Mẹo 3: \"Real antivirus companies never ask you to phone them from a pop-up on a website.\""
+        },
+        {
+          "id": "R29",
+          "kind": "tf",
+          "statement": "In a private window, the browser does not save your history when you close it.",
+          "answerKey": "T",
+          "explanation": "Mẹo 4: \"the browser does not save your history or your passwords when you close it\"."
+        },
+        {
+          "id": "R30",
+          "kind": "tf",
+          "statement": "Private browsing hides what you do from your employer.",
+          "answerKey": "F",
+          "explanation": "Mẹo 4: \"private browsing does not hide what you do from your employer or your internet provider\"."
+        }
+      ]
+    }
+  },
+  "writing": {
+    "translation": {
+      "instructions": "Translate these sentences into Vietnamese (Questions 31–35).",
+      "items": [
+        {
+          "id": "W31",
+          "source": "At the moment, our technicians are replacing the old cables with a faster wireless network.",
+          "referenceTranslation": "Hiện nay, các kỹ thuật viên của chúng tôi đang thay các dây cáp cũ bằng một mạng không dây nhanh hơn."
+        },
+        {
+          "id": "W32",
+          "source": "A bookmark is a quick way to return to a website that you visit often.",
+          "referenceTranslation": "Dấu trang là một cách nhanh để quay lại một trang web mà bạn thường truy cập."
+        },
+        {
+          "id": "W33",
+          "source": "If you share your password with a colleague, you will put the company's data at risk.",
+          "referenceTranslation": "Nếu bạn chia sẻ mật khẩu với đồng nghiệp, bạn sẽ khiến dữ liệu của công ty gặp nguy hiểm."
+        },
+        {
+          "id": "W34",
+          "source": "The app sends an invoice to the customer as soon as the work is finished.",
+          "referenceTranslation": "Ứng dụng gửi hoá đơn cho khách hàng ngay khi công việc hoàn tất."
+        },
+        {
+          "id": "W35",
+          "source": "If the room is dark, the phone automatically makes the screen less bright.",
+          "referenceTranslation": "Nếu phòng tối, điện thoại sẽ tự động giảm độ sáng màn hình."
+        }
+      ]
+    },
+    "email": {
+      "id": "W-EMAIL",
+      "recipient": "Ellie",
+      "task": "You are an IT officer. Your company is moving to a new email system this month. Ellie, a sales manager, has asked how to set up her work email on her new phone. Write an email to Ellie explaining the steps, using the notes below. In your email you must use:\n- the present continuous at least once for something that is happening now or around now (We're moving to…);\n- at least one relative clause with which, that or who;\n- at least one zero or first conditional sentence (If + present simple, present simple / will + verb).\nFollow the standard layout for an email giving instructions: From / To / Date / Subject, a greeting, It should be quite easy to …, the steps with First / Then / Next / After that / Finally, a reminder (Don't forget to … when you've finished.), then Best wishes and your name, position and department.\nWrite 80–100 words (do not count the From, To, Date and Subject lines).",
+      "bullets": [
+        "this month: the company / move to a new email system",
+        "open Settings / select 'Accounts' (the menu which lists all your accounts)",
+        "tap 'Add account' / choose 'Exchange'",
+        "enter your work email address and password",
+        "choose what to sync (if you tick Calendar, your meetings will appear too)",
+        "if the phone asks for a server address: type mail.brightway.com",
+        "reminder: delete the old email account when you've finished"
+      ],
+      "wordRange": [
+        80,
+        100
+      ],
+      "targetGrammar": [
+        "Present continuous for something happening now or around now: We're moving to a new email system",
+        "Relative clauses with which, that or who: 'Accounts', which lists all your accounts",
+        "Zero or first conditional: If the phone asks for a server address, type… / it will…",
+        "Imperatives with sequence words for the steps"
+      ],
+      "modelAnswer": "From: Nguyen Duc Long\nTo: Ellie\nDate: 6th February\nSubject: Work email on your new phone\n\nHi Ellie,\n\nWe're moving to a new email system this month.\nIt should be quite easy to set up your work email on your phone.\nFirst, open Settings and select 'Accounts', which lists all your accounts.\nThen, tap 'Add account' and choose 'Exchange'.\nNext, enter your work email address and password.\nAfter that, choose what to sync. If you tick Calendar, your meetings will appear too.\nFinally, if the phone asks for a server address, just type mail.brightway.com.\nDon't forget to delete the old email account when you've finished.\n\nBest wishes,\nNguyen Duc Long\nIT Officer\nIT Department"
+    }
+  },
+  "speaking": {
+    "parts": [
+      {
+        "id": "S1",
+        "kind": "questions",
+        "instructions": "Answer the three questions. Speak for 30–45 seconds for each question.",
+        "questions": [
+          "How do you usually use the internet for your studies, and what are you using it for this week? Use the present simple for habits and the present continuous for things that are happening now or this week.",
+          "What happens if you turn on flight mode on your phone? What will you do if your phone's storage is full next week? Use zero and first conditional sentences (If…, the phone… / If…, I will…).",
+          "Describe a person who often helps you with technology. Use relative clauses with who, which or that (She's a friend who…, It's a laptop that…)."
+        ],
+        "secondsPerQuestion": 45
+      },
+      {
+        "id": "S2",
+        "kind": "explain",
+        "instructions": "Explain some email terms. Speak for 1–1.5 minutes.",
+        "prompt": "A new colleague has never used email at work. Explain what each part of an email in the cues is and why it is useful. Use relative clauses with which, that or who (The recipient is the person who…, An attachment is a file which…).",
+        "cues": [
+          "subject line",
+          "recipient",
+          "copy (cc)",
+          "attachment",
+          "signature"
+        ],
+        "requiredGrammar": [
+          "Relative clauses with which, that or who: The recipient is the person who…, An attachment is a file which…"
+        ],
+        "seconds": 90,
+        "sampleAnswer": "Let me explain the main parts of an email. The subject line is the short line at the top which tells people what the email is about. You should always write a clear one. The recipient is the person who receives your email, so you type their address in the 'To' box. A copy, or cc, is for people who need to know about the message but don't need to reply. An attachment is a file that you send with the email, for example a report or a photo. Be careful with large attachments, because some servers don't accept them. Finally, the signature is the text which appears at the end of every email. It shows your name, your job title and your phone number, so customers know how to contact you."
+      },
+      {
+        "id": "S3",
+        "kind": "situation",
+        "instructions": "Deal with the situation. Speak for 1–1.5 minutes.",
+        "prompt": "You are phoning the IT helpdesk because your web browser is behaving strangely today. Explain what you usually do with the browser and what is happening now. Use the present simple for your normal routine, the present continuous for what is happening at the moment, and state verbs in the simple form (I don't know…, I need…, I want…).",
+        "cues": [
+          "normal routine: open the company intranet every morning / use the browser for online orders",
+          "now: the order page is showing everything in the wrong place",
+          "now: the Submit button isn't working / the browser is running very slowly with twenty tabs open",
+          "you don't know what is wrong / you need the order page for a customer today"
+        ],
+        "requiredGrammar": [
+          "Present simple for routines: I usually open…, I use…",
+          "Present continuous for things happening now: The browser is showing…, Pages are loading…",
+          "State verbs in the simple form: I don't know…, I need…, I want…"
+        ],
+        "seconds": 90,
+        "sampleAnswer": "Hi, this is Mai from the sales department. I'm having a problem with my browser today. Normally, I open the company intranet every morning, and I use the browser all day for customers' online orders. It usually works perfectly. But this morning, the order page is showing everything in the wrong place: the pictures are covering the text, and the prices are at the bottom. Also, the Submit button isn't working, so I can't send any orders. The browser is running very slowly too, but I have about twenty tabs open, so maybe that's part of the problem. I don't know what is wrong, and I need the order page today, because a customer is waiting for a delivery. Could someone check it for me, please?"
+      }
+    ]
+  }
+}

@@ -10,6 +10,11 @@
 export const SCHEMA_VERSION = 1 as const;
 
 export type UnitNumber = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
+/** Mỗi Unit có nhiều đề: A là đề đầu tiên, B, C, D là đề sinh thêm. */
+export type TestId = "A" | "B" | "C" | "D";
+export const TEST_IDS: readonly TestId[] = ["A", "B", "C", "D"];
+/** Nguồn đề: "teacher" lấy từ đề mẫu của giảng viên, "ai" do team AI soạn. */
+export type ExamSource = "teacher" | "ai";
 export type ChoiceId = "A" | "B" | "C" | "D";
 export type DefinitionId = "A" | "B" | "C" | "D" | "E" | "F";
 export type TrueFalse = "T" | "F";
@@ -221,7 +226,9 @@ export interface UnitExam {
   unit: UnitNumber;
   /** Tên Unit theo giáo trình, ví dụ "Interactions". */
   unitTitle: string;
-  testId: "A";
+  testId: TestId;
+  /** Nhãn hiện cho sinh viên: "teacher" = Đề cô, "ai" = Đề AI. */
+  source: ExamSource;
   /** Chức năng của 4 bài trong Unit (docs/source-materials.md mục 1). */
   functions: string[];
   /** Ngữ pháp trọng tâm của Unit, dùng cho đề và cho AI chấm. */

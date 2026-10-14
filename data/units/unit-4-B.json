@@ -1,0 +1,1068 @@
+{
+  "schemaVersion": 1,
+  "unit": 4,
+  "unitTitle": "Administration",
+  "testId": "B",
+  "source": "ai",
+  "functions": [
+    "Talking about past actions (Spreadsheets and formulae)",
+    "Describing how to use databases (Databases)",
+    "Explaining sequences of system administration tasks (Systems administration)",
+    "Explaining how problems occurred (Peripherals)"
+  ],
+  "grammarFocus": [
+    "Past simple for finished actions in the past; did/didn't + bare infinitive in questions and negative sentences; irregular past forms (chose, made, took)",
+    "By + -ing to express how to do things: By typing a name in the search box, you can find a record.",
+    "While, before, after to show the order of events; -ing form after these words when the subject is the same in both clauses",
+    "Past continuous and past simple: past continuous for the longer action in progress, past simple for the shorter action that interrupts it; when + past simple, while + past continuous"
+  ],
+  "sourceNotes": [
+    "Đề B Unit 4, AI soạn mới theo khung đề và quy tắc 1–15; không lặp bài đọc, lời thoại, tình huống, câu dịch, đề email và đề nói của đề A (đề cô, bản Peter).",
+    "R1–R5: thuật ngữ và định nghĩa lấy gần nguyên văn Workbook Unit 4 Part 1 (4A, 4B, 4C, 4D); định nghĩa thừa (multiply) lấy từ Workbook 4C. Không trùng thuật ngữ câu nối với đề A.",
+    "R13–R20: từ vựng lấy từ Workbook Unit 4 Part 1 (4A, 4B, 4C, 4D).",
+    "Bài đọc R21–R25 (chuyển máy chủ cuối tuần, Systems administration) và R26–R30 (cơ sở dữ liệu thư viện, Databases) viết mới; không dùng thuật ngữ câu nối và không diễn đạt lại định nghĩa của chúng.",
+    "Listening A: nhân viên gọi helpdesk kể sự cố máy in đa năng (Peripherals, quá khứ tiếp diễn và quá khứ đơn). Listening B: giảng viên giải thích công thức trong bảng tính ngân sách (Spreadsheets and formulae). Không chép Audio script.",
+    "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại.",
+    "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
+    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
+    "Bản r1 (tự soát theo nhắc của et-lead): R8 đổi tình huống (tìm bản ghi khách hàng gần nghĩa thuật ngữ R2 retrieve a record); R13 và bài đọc R26–R30 bỏ từ 'record'; R17, R20 thay nhiễu 'attached' (từ khoá định nghĩa C, headset) bằng horizontal / vertical.",
+    "Bản r1, đợt 2 (theo review chéo của et-author2): Listening B bỏ ý 'nobody can change it' (diễn đạt lại định nghĩa F, read-only access), L10 hỏi email; R8 đổi sang in nhãn bằng báo cáo (không lặp tìm kiếm và sắp xếp); bài R26–R30 viết lại câu bảng, bỏ câu tìm sách, R26 hỏi số sách, R27 theo câu mới; email bước 3 đổi, thêm 'then click it'; R11 đổi sang máy chiếu (trùng Listening A); R12 đổi sự việc (trùng đề A); W32 đổi câu; S2 bỏ câu chép đề A; R14, R16 nhiễu cùng từ loại; L6, L7, L8 thêm biến thể.",
+    "Bản r1, đợt 2b: bỏ biến thể chính tả Mỹ của 'red colour'; bài R26–R30 thêm một câu để đủ 160 từ.",
+    "Xáo thứ tự phương án R11, R13, R18, R20 để khoá R6–R25 không lặp chu kỳ (không đổi chữ). Email: thời điểm xoá tệp đổi thành 'this morning' cho khớp bản sao lưu đêm qua (audit 4B)."
+  ],
+  "listening": {
+    "parts": [
+      {
+        "id": "A",
+        "instructions": "Listen to the phone call and choose the best answer A, B, C or D (Questions L1–L5).",
+        "context": "Amira, who works in the accounts department, phones Leo at the IT helpdesk about a problem with a printer.",
+        "speakers": [
+          {
+            "name": "Leo",
+            "voice": "male"
+          },
+          {
+            "name": "Amira",
+            "voice": "female"
+          }
+        ],
+        "script": [
+          {
+            "speaker": "Leo",
+            "text": "Helpdesk, Leo speaking."
+          },
+          {
+            "speaker": "Amira",
+            "text": "Hi Leo, it's Amira from Accounts. I've got a problem with the multifunction printer on the second floor."
+          },
+          {
+            "speaker": "Leo",
+            "text": "OK. What happened?"
+          },
+          {
+            "speaker": "Amira",
+            "text": "I was scanning some invoices when the machine made a loud noise and stopped. There's a red light on the screen now."
+          },
+          {
+            "speaker": "Leo",
+            "text": "Did you print anything before that?"
+          },
+          {
+            "speaker": "Amira",
+            "text": "Yes. This morning I printed a fifty-page report, and that worked fine. But while I was scanning the invoices, I think a staple went into the machine."
+          },
+          {
+            "speaker": "Leo",
+            "text": "That's probably the problem. Staples often cause jams. Did you open the cover?"
+          },
+          {
+            "speaker": "Amira",
+            "text": "Yes, I opened the front cover, but I didn't see anything."
+          },
+          {
+            "speaker": "Leo",
+            "text": "The scanner has a separate cover on the top. Please don't try to remove the staple yourself, because you could damage the glass. I'll come up after lunch, at about two o'clock."
+          },
+          {
+            "speaker": "Amira",
+            "text": "Thanks. Can I use another printer in the meantime?"
+          },
+          {
+            "speaker": "Leo",
+            "text": "Yes, the one on the third floor is working. I'll email you its name so that you can add it to your computer."
+          }
+        ],
+        "questions": [
+          {
+            "id": "L1",
+            "kind": "mcq",
+            "stem": "Which machine has a problem?",
+            "options": [
+              {
+                "id": "A",
+                "text": "The printer on the third floor"
+              },
+              {
+                "id": "B",
+                "text": "Amira's laptop"
+              },
+              {
+                "id": "C",
+                "text": "The multifunction printer on the second floor"
+              },
+              {
+                "id": "D",
+                "text": "The scanner in the IT office"
+              }
+            ],
+            "answerKey": "C",
+            "explanation": "Amira: \"I've got a problem with the multifunction printer on the second floor.\" Máy in tầng ba vẫn hoạt động bình thường."
+          },
+          {
+            "id": "L2",
+            "kind": "mcq",
+            "stem": "What was Amira doing when the machine stopped?",
+            "options": [
+              {
+                "id": "A",
+                "text": "Scanning some invoices"
+              },
+              {
+                "id": "B",
+                "text": "Printing a fifty-page report"
+              },
+              {
+                "id": "C",
+                "text": "Opening the front cover"
+              },
+              {
+                "id": "D",
+                "text": "Phoning the helpdesk"
+              }
+            ],
+            "answerKey": "A",
+            "explanation": "\"I was scanning some invoices when the machine made a loud noise and stopped.\" Báo cáo 50 trang in sáng nay và in tốt."
+          },
+          {
+            "id": "L3",
+            "kind": "mcq",
+            "stem": "What does Amira think went into the machine?",
+            "options": [
+              {
+                "id": "A",
+                "text": "A paper clip"
+              },
+              {
+                "id": "B",
+                "text": "A pen"
+              },
+              {
+                "id": "C",
+                "text": "A coin"
+              },
+              {
+                "id": "D",
+                "text": "A staple"
+              }
+            ],
+            "answerKey": "D",
+            "explanation": "\"while I was scanning the invoices, I think a staple went into the machine.\""
+          },
+          {
+            "id": "L4",
+            "kind": "mcq",
+            "stem": "Why does Leo tell Amira not to remove the staple herself?",
+            "options": [
+              {
+                "id": "A",
+                "text": "The machine is still switched on."
+              },
+              {
+                "id": "B",
+                "text": "She could damage the glass."
+              },
+              {
+                "id": "C",
+                "text": "She needs special gloves."
+              },
+              {
+                "id": "D",
+                "text": "Only the manufacturer can open the cover."
+              }
+            ],
+            "answerKey": "B",
+            "explanation": "Leo: \"Please don't try to remove the staple yourself, because you could damage the glass.\""
+          },
+          {
+            "id": "L5",
+            "kind": "mcq",
+            "stem": "When will Leo come to look at the machine?",
+            "options": [
+              {
+                "id": "A",
+                "text": "Immediately"
+              },
+              {
+                "id": "B",
+                "text": "Tomorrow morning"
+              },
+              {
+                "id": "C",
+                "text": "After lunch, at about two o'clock"
+              },
+              {
+                "id": "D",
+                "text": "At about twelve o'clock"
+              }
+            ],
+            "answerKey": "C",
+            "explanation": "\"I'll come up after lunch, at about two o'clock.\""
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "instructions": "Listen to the training session and answer the questions. Write NO MORE THAN THREE WORDS for each answer (Questions L6–L10).",
+        "context": "Paul, an IT trainer, explains the formulae in his department's budget spreadsheet to a group of trainees.",
+        "speakers": [
+          {
+            "name": "Paul",
+            "voice": "male"
+          }
+        ],
+        "script": [
+          {
+            "speaker": "Paul",
+            "text": "Hello, everyone. Last week you learnt how to enter data, so today let's look at formulae, using our department's budget spreadsheet."
+          },
+          {
+            "speaker": "Paul",
+            "text": "Look at column B. It shows how much we spent on each item in January. To add all these numbers, I typed the SUM function into cell B12. Remember: every formula starts with an equals sign."
+          },
+          {
+            "speaker": "Paul",
+            "text": "Now look at column C. This is the budget for each item. In column D, I subtracted the money we spent from the budget, so the formula in D2 is C2 minus B2. If the result is negative, we spent too much, and the cell turns red automatically."
+          },
+          {
+            "speaker": "Paul",
+            "text": "Last month, someone typed a number into cell D5 by mistake, and the formula disappeared. That's why I sent an email about it to the whole team yesterday."
+          },
+          {
+            "speaker": "Paul",
+            "text": "Finally, in column E, I divided the spending by the budget and multiplied the result by a hundred. This shows the percentage of the budget that we've used. Any questions before you try it yourselves?"
+          }
+        ],
+        "questions": [
+          {
+            "id": "L6",
+            "kind": "short",
+            "stem": "Which cell contains the SUM function for column B?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "b12",
+              "cell b12",
+              "b 12",
+              "in cell b12",
+              "in b12"
+            ],
+            "explanation": "\"I typed the SUM function into cell B12.\""
+          },
+          {
+            "id": "L7",
+            "kind": "short",
+            "stem": "What does every formula start with?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "an equals sign",
+              "equals sign",
+              "the equals sign",
+              "an equal sign",
+              "equal sign",
+              "equals",
+              "the equal sign",
+              "equal"
+            ],
+            "explanation": "\"Remember: every formula starts with an equals sign.\" (dấu =)"
+          },
+          {
+            "id": "L8",
+            "kind": "short",
+            "stem": "What colour does a cell in column D turn if the result is negative?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "red",
+              "it turns red",
+              "turns red",
+              "red colour"
+            ],
+            "explanation": "\"If the result is negative, we spent too much, and the cell turns red automatically.\""
+          },
+          {
+            "id": "L9",
+            "kind": "short",
+            "stem": "What did someone type into cell D5 by mistake?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "a number",
+              "number"
+            ],
+            "explanation": "\"someone typed a number into cell D5 by mistake, and the formula disappeared\"."
+          },
+          {
+            "id": "L10",
+            "kind": "short",
+            "stem": "What did Paul send to the whole team yesterday?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "an email",
+              "email",
+              "an e-mail",
+              "e-mail",
+              "a message",
+              "an email message"
+            ],
+            "explanation": "\"That's why I sent an email about it to the whole team yesterday.\""
+          }
+        ]
+      }
+    ]
+  },
+  "reading": {
+    "matching": {
+      "instructions": "Match the terms (1–5) with the correct definitions (A–F). There is one extra definition that you do not need (Questions 1–5).",
+      "definitions": [
+        {
+          "id": "A",
+          "text": "To get back a piece of information that has been stored in the memory of a computer."
+        },
+        {
+          "id": "B",
+          "text": "To do a calculation in which you add a number to itself a particular number of times."
+        },
+        {
+          "id": "C",
+          "text": "A set of headphones, often with a microphone attached."
+        },
+        {
+          "id": "D",
+          "text": "A single page or tab within a spreadsheet document."
+        },
+        {
+          "id": "E",
+          "text": "To calculate how many times one number contains a smaller number."
+        },
+        {
+          "id": "F",
+          "text": "If data has this, you are only allowed to read it, not to change it."
+        }
+      ],
+      "items": [
+        {
+          "id": "R1",
+          "term": "Worksheet",
+          "answerKey": "D",
+          "explanation": "Worksheet (trang tính) là một trang hoặc một thẻ trong tệp bảng tính."
+        },
+        {
+          "id": "R2",
+          "term": "Retrieve a record",
+          "answerKey": "A",
+          "explanation": "Retrieve a record (truy xuất bản ghi) là lấy lại thông tin đã lưu trong bộ nhớ máy tính."
+        },
+        {
+          "id": "R3",
+          "term": "Headset",
+          "answerKey": "C",
+          "explanation": "Headset (bộ tai nghe kèm micrô) là tai nghe thường có gắn micrô."
+        },
+        {
+          "id": "R4",
+          "term": "Read-only access",
+          "answerKey": "F",
+          "explanation": "Read-only access (quyền chỉ đọc): dữ liệu chỉ được đọc, không được sửa."
+        },
+        {
+          "id": "R5",
+          "term": "Divide",
+          "answerKey": "E",
+          "explanation": "Divide (chia) là tính xem một số chứa số nhỏ hơn bao nhiêu lần. Định nghĩa B là của multiply (nhân), không có trong danh sách thuật ngữ."
+        }
+      ]
+    },
+    "grammar": [
+      {
+        "id": "R6",
+        "kind": "mcq",
+        "stem": "The backup ______ last night because the server was offline.",
+        "options": [
+          {
+            "id": "A",
+            "text": "didn't ran"
+          },
+          {
+            "id": "B",
+            "text": "didn't run"
+          },
+          {
+            "id": "C",
+            "text": "not ran"
+          },
+          {
+            "id": "D",
+            "text": "doesn't run"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Câu phủ định quá khứ đơn (last night): didn't + động từ nguyên mẫu (run)."
+      },
+      {
+        "id": "R7",
+        "kind": "mcq",
+        "stem": "Yesterday the technician ______ a new hard drive for the server.",
+        "options": [
+          {
+            "id": "A",
+            "text": "choosed"
+          },
+          {
+            "id": "B",
+            "text": "chosen"
+          },
+          {
+            "id": "C",
+            "text": "chose"
+          },
+          {
+            "id": "D",
+            "text": "choose"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "\"choose\" là động từ bất quy tắc: quá khứ đơn là \"chose\" (chosen là quá khứ phân từ)."
+      },
+      {
+        "id": "R8",
+        "kind": "mcq",
+        "stem": "You can print address labels for all our customers ______ the Labels report.",
+        "options": [
+          {
+            "id": "A",
+            "text": "by run"
+          },
+          {
+            "id": "B",
+            "text": "for running"
+          },
+          {
+            "id": "C",
+            "text": "with run"
+          },
+          {
+            "id": "D",
+            "text": "by running"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Diễn tả cách làm: by + V-ing (by running the report)."
+      },
+      {
+        "id": "R9",
+        "kind": "mcq",
+        "stem": "______ the update, Anna restarted all the computers in the office.",
+        "options": [
+          {
+            "id": "A",
+            "text": "After installing"
+          },
+          {
+            "id": "B",
+            "text": "After install"
+          },
+          {
+            "id": "C",
+            "text": "After installed"
+          },
+          {
+            "id": "D",
+            "text": "After to install"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "Hai vế cùng chủ ngữ (Anna) nên sau \"after\" dùng V-ing: After installing the update, …"
+      },
+      {
+        "id": "R10",
+        "kind": "mcq",
+        "stem": "Kevin found the error ______ the log files.",
+        "options": [
+          {
+            "id": "A",
+            "text": "while check"
+          },
+          {
+            "id": "B",
+            "text": "while checking"
+          },
+          {
+            "id": "C",
+            "text": "while checked"
+          },
+          {
+            "id": "D",
+            "text": "while to check"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Cùng chủ ngữ (Kevin) nên sau \"while\" dùng V-ing: while checking (trong khi đang kiểm tra)."
+      },
+      {
+        "id": "R11",
+        "kind": "mcq",
+        "stem": "I ______ a presentation yesterday when the projector suddenly switched off.",
+        "options": [
+          {
+            "id": "A",
+            "text": "was giving"
+          },
+          {
+            "id": "B",
+            "text": "am giving"
+          },
+          {
+            "id": "C",
+            "text": "were giving"
+          },
+          {
+            "id": "D",
+            "text": "give"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "Hành động đang diễn ra trong quá khứ (yesterday) thì bị hành động ngắn xen vào (when the projector switched off): quá khứ tiếp diễn \"was giving\" với chủ ngữ I."
+      },
+      {
+        "id": "R12",
+        "kind": "mcq",
+        "stem": "We were testing the new software when the network suddenly ______ down.",
+        "options": [
+          {
+            "id": "A",
+            "text": "go"
+          },
+          {
+            "id": "B",
+            "text": "goes"
+          },
+          {
+            "id": "C",
+            "text": "going"
+          },
+          {
+            "id": "D",
+            "text": "went"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Hành động ngắn xen vào hành động đang diễn ra dùng quá khứ đơn sau \"when\": went (go down = ngừng hoạt động)."
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "R13",
+        "kind": "mcq",
+        "stem": "The Staff table has a ______ called 'Phone number' for each employee.",
+        "options": [
+          {
+            "id": "A",
+            "text": "bracket"
+          },
+          {
+            "id": "B",
+            "text": "field"
+          },
+          {
+            "id": "C",
+            "text": "sum"
+          },
+          {
+            "id": "D",
+            "text": "log"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Field (trường) là phần dành cho một loại thông tin trong bản ghi, ví dụ số điện thoại."
+      },
+      {
+        "id": "R14",
+        "kind": "mcq",
+        "stem": "The ______ of 25, 30 and 45 is 100.",
+        "options": [
+          {
+            "id": "A",
+            "text": "row"
+          },
+          {
+            "id": "B",
+            "text": "sum"
+          },
+          {
+            "id": "C",
+            "text": "bracket"
+          },
+          {
+            "id": "D",
+            "text": "column"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Sum (tổng) là kết quả khi cộng các số: 25 + 30 + 45 = 100."
+      },
+      {
+        "id": "R15",
+        "kind": "mcq",
+        "stem": "In the formula =(A1+B1)*2, the spreadsheet adds A1 and B1 first because they are in ______.",
+        "options": [
+          {
+            "id": "A",
+            "text": "logs"
+          },
+          {
+            "id": "B",
+            "text": "tables"
+          },
+          {
+            "id": "C",
+            "text": "brackets"
+          },
+          {
+            "id": "D",
+            "text": "fields"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "Bracket (dấu ngoặc): phép tính trong ngoặc được làm trước."
+      },
+      {
+        "id": "R16",
+        "kind": "mcq",
+        "stem": "Ten ______ three is seven.",
+        "options": [
+          {
+            "id": "A",
+            "text": "plus"
+          },
+          {
+            "id": "B",
+            "text": "times"
+          },
+          {
+            "id": "C",
+            "text": "over"
+          },
+          {
+            "id": "D",
+            "text": "minus"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Minus (trừ): 10 − 3 = 7. Plus là cộng, times là nhân."
+      },
+      {
+        "id": "R17",
+        "kind": "mcq",
+        "stem": "Our new ______ printer can print, scan, copy and send faxes.",
+        "options": [
+          {
+            "id": "A",
+            "text": "multifunction"
+          },
+          {
+            "id": "B",
+            "text": "input"
+          },
+          {
+            "id": "C",
+            "text": "horizontal"
+          },
+          {
+            "id": "D",
+            "text": "unique"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "Multifunction printer (máy in đa năng) có nhiều chức năng: in, quét, sao chụp, fax."
+      },
+      {
+        "id": "R18",
+        "kind": "mcq",
+        "stem": "After three wrong passwords, the system ______ the user out of their account for thirty minutes.",
+        "options": [
+          {
+            "id": "A",
+            "text": "locks"
+          },
+          {
+            "id": "B",
+            "text": "resets"
+          },
+          {
+            "id": "C",
+            "text": "deploys"
+          },
+          {
+            "id": "D",
+            "text": "checks"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "Lock sb out of sth (khoá không cho ai truy cập): hệ thống khoá tài khoản sau ba lần nhập sai."
+      },
+      {
+        "id": "R19",
+        "kind": "mcq",
+        "stem": "The email server crashed this morning, but it's up and ______ again now.",
+        "options": [
+          {
+            "id": "A",
+            "text": "going"
+          },
+          {
+            "id": "B",
+            "text": "moving"
+          },
+          {
+            "id": "C",
+            "text": "running"
+          },
+          {
+            "id": "D",
+            "text": "starting"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "Up and running again (hoạt động trở lại) sau một thời gian không hoạt động."
+      },
+      {
+        "id": "R20",
+        "kind": "mcq",
+        "stem": "Each customer has a ______ ID number, so no two customers have the same number.",
+        "options": [
+          {
+            "id": "A",
+            "text": "vertical"
+          },
+          {
+            "id": "B",
+            "text": "unique"
+          },
+          {
+            "id": "C",
+            "text": "horizontal"
+          },
+          {
+            "id": "D",
+            "text": "external"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Unique (duy nhất): mỗi khách hàng có một mã số riêng, không trùng với ai."
+      }
+    ],
+    "passageMcq": {
+      "instructions": "Read the passage and choose the best answer A, B, C or D (Questions 21–25).",
+      "passage": {
+        "title": "The Weekend Server Move",
+        "paragraphs": [
+          "Last month, Greenfield Accountants moved its data from an old server in the office to a new one in a data centre. The IT administrator, Raj Mehta, planned the move carefully, because the company's thirty accountants could not work without their files.",
+          "Before starting, Raj sent an email to all staff and asked them to save their work and log out by six o'clock on Friday. After checking that everyone was logged out, he made two full backups of the old server: one on a NAS device and one on an external drive, which he took home.",
+          "On Saturday morning, he started copying the data to the new server. The copying took nine hours, much longer than he expected, because the office internet connection was slow. While he was waiting, he tested the email system and updated the antivirus software on every desktop computer.",
+          "On Sunday, Raj checked that all the folders were on the new server and set the permissions again. He then asked two managers to log in from home and open some files. Everything worked except one shared folder, which the managers could not open. Raj found that he had forgotten to give their group permission for it, and he corrected the mistake in five minutes.",
+          "On Monday, staff noticed only one change: large files opened much faster. Raj kept the old server for another month before he switched it off, just in case."
+        ]
+      },
+      "questions": [
+        {
+          "id": "R21",
+          "kind": "mcq",
+          "stem": "Why did Raj plan the move carefully?",
+          "options": [
+            {
+              "id": "A",
+              "text": "The accountants could not work without their files."
+            },
+            {
+              "id": "B",
+              "text": "The data centre was very far away."
+            },
+            {
+              "id": "C",
+              "text": "He had never moved a server before."
+            },
+            {
+              "id": "D",
+              "text": "The new server was very expensive."
+            }
+          ],
+          "answerKey": "A",
+          "explanation": "Đoạn 1: \"Raj Mehta planned the move carefully, because the company's thirty accountants could not work without their files.\""
+        },
+        {
+          "id": "R22",
+          "kind": "mcq",
+          "stem": "What did Raj do after checking that everyone was logged out?",
+          "options": [
+            {
+              "id": "A",
+              "text": "He sent an email to all staff."
+            },
+            {
+              "id": "B",
+              "text": "He made two full backups of the old server."
+            },
+            {
+              "id": "C",
+              "text": "He tested the email system."
+            },
+            {
+              "id": "D",
+              "text": "He switched off the old server."
+            }
+          ],
+          "answerKey": "B",
+          "explanation": "Đoạn 2: \"After checking that everyone was logged out, he made two full backups of the old server\". Email gửi trước khi bắt đầu."
+        },
+        {
+          "id": "R23",
+          "kind": "mcq",
+          "stem": "Why did the copying take nine hours?",
+          "options": [
+            {
+              "id": "A",
+              "text": "The new server was too slow."
+            },
+            {
+              "id": "B",
+              "text": "Some files were damaged."
+            },
+            {
+              "id": "C",
+              "text": "The office internet connection was slow."
+            },
+            {
+              "id": "D",
+              "text": "Raj made the backups at the same time."
+            }
+          ],
+          "answerKey": "C",
+          "explanation": "Đoạn 3: việc sao chép lâu hơn dự kiến \"because the office internet connection was slow\"."
+        },
+        {
+          "id": "R24",
+          "kind": "mcq",
+          "stem": "What problem did Raj find on Sunday?",
+          "options": [
+            {
+              "id": "A",
+              "text": "The new server crashed."
+            },
+            {
+              "id": "B",
+              "text": "The email system did not work."
+            },
+            {
+              "id": "C",
+              "text": "One of the backups was missing."
+            },
+            {
+              "id": "D",
+              "text": "The managers could not open one shared folder."
+            }
+          ],
+          "answerKey": "D",
+          "explanation": "Đoạn 4: \"Everything worked except one shared folder, which the managers could not open.\""
+        },
+        {
+          "id": "R25",
+          "kind": "mcq",
+          "stem": "What did Raj do with the old server?",
+          "options": [
+            {
+              "id": "A",
+              "text": "He kept it for another month before switching it off."
+            },
+            {
+              "id": "B",
+              "text": "He switched it off on Monday morning."
+            },
+            {
+              "id": "C",
+              "text": "He took it home."
+            },
+            {
+              "id": "D",
+              "text": "He moved it to the data centre."
+            }
+          ],
+          "answerKey": "A",
+          "explanation": "Đoạn 5: \"Raj kept the old server for another month before he switched it off, just in case.\" Thứ Raj mang về nhà là ổ cứng ngoài."
+        }
+      ]
+    },
+    "passageTrueFalse": {
+      "instructions": "Read the passage and write T (True) or F (False) (Questions 26–30).",
+      "passage": {
+        "title": "How City Library Uses Its Database",
+        "paragraphs": [
+          "City Library has more than 40,000 books, and the staff manage all of them with a database. It stores information about books, members and loans. Every book has its own barcode, which is the primary key for the books.",
+          "When a member borrows a book, the librarian scans the member's card and then the book's barcode. The database adds a new line to the Loans table and calculates the return date automatically: three weeks after the day of the loan. Each member can borrow up to six books at a time.",
+          "Every morning, a librarian runs a report that lists all the books which are more than one week late. The library then sends a reminder by email to each member on the list.",
+          "Members can also use the database themselves. By logging in to the library website, they can see which books they have at home and renew a book for another three weeks. A member who has three late books cannot borrow any more until they return them."
+        ]
+      },
+      "questions": [
+        {
+          "id": "R26",
+          "kind": "tf",
+          "statement": "The library has fewer than 40,000 books.",
+          "answerKey": "F",
+          "explanation": "Đoạn 1: \"City Library has more than 40,000 books\" (hơn 40.000 cuốn)."
+        },
+        {
+          "id": "R27",
+          "kind": "tf",
+          "statement": "Each book's barcode is the primary key for the books.",
+          "answerKey": "T",
+          "explanation": "Đoạn 1: \"Every book has its own barcode, which is the primary key for the books.\""
+        },
+        {
+          "id": "R28",
+          "kind": "tf",
+          "statement": "Librarians have to calculate the return date themselves.",
+          "answerKey": "F",
+          "explanation": "Đoạn 2: cơ sở dữ liệu \"calculates the return date automatically\"."
+        },
+        {
+          "id": "R29",
+          "kind": "tf",
+          "statement": "The morning report lists the books which are more than one week late.",
+          "answerKey": "T",
+          "explanation": "Đoạn 3: \"a librarian runs a report that lists all the books which are more than one week late\"."
+        },
+        {
+          "id": "R30",
+          "kind": "tf",
+          "statement": "Members can renew a book for another four weeks on the website.",
+          "answerKey": "F",
+          "explanation": "Đoạn 4: thành viên có thể gia hạn \"for another three weeks\" (ba tuần), không phải bốn tuần."
+        }
+      ]
+    }
+  },
+  "writing": {
+    "translation": {
+      "instructions": "Translate these sentences into Vietnamese (Questions 31–35).",
+      "items": [
+        {
+          "id": "W31",
+          "source": "The administrator deployed the new antivirus software to all the computers last Friday.",
+          "referenceTranslation": "Quản trị viên đã triển khai phần mềm diệt virus mới cho tất cả các máy tính vào thứ Sáu tuần trước."
+        },
+        {
+          "id": "W32",
+          "source": "By running the Monthly Sales report, you can see which products sold best.",
+          "referenceTranslation": "Bằng cách chạy báo cáo Doanh số hằng tháng, bạn có thể xem những sản phẩm nào bán chạy nhất."
+        },
+        {
+          "id": "W33",
+          "source": "After restarting the server, check that all the services are up and running again.",
+          "referenceTranslation": "Sau khi khởi động lại máy chủ, hãy kiểm tra xem tất cả các dịch vụ đã hoạt động trở lại chưa."
+        },
+        {
+          "id": "W34",
+          "source": "I was typing my password when I noticed that Caps Lock was on.",
+          "referenceTranslation": "Tôi đang gõ mật khẩu thì nhận ra phím Caps Lock đang bật."
+        },
+        {
+          "id": "W35",
+          "source": "In this formula, the spreadsheet adds A2 and B2 and then divides the sum by two.",
+          "referenceTranslation": "Trong công thức này, bảng tính cộng A2 với B2 rồi chia tổng cho hai."
+        }
+      ]
+    },
+    "email": {
+      "id": "W-EMAIL",
+      "recipient": "Hugo",
+      "task": "You are a support technician. Hugo, a sales manager, deleted an important file from the shared drive by mistake this morning. Write an email to Hugo explaining how to restore the file from last night's backup, using the notes below. In your email you must use:\n- before or after + -ing at least twice to show the order of the steps (Before restoring…, After opening…);\n- by + -ing at least once to explain how to do something (by typing…).\nFollow the standard layout for an email giving instructions: From / To / Date / Subject, a greeting, It should be quite easy to …, the steps with First / Then / Next / After that / Finally, a reminder (Don't forget to … when you've finished.), then Best wishes and your name, position and department.\nWrite 80–100 words (do not count the From, To, Date and Subject lines).",
+      "bullets": [
+        "open the Backup app on your desktop",
+        "choose last night's date",
+        "find the file: open the Shared Drive folder",
+        "check the file name and date carefully / then click 'Restore'",
+        "open the file / check that it is complete",
+        "reminder: close the Backup app when you've finished"
+      ],
+      "wordRange": [
+        80,
+        100
+      ],
+      "targetGrammar": [
+        "Before / after + -ing (at least twice): Before clicking 'Restore', check…; After opening the file, check…",
+        "By + -ing (at least once): Find the file by opening the Shared Drive folder…",
+        "Imperatives with sequence words for the steps"
+      ],
+      "modelAnswer": "From: Vu Hai Nam\nTo: Hugo\nDate: 14th September\nSubject: Restoring your deleted file\n\nHi Hugo,\n\nIt should be quite easy to restore your file from last night's backup.\nFirst, open the Backup app on your desktop.\nThen, choose last night's date.\nNext, find the file by opening the Shared Drive folder.\nAfter that, before clicking 'Restore', check the file name and date carefully, then click it.\nFinally, after restoring the file, just open it and check that it is complete.\nDon't forget to close the Backup app when you've finished.\n\nBest wishes,\nVu Hai Nam\nSupport Technician\nHelp Desk Department"
+    }
+  },
+  "speaking": {
+    "parts": [
+      {
+        "id": "S1",
+        "kind": "questions",
+        "instructions": "Answer the three questions. Speak for 30–45 seconds for each question.",
+        "questions": [
+          "What did you do last weekend? Describe three things using the past simple, and include at least one negative sentence (I didn't…).",
+          "How can people save time when they use a computer or phone? Answer with by + -ing (By using keyboard shortcuts, you can…).",
+          "Tell me about a time when something went wrong while you were using a device. Use the past continuous and the past simple (I was …ing when …)."
+        ],
+        "secondsPerQuestion": 45
+      },
+      {
+        "id": "S2",
+        "kind": "explain",
+        "instructions": "Explain how to use a database. Speak for 1–1.5 minutes.",
+        "prompt": "A new shop assistant needs to use the shop's customer database. Explain how to do each task in the cues. Use by + -ing to say how to do each task (You can find a customer by typing…).",
+        "cues": [
+          "find a customer: type the name in the search box",
+          "add a new customer: click the 'Add customer' button and fill in the boxes",
+          "see today's sales: run the Daily Sales report",
+          "put customers in alphabetical order: click the top of the Name column",
+          "change a phone number: open the record and type the new number"
+        ],
+        "requiredGrammar": [
+          "By + -ing to explain how to do something: by typing…, by opening…, by running…, by clicking…"
+        ],
+        "seconds": 90,
+        "sampleAnswer": "Using our customer database is quite easy. You can find any customer by typing their name in the search box at the top of the screen. If the customer is new, you add them by clicking the 'Add customer' button and filling in the boxes. Always check the spelling before you save. At the end of the day, you can see today's sales by running the Daily Sales report. Sometimes you need a list in alphabetical order. You can do that by clicking the top of the Name column. Finally, if a customer gets a new phone number, you change it by opening their record and typing the new number. Remember to save the record before you close it."
+      },
+      {
+        "id": "S3",
+        "kind": "situation",
+        "instructions": "Deal with the situation. Speak for 1–1.5 minutes.",
+        "prompt": "Yesterday you were working at home when your laptop keyboard stopped working. Phone the IT helpdesk and explain how the problem happened and what you did. Use the past continuous for the actions in progress and the past simple for what happened (I was …ing when …; While I was …ing, …).",
+        "cues": [
+          "3 p.m.: you / type a report for your manager",
+          "your cat / jump on the desk → a cup of tea / fall onto the keyboard",
+          "while you / clean the keyboard → the laptop / switch off",
+          "you / restart it → some keys / not work",
+          "you / connect an old USB keyboard → finish the report"
+        ],
+        "requiredGrammar": [
+          "Past continuous for the longer action: I was typing…, While I was cleaning…",
+          "Past simple for the shorter action and for what you did: the cup fell…, the laptop switched off, I connected…"
+        ],
+        "seconds": 90,
+        "sampleAnswer": "Hello, this is Linh from the marketing team. I'm calling about my laptop keyboard. Yesterday I was working at home. At about three o'clock, I was typing a report for my manager when my cat jumped on the desk. She knocked over my cup, and the tea fell onto the keyboard. I quickly unplugged the charger, but while I was cleaning the keyboard with a cloth, the laptop switched off completely. After waiting for ten minutes, I restarted it. It started normally, but some keys didn't work, for example the A and the S. I didn't want to lose any more time, so I connected an old USB keyboard and finished the report with it. Could someone look at the laptop today, please?"
+      }
+    ]
+  }
+}

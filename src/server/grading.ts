@@ -94,6 +94,8 @@ export async function gradeSession(
     id: session.id,
     unit: session.exam.unit,
     unitTitle: session.exam.unitTitle,
+    testId: session.exam.testId,
+    source: session.exam.source,
     mode: session.mode,
     scope: session.scope,
     submittedAt: new Date().toISOString(),

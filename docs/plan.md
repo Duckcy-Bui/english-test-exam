@@ -142,6 +142,15 @@ Xong khi: đủ 8 Unit có `AUDIT-OK`, `validate-exams.ts` qua trên toàn bộ.
 
 Xong khi: web chạy trên domain qua HTTPS, micro hoạt động, chấm AI hoạt động.
 
+## 5b. Giai đoạn 5: nhiều đề mỗi Unit và PDF
+
+Chốt với chủ dự án ngày 2026-10-14:
+- Mỗi Unit có nhiều đề: A (hiện có), B, C (AI sinh thêm). File `data/units/unit-<N>-<Test>.json`, trường `testId` và `source`.
+- Nhãn theo đúng nguồn: `source: "teacher"` hiện "Đề cô" (Unit 4, 5, 6 đề A, lấy từ đề mẫu của giảng viên); `source: "ai"` hiện "Đề AI" (Unit 1, 2, 3, 7, 8 đề A và mọi đề B, C).
+- Mỗi đề làm được trên web (như hiện nay) hoặc tải PDF: PDF đề đủ 4 kỹ năng, phần Nghe có mã QR mở bài nghe trên web; PDF đáp án tải riêng (đáp án, giải thích, lời thoại, bản dịch tham khảo, bài mẫu).
+- Audio thu sẵn: `data/audio/unit-<N>-<Test>-<Part>.mp3`; đề chưa có audio dùng giọng trình duyệt.
+- Đợt đầu: 16 đề AI (B, C cho 8 Unit), soạn và giải mù chéo như Giai đoạn 2–3.
+
 ## 6. Vấn đề còn mở
 
 1. **10 lần chấm/ngày đủ bao nhiêu đề.** Một đề cần ít nhất 2 lần chấm (Writing, Speaking), nên mỗi thiết bị làm được tối đa khoảng 5 đề đầy đủ mỗi ngày. Giới hạn theo cookie dễ bị lách bằng cách xoá cookie; trần theo IP chặn mức thiệt hại.
@@ -188,3 +197,11 @@ Xong khi: web chạy trên domain qua HTTPS, micro hoạt động, chấm AI ho�
 | 2026-10-14 19:25 +07 | Lịch sử ShopAIKey cho thấy mỗi lượt chấm bị tính tiền 2 lần (gemini-2.5-flash mất 25–45 giây, client bỏ ở 20 giây rồi gọi model dự phòng). Sửa (`eeae18a`): timeout 60 giây mỗi lần gọi, 90 giây mỗi lượt chấm; giới hạn 1024 token suy nghĩ cho dòng 2.5; chấm Writing và Speaking song song. Thử lại trên production: Writing 11,8 giây, Speaking 23,5 giây. |
 | 2026-10-14 21:03 +07 | Bài nghe thu sẵn: `/api/listen` trả đường dẫn audio có chữ ký 15 phút, trình duyệt phát MP3 trước, giọng trình duyệt chỉ là dự phòng (giọng trình duyệt im lặng trên Firefox/Linux). Unit 1 tạo bằng ElevenLabs Multilingual v2 qua giao diện PlenX (API developer của PlenX lỗi 500), PlenX đọc to thẻ break nên cắt bằng Whisper theo thời điểm từng từ. Deploy `7059a58`; production trả 200 audio/mpeg, không cookie 403. |
 | 2026-10-14 21:16 +07 | Áp khung email hướng dẫn của giáo viên (`8cb574e`): 8 Unit đều là email hướng dẫn, bài mẫu theo khung (phần thân 95–98 từ), chỉ đếm phần thân, barem bố cục kiểm 5 phần, nút "Chèn khung email". Chấm thật Unit 4: đúng khung layout 0,25; thiếu đầu thư và chữ ký layout 0,125 kèm nhận xét đúng phần thiếu. |
+| 2026-10-14 21:24 +07 | Bắt đầu Giai đoạn 5 trên nhánh `feat/multi-test`: schema thêm `testId` A–D và `source`; đổi tên `unit-N.json` thành `unit-N-A.json`, audio thành `unit-N-A-<part>.mp3`; script validate/strip/compare nhận mã đề dạng `6B`, validate cấm trùng bài đọc giữa các đề cùng Unit. |
+| 2026-10-14 21:27 +07 | Dựng lại team ở tab herdr `english-team`: et-author (Unit 1–4) và et-author2 (Unit 5–8) soạn đề B, C; et-auditor giải mù; et-dev làm nhiều đề + PDF; et-qa kiểm thử. |
+| 2026-10-14 21:43 +07 | Người dùng góp ý giao diện khó nhìn, muốn đơn giản như study4. Thêm et-dev2 (Codex) làm nhánh `ui/study4` song song, chia file với et-dev. |
+| 2026-10-14 21:46 +07 | Người dùng yêu cầu các agent liên tục kiểm chéo và giám sát lẫn nhau: QA theo dõi mọi commit; lead (Claude) review diff của dev (Codex); hai tác giả review chéo đề của nhau; mọi chỗ lead tự sửa vẫn phải giải mù lại; cron 15 phút kiểm toàn team. Thêm et-auditor2 để audit song song. |
+| 2026-10-14 22:05–22:52 +07 | Quyết định của lead khi bác lỗi CHẶN của auditor: (1) 5B: auditor lỡ đọc đáp án đề cô 5A trước khi giải, chấp nhận vì 5B là nội dung mới; (2) quy tắc 2 chỉ nhắm thuật ngữ nối và nội dung đặc trưng của định nghĩa đúng, từ phổ thông của Unit (data, online) không tính lộ; (3) lặp tình huống giữa hai kỹ năng không tính lộ vì thi tuần tự (1C R17, 7C R19); (4) 6C R8 đúng mục tiêu vì targetGrammar Unit 6 có increase/decrease/go up/go down. |
+| 2026-10-14 22:35 +07 | Merge `ui/study4` (gồm `dev/multi-test`) vào `feat/multi-test` @ `cef6abc`: QA-OK cả hai gói (249 unit test, 40 e2e, redteam 72/72, secrets 128/128, axe 0 lỗi tương phản), review chéo của lead không có lỗi chặn. |
+| 2026-10-14 22:46 +07 | `validate` thêm 2 cảnh báo: khoá đáp án R6–R25 lặp chu kỳ từ 10 câu trở lên (4B, 3B, 2C, 1B đã xáo lại, `keycheck` xác nhận chỉ đổi thứ tự) và ngữ cảnh Listening A nói sẵn đáp án (sửa 1B, 1C, 2C, 8C rồi giải mù lại). |
+| 2026-10-14 22:54 +07 | Đủ 24 đề trên `feat/multi-test` @ `02fe100` (8 đề A + 16 đề B/C), 16 đề mới đều AUDIT-OK qua giải mù khác họ model; `validate` 0 lỗi 0 cảnh báo. Giao et-dev sinh 48 PDF. |

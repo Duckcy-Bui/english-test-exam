@@ -37,7 +37,11 @@ export async function POST(request: Request) {
         speakers: part.speakers.map(({ name, voice }) => ({ name, voice })),
         remaining:
           session.mode === "exam" ? 2 - session.listens[part.id] : null,
-        audioUrl: listeningAudioPath(session.exam.unit, part.id)
+        audioUrl: listeningAudioPath(
+          session.exam.unit,
+          session.exam.testId,
+          part.id,
+        )
           ? `/api/listen/audio?t=${encodeURIComponent(signListenToken(session.id, part.id))}`
           : undefined,
       },

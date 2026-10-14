@@ -13,7 +13,11 @@ export async function GET(request: Request) {
     if (!token || !device || !authenticated(request))
       return new Response("Không có quyền nghe.", { status: 403 });
     const session = getSession(token.sessionId, device);
-    const file = listeningAudioPath(session.exam.unit, token.partId);
+    const file = listeningAudioPath(
+      session.exam.unit,
+      session.exam.testId,
+      token.partId,
+    );
     if (!file) return new Response("Không có file âm thanh.", { status: 404 });
     const data = await readFile(file);
     return new Response(new Uint8Array(data), {

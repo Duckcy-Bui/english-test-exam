@@ -96,6 +96,8 @@ function assertActiveOnly(s: ServerSession, expected: Skill | null): void {
   assert.deepEqual(view.completedSkills, s.completed);
   assert.equal(view.exam.unit, 6);
   assert.equal(view.exam.unitTitle, exam.unitTitle);
+  assert.equal(view.exam.testId, exam.testId);
+  assert.equal(view.exam.source, exam.source);
   assertPrivateFieldsAbsent(view);
 }
 
@@ -115,11 +117,11 @@ function submitFirstThree(s: ServerSession, data = answers()): void {
 test("exam sessions require the full scope and use the 90-minute deadline", async () => {
   for (const scope of SKILLS) {
     await assert.rejects(
-      createSession(randomUUID(), 6, "exam", scope),
+      createSession(randomUUID(), 6, "exam", scope, "A"),
       (error: unknown) => error instanceof AppError && error.status === 400,
     );
   }
-  const s = await createSession(randomUUID(), 6, "exam", "full");
+  const s = await createSession(randomUUID(), 6, "exam", "full", "A");
   assert.equal(s.scope, "full");
   assert.equal(s.expires! - s.started, 90 * 60_000);
   assert.deepEqual(s.answers, emptyAnswers());
@@ -135,8 +137,22 @@ test("creation rejects invalid unit, mode and scope instead of opening a partial
     [6, "exam", "all"],
   ]) {
     await assert.rejects(
-      createSession(randomUUID(), ...(args as [unknown, unknown, unknown])),
+      createSession(randomUUID(), ...(args as [unknown, unknown, unknown]), "A"),
       (error: unknown) => error instanceof AppError && error.status === 400,
+    );
+  }
+});
+
+test("creation requires an explicit valid test and rejects omitted, undefined or malformed identities", async () => {
+  const badRequest = (error: unknown) => error instanceof AppError && error.status === 400;
+  await assert.rejects(
+    Reflect.apply(createSession, undefined, [randomUUID(), 6, "practice", "reading"]),
+    badRequest,
+  );
+  for (const test of [undefined, null, "", "a", "E", " A", 1, {}, ["A"]]) {
+    await assert.rejects(
+      createSession(randomUUID(), 6, "practice", "reading", test),
+      badRequest,
     );
   }
 });
@@ -356,7 +372,7 @@ test("a late submission outside the delivery grace cannot add extra answers afte
 });
 
 test("practice with an individual scope releases only that public section and has no deadline", async () => {
-  const s = await createSession(randomUUID(), 6, "practice", "writing");
+  const s = await createSession(randomUUID(), 6, "practice", "writing", "A");
   const view = sessionView(s);
   assert.equal(s.expires, null);
   assert.equal(view.activeSkill, "writing");
@@ -374,7 +390,7 @@ test("practice with an individual scope releases only that public section and ha
 });
 
 test("practice with full scope releases all four public sections together", async () => {
-  const s = await createSession(randomUUID(), 6, "practice", "full");
+  const s = await createSession(randomUUID(), 6, "practice", "full", "A");
   const view = sessionView(s);
   assert.equal(view.activeSkill, null);
   assert.equal(view.scope, "full");
@@ -388,7 +404,7 @@ test("practice with full scope releases all four public sections together", asyn
 
 test("stored session lookup is device-bound and rejects expired or unknown IDs", async () => {
   const device = randomUUID();
-  const s = await createSession(device, 6, "exam", "full");
+  const s = await createSession(device, 6, "exam", "full", "A");
   assert.equal(getSession(s.id, device), s);
   assert.throws(
     () => getSession(s.id, randomUUID()),
@@ -412,7 +428,7 @@ test("stored session lookup is device-bound and rejects expired or unknown IDs",
 test("concurrent session creation cannot bypass the twenty-open-sessions device cap", async () => {
   const device = randomUUID();
   const outcomes = await Promise.allSettled(
-    Array.from({ length: 21 }, () => createSession(device, 6, "exam", "full")),
+    Array.from({ length: 21 }, () => createSession(device, 6, "exam", "full", "A")),
   );
   const accepted = outcomes.filter((outcome) => outcome.status === "fulfilled");
   const rejected = outcomes.filter((outcome) => outcome.status === "rejected");

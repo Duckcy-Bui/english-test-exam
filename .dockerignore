@@ -26,6 +26,7 @@ docs
 deploy
 sources
 *.pdf
+!data/pdf/*.pdf
 *.jpeg
 *.jpg
 *.png

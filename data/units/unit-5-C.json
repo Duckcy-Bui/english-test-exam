@@ -1,0 +1,631 @@
+{
+  "schemaVersion": 1,
+  "unit": 5,
+  "unitTitle": "Choice",
+  "testId": "C",
+  "source": "ai",
+  "functions": [
+    "Comparing products (Web hosting)",
+    "Discussing IT costs (IT costs)",
+    "Researching products (Product research)",
+    "Recommending products (Making recommendations)"
+  ],
+  "grammarFocus": [
+    "Comparatives and superlatives: -er than, more/less … than, fewer … than; as … as; the same (as); the -est, the most/least",
+    "Talking about money: cost, come to, be when the item is the subject; spend, pay when a person or company is the subject; saying prices and large numbers",
+    "Indirect questions to be polite: Could you tell me what…?, Do you know whether/if…? (statement word order after the question word)",
+    "Recommendations: I think (that) we should + verb; it's a good idea / it's best + to-infinitive; I recommend + -ing / that we + verb / noun phrase"
+  ],
+  "sourceNotes": [
+    "Đề C do AI soạn mới (Giai đoạn 5), cùng khung với đề A nhưng khác toàn bộ bài đọc, lời thoại, câu dịch, đề email và đề nói của đề A và đề B.",
+    "R1–R5: năm thuật ngữ không trùng câu nối đề A và đề B. Định nghĩa viết gần Workbook Unit 5: dedicated hosting, monthly bandwidth, guarantee (5D, tr. 49), tiered pricing (5C, tr. 49), user guide (5B, tr. 48). Định nghĩa thừa là của IP address (5D, tr. 49); từ này không dùng ở phần khác của đề.",
+    "R6–R12: so sánh (R6–R8), động từ nói về tiền (R9–R10), câu hỏi gián tiếp (R11), khuyến nghị (R12).",
+    "R13–R20: major, try out, holder (5C, tr. 48), introduction, 2-D (5B, tr. 47), card (5A, tr. 47), plan (5D, tr. 49), licence (Workbook bài 5.4, tr. 51). Không trùng từ được hỏi ở R13–R20 đề A và đề B.",
+    "Bài đọc R21–R25 (mua hay thuê máy tính xách tay cho công ty mới) và R26–R30 (màn hình thứ hai cho người dịch thuật) viết mới. Không nhắc lưu trữ web, băng thông, các mức giá theo phiên bản, sách hướng dẫn hay lời cam kết sửa chữa để không diễn đạt lại định nghĩa câu nối.",
+    "Listening A (so sánh ba bộ camera an ninh cho cửa hàng) theo bài Web hosting về chức năng so sánh; Listening B (tin nhắn thoại của chuyên viên tư vấn về Wi-Fi khách sạn) theo bài Making recommendations. Viết mới, không chép Audio script.",
+    "Listening B: acceptedAnswers có biến thể cách viết số, mạo từ và cách viết fiber; một số biến thể không có nguyên văn trong lời thoại.",
+    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
+    "Bản r1 (theo báo cáo et-auditor audit/unit-5-C): R18 thay phương án nhiễu có từ gốc của thuật ngữ câu nối R5; R19 viết lại ngữ cảnh gói cước điện thoại, không nhắc các mức gói; R17 viết lại câu và đổi bộ phương án sang cùng nhóm từ mô tả hình ảnh. Giải mù lại: R19 viết lại lần hai theo nghĩa kế hoạch dự án, không nhắc dữ liệu, tháng hay gói cước.",
+    "Bản r1 (theo review chéo của et-author): S2 đổi từ so sánh shared/dedicated hosting (gần bài T/F đề A) sang so sánh ba máy in cho studio thiết kế; L9 thêm biến thể separate guest network, network for guests."
+  ],
+  "listening": {
+    "parts": [
+      {
+        "id": "A",
+        "instructions": "Listen to the conversation and choose the best answer A, B, C or D (Questions L1–L5).",
+        "context": "Lucy and Owen run a small gift shop. They compare three security camera kits for the shop.",
+        "speakers": [
+          { "name": "Lucy", "voice": "female" },
+          { "name": "Owen", "voice": "male" }
+        ],
+        "script": [
+          { "speaker": "Lucy", "text": "Owen, have you looked at the security cameras for the shop?" },
+          { "speaker": "Owen", "text": "Yes, I've found three kits. The HomeEye kit is the cheapest. It costs a hundred and ninety pounds for four cameras." },
+          { "speaker": "Lucy", "text": "That's not bad. What about the other two?" },
+          { "speaker": "Owen", "text": "The SafeView kit costs two hundred and sixty pounds, and the Guardian kit is the most expensive at three hundred and forty." },
+          { "speaker": "Lucy", "text": "Is the Guardian much better?" },
+          { "speaker": "Owen", "text": "Its picture is clearer than the others, especially at night. But the SafeView picture is almost as good. And SafeView keeps recordings for thirty days, the same as Guardian. HomeEye only keeps them for seven days." },
+          { "speaker": "Lucy", "text": "Hmm. Our insurance company says we need to keep recordings for at least two weeks." },
+          { "speaker": "Owen", "text": "Right, so HomeEye isn't suitable for us." },
+          { "speaker": "Lucy", "text": "What about the phone app? I want to check the shop from home." },
+          { "speaker": "Owen", "text": "All three kits have an app, but the reviews say the SafeView app is the easiest to use." },
+          { "speaker": "Lucy", "text": "Then I think we should choose SafeView. It's eighty pounds cheaper than Guardian, and the app is better." },
+          { "speaker": "Owen", "text": "I agree. I'll order it this afternoon." }
+        ],
+        "questions": [
+          {
+            "id": "L1",
+            "kind": "mcq",
+            "stem": "How much does the HomeEye kit cost?",
+            "options": [
+              { "id": "A", "text": "£80" },
+              { "id": "B", "text": "£260" },
+              { "id": "C", "text": "£340" },
+              { "id": "D", "text": "£190" }
+            ],
+            "answerKey": "D",
+            "explanation": "Owen nói HomeEye rẻ nhất, \"It costs a hundred and ninety pounds for four cameras\". 260 bảng là SafeView, 340 bảng là Guardian, 80 bảng là chênh lệch giữa SafeView và Guardian."
+          },
+          {
+            "id": "L2",
+            "kind": "mcq",
+            "stem": "What is the main advantage of the Guardian kit?",
+            "options": [
+              { "id": "A", "text": "It has the clearest picture." },
+              { "id": "B", "text": "It is the cheapest kit." },
+              { "id": "C", "text": "It has the easiest app." },
+              { "id": "D", "text": "It has the most cameras." }
+            ],
+            "answerKey": "A",
+            "explanation": "\"Its picture is clearer than the others, especially at night\". Guardian đắt nhất; ứng dụng dễ dùng nhất là của SafeView; số camera không được so sánh."
+          },
+          {
+            "id": "L3",
+            "kind": "mcq",
+            "stem": "How long does the HomeEye kit keep recordings?",
+            "options": [
+              { "id": "A", "text": "Four days" },
+              { "id": "B", "text": "Seven days" },
+              { "id": "C", "text": "Two weeks" },
+              { "id": "D", "text": "Thirty days" }
+            ],
+            "answerKey": "B",
+            "explanation": "\"HomeEye only keeps them for seven days\". Ba mươi ngày là của SafeView và Guardian; hai tuần là yêu cầu của công ty bảo hiểm."
+          },
+          {
+            "id": "L4",
+            "kind": "mcq",
+            "stem": "Why is the HomeEye kit not suitable for the shop?",
+            "options": [
+              { "id": "A", "text": "It costs more than their budget." },
+              { "id": "B", "text": "It does not work at night." },
+              { "id": "C", "text": "It does not keep recordings for long enough." },
+              { "id": "D", "text": "It does not have a phone app." }
+            ],
+            "answerKey": "C",
+            "explanation": "Công ty bảo hiểm yêu cầu lưu ít nhất hai tuần, mà HomeEye chỉ lưu bảy ngày, nên \"HomeEye isn't suitable for us\". Cả ba bộ đều có ứng dụng điện thoại."
+          },
+          {
+            "id": "L5",
+            "kind": "mcq",
+            "stem": "Why does Lucy choose the SafeView kit?",
+            "options": [
+              { "id": "A", "text": "It has the clearest picture at night." },
+              { "id": "B", "text": "It is cheaper than Guardian and has a better app." },
+              { "id": "C", "text": "It is the cheapest of the three kits." },
+              { "id": "D", "text": "It is the only kit with four cameras." }
+            ],
+            "answerKey": "B",
+            "explanation": "Lucy nói \"It's eighty pounds cheaper than Guardian, and the app is better\". Hình rõ nhất là Guardian; rẻ nhất là HomeEye."
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "instructions": "Listen to the voicemail and answer the questions. Write NO MORE THAN THREE WORDS for each answer (Questions L6–L10).",
+        "context": "Ruth, an IT consultant, leaves a voicemail for the manager of the Lakeside Hotel about the hotel's Wi-Fi.",
+        "speakers": [{ "name": "Ruth", "voice": "female" }],
+        "script": [
+          { "speaker": "Ruth", "text": "Hello, Mr Novak. This is Ruth Carter from NetPoint Consulting. I've finished looking at the Wi-Fi at the Lakeside Hotel, and I'd like to give you my recommendations." },
+          { "speaker": "Ruth", "text": "At the moment, you have six access points, but the signal on the third floor is the weakest in the building, and guests there often complain. I recommend adding two more access points on that floor. Each one costs ninety-five pounds, and that price includes installation." },
+          { "speaker": "Ruth", "text": "Second, your internet connection is too slow for forty rooms. Many guests stream films in the evening, so they need more speed. I think you should change to a fibre connection. It's more expensive than your current connection, but only by twenty pounds a month." },
+          { "speaker": "Ruth", "text": "Finally, it's best to have a separate network for guests, so they can't see your office computers. I can do all the work next Tuesday, and it should take about four hours. Could you call me back and let me know whether Tuesday is convenient? Thanks. Bye." }
+        ],
+        "questions": [
+          {
+            "id": "L6",
+            "kind": "short",
+            "stem": "Which floor has the weakest Wi-Fi signal?",
+            "maxWords": 3,
+            "acceptedAnswers": ["the third floor", "third floor", "third", "the 3rd floor", "3rd floor", "3rd"],
+            "explanation": "Ruth nói \"the signal on the third floor is the weakest in the building\"."
+          },
+          {
+            "id": "L7",
+            "kind": "short",
+            "stem": "How many more access points does Ruth recommend?",
+            "maxWords": 3,
+            "acceptedAnswers": ["two", "2", "two more", "2 more", "two access points", "2 access points"],
+            "explanation": "\"I recommend adding two more access points on that floor\"."
+          },
+          {
+            "id": "L8",
+            "kind": "short",
+            "stem": "What type of internet connection does Ruth recommend?",
+            "maxWords": 3,
+            "acceptedAnswers": ["fibre", "a fibre connection", "fibre connection", "fiber", "a fiber connection", "fiber connection"],
+            "explanation": "\"I think you should change to a fibre connection\" (cáp quang), chỉ đắt hơn kết nối hiện tại 20 bảng mỗi tháng."
+          },
+          {
+            "id": "L9",
+            "kind": "short",
+            "stem": "What should the hotel have for its guests?",
+            "maxWords": 3,
+            "acceptedAnswers": ["a separate network", "separate network", "a guest network", "guest network", "their own network", "separate guest network", "network for guests"],
+            "explanation": "\"it's best to have a separate network for guests, so they can't see your office computers\"."
+          },
+          {
+            "id": "L10",
+            "kind": "short",
+            "stem": "On which day can Ruth do the work?",
+            "maxWords": 3,
+            "acceptedAnswers": ["tuesday", "next tuesday", "on tuesday", "on next tuesday"],
+            "explanation": "\"I can do all the work next Tuesday, and it should take about four hours\"."
+          }
+        ]
+      }
+    ]
+  },
+  "reading": {
+    "matching": {
+      "instructions": "Match the terms (1–5) with the correct definitions (A–F). There is one extra definition that you do not need (Questions 1–5).",
+      "definitions": [
+        { "id": "A", "text": "A way of charging that means you pay more for a more complicated version of something and less for a simpler version." },
+        { "id": "B", "text": "A system where each website is held on its own web server connected to the internet." },
+        { "id": "C", "text": "A formal written promise to repair or replace a product if it breaks within a specific period of time." },
+        { "id": "D", "text": "A special number that identifies a computer when it connects to the internet." },
+        { "id": "E", "text": "A book or document that explains how to use a product." },
+        { "id": "F", "text": "The amount of information that you are allowed to transfer through a connection in one month." }
+      ],
+      "items": [
+        { "id": "R1", "term": "Dedicated hosting", "answerKey": "B", "explanation": "Dedicated hosting (lưu trữ web riêng) là hệ thống mà mỗi trang web được đặt trên một máy chủ riêng." },
+        { "id": "R2", "term": "Monthly bandwidth", "answerKey": "F", "explanation": "Monthly bandwidth (băng thông hằng tháng) là lượng dữ liệu được phép truyền qua kết nối trong một tháng." },
+        { "id": "R3", "term": "Guarantee", "answerKey": "C", "explanation": "Guarantee (giấy bảo hành, cam kết bảo hành) là lời hứa chính thức sửa hoặc thay sản phẩm nếu hỏng trong một thời hạn nhất định." },
+        { "id": "R4", "term": "User guide", "answerKey": "E", "explanation": "User guide (sách hướng dẫn sử dụng) là tài liệu giải thích cách dùng sản phẩm." },
+        { "id": "R5", "term": "Tiered pricing", "answerKey": "A", "explanation": "Tiered pricing (định giá theo bậc) là cách tính giá: phiên bản phức tạp hơn thì trả nhiều hơn, bản đơn giản hơn thì trả ít hơn. Định nghĩa D là của IP address (địa chỉ IP), không có trong danh sách thuật ngữ." }
+      ]
+    },
+    "grammar": [
+      {
+        "id": "R6",
+        "kind": "mcq",
+        "stem": "My old phone has 64 GB of storage, but my new one has 256 GB. The new phone has ______ storage than the old one.",
+        "options": [
+          { "id": "A", "text": "most" },
+          { "id": "B", "text": "much" },
+          { "id": "C", "text": "more" },
+          { "id": "D", "text": "many" }
+        ],
+        "answerKey": "C",
+        "explanation": "256 GB nhiều hơn 64 GB, và có \"than\" nên dùng so sánh hơn: more storage than. \"most\" là so sánh nhất; \"much\", \"many\" không đi với \"than\"."
+      },
+      {
+        "id": "R7",
+        "kind": "mcq",
+        "stem": "This tablet has only one USB port, but that laptop has four. The tablet has ______ USB ports than the laptop.",
+        "options": [
+          { "id": "A", "text": "fewer" },
+          { "id": "B", "text": "the fewest" },
+          { "id": "C", "text": "little" },
+          { "id": "D", "text": "a few" }
+        ],
+        "answerKey": "A",
+        "explanation": "Ports là danh từ đếm được số nhiều, so sánh ít hơn dùng \"fewer … than\". \"the fewest\" là so sánh nhất; \"little\" dùng với danh từ không đếm được; \"a few\" không đi với \"than\"."
+      },
+      {
+        "id": "R8",
+        "kind": "mcq",
+        "stem": "The K1 is the ______ expensive keyboard in the shop. All the others cost more.",
+        "options": [
+          { "id": "A", "text": "less" },
+          { "id": "B", "text": "least" },
+          { "id": "C", "text": "fewest" },
+          { "id": "D", "text": "lower" }
+        ],
+        "answerKey": "B",
+        "explanation": "So sánh với mọi bàn phím trong cửa hàng nên dùng so sánh nhất kém: the least expensive. \"less\" là so sánh hơn; \"fewest\" dùng với danh từ đếm được; \"lower\" không đứng trước \"expensive\"."
+      },
+      {
+        "id": "R9",
+        "kind": "mcq",
+        "stem": "How much did the new speakers ______?",
+        "options": [
+          { "id": "A", "text": "spend" },
+          { "id": "B", "text": "pay" },
+          { "id": "C", "text": "charge" },
+          { "id": "D", "text": "cost" }
+        ],
+        "answerKey": "D",
+        "explanation": "Món đồ (the new speakers) là chủ ngữ nên dùng \"cost\": How much did the speakers cost? \"spend\" và \"pay\" cần chủ ngữ là người hoặc công ty; loa không thể \"charge\" (tính tiền)."
+      },
+      {
+        "id": "R10",
+        "kind": "mcq",
+        "stem": "Four external hard drives at £75 each ______ to £300.",
+        "options": [
+          { "id": "A", "text": "come" },
+          { "id": "B", "text": "cost" },
+          { "id": "C", "text": "spend" },
+          { "id": "D", "text": "pay" }
+        ],
+        "answerKey": "A",
+        "explanation": "Nói tổng số tiền: \"come to + số tiền\" (tổng cộng là). \"cost\" không đi với \"to\" trước số tiền; \"spend\", \"pay\" cần chủ ngữ là người."
+      },
+      {
+        "id": "R11",
+        "kind": "mcq",
+        "stem": "Excuse me, can you tell me where ______?",
+        "options": [
+          { "id": "A", "text": "is the nearest repair centre" },
+          { "id": "B", "text": "does the nearest repair centre" },
+          { "id": "C", "text": "the nearest repair centre is" },
+          { "id": "D", "text": "the nearest repair centre" }
+        ],
+        "answerKey": "C",
+        "explanation": "Câu hỏi gián tiếp dùng trật tự câu kể: where + chủ ngữ + động từ (the nearest repair centre is). Không đảo \"is\" lên trước chủ ngữ, không dùng \"does\", và không được thiếu động từ."
+      },
+      {
+        "id": "R12",
+        "kind": "mcq",
+        "stem": "I think we ______ upgrade the memory in our old computers before we buy new ones.",
+        "options": [
+          { "id": "A", "text": "ought" },
+          { "id": "B", "text": "must to" },
+          { "id": "C", "text": "should" },
+          { "id": "D", "text": "had" }
+        ],
+        "answerKey": "C",
+        "explanation": "Khuyến nghị: \"I think we should + động từ nguyên mẫu\". \"ought\" phải có \"to\" (ought to); \"must to\" sai; \"had upgrade\" sai cấu trúc."
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "R13",
+        "kind": "mcq",
+        "stem": "This is a ______ update with many new features, so it may take an hour to install.",
+        "options": [
+          { "id": "A", "text": "minor" },
+          { "id": "B", "text": "major" },
+          { "id": "C", "text": "spare" },
+          { "id": "D", "text": "shared" }
+        ],
+        "answerKey": "B",
+        "explanation": "Major (lớn, quan trọng) hợp với \"many new features\" và thời gian cài đặt lâu. Minor là nhỏ, không quan trọng."
+      },
+      {
+        "id": "R14",
+        "kind": "mcq",
+        "stem": "You can ______ the headphones in the shop before you buy them.",
+        "options": [
+          { "id": "A", "text": "come out" },
+          { "id": "B", "text": "log out" },
+          { "id": "C", "text": "try out" },
+          { "id": "D", "text": "set out" }
+        ],
+        "answerKey": "C",
+        "explanation": "Try out (dùng thử) là thử một thiết bị để xem nó có tốt không. Come out là ra mắt, không có tân ngữ; log out là đăng xuất."
+      },
+      {
+        "id": "R15",
+        "kind": "mcq",
+        "stem": "The account ______ is the person who owns the account and pays for it.",
+        "options": [
+          { "id": "A", "text": "holder" },
+          { "id": "B", "text": "reader" },
+          { "id": "C", "text": "charger" },
+          { "id": "D", "text": "server" }
+        ],
+        "answerKey": "A",
+        "explanation": "Holder (người sở hữu, chủ) là người sở hữu hoặc kiểm soát một thứ; account holder là chủ tài khoản."
+      },
+      {
+        "id": "R16",
+        "kind": "mcq",
+        "stem": "In the ______ to her talk, the speaker explained what she was going to cover.",
+        "options": [
+          { "id": "A", "text": "conclusion" },
+          { "id": "B", "text": "body" },
+          { "id": "C", "text": "summary" },
+          { "id": "D", "text": "introduction" }
+        ],
+        "answerKey": "D",
+        "explanation": "Introduction (phần mở đầu) là phần giới thiệu ở đầu bài nói, nơi người nói cho biết sẽ trình bày gì. Conclusion là phần kết."
+      },
+      {
+        "id": "R17",
+        "kind": "mcq",
+        "stem": "Drawings on paper are ______: they have length and width, but no depth.",
+        "options": [
+          { "id": "A", "text": "2-D" },
+          { "id": "B", "text": "3-D" },
+          { "id": "C", "text": "HD" },
+          { "id": "D", "text": "4K" }
+        ],
+        "answerKey": "A",
+        "explanation": "2-D (hai chiều) là phẳng, chỉ có chiều dài và chiều rộng, không có chiều sâu. 3-D (ba chiều) có thêm chiều sâu; HD và 4K nói về độ phân giải của hình ảnh, không nói về số chiều."
+      },
+      {
+        "id": "R18",
+        "kind": "mcq",
+        "stem": "Take the memory ______ out of the camera and put it into your laptop.",
+        "options": [
+          { "id": "A", "text": "plan" },
+          { "id": "B", "text": "card" },
+          { "id": "C", "text": "fee" },
+          { "id": "D", "text": "set" }
+        ],
+        "answerKey": "B",
+        "explanation": "Memory card (thẻ nhớ) là thiết bị điện tử lưu dữ liệu, dùng trong máy ảnh, điện thoại…"
+      },
+      {
+        "id": "R19",
+        "kind": "mcq",
+        "stem": "Before the team starts the project, we need a clear ______ that shows who will do each task and when.",
+        "options": [
+          { "id": "A", "text": "holder" },
+          { "id": "B", "text": "set" },
+          { "id": "C", "text": "plan" },
+          { "id": "D", "text": "fee" }
+        ],
+        "answerKey": "C",
+        "explanation": "Plan (kế hoạch) cho biết ai làm việc gì và khi nào. Holder là người sở hữu; set là một bộ đồ vật; fee là khoản phí."
+      },
+      {
+        "id": "R20",
+        "kind": "mcq",
+        "stem": "You need a ______ to use this software legally in your company.",
+        "options": [
+          { "id": "A", "text": "reader" },
+          { "id": "B", "text": "charger" },
+          { "id": "C", "text": "holder" },
+          { "id": "D", "text": "licence" }
+        ],
+        "answerKey": "D",
+        "explanation": "Licence (giấy phép) cho phép dùng phần mềm hợp pháp. Chính tả Anh–Anh: licence (danh từ)."
+      }
+    ],
+    "passageMcq": {
+      "instructions": "Read the passage and choose the best answer A, B, C or D (Questions 21–25).",
+      "passage": {
+        "title": "Buying or Renting Laptops at Brightpath",
+        "paragraphs": [
+          "Brightpath is a new marketing company in Leeds with twelve employees, and it opened in March. At the moment, the staff are using laptops that the owner borrowed from his previous company, and he has to return them at the end of the month. The office manager, Chloe, needs to decide whether Brightpath should buy or rent new laptops.",
+          "If the company buys them, each laptop costs £750, so twelve laptops come to £9,000. Brightpath would own the machines, but it would have to pay an IT company to look after them. Laptops also become slower over time, and the company would probably need to replace them after about four years.",
+          "The other option is to rent laptops from a company called TechLease. This costs £30 per laptop each month, so for twelve laptops Brightpath would pay £360 a month, or £4,320 a year. The price includes technical support, and TechLease changes the laptops for newer models every two years. Chloe phones TechLease and asks whether it can add more laptops quickly when new staff join. The salesperson says it can deliver them within three days.",
+          "Chloe compares the two options. Over three years, renting comes to £12,960, which is more than buying. However, Brightpath has only £5,000 in the bank at the moment, and it plans to hire eight more people next year. For these reasons, Chloe recommends renting for the first two years and then reviewing the decision."
+        ]
+      },
+      "questions": [
+        {
+          "id": "R21",
+          "kind": "mcq",
+          "stem": "Why does Brightpath need new laptops?",
+          "options": [
+            { "id": "A", "text": "The old laptops are too slow." },
+            { "id": "B", "text": "The staff have to return their laptops." },
+            { "id": "C", "text": "Some of the laptops are broken." },
+            { "id": "D", "text": "The owner wants to sell the laptops." }
+          ],
+          "answerKey": "B",
+          "explanation": "Đoạn 1: máy đang dùng là máy chủ công ty mượn từ công ty cũ \"and he has to return them at the end of the month\"."
+        },
+        {
+          "id": "R22",
+          "kind": "mcq",
+          "stem": "How much would it cost to buy twelve laptops?",
+          "options": [
+            { "id": "A", "text": "£750" },
+            { "id": "B", "text": "£4,320" },
+            { "id": "C", "text": "£9,000" },
+            { "id": "D", "text": "£12,960" }
+          ],
+          "answerKey": "C",
+          "explanation": "Đoạn 2: \"each laptop costs £750, so twelve laptops come to £9,000\". 4.320 bảng là tiền thuê một năm; 12.960 bảng là tiền thuê ba năm."
+        },
+        {
+          "id": "R23",
+          "kind": "mcq",
+          "stem": "What did Chloe ask TechLease?",
+          "options": [
+            { "id": "A", "text": "How much the support costs each month" },
+            { "id": "B", "text": "Whether the laptops are new or used" },
+            { "id": "C", "text": "When it changes the laptops for newer models" },
+            { "id": "D", "text": "Whether it can add more laptops quickly" }
+          ],
+          "answerKey": "D",
+          "explanation": "Đoạn 3: \"Chloe phones TechLease and asks whether it can add more laptops quickly when new staff join.\" Việc đổi máy mới sau hai năm là thông tin trong bài, không phải câu Chloe hỏi."
+        },
+        {
+          "id": "R24",
+          "kind": "mcq",
+          "stem": "What is one disadvantage of renting?",
+          "options": [
+            { "id": "A", "text": "It costs more than buying over three years." },
+            { "id": "B", "text": "It does not include technical support." },
+            { "id": "C", "text": "New laptops take a month to arrive." },
+            { "id": "D", "text": "The laptops become slower over time." }
+          ],
+          "answerKey": "A",
+          "explanation": "Đoạn 4: \"Over three years, renting comes to £12,960, which is more than buying.\" Giá thuê đã gồm hỗ trợ kỹ thuật, máy giao trong ba ngày; máy chậm dần là nhược điểm của việc mua."
+        },
+        {
+          "id": "R25",
+          "kind": "mcq",
+          "stem": "Why does Chloe recommend renting?",
+          "options": [
+            { "id": "A", "text": "Renting is the cheapest option over four years." },
+            { "id": "B", "text": "The owner does not want to own laptops." },
+            { "id": "C", "text": "The company has little money now and will grow." },
+            { "id": "D", "text": "TechLease offers a free laptop for new staff." }
+          ],
+          "answerKey": "C",
+          "explanation": "Đoạn 4: công ty chỉ có 5.000 bảng trong tài khoản và dự định tuyển thêm tám người vào năm sau, \"For these reasons, Chloe recommends renting\"."
+        }
+      ]
+    },
+    "passageTrueFalse": {
+      "instructions": "Read the passage and write T (True) or F (False) (Questions 26–30).",
+      "passage": {
+        "title": "A Second Screen for Anna",
+        "paragraphs": [
+          "Anna works from home as a translator and uses a 14-inch laptop. She often needs to have two documents open at the same time, so she wants a second screen for her desk. Her laptop screen is quite small, and she finds it tiring to switch between windows all day. Her budget is £200.",
+          "She compares two monitors in an online shop. The V24 is a 24-inch monitor, and it costs £135. The V27 is bigger, at 27 inches, and it has a sharper picture, but it costs £230. Both monitors connect to her laptop with the same HDMI cable, and both have built-in speakers.",
+          "Before she orders, Anna sends the shop a message and asks whether the V24 can be fixed to a wall. The shop replies that it can, but the wall bracket is not included and costs £25 extra. Anna decides to buy the V24 and the bracket, which together come to £160. She plans to spend the money that she saves on a better keyboard."
+        ]
+      },
+      "questions": [
+        {
+          "id": "R26",
+          "kind": "tf",
+          "statement": "Anna uses a 14-inch laptop for her work.",
+          "answerKey": "T",
+          "explanation": "Đoạn 1: \"Anna works from home as a translator and uses a 14-inch laptop.\""
+        },
+        {
+          "id": "R27",
+          "kind": "tf",
+          "statement": "The V27 is cheaper than the V24.",
+          "answerKey": "F",
+          "explanation": "Đoạn 2: V24 giá 135 bảng, V27 giá 230 bảng, nên V27 đắt hơn."
+        },
+        {
+          "id": "R28",
+          "kind": "tf",
+          "statement": "The two monitors connect to her laptop with the same cable.",
+          "answerKey": "T",
+          "explanation": "Đoạn 2: \"Both monitors connect to her laptop with the same HDMI cable\"."
+        },
+        {
+          "id": "R29",
+          "kind": "tf",
+          "statement": "The wall bracket is included in the price of the V24.",
+          "answerKey": "F",
+          "explanation": "Đoạn 3: \"the wall bracket is not included and costs £25 extra\"."
+        },
+        {
+          "id": "R30",
+          "kind": "tf",
+          "statement": "Anna spends more than her budget on the monitor and the bracket.",
+          "answerKey": "F",
+          "explanation": "Đoạn 3: màn hình và giá treo \"together come to £160\", thấp hơn ngân sách 200 bảng."
+        }
+      ]
+    }
+  },
+  "writing": {
+    "translation": {
+      "instructions": "Translate these sentences into Vietnamese (Questions 31–35).",
+      "items": [
+        {
+          "id": "W31",
+          "source": "Dedicated hosting is more expensive than shared hosting, but it gives you more control over the server.",
+          "referenceTranslation": "Lưu trữ web riêng (dedicated hosting) đắt hơn lưu trữ web dùng chung (shared hosting), nhưng nó cho bạn nhiều quyền kiểm soát máy chủ hơn."
+        },
+        {
+          "id": "W32",
+          "source": "Do you know how much monthly bandwidth our website uses?",
+          "referenceTranslation": "Bạn có biết trang web của chúng ta dùng bao nhiêu băng thông mỗi tháng không?"
+        },
+        {
+          "id": "W33",
+          "source": "The three new printers cost £450 each, so the total came to £1,350.",
+          "referenceTranslation": "Ba máy in mới có giá 450 bảng mỗi chiếc, nên tổng cộng là 1.350 bảng."
+        },
+        {
+          "id": "W34",
+          "source": "This is the lightest laptop in the shop, and its battery lasts the longest.",
+          "referenceTranslation": "Đây là chiếc máy tính xách tay nhẹ nhất trong cửa hàng, và pin của nó dùng được lâu nhất."
+        },
+        {
+          "id": "W35",
+          "source": "I recommend that we read the user guide carefully before we install the new router.",
+          "referenceTranslation": "Tôi đề nghị chúng ta đọc kỹ sách hướng dẫn sử dụng trước khi lắp đặt bộ định tuyến mới."
+        }
+      ]
+    },
+    "email": {
+      "id": "W-EMAIL",
+      "recipient": "Sofia",
+      "task": "You are an IT technician. The company has bought ShieldPro, a new antivirus program, for its 15 computers. Sofia, the office manager, is going to install it while you are away. Write an email to Sofia explaining the steps, using the notes below. In your email you must use:\n- at least one comparative or superlative (faster than, the safest);\n- the verbs cost or come to to talk about the price;\n- at least one recommendation (I recommend…, I think it's best to…);\n- at least one indirect question (Could you let me know whether…?).\nFollow the standard layout for an email giving instructions: From / To / Date / Subject, a greeting, It should be quite easy to …, the steps with First / Then / Next / After that / Finally, a reminder (Don't forget to … when you've finished.), then Best wishes and your name, position and department.\nWrite 80–100 words (do not count the From, To, Date and Subject lines).",
+      "bullets": [
+        "ShieldPro: faster than the old antivirus",
+        "insert the USB stick / run the installer on each computer",
+        "licence: £20 per computer (15 computers: £300)",
+        "enter the licence key / restart the computer",
+        "recommend a full scan the first time (the safest option)",
+        "ask Sofia to tell you whether any computer shows an error message",
+        "reminder: return the USB stick to the IT office"
+      ],
+      "wordRange": [80, 100],
+      "targetGrammar": [
+        "Comparatives and superlatives (at least one): faster than, the safest",
+        "Talking about money: cost, come to",
+        "Recommendations (at least one): I recommend + -ing / noun phrase; I think it's best to…",
+        "Indirect questions (at least one): Could you let me know whether…?"
+      ],
+      "modelAnswer": "From: Tran Quoc Bao\nTo: Sofia\nDate: 12th May\nSubject: Installing ShieldPro\n\nHi Sofia,\n\nIt should be quite easy to install ShieldPro, which is faster than our old antivirus.\nFirst, insert the USB stick and run the installer on each computer.\nThen, enter the licence key. Each licence costs £20, so all fifteen come to £300.\nNext, restart the computer.\nAfter that, I recommend running a full scan because it's the safest option.\nFinally, could you let me know whether any computer shows an error message?\nDon't forget to return the USB stick to the IT office when you've finished.\n\nBest wishes,\nTran Quoc Bao\nIT Technician\nIT Department"
+    }
+  },
+  "speaking": {
+    "parts": [
+      {
+        "id": "S1",
+        "kind": "questions",
+        "instructions": "Answer the three questions. Speak for 30–45 seconds for each question.",
+        "questions": [
+          "Think about two shops or websites where people buy technology. Which one is better, and why? Use comparatives and superlatives (cheaper than, more reliable than, the best).",
+          "How much do you usually pay for your mobile phone plan or home internet each month? Is it good value? Use cost, pay, spend or come to.",
+          "A friend wants to buy their first laptop for university. What advice would you give? Use at least two recommendation structures (I think you should…, I recommend…, it's best to…)."
+        ],
+        "secondsPerQuestion": 45
+      },
+      {
+        "id": "S2",
+        "kind": "explain",
+        "instructions": "Compare the products and give a recommendation. Speak for 1–1.5 minutes.",
+        "prompt": "A friend runs a small design studio and needs a new printer. The studio prints about 2,000 colour pages a month. Compare the three printers in the cues and recommend one. Use comparatives and superlatives, and at least one recommendation structure (I recommend…, I think you should…, it's best to…).",
+        "cues": [
+          "InkJet 50: £120 / colour / 15 pages a minute / 8p per page",
+          "LaserMono: £260 / black and white only / 30 pages a minute / 3p per page",
+          "ColourLaser 9: £420 / colour / 25 pages a minute / 5p per page",
+          "the studio: about 2,000 colour pages a month"
+        ],
+        "requiredGrammar": [
+          "Comparatives and superlatives: cheaper than, faster than, the most expensive, the lowest",
+          "Recommendations: I recommend + -ing / that you + verb; I think you should…; it's best to…"
+        ],
+        "seconds": 90,
+        "sampleAnswer": "I've compared three printers for your studio. The InkJet 50 is the cheapest to buy at a hundred and twenty pounds, but it's also the slowest, and each page costs eight pence, which is more than the other two. The LaserMono is faster than the InkJet and its pages are the cheapest, only three pence each, but it prints in black and white only, so it's no good for design work. The ColourLaser 9 is the most expensive printer at four hundred and twenty pounds, but it prints in colour, it's almost as fast as the LaserMono, and each page costs five pence. You print about two thousand colour pages a month, so you'd save sixty pounds a month compared with the InkJet. I recommend buying the ColourLaser 9. I think it's best to order spare toner at the same time."
+      },
+      {
+        "id": "S3",
+        "kind": "situation",
+        "instructions": "Deal with the situation. Speak for 1–1.5 minutes.",
+        "prompt": "Your office ordered new equipment from an IT supplier, but the invoice is wrong. Phone the supplier. Explain what you ordered and what everything should cost, using cost and come to and saying the prices clearly. Then ask at least three polite indirect questions (Could you tell me why…?, Do you know whether/if…?, Can you tell me when…?).",
+        "cues": [
+          "your order: 6 webcams at £60 each / 6 docking stations at £110 each",
+          "correct total: £1,020",
+          "the invoice says 12 webcams / total £1,380",
+          "you want: the reason for the mistake, a new invoice, the delivery date"
+        ],
+        "requiredGrammar": [
+          "Talking about money: The webcams cost…; the order comes to…; we paid / we spent…",
+          "Saying prices: sixty pounds; one thousand and twenty pounds; one thousand three hundred and eighty pounds",
+          "Indirect questions (at least three): Could you tell me why the invoice says…?; Do you know whether you can send…?; Can you tell me when the equipment will arrive?"
+        ],
+        "seconds": 90,
+        "sampleAnswer": "Hello, this is Linh from Greenfield Accounting. I'm calling about our invoice, because I think there's a mistake. We ordered six webcams and six docking stations. Each webcam costs sixty pounds, so the webcams come to three hundred and sixty pounds. The docking stations cost a hundred and ten pounds each, so they come to six hundred and sixty pounds. Altogether, the order should come to one thousand and twenty pounds. However, the invoice says twelve webcams, and the total is one thousand three hundred and eighty pounds. That's three hundred and sixty pounds more than it should be. Could you tell me why the invoice shows twelve webcams? Do you know whether you can send us a new invoice today? And can you tell me when the equipment will arrive? Thank you very much."
+      }
+    ]
+  }
+}

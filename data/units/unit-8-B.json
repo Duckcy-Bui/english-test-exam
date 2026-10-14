@@ -1,0 +1,1055 @@
+{
+  "schemaVersion": 1,
+  "unit": 8,
+  "unitTitle": "IT solutions",
+  "testId": "B",
+  "source": "ai",
+  "functions": [
+    "Describing what has been done to find a fault (Investigations)",
+    "Speculating about the causes of problems (Diagnosis)",
+    "Suggesting solutions (Solutions)",
+    "Talking about career plans (Your future in IT)"
+  ],
+  "grammarFocus": [
+    "Present perfect and past simple; already in affirmative sentences, yet in questions and negative sentences",
+    "Speculating about causes: may, might, could (possible), must (almost certain), can't (impossible) + verb / be + -ing / be + past participle",
+    "Suggesting solutions: should/shouldn't in first conditional sentences; might; try + noun / -ing",
+    "Future plans: plan, intend, hope, expect + to-infinitive"
+  ],
+  "sourceNotes": [
+    "Đề B do AI soạn mới (Giai đoạn 5), cùng khung với đề A nhưng khác toàn bộ bài đọc, lời thoại, câu dịch, đề email và đề nói.",
+    "R1–R5: năm thuật ngữ khác hẳn đề A. Định nghĩa viết gần Workbook Unit 8: tier 1, troubleshooting guide (8A, tr. 75), bloatware, short circuit (8C, tr. 76–77), customised (8D, tr. 78). Định nghĩa thừa là của personnel (8D, tr. 78); từ này không dùng ở phần khác của đề.",
+    "R6–R12: hiện tại hoàn thành (R6–R7), phỏng đoán must/might (R8–R9), giải pháp shouldn't trong câu điều kiện loại 1 và try + V-ing (R10–R11), kế hoạch expect to (R12). Phương án nhiễu R7 không dùng since để tránh cách hiểu trạng từ.",
+    "R13–R20: spill, wrist, cool down, usage, bill (8C, tr. 76–77), fault (8B, tr. 76), responsibility, subject (8D, tr. 77–78). Không trùng từ được hỏi ở R13–R20 đề A.",
+    "Bài đọc R21–R25 (mạng chậm lúc 3 giờ chiều ở công ty kế toán) và R26–R30 (giảm hoá đơn điện ở trường học) viết mới. Không nhắc cấp hỗ trợ đầu tiên, tài liệu hỏi đáp tìm lỗi, chập điện, phần mềm thừa tính năng hay thiết bị được chỉnh riêng để không diễn đạt lại định nghĩa câu nối.",
+    "Listening A (tìm nguyên nhân trang web của khách hàng không vào được) theo bài Investigations; Listening B (sinh viên năm cuối nói về kế hoạch nghề nghiệp) theo bài Your future in IT. Viết mới, không chép Audio script.",
+    "Listening B: acceptedAnswers có biến thể chính tả và mạo từ; một số biến thể không có nguyên văn trong lời thoại.",
+    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
+    "Bản r1 (tự soát theo lỗi chung et-lead nêu): định nghĩa A, E, F viết lại để không chứa từ được hỏi hoặc từ của câu khác (cause, solutions, fault, power); R8 bỏ \"connection\" (từ khoá định nghĩa E); R7, R9, R16 đổi ngữ cảnh để không lặp tình huống sao lưu/máy chậm của bài đọc R21–R25 và tiền điện qua đêm của bài đọc R26–R30.",
+    "Bản r1 (theo review chéo của et-author): R8 đổi chứng cứ phỏng đoán (khác R9 đề A); R10 đổi ngữ cảnh USB lạ (khác R15 đề A); R14 đổi ngữ cảnh đồng hồ thông minh (không lặp cue S2); R16 thay phương án nhiễu động từ award bằng danh từ; bài đọc R21–R25 đoạn 4 chuyển sang thì quá khứ; S3 đổi sang sự cố máy in mạng để không lặp Listening A.",
+    "Audit 8B: R19 thay phương án nhiễu bằng danh từ số nhiều dài tương đương đáp án; L3 nêu rõ thời điểm (trước khi Sophie cùng xem)."
+  ],
+  "listening": {
+    "parts": [
+      {
+        "id": "A",
+        "instructions": "Listen to the conversation and choose the best answer A, B, C or D (Questions L1–L5).",
+        "context": "Sophie, a manager at a small IT company, asks Max, a technician, about a client's website that is not working.",
+        "speakers": [
+          {
+            "name": "Sophie",
+            "voice": "female"
+          },
+          {
+            "name": "Max",
+            "voice": "male"
+          }
+        ],
+        "script": [
+          {
+            "speaker": "Sophie",
+            "text": "Max, the Bakery Direct website still isn't working, and the client has called three times this morning. What have you done so far?"
+          },
+          {
+            "speaker": "Max",
+            "text": "I've already checked the web server. It's running, and there are no error messages. I've also looked at the logs, but I haven't found anything unusual."
+          },
+          {
+            "speaker": "Sophie",
+            "text": "Have you spoken to the hosting company yet?"
+          },
+          {
+            "speaker": "Max",
+            "text": "Yes, I phoned them at nine. They said their network is fine."
+          },
+          {
+            "speaker": "Sophie",
+            "text": "OK. What about the domain name? Has anyone checked when it expires?"
+          },
+          {
+            "speaker": "Max",
+            "text": "Not yet. I haven't had time."
+          },
+          {
+            "speaker": "Sophie",
+            "text": "Let's look now. Here it is. The domain expired yesterday!"
+          },
+          {
+            "speaker": "Max",
+            "text": "So that's why nobody can open the site. Who usually renews it?"
+          },
+          {
+            "speaker": "Sophie",
+            "text": "Their office manager, Carla. But she left the company last month, so nobody saw the reminder emails."
+          },
+          {
+            "speaker": "Max",
+            "text": "I'll call the client now and ask them to renew it today. The site should work again within a few hours."
+          },
+          {
+            "speaker": "Sophie",
+            "text": "Good. And please add a reminder to our own calendar, so this doesn't happen again next year."
+          }
+        ],
+        "questions": [
+          {
+            "id": "L1",
+            "kind": "mcq",
+            "stem": "What has Max already checked?",
+            "options": [
+              {
+                "id": "A",
+                "text": "The domain name"
+              },
+              {
+                "id": "B",
+                "text": "The web server"
+              },
+              {
+                "id": "C",
+                "text": "The client's computers"
+              },
+              {
+                "id": "D",
+                "text": "The reminder emails"
+              }
+            ],
+            "answerKey": "B",
+            "explanation": "Max nói \"I've already checked the web server\". Tên miền là thứ anh chưa kiểm tra."
+          },
+          {
+            "id": "L2",
+            "kind": "mcq",
+            "stem": "When did Max phone the hosting company?",
+            "options": [
+              {
+                "id": "A",
+                "text": "Yesterday"
+              },
+              {
+                "id": "B",
+                "text": "Last month"
+              },
+              {
+                "id": "C",
+                "text": "At nine o'clock"
+              },
+              {
+                "id": "D",
+                "text": "He hasn't phoned them yet."
+              }
+            ],
+            "answerKey": "C",
+            "explanation": "\"Yes, I phoned them at nine.\" Mốc thời gian cụ thể trong quá khứ nên dùng quá khứ đơn."
+          },
+          {
+            "id": "L3",
+            "kind": "mcq",
+            "stem": "Before Sophie looks at it with him, what hasn't Max checked yet?",
+            "options": [
+              {
+                "id": "A",
+                "text": "When the domain name expires"
+              },
+              {
+                "id": "B",
+                "text": "Whether the server is running"
+              },
+              {
+                "id": "C",
+                "text": "The hosting company's network"
+              },
+              {
+                "id": "D",
+                "text": "The error messages on the server"
+              }
+            ],
+            "answerKey": "A",
+            "explanation": "Sophie hỏi đã ai kiểm tra ngày hết hạn tên miền chưa, Max trả lời \"Not yet. I haven't had time.\""
+          },
+          {
+            "id": "L4",
+            "kind": "mcq",
+            "stem": "Why was the domain name not renewed?",
+            "options": [
+              {
+                "id": "A",
+                "text": "The client did not want to pay."
+              },
+              {
+                "id": "B",
+                "text": "The hosting company forgot."
+              },
+              {
+                "id": "C",
+                "text": "Max was too busy."
+              },
+              {
+                "id": "D",
+                "text": "The person who renews it has left the company."
+              }
+            ],
+            "answerKey": "D",
+            "explanation": "Người thường gia hạn là Carla, \"she left the company last month, so nobody saw the reminder emails\"."
+          },
+          {
+            "id": "L5",
+            "kind": "mcq",
+            "stem": "What does Sophie ask Max to do?",
+            "options": [
+              {
+                "id": "A",
+                "text": "Renew the domain himself"
+              },
+              {
+                "id": "B",
+                "text": "Phone the hosting company again"
+              },
+              {
+                "id": "C",
+                "text": "Add a reminder to their own calendar"
+              },
+              {
+                "id": "D",
+                "text": "Find a new office manager"
+              }
+            ],
+            "answerKey": "C",
+            "explanation": "\"please add a reminder to our own calendar, so this doesn't happen again next year\". Việc gọi khách hàng là Max tự đề xuất."
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "instructions": "Listen to the talk and answer the questions. Write NO MORE THAN THREE WORDS for each answer (Questions L6–L10).",
+        "context": "Khoa, a final-year computer science student, talks about his career plans at a university careers event.",
+        "speakers": [
+          {
+            "name": "Khoa",
+            "voice": "male"
+          }
+        ],
+        "script": [
+          {
+            "speaker": "Khoa",
+            "text": "Hi, everyone. My name's Khoa, and I'm in my final year of computer science. I expect to graduate in July. For the last two years, I've worked part-time at the university help desk, where I've learned a lot about solving users' problems. I've also organised a coding club for first-year students, and that has helped me to improve my communication skills."
+          },
+          {
+            "speaker": "Khoa",
+            "text": "After graduation, I plan to apply for jobs in cybersecurity, because I think it's the most interesting area of IT. I've already passed one security certificate, and I intend to take a second one in the autumn. I don't expect it to be easy to find a job, because there are many good candidates, but I've already started to prepare for interviews."
+          },
+          {
+            "speaker": "Khoa",
+            "text": "I hope to work for a bank, because banks need strong security teams. In the long term, I'd like to live abroad for a few years, maybe in Singapore. But first, I plan to save some money and improve my English. Thank you."
+          }
+        ],
+        "questions": [
+          {
+            "id": "L6",
+            "kind": "short",
+            "stem": "When does Khoa expect to graduate?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "july",
+              "in july",
+              "this july",
+              "next july"
+            ],
+            "explanation": "Khoa nói \"I expect to graduate in July\"."
+          },
+          {
+            "id": "L7",
+            "kind": "short",
+            "stem": "Where has Khoa worked part-time for the last two years?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "university help desk",
+              "help desk",
+              "the help desk",
+              "helpdesk",
+              "the helpdesk",
+              "university helpdesk"
+            ],
+            "explanation": "\"I've worked part-time at the university help desk\" (bộ phận hỗ trợ kỹ thuật của trường)."
+          },
+          {
+            "id": "L8",
+            "kind": "short",
+            "stem": "Which area of IT does Khoa want to work in?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "cybersecurity",
+              "cyber security",
+              "cyber-security",
+              "security"
+            ],
+            "explanation": "\"I plan to apply for jobs in cybersecurity\" (an ninh mạng)."
+          },
+          {
+            "id": "L9",
+            "kind": "short",
+            "stem": "What kind of organisation does Khoa hope to work for?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "a bank",
+              "bank",
+              "banks"
+            ],
+            "explanation": "\"I hope to work for a bank, because banks need strong security teams.\""
+          },
+          {
+            "id": "L10",
+            "kind": "short",
+            "stem": "In which country might Khoa live in the long term?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "singapore",
+              "in singapore"
+            ],
+            "explanation": "\"I'd like to live abroad for a few years, maybe in Singapore.\""
+          }
+        ]
+      }
+    ]
+  },
+  "reading": {
+    "matching": {
+      "instructions": "Match the terms (1–5) with the correct definitions (A–F). There is one extra definition that you do not need (Questions 1–5).",
+      "definitions": [
+        {
+          "id": "A",
+          "text": "Software or a printed manual that asks you a series of questions to help you discover why a computer is not working."
+        },
+        {
+          "id": "B",
+          "text": "The people who work in a company or organisation."
+        },
+        {
+          "id": "C",
+          "text": "Changed to make it more suitable for you, or to make it look different from similar things."
+        },
+        {
+          "id": "D",
+          "text": "The first and simplest of several levels in an organisation or system."
+        },
+        {
+          "id": "E",
+          "text": "A failure of an electrical system caused by bad wires or a broken connection between them."
+        },
+        {
+          "id": "F",
+          "text": "Unnecessary features in a program that use more of the computer's resources than necessary and give users little benefit."
+        }
+      ],
+      "items": [
+        {
+          "id": "R1",
+          "term": "Troubleshooting guide",
+          "answerKey": "A",
+          "explanation": "Troubleshooting guide (hướng dẫn xử lý sự cố) là phần mềm hoặc tài liệu hỏi một loạt câu để tìm nguyên nhân lỗi và gợi ý cách khắc phục."
+        },
+        {
+          "id": "R2",
+          "term": "Short circuit",
+          "answerKey": "E",
+          "explanation": "Short circuit (chập mạch, đoản mạch) là hỏng hệ thống điện do dây xấu hoặc mối nối bị lỗi."
+        },
+        {
+          "id": "R3",
+          "term": "Tier 1",
+          "answerKey": "D",
+          "explanation": "Tier 1 (cấp 1) là cấp đầu tiên, đơn giản nhất trong nhiều cấp của một tổ chức hoặc hệ thống, ví dụ cấp hỗ trợ đầu tiên."
+        },
+        {
+          "id": "R4",
+          "term": "Bloatware",
+          "answerKey": "F",
+          "explanation": "Bloatware (phần mềm cồng kềnh) là các tính năng thừa trong chương trình, tốn nhiều tài nguyên mà ít lợi ích cho người dùng."
+        },
+        {
+          "id": "R5",
+          "term": "Customised",
+          "answerKey": "C",
+          "explanation": "Customised (được tuỳ chỉnh) là đã được thay đổi cho phù hợp với người dùng hoặc trông khác những thứ cùng loại. Định nghĩa B là của personnel (nhân sự), không có trong danh sách thuật ngữ."
+        }
+      ]
+    },
+    "grammar": [
+      {
+        "id": "R6",
+        "kind": "mcq",
+        "stem": "We ______ three problems with the network since Monday.",
+        "options": [
+          {
+            "id": "A",
+            "text": "had"
+          },
+          {
+            "id": "B",
+            "text": "have had"
+          },
+          {
+            "id": "C",
+            "text": "have"
+          },
+          {
+            "id": "D",
+            "text": "are having"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "\"since Monday\" chỉ khoảng thời gian kéo dài đến hiện tại nên dùng hiện tại hoàn thành: have had. Quá khứ đơn, hiện tại đơn và hiện tại tiếp diễn không đi với \"since\" theo nghĩa này."
+      },
+      {
+        "id": "R7",
+        "kind": "mcq",
+        "stem": "Don't worry about the new user accounts. I've ______ created them.",
+        "options": [
+          {
+            "id": "A",
+            "text": "yet"
+          },
+          {
+            "id": "B",
+            "text": "ago"
+          },
+          {
+            "id": "C",
+            "text": "already"
+          },
+          {
+            "id": "D",
+            "text": "still"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "Câu khẳng định thì hiện tại hoàn thành, việc đã xong sớm hơn mong đợi: \"I've already created them\". \"yet\" dùng trong câu hỏi, câu phủ định; \"ago\" đi với quá khứ đơn; \"still\" không đứng ở vị trí này."
+      },
+      {
+        "id": "R8",
+        "kind": "mcq",
+        "stem": "Only Tom's computer can't get online, and its network cable is lying on the floor next to the desk. The cable ______ be the problem.",
+        "options": [
+          {
+            "id": "A",
+            "text": "can't"
+          },
+          {
+            "id": "B",
+            "text": "mustn't"
+          },
+          {
+            "id": "C",
+            "text": "must"
+          },
+          {
+            "id": "D",
+            "text": "doesn't"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "Có bằng chứng rõ (chỉ máy của Tom không vào mạng được, dây mạng nằm dưới sàn) nên dùng \"must\" để phỏng đoán gần như chắc chắn. \"can't\" trái với bằng chứng; \"mustn't\" là cấm đoán; \"doesn't be\" sai ngữ pháp."
+      },
+      {
+        "id": "R9",
+        "kind": "mcq",
+        "stem": "Ana's phone feels very warm right now. It might ______ a large update in the background.",
+        "options": [
+          {
+            "id": "A",
+            "text": "installing"
+          },
+          {
+            "id": "B",
+            "text": "be installing"
+          },
+          {
+            "id": "C",
+            "text": "installs"
+          },
+          {
+            "id": "D",
+            "text": "to install"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Phỏng đoán việc đang diễn ra: might + be + V-ing (might be installing)."
+      },
+      {
+        "id": "R10",
+        "kind": "mcq",
+        "stem": "If you find a USB stick in the car park, you ______ plug it into your computer.",
+        "options": [
+          {
+            "id": "A",
+            "text": "don't should"
+          },
+          {
+            "id": "B",
+            "text": "shouldn't to"
+          },
+          {
+            "id": "C",
+            "text": "not should"
+          },
+          {
+            "id": "D",
+            "text": "shouldn't"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Lời khuyên trong câu điều kiện loại 1: If + hiện tại đơn, … shouldn't + động từ nguyên mẫu (USB lạ có thể chứa vi-rút). Không dùng \"don't should\", \"not should\" hay \"to\" sau should."
+      },
+      {
+        "id": "R11",
+        "kind": "mcq",
+        "stem": "If the app still crashes, try ______ it.",
+        "options": [
+          {
+            "id": "A",
+            "text": "reinstalling"
+          },
+          {
+            "id": "B",
+            "text": "reinstall"
+          },
+          {
+            "id": "C",
+            "text": "to reinstalling"
+          },
+          {
+            "id": "D",
+            "text": "reinstalled"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "Gợi ý giải pháp: try + V-ing (thử làm gì xem có hiệu quả không): try reinstalling it."
+      },
+      {
+        "id": "R12",
+        "kind": "mcq",
+        "stem": "We expect ______ the new servers by the end of the month.",
+        "options": [
+          {
+            "id": "A",
+            "text": "receiving"
+          },
+          {
+            "id": "B",
+            "text": "to receive"
+          },
+          {
+            "id": "C",
+            "text": "receive"
+          },
+          {
+            "id": "D",
+            "text": "received"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Kế hoạch, dự kiến: expect + to-infinitive (expect to receive)."
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "R13",
+        "kind": "mcq",
+        "stem": "Be careful not to ______ your coffee on the keyboard.",
+        "options": [
+          {
+            "id": "A",
+            "text": "bend"
+          },
+          {
+            "id": "B",
+            "text": "burn"
+          },
+          {
+            "id": "C",
+            "text": "spill"
+          },
+          {
+            "id": "D",
+            "text": "award"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "Spill (làm đổ, tràn) là để chất lỏng chảy ra ngoài miệng cốc."
+      },
+      {
+        "id": "R14",
+        "kind": "mcq",
+        "stem": "My smartwatch measures my heart rate from my ______.",
+        "options": [
+          {
+            "id": "A",
+            "text": "wrist"
+          },
+          {
+            "id": "B",
+            "text": "knee"
+          },
+          {
+            "id": "C",
+            "text": "ankle"
+          },
+          {
+            "id": "D",
+            "text": "shoulder"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "Wrist (cổ tay) là chỗ bàn tay nối với cánh tay; đồng hồ thông minh đeo ở cổ tay."
+      },
+      {
+        "id": "R15",
+        "kind": "mcq",
+        "stem": "Switch off the projector and let it ______ before you move it.",
+        "options": [
+          {
+            "id": "A",
+            "text": "come out"
+          },
+          {
+            "id": "B",
+            "text": "cool down"
+          },
+          {
+            "id": "C",
+            "text": "log out"
+          },
+          {
+            "id": "D",
+            "text": "try out"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Cool down (nguội đi) là trở nên mát hơn; máy chiếu nóng cần để nguội trước khi di chuyển."
+      },
+      {
+        "id": "R16",
+        "kind": "mcq",
+        "stem": "Our mobile data ______ has gone up since we started watching videos on the train.",
+        "options": [
+          {
+            "id": "A",
+            "text": "wrist"
+          },
+          {
+            "id": "B",
+            "text": "subject"
+          },
+          {
+            "id": "C",
+            "text": "backache"
+          },
+          {
+            "id": "D",
+            "text": "usage"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Usage (lượng sử dụng) là lượng một thứ được dùng, ở đây là lượng dữ liệu di động đã dùng."
+      },
+      {
+        "id": "R17",
+        "kind": "mcq",
+        "stem": "The phone company has sent us a ______ for £85 for last month's calls.",
+        "options": [
+          {
+            "id": "A",
+            "text": "fault"
+          },
+          {
+            "id": "B",
+            "text": "bill"
+          },
+          {
+            "id": "C",
+            "text": "subject"
+          },
+          {
+            "id": "D",
+            "text": "solution"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Bill (hoá đơn) là bản kê số tiền phải trả cho dịch vụ đã dùng."
+      },
+      {
+        "id": "R18",
+        "kind": "mcq",
+        "stem": "The technician found a ______ in the power supply, so he replaced it.",
+        "options": [
+          {
+            "id": "A",
+            "text": "fault"
+          },
+          {
+            "id": "B",
+            "text": "bill"
+          },
+          {
+            "id": "C",
+            "text": "subject"
+          },
+          {
+            "id": "D",
+            "text": "usage"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "Fault (lỗi, hỏng hóc) là điều sai ở máy móc khiến nó không hoạt động đúng."
+      },
+      {
+        "id": "R19",
+        "kind": "mcq",
+        "stem": "Checking the backups every morning is one of my ______ as a system administrator.",
+        "options": [
+          {
+            "id": "A",
+            "text": "qualifications"
+          },
+          {
+            "id": "B",
+            "text": "applications"
+          },
+          {
+            "id": "C",
+            "text": "governments"
+          },
+          {
+            "id": "D",
+            "text": "responsibilities"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Responsibility (trách nhiệm, nhiệm vụ) là việc phải làm trong công việc. Qualification là bằng cấp, application là đơn xin hoặc ứng dụng, government là chính phủ: đều không phải việc hằng ngày của người quản trị hệ thống."
+      },
+      {
+        "id": "R20",
+        "kind": "mcq",
+        "stem": "My favourite ______ at university was computer networks.",
+        "options": [
+          {
+            "id": "A",
+            "text": "bill"
+          },
+          {
+            "id": "B",
+            "text": "fault"
+          },
+          {
+            "id": "C",
+            "text": "subject"
+          },
+          {
+            "id": "D",
+            "text": "usage"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "Subject (môn học) là lĩnh vực kiến thức học ở trường hoặc đại học."
+      }
+    ],
+    "passageMcq": {
+      "instructions": "Read the passage and choose the best answer A, B, C or D (Questions 21–25).",
+      "passage": {
+        "title": "The Three O'Clock Problem",
+        "paragraphs": [
+          "Every afternoon at about three o'clock, the network at Greenleaf Accountants becomes very slow. Files take minutes to open, and video calls with clients freeze. The staff are getting frustrated, and two clients have already complained. In the morning, everything works normally. The office manager has called the company's IT supplier, and a technician, Omar, has come to investigate.",
+          "Omar's first idea was that the router might be too old. However, the router was replaced only six months ago, and it works well in the mornings. For these reasons, he decided that the router can't be the cause of the problem.",
+          "Next, Omar looked at the network traffic. He found that at three o'clock, one laptop starts to upload a huge amount of data to the internet. The laptop belongs to Ruth, a new employee who joined the company last week. Omar thinks it must be a backup program, because the files that the laptop is sending are copies of Ruth's documents.",
+          "When Omar asked her about it, Ruth explained that her son had set up a free online backup service on the laptop before she started her new job. It was set to run every afternoon. Omar suggested that she should change the time to seven in the evening, when the office is empty. He also said that if staff want to back up their work, they should use the company's server instead of free online services."
+        ]
+      },
+      "questions": [
+        {
+          "id": "R21",
+          "kind": "mcq",
+          "stem": "When is the network slow?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Every morning"
+            },
+            {
+              "id": "B",
+              "text": "Every afternoon at about three o'clock"
+            },
+            {
+              "id": "C",
+              "text": "Only during video calls"
+            },
+            {
+              "id": "D",
+              "text": "At seven in the evening"
+            }
+          ],
+          "answerKey": "B",
+          "explanation": "Đoạn 1: \"Every afternoon at about three o'clock, the network … becomes very slow.\" Buổi sáng mạng bình thường."
+        },
+        {
+          "id": "R22",
+          "kind": "mcq",
+          "stem": "Why did Omar decide that the router couldn't be the cause?",
+          "options": [
+            {
+              "id": "A",
+              "text": "It is new and works well in the mornings."
+            },
+            {
+              "id": "B",
+              "text": "It was checked by the office manager."
+            },
+            {
+              "id": "C",
+              "text": "Ruth's laptop does not use it."
+            },
+            {
+              "id": "D",
+              "text": "Its lights are all working."
+            }
+          ],
+          "answerKey": "A",
+          "explanation": "Đoạn 2: router mới thay sáu tháng trước \"and it works well in the mornings\", nên Omar kết luận router không thể là nguyên nhân."
+        },
+        {
+          "id": "R23",
+          "kind": "mcq",
+          "stem": "What did Omar find when he looked at the network traffic?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Several video calls were running at once."
+            },
+            {
+              "id": "B",
+              "text": "The server was downloading updates."
+            },
+            {
+              "id": "C",
+              "text": "One laptop was uploading a lot of data."
+            },
+            {
+              "id": "D",
+              "text": "A client was sending large files."
+            }
+          ],
+          "answerKey": "C",
+          "explanation": "Đoạn 3: \"at three o'clock, one laptop starts to upload a huge amount of data to the internet\"."
+        },
+        {
+          "id": "R24",
+          "kind": "mcq",
+          "stem": "Who set up the online backup service on Ruth's laptop?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Omar"
+            },
+            {
+              "id": "B",
+              "text": "The office manager"
+            },
+            {
+              "id": "C",
+              "text": "Ruth's new manager"
+            },
+            {
+              "id": "D",
+              "text": "Ruth's son"
+            }
+          ],
+          "answerKey": "D",
+          "explanation": "Đoạn 4: \"her son set up a free online backup service on the laptop\"."
+        },
+        {
+          "id": "R25",
+          "kind": "mcq",
+          "stem": "What did Omar suggest that Ruth should do?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Change the backup time to the evening"
+            },
+            {
+              "id": "B",
+              "text": "Buy a new router for the office"
+            },
+            {
+              "id": "C",
+              "text": "Stop backing up her documents"
+            },
+            {
+              "id": "D",
+              "text": "Work from home in the afternoons"
+            }
+          ],
+          "answerKey": "A",
+          "explanation": "Đoạn 4: Omar đề nghị \"she should change the time to seven in the evening, when the office is empty\"."
+        }
+      ]
+    },
+    "passageTrueFalse": {
+      "instructions": "Read the passage and write T (True) or F (False) (Questions 26–30).",
+      "passage": {
+        "title": "Cutting the Electricity Bill at Brightwell School",
+        "paragraphs": [
+          "Brightwell School's electricity bill has gone up by 30% this year. The head teacher has asked the IT technician, Ms Lowe, to find out why. She has already checked the computer rooms and has found that most of the sixty computers are never switched off at night. Many of them are also left on all weekend.",
+          "Ms Lowe has suggested three solutions. First, all the computers should switch off automatically at six in the evening. Second, if a projector is not used for fifteen minutes, it should go into sleep mode. Third, teachers should try using laptops instead of the old desktop computers, because laptops use much less power.",
+          "The school has not bought any new laptops yet, because the money for this year has already been spent. However, the automatic switch-off started last week, and Ms Lowe expects to see a lower bill next month. She also plans to put small notices next to the computers to remind students to switch them off."
+        ]
+      },
+      "questions": [
+        {
+          "id": "R26",
+          "kind": "tf",
+          "statement": "The school's electricity bill has gone up by 30% this year.",
+          "answerKey": "T",
+          "explanation": "Đoạn 1: \"Brightwell School's electricity bill has gone up by 30% this year.\""
+        },
+        {
+          "id": "R27",
+          "kind": "tf",
+          "statement": "Ms Lowe found that most of the computers are switched off at night.",
+          "answerKey": "F",
+          "explanation": "Đoạn 1: cô phát hiện \"most of the sixty computers are never switched off at night\"."
+        },
+        {
+          "id": "R28",
+          "kind": "tf",
+          "statement": "Ms Lowe has suggested that projectors should go into sleep mode after fifteen minutes without use.",
+          "answerKey": "T",
+          "explanation": "Đoạn 2: \"if a projector is not used for fifteen minutes, it should go into sleep mode\"."
+        },
+        {
+          "id": "R29",
+          "kind": "tf",
+          "statement": "The school has already bought some new laptops.",
+          "answerKey": "F",
+          "explanation": "Đoạn 3: \"The school has not bought any new laptops yet\"."
+        },
+        {
+          "id": "R30",
+          "kind": "tf",
+          "statement": "The automatic switch-off started last week.",
+          "answerKey": "T",
+          "explanation": "Đoạn 3: \"the automatic switch-off started last week\"."
+        }
+      ]
+    }
+  },
+  "writing": {
+    "translation": {
+      "instructions": "Translate these sentences into Vietnamese (Questions 31–35).",
+      "items": [
+        {
+          "id": "W31",
+          "source": "A short circuit can start a fire, so you should never use damaged cables.",
+          "referenceTranslation": "Chập mạch có thể gây cháy, vì vậy bạn không bao giờ nên dùng dây cáp bị hỏng."
+        },
+        {
+          "id": "W32",
+          "source": "I have already sent the problem to the second level of support, but they haven't replied yet.",
+          "referenceTranslation": "Tôi đã chuyển sự cố lên bộ phận hỗ trợ cấp hai rồi, nhưng họ vẫn chưa trả lời."
+        },
+        {
+          "id": "W33",
+          "source": "The computer can't have a virus, because we scanned it this morning.",
+          "referenceTranslation": "Máy tính không thể bị nhiễm vi-rút, vì sáng nay chúng tôi đã quét nó rồi."
+        },
+        {
+          "id": "W34",
+          "source": "If your eyes feel tired, you should try looking away from the screen every twenty minutes.",
+          "referenceTranslation": "Nếu mắt bạn thấy mỏi, bạn nên thử nhìn ra xa khỏi màn hình sau mỗi hai mươi phút."
+        },
+        {
+          "id": "W35",
+          "source": "After my degree, I plan to work for a year and then study for a further qualification in cloud computing.",
+          "referenceTranslation": "Sau khi tốt nghiệp, tôi dự định đi làm một năm rồi học lấy thêm một chứng chỉ nâng cao về điện toán đám mây."
+        }
+      ]
+    },
+    "email": {
+      "id": "W-EMAIL",
+      "recipient": "Tara",
+      "task": "You are an IT support technician. Tara, a sales assistant, reported that her laptop keeps losing the Wi-Fi connection in the meeting room. Write an email to Tara explaining what you have already done and how she can fix the problem, using the notes below. In your email you must use:\n- the present perfect with already and with yet (I have already…, I haven't… yet);\n- may, might or could to talk about a possible cause;\n- should or try + -ing to suggest a solution.\nFollow the standard layout for an email giving instructions: From / To / Date / Subject, a greeting, It should be quite easy to …, the steps with First / Then / Next / After that / Finally, a reminder (Don't forget to … when you've finished.), then Best wishes and your name, position and department.\nWrite 80–100 words (do not count the From, To, Date and Subject lines).",
+      "bullets": [
+        "already: restart the router / not yet: replace the old access point",
+        "possible cause: an old Wi-Fi driver on Tara's laptop",
+        "open Settings / choose 'Forget this network'",
+        "connect again / enter the password (on the meeting-room wall)",
+        "update the Wi-Fi driver / restart the laptop",
+        "if the connection is still weak: try sitting closer to the router",
+        "reminder: switch off the projector in the meeting room"
+      ],
+      "wordRange": [
+        80,
+        100
+      ],
+      "targetGrammar": [
+        "Present perfect with already and yet",
+        "Speculating: may, might, could + verb",
+        "Suggesting solutions: should; try + -ing; If…, you should…"
+      ],
+      "modelAnswer": "From: Dang Quoc Viet\nTo: Tara\nDate: 20th October\nSubject: Fixing your Wi-Fi problem\n\nHi Tara,\n\nI have already restarted the router, but I haven't replaced the old access point yet. The cause might be an old Wi-Fi driver on your laptop.\nIt should be quite easy to fix.\nFirst, open Settings and choose 'Forget this network'.\nThen, connect again with the password on the meeting-room wall.\nNext, update the Wi-Fi driver.\nAfter that, restart the laptop.\nFinally, if the connection is still weak, try sitting closer to the router.\nDon't forget to switch off the projector when you've finished.\n\nBest wishes,\nDang Quoc Viet\nSupport Technician\nHelp Desk Department"
+    }
+  },
+  "speaking": {
+    "parts": [
+      {
+        "id": "S1",
+        "kind": "questions",
+        "instructions": "Answer the three questions. Speak for 30–45 seconds for each question.",
+        "questions": [
+          "What have you already learned in your IT course this year, and what haven't you learned yet? Use the present perfect with already and yet.",
+          "Your friend's computer makes a loud noise and then switches itself off. What do you think the cause is? Use may, might, could, must or can't.",
+          "Where do you expect to be in ten years? Talk about your job and where you would like to live. Use plan to, intend to, hope to or expect to."
+        ],
+        "secondsPerQuestion": 45
+      },
+      {
+        "id": "S2",
+        "kind": "explain",
+        "instructions": "Suggest solutions to a problem. Speak for 1–1.5 minutes.",
+        "prompt": "A colleague has backache and painful wrists after long hours at the computer. Suggest solutions, using the cues. Use should, try + -ing or try + noun, and at least two first conditional sentences with should (If…, you should…).",
+        "cues": [
+          "chair: too low / adjust the height",
+          "screen: too close / about an arm's length away",
+          "wrists: a soft wrist rest",
+          "a short break every hour",
+          "simple stretching exercises for the back"
+        ],
+        "requiredGrammar": [
+          "should / shouldn't for advice",
+          "try + -ing / try + noun: Try using a wrist rest; Try a short walk.",
+          "First conditional with should (at least two): If your chair is too low, you should adjust it."
+        ],
+        "seconds": 90,
+        "sampleAnswer": "I'm sorry to hear about your back and your wrists. I think there are a few easy solutions. First, your chair looks too low. If your chair is too low, you should adjust the height so that your eyes are level with the top of the screen. Your screen is also very close to your face. You should move it about an arm's length away. For your wrists, try using a soft wrist rest in front of the keyboard. It really helps. Also, you shouldn't sit for hours without moving. If you work for more than an hour, you should take a short break and walk around the office. Finally, try some simple stretching exercises for your back every morning. If the pain doesn't get better, you should see a doctor."
+      },
+      {
+        "id": "S3",
+        "kind": "situation",
+        "instructions": "Deal with the situation. Speak for 1–1.5 minutes.",
+        "prompt": "You work at a help desk. This morning the network printer on the second floor stopped printing, and nobody on that floor can print. Your manager phones you and asks what you have done so far. Use the cues. Use the present perfect with already and yet for what you have and haven't done, and the past simple for actions at a finished time (at 8.30, at 10 o'clock).",
+        "cues": [
+          "8.30: staff reported the problem",
+          "already: restarted the printer / cleared the print queue (error code 49)",
+          "10 o'clock: you sent an email to all staff on the second floor",
+          "not yet: contacted the printer supplier / found the cause",
+          "next step: what you plan to do this afternoon"
+        ],
+        "requiredGrammar": [
+          "Present perfect with already: I've already restarted the printer.",
+          "Present perfect with yet: I haven't contacted the supplier yet.",
+          "Past simple with finished times: Staff reported the problem at 8.30."
+        ],
+        "seconds": 90,
+        "sampleAnswer": "Staff on the second floor reported the problem at eight thirty this morning. The network printer stopped printing, and nobody on that floor can print anything. I've already restarted the printer, but that didn't help. I've also cleared the print queue, and the printer now shows error code forty-nine. At ten o'clock, I sent an email to all the staff on the second floor and asked them to use the printer on the first floor for now. However, I haven't found the cause yet, and I haven't contacted the printer supplier yet, because their support line opens at one o'clock. This afternoon, I plan to call them and send them a photo of the error. I hope to fix the printer before the end of the day."
+      }
+    ]
+  }
+}

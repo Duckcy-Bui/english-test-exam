@@ -1,7 +1,13 @@
 import { readFile, readdir } from "node:fs/promises";
 import { resolve, join } from "node:path";
-import { ANSWER_FIELDS, SCHEMA_VERSION, type UnitExam } from "@/types/exam";
-import type { PublicExam, UnitSummary } from "@/types/app";
+import {
+  ANSWER_FIELDS,
+  SCHEMA_VERSION,
+  TEST_IDS,
+  type TestId,
+  type UnitExam,
+} from "@/types/exam";
+import type { PublicExam, TestSummary, UnitSummary } from "@/types/app";
 import { AppError } from "./errors";
 
 const hidden = new Set<string>([...ANSWER_FIELDS, "sourceNotes", "script"]);
@@ -29,26 +35,41 @@ export function stripSourceNotes<T>(value: T): T {
     ) as T;
   return value;
 }
-export async function loadExam(unit: number): Promise<UnitExam> {
+function validateUnit(unit: number): void {
   if (!Number.isInteger(unit) || unit < 1 || unit > 8)
     throw new AppError(400, "Unit không hợp lệ.");
+}
+function dataDirectory(): string {
   // Runtime-selected data is explicitly included by next.config.ts (or mounted).
   // Do not let the bundler trace the entire repository for an arbitrary path.
-  const dir = resolve(
+  return resolve(
     /* turbopackIgnore: true */ process.env.EXAM_DATA_DIR || "data/units",
   );
-  let names: string[];
+}
+async function examNames(dir: string): Promise<string[]> {
   try {
-    names = await readdir(/* turbopackIgnore: true */ dir);
+    return await readdir(/* turbopackIgnore: true */ dir);
   } catch {
-    throw new AppError(404, "Unit này chưa có đề.");
+    return [];
   }
-  const name = names.includes(`unit-${unit}.json`)
-    ? `unit-${unit}.json`
-    : names.includes(`unit-${unit}.sample.json`)
+}
+function examName(names: string[], unit: number, testId: TestId): string | null {
+  return names.includes(`unit-${unit}-${testId}.json`)
+    ? `unit-${unit}-${testId}.json`
+    : testId === "A" && names.includes(`unit-${unit}.sample.json`)
       ? `unit-${unit}.sample.json`
       : null;
-  if (!name) throw new AppError(404, "Unit này chưa có đề.");
+}
+export async function loadExam(
+  unit: number,
+  testId: TestId = "A",
+): Promise<UnitExam> {
+  validateUnit(unit);
+  if (!TEST_IDS.includes(testId))
+    throw new AppError(400, "Mã đề không hợp lệ.");
+  const dir = dataDirectory();
+  const name = examName(await examNames(dir), unit, testId);
+  if (!name) throw new AppError(404, "Đề này chưa có dữ liệu.");
   try {
     const exam = JSON.parse(
       await readFile(
@@ -59,6 +80,8 @@ export async function loadExam(unit: number): Promise<UnitExam> {
     if (
       exam.schemaVersion !== SCHEMA_VERSION ||
       exam.unit !== unit ||
+      exam.testId !== testId ||
+      (exam.source !== "teacher" && exam.source !== "ai") ||
       !exam.reading ||
       !exam.listening ||
       !exam.writing ||
@@ -73,16 +96,44 @@ export async function loadExam(unit: number): Promise<UnitExam> {
     );
   }
 }
+export async function listTests(unit: number): Promise<TestSummary[]> {
+  validateUnit(unit);
+  const names = await examNames(dataDirectory());
+  const tests = await Promise.all(
+    TEST_IDS.filter((testId) => examName(names, unit, testId)).map(
+      async (testId): Promise<TestSummary | null> => {
+        try {
+          const exam = await loadExam(unit, testId);
+          return { testId, source: exam.source };
+        } catch (error) {
+          // Never log file contents or error messages that may include exam data.
+          console.error("[exam-data] Không nạp được đề.", {
+            unit,
+            testId,
+            file: examName(names, unit, testId),
+            status: error instanceof AppError ? error.status : 500,
+          });
+          return null;
+        }
+      },
+    ),
+  );
+  return tests.filter((test): test is TestSummary => test !== null);
+}
 export async function listUnits(): Promise<UnitSummary[]> {
   return Promise.all(
     Array.from({ length: 8 }, async (_, i) => {
       try {
-        const e = await loadExam(i + 1);
+        const tests = await listTests(i + 1);
+        if (!tests.length) throw new AppError(404, "Unit này chưa có đề.");
+        const e = await loadExam(i + 1, tests[0].testId);
         return {
           unit: i + 1,
           title: e.unitTitle,
           available: true,
           grammarFocus: e.grammarFocus,
+          tests,
+          testCount: tests.length,
         };
       } catch (error) {
         if (!(error instanceof AppError) || error.status !== 404) throw error;
@@ -91,6 +142,8 @@ export async function listUnits(): Promise<UnitSummary[]> {
           title: `Unit ${i + 1}`,
           available: false,
           grammarFocus: [],
+          tests: [],
+          testCount: 0,
         };
       }
     }),

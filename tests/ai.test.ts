@@ -24,6 +24,7 @@ const exam: UnitExam = {
   unit: 6,
   unitTitle: "Interactions",
   testId: "A",
+  source: "teacher",
   functions: ["Giving instructions"],
   grammarFocus: ["Second conditional"],
   sourceNotes: [],
