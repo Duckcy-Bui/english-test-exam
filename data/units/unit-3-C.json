@@ -25,7 +25,8 @@
     "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại.",
     "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
     "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
-    "Bản r1 (tự soát theo nhắc của et-lead): R13 bỏ 'click the … button' vì trùng từ thuật ngữ và định nghĩa F (back button)."
+    "Bản r1 (tự soát theo nhắc của et-lead): R13 bỏ 'click the … button' vì trùng từ thuật ngữ và định nghĩa F (back button).",
+    "Bản r1, đợt 2 (theo review chéo của et-author2): R11 đổi nhiễu 'arrived' thành 'arrives'; R13 đổi sang 'follow a link' (bản trước lặp tình huống trang tin cũ của đề A); S2 bài mẫu bỏ 'round arrow' và 'latest news'; Listening B bỏ lịch bảo trì (trùng bài R26–R30), L10 hỏi nơi phải đăng xuất; W34 đổi tình huống (trùng R16 quét tài liệu); email mẫu có câu điều kiện loại 1 đúng mẫu; L6, L9 thêm biến thể."
   ],
   "listening": {
     "parts": [
@@ -246,7 +247,7 @@
           },
           {
             "speaker": "Owen",
-            "text": "One more thing: the portal closes for maintenance every Tuesday from six to seven in the morning. And please always log out when you use a computer in the library, so that nobody else can see your grades."
+            "text": "One more thing: please always log out when you use a computer in the library, so that nobody else can see your grades."
           }
         ],
         "questions": [
@@ -260,7 +261,9 @@
               "the student card",
               "on student card",
               "their student card",
-              "on the card"
+              "on the card",
+              "your student card",
+              "the card"
             ],
             "explanation": "\"use your student number, which is on your student card\"."
           },
@@ -304,24 +307,27 @@
               "the browser history",
               "history",
               "the history",
-              "their history"
+              "their history",
+              "your browser history",
+              "your history",
+              "browsing history",
+              "your browsing history"
             ],
             "explanation": "\"If a page looks strange or doesn't load, clear your browser history and try again.\""
           },
           {
             "id": "L10",
             "kind": "short",
-            "stem": "On which day does the portal close for maintenance?",
+            "stem": "Where must students always log out of the portal?",
             "maxWords": 3,
             "acceptedAnswers": [
-              "tuesday",
-              "on tuesday",
-              "every tuesday",
-              "tuesdays",
-              "on tuesdays",
-              "tuesday morning"
+              "in the library",
+              "the library",
+              "library",
+              "on library computers",
+              "library computers"
             ],
-            "explanation": "\"the portal closes for maintenance every Tuesday from six to seven in the morning\"."
+            "explanation": "\"please always log out when you use a computer in the library, so that nobody else can see your grades\"."
           }
         ]
       }
@@ -526,7 +532,7 @@
           },
           {
             "id": "B",
-            "text": "arrived"
+            "text": "arrives"
           },
           {
             "id": "C",
@@ -538,7 +544,7 @@
           }
         ],
         "answerKey": "D",
-        "explanation": "Câu điều kiện loại 1: mệnh đề If dùng hiện tại đơn (arrive), không dùng \"will\"; mệnh đề chính dùng will + động từ."
+        "explanation": "Câu điều kiện loại 1: mệnh đề If dùng hiện tại đơn; chủ ngữ số nhiều (the new laptops) nên \"arrive\", không dùng \"will\"."
       },
       {
         "id": "R12",
@@ -570,27 +576,27 @@
       {
         "id": "R13",
         "kind": "mcq",
-        "stem": "If the news page doesn't show the latest stories, ______ it.",
+        "stem": "______ the link at the bottom of the email to read the full article on our website.",
         "options": [
           {
             "id": "A",
-            "text": "refresh"
+            "text": "Follow"
           },
           {
             "id": "B",
-            "text": "delete"
+            "text": "Sign"
           },
           {
             "id": "C",
-            "text": "sign"
+            "text": "Delete"
           },
           {
             "id": "D",
-            "text": "post"
+            "text": "Post"
           }
         ],
         "answerKey": "A",
-        "explanation": "Refresh (làm mới) là cho trang hiển thị thông tin mới nhất kể từ khi bạn mở trang."
+        "explanation": "Follow a link (nhấp vào đường liên kết để đi tới trang mà nó dẫn đến)."
       },
       {
         "id": "R14",
@@ -981,8 +987,8 @@
         },
         {
           "id": "W34",
-          "source": "If you scan a paper invoice, the app saves an electronic version automatically.",
-          "referenceTranslation": "Nếu bạn quét một hoá đơn giấy, ứng dụng sẽ tự động lưu một bản điện tử."
+          "source": "If a customer signs on the tablet, the app sends an electronic version of the contract to the office.",
+          "referenceTranslation": "Nếu khách hàng ký trên máy tính bảng, ứng dụng sẽ gửi bản điện tử của hợp đồng về văn phòng."
         },
         {
           "id": "W35",
@@ -1001,7 +1007,7 @@
         "select 'Send automatic replies'",
         "type a short message (give the date when you'll be back)",
         "add the name of a colleague (this person can help while you're away)",
-        "only reply to people in the company? tick 'Inside my organisation only'",
+        "tick 'Inside my organisation only' (then only colleagues will get the reply)",
         "reminder: click 'OK' when you've finished"
       ],
       "wordRange": [
@@ -1014,7 +1020,7 @@
         "Zero or first conditional: If you only want to reply to…, tick… / If someone writes to you, they will…",
         "Imperatives with sequence words for the steps"
       ],
-      "modelAnswer": "From: Hoang Minh Chau\nTo: Olivia\nDate: 2nd July\nSubject: Automatic replies\n\nHi Olivia,\n\nMany staff are taking holidays this month.\nIt should be quite easy to set up an automatic reply.\nFirst, open your email program and click 'File', then 'Automatic Replies'.\nThen, select 'Send automatic replies'.\nNext, type a short message which gives the date when you'll be back.\nAfter that, add the name of a colleague who can help while you're away.\nFinally, if you only want to reply to people in the company, just tick 'Inside my organisation only'.\nDon't forget to click 'OK' when you've finished.\n\nBest wishes,\nHoang Minh Chau\nIT Officer\nIT Department"
+      "modelAnswer": "From: Hoang Minh Chau\nTo: Olivia\nDate: 2nd July\nSubject: Automatic replies\n\nHi Olivia,\n\nMany staff are taking holidays this month.\nIt should be quite easy to set up an automatic reply.\nFirst, open your email program and click 'File', then 'Automatic Replies'.\nThen, select 'Send automatic replies'.\nNext, type a short message which gives the date when you'll be back.\nAfter that, add the name of a colleague who can help while you're away.\nFinally, just tick 'Inside my organisation only'. If you do, only colleagues will get the reply.\nDon't forget to click 'OK' when you've finished.\n\nBest wishes,\nHoang Minh Chau\nIT Officer\nIT Department"
     }
   },
   "speaking": {
@@ -1046,7 +1052,7 @@
           "Relative clauses with which, that or who: The address bar is the box which…, A tab is something that…"
         ],
         "seconds": 90,
-        "sampleAnswer": "Let me show you the main parts of the browser. At the top, there's the address bar, which is the long box where you type the address of a website. Next to it, there's the back button. It's the arrow that takes you to the page which you were looking at before. The round arrow is the refresh button. It's the button which loads the page again, so you can see the latest news. A bookmark is a way of saving a website that you visit often, so you don't have to type the address every time. Finally, tabs are the small boxes at the top which let you open several websites in the same window. For example, you can read the news in one tab and check the weather in another."
+        "sampleAnswer": "Let me show you the main parts of the browser. At the top, there's the address bar, which is the long box where you type the address of a website. Next to it, there's the back button. It's the arrow that takes you to the page which you were looking at before. The refresh button is the one which loads the page again when it isn't working properly. A bookmark is a way of saving a website that you visit often, so you don't have to type the address every time. Finally, tabs are the small boxes at the top which let you open several websites in the same window. For example, you can read the news in one tab and check the weather in another."
       },
       {
         "id": "S3",
