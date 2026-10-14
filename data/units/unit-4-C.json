@@ -25,7 +25,8 @@
     "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại.",
     "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
     "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
-    "Bản r1 (tự soát theo nhắc của et-lead): R15, R17 và bài đọc R26–R30 bỏ 'lock' (cùng gốc thuật ngữ R2 Caps Lock); R13 (record) và R14 (table) đổi sang query / form vì là từ khoá định nghĩa B (primary key); R19, R20 thay nhiễu 'unique'; R12 và bài đọc R21–R25 bỏ 'screen' (thuật ngữ R3 touch screen)."
+    "Bản r1 (tự soát theo nhắc của et-lead): R15, R17 và bài đọc R26–R30 bỏ 'lock' (cùng gốc thuật ngữ R2 Caps Lock); R13 (record) và R14 (table) đổi sang query / form vì là từ khoá định nghĩa B (primary key); R19, R20 thay nhiễu 'unique'; R12 và bài đọc R21–R25 bỏ 'screen' (thuật ngữ R3 touch screen).",
+    "Bản r1, đợt 2 (theo review chéo của et-author2): S2 đổi sang bảng điểm (bản cũ chép cấu trúc bảng tính bài đọc đề A); Listening B đổi người nghe, bỏ 'after everyone went home', đổi sự việc cuối (không lặp đặt lại mật khẩu), L10 mới; S3 đổi khung; R10 đổi tình huống; R16 đổi sang reset router; R18 đổi sang divide (trùng đề B); W31, W32, W33, W35 viết mới; L6, L9 thêm biến thể giờ; bài R26–R30 thêm một câu vào thân thư."
   ],
   "listening": {
     "parts": [
@@ -220,7 +221,7 @@
       {
         "id": "B",
         "instructions": "Listen to the voice message and answer the questions. Write NO MORE THAN THREE WORDS for each answer (Questions L6–L10).",
-        "context": "Nora, a systems administrator, leaves a voice message for her manager, Greg, about last night's server update.",
+        "context": "Nora, a systems administrator, leaves a voice message for Kim, a colleague on the morning shift, about last night's server update.",
         "speakers": [
           {
             "name": "Nora",
@@ -230,7 +231,7 @@
         "script": [
           {
             "speaker": "Nora",
-            "text": "Hi Greg, it's Nora. I'm calling to tell you how last night's update went. I started at ten o'clock, after everyone went home. Before installing anything, I backed up all three servers to the NAS. That took about forty minutes."
+            "text": "Hi Kim, it's Nora. Before you start your morning shift, here's how last night's update went. I started at ten o'clock in the evening. Before installing anything, I backed up all three servers to the NAS. That took about forty minutes."
           },
           {
             "speaker": "Nora",
@@ -242,7 +243,7 @@
           },
           {
             "speaker": "Nora",
-            "text": "This morning, two people from Accounts called the helpdesk because they couldn't log in. That wasn't because of the update. They typed their old passwords. I reset them both. OK, that's everything. Bye."
+            "text": "Early this morning, two people from Sales couldn't open the shared drive. That wasn't because of the update. Their laptops were still connected to the guest wi-fi, so I connected them to the staff network. OK, that's everything. Bye."
           }
         ],
         "questions": [
@@ -260,7 +261,12 @@
               "10",
               "10 pm",
               "ten pm",
-              "at ten"
+              "at ten",
+              "10 p m",
+              "10pm",
+              "10 00",
+              "at 10 pm",
+              "22 00"
             ],
             "explanation": "\"I started at ten o'clock, after everyone went home.\""
           },
@@ -301,23 +307,29 @@
               "1 30",
               "one thirty",
               "1 30 am",
-              "at 1 30"
+              "at 1 30",
+              "1 30 a m",
+              "1 30am",
+              "one thirty am",
+              "at one thirty"
             ],
             "explanation": "\"I finished at half past one.\""
           },
           {
             "id": "L10",
             "kind": "short",
-            "stem": "What did the two people from Accounts type by mistake?",
+            "stem": "Which network were the two Sales laptops still connected to?",
             "maxWords": 3,
             "acceptedAnswers": [
-              "their old passwords",
-              "old passwords",
-              "old password",
-              "their old password",
-              "the old passwords"
+              "the guest wi-fi",
+              "guest wi-fi",
+              "guest wifi",
+              "the guest wifi",
+              "the guest network",
+              "guest network",
+              "guest"
             ],
-            "explanation": "\"That wasn't because of the update. They typed their old passwords.\""
+            "explanation": "\"Their laptops were still connected to the guest wi-fi, so I connected them to the staff network.\""
           }
         ]
       }
@@ -489,7 +501,7 @@
       {
         "id": "R10",
         "kind": "mcq",
-        "stem": "______ I was updating the server, the power went off.",
+        "stem": "______ I was copying the files to the NAS, the cable came out.",
         "options": [
           {
             "id": "A",
@@ -570,7 +582,7 @@
         "options": [
           {
             "id": "A",
-            "text": "divide"
+            "text": "subtract"
           },
           {
             "id": "B",
@@ -641,7 +653,7 @@
       {
         "id": "R16",
         "kind": "mcq",
-        "stem": "I forgot my password, so the helpdesk ______ it for me.",
+        "stem": "The router stopped working, so I ______ it to the factory settings.",
         "options": [
           {
             "id": "A",
@@ -661,7 +673,7 @@
           }
         ],
         "answerKey": "B",
-        "explanation": "Reset (đặt lại) mật khẩu để dùng lại được. Quá khứ của reset vẫn là reset."
+        "explanation": "Reset (đặt lại) thiết bị về cài đặt gốc để dùng lại được. Quá khứ của reset vẫn là reset."
       },
       {
         "id": "R17",
@@ -691,27 +703,27 @@
       {
         "id": "R18",
         "kind": "mcq",
-        "stem": "Five ______ four is twenty.",
+        "stem": "To find the average, add the numbers and then ______ the total by the number of items.",
         "options": [
           {
             "id": "A",
-            "text": "times"
+            "text": "divide"
           },
           {
             "id": "B",
-            "text": "plus"
+            "text": "subtract"
           },
           {
             "id": "C",
-            "text": "minus"
+            "text": "attach"
           },
           {
             "id": "D",
-            "text": "sum"
+            "text": "reset"
           }
         ],
         "answerKey": "A",
-        "explanation": "Times (nhân): 5 × 4 = 20. Plus là cộng (5 + 4 = 9), minus là trừ."
+        "explanation": "Divide (chia): muốn tính trung bình thì cộng các số rồi chia tổng cho số lượng. \"subtract\" không đi với \"by\" theo nghĩa này."
       },
       {
         "id": "R19",
@@ -912,7 +924,7 @@
           "Hi team,",
           "Last week, the monthly sales report showed that we sold £86,000 of goods in September. This number looked too high, so Karen in Finance checked the spreadsheet on Monday.",
           "She found two problems. First, someone copied some of the October sales into the September sheet. Second, the formula in the Total column added the tax twice. Karen corrected both problems, and the real total for September was £71,500.",
-          "Before sending the report again, she asked Tom to check all the other formulae. While he was checking them, he found another small error in the Returns column, but it did not change the total.",
+          "Before sending the report again, she asked Tom to check all the other formulae. While he was checking them, he found another small error in the Returns column, but it did not change the total. Karen then sent the corrected report to the directors on Tuesday afternoon.",
           "To stop these problems in future, we are going to protect all the cells with formulae, so that only the finance team can change them. Please don't copy data into the report by hand any more. From next month, the report will take the numbers directly from the sales database.",
           "Thanks,",
           "Ruth Evans, Finance Manager"
@@ -963,18 +975,18 @@
       "items": [
         {
           "id": "W31",
-          "source": "The engineer chose a larger hard drive because the old one was nearly full.",
-          "referenceTranslation": "Kỹ sư đã chọn một ổ cứng lớn hơn vì ổ cũ đã gần đầy."
+          "source": "The technician replaced the broken keyboard and tested all the keys.",
+          "referenceTranslation": "Kỹ thuật viên đã thay bàn phím bị hỏng và kiểm tra tất cả các phím."
         },
         {
           "id": "W32",
-          "source": "By filtering the Status column, you can see only the orders that customers have not paid.",
-          "referenceTranslation": "Bằng cách lọc cột Trạng thái, bạn có thể chỉ xem những đơn hàng mà khách hàng chưa thanh toán."
+          "source": "By linking the Orders table to the Customers table, you can see who bought each product.",
+          "referenceTranslation": "Bằng cách liên kết bảng Đơn hàng với bảng Khách hàng, bạn có thể biết ai đã mua từng sản phẩm."
         },
         {
           "id": "W33",
-          "source": "Before replacing the toner, switch off the printer and wait for it to cool down.",
-          "referenceTranslation": "Trước khi thay hộp mực, hãy tắt máy in và đợi máy nguội."
+          "source": "Before installing the new graphics card, back up all your files.",
+          "referenceTranslation": "Trước khi lắp card đồ hoạ mới, hãy sao lưu tất cả các tệp của bạn."
         },
         {
           "id": "W34",
@@ -983,8 +995,8 @@
         },
         {
           "id": "W35",
-          "source": "To calculate the average, add the three numbers together and divide the total by three.",
-          "referenceTranslation": "Để tính giá trị trung bình, hãy cộng ba số lại với nhau rồi chia tổng cho ba."
+          "source": "Each worksheet in this file shows the sales for one month of the year.",
+          "referenceTranslation": "Mỗi trang tính trong tệp này thể hiện doanh số của một tháng trong năm."
         }
       ]
     },
@@ -1030,26 +1042,26 @@
         "id": "S2",
         "kind": "explain",
         "instructions": "Talk about a spreadsheet you made. Speak for 1–1.5 minutes.",
-        "prompt": "Last month you made a spreadsheet to plan the budget for your class trip. Explain what you did and which formulae you used. Use the past simple (I made…, I typed…, I added…) and spreadsheet words such as column, row, sum, minus, multiply and divide.",
+        "prompt": "Last term you made a spreadsheet to follow your marks in one subject. Explain what you did and which formulae you used. Use the past simple (I made…, I typed…, I divided…) and spreadsheet words such as column, row, cell, minus, divide and brackets.",
         "cues": [
-          "column A: the costs (bus, hotel, food, tickets)",
-          "column B: the price for one student / column C: the number of students",
-          "column D: multiplied B by C",
-          "the SUM function at the bottom of column D: the total cost",
-          "divided the total by the number of students: the cost for each person"
+          "one row for each test, one column for each part of the test",
+          "the marks for the three parts of each test in columns B, C and D",
+          "column E: (B+C+D) divided by three, with brackets, for the average",
+          "column F: the target mark minus the average",
+          "the cell turned green when the average was higher than the target"
         ],
         "requiredGrammar": [
-          "Past simple for finished actions: I made…, I typed…, I added…, I divided…",
-          "Spreadsheet language: column, row, cell, sum, minus, multiply, divide"
+          "Past simple for finished actions: I made…, I typed…, I divided…",
+          "Spreadsheet language: column, row, cell, minus, divide, brackets"
         ],
         "seconds": 90,
-        "sampleAnswer": "Last month, our class went on a trip to Ha Long Bay, and I made a spreadsheet for the budget. In column A, I wrote all the costs: the bus, the hotel, the food and the boat tickets. In column B, I typed the price for one student, and in column C, I put the number of students, which was thirty-two. Then, in column D, I multiplied column B by column C, so I could see the total for each item. At the bottom of column D, I used the SUM function to add everything together. The total cost was about forty-eight million dong. Finally, I divided the total by thirty-two, and each student paid one and a half million. My teacher liked the spreadsheet, and we used it again for the next trip."
+        "sampleAnswer": "Last term, I made a spreadsheet for my maths marks. I used one row for each test, and the three parts of each test were in columns B, C and D. In column E, I typed a formula with brackets: B plus C plus D in brackets, divided by three. The brackets were important, because without them the spreadsheet divided only D by three. That gave me the average for each test. Then, in column F, I wrote my target mark minus the average, so I could see how many marks I needed. I also made the cell turn green when the average was higher than the target. By the end of the term, most of the cells were green, and I felt much more confident."
       },
       {
         "id": "S3",
         "kind": "situation",
         "instructions": "Deal with the situation. Speak for 1–1.5 minutes.",
-        "prompt": "Yesterday a new colleague, Lan, could not log in to her account. Your manager was away and asks you what happened. Use the cues to explain how the problem occurred and what you did. Use the past continuous for the actions in progress and the past simple for what happened (She was …ing when …; While I was …ing, …).",
+        "prompt": "Yesterday a new colleague, Lan, could not log in to her account. A colleague from another office phones you and asks what happened. Use the cues to explain how the problem occurred and what you did. Use the past continuous for the actions in progress and the past simple for what happened (She was …ing when …; While I was …ing, …).",
         "cues": [
           "9.30 a.m.: Lan / prepare the monthly report",
           "her laptop / restart for an update → she / log in again",
