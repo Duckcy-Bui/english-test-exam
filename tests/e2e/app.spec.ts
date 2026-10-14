@@ -84,6 +84,24 @@ function completedAnswers(): ExamAnswers {
   return answers;
 }
 
+test("session creation rejects missing, null and malformed test IDs without defaulting to A", async ({ request }) => {
+  expect((await request.post("/api/access", {
+    data: { code: "local-e2e-code" },
+  })).status()).toBe(200);
+  const base = { unit: 6, mode: "practice", scope: "reading" };
+  for (const body of [
+    base,
+    { ...base, test: null },
+    { ...base, test: "a" },
+    { ...base, test: "Z" },
+    { ...base, test: "" },
+  ]) {
+    const response = await request.post("/api/session", { data: body });
+    expect(response.status()).toBe(400);
+    expect((await response.json()).session).toBeUndefined();
+  }
+});
+
 test("API enforces access, staged content, immutable submissions and listening quota", async ({
   request,
 }) => {

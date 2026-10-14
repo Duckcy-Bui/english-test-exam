@@ -69,7 +69,7 @@ export async function createSession(
   unit: unknown,
   mode: unknown,
   scope: unknown,
-  test: unknown = "A",
+  test: unknown,
 ): Promise<ServerSession> {
   return allocateSession(device, unit, mode, scope, test, false);
 }

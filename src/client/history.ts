@@ -34,6 +34,8 @@ function normalizeAttempt(value: unknown): SavedAttempt | null {
     !record(result.review)
   ) return null;
 
+  // Before multiple tests, every saved attempt was test A; the teacher-sourced
+  // A papers were Units 4, 5 and 6. Preserve that historical source on migration.
   const legacy = !Object.hasOwn(result, "testId") && !Object.hasOwn(result, "source");
   if (!legacy && (
     !TEST_IDS.includes(result.testId as TestId) ||

@@ -99,14 +99,26 @@ export async function loadExam(
 export async function listTests(unit: number): Promise<TestSummary[]> {
   validateUnit(unit);
   const names = await examNames(dataDirectory());
-  return Promise.all(
+  const tests = await Promise.all(
     TEST_IDS.filter((testId) => examName(names, unit, testId)).map(
-      async (testId) => {
-        const exam = await loadExam(unit, testId);
-        return { testId, source: exam.source };
+      async (testId): Promise<TestSummary | null> => {
+        try {
+          const exam = await loadExam(unit, testId);
+          return { testId, source: exam.source };
+        } catch (error) {
+          // Never log file contents or error messages that may include exam data.
+          console.error("[exam-data] Không nạp được đề.", {
+            unit,
+            testId,
+            file: examName(names, unit, testId),
+            status: error instanceof AppError ? error.status : 500,
+          });
+          return null;
+        }
       },
     ),
   );
+  return tests.filter((test): test is TestSummary => test !== null);
 }
 export async function listUnits(): Promise<UnitSummary[]> {
   return Promise.all(

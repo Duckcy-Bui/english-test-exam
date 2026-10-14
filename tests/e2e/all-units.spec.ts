@@ -4,15 +4,16 @@ import {
   type APIRequestContext,
   type Page,
 } from "@playwright/test";
-import { readFileSync } from "node:fs";
+import { readFileSync, readdirSync } from "node:fs";
 import { basename, join, resolve } from "node:path";
-import { ANSWER_FIELDS, type UnitExam } from "../../src/types/exam";
+import { ANSWER_FIELDS, TEST_IDS, type TestId, type UnitExam } from "../../src/types/exam";
 import {
   emptyAnswers,
   SKILLS,
   type ExamAnswers,
   type ExamResult,
   type ExamSession,
+  type UnitSummary,
 } from "../../src/types/app";
 
 // Deployment must serve the audited data, even when a fixture-only run is also used.
@@ -21,6 +22,35 @@ const exams: UnitExam[] = Array.from({ length: 8 }, (_, index) =>
     readFileSync(join("data", "units", `unit-${index + 1}-A.json`), "utf8"),
   ),
 );
+const canonicalTests = readdirSync(join("data", "units"))
+  .flatMap((file) => {
+    const match = /^unit-([1-8])-([A-D])\.json$/.exec(file);
+    if (!match) return [];
+    const exam: UnitExam = JSON.parse(
+      readFileSync(join("data", "units", file), "utf8"),
+    );
+    return [{
+      unit: Number(match[1]),
+      testId: match[2] as TestId,
+      source: exam.source,
+    }];
+  })
+  .sort((left, right) =>
+    left.unit - right.unit || TEST_IDS.indexOf(left.testId) - TEST_IDS.indexOf(right.testId),
+  );
+const expectedUnits: UnitSummary[] = exams.map((exam) => {
+  const tests = canonicalTests
+    .filter((test) => test.unit === exam.unit)
+    .map(({ testId, source }) => ({ testId, source }));
+  return {
+    unit: exam.unit,
+    title: exam.unitTitle,
+    available: true,
+    grammarFocus: exam.grammarFocus,
+    tests,
+    testCount: tests.length,
+  };
+});
 const usesFixtures =
   process.env.E2E_DATA_DIR !== undefined &&
   basename(resolve(process.env.E2E_DATA_DIR)) === "fixtures";
@@ -130,16 +160,7 @@ test.describe("all eight audited Units with AI_MOCK", () => {
       const listResponse = await request.get("/api/units");
       expect(listResponse.status()).toBe(200);
       const { units } = await listResponse.json();
-      expect(units).toEqual(
-        exams.map((unit) => expect.objectContaining({
-          unit: unit.unit,
-          title: unit.unitTitle,
-          available: true,
-          grammarFocus: unit.grammarFocus,
-          tests: expect.arrayContaining([{ testId: unit.testId, source: unit.source }]),
-          testCount: expect.any(Number),
-        })),
-      );
+      expect(units).toEqual(expectedUnits);
       assertPrivateFieldsAbsent(units);
 
       const startResponse = await request.post("/api/session", {
