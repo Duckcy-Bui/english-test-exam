@@ -20,11 +20,12 @@
     "Đề C do AI soạn mới (Giai đoạn 5), cùng khung với đề A nhưng khác toàn bộ bài đọc, lời thoại, câu dịch, đề email và đề nói của đề A và đề B.",
     "R1–R5: năm thuật ngữ không trùng câu nối đề A và đề B. Định nghĩa viết gần Workbook Unit 7: alpha testing (7A, tr. 67), specification (7B, tr. 67–68), line of code, value (7C, tr. 68), premium content (7D, tr. 69). Định nghĩa thừa là của combination (7D, tr. 69); từ này không dùng ở phần khác của đề.",
     "R6–R12: yêu cầu (R6–R7), câu bị động (R8–R9), make/cause (R10–R11), lịch trình be due to (R12).",
-    "R13–R20: programmer, detail (7B, tr. 67), robot (7C, tr. 68), public, viewable, challenge (7D, tr. 69), bug, milestone (Workbook bài 7.4, tr. 71). Không trùng từ được hỏi ở R13–R20 đề A và đề B.",
+    "R13–R20: programmer (7B, tr. 67), robot (7C, tr. 68), dynamic, public, viewable, challenge (7D, tr. 69), bug, milestone (Workbook bài 7.4, tr. 71). Không trùng từ được hỏi ở R13–R20 đề A và đề B.",
     "Bài đọc R21–R25 (trang web mới của trung tâm thể thao) và R26–R30 (màn hình tự gọi món ở quán phở) viết mới. Không nhắc tài liệu đặc tả, kiểm thử nội bộ, dòng mã, giá trị biến hay nội dung trả phí để không diễn đạt lại định nghĩa câu nối.",
     "Listening A (sinh viên giải thích ứng dụng đố vui) theo bài Software development; Listening B (kế hoạch hai tuần của dự án trang web) theo bài Project management. Viết mới, không chép Audio script.",
     "Listening B: acceptedAnswers có biến thể cách viết số và mạo từ; một số biến thể không có nguyên văn trong lời thoại.",
-    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng."
+    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
+    "Bản r1 (tự soát theo lỗi chung et-lead nêu): R14 đổi từ được hỏi (detail trùng gốc từ khoá định nghĩa R3) sang dynamic; R15, R18 thay phương án nhiễu detail; R13, R19 bỏ \"code\" (gốc thuật ngữ nối R2); bài đọc R21–R25 và câu R21, R23 bỏ \"tested\" (gốc thuật ngữ nối R1), \"information\", \"properly\", \"details\" (từ khoá định nghĩa R1, R3, R4)."
   ],
   "listening": {
     "parts": [
@@ -290,7 +291,7 @@
       {
         "id": "R13",
         "kind": "mcq",
-        "stem": "Our team has three ______ who write the code for the app and one designer who draws the screens.",
+        "stem": "Our team has three ______ who write the programs for the app and one designer who draws the screens.",
         "options": [
           { "id": "A", "text": "robots" },
           { "id": "B", "text": "programmers" },
@@ -303,15 +304,15 @@
       {
         "id": "R14",
         "kind": "mcq",
-        "stem": "The client checked every ______ of the design, even the colour of the buttons.",
+        "stem": "Our new team leader is very ______: she is full of energy and always has new ideas.",
         "options": [
-          { "id": "A", "text": "detail" },
-          { "id": "B", "text": "robot" },
-          { "id": "C", "text": "milestone" },
-          { "id": "D", "text": "programmer" }
+          { "id": "A", "text": "dynamic" },
+          { "id": "B", "text": "viewable" },
+          { "id": "C", "text": "public" },
+          { "id": "D", "text": "versatile" }
         ],
         "answerKey": "A",
-        "explanation": "Detail (chi tiết) là từng đặc điểm, từng phần thông tin riêng của một thứ."
+        "explanation": "Dynamic (năng động) là tràn đầy năng lượng và ý tưởng mới."
       },
       {
         "id": "R15",
@@ -319,7 +320,7 @@
         "stem": "In the car factory, a ______ paints each car in less than a minute without any help from people.",
         "options": [
           { "id": "A", "text": "programmer" },
-          { "id": "B", "text": "detail" },
+          { "id": "B", "text": "challenge" },
           { "id": "C", "text": "robot" },
           { "id": "D", "text": "bug" }
         ],
@@ -357,7 +358,7 @@
         "kind": "mcq",
         "stem": "Making the app work with a very slow internet connection was a real ______ for the team.",
         "options": [
-          { "id": "A", "text": "detail" },
+          { "id": "A", "text": "bug" },
           { "id": "B", "text": "challenge" },
           { "id": "C", "text": "robot" },
           { "id": "D", "text": "programmer" }
@@ -368,7 +369,7 @@
       {
         "id": "R19",
         "kind": "mcq",
-        "stem": "The app crashed because of a ______ in the code, so the developers had to fix it.",
+        "stem": "The app crashed because of a ______ in the program, so the developers had to fix it.",
         "options": [
           { "id": "A", "text": "robot" },
           { "id": "B", "text": "milestone" },
@@ -397,10 +398,10 @@
       "passage": {
         "title": "A New Website for Oakfield Sports Centre",
         "paragraphs": [
-          "Oakfield Sports Centre's old website was built eight years ago. It could not be viewed properly on phones, and information about classes was difficult to find. Last year, more than half of the visitors left the site after looking at only one page. For these reasons, the centre's manager, Paula Grey, asked a web design company, Pixelworks, to create a new site.",
+          "Oakfield Sports Centre's old website was built eight years ago. It did not display well on phones, and class times were difficult to find. Last year, more than half of the visitors left the site after looking at only one page. For these reasons, the centre's manager, Paula Grey, asked a web design company, Pixelworks, to create a new site.",
           "The new site is divided into four main sections: Timetable, Membership, Facilities and Contact. The Timetable section is updated every day by the reception staff, and all classes can now be booked online. In the Facilities section, each room is shown with photos and a short video, so new members know what to expect before they visit. The whole site uses the centre's colours, blue and white, and the same large, clear buttons on every page.",
-          "Before it was launched, the site was tested by twenty members. They said that the booking form was too long, so it was shortened from twelve boxes to five. The members also asked for a search box, and one was added to the top of every page.",
-          "Since the launch in March, the number of online bookings has doubled, and the reception staff receive far fewer phone calls. The manager now plans to add an area where members can check their payments and change their personal details. This new area is due to be ready in the autumn."
+          "Before it was launched, the site was tried out by twenty members. They said that the booking form was too long, so it was shortened from twelve boxes to five. The members also asked for a search box, and one was added to the top of every page.",
+          "Since the launch in March, the number of online bookings has doubled, and the reception staff receive far fewer phone calls. The manager now plans to add an area where members can check their payments and change their address or phone number. This new area is due to be ready in the autumn."
         ]
       },
       "questions": [
@@ -410,12 +411,12 @@
           "stem": "What was one problem with the old website?",
           "options": [
             { "id": "A", "text": "It was too expensive to run." },
-            { "id": "B", "text": "It could not be viewed properly on phones." },
+            { "id": "B", "text": "It did not display well on phones." },
             { "id": "C", "text": "It was updated by too many people." },
-            { "id": "D", "text": "It had no information about classes." }
+            { "id": "D", "text": "It did not show any class times." }
           ],
           "answerKey": "B",
-          "explanation": "Đoạn 1: \"It could not be viewed properly on phones\". Thông tin lớp học có nhưng khó tìm, không phải không có."
+          "explanation": "Đoạn 1: \"It did not display well on phones\". Giờ học có nhưng khó tìm, không phải không có."
         },
         {
           "id": "R22",
@@ -433,7 +434,7 @@
         {
           "id": "R23",
           "kind": "mcq",
-          "stem": "What change was made after the site was tested?",
+          "stem": "What change was made after twenty members tried out the site?",
           "options": [
             { "id": "A", "text": "A video was added to every page." },
             { "id": "B", "text": "The Contact section was removed." },
