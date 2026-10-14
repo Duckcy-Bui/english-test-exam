@@ -143,9 +143,14 @@ Tổng = Listening + Reading + Writing + Speaking, tối đa 10. Điểm từng 
 2. Không lộ đáp án chéo: thuật ngữ và từ khoá của định nghĩa ở câu nối 1–5 không được xuất hiện làm đáp án hoặc gợi ý ở câu 6–30. Giữa các kỹ năng (ví dụ câu dịch W31–W35 trùng ngữ pháp với R6–R12) không tính là lộ, vì chế độ Thi thử chạy tuần tự và chỉ mở kỹ năng sau khi đã nộp kỹ năng trước.
 3. Không lặp tình huống quá một lần trong cùng một đề.
 4. Phương án nhiễu cùng từ loại và cùng độ dài tương đương với đáp án đúng.
-5. Câu 6–12 kiểm tra ngữ pháp của Unit; câu 13–20 kiểm tra từ vựng của Unit (theo Workbook Part 1).
+5. Câu 6–12 kiểm tra ngữ pháp của Unit; câu 13–20 kiểm tra từ vựng của Unit, lấy từ Workbook Part 1 hoặc từ các bài của Unit đó trong giáo trình (ghi trang trong `sourceNotes` nếu từ không có trong Workbook).
 6. Bài đọc 21–25 dài 230–270 từ; bài đọc 26–30 dài 160–200 từ. Cả hai viết mới.
 7. Câu dịch 31–35 dùng từ vựng và ngữ pháp của Unit; không trùng câu giữa các Unit.
 8. Email có 5–7 gạch đầu dòng gợi ý, chủ đề thuộc Unit.
 9. Speaking và Writing phải buộc dùng ngữ pháp trọng tâm của Unit.
 10. Chính tả theo Anh–Anh, giống giáo trình (organise, licence, centre).
+11. Bài đọc và lời thoại không được diễn đạt lại định nghĩa của câu nối 1–5 (ví dụ bài đọc mô tả "lưu và chia sẻ tài liệu công ty" khi câu nối có document management system).
+12. Câu True/False phải được văn bản khẳng định hoặc phủ định rõ ràng. Không ra câu mà đáp án chỉ suy ra được (ví dụ "needs a dedicated room" không đủ để kết luận "cannot be installed in any room").
+13. Mọi đề bài Writing và Speaking, kể cả từng câu hỏi S1, phải nêu rõ cho sinh viên cấu trúc ngữ pháp hoặc chức năng của Unit cần dùng. Ghi trong `targetGrammar` hay `requiredGrammar` thôi là chưa đủ, vì sinh viên không thấy các trường đó.
+14. Yêu cầu Speaking phải làm được bằng lời nói. Không yêu cầu những thứ chỉ có trong chữ viết (ví dụ dấu ngoặc).
+15. `sourceNotes` là ghi chú nội bộ, bị xoá khỏi bản gửi auditor và trình duyệt, nhưng vẫn không nên chép đáp án vào đó.

@@ -15,10 +15,12 @@ export type DefinitionId = "A" | "B" | "C" | "D" | "E" | "F";
 export type TrueFalse = "T" | "F";
 
 /**
- * Các trường chứa đáp án hoặc lời giải. scripts/strip-answers.ts xoá hết
- * các trường này khỏi bản đề gửi cho et-auditor và cho trình duyệt.
+ * Các trường chứa đáp án, lời giải hoặc ghi chú nội bộ (sourceNotes thường
+ * nhắc tới đáp án). scripts/strip-answers.ts xoá hết các trường này khỏi bản
+ * đề gửi cho et-auditor và cho trình duyệt.
  */
 export const ANSWER_FIELDS = [
+  "sourceNotes",
   "answerKey",
   "acceptedAnswers",
   "explanation",
