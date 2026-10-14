@@ -295,6 +295,21 @@ function validateExam(exam: UnitExam, file: string): Report {
     }
   }
 
+  // ---- Khoá đáp án dễ đoán: R6–R25 lặp theo chu kỳ 2–4 quá dài ----
+  const keys = [...(rd?.grammar ?? []), ...(rd?.vocabulary ?? []), ...(rd?.passageMcq?.questions ?? [])]
+    .map((q) => q.answerKey)
+    .join("");
+  for (const p of [2, 3, 4]) {
+    let run = 0;
+    let longest = 0;
+    for (let i = p; i < keys.length; i++) {
+      run = keys[i] === keys[i - p] ? run + 1 : 0;
+      longest = Math.max(longest, run ? run + p : 0);
+    }
+    // Đề A của giáo viên có đoạn lặp dài nhất 6–9 câu; từ 10 trở lên là dễ đoán.
+    if (longest >= 10) r.warnings.push(`Khoá đáp án R6–R25 "${keys}" lặp chu kỳ ${p} suốt ${longest} câu; xáo lại thứ tự phương án`);
+  }
+
   // ---- Chính tả Anh–Anh ----
   const allText = JSON.stringify(exam);
   for (const [re, uk] of US_SPELLINGS) {
