@@ -22,7 +22,8 @@
     "Bài đọc R21–R25 lấy cảm hứng từ bài Project management; bài đọc R26–R30 lấy cảm hứng từ bài Software development (chương trình điều khiển thiết bị). Cả hai viết mới, không dùng thuật ngữ và định nghĩa của câu nối.",
     "Listening A lấy cảm hứng từ bài Requirements analysis (track 36–37) nhưng đổi sang ứng dụng đặt lớp tập gym; Listening B lấy cảm hứng từ bài Website design and architecture. Không chép Audio script.",
     "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại, xử lý giống Unit 6.",
-    "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều."
+    "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
+    "Bản r1 (tự rà theo các lỗi auditor đã bắt ở Unit 1, 4, 5, 6): R21 thay một phương án nhiễu cũng là mong muốn của công ty trong bài; R27, R29 viết lại để đáp án được văn bản nói thẳng (quy tắc 12); Listening B bỏ cụm \"scheduled to go live\" để không lặp chi tiết với bài đọc R21–R25 và email."
   ],
   "listening": {
     "parts": [
@@ -128,7 +129,7 @@
           { "speaker": "Priya", "text": "Good afternoon. Today I'm going to show you the structure of the new website for the City Science Museum. Everything starts from the home page, which is linked to five main sections: Visit, Exhibitions, Learning, Shop and Contact." },
           { "speaker": "Priya", "text": "The Visit section is used most, so it is placed first in the menu. Opening times and ticket prices are shown on this page, and tickets can be bought online. In the Exhibitions section, each exhibition is given its own page with photos and a short video. Past exhibitions are kept in an archive, so they can still be seen after they close." },
           { "speaker": "Priya", "text": "The Learning section is designed for teachers. Lesson plans can be downloaded there for free. The Contact page includes a map and a form, and all messages are answered within two days." },
-          { "speaker": "Priya", "text": "Finally, every page is tested on phones and tablets, because about seventy percent of visitors use mobile devices. The site is scheduled to go live in September. Thank you." }
+          { "speaker": "Priya", "text": "Finally, every page is tested on phones and tablets, because about seventy percent of visitors use mobile devices. The new site will be launched in September. Thank you." }
         ],
         "questions": [
           {
@@ -166,10 +167,10 @@
           {
             "id": "L10",
             "kind": "short",
-            "stem": "When is the site scheduled to go live?",
+            "stem": "When will the new site be launched?",
             "maxWords": 3,
             "acceptedAnswers": ["september", "in september"],
-            "explanation": "\"The site is scheduled to go live in September.\""
+            "explanation": "\"The new site will be launched in September.\""
           }
         ]
       }
@@ -435,13 +436,13 @@
           "kind": "mcq",
           "stem": "Why did Harbour Ferries ask Bytecraft to develop an app?",
           "options": [
-            { "id": "A", "text": "To show live boat times" },
+            { "id": "A", "text": "To advertise the islands" },
             { "id": "B", "text": "To sell more boats" },
             { "id": "C", "text": "To train its staff" },
             { "id": "D", "text": "To reduce the queues for tickets" }
           ],
           "answerKey": "D",
-          "explanation": "Đoạn 1: \"to reduce the queues, the company asked a small software firm, Bytecraft, to develop a mobile app\". Giờ tàu trực tiếp là tính năng thêm vào sau, trong tháng Tư."
+          "explanation": "Đoạn 1: \"to reduce the queues, the company asked a small software firm, Bytecraft, to develop a mobile app\". Quảng cáo các đảo không được nhắc đến."
         },
         {
           "id": "R22",
@@ -519,9 +520,9 @@
         {
           "id": "R27",
           "kind": "tf",
-          "statement": "A temperature above 28 degrees makes the heater switch on.",
-          "answerKey": "F",
-          "explanation": "Đoạn 2: trên 28 độ thì chương trình mở cửa sổ mái; máy sưởi chỉ bật khi nhiệt độ dưới 18 độ."
+          "statement": "A temperature above 28 degrees makes the roof windows open.",
+          "answerKey": "T",
+          "explanation": "Đoạn 2: \"If the temperature goes above 28 degrees, the program makes the roof windows open.\""
         },
         {
           "id": "R28",
@@ -533,9 +534,9 @@
         {
           "id": "R29",
           "kind": "tf",
-          "statement": "The farmer receives a report every evening.",
+          "statement": "The broken sensor last summer did not damage any plants.",
           "answerKey": "F",
-          "explanation": "Đoạn 3: báo cáo được gửi \"Every morning at seven o'clock\"."
+          "explanation": "Đoạn 4: cảm biến hỏng làm máy bơm chạy cả ngày \"and many plants were damaged\"."
         },
         {
           "id": "R30",
