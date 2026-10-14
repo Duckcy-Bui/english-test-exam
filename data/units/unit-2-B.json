@@ -1,0 +1,1069 @@
+{
+  "schemaVersion": 1,
+  "unit": 2,
+  "unitTitle": "IT systems",
+  "testId": "B",
+  "source": "ai",
+  "functions": [
+    "Giving hardware specifications (System specifications)",
+    "Giving instructions for using a GUI (GUI operations)",
+    "Describing different multimedia types (Multimedia hardware)",
+    "Explaining OS installation (Operating systems)"
+  ],
+  "grammarFocus": [
+    "Large and small numbers: prefixes kilo-, mega-, giga-, tera-, milli-, micro-, nano-; saying decimals with 'point' and each digit after the point (3.05 = three point zero five)",
+    "Giving instructions: imperatives; softeners (could you, can you, just); sequencers (first, then, next, after that, finally)",
+    "Sentences with two objects: verb + object + preposition + object (connect the printer to the laptop, remove the USB stick from the port)",
+    "Reason and purpose: for + noun phrase; so that + clause; to-infinitive; because + clause"
+  ],
+  "sourceNotes": [
+    "Đề B Unit 2, AI soạn mới theo khung đề và quy tắc 1–15; không lặp bài đọc, lời thoại, tình huống, câu dịch, đề email và đề nói của đề A.",
+    "R1–R5: thuật ngữ và định nghĩa lấy gần nguyên văn Workbook Unit 2 Part 1 (2A, 2B, 2C, 2D); định nghĩa thừa (video camera) lấy từ Workbook 2B. Không trùng thuật ngữ câu nối với đề A.",
+    "R13–R20: từ vựng lấy từ Workbook Unit 2 Part 1 (2A, 2B, 2C, 2D). R6, R7 kiểm Language box \"Large and small numbers\" (giáo trình trang sách 12).",
+    "Bài đọc R21–R25 (bài đánh giá máy tính mini) và R26–R30 (hướng dẫn chia đôi màn hình) viết mới; không dùng thuật ngữ câu nối và không diễn đạt lại định nghĩa của chúng.",
+    "Listening A: helpdesk hướng dẫn thêm máy in qua Settings (GUI operations). Listening B: giới thiệu phòng Media Lab (Multimedia hardware). Không chép Audio script.",
+    "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại.",
+    "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
+    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng."
+  ],
+  "listening": {
+    "parts": [
+      {
+        "id": "A",
+        "instructions": "Listen to the phone call and choose the best answer A, B, C or D (Questions L1–L5).",
+        "context": "Nadia, who works in the marketing department, phones Kevin at the IT helpdesk.",
+        "speakers": [
+          {
+            "name": "Kevin",
+            "voice": "male"
+          },
+          {
+            "name": "Nadia",
+            "voice": "female"
+          }
+        ],
+        "script": [
+          {
+            "speaker": "Kevin",
+            "text": "IT helpdesk, Kevin speaking."
+          },
+          {
+            "speaker": "Nadia",
+            "text": "Hi Kevin, it's Nadia in Marketing. We've moved to the third floor, and I can't print anything. My laptop keeps sending documents to the old printer on the first floor."
+          },
+          {
+            "speaker": "Kevin",
+            "text": "OK, let's add the third-floor printer. First, could you click the Start button and open Settings? It's the small gear icon."
+          },
+          {
+            "speaker": "Nadia",
+            "text": "OK, I've got the Settings window."
+          },
+          {
+            "speaker": "Kevin",
+            "text": "Now select Devices, and then click Printers and scanners in the menu on the left."
+          },
+          {
+            "speaker": "Nadia",
+            "text": "Right. There's a button that says Add a printer."
+          },
+          {
+            "speaker": "Kevin",
+            "text": "Yes, click that. The laptop will search the network. It usually takes about thirty seconds."
+          },
+          {
+            "speaker": "Nadia",
+            "text": "It's found three printers. Which one is mine?"
+          },
+          {
+            "speaker": "Kevin",
+            "text": "Choose the one called Floor 3 Colour. Then click Add device."
+          },
+          {
+            "speaker": "Nadia",
+            "text": "Done. It says Ready."
+          },
+          {
+            "speaker": "Kevin",
+            "text": "Great. Next, just tick the box that says Set as default, so that all your documents go to this printer automatically."
+          },
+          {
+            "speaker": "Nadia",
+            "text": "OK, it's ticked."
+          },
+          {
+            "speaker": "Kevin",
+            "text": "Finally, print a test page to check that everything works."
+          },
+          {
+            "speaker": "Nadia",
+            "text": "It's printing now. Thanks, Kevin!"
+          }
+        ],
+        "questions": [
+          {
+            "id": "L1",
+            "kind": "mcq",
+            "stem": "What is Nadia's problem?",
+            "options": [
+              {
+                "id": "A",
+                "text": "Her printer has run out of paper."
+              },
+              {
+                "id": "B",
+                "text": "She can't open the Settings window."
+              },
+              {
+                "id": "C",
+                "text": "Her laptop sends documents to the old printer."
+              },
+              {
+                "id": "D",
+                "text": "Her laptop can't connect to the network."
+              }
+            ],
+            "answerKey": "C",
+            "explanation": "Nadia: \"My laptop keeps sending documents to the old printer on the first floor.\""
+          },
+          {
+            "id": "L2",
+            "kind": "mcq",
+            "stem": "What does the Settings icon look like?",
+            "options": [
+              {
+                "id": "A",
+                "text": "A small gear"
+              },
+              {
+                "id": "B",
+                "text": "A printer"
+              },
+              {
+                "id": "C",
+                "text": "A folder"
+              },
+              {
+                "id": "D",
+                "text": "A house"
+              }
+            ],
+            "answerKey": "A",
+            "explanation": "Kevin: \"open Settings? It's the small gear icon.\" (biểu tượng bánh răng nhỏ)."
+          },
+          {
+            "id": "L3",
+            "kind": "mcq",
+            "stem": "How long does the search for printers usually take?",
+            "options": [
+              {
+                "id": "A",
+                "text": "About three seconds"
+              },
+              {
+                "id": "B",
+                "text": "About thirty seconds"
+              },
+              {
+                "id": "C",
+                "text": "About three minutes"
+              },
+              {
+                "id": "D",
+                "text": "About thirteen seconds"
+              }
+            ],
+            "answerKey": "B",
+            "explanation": "\"The laptop will search the network. It usually takes about thirty seconds.\""
+          },
+          {
+            "id": "L4",
+            "kind": "mcq",
+            "stem": "Which printer does Kevin tell Nadia to choose?",
+            "options": [
+              {
+                "id": "A",
+                "text": "Floor 1 Colour"
+              },
+              {
+                "id": "B",
+                "text": "Marketing Printer"
+              },
+              {
+                "id": "C",
+                "text": "Floor 3 Black"
+              },
+              {
+                "id": "D",
+                "text": "Floor 3 Colour"
+              }
+            ],
+            "answerKey": "D",
+            "explanation": "Kevin: \"Choose the one called Floor 3 Colour.\""
+          },
+          {
+            "id": "L5",
+            "kind": "mcq",
+            "stem": "Why does Kevin ask Nadia to tick 'Set as default'?",
+            "options": [
+              {
+                "id": "A",
+                "text": "So that the printer prints in colour"
+              },
+              {
+                "id": "B",
+                "text": "So that all her documents go to this printer automatically"
+              },
+              {
+                "id": "C",
+                "text": "To print a test page"
+              },
+              {
+                "id": "D",
+                "text": "To save paper"
+              }
+            ],
+            "answerKey": "B",
+            "explanation": "Kevin: \"just tick the box that says Set as default, so that all your documents go to this printer automatically.\" Trang in thử là bước cuối cùng, không phải mục đích của ô này."
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "instructions": "Listen to the talk and answer the questions. Write NO MORE THAN THREE WORDS for each answer (Questions L6–L10).",
+        "context": "Grace, the manager of a university Media Lab, shows a group of new students around the lab.",
+        "speakers": [
+          {
+            "name": "Grace",
+            "voice": "female"
+          }
+        ],
+        "script": [
+          {
+            "speaker": "Grace",
+            "text": "Hello, and welcome to the Media Lab. I'm Grace, and I manage the lab. Let me tell you what we have here."
+          },
+          {
+            "speaker": "Grace",
+            "text": "There are twenty computers in this room. Each one has a 27-inch screen and a powerful graphics card, so you can edit videos and 3-D images quickly. All the computers have the same software, so you can use any desk."
+          },
+          {
+            "speaker": "Grace",
+            "text": "Along the back wall, we have six video cameras for filming projects. You can borrow a camera for up to three days, but you have to book it online first. In the small room on the left, there are four sets of virtual reality goggles. Students usually use them for game design projects."
+          },
+          {
+            "speaker": "Grace",
+            "text": "The lab is open from nine in the morning to eight in the evening, Monday to Saturday. Finally, please save your work on the university server, not on the computers, because we clean all the computers every Sunday night. Any questions?"
+          }
+        ],
+        "questions": [
+          {
+            "id": "L6",
+            "kind": "short",
+            "stem": "How big is the screen on each computer?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "27-inch",
+              "27 inches",
+              "27 inch",
+              "twenty-seven inches",
+              "twenty-seven inch",
+              "twenty seven inches",
+              "27-inch screen"
+            ],
+            "explanation": "\"Each one has a 27-inch screen\"."
+          },
+          {
+            "id": "L7",
+            "kind": "short",
+            "stem": "How many video cameras does the lab have?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "six",
+              "6",
+              "six video cameras",
+              "6 video cameras",
+              "six cameras",
+              "6 cameras"
+            ],
+            "explanation": "\"we have six video cameras for filming projects\"."
+          },
+          {
+            "id": "L8",
+            "kind": "short",
+            "stem": "For how long can a student borrow a camera?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "three days",
+              "3 days"
+            ],
+            "explanation": "\"You can borrow a camera for up to three days\"."
+          },
+          {
+            "id": "L9",
+            "kind": "short",
+            "stem": "What do students usually use the virtual reality goggles for?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "game design projects",
+              "game design",
+              "game design project"
+            ],
+            "explanation": "\"Students usually use them for game design projects.\""
+          },
+          {
+            "id": "L10",
+            "kind": "short",
+            "stem": "When does the lab clean all the computers?",
+            "maxWords": 3,
+            "acceptedAnswers": [
+              "every sunday night",
+              "sunday night",
+              "on sunday night",
+              "sunday nights",
+              "on sunday nights"
+            ],
+            "explanation": "\"we clean all the computers every Sunday night\"."
+          }
+        ]
+      }
+    ]
+  },
+  "reading": {
+    "matching": {
+      "instructions": "Match the terms (1–5) with the correct definitions (A–F). There is one extra definition that you do not need (Questions 1–5).",
+      "definitions": [
+        {
+          "id": "A",
+          "text": "Someone who is being trained for a job."
+        },
+        {
+          "id": "B",
+          "text": "The conditions, set by the software developer, under which a user can use a computer program."
+        },
+        {
+          "id": "C",
+          "text": "A special camera that can be used to film events and convert them into electronic files."
+        },
+        {
+          "id": "D",
+          "text": "One of the separate areas of a computer window where part of a program or set of files is displayed."
+        },
+        {
+          "id": "E",
+          "text": "A piece of equipment that you speak into to record your voice or make it louder."
+        },
+        {
+          "id": "F",
+          "text": "The disk in a computer that is used to start the program that makes the computer ready to be used."
+        }
+      ],
+      "items": [
+        {
+          "id": "R1",
+          "term": "Pane",
+          "answerKey": "D",
+          "explanation": "Pane (khung, ô cửa sổ) là một vùng riêng trong cửa sổ máy tính, hiển thị một phần chương trình hoặc một nhóm tệp."
+        },
+        {
+          "id": "R2",
+          "term": "Boot drive",
+          "answerKey": "F",
+          "explanation": "Boot drive (ổ khởi động) là ổ đĩa dùng để chạy chương trình khởi động, giúp máy tính sẵn sàng sử dụng."
+        },
+        {
+          "id": "R3",
+          "term": "Licence terms",
+          "answerKey": "B",
+          "explanation": "Licence terms (điều khoản giấy phép) là các điều kiện do nhà phát triển phần mềm đặt ra để người dùng được sử dụng chương trình."
+        },
+        {
+          "id": "R4",
+          "term": "Trainee",
+          "answerKey": "A",
+          "explanation": "Trainee (thực tập sinh, người đang được đào tạo) là người đang được đào tạo cho một công việc."
+        },
+        {
+          "id": "R5",
+          "term": "Microphone",
+          "answerKey": "E",
+          "explanation": "Microphone (micrô) là thiết bị để nói vào nhằm ghi âm hoặc khuếch đại giọng nói. Định nghĩa C là của video camera (máy quay video), không có trong danh sách thuật ngữ."
+        }
+      ]
+    },
+    "grammar": [
+      {
+        "id": "R6",
+        "kind": "mcq",
+        "stem": "One gigabyte is about one thousand ______.",
+        "options": [
+          {
+            "id": "A",
+            "text": "kilobytes"
+          },
+          {
+            "id": "B",
+            "text": "terabytes"
+          },
+          {
+            "id": "C",
+            "text": "megabytes"
+          },
+          {
+            "id": "D",
+            "text": "nanobytes"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "Giga- lớn hơn mega- khoảng một nghìn lần: 1 GB ≈ 1.000 MB. Một nghìn kilobyte chỉ là khoảng 1 MB; terabyte lớn hơn gigabyte."
+      },
+      {
+        "id": "R7",
+        "kind": "mcq",
+        "stem": "The processor runs at 3.05 GHz. How do we say '3.05 GHz'?",
+        "options": [
+          {
+            "id": "A",
+            "text": "three point five gigahertz"
+          },
+          {
+            "id": "B",
+            "text": "three comma zero five gigahertz"
+          },
+          {
+            "id": "C",
+            "text": "three point five zero gigahertz"
+          },
+          {
+            "id": "D",
+            "text": "three point zero five gigahertz"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Số thập phân đọc \"point\" rồi đọc từng chữ số sau dấu chấm: 3.05 = three point zero five. Tiếng Anh không đọc dấu thập phân là \"comma\"."
+      },
+      {
+        "id": "R8",
+        "kind": "mcq",
+        "stem": "First, open the Settings menu. ______, select 'Update'. Finally, click 'Install now'.",
+        "options": [
+          {
+            "id": "A",
+            "text": "Finally"
+          },
+          {
+            "id": "B",
+            "text": "Then"
+          },
+          {
+            "id": "C",
+            "text": "First"
+          },
+          {
+            "id": "D",
+            "text": "Before"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Bước giữa trong chuỗi First … Finally dùng từ nối \"Then\". First và Finally đã dùng cho bước đầu và bước cuối; \"Before\" không đứng một mình làm từ nối trình tự."
+      },
+      {
+        "id": "R9",
+        "kind": "mcq",
+        "stem": "Connect the printer ______ the laptop with a USB cable.",
+        "options": [
+          {
+            "id": "A",
+            "text": "to"
+          },
+          {
+            "id": "B",
+            "text": "at"
+          },
+          {
+            "id": "C",
+            "text": "from"
+          },
+          {
+            "id": "D",
+            "text": "off"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "Câu hai tân ngữ: connect + tân ngữ 1 + to + tân ngữ 2 (connect the printer to the laptop)."
+      },
+      {
+        "id": "R10",
+        "kind": "mcq",
+        "stem": "______ the USB stick from the port before you leave.",
+        "options": [
+          {
+            "id": "A",
+            "text": "Insert"
+          },
+          {
+            "id": "B",
+            "text": "Plug"
+          },
+          {
+            "id": "C",
+            "text": "Connect"
+          },
+          {
+            "id": "D",
+            "text": "Remove"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Giới từ \"from\" đi với động từ chỉ việc lấy ra: remove sth from sth. Insert, plug đi với \"into\"; connect đi với \"to\"."
+      },
+      {
+        "id": "R11",
+        "kind": "mcq",
+        "stem": "We need a webcam ______ video calls with our clients.",
+        "options": [
+          {
+            "id": "A",
+            "text": "to"
+          },
+          {
+            "id": "B",
+            "text": "for"
+          },
+          {
+            "id": "C",
+            "text": "so that"
+          },
+          {
+            "id": "D",
+            "text": "because"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Chỉ mục đích bằng for + cụm danh từ (video calls). \"to\" cần động từ, \"so that\" và \"because\" cần mệnh đề có chủ ngữ và động từ."
+      },
+      {
+        "id": "R12",
+        "kind": "mcq",
+        "stem": "Close the other programs ______ the installation runs faster.",
+        "options": [
+          {
+            "id": "A",
+            "text": "for"
+          },
+          {
+            "id": "B",
+            "text": "to"
+          },
+          {
+            "id": "C",
+            "text": "so that"
+          },
+          {
+            "id": "D",
+            "text": "because of"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "Sau chỗ trống là mệnh đề (the installation runs faster) chỉ mục đích: dùng \"so that\". for / because of cần danh từ, to cần động từ nguyên mẫu."
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "R13",
+        "kind": "mcq",
+        "stem": "Open a new ______ in your browser so that you can look at two websites at the same time.",
+        "options": [
+          {
+            "id": "A",
+            "text": "tab"
+          },
+          {
+            "id": "B",
+            "text": "tick box"
+          },
+          {
+            "id": "C",
+            "text": "scroll bar"
+          },
+          {
+            "id": "D",
+            "text": "filename"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "Tab (thẻ) là một vùng trong cửa sổ cho phép mở nhiều trang, tài liệu cùng lúc."
+      },
+      {
+        "id": "R14",
+        "kind": "mcq",
+        "stem": "Click the ______ next to 'Remember me' if you don't want to type your password every time.",
+        "options": [
+          {
+            "id": "A",
+            "text": "title bar"
+          },
+          {
+            "id": "B",
+            "text": "tick box"
+          },
+          {
+            "id": "C",
+            "text": "filename"
+          },
+          {
+            "id": "D",
+            "text": "folder"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "Tick box (ô đánh dấu) là ô nhỏ để đánh dấu chọn một mục, ví dụ \"Remember me\"."
+      },
+      {
+        "id": "R15",
+        "kind": "mcq",
+        "stem": "I can't hear the music. Are the ______ switched on?",
+        "options": [
+          {
+            "id": "A",
+            "text": "projectors"
+          },
+          {
+            "id": "B",
+            "text": "webcams"
+          },
+          {
+            "id": "C",
+            "text": "speakers"
+          },
+          {
+            "id": "D",
+            "text": "printers"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "Speaker (loa) là bộ phận phát ra âm thanh."
+      },
+      {
+        "id": "R16",
+        "kind": "mcq",
+        "stem": "______ the power cable before you open the computer case.",
+        "options": [
+          {
+            "id": "A",
+            "text": "Resize"
+          },
+          {
+            "id": "B",
+            "text": "Scroll"
+          },
+          {
+            "id": "C",
+            "text": "Select"
+          },
+          {
+            "id": "D",
+            "text": "Unplug"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Unplug (rút phích cắm) là ngắt điện thiết bị bằng cách rút phích ra khỏi ổ cắm."
+      },
+      {
+        "id": "R17",
+        "kind": "mcq",
+        "stem": "This laptop has a very fast ______, so it can run several programs at the same time.",
+        "options": [
+          {
+            "id": "A",
+            "text": "CPU"
+          },
+          {
+            "id": "B",
+            "text": "socket"
+          },
+          {
+            "id": "C",
+            "text": "tab"
+          },
+          {
+            "id": "D",
+            "text": "cable"
+          }
+        ],
+        "answerKey": "A",
+        "explanation": "CPU (bộ xử lý trung tâm) điều khiển hoạt động của máy; CPU nhanh thì chạy được nhiều chương trình cùng lúc."
+      },
+      {
+        "id": "R18",
+        "kind": "mcq",
+        "stem": "To add more memory, insert a new memory module into the empty ______ on the motherboard.",
+        "options": [
+          {
+            "id": "A",
+            "text": "Ethernet connector"
+          },
+          {
+            "id": "B",
+            "text": "DIMM slot"
+          },
+          {
+            "id": "C",
+            "text": "scroll bar"
+          },
+          {
+            "id": "D",
+            "text": "title bar"
+          }
+        ],
+        "answerKey": "B",
+        "explanation": "DIMM slot (khe cắm DIMM) là chỗ cắm thanh nhớ DIMM để tăng bộ nhớ RAM. Ethernet connector dùng để nối mạng."
+      },
+      {
+        "id": "R19",
+        "kind": "mcq",
+        "stem": "Before you install the new operating system, ______ all your files to an external drive.",
+        "options": [
+          {
+            "id": "A",
+            "text": "switch off"
+          },
+          {
+            "id": "B",
+            "text": "unplug"
+          },
+          {
+            "id": "C",
+            "text": "back up"
+          },
+          {
+            "id": "D",
+            "text": "resize"
+          }
+        ],
+        "answerKey": "C",
+        "explanation": "Back up (sao lưu) là tạo bản sao dữ liệu: back up files to an external drive."
+      },
+      {
+        "id": "R20",
+        "kind": "mcq",
+        "stem": "The ______ in this video is very poor, so it's hard to hear what people are saying.",
+        "options": [
+          {
+            "id": "A",
+            "text": "graphics"
+          },
+          {
+            "id": "B",
+            "text": "image"
+          },
+          {
+            "id": "C",
+            "text": "printer"
+          },
+          {
+            "id": "D",
+            "text": "audio"
+          }
+        ],
+        "answerKey": "D",
+        "explanation": "Audio (phần âm thanh) là phần ghi âm thanh, không có hình. Khó nghe là do audio kém."
+      }
+    ],
+    "passageMcq": {
+      "instructions": "Read the passage and choose the best answer A, B, C or D (Questions 21–25).",
+      "passage": {
+        "title": "Review: The Nimbus Mini PC",
+        "paragraphs": [
+          "The Nimbus Mini PC is a tiny desktop computer. It is only 12 centimetres wide and weighs just 600 grams, so it fits easily behind a monitor or on a small shelf. The company that makes it says it is ideal for home offices, school classrooms and small shops.",
+          "Inside the case, there is a 3.2 GHz six-core processor and 16 GB of memory. Customers can choose a 512 GB or a 1 TB solid state drive. In our tests, the computer was very quiet, and it ran office software, video calls and online games without any problems. However, it does not have a separate graphics card, so it is not powerful enough for professional video editing.",
+          "On the front, there are two USB ports and a headphone socket. On the back, you will find two more USB ports, an Ethernet connector and two video sockets, so that you can connect the computer to two monitors at the same time. There is no optical drive, but you can plug an external DVD drive into one of the USB ports if you need one.",
+          "The Nimbus costs £450 with the smaller drive and £520 with the larger one. A keyboard and a mouse come in the box, but you have to buy a monitor separately. Our verdict: the Nimbus is a good choice for anyone who needs a fast, quiet computer and does not have much space on their desk."
+        ]
+      },
+      "questions": [
+        {
+          "id": "R21",
+          "kind": "mcq",
+          "stem": "Why does the Nimbus fit easily behind a monitor?",
+          "options": [
+            {
+              "id": "A",
+              "text": "It has no cables."
+            },
+            {
+              "id": "B",
+              "text": "It is very small and light."
+            },
+            {
+              "id": "C",
+              "text": "It has a built-in screen."
+            },
+            {
+              "id": "D",
+              "text": "It comes with a special shelf."
+            }
+          ],
+          "answerKey": "B",
+          "explanation": "Đoạn 1: máy chỉ rộng 12 cm, nặng 600 g \"so it fits easily behind a monitor or on a small shelf\"."
+        },
+        {
+          "id": "R22",
+          "kind": "mcq",
+          "stem": "What is the Nimbus NOT powerful enough for?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Office software"
+            },
+            {
+              "id": "B",
+              "text": "Video calls"
+            },
+            {
+              "id": "C",
+              "text": "Online games"
+            },
+            {
+              "id": "D",
+              "text": "Professional video editing"
+            }
+          ],
+          "answerKey": "D",
+          "explanation": "Đoạn 2: máy không có card đồ hoạ rời \"so it is not powerful enough for professional video editing\". Ba việc còn lại máy chạy tốt."
+        },
+        {
+          "id": "R23",
+          "kind": "mcq",
+          "stem": "How many USB ports does the Nimbus have in total?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Two"
+            },
+            {
+              "id": "B",
+              "text": "Three"
+            },
+            {
+              "id": "C",
+              "text": "Four"
+            },
+            {
+              "id": "D",
+              "text": "Six"
+            }
+          ],
+          "answerKey": "C",
+          "explanation": "Đoạn 3: mặt trước có hai cổng USB, mặt sau có \"two more USB ports\", tổng cộng bốn."
+        },
+        {
+          "id": "R24",
+          "kind": "mcq",
+          "stem": "Why does the Nimbus have two video sockets?",
+          "options": [
+            {
+              "id": "A",
+              "text": "So that you can connect it to two monitors at the same time"
+            },
+            {
+              "id": "B",
+              "text": "So that you can play DVDs without an external drive"
+            },
+            {
+              "id": "C",
+              "text": "To make the computer quieter"
+            },
+            {
+              "id": "D",
+              "text": "For headphones and speakers"
+            }
+          ],
+          "answerKey": "A",
+          "explanation": "Đoạn 3: \"two video sockets, so that you can connect the computer to two monitors at the same time\"."
+        },
+        {
+          "id": "R25",
+          "kind": "mcq",
+          "stem": "How much does the Nimbus with the 1 TB drive cost?",
+          "options": [
+            {
+              "id": "A",
+              "text": "£450"
+            },
+            {
+              "id": "B",
+              "text": "£520"
+            },
+            {
+              "id": "C",
+              "text": "£600"
+            },
+            {
+              "id": "D",
+              "text": "£970"
+            }
+          ],
+          "answerKey": "B",
+          "explanation": "Đoạn 4: £450 với ổ nhỏ hơn (512 GB), £520 với ổ lớn hơn (1 TB)."
+        }
+      ]
+    },
+    "passageTrueFalse": {
+      "instructions": "Read the passage and write T (True) or F (False) (Questions 26–30).",
+      "passage": {
+        "title": "How to Use Split Screen",
+        "paragraphs": [
+          "Do you often work with two documents at the same time? Split screen lets you see two windows side by side, so you don't have to switch between them all the time. This is useful, for example, when you copy information from a website into a report.",
+          "First, open both programs. Then click on the title bar of the first window and drag it to the left edge of the screen. When you release the mouse button, the window fills the left half of the screen. Next, small pictures of your other open windows appear on the right. Just click on one of them, and it fills the right half.",
+          "To make one window bigger than the other, slide the line between the two windows to the left or to the right. If you want to return to a full-screen window, click its maximise button. You can also split the screen with the keyboard: hold down the Windows key and press the left or right arrow key."
+        ]
+      },
+      "questions": [
+        {
+          "id": "R26",
+          "kind": "tf",
+          "statement": "Split screen shows two windows side by side.",
+          "answerKey": "T",
+          "explanation": "Đoạn 1: \"Split screen lets you see two windows side by side\"."
+        },
+        {
+          "id": "R27",
+          "kind": "tf",
+          "statement": "You drag the first window to the right edge of the screen.",
+          "answerKey": "F",
+          "explanation": "Đoạn 2: kéo cửa sổ đầu tiên \"to the left edge of the screen\" (cạnh trái)."
+        },
+        {
+          "id": "R28",
+          "kind": "tf",
+          "statement": "When you release the mouse button, the first window fills the whole screen.",
+          "answerKey": "F",
+          "explanation": "Đoạn 2: cửa sổ \"fills the left half of the screen\" (nửa trái), không phải toàn màn hình."
+        },
+        {
+          "id": "R29",
+          "kind": "tf",
+          "statement": "The two windows must always be the same size.",
+          "answerKey": "F",
+          "explanation": "Đoạn 3: \"To make one window bigger than the other, slide the line between the two windows\", nên hai cửa sổ có thể khác kích thước."
+        },
+        {
+          "id": "R30",
+          "kind": "tf",
+          "statement": "You can split the screen with the Windows key and an arrow key.",
+          "answerKey": "T",
+          "explanation": "Đoạn 3: \"hold down the Windows key and press the left or right arrow key\"."
+        }
+      ]
+    }
+  },
+  "writing": {
+    "translation": {
+      "instructions": "Translate these sentences into Vietnamese (Questions 31–35).",
+      "items": [
+        {
+          "id": "W31",
+          "source": "The new tablet has an eight-core processor, 128 GB of storage and a 10.5-inch screen.",
+          "referenceTranslation": "Máy tính bảng mới có bộ xử lý tám nhân, bộ nhớ lưu trữ 128 GB và màn hình 10,5 inch."
+        },
+        {
+          "id": "W32",
+          "source": "Could you just drag the file into the 'Reports' folder and then close the window?",
+          "referenceTranslation": "Bạn có thể kéo tệp vào thư mục 'Reports' rồi đóng cửa sổ lại được không?"
+        },
+        {
+          "id": "W33",
+          "source": "Connect the video camera to the computer with a USB cable to copy the videos.",
+          "referenceTranslation": "Hãy nối máy quay video với máy tính bằng cáp USB để sao chép các video."
+        },
+        {
+          "id": "W34",
+          "source": "Many small companies choose open source software because they do not have to pay for licences.",
+          "referenceTranslation": "Nhiều công ty nhỏ chọn phần mềm nguồn mở vì họ không phải trả tiền giấy phép."
+        },
+        {
+          "id": "W35",
+          "source": "Partition the hard disk into two parts so that you can keep your files separate from the operating system.",
+          "referenceTranslation": "Hãy phân vùng ổ cứng thành hai phần để bạn có thể lưu các tệp của mình tách biệt với hệ điều hành."
+        }
+      ]
+    },
+    "email": {
+      "id": "W-EMAIL",
+      "recipient": "Sophie",
+      "task": "You are an IT support technician. Sophie, a trainee in the HR department, needs to back up her work files to an external hard drive but does not know how. Write an email to Sophie explaining the steps, using the notes below. In your email you must use:\n- imperatives with sequence words;\n- at least one softener (could you…?, just);\n- at least one sentence with two objects (plug … into …, unplug … from …);\n- at least one reason or purpose (to…, so that…, because…).\nFollow the standard layout for an email giving instructions: From / To / Date / Subject, a greeting, It should be quite easy to …, the steps with First / Then / Next / After that / Finally, a reminder (Don't forget to … when you've finished.), then Best wishes and your name, position and department.\nWrite 80–100 words (do not count the From, To, Date and Subject lines).",
+      "bullets": [
+        "plug the external drive into a USB port on your laptop",
+        "open File Explorer / select the folders you want to back up",
+        "drag them onto the drive icon to copy them",
+        "check that the files are on the drive",
+        "right-click on the drive icon / select 'Eject' / unplug the drive from the laptop",
+        "reminder: lock the drive in your drawer when you've finished (so that nobody can take it)"
+      ],
+      "wordRange": [
+        80,
+        100
+      ],
+      "targetGrammar": [
+        "Imperatives with sequence words: First, … Then, … Next, … After that, … Finally, …",
+        "Softeners: just, could you…?",
+        "Sentences with two objects: plug the drive into a USB port, unplug the drive from the laptop",
+        "Reason and purpose: to + verb, so that + clause"
+      ],
+      "modelAnswer": "From: Le Quang Huy\nTo: Sophie\nDate: 8th April\nSubject: Backing up your files\n\nHi Sophie,\n\nIt should be quite easy to back up your files to the external drive.\nFirst, plug the drive into a USB port on your laptop.\nThen, open File Explorer and select the folders you want to back up.\nNext, just drag them onto the drive icon to copy them.\nAfter that, check that the files are on the drive.\nFinally, right-click on the drive icon, select 'Eject' and unplug the drive from the laptop.\nDon't forget to lock the drive in your drawer when you've finished.\n\nBest wishes,\nLe Quang Huy\nSupport Technician\nHelp Desk Department"
+    }
+  },
+  "speaking": {
+    "parts": [
+      {
+        "id": "S1",
+        "kind": "questions",
+        "instructions": "Answer the three questions. Speak for 30–45 seconds for each question.",
+        "questions": [
+          "How much storage does your phone or laptop have, and how much of it is free? Say the numbers and units clearly, for example sixty-four gigabytes or one point five terabytes.",
+          "What multimedia equipment do you have at home, for example speakers, a webcam or a printer? What do you use each one for? Use for + noun, to + verb or so that.",
+          "How do you open a new tab in your web browser? Give the instructions using imperatives and sequence words (first, then, finally)."
+        ],
+        "secondsPerQuestion": 45
+      },
+      {
+        "id": "S2",
+        "kind": "explain",
+        "instructions": "Give instructions for using a computer. Speak for 1–1.5 minutes.",
+        "prompt": "Your grandmother has a new laptop. Explain how to change the desktop background to one of her own photos. Use imperatives, sequence words (first, then, next, after that, finally) and at least one softener (could you…?, just).",
+        "cues": [
+          "right-click on an empty part of the desktop",
+          "select 'Personalise'",
+          "click 'Background' / choose 'Picture'",
+          "click 'Browse' / find the photo in the Pictures folder",
+          "click 'Choose picture' / close the window"
+        ],
+        "requiredGrammar": [
+          "Imperatives with sequence words: First, … Then, … Next, … After that, … Finally, …",
+          "Softeners: could you…?, just"
+        ],
+        "seconds": 90,
+        "sampleAnswer": "It's easy to change the background, Grandma. First, could you right-click on an empty part of the desktop? Not on an icon, just on the picture behind them. A menu appears. Then select 'Personalise' from the menu. A new window opens. Next, click 'Background' on the left and choose 'Picture' from the list. After that, click the 'Browse' button and find your photo. Your photos are usually in the Pictures folder, so just double click on that folder and select the photo you like. Finally, click 'Choose picture'. Now you can see your photo on the desktop. If you like it, just close the window. If you don't like it, repeat the steps and choose another photo."
+      },
+      {
+        "id": "S3",
+        "kind": "situation",
+        "instructions": "Deal with the situation. Speak for 1–1.5 minutes.",
+        "prompt": "Your friend owns a small café. She wants to show music videos on a big TV and play music through speakers, and she wants customers to see the café's menu on the TV screen too. Explain what equipment she needs, how to connect each item and why each one is needed. Use sentences with two objects (plug … into …, connect … to …) and reason or purpose (to…, so that…, because…, for…).",
+        "cues": [
+          "a small media player: plug it into the TV's HDMI socket / to play music videos from the internet",
+          "two speakers: connect them to the media player / so that customers at the back can hear the music",
+          "a laptop: connect it to the TV with a cable / for showing the café's menu",
+          "an extension cable: plug it into the wall socket / because there is only one socket near the TV"
+        ],
+        "requiredGrammar": [
+          "Sentences with two objects: plug … into …, connect … to …",
+          "Reason and purpose: to + verb, so that + clause, because + clause, for + noun / -ing"
+        ],
+        "seconds": 90,
+        "sampleAnswer": "I think you need four things. First, buy a small media player and plug it into the TV's HDMI socket. You need it to play music videos from the internet. Second, get two speakers and connect them to the media player, so that customers at the back of the café can hear the music clearly. The TV speakers are too quiet for a big room. Third, you can connect your laptop to the TV with a cable for showing the café's menu between the videos. Finally, you need an extension cable, because there is only one wall socket near the TV. Plug the extension cable into the wall socket, and then plug the TV, the media player and the speakers into it. It's quite cheap, and it's easy to set up."
+      }
+    ]
+  }
+}
