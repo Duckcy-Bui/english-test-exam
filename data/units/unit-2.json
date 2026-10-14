@@ -22,7 +22,8 @@
     "Bài đọc R21–R25 lấy cảm hứng từ bài System specifications và Business matters (giáo trình trang sách 13, 19); bài đọc R26–R30 lấy cảm hứng từ các bước cài lại hệ điều hành (trang sách 18) nhưng viết thành email mới, bỏ các bước dính tới thuật ngữ câu nối.",
     "Listening A lấy cảm hứng từ bài GUI operations (track 10); Listening B lấy cảm hứng từ bài System specifications (track 07, 09). Không chép Audio script.",
     "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại, xử lý giống Unit 6.",
-    "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều."
+    "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
+    "Bản r1 (theo báo cáo et-auditor 3f950ad): R15 thay phương án nhiễu khác từ loại; R18 đổi thao tác để không lặp việc kéo tệp vào thư mục của Listening A và S2; R19 bỏ khẳng định về giá, nói về quyền xem và sửa mã nguồn; S3 nói rõ là lớp kết hợp trực tiếp và trực tuyến, sửa cues và bài mẫu theo."
   ],
   "listening": {
     "parts": [
@@ -333,7 +334,7 @@
         "options": [
           { "id": "A", "text": "Unplug" },
           { "id": "B", "text": "Double click" },
-          { "id": "C", "text": "Resize" },
+          { "id": "C", "text": "Scroll" },
           { "id": "D", "text": "Reboot" }
         ],
         "answerKey": "B",
@@ -347,10 +348,10 @@
           { "id": "A", "text": "Maximise" },
           { "id": "B", "text": "Restart" },
           { "id": "C", "text": "Minimise" },
-          { "id": "D", "text": "Plus" }
+          { "id": "D", "text": "Close" }
         ],
         "answerKey": "C",
-        "explanation": "Nút Minimise thu nhỏ cửa sổ nhưng chương trình vẫn mở. Maximise thì phóng to hết cỡ."
+        "explanation": "Nút Minimise thu nhỏ cửa sổ nhưng chương trình vẫn mở. Maximise phóng to hết cỡ; Close đóng chương trình; Restart khởi động lại."
       },
       {
         "id": "R16",
@@ -381,20 +382,20 @@
       {
         "id": "R18",
         "kind": "mcq",
-        "stem": "______ the file from the desktop into the Reports folder.",
+        "stem": "______ the window so that it fills only half of the screen.",
         "options": [
-          { "id": "A", "text": "Drag" },
+          { "id": "A", "text": "Resize" },
           { "id": "B", "text": "Press" },
           { "id": "C", "text": "Unplug" },
-          { "id": "D", "text": "Resize" }
+          { "id": "D", "text": "Reboot" }
         ],
         "answerKey": "A",
-        "explanation": "Drag (kéo) là giữ chuột và kéo một mục trên màn hình sang vị trí khác."
+        "explanation": "Resize (đổi kích thước) là thay đổi kích cỡ của cửa sổ."
       },
       {
         "id": "R19",
         "kind": "mcq",
-        "stem": "______ software is free, and users can change the program code themselves.",
+        "stem": "______ software lets users see the program code and change it themselves.",
         "options": [
           { "id": "A", "text": "Proprietary" },
           { "id": "B", "text": "Open source" },
@@ -402,7 +403,7 @@
           { "id": "D", "text": "Internal" }
         ],
         "answerKey": "B",
-        "explanation": "Open source (mã nguồn mở) là phần mềm miễn phí, kèm mã nguồn để người dùng tự sửa. Proprietary là phần mềm độc quyền, bán theo thương hiệu."
+        "explanation": "Open source (mã nguồn mở) là phần mềm cung cấp kèm mã nguồn để người dùng xem và tự sửa. Proprietary là phần mềm độc quyền, người dùng không xem hay sửa được mã nguồn."
       },
       {
         "id": "R20",
@@ -636,11 +637,11 @@
         "id": "S3",
         "kind": "situation",
         "instructions": "Deal with the situation. Speak for 1–1.5 minutes.",
-        "prompt": "You are a technician at a language school. A teacher needs to give an online lesson tomorrow from a classroom computer. Explain what equipment the teacher needs, how to connect each item and why each one is needed. Use sentences with two objects (plug … into …, connect … to …, unplug … from …) and reason or purpose (to…, so that…, because…, for…).",
+        "prompt": "You are a technician at a language school. Tomorrow a teacher is giving a hybrid lesson from a classroom computer: some students will be in the classroom, and other students will join online from home. Explain what equipment the teacher needs, how to connect each item and why each one is needed. Use sentences with two objects (plug … into …, connect … to …, unplug … from …) and reason or purpose (to…, so that…, because…, for…).",
         "cues": [
-          "a headset with a microphone: plug it into a USB port / so that students can hear clearly",
-          "a projector: connect it to the video socket / to show the lesson to students in the room",
-          "speakers: plug them into the audio socket / because the room is large",
+          "a headset with a microphone: plug it into a USB port / so that the online students can hear the teacher clearly",
+          "a projector: connect it to the video socket / to show the online students on the wall for the class in the room",
+          "speakers: plug them into the audio socket / so that the students in the room can hear the online students",
           "after the lesson: unplug everything from the computer / lock the cupboard"
         ],
         "requiredGrammar": [
@@ -648,7 +649,7 @@
           "Reason and purpose: to + verb; so that + clause; because + clause; for + noun"
         ],
         "seconds": 90,
-        "sampleAnswer": "For your online lesson tomorrow, you'll need three pieces of equipment. First, you need a headset with a microphone. Plug the headset into one of the USB ports on the front of the computer, so that your online students can hear you clearly. Second, you need the projector. Connect the projector to the video socket on the back of the computer to show the lesson to the students in the classroom. Third, use the speakers, because the room is quite large and students at the back might not hear the online students. Just plug them into the audio socket. After the lesson, please unplug everything from the computer and put it in the cupboard for safety. Then lock the cupboard and bring the key to the IT office."
+        "sampleAnswer": "For your hybrid lesson tomorrow, you'll need three pieces of equipment. First, you need a headset with a microphone. Plug the headset into one of the USB ports on the front of the computer, so that the students at home can hear you clearly. Second, you need the projector. Connect the projector to the video socket on the back of the computer to show the online students on the wall. Then the students in the classroom can see them. Third, use the speakers, because the students in the room also need to hear the online students when they speak. Just plug the speakers into the audio socket. After the lesson, please unplug everything from the computer and put it in the cupboard for safety. Then lock the cupboard and bring the key to the IT office."
       }
     ]
   }
