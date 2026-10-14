@@ -24,7 +24,8 @@
     "Listening A: chủ phòng khám gọi hỏi công ty sao lưu trực tuyến (IT organisations, câu hỏi thì hiện tại đơn). Listening B: lời nhắn của phòng IT về quy định bảo mật mới (IT workplace rules). Không chép Audio script.",
     "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại.",
     "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
-    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng."
+    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
+    "Bản r1 (theo báo cáo et-auditor audit/unit-1-C): R12 viết lại thành lời đề nghị chỉ dẫn máy in mới, các nhiễu sai ngữ pháp rõ (bỏ 'Do' và tình huống đặt phòng họp trùng bài The Hub); R13, R20 thay nhiễu 'supervise' (trùng từ khoá định nghĩa R1) bằng maintain / install; R17 đổi nhiễu thành agenda / network / product; L7 thêm biến thể 'minimum'."
   ],
   "listening": {
     "parts": [
@@ -295,7 +296,11 @@
               "at least twelve",
               "at least 12",
               "twelve characters long",
-              "12 characters long"
+              "12 characters long",
+              "12 characters minimum",
+              "twelve characters minimum",
+              "minimum 12 characters",
+              "minimum twelve characters"
             ],
             "explanation": "\"your password must be at least twelve characters long\"."
           },
@@ -556,7 +561,7 @@
       {
         "id": "R12",
         "kind": "mcq",
-        "stem": "'______ I book a meeting room for Thursday?' 'Yes, please. That would be great.'",
+        "stem": "'______ I show you how the new printer works?' 'Yes, please. I've never used it before.'",
         "options": [
           {
             "id": "A",
@@ -568,15 +573,15 @@
           },
           {
             "id": "C",
-            "text": "Do"
+            "text": "Have"
           },
           {
             "id": "D",
-            "text": "Have"
+            "text": "Does"
           }
         ],
         "answerKey": "A",
-        "explanation": "Đề nghị làm giúp: \"Shall I + V?\", đáp lại \"Yes, please\". \"Am I book\" và \"Have I book\" sai ngữ pháp; \"Do I book…?\" là hỏi thông tin, không phải lời đề nghị nên không đáp \"Yes, please\"."
+        "explanation": "Lời đề nghị làm giúp: \"Shall I + động từ nguyên mẫu?\", đáp lại \"Yes, please\". \"Am I show\", \"Have I show\" sai ngữ pháp; \"Does\" không đi với chủ ngữ \"I\"."
       }
     ],
     "vocabulary": [
@@ -599,7 +604,7 @@
           },
           {
             "id": "D",
-            "text": "supervise"
+            "text": "maintain"
           }
         ],
         "answerKey": "B",
@@ -691,15 +696,15 @@
           },
           {
             "id": "B",
-            "text": "colleagues"
+            "text": "agenda"
           },
           {
             "id": "C",
-            "text": "agendas"
+            "text": "network"
           },
           {
             "id": "D",
-            "text": "characters"
+            "text": "product"
           }
         ],
         "answerKey": "A",
@@ -766,7 +771,7 @@
           },
           {
             "id": "B",
-            "text": "supervise"
+            "text": "install"
           },
           {
             "id": "C",
