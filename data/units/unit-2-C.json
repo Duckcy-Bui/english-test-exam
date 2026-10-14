@@ -24,7 +24,8 @@
     "Listening A: khách hàng đặt máy tính dựng video theo cấu hình (System specifications). Listening B: video hướng dẫn chụp màn hình (GUI operations). Không chép Audio script.",
     "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại.",
     "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
-    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng."
+    "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
+    "Bản r1 (tự soát theo nhắc của et-lead): R10 đổi 'cable' thành 'headphones', R14 và R15 thay nhiễu 'cable' bằng 'tab' (cable là từ khoá định nghĩa E, Ethernet connector); R20 đổi tình huống để không lặp việc cài hệ thống của bài đọc R21–R25."
   ],
   "listening": {
     "parts": [
@@ -494,23 +495,23 @@
         "options": [
           {
             "id": "A",
-            "text": "Plug into the socket the cable."
+            "text": "Plug into the audio socket the headphones."
           },
           {
             "id": "B",
-            "text": "Into the socket plug the cable."
+            "text": "Into the audio socket plug the headphones."
           },
           {
             "id": "C",
-            "text": "Plug the cable into the socket."
+            "text": "Plug the headphones into the audio socket."
           },
           {
             "id": "D",
-            "text": "Plug the cable the socket into."
+            "text": "Plug the headphones the audio socket into."
           }
         ],
         "answerKey": "C",
-        "explanation": "Trật tự câu hai tân ngữ: động từ + tân ngữ 1 (the cable) + giới từ (into) + tân ngữ 2 (the socket)."
+        "explanation": "Trật tự câu hai tân ngữ: động từ + tân ngữ 1 (the headphones) + giới từ (into) + tân ngữ 2 (the audio socket)."
       },
       {
         "id": "R11",
@@ -608,7 +609,7 @@
           },
           {
             "id": "D",
-            "text": "cable"
+            "text": "tab"
           }
         ],
         "answerKey": "C",
@@ -621,7 +622,7 @@
         "options": [
           {
             "id": "A",
-            "text": "cable"
+            "text": "tab"
           },
           {
             "id": "B",
@@ -742,7 +743,7 @@
       {
         "id": "R20",
         "kind": "mcq",
-        "stem": "Installing the new system is a long ______: it has eight steps and takes about an hour.",
+        "stem": "Setting up a new email account is a short ______: it has three steps and takes about five minutes.",
         "options": [
           {
             "id": "A",
