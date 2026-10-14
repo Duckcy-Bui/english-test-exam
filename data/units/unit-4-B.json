@@ -25,7 +25,8 @@
     "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại.",
     "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
     "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
-    "Bản r1 (tự soát theo nhắc của et-lead): R8 đổi tình huống (tìm bản ghi khách hàng gần nghĩa thuật ngữ R2 retrieve a record); R13 và bài đọc R26–R30 bỏ từ 'record'; R17, R20 thay nhiễu 'attached' (từ khoá định nghĩa C, headset) bằng horizontal / vertical."
+    "Bản r1 (tự soát theo nhắc của et-lead): R8 đổi tình huống (tìm bản ghi khách hàng gần nghĩa thuật ngữ R2 retrieve a record); R13 và bài đọc R26–R30 bỏ từ 'record'; R17, R20 thay nhiễu 'attached' (từ khoá định nghĩa C, headset) bằng horizontal / vertical.",
+    "Bản r1, đợt 2 (theo review chéo của et-author2): Listening B bỏ ý 'nobody can change it' (diễn đạt lại định nghĩa F, read-only access), L10 hỏi email; R8 đổi sang in nhãn bằng báo cáo (không lặp tìm kiếm và sắp xếp); bài R26–R30 viết lại câu bảng, bỏ câu tìm sách, R26 hỏi số sách, R27 theo câu mới; email bước 3 đổi, thêm 'then click it'; R11 đổi sang máy chiếu (trùng Listening A); R12 đổi sự việc (trùng đề A); W32 đổi câu; S2 bỏ câu chép đề A; R14, R16 nhiễu cùng từ loại; L6, L7, L8 thêm biến thể."
   ],
   "listening": {
     "parts": [
@@ -242,7 +243,7 @@
           },
           {
             "speaker": "Paul",
-            "text": "Last month, someone typed a number into cell D5 by mistake, and the formula disappeared. That's why I locked column D yesterday, so now nobody can change it."
+            "text": "Last month, someone typed a number into cell D5 by mistake, and the formula disappeared. That's why I sent an email about it to the whole team yesterday."
           },
           {
             "speaker": "Paul",
@@ -258,7 +259,9 @@
             "acceptedAnswers": [
               "b12",
               "cell b12",
-              "b 12"
+              "b 12",
+              "in cell b12",
+              "in b12"
             ],
             "explanation": "\"I typed the SUM function into cell B12.\""
           },
@@ -273,7 +276,9 @@
               "the equals sign",
               "an equal sign",
               "equal sign",
-              "equals"
+              "equals",
+              "the equal sign",
+              "equal"
             ],
             "explanation": "\"Remember: every formula starts with an equals sign.\" (dấu =)"
           },
@@ -284,7 +289,10 @@
             "maxWords": 3,
             "acceptedAnswers": [
               "red",
-              "it turns red"
+              "it turns red",
+              "turns red",
+              "red colour",
+              "red color"
             ],
             "explanation": "\"If the result is negative, we spent too much, and the cell turns red automatically.\""
           },
@@ -302,16 +310,17 @@
           {
             "id": "L10",
             "kind": "short",
-            "stem": "What did Paul do to column D yesterday so that nobody can change it?",
+            "stem": "What did Paul send to the whole team yesterday?",
             "maxWords": 3,
             "acceptedAnswers": [
-              "locked it",
-              "locked column d",
-              "he locked it",
-              "locked",
-              "locked the column"
+              "an email",
+              "email",
+              "an e-mail",
+              "e-mail",
+              "a message",
+              "an email message"
             ],
-            "explanation": "\"That's why I locked column D yesterday, so now nobody can change it.\""
+            "explanation": "\"That's why I sent an email about it to the whole team yesterday.\""
           }
         ]
       }
@@ -433,27 +442,27 @@
       {
         "id": "R8",
         "kind": "mcq",
-        "stem": "You can put the customers' names in alphabetical order ______ the top of the Name column.",
+        "stem": "You can print address labels for all our customers ______ the Labels report.",
         "options": [
           {
             "id": "A",
-            "text": "by click"
+            "text": "by run"
           },
           {
             "id": "B",
-            "text": "for clicking"
+            "text": "for running"
           },
           {
             "id": "C",
-            "text": "with click"
+            "text": "with run"
           },
           {
             "id": "D",
-            "text": "by clicking"
+            "text": "by running"
           }
         ],
         "answerKey": "D",
-        "explanation": "Diễn tả cách làm: by + V-ing (by clicking)."
+        "explanation": "Diễn tả cách làm: by + V-ing (by running the report)."
       },
       {
         "id": "R9",
@@ -508,32 +517,32 @@
       {
         "id": "R11",
         "kind": "mcq",
-        "stem": "I ______ a long report yesterday when the printer jammed.",
+        "stem": "I ______ a presentation yesterday when the projector suddenly switched off.",
         "options": [
           {
             "id": "A",
-            "text": "were printing"
+            "text": "were giving"
           },
           {
             "id": "B",
-            "text": "am printing"
+            "text": "am giving"
           },
           {
             "id": "C",
-            "text": "was printing"
+            "text": "was giving"
           },
           {
             "id": "D",
-            "text": "print"
+            "text": "give"
           }
         ],
         "answerKey": "C",
-        "explanation": "Hành động đang diễn ra trong quá khứ (yesterday) thì bị hành động ngắn xen vào (when the printer jammed): quá khứ tiếp diễn \"was printing\" với chủ ngữ I."
+        "explanation": "Hành động đang diễn ra trong quá khứ (yesterday) thì bị hành động ngắn xen vào (when the projector switched off): quá khứ tiếp diễn \"was giving\" với chủ ngữ I."
       },
       {
         "id": "R12",
         "kind": "mcq",
-        "stem": "We were testing the new software when the power suddenly ______ off.",
+        "stem": "We were testing the new software when the network suddenly ______ down.",
         "options": [
           {
             "id": "A",
@@ -553,7 +562,7 @@
           }
         ],
         "answerKey": "D",
-        "explanation": "Hành động ngắn xen vào hành động đang diễn ra dùng quá khứ đơn sau \"when\": went (quá khứ của go)."
+        "explanation": "Hành động ngắn xen vào hành động đang diễn ra dùng quá khứ đơn sau \"when\": went (go down = ngừng hoạt động)."
       }
     ],
     "vocabulary": [
@@ -589,7 +598,7 @@
         "options": [
           {
             "id": "A",
-            "text": "minus"
+            "text": "row"
           },
           {
             "id": "B",
@@ -647,7 +656,7 @@
           },
           {
             "id": "C",
-            "text": "sum"
+            "text": "over"
           },
           {
             "id": "D",
@@ -903,9 +912,9 @@
       "passage": {
         "title": "How City Library Uses Its Database",
         "paragraphs": [
-          "City Library has more than 40,000 books, and the staff manage all of them with a database. The database has three tables: Books, Members and Loans. Every book has a barcode, which is the primary key in the Books table.",
+          "City Library has more than 40,000 books, and the staff manage all of them with a database. It stores information about books, members and loans. Every book has its own barcode, which is the primary key for the books.",
           "When a member borrows a book, the librarian scans the member's card and then the book's barcode. The database adds a new line to the Loans table and calculates the return date automatically: three weeks after the day of the loan.",
-          "Staff can search for a book by its title, its author or its barcode. Every morning, a librarian runs a report that lists all the books which are more than one week late. The library then sends a reminder by email to each member on the list.",
+          "Every morning, a librarian runs a report that lists all the books which are more than one week late. The library then sends a reminder by email to each member on the list.",
           "Members can also use the database themselves. By logging in to the library website, they can see which books they have at home and renew a book for another three weeks. A member who has three late books cannot borrow any more until they return them."
         ]
       },
@@ -913,16 +922,16 @@
         {
           "id": "R26",
           "kind": "tf",
-          "statement": "The library's database has four tables.",
+          "statement": "The library has fewer than 40,000 books.",
           "answerKey": "F",
-          "explanation": "Đoạn 1: \"The database has three tables: Books, Members and Loans.\""
+          "explanation": "Đoạn 1: \"City Library has more than 40,000 books\" (hơn 40.000 cuốn)."
         },
         {
           "id": "R27",
           "kind": "tf",
-          "statement": "The barcode is the primary key in the Books table.",
+          "statement": "Each book's barcode is the primary key for the books.",
           "answerKey": "T",
-          "explanation": "Đoạn 1: \"Every book has a barcode, which is the primary key in the Books table.\""
+          "explanation": "Đoạn 1: \"Every book has its own barcode, which is the primary key for the books.\""
         },
         {
           "id": "R28",
@@ -959,8 +968,8 @@
         },
         {
           "id": "W32",
-          "source": "By sorting the Date column, you can see the oldest orders first.",
-          "referenceTranslation": "Bằng cách sắp xếp cột Ngày, bạn có thể xem các đơn hàng cũ nhất trước."
+          "source": "By running the Monthly Sales report, you can see which products sold best.",
+          "referenceTranslation": "Bằng cách chạy báo cáo Doanh số hằng tháng, bạn có thể xem những sản phẩm nào bán chạy nhất."
         },
         {
           "id": "W33",
@@ -986,7 +995,7 @@
       "bullets": [
         "open the Backup app on your desktop",
         "choose last night's date",
-        "find the file: type its name in the search box",
+        "find the file: open the Shared Drive folder",
         "check the file name and date carefully / then click 'Restore'",
         "open the file / check that it is complete",
         "reminder: close the Backup app when you've finished"
@@ -997,10 +1006,10 @@
       ],
       "targetGrammar": [
         "Before / after + -ing (at least twice): Before clicking 'Restore', check…; After opening the file, check…",
-        "By + -ing (at least once): Find the file by typing its name…",
+        "By + -ing (at least once): Find the file by opening the Shared Drive folder…",
         "Imperatives with sequence words for the steps"
       ],
-      "modelAnswer": "From: Vu Hai Nam\nTo: Hugo\nDate: 14th September\nSubject: Restoring your deleted file\n\nHi Hugo,\n\nIt should be quite easy to restore your file from last night's backup.\nFirst, open the Backup app on your desktop.\nThen, choose last night's date.\nNext, find the file by typing its name in the search box.\nAfter that, before clicking 'Restore', check the file name and date carefully.\nFinally, after restoring the file, just open it and check that it is complete.\nDon't forget to close the Backup app when you've finished.\n\nBest wishes,\nVu Hai Nam\nSupport Technician\nHelp Desk Department"
+      "modelAnswer": "From: Vu Hai Nam\nTo: Hugo\nDate: 14th September\nSubject: Restoring your deleted file\n\nHi Hugo,\n\nIt should be quite easy to restore your file from last night's backup.\nFirst, open the Backup app on your desktop.\nThen, choose last night's date.\nNext, find the file by opening the Shared Drive folder.\nAfter that, before clicking 'Restore', check the file name and date carefully, then click it.\nFinally, after restoring the file, just open it and check that it is complete.\nDon't forget to close the Backup app when you've finished.\n\nBest wishes,\nVu Hai Nam\nSupport Technician\nHelp Desk Department"
     }
   },
   "speaking": {
@@ -1023,7 +1032,7 @@
         "prompt": "A new shop assistant needs to use the shop's customer database. Explain how to do each task in the cues. Use by + -ing to say how to do each task (You can find a customer by typing…).",
         "cues": [
           "find a customer: type the name in the search box",
-          "add a new customer: open the New Customer form",
+          "add a new customer: click the 'Add customer' button and fill in the boxes",
           "see today's sales: run the Daily Sales report",
           "put customers in alphabetical order: click the top of the Name column",
           "change a phone number: open the record and type the new number"
@@ -1032,7 +1041,7 @@
           "By + -ing to explain how to do something: by typing…, by opening…, by running…, by clicking…"
         ],
         "seconds": 90,
-        "sampleAnswer": "Using our customer database is quite easy. You can find any customer by typing their name in the search box at the top of the screen. If the customer is new, you add them by opening the New Customer form and filling in the fields. Please don't type straight into the table, because it's easy to make mistakes there. At the end of the day, you can see today's sales by running the Daily Sales report. Sometimes you need a list in alphabetical order. You can do that by clicking the top of the Name column. Finally, if a customer gets a new phone number, you change it by opening their record and typing the new number. Remember to save the record before you close it."
+        "sampleAnswer": "Using our customer database is quite easy. You can find any customer by typing their name in the search box at the top of the screen. If the customer is new, you add them by clicking the 'Add customer' button and filling in the boxes. Always check the spelling before you save. At the end of the day, you can see today's sales by running the Daily Sales report. Sometimes you need a list in alphabetical order. You can do that by clicking the top of the Name column. Finally, if a customer gets a new phone number, you change it by opening their record and typing the new number. Remember to save the record before you close it."
       },
       {
         "id": "S3",
