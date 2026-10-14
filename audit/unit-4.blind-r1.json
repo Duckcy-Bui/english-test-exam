@@ -1,0 +1,15 @@
+{
+  "unit": 4,
+  "solver": "et-auditor — gpt-6-astra",
+  "answers": {
+    "R7": "D",
+    "R9": "A",
+    "R14": "B",
+    "R15": "C",
+    "R23": "B",
+    "R25": "D"
+  },
+  "notes": {
+    "R7": "Chọn D (Before) vì hợp lý nhất theo trình tự an toàn. Tuy nhiên A (While) và B (After) cũng tạo câu đúng ngữ pháp với cleaning; B có thể là lời dặn tắt/rút điện sau khi vệ sinh. Đề chưa nêu ràng buộc máy phải mất điện trước lúc vệ sinh. Vì đây là câu ngữ pháp, tính duy nhất vẫn phụ thuộc giả định về an toàn, chưa đạt yêu cầu chỉ một phương án đúng ngữ pháp ở quy tắc 4. Cần viết lại để loại rõ A/B."
+  }
+}
