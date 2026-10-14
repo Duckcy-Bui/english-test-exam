@@ -25,7 +25,8 @@
     "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại.",
     "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
     "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
-    "Bản r2 (theo review chéo của et-author2, review/et-author2): R6 đổi điểm ngữ pháp (hardly ever không đi với phủ định) và chủ ngữ để không gợi ý R14; R12 đổi sang Shall we + V, bộ nhiễu mới; R14 thay nhiễu 'passwords' bằng 'receptionists'; L7, L10 thêm biến thể; Listening A 'starts on the twelfth'; S1 câu 3 đổi bối cảnh IT."
+    "Bản r2 (theo review chéo của et-author2, review/et-author2): R6 đổi điểm ngữ pháp (hardly ever không đi với phủ định) và chủ ngữ để không gợi ý R14; R12 đổi sang Shall we + V, bộ nhiễu mới; R14 thay nhiễu 'passwords' bằng 'receptionists'; L7, L10 thêm biến thể; Listening A 'starts on the twelfth'; S1 câu 3 đổi bối cảnh IT.",
+    "Xáo thứ tự phương án R10, R12, R21 để khoá R6–R25 không lặp chu kỳ (không đổi chữ trong stem và phương án)."
   ],
   "listening": {
     "parts": [
@@ -505,7 +506,7 @@
           },
           {
             "id": "B",
-            "text": "have"
+            "text": "mustn't"
           },
           {
             "id": "C",
@@ -513,10 +514,10 @@
           },
           {
             "id": "D",
-            "text": "mustn't"
+            "text": "have"
           }
         ],
-        "answerKey": "D",
+        "answerKey": "B",
         "explanation": "Câu sau nêu nguy cơ bị trộm nên đây là điều cấm: \"mustn't\". \"have\" thiếu \"to\"; need to / don't have to không hợp nghĩa."
       },
       {
@@ -551,7 +552,7 @@
         "options": [
           {
             "id": "A",
-            "text": "How about"
+            "text": "Shall we"
           },
           {
             "id": "B",
@@ -559,14 +560,14 @@
           },
           {
             "id": "C",
-            "text": "Shall we"
+            "text": "How about"
           },
           {
             "id": "D",
             "text": "Why we"
           }
         ],
-        "answerKey": "C",
+        "answerKey": "A",
         "explanation": "Gợi ý: \"Shall we + động từ nguyên mẫu?\". \"How about\" phải đi với V-ing (How about ordering…), \"Let's we\" và \"Why we\" sai ngữ pháp."
       }
     ],
@@ -795,7 +796,7 @@
             },
             {
               "id": "B",
-              "text": "It offers IT support to hotels."
+              "text": "It writes booking software."
             },
             {
               "id": "C",
@@ -803,10 +804,10 @@
             },
             {
               "id": "D",
-              "text": "It writes booking software."
+              "text": "It offers IT support to hotels."
             }
           ],
-          "answerKey": "B",
+          "answerKey": "D",
           "explanation": "Đoạn 1: công ty \"offers technical support to hotels\" và \"does not make any hardware or software itself\"."
         },
         {
