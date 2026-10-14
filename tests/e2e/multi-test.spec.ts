@@ -116,7 +116,7 @@ test("three test cards keep sources, PDF links, submissions and best scores sepa
       await expect(card.getByRole("link", { name: label, exact: true })).toHaveAttribute("href", `/api/pdf?unit=6&test=${testId}&kind=${kind}`);
   }
   const submitted = page.waitForRequest((req) => req.url().endsWith("/api/session") && req.method() === "POST");
-  await cardB.locator(".skill-reading").getByRole("button", { name: "Luyện kỹ năng này", exact: true }).click();
+  await cardB.getByRole("button", { name: "Reading", exact: true }).click();
   expect((await submitted).postDataJSON()).toEqual({ unit: 6, test: "B", mode: "practice", scope: "reading" });
   await expect(page).toHaveURL(/\/exam\//);
   await expect(page.locator(".exam-title-row")).toContainText("Đề B");
@@ -132,10 +132,10 @@ test("three test cards keep sources, PDF links, submissions and best scores sepa
   await page.goto("/history");
   await expect(page.locator(".history-row")).toHaveCount(3);
   await expect(page.locator(".history-row").filter({
-    has: page.locator(".unit-label").filter({ hasText: /Đề A$/ }),
+    has: page.getByRole("heading", { name: /Đề A$/ }),
   })).toContainText("Đề cô");
   await expect(page.locator(".history-row").filter({
-    has: page.locator(".unit-label").filter({ hasText: /Đề B$/ }),
+    has: page.getByRole("heading", { name: /Đề B$/ }),
   })).toHaveCount(2);
   await page.goto("/unit/6");
   await expect(cardB.locator(".best-score")).toContainText("9.00 / 10");
@@ -149,6 +149,37 @@ test("three test cards keep sources, PDF links, submissions and best scores sepa
   await expect(page.locator(".exam-title-row")).toContainText("Đề C");
   await expect(page.locator("#R1")).toHaveCount(0);
   await page.screenshot({ path: "test-results/multi-test-exam-c.png" });
+});
+
+test("compact test cards show all practice actions and lock individual skills in exam mode", async ({ page }) => {
+  await page.setViewportSize({ width: 1600, height: 900 });
+  await page.goto("/unit/6");
+  await expect(page.locator(".test-card")).toHaveCount(3);
+  const skills = ["Listening", "Reading", "Writing", "Speaking"];
+  for (const testId of ["A", "B", "C"]) {
+    const card = page.locator(`.test-card[data-test-id="${testId}"]`);
+    await expect(card).toBeInViewport({ ratio: 1 });
+    const box = await card.boundingBox();
+    expect(box).not.toBeNull();
+    expect(box!.height).toBeLessThanOrEqual(180);
+    const actions = card.getByRole("group", { name: `Làm đề ${testId}`, exact: true });
+    await expect(actions.getByRole("button")).toHaveCount(5);
+    for (const name of [...skills, "Thi cả đề"])
+      await expect(actions.getByRole("button", { name, exact: true })).toBeEnabled();
+  }
+  await page.getByRole("button", { name: "Thi thử", exact: true }).click();
+  for (const testId of ["A", "B", "C"]) {
+    const actions = page.getByRole("group", { name: `Làm đề ${testId}`, exact: true });
+    for (const name of skills)
+      await expect(actions.getByRole("button", { name, exact: true })).toBeDisabled();
+    await expect(actions.getByRole("button", { name: "Thi cả đề", exact: true })).toBeEnabled();
+  }
+  await page.getByRole("button", { name: "Luyện tập", exact: true }).click();
+  for (const testId of ["A", "B", "C"]) {
+    const actions = page.getByRole("group", { name: `Làm đề ${testId}`, exact: true });
+    for (const name of [...skills, "Thi cả đề"])
+      await expect(actions.getByRole("button", { name, exact: true })).toBeEnabled();
+  }
 });
 
 async function mockSpeech(page: Page): Promise<void> {

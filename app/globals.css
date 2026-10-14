@@ -8,7 +8,7 @@
   --surface-2: #f7f7f8;
   --surface-3: #eef0f3;
   --line: #e3e6ea;
-  --line-strong: #aab1bc;
+  --line-strong: #7b8492;
   --ink: #1f2328;
   --muted: #5b6370;
   --subtle: #5b6370;
@@ -249,7 +249,7 @@ svg { flex-shrink: 0; }
 .definitions-list > div { display: flex; gap: 10px; margin: 5px 0; }
 .definitions-list strong { color: var(--accent-ink); }
 .reading-split { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 20px; }
-.reading-passage-pane, .reading-question-pane { min-width: 0; max-height: calc(100vh - 260px); overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--line-strong) transparent; overscroll-behavior-y: contain; }
+.reading-passage-pane, .reading-question-pane { min-width: 0; max-height: calc(100vh - 340px); overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--line-strong) transparent; overscroll-behavior-y: contain; }
 .reading-passage-pane { padding: 18px; background: var(--surface-2); border-radius: 6px; }
 .reading-question-pane { padding: 6px 8px 8px 0; }
 .reading-passage { font-size: 17px; line-height: 1.6; }
@@ -267,7 +267,7 @@ svg { flex-shrink: 0; }
 .question-nav-group h3 { display: flex; gap: 6px; align-items: center; font-size: 14px; margin-bottom: 9px; }
 .question-nav-group h3 svg { width: 12px; height: 12px; color: var(--muted); }
 .question-grid { display: flex; flex-wrap: wrap; gap: 5px; }
-.question-grid button { height: 30px; min-width: 30px; padding: 0 4px; border: 1px solid var(--line-strong); border-radius: 3px; background: var(--surface); color: var(--ink); font-size: 13px; line-height: 1; }
+.question-grid button { height: 30px; min-width: 34px; padding: 0 4px; border: 1px solid var(--line-strong); border-radius: 3px; background: var(--surface); color: var(--ink); font-size: 13px; line-height: 1; }
 .question-grid button.answered { background: var(--accent-soft); border-color: var(--accent-ink); color: var(--accent-ink); }
 .question-grid button.current { outline: 2px solid var(--accent-ink); outline-offset: 1px; font-weight: 700; }
 .question-grid button:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
@@ -538,3 +538,30 @@ svg { flex-shrink: 0; }
 .confirm-panel:not(.modal-backdrop > section) { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 18px; margin-bottom: 20px; }
 .confirm-panel:not(.modal-backdrop > section) > div { display: flex; gap: 10px; margin-top: 14px; }
 .reading-passage h4 { font-size: 18px; margin: 0 0 14px; }
+
+.home-hero + .units-section .unit-grammar { display: none; }
+.grammar-details { margin-top: 12px; color: var(--muted); font-size: 14px; }
+.grammar-details summary { cursor: pointer; color: var(--accent-ink); }
+.grammar-details .grammar-chips { margin-bottom: 0; }
+.matching-item label { display: flex; align-items: center; gap: 10px; }
+.reading-instructions { font-size: 15px; color: var(--muted); margin-bottom: 14px; }
+.tf-options { display: flex; flex-direction: column; gap: 6px; margin-left: 40px; }
+.exam-content:has(.exam-rule) .reading-passage-pane,
+.exam-content:has(.exam-rule) .reading-question-pane { max-height: calc(100vh - 380px); }
+@media (max-width: 1099px) {
+  .exam-content:has(.exam-rule) .reading-passage-pane,
+  .exam-content:has(.exam-rule) .reading-question-pane { max-height: none; }
+}
+@media (max-width: 600px) { .tf-options { margin-left: 0; } }
+
+.test-card-identity { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.test-card-identity .test-card-meta { margin: 0; }
+.test-card-heading { margin-bottom: 12px; padding-bottom: 12px; }
+.test-skill-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.test-skill-actions .button { font-size: 14px; min-height: 36px; padding: 7px 14px; }
+@media (max-width: 600px) {
+  .test-card-heading { gap: 10px; }
+  .test-card-identity { gap: 8px 12px; }
+  .test-skill-actions { gap: 6px; }
+  .test-skill-actions .button { flex: 1; padding: 7px 10px; }
+}

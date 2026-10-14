@@ -12,7 +12,6 @@ import {
   ErrorNotice,
   Icon,
   Loading,
-  skillDescriptions,
   skillNames,
   SourceBadge,
 } from "./ui";
@@ -85,17 +84,20 @@ export function UnitPage({ unit }: { unit: number }) {
           <p>
             {summary.testCount} đề · Chọn một đề để luyện kỹ năng hoặc làm cả đề.
           </p>
-          <div className="grammar-chips">
+          <details className="grammar-details">
+            <summary>Ngữ pháp trọng tâm</summary>
+            <div className="grammar-chips">
             {summary.grammarFocus.map((grammar) => (
               <span key={grammar}>{grammar}</span>
             ))}
-          </div>
+            </div>
+          </details>
         </div>
 
       </section>
       <section className="mode-panel">
         <div>
-          <h2>Hôm nay bạn muốn học thế nào?</h2>
+          <h2>Chế độ làm bài</h2>
           <p>
             {mode === "practice"
               ? "Không tính giờ. Xem đáp án và giải thích ngay sau khi nộp."
@@ -135,7 +137,7 @@ export function UnitPage({ unit }: { unit: number }) {
               aria-label={`Đề ${test.testId}`}
             >
               <div className="test-card-heading">
-                <div>
+                <div className="test-card-identity">
                   <h2>Đề {test.testId}</h2>
                   <div className="test-card-meta">
                     <SourceBadge source={test.source} />
@@ -164,60 +166,30 @@ export function UnitPage({ unit }: { unit: number }) {
                   </a>
                 </div>
               </div>
-              <div className="skill-grid">
-                {SKILLS.map((skill, index) => (
-                  <article className={`skill-card skill-${skill}`} key={skill}>
-                    <h2>{skillNames[skill]}</h2>
-                    <p>{skillDescriptions[skill]}</p>
-                    <div className="skill-details">
-                      <span>
-                        {skill === "listening"
-                          ? "10 câu · 2 phần"
-                          : skill === "reading"
-                            ? "30 câu · 5 phần"
-                            : skill === "writing"
-                              ? "5 câu dịch · 1 email"
-                              : "3 phần · 5 bài nói"}
-                      </span>
-                      <strong>2,50 điểm</strong>
-                    </div>
-                    {mode === "practice" ? (
-                      <button
-                        className="button secondary"
-                        onClick={() => start(test.testId, skill)}
-                        disabled={!!busy}
-                      >
-                        {busy?.testId === test.testId && busy.scope === skill
-                          ? "Đang mở đề…"
-                          : "Luyện kỹ năng này"}
-                        <Icon name="arrow" />
-                      </button>
-                    ) : (
-                      <p className="quiet-note">Phần {index + 1} trong đề thi thử</p>
-                    )}
-                  </article>
+              <div className="test-skill-actions" role="group" aria-label={`Làm đề ${test.testId}`}>
+                {SKILLS.map((skill) => (
+                  <button
+                    className={`button secondary skill-${skill}`}
+                    key={skill}
+                    onClick={() => start(test.testId, skill)}
+                    disabled={!!busy || mode === "exam"}
+                    title={mode === "exam" ? "Thi thử làm các kỹ năng lần lượt trong đề đầy đủ" : `Luyện ${skillNames[skill]}`}
+                  >
+                    {busy?.testId === test.testId && busy.scope === skill
+                      ? "Đang mở đề…"
+                      : skillNames[skill]}
+                  </button>
                 ))}
-              </div>
-              <section className="full-exam-panel">
-                <div>
-                  <h2>Đề đầy đủ 4 kỹ năng</h2>
-                  <p>
-                    {mode === "exam"
-                      ? "90 phút cho cả đề · Listening tối đa 2 lần mỗi phần · Thang điểm 10"
-                      : "Làm đủ 4 kỹ năng theo nhịp của bạn · Thang điểm 10"}
-                  </p>
-                </div>
                 <button
-                  className="button light"
+                  className="button primary"
                   onClick={() => start(test.testId, "full")}
                   disabled={!!busy}
                 >
                   {busy?.testId === test.testId && busy.scope === "full"
                     ? "Đang mở đề…"
                     : "Thi cả đề"}
-                  <Icon name="arrow" />
                 </button>
-              </section>
+              </div>
             </section>
           );
         })}

@@ -475,6 +475,7 @@ export function ReadingQuestions({
           ? "auto"
           : "smooth",
       });
+      question.querySelector<HTMLElement>('input:checked, input:not(:disabled), textarea:not(:disabled), select:not(:disabled)')?.focus({ preventScroll: true });
     });
     return () => window.cancelAnimationFrame(frame);
   }, [activePart, requestedPart, requestedQuestion?.id, requestedQuestion?.token]);

@@ -427,6 +427,7 @@ test("sequential question navigation locks future and submitted skills", async (
   ).toBeDisabled();
   await page.getByRole("button", { name: "Tới câu R16", exact: true }).click();
   await expect(page.locator('input[name="R16"]').first()).toBeVisible();
+  await expect(page.locator('input[name="R16"]').first()).toBeFocused();
   await expect(page.locator('input[name="L1"]')).toHaveCount(0);
 });
 
@@ -449,6 +450,8 @@ test("practice question navigation opens the correct skill and Reading part with
   const readingAnswer = page.locator(
     `input[name="${firstReading.id}"][value="${firstReading.answerKey}"]`,
   );
+  await expect(page.locator(`input[name="${firstReading.id}"]`).first()).toBeFocused();
+  await expect(page.locator(`#question-${firstReading.id} .question-id`)).toHaveText(firstReading.id);
   await readingAnswer.check();
   await expect(readingNavigation).toHaveClass(/\banswered\b/);
   await expect(page.locator("#R1")).toHaveCount(0);
@@ -457,10 +460,13 @@ test("practice question navigation opens the correct skill and Reading part with
   ).toHaveCount(0);
   await page.getByRole("button", { name: "Tới câu L1", exact: true }).click();
   await expect(page.locator('input[name="L1"]').first()).toBeVisible();
+  await expect(page.locator('input[name="L1"]').first()).toBeFocused();
+  await expect(page.locator("#question-L1 .question-id")).toHaveText("L1");
   await expect(readingAnswer).toHaveCount(0);
   await expect(readingNavigation).toHaveClass(/\banswered\b/);
   await readingNavigation.click();
   await expect(readingAnswer).toBeChecked();
+  await expect(page.locator(`input[name="${firstReading.id}"]`).first()).toBeFocused();
   const firstTrueFalse = exam.reading.passageTrueFalse.questions[0];
   await page
     .getByRole("button", { name: `Tới câu ${firstTrueFalse.id}`, exact: true })
@@ -471,15 +477,22 @@ test("practice question navigation opens the correct skill and Reading part with
   await expect(
     page.locator(`input[name="${firstTrueFalse.id}"]`).first(),
   ).toBeVisible();
+  await expect(
+    page.locator(`input[name="${firstTrueFalse.id}"]`).first(),
+  ).toBeFocused();
   await expect(readingAnswer).toHaveCount(0);
   await page.getByRole("button", { name: "Tới câu R1", exact: true }).click();
   await expect(page.locator("#R1")).toBeVisible();
+  await expect(page.locator("#R1")).toBeFocused();
   await page.getByRole("button", { name: "Tới câu W31", exact: true }).click();
   await expect(page.locator("#W31")).toBeVisible();
+  await expect(page.locator("#W31")).toBeFocused();
   await page.getByRole("button", { name: "Tới câu Email", exact: true }).click();
   await expect(page.locator("#email-answer")).toBeInViewport();
+  await expect(page.locator("#email-answer")).toBeFocused();
   await page.getByRole("button", { name: "Tới câu S2", exact: true }).click();
   await expect(page.locator("#question-S2")).toBeInViewport();
+  await expect(page.locator("#speaking-text-S2")).toBeFocused();
 });
 
 test("exiting an unfinished practice asks for confirmation and keeps the draft", async ({
@@ -541,11 +554,15 @@ test("mobile question sheet navigates Reading and retains the selected theme on 
   ).toBeInViewport();
   const list = page.getByRole("button", { name: "Danh sách câu", exact: true });
   const sheet = page.getByRole("dialog", { name: "Danh sách câu", exact: true });
+  const questionId = exam.reading.passageMcq.questions[0].id;
   await list.click();
   await expect(sheet).toBeVisible();
-  await sheet.getByRole("button", { name: "Tới câu R16", exact: true }).click();
+  await sheet
+    .getByRole("button", { name: `Tới câu ${questionId}`, exact: true })
+    .click();
   await expect(sheet).toHaveCount(0);
-  await expect(page.locator("#question-R16")).toBeInViewport();
+  await expect(page.locator(`#question-${questionId}`)).toBeInViewport();
+  await expect(page.locator(`input[name="${questionId}"]`).first()).toBeFocused();
   await expect(
     page.getByRole("tab", { name: "Part 2: Đọc hiểu", exact: true }),
   ).toHaveAttribute("aria-selected", "true");

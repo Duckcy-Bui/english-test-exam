@@ -260,10 +260,13 @@ export function ExamPage({ sessionId }: { sessionId: string }) {
   useEffect(() => {
     if (!requestedQuestion || skill === "reading") return;
     const frame = requestAnimationFrame(() => {
-      document.getElementById(`question-${requestedQuestion.id}`)?.scrollIntoView({
+      const question = document.getElementById(`question-${requestedQuestion.id}`);
+      question?.scrollIntoView({
         block: "start",
         behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
       });
+      const control = question?.querySelector<HTMLElement>('input:checked, input:not([type="checkbox"]):not(:disabled), textarea:not(:disabled), select:not(:disabled)');
+      control?.focus({ preventScroll: true });
     });
     return () => cancelAnimationFrame(frame);
   }, [skill, requestedQuestion]);
@@ -365,7 +368,7 @@ export function ExamPage({ sessionId }: { sessionId: string }) {
                     disabled={locked || !canNavigate}
                     className={`${done ? "answered" : ""} ${viewed ? "current" : ""}`}
                     onClick={() => navigate(item, id)}>
-                    {item === "listening" || item === "reading" ? id.substring(1) : label}
+                    {label}
                   </button>
                 );
               })}
