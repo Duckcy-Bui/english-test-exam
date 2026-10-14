@@ -2971,3 +2971,14 @@ svg {
     transition: none !important;
   }
 }
+.email-editor-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.email-editor-head .button svg {
+  width: 16px;
+  height: 16px;
+}

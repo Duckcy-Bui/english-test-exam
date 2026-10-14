@@ -322,6 +322,22 @@ export function countWords(text: string): number {
   return trimmed === "" ? 0 : trimmed.split(/\s+/).length;
 }
 
+/** Các dòng đầu thư theo khung email của giáo viên; không tính vào 80–100 từ. */
+const EMAIL_HEADER = /^\s*(from|to|date|subject)\s*:/i;
+
+/** Phần thân email: bỏ các dòng From/To/Date/Subject, giữ từ lời chào đến chữ ký. */
+export function emailBody(text: string): string {
+  return text
+    .split(/\r?\n/)
+    .filter((line) => !EMAIL_HEADER.test(line))
+    .join("\n");
+}
+
+/** Số từ tính cho giới hạn 80–100 của email: chỉ phần thân. */
+export function countEmailWords(text: string): number {
+  return countWords(emailBody(text));
+}
+
 /** Làm tròn tổng điểm đến 0,25 gần nhất, từ 0,125 trở lên làm tròn lên. Tối đa 10. */
 export function roundTotal(score: number): number {
   const rounded = Math.round(score * 4 + 1e-9) / 4;

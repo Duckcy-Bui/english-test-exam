@@ -24,7 +24,8 @@
     "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại, xử lý giống Unit 6.",
     "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
     "Bản r2 (theo báo cáo et-auditor 1b23076): R7 thay phương án nhiễu \"since\" (vẫn đọc được ở cuối câu) bằng phương án sai rõ; R11 đổi điều kiện để lời khuyên lưu bài làm được; đoạn 2 bài đọc R21–R25 và câu R22 đổi bằng chứng loại trừ wi-fi cho chặt chẽ về kỹ thuật.",
-    "Bản r1 (tự rà theo các lỗi auditor đã bắt ở Unit 1, 4, 5, 6): R6, R12, R16, R17 đổi tình huống để không lặp chi tiết máy in và hộp mực của Listening A, làm đổ nước lên bàn phím của Listening B; R24 thay phương án nhiễu \"compared\" (bài không nói thẳng) bằng việc bài nói rõ là đã làm; câu dịch W33 đổi nội dung để không lặp lời khuyên máy nóng thì tắt máy của Listening B."
+    "Bản r1 (tự rà theo các lỗi auditor đã bắt ở Unit 1, 4, 5, 6): R6, R12, R16, R17 đổi tình huống để không lặp chi tiết máy in và hộp mực của Listening A, làm đổ nước lên bàn phím của Listening B; R24 thay phương án nhiễu \"compared\" (bài không nói thẳng) bằng việc bài nói rõ là đã làm; câu dịch W33 đổi nội dung để không lặp lời khuyên máy nóng thì tắt máy của Listening B.",
+    "Email theo khung giáo viên (2026-10-14): email hướng dẫn From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng."
   ],
   "listening": {
     "parts": [
@@ -33,23 +34,68 @@
         "instructions": "Listen to the phone call and choose the best answer A, B, C or D (Questions L1–L5).",
         "context": "Rosa, who works on the second floor, phones Dev at the help desk about a printer.",
         "speakers": [
-          { "name": "Dev", "voice": "male" },
-          { "name": "Rosa", "voice": "female" }
+          {
+            "name": "Dev",
+            "voice": "male"
+          },
+          {
+            "name": "Rosa",
+            "voice": "female"
+          }
         ],
         "script": [
-          { "speaker": "Dev", "text": "Help desk, Dev speaking." },
-          { "speaker": "Rosa", "text": "Hi Dev, it's Rosa on the second floor. Our printer is printing blank pages. The paper comes out, but there's nothing on it." },
-          { "speaker": "Dev", "text": "OK. Has it printed anything else today?" },
-          { "speaker": "Rosa", "text": "Yes, it worked fine this morning. The problem started after lunch." },
-          { "speaker": "Dev", "text": "Right. Is the printer showing a message on its screen?" },
-          { "speaker": "Rosa", "text": "No, there's no message at all." },
-          { "speaker": "Dev", "text": "Then it can't be a paper jam, because a paper jam always shows a message. It might be the ink. Has anyone changed the ink cartridges recently?" },
-          { "speaker": "Rosa", "text": "Yes! Our assistant changed the black cartridge at lunchtime." },
-          { "speaker": "Dev", "text": "Ah, that must be the reason. New cartridges have a small plastic strip on them. Your assistant may have forgotten to remove it." },
-          { "speaker": "Rosa", "text": "Let me check... Yes, the strip is still there." },
-          { "speaker": "Dev", "text": "OK. Try removing the strip, then put the cartridge back and print a test page." },
-          { "speaker": "Rosa", "text": "It's working now! Thanks so much." },
-          { "speaker": "Dev", "text": "Great. If it happens again, you should call me straight away." }
+          {
+            "speaker": "Dev",
+            "text": "Help desk, Dev speaking."
+          },
+          {
+            "speaker": "Rosa",
+            "text": "Hi Dev, it's Rosa on the second floor. Our printer is printing blank pages. The paper comes out, but there's nothing on it."
+          },
+          {
+            "speaker": "Dev",
+            "text": "OK. Has it printed anything else today?"
+          },
+          {
+            "speaker": "Rosa",
+            "text": "Yes, it worked fine this morning. The problem started after lunch."
+          },
+          {
+            "speaker": "Dev",
+            "text": "Right. Is the printer showing a message on its screen?"
+          },
+          {
+            "speaker": "Rosa",
+            "text": "No, there's no message at all."
+          },
+          {
+            "speaker": "Dev",
+            "text": "Then it can't be a paper jam, because a paper jam always shows a message. It might be the ink. Has anyone changed the ink cartridges recently?"
+          },
+          {
+            "speaker": "Rosa",
+            "text": "Yes! Our assistant changed the black cartridge at lunchtime."
+          },
+          {
+            "speaker": "Dev",
+            "text": "Ah, that must be the reason. New cartridges have a small plastic strip on them. Your assistant may have forgotten to remove it."
+          },
+          {
+            "speaker": "Rosa",
+            "text": "Let me check... Yes, the strip is still there."
+          },
+          {
+            "speaker": "Dev",
+            "text": "OK. Try removing the strip, then put the cartridge back and print a test page."
+          },
+          {
+            "speaker": "Rosa",
+            "text": "It's working now! Thanks so much."
+          },
+          {
+            "speaker": "Dev",
+            "text": "Great. If it happens again, you should call me straight away."
+          }
         ],
         "questions": [
           {
@@ -57,10 +103,22 @@
             "kind": "mcq",
             "stem": "What is the problem with the printer?",
             "options": [
-              { "id": "A", "text": "It is printing blank pages." },
-              { "id": "B", "text": "It does not switch on." },
-              { "id": "C", "text": "It shows an error message." },
-              { "id": "D", "text": "It prints very slowly." }
+              {
+                "id": "A",
+                "text": "It is printing blank pages."
+              },
+              {
+                "id": "B",
+                "text": "It does not switch on."
+              },
+              {
+                "id": "C",
+                "text": "It shows an error message."
+              },
+              {
+                "id": "D",
+                "text": "It prints very slowly."
+              }
             ],
             "answerKey": "A",
             "explanation": "Rosa nói \"Our printer is printing blank pages\" (máy in ra trang trắng)."
@@ -70,10 +128,22 @@
             "kind": "mcq",
             "stem": "When did the problem start?",
             "options": [
-              { "id": "A", "text": "This morning" },
-              { "id": "B", "text": "After lunch" },
-              { "id": "C", "text": "Yesterday" },
-              { "id": "D", "text": "Last week" }
+              {
+                "id": "A",
+                "text": "This morning"
+              },
+              {
+                "id": "B",
+                "text": "After lunch"
+              },
+              {
+                "id": "C",
+                "text": "Yesterday"
+              },
+              {
+                "id": "D",
+                "text": "Last week"
+              }
             ],
             "answerKey": "B",
             "explanation": "\"it worked fine this morning. The problem started after lunch.\""
@@ -83,10 +153,22 @@
             "kind": "mcq",
             "stem": "Why does Dev say it can't be a paper jam?",
             "options": [
-              { "id": "A", "text": "The paper in the tray is new." },
-              { "id": "B", "text": "A paper jam always shows a message." },
-              { "id": "C", "text": "The printer was bought recently." },
-              { "id": "D", "text": "Rosa has already checked the tray." }
+              {
+                "id": "A",
+                "text": "The paper in the tray is new."
+              },
+              {
+                "id": "B",
+                "text": "A paper jam always shows a message."
+              },
+              {
+                "id": "C",
+                "text": "The printer was bought recently."
+              },
+              {
+                "id": "D",
+                "text": "Rosa has already checked the tray."
+              }
             ],
             "answerKey": "B",
             "explanation": "\"it can't be a paper jam, because a paper jam always shows a message\", mà máy không hiện thông báo nào."
@@ -96,10 +178,22 @@
             "kind": "mcq",
             "stem": "What did Rosa's assistant do at lunchtime?",
             "options": [
-              { "id": "A", "text": "Cleaned the printer" },
-              { "id": "B", "text": "Moved the printer" },
-              { "id": "C", "text": "Changed the black cartridge" },
-              { "id": "D", "text": "Ordered more paper" }
+              {
+                "id": "A",
+                "text": "Cleaned the printer"
+              },
+              {
+                "id": "B",
+                "text": "Moved the printer"
+              },
+              {
+                "id": "C",
+                "text": "Changed the black cartridge"
+              },
+              {
+                "id": "D",
+                "text": "Ordered more paper"
+              }
             ],
             "answerKey": "C",
             "explanation": "\"Our assistant changed the black cartridge at lunchtime.\""
@@ -109,10 +203,22 @@
             "kind": "mcq",
             "stem": "What does Dev tell Rosa to try?",
             "options": [
-              { "id": "A", "text": "Buying a new printer" },
-              { "id": "B", "text": "Removing the plastic strip" },
-              { "id": "C", "text": "Restarting her computer" },
-              { "id": "D", "text": "Changing the paper" }
+              {
+                "id": "A",
+                "text": "Buying a new printer"
+              },
+              {
+                "id": "B",
+                "text": "Removing the plastic strip"
+              },
+              {
+                "id": "C",
+                "text": "Restarting her computer"
+              },
+              {
+                "id": "D",
+                "text": "Changing the paper"
+              }
             ],
             "answerKey": "B",
             "explanation": "\"Try removing the strip, then put the cartridge back and print a test page.\""
@@ -124,13 +230,28 @@
         "instructions": "Listen to the talk and answer the questions. Write NO MORE THAN THREE WORDS for each answer (Questions L6–L10).",
         "context": "Gareth, an office manager, gives new staff some health and safety advice on their first day.",
         "speakers": [
-          { "name": "Gareth", "voice": "male" }
+          {
+            "name": "Gareth",
+            "voice": "male"
+          }
         ],
         "script": [
-          { "speaker": "Gareth", "text": "Welcome to your first day. Before you start, here are a few health and safety points for the office." },
-          { "speaker": "Gareth", "text": "First, cables. Please don't leave cables across the floor, because people can trip and fall. If you need a longer cable, ask the IT team. Don't bring an extension cable from home. Second, drinks. If you spill a drink on a keyboard, switch the computer off immediately and call IT. Please keep your drinks on the small table by the window instead." },
-          { "speaker": "Gareth", "text": "Third, your chair. You should adjust the height of your chair so that your eyes are level with the top of the screen. If you get backache, try taking a short walk every hour." },
-          { "speaker": "Gareth", "text": "Finally, laptops. Don't use them on your bed or sofa at home, because they need air to cool down. If a laptop feels very hot, you should switch it off and leave it for twenty minutes. Oh, and the first-aid room is next to reception. Any questions?" }
+          {
+            "speaker": "Gareth",
+            "text": "Welcome to your first day. Before you start, here are a few health and safety points for the office."
+          },
+          {
+            "speaker": "Gareth",
+            "text": "First, cables. Please don't leave cables across the floor, because people can trip and fall. If you need a longer cable, ask the IT team. Don't bring an extension cable from home. Second, drinks. If you spill a drink on a keyboard, switch the computer off immediately and call IT. Please keep your drinks on the small table by the window instead."
+          },
+          {
+            "speaker": "Gareth",
+            "text": "Third, your chair. You should adjust the height of your chair so that your eyes are level with the top of the screen. If you get backache, try taking a short walk every hour."
+          },
+          {
+            "speaker": "Gareth",
+            "text": "Finally, laptops. Don't use them on your bed or sofa at home, because they need air to cool down. If a laptop feels very hot, you should switch it off and leave it for twenty minutes. Oh, and the first-aid room is next to reception. Any questions?"
+          }
         ],
         "questions": [
           {
@@ -138,7 +259,11 @@
             "kind": "short",
             "stem": "Who should staff ask if they need a longer cable?",
             "maxWords": 3,
-            "acceptedAnswers": ["the it team", "it team", "it"],
+            "acceptedAnswers": [
+              "the it team",
+              "it team",
+              "it"
+            ],
             "explanation": "\"If you need a longer cable, ask the IT team.\""
           },
           {
@@ -146,7 +271,12 @@
             "kind": "short",
             "stem": "What should be level with the top of the screen?",
             "maxWords": 3,
-            "acceptedAnswers": ["your eyes", "eyes", "the eyes", "my eyes"],
+            "acceptedAnswers": [
+              "your eyes",
+              "eyes",
+              "the eyes",
+              "my eyes"
+            ],
             "explanation": "Chỉnh ghế \"so that your eyes are level with the top of the screen\"."
           },
           {
@@ -154,7 +284,12 @@
             "kind": "short",
             "stem": "What should you try if you get backache?",
             "maxWords": 3,
-            "acceptedAnswers": ["a short walk", "short walk", "walking", "taking a walk"],
+            "acceptedAnswers": [
+              "a short walk",
+              "short walk",
+              "walking",
+              "taking a walk"
+            ],
             "explanation": "\"If you get backache, try taking a short walk every hour.\""
           },
           {
@@ -162,7 +297,12 @@
             "kind": "short",
             "stem": "How long should you leave a very hot laptop switched off?",
             "maxWords": 3,
-            "acceptedAnswers": ["twenty minutes", "20 minutes", "for twenty minutes", "for 20 minutes"],
+            "acceptedAnswers": [
+              "twenty minutes",
+              "20 minutes",
+              "for twenty minutes",
+              "for 20 minutes"
+            ],
             "explanation": "\"switch it off and leave it for twenty minutes\"."
           },
           {
@@ -170,7 +310,11 @@
             "kind": "short",
             "stem": "Where is the first-aid room?",
             "maxWords": 3,
-            "acceptedAnswers": ["next to reception", "near reception", "beside reception"],
+            "acceptedAnswers": [
+              "next to reception",
+              "near reception",
+              "beside reception"
+            ],
             "explanation": "\"the first-aid room is next to reception\"."
           }
         ]
@@ -181,12 +325,30 @@
     "matching": {
       "instructions": "Match the terms (1–5) with the correct definitions (A–F). There is one extra definition that you do not need (Questions 1–5).",
       "definitions": [
-        { "id": "A", "text": "Pain in the hands and arms caused by doing the same movements many times, especially when using a keyboard or mouse." },
-        { "id": "B", "text": "Unnecessary parts of a computer program that use more computing power than they should and give users little benefit." },
-        { "id": "C", "text": "If a computer does this, it stops responding to inputs." },
-        { "id": "D", "text": "Proof that you have passed an examination or course, showing your level of skill or knowledge in a subject." },
-        { "id": "E", "text": "A file in an issue tracking system that records a reported problem and the steps taken to solve it." },
-        { "id": "F", "text": "To pass a problem to a higher level of support because it is more serious." }
+        {
+          "id": "A",
+          "text": "Pain in the hands and arms caused by doing the same movements many times, especially when using a keyboard or mouse."
+        },
+        {
+          "id": "B",
+          "text": "Unnecessary parts of a computer program that use more computing power than they should and give users little benefit."
+        },
+        {
+          "id": "C",
+          "text": "If a computer does this, it stops responding to inputs."
+        },
+        {
+          "id": "D",
+          "text": "Proof that you have passed an examination or course, showing your level of skill or knowledge in a subject."
+        },
+        {
+          "id": "E",
+          "text": "A file in an issue tracking system that records a reported problem and the steps taken to solve it."
+        },
+        {
+          "id": "F",
+          "text": "To pass a problem to a higher level of support because it is more serious."
+        }
       ],
       "items": [
         {
@@ -227,10 +389,22 @@
         "kind": "mcq",
         "stem": "I ______ the graphics card drivers yesterday, but the problem is still there.",
         "options": [
-          { "id": "A", "text": "have updated" },
-          { "id": "B", "text": "updated" },
-          { "id": "C", "text": "update" },
-          { "id": "D", "text": "was updated" }
+          {
+            "id": "A",
+            "text": "have updated"
+          },
+          {
+            "id": "B",
+            "text": "updated"
+          },
+          {
+            "id": "C",
+            "text": "update"
+          },
+          {
+            "id": "D",
+            "text": "was updated"
+          }
         ],
         "answerKey": "B",
         "explanation": "Có mốc thời gian quá khứ xác định (yesterday) nên dùng quá khứ đơn \"updated\", không dùng hiện tại hoàn thành."
@@ -240,10 +414,22 @@
         "kind": "mcq",
         "stem": "I haven't checked the cables ______.",
         "options": [
-          { "id": "A", "text": "already" },
-          { "id": "B", "text": "just" },
-          { "id": "C", "text": "ago" },
-          { "id": "D", "text": "yet" }
+          {
+            "id": "A",
+            "text": "already"
+          },
+          {
+            "id": "B",
+            "text": "just"
+          },
+          {
+            "id": "C",
+            "text": "ago"
+          },
+          {
+            "id": "D",
+            "text": "yet"
+          }
         ],
         "answerKey": "D",
         "explanation": "Trong câu phủ định thì hiện tại hoàn thành, dùng \"yet\" ở cuối câu (chưa…). \"already\" dùng trong câu khẳng định; \"just\" không đứng cuối câu như vậy; \"ago\" đi với quá khứ đơn và cần khoảng thời gian phía trước."
@@ -253,10 +439,22 @@
         "kind": "mcq",
         "stem": "After I graduate, I hope ______ a job as a network engineer.",
         "options": [
-          { "id": "A", "text": "to find" },
-          { "id": "B", "text": "find" },
-          { "id": "C", "text": "finding" },
-          { "id": "D", "text": "found" }
+          {
+            "id": "A",
+            "text": "to find"
+          },
+          {
+            "id": "B",
+            "text": "find"
+          },
+          {
+            "id": "C",
+            "text": "finding"
+          },
+          {
+            "id": "D",
+            "text": "found"
+          }
         ],
         "answerKey": "A",
         "explanation": "hope + to-infinitive để nói về kế hoạch, mong muốn tương lai: \"hope to find\"."
@@ -266,10 +464,22 @@
         "kind": "mcq",
         "stem": "All the lights on the router are off. It ______ be working.",
         "options": [
-          { "id": "A", "text": "must" },
-          { "id": "B", "text": "has to" },
-          { "id": "C", "text": "can't" },
-          { "id": "D", "text": "is" }
+          {
+            "id": "A",
+            "text": "must"
+          },
+          {
+            "id": "B",
+            "text": "has to"
+          },
+          {
+            "id": "C",
+            "text": "can't"
+          },
+          {
+            "id": "D",
+            "text": "is"
+          }
         ],
         "answerKey": "C",
         "explanation": "Đèn tắt hết nên gần như chắc chắn router không hoạt động: dùng \"can't\" để phỏng đoán điều không thể. \"must/has to\" lại có nghĩa là chắc chắn đang hoạt động."
@@ -279,10 +489,22 @@
         "kind": "mcq",
         "stem": "The computer is very slow, and the network light is flashing fast. It ______ be downloading updates in the background.",
         "options": [
-          { "id": "A", "text": "can't" },
-          { "id": "B", "text": "might" },
-          { "id": "C", "text": "mustn't" },
-          { "id": "D", "text": "doesn't" }
+          {
+            "id": "A",
+            "text": "can't"
+          },
+          {
+            "id": "B",
+            "text": "might"
+          },
+          {
+            "id": "C",
+            "text": "mustn't"
+          },
+          {
+            "id": "D",
+            "text": "doesn't"
+          }
         ],
         "answerKey": "B",
         "explanation": "Phỏng đoán khả năng đang diễn ra: might + be + V-ing. Đèn mạng nháy nhanh cho thấy có thể đang tải, nên \"can't\" không hợp; \"mustn't\" là cấm đoán; \"doesn't be\" sai ngữ pháp."
@@ -292,10 +514,22 @@
         "kind": "mcq",
         "stem": "If the computer starts to run very slowly again, you ______ save your work and restart it.",
         "options": [
-          { "id": "A", "text": "would" },
-          { "id": "B", "text": "must to" },
-          { "id": "C", "text": "ought" },
-          { "id": "D", "text": "should" }
+          {
+            "id": "A",
+            "text": "would"
+          },
+          {
+            "id": "B",
+            "text": "must to"
+          },
+          {
+            "id": "C",
+            "text": "ought"
+          },
+          {
+            "id": "D",
+            "text": "should"
+          }
         ],
         "answerKey": "D",
         "explanation": "Đưa lời khuyên trong câu điều kiện loại 1: If + hiện tại đơn, you should + V. \"must to\" và \"ought\" (thiếu to) sai; \"would\" không dùng với vế If ở hiện tại đơn."
@@ -305,10 +539,22 @@
         "kind": "mcq",
         "stem": "If the wi-fi signal is weak, try ______ closer to the router.",
         "options": [
-          { "id": "A", "text": "move" },
-          { "id": "B", "text": "to moving" },
-          { "id": "C", "text": "moving" },
-          { "id": "D", "text": "moved" }
+          {
+            "id": "A",
+            "text": "move"
+          },
+          {
+            "id": "B",
+            "text": "to moving"
+          },
+          {
+            "id": "C",
+            "text": "moving"
+          },
+          {
+            "id": "D",
+            "text": "moved"
+          }
         ],
         "answerKey": "C",
         "explanation": "Gợi ý giải pháp: try + V-ing (thử làm gì): \"try moving\". \"to moving\", \"move\", \"moved\" không đúng sau \"try\" trong cấu trúc này."
@@ -320,10 +566,22 @@
         "kind": "mcq",
         "stem": "Maria works in a ______ centre, where she answers customers' questions by phone.",
         "options": [
-          { "id": "A", "text": "data" },
-          { "id": "B", "text": "production" },
-          { "id": "C", "text": "call" },
-          { "id": "D", "text": "power" }
+          {
+            "id": "A",
+            "text": "data"
+          },
+          {
+            "id": "B",
+            "text": "production"
+          },
+          {
+            "id": "C",
+            "text": "call"
+          },
+          {
+            "id": "D",
+            "text": "power"
+          }
         ],
         "answerKey": "C",
         "explanation": "Call centre (tổng đài) là nơi nhân viên trả lời câu hỏi của khách qua điện thoại."
@@ -333,10 +591,22 @@
         "kind": "mcq",
         "stem": "The message on the screen gave an error ______ that the technician could look up: 0x0004.",
         "options": [
-          { "id": "A", "text": "code" },
-          { "id": "B", "text": "bill" },
-          { "id": "C", "text": "usage" },
-          { "id": "D", "text": "award" }
+          {
+            "id": "A",
+            "text": "code"
+          },
+          {
+            "id": "B",
+            "text": "bill"
+          },
+          {
+            "id": "C",
+            "text": "usage"
+          },
+          {
+            "id": "D",
+            "text": "award"
+          }
         ],
         "answerKey": "A",
         "explanation": "Error code (mã lỗi) là dãy số, chữ hoặc ký hiệu cho biết lỗi gì đã xảy ra."
@@ -346,10 +616,22 @@
         "kind": "mcq",
         "stem": "Don't open emails from people you don't know. They might contain a ______.",
         "options": [
-          { "id": "A", "text": "manual" },
-          { "id": "B", "text": "bill" },
-          { "id": "C", "text": "award" },
-          { "id": "D", "text": "virus" }
+          {
+            "id": "A",
+            "text": "manual"
+          },
+          {
+            "id": "B",
+            "text": "bill"
+          },
+          {
+            "id": "C",
+            "text": "award"
+          },
+          {
+            "id": "D",
+            "text": "virus"
+          }
         ],
         "answerKey": "D",
         "explanation": "Virus là đoạn mã độc bí mật cài vào máy tính, có thể phá huỷ dữ liệu và lây qua email."
@@ -359,10 +641,22 @@
         "kind": "mcq",
         "stem": "The ______ explains how to set up the new scanner.",
         "options": [
-          { "id": "A", "text": "fault" },
-          { "id": "B", "text": "manual" },
-          { "id": "C", "text": "usage" },
-          { "id": "D", "text": "failure" }
+          {
+            "id": "A",
+            "text": "fault"
+          },
+          {
+            "id": "B",
+            "text": "manual"
+          },
+          {
+            "id": "C",
+            "text": "usage"
+          },
+          {
+            "id": "D",
+            "text": "failure"
+          }
         ],
         "answerKey": "B",
         "explanation": "Manual (sách hướng dẫn) là tài liệu hướng dẫn cách dùng máy."
@@ -372,10 +666,22 @@
         "kind": "mcq",
         "stem": "Don't ______ the cable too much, or the wires inside it may break.",
         "options": [
-          { "id": "A", "text": "bend" },
-          { "id": "B", "text": "spill" },
-          { "id": "C", "text": "burn" },
-          { "id": "D", "text": "award" }
+          {
+            "id": "A",
+            "text": "bend"
+          },
+          {
+            "id": "B",
+            "text": "spill"
+          },
+          {
+            "id": "C",
+            "text": "burn"
+          },
+          {
+            "id": "D",
+            "text": "award"
+          }
         ],
         "answerKey": "A",
         "explanation": "Bend (bẻ cong, gập) là làm cho vật không còn thẳng; gập cáp quá nhiều có thể làm đứt dây bên trong."
@@ -385,10 +691,22 @@
         "kind": "mcq",
         "stem": "Never open the power supply unit. You could get an electric ______.",
         "options": [
-          { "id": "A", "text": "fault" },
-          { "id": "B", "text": "bill" },
-          { "id": "C", "text": "shock" },
-          { "id": "D", "text": "usage" }
+          {
+            "id": "A",
+            "text": "fault"
+          },
+          {
+            "id": "B",
+            "text": "bill"
+          },
+          {
+            "id": "C",
+            "text": "shock"
+          },
+          {
+            "id": "D",
+            "text": "usage"
+          }
         ],
         "answerKey": "C",
         "explanation": "Electric shock (điện giật) là cú sốc đột ngột lên cơ thể do dòng điện."
@@ -398,10 +716,22 @@
         "kind": "mcq",
         "stem": "Send your ______ with your job application. It should list your education and the jobs you have done.",
         "options": [
-          { "id": "A", "text": "manual" },
-          { "id": "B", "text": "invoice" },
-          { "id": "C", "text": "bill" },
-          { "id": "D", "text": "CV" }
+          {
+            "id": "A",
+            "text": "manual"
+          },
+          {
+            "id": "B",
+            "text": "invoice"
+          },
+          {
+            "id": "C",
+            "text": "bill"
+          },
+          {
+            "id": "D",
+            "text": "CV"
+          }
         ],
         "answerKey": "D",
         "explanation": "CV (Curriculum Vitae, sơ yếu lý lịch) liệt kê quá trình học tập và các công việc đã làm, gửi kèm đơn xin việc."
@@ -411,10 +741,22 @@
         "kind": "mcq",
         "stem": "During the summer, I got some useful work ______ at a software company.",
         "options": [
-          { "id": "A", "text": "personnel" },
-          { "id": "B", "text": "experience" },
-          { "id": "C", "text": "government" },
-          { "id": "D", "text": "education" }
+          {
+            "id": "A",
+            "text": "personnel"
+          },
+          {
+            "id": "B",
+            "text": "experience"
+          },
+          {
+            "id": "C",
+            "text": "government"
+          },
+          {
+            "id": "D",
+            "text": "education"
+          }
         ],
         "answerKey": "B",
         "explanation": "Work experience (kinh nghiệm làm việc) là trải nghiệm có được khi làm một loại công việc."
@@ -437,10 +779,22 @@
           "kind": "mcq",
           "stem": "When does the app usually crash?",
           "options": [
-            { "id": "A", "text": "When staff upload photos" },
-            { "id": "B", "text": "When staff log in" },
-            { "id": "C", "text": "During the night" },
-            { "id": "D", "text": "When managers use it" }
+            {
+              "id": "A",
+              "text": "When staff upload photos"
+            },
+            {
+              "id": "B",
+              "text": "When staff log in"
+            },
+            {
+              "id": "C",
+              "text": "During the night"
+            },
+            {
+              "id": "D",
+              "text": "When managers use it"
+            }
           ],
           "answerKey": "A",
           "explanation": "Đoạn 1: ứng dụng bị sập \"usually when staff try to upload photos of broken items\"."
@@ -450,10 +804,22 @@
           "kind": "mcq",
           "stem": "Why is Kenji sure that the wi-fi is not the cause?",
           "options": [
-            { "id": "A", "text": "The developer told him." },
-            { "id": "B", "text": "The app works without a network." },
-            { "id": "C", "text": "The app also crashes without the wi-fi." },
-            { "id": "D", "text": "Staff only use mobile data." }
+            {
+              "id": "A",
+              "text": "The developer told him."
+            },
+            {
+              "id": "B",
+              "text": "The app works without a network."
+            },
+            {
+              "id": "C",
+              "text": "The app also crashes without the wi-fi."
+            },
+            {
+              "id": "D",
+              "text": "Staff only use mobile data."
+            }
           ],
           "answerKey": "C",
           "explanation": "Đoạn 2: khi tắt wi-fi và dùng dữ liệu di động, ứng dụng vẫn sập y như cũ, \"so the hotel's wi-fi can't be the cause\". Ứng dụng không chạy tốt khi không có wi-fi (B sai)."
@@ -463,10 +829,22 @@
           "kind": "mcq",
           "stem": "On which phones does the app crash?",
           "options": [
-            { "id": "A", "text": "Only the managers' phones" },
-            { "id": "B", "text": "Only older phones" },
-            { "id": "C", "text": "All the staff phones" },
-            { "id": "D", "text": "Only the new models" }
+            {
+              "id": "A",
+              "text": "Only the managers' phones"
+            },
+            {
+              "id": "B",
+              "text": "Only older phones"
+            },
+            {
+              "id": "C",
+              "text": "All the staff phones"
+            },
+            {
+              "id": "D",
+              "text": "Only the new models"
+            }
           ],
           "answerKey": "B",
           "explanation": "Đoạn 2: \"the crashes only happen on older phones and never on the new models that the managers use\"."
@@ -476,10 +854,22 @@
           "kind": "mcq",
           "stem": "What hasn't Kenji done yet?",
           "options": [
-            { "id": "A", "text": "Updated the app on every phone" },
-            { "id": "B", "text": "Checked the hotel's wi-fi" },
-            { "id": "C", "text": "Asked staff to record the crashes" },
-            { "id": "D", "text": "Contacted the app developer" }
+            {
+              "id": "A",
+              "text": "Updated the app on every phone"
+            },
+            {
+              "id": "B",
+              "text": "Checked the hotel's wi-fi"
+            },
+            {
+              "id": "C",
+              "text": "Asked staff to record the crashes"
+            },
+            {
+              "id": "D",
+              "text": "Contacted the app developer"
+            }
           ],
           "answerKey": "D",
           "explanation": "Đoạn 3: \"He hasn't contacted the app developer yet\". Cập nhật ứng dụng, kiểm tra wi-fi và nhờ nhân viên ghi lại thời điểm sập là những việc đã làm."
@@ -489,10 +879,22 @@
           "kind": "mcq",
           "stem": "What has Kenji suggested that staff should try?",
           "options": [
-            { "id": "A", "text": "Reducing the photo size" },
-            { "id": "B", "text": "Buying new phones" },
-            { "id": "C", "text": "Turning off the wi-fi" },
-            { "id": "D", "text": "Deleting the app" }
+            {
+              "id": "A",
+              "text": "Reducing the photo size"
+            },
+            {
+              "id": "B",
+              "text": "Buying new phones"
+            },
+            {
+              "id": "C",
+              "text": "Turning off the wi-fi"
+            },
+            {
+              "id": "D",
+              "text": "Deleting the app"
+            }
           ],
           "answerKey": "A",
           "explanation": "Đoạn 4: \"Staff should try reducing the photo size in the camera settings.\""
@@ -582,22 +984,25 @@
     "email": {
       "id": "W-EMAIL",
       "recipient": "Ben",
-      "task": "You are an IT support technician. Ben, a sales manager, reported that his laptop has been very slow this week, and you have started to investigate. Write an email to Ben using the notes below. In your email you must use:\n- the present perfect with already and with yet (I have already…, I haven't… yet);\n- may, might or could to talk about a possible cause;\n- should or try + -ing to suggest a solution.\nWrite 80–100 words.",
+      "task": "You are an IT support technician. Ben, a sales manager, reported that his laptop has been very slow this week. Write an email to Ben explaining what you have already done and how he can make his laptop faster, using the notes below. In your email you must use:\n- the present perfect with already and with yet (I have already…, I haven't… yet);\n- may, might or could to talk about a possible cause;\n- should or try + -ing to suggest a solution.\nFollow the standard layout for an email giving instructions: From / To / Date / Subject, a greeting, It should be quite easy to …, the steps with First / Then / Next / After that / Finally, a reminder (Don't forget to … when you've finished.), then Best wishes and your name, position and department.\nWrite 80–100 words (do not count the From, To, Date and Subject lines).",
       "bullets": [
-        "thank Ben for reporting the problem",
-        "already: run a virus scan / no viruses found",
-        "already: delete old temporary files",
-        "not yet: check the hard drive",
-        "possible causes: the old hard drive / too many programs start automatically",
-        "try closing programs Ben doesn't use / bring the laptop to the IT office on Friday if it is still slow"
+        "already: run a virus scan / not yet: check the hard drive",
+        "try closing programs Ben doesn't use",
+        "open Task Manager / stop programs that start automatically (a possible cause)",
+        "delete old temporary files / restart the laptop",
+        "if it is still slow: bring the laptop to the IT office on Friday (the old hard drive could be the cause)",
+        "reminder: tell the IT team if the laptop is faster"
       ],
-      "wordRange": [80, 100],
+      "wordRange": [
+        80,
+        100
+      ],
       "targetGrammar": [
         "Present perfect with already and yet: I have already run…; I haven't checked… yet",
         "Speculating about causes: may, might, could",
         "Suggesting solutions: should; try + -ing; If…, you should…"
       ],
-      "modelAnswer": "Dear Ben,\n\nThank you for reporting the problem with your laptop. I have already run a virus scan, and I didn't find any viruses. I have also deleted some old temporary files. However, I haven't checked the hard drive yet. The problem might be the old hard drive, or it could be that too many programs start automatically. For now, try closing any programs that you don't use. If the laptop is still slow, you should bring it to the IT office on Friday.\n\nBest regards,\nAnna"
+      "modelAnswer": "From: Ngo Duc Manh\nTo: Ben\nDate: 25th November\nSubject: Making your laptop faster\n\nHi Ben,\n\nI have already run a virus scan, but I haven't checked the hard drive yet.\nIt should be quite easy to make your laptop faster.\nFirst, try closing the programs that you don't use.\nThen, open Task Manager and stop programs that start automatically. They might be the cause.\nNext, delete old temporary files.\nAfter that, restart the laptop.\nFinally, if it is still slow, you should bring it to IT on Friday.\nDon't forget to tell me if it is faster when you've finished.\n\nBest wishes,\nNgo Duc Manh\nSupport Technician\nHelp Desk Department"
     }
   },
   "speaking": {

@@ -16,6 +16,7 @@ import {
   SKILL_MAX,
   TOTAL_MAX,
   WORD_LIMITS,
+  countEmailWords,
   countWords,
   normalizeAnswer,
   type McqQuestion,
@@ -245,7 +246,32 @@ function validateExam(exam: UnitExam, file: string): Report {
     if (!em?.recipient?.trim() || !em?.task?.trim()) r.errors.push(`Email: thiếu recipient hoặc task`);
     if (!em?.targetGrammar?.length) r.errors.push(`Email: thiếu targetGrammar`);
     if (!em?.modelAnswer?.trim()) r.errors.push(`Email: thiếu modelAnswer`);
-    else checkWordRange(r, "Email modelAnswer", em.modelAnswer, [80, 100]);
+    else {
+      const n = countEmailWords(em.modelAnswer);
+      if (n < 80 || n > 100) r.errors.push(`Email modelAnswer: phần thân ${n} từ, yêu cầu 80–100`);
+      // Khung email hướng dẫn của giáo viên (docs/exam-format.md mục 3).
+      const lines = em.modelAnswer.split(/\r?\n/).map((l) => l.trim());
+      const required: [string, RegExp][] = [
+        ["dòng From:", /^From:\s*\S/],
+        [`dòng To: ${em.recipient}`, new RegExp(`^To:\\s*${em.recipient}\\b`)],
+        ["dòng Date:", /^Date:\s*\S/],
+        ["dòng Subject:", /^Subject:\s*\S/],
+        [`lời chào Hi/Dear ${em.recipient},`, new RegExp(`^(Hi|Dear) ${em.recipient},$`)],
+        ["câu mở It should be quite easy to", /^It should be quite easy to /],
+        ["First,", /^First, /],
+        ["Then,", /^Then, /],
+        ["Next,", /^Next, /],
+        ["After that,", /^After that, /],
+        ["Finally,", /^Finally, /],
+        ["câu nhắc Don't forget to … when you've finished", /^Don't forget to .+ when you've finished\.$/],
+        ["Best wishes,", /^Best wishes,$/],
+      ];
+      for (const [label, re] of required)
+        if (!lines.some((l) => re.test(l))) r.errors.push(`Email modelAnswer: thiếu ${label}`);
+      const sign = lines.indexOf("Best wishes,");
+      if (sign >= 0 && lines.slice(sign + 1).filter(Boolean).length < 3)
+        r.errors.push(`Email modelAnswer: sau Best wishes, cần 3 dòng họ tên, vị trí, bộ phận`);
+    }
   }
 
   // ---- Speaking ----

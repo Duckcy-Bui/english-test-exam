@@ -23,7 +23,8 @@
     "Listening A lấy cảm hứng từ bài GUI operations (track 10); Listening B lấy cảm hứng từ bài System specifications (track 07, 09). Không chép Audio script.",
     "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại, xử lý giống Unit 6.",
     "Thứ tự phương án R6–R25 được sắp để phân bố đáp án đều.",
-    "Bản r1 (theo báo cáo et-auditor 3f950ad): R15 thay phương án nhiễu khác từ loại; R18 đổi thao tác để không lặp việc kéo tệp vào thư mục của Listening A và S2; R19 bỏ khẳng định về giá, nói về quyền xem và sửa mã nguồn; S3 nói rõ là lớp kết hợp trực tiếp và trực tuyến, sửa cues và bài mẫu theo."
+    "Bản r1 (theo báo cáo et-auditor 3f950ad): R15 thay phương án nhiễu khác từ loại; R18 đổi thao tác để không lặp việc kéo tệp vào thư mục của Listening A và S2; R19 bỏ khẳng định về giá, nói về quyền xem và sửa mã nguồn; S3 nói rõ là lớp kết hợp trực tiếp và trực tuyến, sửa cues và bài mẫu theo.",
+    "Email theo khung giáo viên (2026-10-14): email hướng dẫn From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng."
   ],
   "listening": {
     "parts": [
@@ -32,24 +33,72 @@
         "instructions": "Listen to the phone call and choose the best answer A, B, C or D (Questions L1–L5).",
         "context": "Lucy, who works in the accounts department, phones Omar at the IT helpdesk.",
         "speakers": [
-          { "name": "Omar", "voice": "male" },
-          { "name": "Lucy", "voice": "female" }
+          {
+            "name": "Omar",
+            "voice": "male"
+          },
+          {
+            "name": "Lucy",
+            "voice": "female"
+          }
         ],
         "script": [
-          { "speaker": "Omar", "text": "IT helpdesk, Omar speaking." },
-          { "speaker": "Lucy", "text": "Hi, it's Lucy from Accounts. I saved a spreadsheet this morning, but now I can't find it anywhere." },
-          { "speaker": "Omar", "text": "OK, don't worry. Do you remember the filename?" },
-          { "speaker": "Lucy", "text": "I think it's June Sales." },
-          { "speaker": "Omar", "text": "Right. First, could you just click on the folder icon at the bottom of the screen? That opens File Explorer." },
-          { "speaker": "Lucy", "text": "OK, it's open." },
-          { "speaker": "Omar", "text": "Now click on This PC in the left-hand pane. Then type June Sales in the search box in the top right-hand corner and press Enter." },
-          { "speaker": "Lucy", "text": "It's searching... Yes! There it is. It's in a folder called Old Reports." },
-          { "speaker": "Omar", "text": "That's why you couldn't find it. You probably saved it there by mistake. Now, can you right-click on the file and select Properties? I'd like to check the size." },
-          { "speaker": "Lucy", "text": "It says two point four megabytes." },
-          { "speaker": "Omar", "text": "That's fine. Finally, just drag the file into your Accounts folder so that you can find it easily next time." },
-          { "speaker": "Lucy", "text": "OK. Do I need to delete it from Old Reports after that?" },
-          { "speaker": "Omar", "text": "No, dragging moves the file, so there won't be a second copy." },
-          { "speaker": "Lucy", "text": "Done. Thanks so much, Omar!" }
+          {
+            "speaker": "Omar",
+            "text": "IT helpdesk, Omar speaking."
+          },
+          {
+            "speaker": "Lucy",
+            "text": "Hi, it's Lucy from Accounts. I saved a spreadsheet this morning, but now I can't find it anywhere."
+          },
+          {
+            "speaker": "Omar",
+            "text": "OK, don't worry. Do you remember the filename?"
+          },
+          {
+            "speaker": "Lucy",
+            "text": "I think it's June Sales."
+          },
+          {
+            "speaker": "Omar",
+            "text": "Right. First, could you just click on the folder icon at the bottom of the screen? That opens File Explorer."
+          },
+          {
+            "speaker": "Lucy",
+            "text": "OK, it's open."
+          },
+          {
+            "speaker": "Omar",
+            "text": "Now click on This PC in the left-hand pane. Then type June Sales in the search box in the top right-hand corner and press Enter."
+          },
+          {
+            "speaker": "Lucy",
+            "text": "It's searching... Yes! There it is. It's in a folder called Old Reports."
+          },
+          {
+            "speaker": "Omar",
+            "text": "That's why you couldn't find it. You probably saved it there by mistake. Now, can you right-click on the file and select Properties? I'd like to check the size."
+          },
+          {
+            "speaker": "Lucy",
+            "text": "It says two point four megabytes."
+          },
+          {
+            "speaker": "Omar",
+            "text": "That's fine. Finally, just drag the file into your Accounts folder so that you can find it easily next time."
+          },
+          {
+            "speaker": "Lucy",
+            "text": "OK. Do I need to delete it from Old Reports after that?"
+          },
+          {
+            "speaker": "Omar",
+            "text": "No, dragging moves the file, so there won't be a second copy."
+          },
+          {
+            "speaker": "Lucy",
+            "text": "Done. Thanks so much, Omar!"
+          }
         ],
         "questions": [
           {
@@ -57,10 +106,22 @@
             "kind": "mcq",
             "stem": "What is Lucy's problem?",
             "options": [
-              { "id": "A", "text": "She can't find a spreadsheet she saved." },
-              { "id": "B", "text": "Her computer won't start this morning." },
-              { "id": "C", "text": "She deleted an important spreadsheet." },
-              { "id": "D", "text": "She can't open File Explorer." }
+              {
+                "id": "A",
+                "text": "She can't find a spreadsheet she saved."
+              },
+              {
+                "id": "B",
+                "text": "Her computer won't start this morning."
+              },
+              {
+                "id": "C",
+                "text": "She deleted an important spreadsheet."
+              },
+              {
+                "id": "D",
+                "text": "She can't open File Explorer."
+              }
             ],
             "answerKey": "A",
             "explanation": "Lucy nói \"I saved a spreadsheet this morning, but now I can't find it anywhere.\""
@@ -70,10 +131,22 @@
             "kind": "mcq",
             "stem": "What does Omar ask Lucy to do first?",
             "options": [
-              { "id": "A", "text": "Type the filename" },
-              { "id": "B", "text": "Click on the folder icon" },
-              { "id": "C", "text": "Right-click on the file" },
-              { "id": "D", "text": "Restart her computer" }
+              {
+                "id": "A",
+                "text": "Type the filename"
+              },
+              {
+                "id": "B",
+                "text": "Click on the folder icon"
+              },
+              {
+                "id": "C",
+                "text": "Right-click on the file"
+              },
+              {
+                "id": "D",
+                "text": "Restart her computer"
+              }
             ],
             "answerKey": "B",
             "explanation": "\"First, could you just click on the folder icon at the bottom of the screen?\" Gõ tên tệp và nhấp chuột phải là các bước sau."
@@ -83,10 +156,22 @@
             "kind": "mcq",
             "stem": "Where was the file?",
             "options": [
-              { "id": "A", "text": "On the desktop" },
-              { "id": "B", "text": "In the Accounts folder" },
-              { "id": "C", "text": "In a folder called Old Reports" },
-              { "id": "D", "text": "In the Recycle Bin" }
+              {
+                "id": "A",
+                "text": "On the desktop"
+              },
+              {
+                "id": "B",
+                "text": "In the Accounts folder"
+              },
+              {
+                "id": "C",
+                "text": "In a folder called Old Reports"
+              },
+              {
+                "id": "D",
+                "text": "In the Recycle Bin"
+              }
             ],
             "answerKey": "C",
             "explanation": "Lucy tìm thấy tệp \"in a folder called Old Reports\". Thư mục Accounts là nơi Omar bảo kéo tệp vào sau đó."
@@ -96,10 +181,22 @@
             "kind": "mcq",
             "stem": "How big is the file?",
             "options": [
-              { "id": "A", "text": "2.4 kilobytes" },
-              { "id": "B", "text": "24 megabytes" },
-              { "id": "C", "text": "2.4 megabytes" },
-              { "id": "D", "text": "2.4 gigabytes" }
+              {
+                "id": "A",
+                "text": "2.4 kilobytes"
+              },
+              {
+                "id": "B",
+                "text": "24 megabytes"
+              },
+              {
+                "id": "C",
+                "text": "2.4 megabytes"
+              },
+              {
+                "id": "D",
+                "text": "2.4 gigabytes"
+              }
             ],
             "answerKey": "C",
             "explanation": "Lucy đọc \"two point four megabytes\" = 2.4 MB."
@@ -109,10 +206,22 @@
             "kind": "mcq",
             "stem": "Why does Omar ask Lucy to drag the file into her Accounts folder?",
             "options": [
-              { "id": "A", "text": "To make a backup copy of it" },
-              { "id": "B", "text": "So that she can find it easily next time" },
-              { "id": "C", "text": "To make the file smaller" },
-              { "id": "D", "text": "Because the Old Reports folder is full" }
+              {
+                "id": "A",
+                "text": "To make a backup copy of it"
+              },
+              {
+                "id": "B",
+                "text": "So that she can find it easily next time"
+              },
+              {
+                "id": "C",
+                "text": "To make the file smaller"
+              },
+              {
+                "id": "D",
+                "text": "Because the Old Reports folder is full"
+              }
             ],
             "answerKey": "B",
             "explanation": "\"just drag the file into your Accounts folder so that you can find it easily next time\"."
@@ -124,12 +233,24 @@
         "instructions": "Listen to the message and answer the questions. Write NO MORE THAN THREE WORDS for each answer (Questions L6–L10).",
         "context": "Megan, an IT manager, tells Jack, an IT assistant, about the new laptops for the sales team.",
         "speakers": [
-          { "name": "Megan", "voice": "female" }
+          {
+            "name": "Megan",
+            "voice": "female"
+          }
         ],
         "script": [
-          { "speaker": "Megan", "text": "Hi Jack, it's Megan. Before the meeting, let me tell you about the new laptops for the sales team. Each one has a two point six gigahertz quad-core processor, sixteen gigabytes of memory and a one terabyte solid state drive." },
-          { "speaker": "Megan", "text": "There's no optical drive, so if anyone needs to use a DVD, they'll need an external drive. The screen is fourteen inches, and the laptops are very light, so they're easy to carry. They have three USB ports and a headphone socket, but there's no Ethernet connector, so staff will have to use the wi-fi in the office. The battery lasts about ten hours. Each laptop also comes with a bag and a wireless mouse, so please check that those are in the boxes too." },
-          { "speaker": "Megan", "text": "Could you check the delivery when it arrives on Thursday? The supplier is sending twenty laptops, and I'd like you to make sure they're all there. If anything is missing, please phone the supplier straight away and let me know before the end of the day. Thanks!" }
+          {
+            "speaker": "Megan",
+            "text": "Hi Jack, it's Megan. Before the meeting, let me tell you about the new laptops for the sales team. Each one has a two point six gigahertz quad-core processor, sixteen gigabytes of memory and a one terabyte solid state drive."
+          },
+          {
+            "speaker": "Megan",
+            "text": "There's no optical drive, so if anyone needs to use a DVD, they'll need an external drive. The screen is fourteen inches, and the laptops are very light, so they're easy to carry. They have three USB ports and a headphone socket, but there's no Ethernet connector, so staff will have to use the wi-fi in the office. The battery lasts about ten hours. Each laptop also comes with a bag and a wireless mouse, so please check that those are in the boxes too."
+          },
+          {
+            "speaker": "Megan",
+            "text": "Could you check the delivery when it arrives on Thursday? The supplier is sending twenty laptops, and I'd like you to make sure they're all there. If anything is missing, please phone the supplier straight away and let me know before the end of the day. Thanks!"
+          }
         ],
         "questions": [
           {
@@ -137,7 +258,12 @@
             "kind": "short",
             "stem": "How much memory does each laptop have?",
             "maxWords": 3,
-            "acceptedAnswers": ["sixteen gigabytes", "16 gigabytes", "16 gb", "sixteen gb"],
+            "acceptedAnswers": [
+              "sixteen gigabytes",
+              "16 gigabytes",
+              "16 gb",
+              "sixteen gb"
+            ],
             "explanation": "Megan nói \"sixteen gigabytes of memory\". Một terabyte là dung lượng ổ SSD, không phải bộ nhớ."
           },
           {
@@ -145,7 +271,11 @@
             "kind": "short",
             "stem": "What will staff need if they want to use a DVD?",
             "maxWords": 3,
-            "acceptedAnswers": ["an external drive", "external drive", "external dvd drive"],
+            "acceptedAnswers": [
+              "an external drive",
+              "external drive",
+              "external dvd drive"
+            ],
             "explanation": "Máy không có ổ quang nên \"they'll need an external drive\"."
           },
           {
@@ -153,7 +283,13 @@
             "kind": "short",
             "stem": "How will staff connect to the network in the office?",
             "maxWords": 3,
-            "acceptedAnswers": ["the wi-fi", "wi-fi", "wifi", "by wi-fi", "use the wi-fi"],
+            "acceptedAnswers": [
+              "the wi-fi",
+              "wi-fi",
+              "wifi",
+              "by wi-fi",
+              "use the wi-fi"
+            ],
             "explanation": "Máy không có cổng Ethernet nên \"staff will have to use the wi-fi in the office\"."
           },
           {
@@ -161,7 +297,12 @@
             "kind": "short",
             "stem": "How long does the battery last?",
             "maxWords": 3,
-            "acceptedAnswers": ["about ten hours", "ten hours", "10 hours", "about 10 hours"],
+            "acceptedAnswers": [
+              "about ten hours",
+              "ten hours",
+              "10 hours",
+              "about 10 hours"
+            ],
             "explanation": "\"The battery lasts about ten hours.\""
           },
           {
@@ -169,7 +310,10 @@
             "kind": "short",
             "stem": "On which day will the delivery arrive?",
             "maxWords": 3,
-            "acceptedAnswers": ["thursday", "on thursday"],
+            "acceptedAnswers": [
+              "thursday",
+              "on thursday"
+            ],
             "explanation": "\"Could you check the delivery when it arrives on Thursday?\""
           }
         ]
@@ -180,12 +324,30 @@
     "matching": {
       "instructions": "Match the terms (1–5) with the correct definitions (A–F). There is one extra definition that you do not need (Questions 1–5).",
       "definitions": [
-        { "id": "A", "text": "A board where all the circuits of a computer are placed." },
-        { "id": "B", "text": "A pair of special glasses that let you see an environment produced by a computer that looks and seems real." },
-        { "id": "C", "text": "To divide the storage area of a hard disk into two or more parts." },
-        { "id": "D", "text": "A unique set of numbers and letters that you type in to prove that you have a licence to use a program." },
-        { "id": "E", "text": "A video camera that shows what it is filming on a website or on another person's computer." },
-        { "id": "F", "text": "The coloured bar at the top of a window that shows the name of the program." }
+        {
+          "id": "A",
+          "text": "A board where all the circuits of a computer are placed."
+        },
+        {
+          "id": "B",
+          "text": "A pair of special glasses that let you see an environment produced by a computer that looks and seems real."
+        },
+        {
+          "id": "C",
+          "text": "To divide the storage area of a hard disk into two or more parts."
+        },
+        {
+          "id": "D",
+          "text": "A unique set of numbers and letters that you type in to prove that you have a licence to use a program."
+        },
+        {
+          "id": "E",
+          "text": "A video camera that shows what it is filming on a website or on another person's computer."
+        },
+        {
+          "id": "F",
+          "text": "The coloured bar at the top of a window that shows the name of the program."
+        }
       ],
       "items": [
         {
@@ -226,10 +388,22 @@
         "kind": "mcq",
         "stem": "1,000 gigabytes is the same as one ______.",
         "options": [
-          { "id": "A", "text": "megabyte" },
-          { "id": "B", "text": "terabyte" },
-          { "id": "C", "text": "kilobyte" },
-          { "id": "D", "text": "nanobyte" }
+          {
+            "id": "A",
+            "text": "megabyte"
+          },
+          {
+            "id": "B",
+            "text": "terabyte"
+          },
+          {
+            "id": "C",
+            "text": "kilobyte"
+          },
+          {
+            "id": "D",
+            "text": "nanobyte"
+          }
         ],
         "answerKey": "B",
         "explanation": "Tiền tố tera- lớn gấp 1.000 lần giga-: 1.000 GB = 1 TB. Mega- và kilo- nhỏ hơn giga-."
@@ -239,10 +413,22 @@
         "kind": "mcq",
         "stem": "The cable is 2.75 metres long. How do we say '2.75'?",
         "options": [
-          { "id": "A", "text": "two point seven five" },
-          { "id": "B", "text": "two point seventy-five" },
-          { "id": "C", "text": "two comma seven five" },
-          { "id": "D", "text": "two and seventy-five" }
+          {
+            "id": "A",
+            "text": "two point seven five"
+          },
+          {
+            "id": "B",
+            "text": "two point seventy-five"
+          },
+          {
+            "id": "C",
+            "text": "two comma seven five"
+          },
+          {
+            "id": "D",
+            "text": "two and seventy-five"
+          }
         ],
         "answerKey": "A",
         "explanation": "Số thập phân đọc \"point\" ở dấu chấm và đọc từng chữ số sau dấu chấm: two point seven five, không đọc \"seventy-five\"."
@@ -252,10 +438,22 @@
         "kind": "mcq",
         "stem": "______, click the Start button. Then select 'Control Panel'.",
         "options": [
-          { "id": "A", "text": "Finally" },
-          { "id": "B", "text": "Last" },
-          { "id": "C", "text": "First" },
-          { "id": "D", "text": "After" }
+          {
+            "id": "A",
+            "text": "Finally"
+          },
+          {
+            "id": "B",
+            "text": "Last"
+          },
+          {
+            "id": "C",
+            "text": "First"
+          },
+          {
+            "id": "D",
+            "text": "After"
+          }
         ],
         "answerKey": "C",
         "explanation": "Bước đầu tiên dùng từ nối trình tự \"First\"; câu sau là \"Then …\". \"Finally/Last\" chỉ bước cuối; \"After\" không đứng một mình như vậy."
@@ -265,10 +463,22 @@
         "kind": "mcq",
         "stem": "Plug the projector cable ______ the video socket on the laptop.",
         "options": [
-          { "id": "A", "text": "from" },
-          { "id": "B", "text": "off" },
-          { "id": "C", "text": "out" },
-          { "id": "D", "text": "into" }
+          {
+            "id": "A",
+            "text": "from"
+          },
+          {
+            "id": "B",
+            "text": "off"
+          },
+          {
+            "id": "C",
+            "text": "out"
+          },
+          {
+            "id": "D",
+            "text": "into"
+          }
         ],
         "answerKey": "D",
         "explanation": "Câu có hai tân ngữ: plug + tân ngữ + into + tân ngữ (cắm cáp vào ổ cắm)."
@@ -278,10 +488,22 @@
         "kind": "mcq",
         "stem": "When you have finished, unplug the headphones ______ the computer.",
         "options": [
-          { "id": "A", "text": "into" },
-          { "id": "B", "text": "from" },
-          { "id": "C", "text": "on" },
-          { "id": "D", "text": "at" }
+          {
+            "id": "A",
+            "text": "into"
+          },
+          {
+            "id": "B",
+            "text": "from"
+          },
+          {
+            "id": "C",
+            "text": "on"
+          },
+          {
+            "id": "D",
+            "text": "at"
+          }
         ],
         "answerKey": "B",
         "explanation": "unplug + tân ngữ + from + tân ngữ (rút tai nghe ra khỏi máy tính)."
@@ -291,10 +513,22 @@
         "kind": "mcq",
         "stem": "I use an external hard drive ______ back up my photos.",
         "options": [
-          { "id": "A", "text": "for" },
-          { "id": "B", "text": "so that" },
-          { "id": "C", "text": "to" },
-          { "id": "D", "text": "because" }
+          {
+            "id": "A",
+            "text": "for"
+          },
+          {
+            "id": "B",
+            "text": "so that"
+          },
+          {
+            "id": "C",
+            "text": "to"
+          },
+          {
+            "id": "D",
+            "text": "because"
+          }
         ],
         "answerKey": "C",
         "explanation": "Chỉ mục đích với động từ nguyên mẫu dùng \"to + V\". \"for\" đi với danh từ, \"so that\" và \"because\" đi với mệnh đề."
@@ -304,10 +538,22 @@
         "kind": "mcq",
         "stem": "I bought a new graphics card ______ my computer was too slow for video editing.",
         "options": [
-          { "id": "A", "text": "for" },
-          { "id": "B", "text": "to" },
-          { "id": "C", "text": "so that" },
-          { "id": "D", "text": "because" }
+          {
+            "id": "A",
+            "text": "for"
+          },
+          {
+            "id": "B",
+            "text": "to"
+          },
+          {
+            "id": "C",
+            "text": "so that"
+          },
+          {
+            "id": "D",
+            "text": "because"
+          }
         ],
         "answerKey": "D",
         "explanation": "Vế sau nêu lý do (máy quá chậm), là một mệnh đề nên dùng \"because\". \"so that\" chỉ mục đích, không hợp nghĩa."
@@ -319,10 +565,22 @@
         "kind": "mcq",
         "stem": "Drag the ______ down to see the bottom of the page.",
         "options": [
-          { "id": "A", "text": "scroll bar" },
-          { "id": "B", "text": "tick box" },
-          { "id": "C", "text": "filename" },
-          { "id": "D", "text": "menu" }
+          {
+            "id": "A",
+            "text": "scroll bar"
+          },
+          {
+            "id": "B",
+            "text": "tick box"
+          },
+          {
+            "id": "C",
+            "text": "filename"
+          },
+          {
+            "id": "D",
+            "text": "menu"
+          }
         ],
         "answerKey": "A",
         "explanation": "Scroll bar (thanh cuộn) nằm ở cạnh màn hình, kéo lên xuống để xem phần trên hoặc dưới trang."
@@ -332,10 +590,22 @@
         "kind": "mcq",
         "stem": "______ on the folder icon to open it.",
         "options": [
-          { "id": "A", "text": "Unplug" },
-          { "id": "B", "text": "Double click" },
-          { "id": "C", "text": "Scroll" },
-          { "id": "D", "text": "Reboot" }
+          {
+            "id": "A",
+            "text": "Unplug"
+          },
+          {
+            "id": "B",
+            "text": "Double click"
+          },
+          {
+            "id": "C",
+            "text": "Scroll"
+          },
+          {
+            "id": "D",
+            "text": "Reboot"
+          }
         ],
         "answerKey": "B",
         "explanation": "Double click (nhấp đúp) vào biểu tượng để mở thư mục."
@@ -345,10 +615,22 @@
         "kind": "mcq",
         "stem": "Click the ______ button to make the window very small but keep the program open.",
         "options": [
-          { "id": "A", "text": "Maximise" },
-          { "id": "B", "text": "Restart" },
-          { "id": "C", "text": "Minimise" },
-          { "id": "D", "text": "Close" }
+          {
+            "id": "A",
+            "text": "Maximise"
+          },
+          {
+            "id": "B",
+            "text": "Restart"
+          },
+          {
+            "id": "C",
+            "text": "Minimise"
+          },
+          {
+            "id": "D",
+            "text": "Close"
+          }
         ],
         "answerKey": "C",
         "explanation": "Nút Minimise thu nhỏ cửa sổ nhưng chương trình vẫn mở. Maximise phóng to hết cỡ; Close đóng chương trình; Restart khởi động lại."
@@ -358,10 +640,22 @@
         "kind": "mcq",
         "stem": "We use a ______ to show slides on a large screen in the meeting room.",
         "options": [
-          { "id": "A", "text": "microphone" },
-          { "id": "B", "text": "speaker" },
-          { "id": "C", "text": "headset" },
-          { "id": "D", "text": "projector" }
+          {
+            "id": "A",
+            "text": "microphone"
+          },
+          {
+            "id": "B",
+            "text": "speaker"
+          },
+          {
+            "id": "C",
+            "text": "headset"
+          },
+          {
+            "id": "D",
+            "text": "projector"
+          }
         ],
         "answerKey": "D",
         "explanation": "Projector (máy chiếu) chiếu hình ảnh lên màn hình hoặc bề mặt phẳng."
@@ -371,10 +665,22 @@
         "kind": "mcq",
         "stem": "Please wear ______ if you listen to music in the office, so that you don't disturb other people.",
         "options": [
-          { "id": "A", "text": "speakers" },
-          { "id": "B", "text": "microphones" },
-          { "id": "C", "text": "headphones" },
-          { "id": "D", "text": "projectors" }
+          {
+            "id": "A",
+            "text": "speakers"
+          },
+          {
+            "id": "B",
+            "text": "microphones"
+          },
+          {
+            "id": "C",
+            "text": "headphones"
+          },
+          {
+            "id": "D",
+            "text": "projectors"
+          }
         ],
         "answerKey": "C",
         "explanation": "Headphones (tai nghe) đeo trên tai để nghe mà người khác không nghe thấy. Speakers phát ra loa ngoài."
@@ -384,10 +690,22 @@
         "kind": "mcq",
         "stem": "______ the window so that it fills only half of the screen.",
         "options": [
-          { "id": "A", "text": "Resize" },
-          { "id": "B", "text": "Press" },
-          { "id": "C", "text": "Unplug" },
-          { "id": "D", "text": "Reboot" }
+          {
+            "id": "A",
+            "text": "Resize"
+          },
+          {
+            "id": "B",
+            "text": "Press"
+          },
+          {
+            "id": "C",
+            "text": "Unplug"
+          },
+          {
+            "id": "D",
+            "text": "Reboot"
+          }
         ],
         "answerKey": "A",
         "explanation": "Resize (đổi kích thước) là thay đổi kích cỡ của cửa sổ."
@@ -397,10 +715,22 @@
         "kind": "mcq",
         "stem": "______ software lets users see the program code and change it themselves.",
         "options": [
-          { "id": "A", "text": "Proprietary" },
-          { "id": "B", "text": "Open source" },
-          { "id": "C", "text": "External" },
-          { "id": "D", "text": "Internal" }
+          {
+            "id": "A",
+            "text": "Proprietary"
+          },
+          {
+            "id": "B",
+            "text": "Open source"
+          },
+          {
+            "id": "C",
+            "text": "External"
+          },
+          {
+            "id": "D",
+            "text": "Internal"
+          }
         ],
         "answerKey": "B",
         "explanation": "Open source (mã nguồn mở) là phần mềm cung cấp kèm mã nguồn để người dùng xem và tự sửa. Proprietary là phần mềm độc quyền, người dùng không xem hay sửa được mã nguồn."
@@ -410,10 +740,22 @@
         "kind": "mcq",
         "stem": "An ______ hard drive is not inside the computer case; it connects with a USB cable.",
         "options": [
-          { "id": "A", "text": "internal" },
-          { "id": "B", "text": "optical" },
-          { "id": "C", "text": "audio" },
-          { "id": "D", "text": "external" }
+          {
+            "id": "A",
+            "text": "internal"
+          },
+          {
+            "id": "B",
+            "text": "optical"
+          },
+          {
+            "id": "C",
+            "text": "audio"
+          },
+          {
+            "id": "D",
+            "text": "external"
+          }
         ],
         "answerKey": "D",
         "explanation": "External (gắn ngoài) là thiết bị không nằm trong vỏ máy mà nối bằng cáp hoặc không dây."
@@ -436,10 +778,22 @@
           "kind": "mcq",
           "stem": "Why has Sofia written two different specifications?",
           "options": [
-            { "id": "A", "text": "The two teams do very different work." },
-            { "id": "B", "text": "The company has two offices." },
-            { "id": "C", "text": "The designers asked for laptops." },
-            { "id": "D", "text": "The supplier has two price lists." }
+            {
+              "id": "A",
+              "text": "The two teams do very different work."
+            },
+            {
+              "id": "B",
+              "text": "The company has two offices."
+            },
+            {
+              "id": "C",
+              "text": "The designers asked for laptops."
+            },
+            {
+              "id": "D",
+              "text": "The supplier has two price lists."
+            }
           ],
           "answerKey": "A",
           "explanation": "Đoạn 1: \"because the administration team and the design team do very different work\". Bài nói công ty thay máy ở \"its office\", không nói có hai văn phòng."
@@ -449,10 +803,22 @@
           "kind": "mcq",
           "stem": "What will the administration computers have?",
           "options": [
-            { "id": "A", "text": "A 2 TB solid state drive" },
-            { "id": "B", "text": "32 GB of memory" },
-            { "id": "C", "text": "8 GB of memory" },
-            { "id": "D", "text": "An eight-core processor" }
+            {
+              "id": "A",
+              "text": "A 2 TB solid state drive"
+            },
+            {
+              "id": "B",
+              "text": "32 GB of memory"
+            },
+            {
+              "id": "C",
+              "text": "8 GB of memory"
+            },
+            {
+              "id": "D",
+              "text": "An eight-core processor"
+            }
           ],
           "answerKey": "C",
           "explanation": "Đoạn 2: máy của bộ phận hành chính có \"8 GB of memory\". Các thông số A, B, D là của máy cho nhà thiết kế."
@@ -462,10 +828,22 @@
           "kind": "mcq",
           "stem": "Why will each designer get a large monitor?",
           "options": [
-            { "id": "A", "text": "To watch training videos" },
-            { "id": "B", "text": "To use two computers at once" },
-            { "id": "C", "text": "To reduce the licence costs" },
-            { "id": "D", "text": "To see small details in drawings" }
+            {
+              "id": "A",
+              "text": "To watch training videos"
+            },
+            {
+              "id": "B",
+              "text": "To use two computers at once"
+            },
+            {
+              "id": "C",
+              "text": "To reduce the licence costs"
+            },
+            {
+              "id": "D",
+              "text": "To see small details in drawings"
+            }
           ],
           "answerKey": "D",
           "explanation": "Đoạn 3: \"a large 32-inch monitor so that they can see small details in their drawings\"."
@@ -475,10 +853,22 @@
           "kind": "mcq",
           "stem": "Why will the designers keep their proprietary software?",
           "options": [
-            { "id": "A", "text": "It is free to use." },
-            { "id": "B", "text": "The open source options are worse for graphics." },
-            { "id": "C", "text": "Sofia wrote the software herself." },
-            { "id": "D", "text": "The new computers cannot run other software." }
+            {
+              "id": "A",
+              "text": "It is free to use."
+            },
+            {
+              "id": "B",
+              "text": "The open source options are worse for graphics."
+            },
+            {
+              "id": "C",
+              "text": "Sofia wrote the software herself."
+            },
+            {
+              "id": "D",
+              "text": "The new computers cannot run other software."
+            }
           ],
           "answerKey": "B",
           "explanation": "Đoạn 3: \"because the open source alternatives are not as good for graphics\"."
@@ -488,10 +878,22 @@
           "kind": "mcq",
           "stem": "Why will Sofia install the new computers at the weekend?",
           "options": [
-            { "id": "A", "text": "So that staff do not lose working time" },
-            { "id": "B", "text": "Because the computers arrive on Saturday" },
-            { "id": "C", "text": "To test the design software first" },
-            { "id": "D", "text": "Because the office is closed in March" }
+            {
+              "id": "A",
+              "text": "So that staff do not lose working time"
+            },
+            {
+              "id": "B",
+              "text": "Because the computers arrive on Saturday"
+            },
+            {
+              "id": "C",
+              "text": "To test the design software first"
+            },
+            {
+              "id": "D",
+              "text": "Because the office is closed in March"
+            }
           ],
           "answerKey": "A",
           "explanation": "Đoạn 4: \"install them at the weekend so that staff do not lose any working time\"."
@@ -581,23 +983,26 @@
     "email": {
       "id": "W-EMAIL",
       "recipient": "Daniel",
-      "task": "You are an IT support technician. Daniel, a trainee in the marketing department, has a second monitor on his desk but does not know how to set it up. Write an email to Daniel explaining the steps, using the notes below. In your email you must use:\n- imperatives with sequence words (first, then, next, after that, finally);\n- at least one softener (could you…?, just);\n- at least one sentence with two objects (plug … into …, connect … to …);\n- at least one reason or purpose (to…, so that…, because…).\nWrite 80–100 words.",
+      "task": "You are an IT support technician. Daniel, a trainee in the marketing department, has a second monitor on his desk but does not know how to set it up. Write an email to Daniel explaining the steps, using the notes below. In your email you must use:\n- imperatives with sequence words;\n- at least one softener (could you…?, just);\n- at least one sentence with two objects (plug … into …, connect … to …);\n- at least one reason or purpose (to…, so that…, because…).\nFollow the standard layout for an email giving instructions: From / To / Date / Subject, a greeting, It should be quite easy to …, the steps with First / Then / Next / After that / Finally, a reminder (Don't forget to … when you've finished.), then Best wishes and your name, position and department.\nWrite 80–100 words (do not count the From, To, Date and Subject lines).",
       "bullets": [
         "connect the monitor cable to the video socket on the computer",
         "plug the monitor's power cable into a power socket / switch on the monitor",
         "right-click on the desktop / select 'Display settings'",
-        "choose 'Extend these displays' / click 'Apply'",
+        "choose 'Extend these displays' / click 'Apply' so that you can use both screens",
         "drag a window onto the second screen to test it",
-        "tell Daniel to call the helpdesk if there is a problem"
+        "call the helpdesk if there is a problem / reminder: tidy the cables"
       ],
-      "wordRange": [80, 100],
+      "wordRange": [
+        80,
+        100
+      ],
       "targetGrammar": [
         "Imperatives with sequencers: first, then, next, after that, finally",
         "Softeners: could you…?, just",
         "Sentences with two objects: connect the cable to the socket, plug the cable into the socket",
         "Reason and purpose: to + verb, so that + clause, because + clause"
       ],
-      "modelAnswer": "Dear Daniel,\n\nIt's easy to set up your second monitor. First, connect the monitor cable to the video socket on the back of your computer. Then plug the monitor's power cable into a power socket and switch on the monitor. Next, just right-click on the desktop and select 'Display settings'. After that, choose 'Extend these displays' and click 'Apply'. Finally, could you drag a window onto the second screen to test it? If there is a problem, call the helpdesk so that we can help you.\n\nBest wishes,\nNatalie"
+      "modelAnswer": "From: Tran Bao Ngoc\nTo: Daniel\nDate: 25th November\nSubject: Setting up your second monitor\n\nHi Daniel,\n\nIt should be quite easy to set up your second monitor.\nFirst, connect the monitor cable to the video socket.\nThen, plug the power cable into a socket and switch the monitor on.\nNext, right-click on the desktop and select 'Display settings'.\nAfter that, choose 'Extend these displays' and click 'Apply' to use both screens.\nFinally, just drag a window onto the second screen to test it.\nCould you call the helpdesk if there is a problem?\nDon't forget to tidy the cables when you've finished.\n\nBest wishes,\nTran Bao Ngoc\nSupport Technician\nHelp Desk Department"
     }
   },
   "speaking": {
