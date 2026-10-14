@@ -25,7 +25,8 @@
     "Listening A (đoán nguyên nhân máy chiếu tự tắt) theo bài Diagnosis; Listening B (tin nhắn thoại báo những việc đã làm với lỗi email) theo bài Investigations. Viết mới, không chép Audio script.",
     "Listening B: acceptedAnswers có biến thể cách viết số và mạo từ; một số biến thể không có nguyên văn trong lời thoại.",
     "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
-    "Bản r1 (tự soát theo lỗi chung et-lead nêu): R20 bỏ \"error\" (gốc thuật ngữ nối R2); R24 thay phương án có \"course\" (từ khoá định nghĩa D); bài đọc R21–R25 bỏ câu người chơi báo lỗi (gần định nghĩa B), \"levels\" (định nghĩa D) và \"skills\" (gốc thuật ngữ nối R4)."
+    "Bản r1 (tự soát theo lỗi chung et-lead nêu): R20 bỏ \"error\" (gốc thuật ngữ nối R2); R24 thay phương án có \"course\" (từ khoá định nghĩa D); bài đọc R21–R25 bỏ câu người chơi báo lỗi (gần định nghĩa B), \"levels\" (định nghĩa D) và \"skills\" (gốc thuật ngữ nối R4).",
+    "Bản r1 (theo review chéo của et-author): email đổi tình huống sang màn hình thứ hai không có hình, để không lặp chuyện máy nóng/bụi/tự tắt của Listening A, R10 và S1 đề B; câu nhắc viết lại tự nhiên, khớp gợi ý."
   ],
   "listening": {
     "parts": [
@@ -555,23 +556,26 @@
     "email": {
       "id": "W-EMAIL",
       "recipient": "Kevin",
-      "task": "You are an IT support technician. Kevin, an accountant, reported that his desktop computer makes a loud noise and sometimes switches itself off. Write an email to Kevin explaining what you have already done and what he can do now, using the notes below. In your email you must use:\n- the present perfect with already and with yet (I have already…, I haven't… yet);\n- may, might or could to talk about a possible cause;\n- should or try + -ing to suggest a solution.\nFollow the standard layout for an email giving instructions: From / To / Date / Subject, a greeting, It should be quite easy to …, the steps with First / Then / Next / After that / Finally, a reminder (Don't forget to … when you've finished.), then Best wishes and your name, position and department.\nWrite 80–100 words (do not count the From, To, Date and Subject lines).",
+      "task": "You are an IT support technician. Kevin, an accountant, reported that the second monitor connected to his laptop shows no picture. Write an email to Kevin explaining what you have already done and what he can do now, using the notes below. In your email you must use:\n- the present perfect with already and with yet (I have already…, I haven't… yet);\n- may, might or could to talk about a possible cause;\n- should or try + -ing to suggest a solution.\nFollow the standard layout for an email giving instructions: From / To / Date / Subject, a greeting, It should be quite easy to …, the steps with First / Then / Next / After that / Finally, a reminder (Don't forget to … when you've finished.), then Best wishes and your name, position and department.\nWrite 80–100 words (do not count the From, To, Date and Subject lines).",
       "bullets": [
-        "already: check the power supply / not yet: replace the fan",
-        "possible cause: dust in the fan",
-        "switch off the computer / unplug it",
-        "move it about 20 cm away from the wall",
-        "clean the air vents with a soft brush",
-        "switch it on again / if it is still noisy: try putting it on the desk, not on the floor",
-        "reminder: tell the IT team if the noise stops"
+        "already: check the monitor's power cable / not yet: replace the video cable",
+        "possible cause: the video cable might be loose",
+        "check the video cable at both ends",
+        "press the Windows key and P / choose 'Extend'",
+        "restart the laptop",
+        "if there is still no picture: try using the other port on the laptop",
+        "reminder: let the IT team know whether the monitor works"
       ],
-      "wordRange": [80, 100],
+      "wordRange": [
+        80,
+        100
+      ],
       "targetGrammar": [
         "Present perfect with already and yet",
         "Speculating: may, might, could + verb",
         "Suggesting solutions: should; try + -ing; If…, you should…"
       ],
-      "modelAnswer": "From: Phan Thi Mai\nTo: Kevin\nDate: 5th March\nSubject: Your noisy computer\n\nHi Kevin,\n\nI have already checked the power supply, but I haven't replaced the fan yet. There might be dust in the fan.\nIt should be quite easy to fix.\nFirst, switch off the computer and unplug it.\nThen, move it about 20 cm away from the wall.\nNext, clean the air vents with a soft brush.\nAfter that, switch it on again.\nFinally, if it is still noisy, try putting it on the desk.\nDon't forget to tell me if the noise stops when you've finished.\n\nBest wishes,\nPhan Thi Mai\nSupport Technician\nHelp Desk Department"
+      "modelAnswer": "From: Phan Thi Mai\nTo: Kevin\nDate: 5th March\nSubject: Your second monitor\n\nHi Kevin,\n\nI have already checked the monitor's power cable, but I haven't replaced the video cable yet. The video cable might be loose.\nIt should be quite easy to fix.\nFirst, check the video cable at both ends.\nThen, press the Windows key and P.\nNext, choose 'Extend'.\nAfter that, restart the laptop.\nFinally, if there is still no picture, try using the other port on your laptop.\nDon't forget to let the IT team know whether the monitor works when you've finished.\n\nBest wishes,\nPhan Thi Mai\nSupport Technician\nHelp Desk Department"
     }
   },
   "speaking": {
