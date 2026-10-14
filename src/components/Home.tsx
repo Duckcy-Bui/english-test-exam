@@ -3,13 +3,13 @@
 import Link from "next/link";
 import { useEffect, useState, type FormEvent } from "react";
 import { api } from "../client/api";
-import { bestScores, readHistory } from "../client/history";
+import { bestScores, readHistory, scoreKey } from "../client/history";
 import type { UnitSummary } from "../types/app";
 import { ErrorNotice, Icon, Loading } from "./ui";
 
 export function Home() {
   const [units, setUnits] = useState<UnitSummary[]>([]);
-  const [scores, setScores] = useState<Record<number, number>>({});
+  const [scores, setScores] = useState<Record<string, number>>({});
   const [authenticated, setAuthenticated] = useState(false);
   const [loading, setLoading] = useState(true);
   const [busy, setBusy] = useState(false);
@@ -172,20 +172,27 @@ export function Home() {
                 </div>
                 <p className="unit-label">UNIT {unit.unit}</p>
                 <h3>{unit.title}</h3>
+                <p className="test-count">{unit.testCount} đề</p>
                 <p className="unit-grammar">
                   {unit.grammarFocus.length
                     ? unit.grammarFocus.join(" · ")
                     : "4 kỹ năng tiếng Anh chuyên ngành"}
                 </p>
                 <div className="unit-card-bottom">
-                  <span className="best-score">
-                    Điểm cao nhất{" "}
-                    <strong>
-                      {scores[unit.unit] !== undefined
-                        ? `${scores[unit.unit].toFixed(2)} / 10`
-                        : "—"}
-                    </strong>
-                  </span>
+                  <div className="test-best-scores">
+                    <span>Điểm cao nhất từng đề</span>
+                    {unit.tests.map((test) => {
+                      const score = scores[scoreKey(unit.unit, test.testId)];
+                      return (
+                        <span className="test-best-score" key={test.testId}>
+                          Đề {test.testId}{" "}
+                          <strong>
+                            {score !== undefined ? `${score.toFixed(2)} / 10` : "—"}
+                          </strong>
+                        </span>
+                      );
+                    })}
+                  </div>
                   {unit.available ? (
                     <Link
                       href={`/unit/${unit.unit}`}

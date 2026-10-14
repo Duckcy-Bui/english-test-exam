@@ -5,5 +5,5 @@ export default async function Page({
   params: Promise<{ sessionId: string }>;
 }) {
   const { sessionId } = await params;
-  return <ExamPage sessionId={sessionId} />;
+  return <ExamPage key={sessionId} sessionId={sessionId} />;
 }

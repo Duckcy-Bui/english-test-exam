@@ -57,6 +57,8 @@ test("a single-skill practice result preserves the skill's precision instead of 
   answers.reading.R1 = exam.reading.matching.items[0].answerKey;
   const result = await gradeSession(session, answers);
   assert.equal(result.total, SCORING.readingPerQuestion);
+  assert.equal(result.testId, "A");
+  assert.equal(result.source, exam.source);
   assert.equal(result.total, result.skills.reading!.score);
   assert.deepEqual(Object.keys(result.review), ["reading"]);
   assert.equal(result.mock, false);

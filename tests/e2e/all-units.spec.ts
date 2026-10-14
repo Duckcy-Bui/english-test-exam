@@ -18,7 +18,7 @@ import {
 // Deployment must serve the audited data, even when a fixture-only run is also used.
 const exams: UnitExam[] = Array.from({ length: 8 }, (_, index) =>
   JSON.parse(
-    readFileSync(join("data", "units", `unit-${index + 1}.json`), "utf8"),
+    readFileSync(join("data", "units", `unit-${index + 1}-A.json`), "utf8"),
   ),
 );
 const usesFixtures =
@@ -94,6 +94,8 @@ async function authenticate(request: APIRequestContext): Promise<void> {
 function assertMockResult(result: ExamResult, exam: UnitExam): void {
   expect(result.unit).toBe(exam.unit);
   expect(result.unitTitle).toBe(exam.unitTitle);
+  expect(result.testId).toBe(exam.testId);
+  expect(result.source).toBe(exam.source);
   expect(result.mode).toBe("exam");
   expect(result.scope).toBe("full");
   expect(result.mock).toBe(true);
@@ -129,17 +131,19 @@ test.describe("all eight audited Units with AI_MOCK", () => {
       expect(listResponse.status()).toBe(200);
       const { units } = await listResponse.json();
       expect(units).toEqual(
-        exams.map((unit) => ({
+        exams.map((unit) => expect.objectContaining({
           unit: unit.unit,
           title: unit.unitTitle,
           available: true,
           grammarFocus: unit.grammarFocus,
+          tests: expect.arrayContaining([{ testId: unit.testId, source: unit.source }]),
+          testCount: expect.any(Number),
         })),
       );
       assertPrivateFieldsAbsent(units);
 
       const startResponse = await request.post("/api/session", {
-        data: { unit: exam.unit, mode: "exam", scope: "full" },
+        data: { unit: exam.unit, test: exam.testId, mode: "exam", scope: "full" },
       });
       expect(startResponse.status()).toBe(200);
       let session: ExamSession = (await startResponse.json()).session;
@@ -147,6 +151,8 @@ test.describe("all eight audited Units with AI_MOCK", () => {
       const answers = completedAnswers(exam);
       expect(session.exam.unit).toBe(exam.unit);
       expect(session.exam.unitTitle).toBe(exam.unitTitle);
+      expect(session.exam.testId).toBe(exam.testId);
+      expect(session.exam.source).toBe(exam.source);
 
       for (const [index, skill] of SKILLS.entries()) {
         expect(session.activeSkill).toBe(skill);
@@ -249,6 +255,7 @@ test.describe("all eight audited Units with AI_MOCK", () => {
         .click();
       await page.getByRole("button", { name: "Thi thử", exact: true }).click();
       await page
+        .locator(`.test-card[data-test-id="${exam.testId}"]`)
         .getByRole("button", { name: "Thi cả đề", exact: true })
         .click();
       await expect(page).toHaveURL(/\/exam\//);

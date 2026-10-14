@@ -1,5 +1,14 @@
 import type { ReactNode } from "react";
 import type { Skill } from "../types/app";
+import type { ExamSource } from "../types/exam";
+
+export function SourceBadge({ source }: { source: ExamSource }) {
+  return (
+    <span className={`badge ${source === "teacher" ? "amber" : "teal"}`}>
+      {source === "teacher" ? "Đề cô" : "Đề AI"}
+    </span>
+  );
+}
 
 export const skillNames: Record<Skill, string> = {
   listening: "Listening",

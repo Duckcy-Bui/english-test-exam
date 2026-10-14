@@ -22,6 +22,7 @@ import {
   Loading,
   skillIcons,
   skillNames,
+  SourceBadge,
 } from "./ui";
 
 function Corrections({
@@ -361,9 +362,10 @@ export function ResultsPage({ resultId }: { resultId: string }) {
           <p className="eyebrow">HOÀN THÀNH MỘT BƯỚC TIẾN</p>
           <h1>Kết quả làm bài</h1>
           <p>
-            Unit {result.unit} · {result.unitTitle} <span>·</span>{" "}
+            Unit {result.unit} · {result.unitTitle} · Đề {result.testId} <span>·</span>{" "}
             {formatDate(result.submittedAt)}
           </p>
+          <SourceBadge source={result.source} />
         </div>
         <Link href="/history" className="button secondary">
           <Icon name="chart" />

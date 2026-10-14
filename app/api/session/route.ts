@@ -21,7 +21,7 @@ export async function POST(request: Request) {
       body = await readBody(request, 2048);
     return json({
       session: sessionView(
-        await createSession(device, body.unit, body.mode, body.scope),
+        await createSession(device, body.unit, body.mode, body.scope, body.test),
       ),
     });
   } catch (error) {

@@ -8,7 +8,7 @@ import {
   readHistory,
   type SavedAttempt,
 } from "../client/history";
-import { EmptyState, ErrorNotice, formatDate, Icon, skillNames } from "./ui";
+import { EmptyState, ErrorNotice, formatDate, Icon, skillNames, SourceBadge } from "./ui";
 
 export function HistoryPage() {
   const [attempts, setAttempts] = useState<SavedAttempt[]>([]);
@@ -93,7 +93,8 @@ export function HistoryPage() {
                 {String(result.unit).padStart(2, "0")}
               </span>
               <div className="history-info">
-                <span className="unit-label">UNIT {result.unit}</span>
+                <span className="unit-label">UNIT {result.unit} · Đề {result.testId}</span>
+                <SourceBadge source={result.source} />
                 <h2>{result.unitTitle}</h2>
                 <p>
                   {formatDate(result.submittedAt)} <span>·</span>{" "}
@@ -117,7 +118,7 @@ export function HistoryPage() {
               </Link>
               <button
                 className="icon-button danger"
-                aria-label={`Xoá kết quả Unit ${result.unit} ngày ${formatDate(result.submittedAt)}`}
+                aria-label={`Xoá kết quả Unit ${result.unit} đề ${result.testId} ngày ${formatDate(result.submittedAt)}`}
                 onClick={() => setConfirm(result.id)}
               >
                 <Icon name="trash" />

@@ -7,6 +7,7 @@ import type {
   Scope,
   UnitSummary,
 } from "../types/app";
+import type { TestId } from "../types/exam";
 
 export class ApiError extends Error {
   constructor(
@@ -49,12 +50,19 @@ export const api = {
   unlock: (code: string) =>
     request<{ authenticated: boolean }>("/api/access", { code }),
   units: () => request<{ units: UnitSummary[] }>("/api/units"),
-  start: (unit: number, mode: Mode, scope: Scope) =>
-    request<{ session: ExamSession }>("/api/session", { unit, mode, scope }),
+  start: (unit: number, testId: TestId, mode: Mode, scope: Scope) =>
+    request<{ session: ExamSession }>("/api/session", {
+      unit,
+      test: testId,
+      mode,
+      scope,
+    }),
   session: (sessionId: string) =>
     request<{ session: ExamSession }>(
       `/api/session?sessionId=${encodeURIComponent(sessionId)}`,
     ),
+  paperSession: (unit: number, test: TestId) =>
+    request<{ session: ExamSession }>("/api/listen/paper-session", { unit, test }),
   section: (sessionId: string, skill: string, answers: ExamAnswers) =>
     request<{ session: ExamSession }>("/api/section", {
       sessionId,

@@ -922,7 +922,7 @@
     "email": {
       "id": "W-EMAIL",
       "recipient": "Sam",
-      "task": "Write an email of 80–100 words to Sam explaining how to attend a remote training session. Include all the steps below, one polite request and a second conditional sentence about a possible improvement.",
+      "task": "Write an email with a body of 80–100 words to Sam explaining how to attend a remote training session. Include all the steps below, one polite request and a second conditional sentence about a possible improvement. Use First, Then, Next, After that and Finally.",
       "bullets": [
         "Open the training application and sign in",
         "Check the microphone and camera",
@@ -939,7 +939,7 @@
         "Polite requests with could",
         "Second conditional"
       ],
-      "modelAnswer": "Dear Sam,\nHere are the steps for your remote training session. First, open the training application and sign in. Check your microphone and camera before you start. Next, enter the session code from the invitation. Select Join and wait for the trainer to admit you. During the session, use the hand button if you want to ask a question. Finally, leave the session and send your feedback. Could you tell me if anything is unclear? If we had more time, we would practise together beforehand.\nBest wishes,\nAlex"
+      "modelAnswer": "From: Alex Morgan\nTo: Sam\nDate: 25th November\nSubject: Joining remote training\n\nDear Sam,\nIt should be quite easy to join your remote training session.\nFirst, open the training application and sign in.\nThen, check your microphone and camera.\nNext, enter the invitation's session code and select Join.\nAfter that, wait for the trainer; use the hand button to ask questions.\nFinally, leave and send feedback. Could you report any problems?\nIf we had more time, we would practise together beforehand.\nDon't forget to close the application when you've finished.\n\nBest wishes,\nAlex Morgan\nSupport Technician\nHelp Desk Department"
     }
   },
   "speaking": {

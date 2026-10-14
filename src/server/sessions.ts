@@ -1,5 +1,5 @@
 import { createHash, randomUUID } from "node:crypto";
-import type { UnitExam } from "@/types/exam";
+import { TEST_IDS, type TestId, type UnitExam } from "@/types/exam";
 import {
   SKILLS,
   emptyAnswers,
@@ -29,6 +29,8 @@ export interface ServerSession {
   completed: Skill[];
   answers: ExamAnswers;
   audioHashes?: Record<string, string>;
+  /** Internal listening-only session for the paper PDF flow. */
+  paperListening?: boolean;
 }
 const state = globalThis as typeof globalThis & {
   etSessions?: Map<string, ServerSession>;
@@ -67,6 +69,24 @@ export async function createSession(
   unit: unknown,
   mode: unknown,
   scope: unknown,
+  test: unknown = "A",
+): Promise<ServerSession> {
+  return allocateSession(device, unit, mode, scope, test, false);
+}
+export async function createPaperListeningSession(
+  device: string,
+  unit: unknown,
+  test: unknown,
+): Promise<ServerSession> {
+  return allocateSession(device, unit, "practice", "listening", test, true);
+}
+async function allocateSession(
+  device: string,
+  unit: unknown,
+  mode: unknown,
+  scope: unknown,
+  test: unknown,
+  paperListening: boolean,
 ): Promise<ServerSession> {
   if (
     typeof unit !== "number" ||
@@ -74,18 +94,29 @@ export async function createSession(
     (scope !== "full" && !SKILLS.includes(scope as never))
   )
     throw new AppError(400, "Chế độ hoặc phạm vi bài thi không hợp lệ.");
+  if (typeof test !== "string" || !TEST_IDS.includes(test as TestId))
+    throw new AppError(400, "Mã đề không hợp lệ.");
   if (mode === "exam" && scope !== "full")
     throw new AppError(400, "Thi thử phải làm tuần tự cả bốn kỹ năng.");
-  const exam = await loadExam(unit);
+  const exam = await loadExam(unit, test as TestId);
   // No await between counting and inserting: parallel requests cannot reserve
   // more sessions than the per-device/global caps.
   const now = Date.now();
   for (const [id, s] of sessions) if (s.deleteAt < now) sessions.delete(id);
+  if (paperListening) {
+    const existing = [...sessions.values()].find(
+      (s) => s.paperListening && s.device === device &&
+        s.exam.unit === unit && s.exam.testId === test &&
+        s.status === "idle" && s.deleteAt > now,
+    );
+    if (existing) return existing;
+  }
   if (
     sessions.size >= 1000 ||
     [...sessions.values()].filter(
-      (s) => s.device === device && s.status !== "submitted",
-    ).length >= 20
+      (s) => s.device === device && s.status !== "submitted" &&
+        !!s.paperListening === paperListening,
+    ).length >= (paperListening ? 32 : 20)
   )
     throw new AppError(
       429,
@@ -105,11 +136,12 @@ export async function createSession(
     scope: scope as Scope,
     started: now,
     expires: mode === "exam" ? now + duration * 60_000 : null,
-    deleteAt: now + 4 * 3600_000,
+    deleteAt: now + (paperListening ? 1 : 4) * 3600_000,
     listens: { A: 0, B: 0 },
     status: "idle",
     completed: [],
     answers: emptyAnswers(),
+    ...(paperListening ? { paperListening: true } : {}),
   };
   sessions.set(s.id, s);
   return s;

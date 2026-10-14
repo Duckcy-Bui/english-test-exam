@@ -12,7 +12,7 @@ import { join, resolve } from "node:path";
 import { setTimeout as delay } from "node:timers/promises";
 import { emptyAnswers, type ExamAnswers } from "../../src/types/app";
 import {
-  countWords,
+  countEmailWords,
   type SpeakingGrade,
   type UnitExam,
   type WritingGrade,
@@ -29,8 +29,8 @@ const root = process.cwd();
 const dataDir = resolve(root, process.env.E2E_DATA_DIR || "data/units");
 const examFile = join(
   dataDir,
-  existsSync(join(dataDir, "unit-6.json"))
-    ? "unit-6.json"
+  existsSync(join(dataDir, "unit-6-A.json"))
+    ? "unit-6-A.json"
     : "unit-6.sample.json",
 );
 const exam = JSON.parse(readFileSync(examFile, "utf8")) as UnitExam;
@@ -194,7 +194,7 @@ test.beforeAll(async () => {
               layout: 0.125,
               grammar: 0.125,
               vocabulary: 0.125,
-              wordCount: countWords(student.email),
+              wordCount: countEmailWords(student.email),
               feedback: "Nhận xét sạch.",
               corrections,
             },
@@ -327,7 +327,7 @@ test.afterAll(async () => {
 
 async function start(skill: AiSkill): Promise<string> {
   const response = await client.post("/api/session", {
-    data: { unit: 6, mode: "practice", scope: skill },
+    data: { unit: 6, test: "A", mode: "practice", scope: skill },
   });
   expect(response.status()).toBe(200);
   const raw = await response.text();
@@ -387,6 +387,10 @@ for (const skill of ["writing", "speaking"] as const) {
     expect(result.mock).toBe(false);
     expect(result.total).toBe(1.25);
     const grade = result.skills[skill][skill];
+    if (skill === "writing")
+      expect(grade.email.wordCount).toBe(
+        countEmailWords(exam.writing.email.modelAnswer),
+      );
     const cleanCorrections =
       skill === "writing" ? grade.email.corrections : grade.corrections;
     expect(cleanCorrections[0].note).toBe(

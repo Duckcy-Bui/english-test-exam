@@ -87,16 +87,18 @@ function chooseVoice(voices: SpeechSynthesisVoice[], speaker: Speaker) {
   );
 }
 
-function ListenButton({
+export function ListenButton({
   sessionId,
   partId,
   examMode,
   disabled,
+  listeningOnly = false,
 }: {
   sessionId: string;
   partId: "A" | "B";
   examMode: boolean;
   disabled: boolean;
+  listeningOnly?: boolean;
 }) {
   const key = `english-it-listen-${sessionId}-${partId}`;
   const [remaining, setRemaining] = useState<number | null>(
@@ -316,7 +318,9 @@ function ListenButton({
       <p>
         {examMode
           ? `Còn ${remaining ?? 0}/2 lượt nghe. Mỗi lần bấm phát tính một lượt.`
-          : "Nghe không giới hạn. Lời thoại hiển thị sau khi nộp bài."}
+          : listeningOnly
+            ? "Nghe không giới hạn để làm phần Listening trong PDF."
+            : "Nghe không giới hạn. Lời thoại hiển thị sau khi nộp bài."}
       </p>
       {error && (
         <p className="field-error" role="alert">

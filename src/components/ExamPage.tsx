@@ -25,6 +25,7 @@ import {
   skillDescriptions,
   skillIcons,
   skillNames,
+  SourceBadge,
 } from "./ui";
 
 function idsFor(session: ExamSession, skill: Skill): string[] {
@@ -281,8 +282,9 @@ export function ExamPage({ sessionId }: { sessionId: string }) {
     <>
       <div className="exam-topline">
         <span className="back-link">
-          UNIT {session.exam.unit} · {session.exam.unitTitle}
+          UNIT {session.exam.unit} · {session.exam.unitTitle} · Đề {session.exam.testId}
         </span>
+        <SourceBadge source={session.exam.source} />
         <span className={`badge ${sequential ? "amber" : "teal"}`}>
           {sequential ? "Thi thử" : "Luyện tập"}
         </span>

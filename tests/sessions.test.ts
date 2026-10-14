@@ -96,6 +96,8 @@ function assertActiveOnly(s: ServerSession, expected: Skill | null): void {
   assert.deepEqual(view.completedSkills, s.completed);
   assert.equal(view.exam.unit, 6);
   assert.equal(view.exam.unitTitle, exam.unitTitle);
+  assert.equal(view.exam.testId, exam.testId);
+  assert.equal(view.exam.source, exam.source);
   assertPrivateFieldsAbsent(view);
 }
 

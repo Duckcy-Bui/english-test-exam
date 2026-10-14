@@ -4,6 +4,8 @@ const nextConfig: NextConfig = {
   output: "standalone",
   outputFileTracingIncludes: {
     "/api/**/*": ["./data/units/**/*.json"],
+    "/api/pdf": ["./data/pdf/**/*.pdf"],
+    "/internal/print/**/*": ["./data/units/**/*.json"],
   },
   async headers() {
     return [

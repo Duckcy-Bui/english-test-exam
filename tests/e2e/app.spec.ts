@@ -17,11 +17,12 @@ import {
 const dataDir = process.env.E2E_DATA_DIR || "data/units";
 const examFile = join(
   dataDir,
-  existsSync(join(dataDir, "unit-6.json"))
-    ? "unit-6.json"
+  existsSync(join(dataDir, "unit-6-A.json"))
+    ? "unit-6-A.json"
     : "unit-6.sample.json",
 );
 const exam = JSON.parse(readFileSync(examFile, "utf8")) as UnitExam;
+const sourceLabel = exam.source === "teacher" ? "Đề cô" : "Đề AI";
 function assertStripped(value: unknown): void {
   if (Array.isArray(value)) {
     value.forEach(assertStripped);
@@ -44,11 +45,13 @@ async function start(
     ).status(),
   ).toBe(200);
   const response = await request.post("/api/session", {
-    data: { unit: 6, mode, scope },
+    data: { unit: 6, test: "A", mode, scope },
   });
   expect(response.status()).toBe(200);
   const session: ExamSession = (await response.json()).session;
   expect(session.exam.unitTitle).toBe(exam.unitTitle);
+  expect(session.exam.testId).toBe("A");
+  expect(session.exam.source).toBe(exam.source);
   return session;
 }
 function completedAnswers(): ExamAnswers {
@@ -218,8 +221,13 @@ test("browser completes a full sequential Unit 6, shows reviews and clears histo
     .getByRole("link", { name: "Luyện tập Unit 6", exact: true })
     .click();
   await page.getByRole("button", { name: "Thi thử", exact: true }).click();
-  await page.getByRole("button", { name: "Thi cả đề", exact: true }).click();
+  const testCard = page.locator('.test-card[data-test-id="A"]');
+  await expect(testCard.getByText(sourceLabel, { exact: true })).toBeVisible();
+  await expect(testCard.getByRole("link", { name: "Tải PDF đề", exact: true })).toHaveAttribute("href", "/api/pdf?unit=6&test=A&kind=exam");
+  await testCard.getByRole("button", { name: "Thi cả đề", exact: true }).click();
   await expect(page).toHaveURL(/\/exam\//);
+  await expect(page.locator(".exam-topline")).toContainText("Đề A");
+  await expect(page.locator(".exam-topline")).toContainText(sourceLabel);
   for (const q of exam.listening.parts[0].questions)
     await page.locator(`input[name="${q.id}"][value="${q.answerKey}"]`).check();
   for (const q of exam.listening.parts[1].questions)
@@ -254,6 +262,8 @@ test("browser completes a full sequential Unit 6, shows reviews and clears histo
     .getByRole("button", { name: "Xác nhận nộp" })
     .click();
   await expect(page).toHaveURL(/\/results\//);
+  await expect(page.locator(".page-heading")).toContainText("Đề A");
+  await expect(page.locator(".page-heading")).toContainText(sourceLabel);
   await expect(page.locator(".total-score")).toContainText("7.50");
   await expect(
     page.getByText("Kết quả chấm mô phỏng", { exact: false }).first(),
@@ -275,6 +285,8 @@ test("browser completes a full sequential Unit 6, shows reviews and clears histo
   ).toBeVisible();
   await page.getByRole("link", { name: "Lịch sử", exact: true }).click();
   await expect(page.locator(".history-row")).toHaveCount(1);
+  await expect(page.locator(".history-row")).toContainText("Đề A");
+  await expect(page.locator(".history-row")).toContainText(sourceLabel);
   await page.getByRole("button", { name: "Xoá tất cả", exact: true }).click();
   await page.getByRole("button", { name: "Xoá lịch sử", exact: true }).click();
   await expect(page.locator(".history-row")).toHaveCount(0);
@@ -350,4 +362,19 @@ test("practice permits an individual skill and Chromium recording reaches the se
   expect(Object.keys(result.skills)).toEqual(["speaking"]);
   expect(result.skills.speaking.speaking.pronunciationAssessed).toBe(false);
   expect(JSON.stringify(result)).not.toContain("audio/webm");
+});
+
+test("PDF downloads require the class access code and serve separate exam and answer files", async ({ request }) => {
+  const examUrl = "/api/pdf?unit=6&test=A&kind=exam";
+  expect((await request.get(examUrl)).status()).toBe(401);
+  await start(request, "practice", "reading");
+  for (const kind of ["exam", "answers"] as const) {
+    const response = await request.get(`/api/pdf?unit=6&test=A&kind=${kind}`);
+    expect(response.status()).toBe(200);
+    expect(response.headers()["content-type"]).toBe("application/pdf");
+    expect(response.headers()["content-disposition"]).toContain(`Unit-6-Test-A-${kind === "exam" ? "Exam" : "Answers"}.pdf`);
+    expect((await response.body()).subarray(0, 5).toString()).toBe("%PDF-");
+  }
+  expect((await request.get("/api/pdf?unit=6&test=Z&kind=exam")).status()).toBe(400);
+  expect((await request.get("/api/pdf?unit=6&test=A&kind=transcript")).status()).toBe(400);
 });
