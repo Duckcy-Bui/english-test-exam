@@ -26,7 +26,8 @@
     "S3 chọn tình huống hiệu sách gia đình mở bán trực tuyến (bài E-commerce) để không lặp mạng xã hội doanh nghiệp ở S2 và hội nghị truyền hình ở Listening A.",
     "Listening B: acceptedAnswers có biến thể cách viết số; một số biến thể không có nguyên văn trong lời thoại.",
     "Email theo khung giáo viên: From/To/Date/Subject, It should be quite easy to…, First/Then/Next/After that/Finally, Don't forget to… when you've finished, Best wishes + chữ ký 3 dòng.",
-    "Bản r1 (theo báo cáo et-auditor audit/unit-6-B): R10 nêu rõ hiện chưa có hệ thống để chỉ còn một đáp án; R15 bỏ phương án nhiễu cùng gốc với thuật ngữ nối R3; R6 và R15 đổi ngữ cảnh (làm việc tại nhà, màn hình lớn) để không lặp tình huống thanh toán bằng điện thoại của bài đọc R26–R30."
+    "Bản r1 (theo báo cáo et-auditor audit/unit-6-B): R10 nêu rõ hiện chưa có hệ thống để chỉ còn một đáp án; R15 bỏ phương án nhiễu cùng gốc với thuật ngữ nối R3; R6 và R15 đổi ngữ cảnh (làm việc tại nhà, màn hình lớn) để không lặp tình huống thanh toán bằng điện thoại của bài đọc R26–R30.",
+    "Bản r1 (theo review chéo của et-author): R18 thay phương án nhiễu overseas (có thể hiểu là họp trực tiếp ở nước ngoài) bằng virtual; L6 thêm biến thể có đơn vị calls. R15 đã sửa ở lần r1 trước."
   ],
   "listening": {
     "parts": [
@@ -263,7 +264,10 @@
               "about twelve hundred",
               "around twelve hundred",
               "about 1200",
-              "around 1200"
+              "around 1200",
+              "1200 calls",
+              "1 200 calls",
+              "twelve hundred calls"
             ],
             "explanation": "Emma nói năm ngoái khoảng 2.000 cuộc gọi mỗi tuần, \"Now it's around twelve hundred\" (1.200)."
           },
@@ -708,11 +712,11 @@
           },
           {
             "id": "D",
-            "text": "overseas"
+            "text": "virtual"
           }
         ],
         "answerKey": "B",
-        "explanation": "Face-to-face (trực tiếp, mặt đối mặt) khớp với \"meet people in person\". Remote và online là họp từ xa, trái nghĩa."
+        "explanation": "Face-to-face (trực tiếp, mặt đối mặt) khớp với \"meet people in person\". Remote, online và virtual đều là họp từ xa, trái nghĩa."
       },
       {
         "id": "R19",
