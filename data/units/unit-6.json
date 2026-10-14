@@ -29,6 +29,7 @@
     "Listening và Speaking viết mới. Listening A lấy cảm hứng từ bài đọc E-commerce, Listening B từ bài Training users; không chép Audio script track 30–35.",
     "S3 chọn dạng mô tả xu hướng hiện tại để không lặp tình huống mua hệ thống hội nghị truyền hình của bài đọc R26–R30 và W32.",
     "Listening B: một số biến thể trong acceptedAnswers (cách viết khác của cùng đáp án) không có nguyên văn trong lời thoại; et-lead đã duyệt giữ lại.",
+    "Bản r2 (theo báo cáo et-auditor 5cf29b7): viết lại đề R12 để chỉ một phương án đúng; R14 thêm gạch nối cho tính từ ghép; đề email nêu rõ dùng mệnh lệnh và từ nối trình tự; requiredGrammar của S2 ghi rõ chỉ bắt buộc hai trong ba cách giải nghĩa, khớp với đề.",
     "Bản r1 (theo báo cáo et-auditor de65da7): viết lại đoạn 1, 2, 4 bài đọc R21–R25 và câu R21, R23 để bài đọc không diễn đạt lại định nghĩa của R4 (quy tắc 11); viết lại câu bài đọc liên quan và câu R28 để đáp án được văn bản phủ định trực tiếp (quy tắc 12); đề email nêu rõ phải dùng yêu cầu lịch sự và câu điều kiện loại 2, có ngữ cảnh cho lời nhắc; S1 thay câu 2 bằng câu yêu cầu đào tạo lịch sự, cả ba câu S1 và đề S2, S3 nêu rõ cấu trúc cần dùng (quy tắc 13); S2 bỏ yêu cầu dùng dấu ngoặc, thay bằng called / which means / is (quy tắc 14); sourceNotes bỏ mọi thông tin đáp án (quy tắc 15). R19 giữ nguyên theo quyết định của et-lead."
   ],
   "listening": {
@@ -309,7 +310,7 @@
       {
         "id": "R12",
         "kind": "mcq",
-        "stem": "It would be great ______ how to create a new group in the company forum.",
+        "stem": "I'd like ______ how to create a new group in the company forum.",
         "options": [
           { "id": "A", "text": "knowing" },
           { "id": "B", "text": "know" },
@@ -317,7 +318,7 @@
           { "id": "D", "text": "known" }
         ],
         "answerKey": "C",
-        "explanation": "Yêu cầu lịch sự \"It would be great + to V\": \"It would be great to know …\" (Thật tốt nếu được biết …)."
+        "explanation": "Yêu cầu lịch sự \"I'd like + to V\": \"I'd like to know …\" (Tôi muốn biết …). Sau \"would like\" chỉ dùng to-infinitive, không dùng V-ing."
       }
     ],
     "vocabulary": [
@@ -340,12 +341,12 @@
         "stem": "As well as our website, we have four ______ shops where customers can see the products face-to-face.",
         "options": [
           { "id": "A", "text": "high-definition" },
-          { "id": "B", "text": "bricks and mortar" },
+          { "id": "B", "text": "bricks-and-mortar" },
           { "id": "C", "text": "file sharing" },
           { "id": "D", "text": "speech-to-text" }
         ],
         "answerKey": "B",
-        "explanation": "Bricks and mortar shop là cửa hàng có địa điểm thực, khách đến mua trực tiếp, khác với cửa hàng chỉ có trên mạng."
+        "explanation": "Bricks-and-mortar shop là cửa hàng có địa điểm thực, khách đến mua trực tiếp, khác với cửa hàng chỉ có trên mạng."
       },
       {
         "id": "R15",
@@ -588,7 +589,7 @@
     "email": {
       "id": "W-EMAIL",
       "recipient": "Hana",
-      "task": "You are an IT support technician. Tomorrow a new employee, Hana, will join a video conference with the company's overseas office for the first time. Write an email explaining how to join the video conference, using the steps below. End the email with a reminder. In your email you must use:\n- at least one polite request (Could you…? / It would be great if you could…), for example asking Hana to come early to test the equipment;\n- at least one second conditional sentence (If + past simple, … would + verb), for example to explain what would happen if the remote participants heard background noise.\nWrite 80–100 words.",
+      "task": "You are an IT support technician. Tomorrow a new employee, Hana, will join a video conference with the company's overseas office for the first time. Write an email explaining how to join the video conference, using the steps below. End the email with a reminder. In your email you must use:\n- imperatives and sequence words such as first, then, next and finally for the steps;\n- at least one polite request (Could you…? / It would be great if you could…), for example asking Hana to come early to test the equipment;\n- at least one second conditional sentence (If + past simple, … would + verb), for example to explain what would happen if the remote participants heard background noise.\nWrite 80–100 words.",
       "bullets": [
         "switch on the video conferencing equipment",
         "check the camera and microphone connections",
@@ -633,9 +634,10 @@
           "Ways to give meanings: … called …, … which means …, … is …"
         ],
         "requiredGrammar": [
-          "Giving meanings with called: a business model called bricks and clicks",
-          "Giving meanings with which means / a relative clause: B2C, which means business to consumer, …",
-          "Giving meanings with be: DRM is…"
+          "Give meanings in at least two of these three ways (all three are not required):",
+          "called: a business model called bricks and clicks",
+          "which means / relative clause: B2C, which means business to consumer, …",
+          "be: DRM is…"
         ],
         "seconds": 90,
         "sampleAnswer": "Let me explain four terms from the report. First, B2C, which means business to consumer, is selling directly to ordinary customers on the internet. Our online shop is a B2C system because we sell to the public, not to other companies. Second, we use a business model called bricks and clicks. A bricks and clicks company has both real shops and an online shop, like a supermarket that also sells on its website. Third, DRM is Digital Rights Management. It is a method that limits how people can use digital content after they buy it. For example, you can't copy some e-books to another device. Finally, there is encryption, which is a way of changing data into a code so that nobody else can read it. Online shops use encryption to protect customers' card details when they pay."
