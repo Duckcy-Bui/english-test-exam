@@ -33,7 +33,7 @@
       {
         "id": "A",
         "instructions": "Listen to the phone call and choose the best answer A, B, C or D (Questions L1–L5).",
-        "context": "Jack, the owner of a small dental clinic, phones Anna at SafeStore, an online backup company.",
+        "context": "Jack, the owner of a small dental clinic, phones Anna at a company called SafeStore.",
         "speakers": [
           {
             "name": "Anna",
