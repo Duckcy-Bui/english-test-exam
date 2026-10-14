@@ -36,7 +36,7 @@
       {
         "id": "A",
         "instructions": "Listen to the phone call and choose the best answer A, B, C or D (Questions L1–L5).",
-        "context": "Chloe, a video editor, phones Marcus at Apex PCs to order a new computer.",
+        "context": "Chloe phones Marcus at Apex PCs, a computer shop, to order a new computer.",
         "speakers": [
           {
             "name": "Marcus",
