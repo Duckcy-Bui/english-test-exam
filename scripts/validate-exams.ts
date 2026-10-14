@@ -4,6 +4,7 @@
 //   npm run validate                 kiểm mọi file data/units/unit-N.json
 //   npm run validate -- 6            chỉ kiểm Unit 6
 //   npm run validate -- path/x.json  kiểm một file bất kỳ
+//   npm run validate -- a.json b.json  kiểm nhiều file, có kiểm câu dịch trùng giữa các file
 //
 // Mã thoát: 0 nếu không có lỗi (cảnh báo không làm hỏng), 1 nếu có lỗi.
 import { basename } from "node:path";
@@ -294,8 +295,8 @@ function checkScoringConstants(): string[] {
 }
 
 function main() {
-  const arg = process.argv[2];
-  const files = !arg ? listUnitFiles() : /^\d$/.test(arg) ? [unitPath(Number(arg))] : [arg];
+  const args = process.argv.slice(2);
+  const files = args.length === 0 ? listUnitFiles() : args.map((a) => (/^\d$/.test(a) ? unitPath(Number(a)) : a));
 
   const constErrors = checkScoringConstants();
   constErrors.forEach((e) => console.log(`LỖI  [hằng số] ${e}`));

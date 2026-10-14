@@ -4,6 +4,8 @@
 //   npm run compare -- 6                         so audit/unit-6.blind.json
 //   npm run compare -- 6 audit/unit-6.blind-r1.json --partial
 //        chỉ so các câu có trong file (dùng khi giải lại câu đã viết lại)
+//   npm run compare -- 6 <blind.json> --exam <unit-6.json>
+//        lấy đáp án tác giả từ file khác (ví dụ trích từ nhánh content/*)
 //
 // Mã thoát: 0 nếu khớp hết, 1 nếu có câu AMBIGUOUS hoặc thiếu.
 import { join } from "node:path";
@@ -18,12 +20,14 @@ interface BlindFile {
 }
 
 function main() {
-  const args = process.argv.slice(2).filter((a) => !a.startsWith("--"));
+  const examIdx = process.argv.indexOf("--exam");
+  const examPath = examIdx > 0 ? process.argv[examIdx + 1] : undefined;
+  const args = process.argv.slice(2).filter((a, i, all) => !a.startsWith("--") && all[i - 1] !== "--exam");
   const partial = process.argv.includes("--partial");
   const unit = parseUnitArg(args[0]);
   const blindPath = args[1] ?? join(AUDIT_DIR, `unit-${unit}.blind.json`);
 
-  const exam = readJson<UnitExam>(unitPath(unit));
+  const exam = readJson<UnitExam>(examPath ?? unitPath(unit));
   const blind = readJson<BlindFile>(blindPath);
   if (blind.unit !== unit) {
     console.error(`File giải mù ghi unit = ${blind.unit}, không khớp Unit ${unit}`);
